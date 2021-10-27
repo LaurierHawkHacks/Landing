@@ -8,9 +8,9 @@ import Icon from './assets/icon.svg';
 function App() {
   return (
     <>
-      <Navbar expand="lg">
-        <Container className="mt-2 mb-1">
-          <Navbar.Brand href="#home">
+      <Navbar id="header" expand="lg" sticky="top">
+        <Container className="my-4">
+          <Navbar.Brand href="#">
             <img
               className="mx-2"
               src={Icon}
@@ -22,7 +22,9 @@ function App() {
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav">
             <Nav className="nav-main me-auto">
-              <Nav.Link href="#about" className="mx-1">About</Nav.Link>
+              <Nav.Link href="#about" className="mx-1">
+                About
+              </Nav.Link>
               <Nav.Link href="#faq" className="mx-1">FAQ</Nav.Link>
               <Nav.Link href="#sponsors" className="mx-1">Sponsors</Nav.Link>
               <Nav.Link href="#leaders" className="mx-1">Our Team</Nav.Link>
@@ -55,6 +57,14 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
+      <Container id="home" style={{height: "1000px"}}>
+        <h1>Home</h1>
+      </Container>
+
+      <Container id="about">
+        <h1>About</h1>
+      </Container>
     </>
   );
 }
