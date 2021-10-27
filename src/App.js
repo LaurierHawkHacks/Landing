@@ -1,4 +1,6 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { AiOutlineTwitter as Twitter, AiFillInstagram as Instagram, AiOutlineGithub as Github } from 'react-icons/ai';
+import { FaFacebookSquare as Facebook } from 'react-icons/fa';
 import './App.css';
 import Strip from './components/Strip';
 import Icon from './assets/icon.svg';
@@ -7,9 +9,10 @@ function App() {
   return (
     <>
       <Navbar expand="lg">
-        <Container>
+        <Container className="mt-2 mb-1">
           <Navbar.Brand href="#home">
             <img
+              className="mx-2"
               src={Icon}
               width="50"
               height="50"
@@ -19,39 +22,35 @@ function App() {
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav">
             <Nav className="nav-main me-auto">
-              <Nav.Link href="#about">About</Nav.Link>
-              <Nav.Link href="#faq">FAQ</Nav.Link>
-              <Nav.Link href="#sponsors">Sponsors</Nav.Link>
-              <Nav.Link href="#leaders">Our Team</Nav.Link>
+              <Nav.Link href="#about" className="mx-1">About</Nav.Link>
+              <Nav.Link href="#faq" className="mx-1">FAQ</Nav.Link>
+              <Nav.Link href="#sponsors" className="mx-1">Sponsors</Nav.Link>
+              <Nav.Link href="#leaders" className="mx-1">Our Team</Nav.Link>
             </Nav>
             <Nav className="nav-right d-flex">
-              <Nav.Link href="#apply">Apply today</Nav.Link>
-              <Container>
-                <img
-                  src={Icon}
-                  width="50"
-                  height="50"
-                  alt="HawkHacks Icon"
+              <Nav.Link href="#apply" className="mx-1">Apply Now</Nav.Link>
+              <div className="d-flex align-items-center">
+                <Facebook
+                  className="mx-2"
+                  size="24px"
+                  alt="Facebook social icon"
                 />
-                <img
-                  src={Icon}
-                  width="50"
-                  height="50"
-                  alt="HawkHacks Icon"
+                <Twitter
+                  className="mx-2"
+                  size="24px"
+                  alt="Twitter social icon"
                 />
-                <img
-                  src={Icon}
-                  width="50"
-                  height="50"
-                  alt="HawkHacks Icon"
+                <Instagram
+                  className="mx-2"
+                  size="24px"
+                  alt="Instagram social icon"
                 />
-                <img
-                  src={Icon}
-                  width="50"
-                  height="50"
-                  alt="HawkHacks Icon"
+                <Github
+                  className="mx-2"
+                  size="24px"
+                  alt="Github social icon"
                 />
-              </Container>
+              </div>
             </Nav>
           </Navbar.Collapse>
         </Container>
