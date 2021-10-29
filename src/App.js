@@ -1,14 +1,24 @@
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import Styled from 'styled-components';
 import { AiOutlineTwitter as Twitter, AiFillInstagram as Instagram, AiOutlineGithub as Github } from 'react-icons/ai';
 import { FaFacebookSquare as Facebook } from 'react-icons/fa';
+import Illustration from './components/Illustration';
 import './App.css';
 import Icon from './assets/icon.svg';
 
+const GradientBackground = Styled.div`
+  
+`;
+
 function App() {
   return (
-    <>
-      <Navbar id="header" expand="lg" sticky="top">
-        <Container className="my-4">
+    <GradientBackground className="bg-hh-gradient">
+      <Illustration src_name="illustration_1" top="2em" />
+      <Illustration src_name="illustration_2" top="40em" />
+      <Illustration src_name="illustration_3" top="110em" />
+      <Illustration src_name="illustration_4" top="140em" bottom="0" width="100%" />
+      <Navbar id="header" expand="lg" sticky="top" className="bg-hh-accent">
+        <Container className="mt-4 mb-3">
           <Navbar.Brand href="#">
             <img
               className="mx-2"
@@ -57,7 +67,8 @@ function App() {
         </Container>
       </Navbar>
 
-      <Container id="home" className="d-flex flex-column align-items-center">
+      <Container id="home" className="d-flex flex-column align-items-center foreground">
+        <div className="spacer" style={{ width: "100%", height: "8em" }}/>
         <img
           className="mx-2"
           src={Icon}
@@ -74,46 +85,61 @@ function App() {
           <Button>Sponsor</Button>
           <Button>Events</Button>
         </div>
+        <div className="spacer" style={{ width: "100%", height: "6em" }}/>
       </Container>
 
-      <Container id="about">
-        <h1>About HawkHacks</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+      <Container id="about" className="foreground">
+        <div className="spacer" style={{ width: "100%", height: "2em" }}/>
+        <div className="row">
+          <div className="col-md">
+            <h1>About HawkHacks</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div className="col" />
+        </div>
+        <div className="spacer" style={{ width: "100%", height: "6em" }}/>
       </Container>
 
-      <Container id="pitch">
-        <h1>Pitch to students (rename)</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+      <Container id="pitch" className="foreground">
+        <div className="spacer" style={{ width: "100%", height: "2em" }}/>
+        <div className="row">
+          <div className="col" />
+          <div className="col-md text-right">
+            <h1>Pitch to students (rename)</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+        <div className="spacer" style={{ width: "100%", height: "6em" }}/>
       </Container>
 
-      <Container id="faq">
+      <Container id="faq" className="foreground">
         <h1>Frequently Asked Questions</h1>
       </Container>
 
-      <Container id="sponsors">
+      <Container id="sponsors" className="foreground">
         <h1>Our Sponsors</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </Container>
 
-      <Container id="team">
+      <Container id="team" className="foreground">
         <h1>Our Sponsors</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </Container>
 
-      <Container id="footer">
+      <Container id="footer" className="foreground">
         <a>Code of Conduct</a>
         <p>&#169; Copyright 2021 HawkHacks</p>
         <p>[SOCIALS HERE TOO]</p>
       </Container>
-    </>
+    </GradientBackground>
   );
 }
 
