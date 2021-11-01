@@ -22,7 +22,7 @@ const Illustration = ({ src_name, top, bottom, width }) => {
                 : console.log(src_name) }
             style={{
               width: width === undefined ? "max-content" : width,
-              maxWidth: "100em",
+              maxWidth: "100%",
               height: "max-content",
             }}
             alt=""

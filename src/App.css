@@ -72,3 +72,61 @@
 .text-right {
   text-align: right;
 }
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-main);
+  font-weight: bold;
+}
+
+h5,
+h6,
+p {
+  color: var(--color-dark);
+}
+
+a,
+a.active,
+.social-icon {
+  color: var(--color-dark) !important;
+  transition: 0.2s;
+}
+a:hover,
+a:focus,
+.social-icon:hover,
+.social-icon:focus,
+#footer .social-icon:hover,
+#footer .social-icon:focus {
+  color: var(--color-main) !important;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#footer .social-icon,
+#footer p {
+  color: white !important;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+.btn {
+  border-radius: 2em;
+  padding: 0.3em 1.8em;
+  margin: 0.3em 0.6em;
+
+  background-color: var(--color-main);
+  border-color: var(--color-main);
+}
+.btn:hover {
+  background-color: var(--color-dark);
+  border-color: var(--color-dark);
+}
+.btn:focus {
+  background-color: var(--color-dark);
+  border-color: var(--color-dark);
+}
+.btn:active {
+  background-color: var(--color-dark);
+  border-color: var(--color-dark);
+}
