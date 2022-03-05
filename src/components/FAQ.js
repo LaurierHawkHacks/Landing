@@ -18,7 +18,7 @@ const LOREM_IPSUM =
 const FAQ = () => {
   return (
     <div className="col-md-9 col-lg-8 col-xl-7 mx-auto">
-      <h1 class="text-center">Frequently Asked Questions</h1>
+      <h1 className="text-center">Frequently Asked Questions</h1>
       <Stack gap={3}>
         <FAQEntry title="So, what exactly is a hackathon?">
           {LOREM_IPSUM}
