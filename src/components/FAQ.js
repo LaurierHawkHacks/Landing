@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accordion, Container, Stack } from 'react-bootstrap';
+import { Accordion, Stack } from 'react-bootstrap';
 
 const FAQEntry = ({ title, children }) => {
   return (
