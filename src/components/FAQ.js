@@ -1,5 +1,5 @@
 import React from 'react';
-import { Accordion, Stack } from 'react-bootstrap';
+import { Accordion, Container, Stack } from 'react-bootstrap';
 
 const FAQEntry = ({ title, children }) => {
   return (
@@ -17,8 +17,8 @@ const LOREM_IPSUM =
 
 const FAQ = () => {
   return (
-    <>
-      <h1>Frequently Asked Questions</h1>
+    <div className="col-md-9 col-lg-8 col-xl-7 mx-auto">
+      <h1 class="text-center">Frequently Asked Questions</h1>
       <Stack gap={3}>
         <FAQEntry title="So, what exactly is a hackathon?">
           {LOREM_IPSUM}
@@ -39,7 +39,7 @@ const FAQ = () => {
           {LOREM_IPSUM}
         </FAQEntry>
       </Stack>
-    </>
+    </div>
   );
 };
 
