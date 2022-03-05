@@ -2,6 +2,7 @@
   --color-accent: #eddadd;
   --color-main: #0fa3b1;
   --color-dark: #2f4858;
+  --color-card: #e2fbfd;
   --gradient-top: #fde0df;
   --gradient-bottom: #c5e8f4;
 }
@@ -53,7 +54,11 @@
   /* background: var(--gradient-top);
   background: linear-gradient(from top, var(--gradient-top), var(--gradient-bottom)); */
   background: rgb(253, 224, 223);
-  background: linear-gradient(180deg, rgba(253, 224, 223, 1) 0%, rgba(197, 232, 244, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(253, 224, 223, 1) 0%,
+    rgba(197, 232, 244, 1) 100%
+  );
   height: max-content;
 }
 
@@ -114,19 +119,21 @@ a:focus,
   border-radius: 2em;
   padding: 0.3em 1.8em;
   margin: 0.3em 0.6em;
-
-  background-color: var(--color-main);
-  border-color: var(--color-main);
 }
-.btn:hover {
-  background-color: var(--color-dark);
-  border-color: var(--color-dark);
-}
-.btn:focus {
-  background-color: var(--color-dark);
-  border-color: var(--color-dark);
-}
+.btn,
+.btn:hover,
+.btn:focus,
 .btn:active {
   background-color: var(--color-dark);
   border-color: var(--color-dark);
+}
+.accordion-item {
+  border-color: var(--color-main);
+}
+.accordion-button:not(.collapsed) {
+  color: var(--color-dark);
+  background-color: var(--color-card);
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232f4858'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
