@@ -126,7 +126,6 @@ function App() {
 
       <Container id="faq" className="foreground">
         <div className="spacer" style={{ width: '100%', height: '13em' }} />
-        <h1>Frequently Asked Questions</h1>
         <FAQ />
       </Container>
 

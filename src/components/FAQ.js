@@ -17,26 +17,29 @@ const LOREM_IPSUM =
 
 const FAQ = () => {
   return (
-    <Stack gap={3}>
-      <FAQEntry title="So, what exactly is a hackathon?">
-        {LOREM_IPSUM}
-      </FAQEntry>
-      <FAQEntry title="Cool! When and where is HawkHacks happening?">
-        {LOREM_IPSUM}
-      </FAQEntry>
-      <FAQEntry title="That sounds good and all, but how much does it cost?">
-        {LOREM_IPSUM}
-      </FAQEntry>
-      <FAQEntry title="Who can attend? Do I need to be a skilled leet programmer?">
-        {LOREM_IPSUM}
-      </FAQEntry>
-      <FAQEntry title="Do I need a team?">{LOREM_IPSUM}</FAQEntry>
-      <FAQEntry title="Will there be any Food?">{LOREM_IPSUM}</FAQEntry>
-      <FAQEntry title="Are there any Prizes?">{LOREM_IPSUM}</FAQEntry>
-      <FAQEntry title="This is a cool FAQ section, but I still have questions!">
-        {LOREM_IPSUM}
-      </FAQEntry>
-    </Stack>
+    <>
+      <h1>Frequently Asked Questions</h1>
+      <Stack gap={3}>
+        <FAQEntry title="So, what exactly is a hackathon?">
+          {LOREM_IPSUM}
+        </FAQEntry>
+        <FAQEntry title="Cool! When and where is HawkHacks happening?">
+          {LOREM_IPSUM}
+        </FAQEntry>
+        <FAQEntry title="That sounds good and all, but how much does it cost?">
+          {LOREM_IPSUM}
+        </FAQEntry>
+        <FAQEntry title="Who can attend? Do I need to be a skilled leet programmer?">
+          {LOREM_IPSUM}
+        </FAQEntry>
+        <FAQEntry title="Do I need a team?">{LOREM_IPSUM}</FAQEntry>
+        <FAQEntry title="Will there be any Food?">{LOREM_IPSUM}</FAQEntry>
+        <FAQEntry title="Are there any Prizes?">{LOREM_IPSUM}</FAQEntry>
+        <FAQEntry title="This is a cool FAQ section, but I still have questions!">
+          {LOREM_IPSUM}
+        </FAQEntry>
+      </Stack>
+    </>
   );
 };
 
