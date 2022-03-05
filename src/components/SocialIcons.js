@@ -9,26 +9,47 @@ import { FaFacebookSquare as Facebook } from 'react-icons/fa';
 const SocialIcons = () => {
   return (
     <div className="d-flex align-items-center my-2">
-      <Facebook
-        className="mx-2 social-icon"
-        size="24px"
-        alt="Facebook social icon"
-      />
-      <Twitter
-        className="mx-2 social-icon"
-        size="24px"
-        alt="Twitter social icon"
-      />
-      <Instagram
-        className="mx-2 social-icon"
-        size="24px"
-        alt="Instagram social icon"
-      />
-      <Github
-        className="mx-2 social-icon"
-        size="24px"
-        alt="Github social icon"
-      />
+      <a href="https://hawkhacks.ca/" target="_blank" rel="noreferrer">
+        <Facebook
+          className="mx-2 social-icon"
+          size="24px"
+          alt="Facebook social icon"
+        />
+      </a>
+      <a
+        href="https://twitter.com/wluhawkhacks"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <Twitter
+          className="mx-2 social-icon"
+          size="24px"
+          alt="Twitter social icon"
+        />
+      </a>
+      <a
+        href="https://www.instagram.com/wluhawkhacks/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <Instagram
+          className="mx-2 social-icon"
+          size="24px"
+          alt="Instagram social icon"
+        />
+      </a>
+
+      <a
+        href="https://github.com/LaurierHawkHacks"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <Github
+          className="mx-2 social-icon"
+          size="24px"
+          alt="Github social icon"
+        />
+      </a>
     </div>
   );
 };
