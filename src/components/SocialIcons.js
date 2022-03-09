@@ -9,13 +9,13 @@ import { FaFacebookSquare as Facebook } from 'react-icons/fa';
 const SocialIcons = () => {
   return (
     <div className="d-flex align-items-center my-2">
-      <a href="https://hawkhacks.ca/" target="_blank" rel="noreferrer">
+      {/* <a href="https://hawkhacks.ca/" target="_blank" rel="noreferrer">
         <Facebook
           className="mx-2 social-icon"
           size="24px"
           alt="Facebook social icon"
         />
-      </a>
+      </a> */}
       <a
         href="https://twitter.com/wluhawkhacks"
         target="_blank"
