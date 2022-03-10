@@ -1,12 +1,9 @@
-import React from 'react';
-import { AiOutlineTwitter as Twitter, AiFillInstagram as Instagram, AiOutlineGithub as Github } from 'react-icons/ai';
-import { FaFacebookSquare as Facebook } from 'react-icons/fa';
+import React from "react";
 
-const  = ({  }) => {
-
+const x = () => {
     return (
-
+        <div />
     );
-}
+};
 
-export default ;
+export default x;
