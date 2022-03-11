@@ -1,3 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+# Change to "Disallow: " to index in search results.
+Disallow: /
