@@ -1,8 +1,6 @@
 # HawkHacks 2022 Landing
 
-Note: Please install ESLint and Prettier in your editor and enable format on save.
-In VSCode, you can do so by by setting `"editor.formatOnSave": true` in you `settings.json`.
-(<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>. Type "settings" and select "Preferences: Open Settings (JSON)")
+See the landing page in action [here](https://laurierhawkhacks.github.io/Landing/) (WIP).
 
 ⚠️ Before deploying to production, edit `public/robots.txt` to allow search engine indexing.
 
@@ -22,3 +20,13 @@ In VSCode, you can do so by by setting `"editor.formatOnSave": true` in you `set
     ```bash
     npm start
     ```
+
+Note: Please install ESLint and Prettier in your editor and enable format on save.
+In VSCode, you can do so by by setting `"editor.formatOnSave": true` in you `settings.json`.
+(<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>. Type "settings" and select "Preferences: Open Settings (JSON)")
+
+## Deploy to Github Pages
+
+```bash
+npm run deploy
+```
