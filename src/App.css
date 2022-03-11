@@ -131,7 +131,8 @@ a:focus,
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     transition: box-shadow 0.3s ease-in-out;
 }
-.accordion-item:first-of-type {
+.accordion-item:first-of-type,
+.accordion-item:first-of-type .accordion-button {
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
 }

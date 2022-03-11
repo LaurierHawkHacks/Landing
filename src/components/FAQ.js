@@ -6,35 +6,53 @@ const FAQEntry = ({ title, children }) => {
         <Accordion>
             <Accordion.Item eventKey="0">
                 <Accordion.Header>{title}</Accordion.Header>
-                <Accordion.Body>{children}</Accordion.Body>
+                <Accordion.Body style={{ whiteSpace: "pre-line" }}>{children}</Accordion.Body>
             </Accordion.Item>
         </Accordion>
     );
 };
-
-const LOREM_IPSUM =
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
 
 const FAQ = () => {
     return (
         <div className="col-md-9 col-lg-8 col-xl-7 mx-auto">
             <h1 className="text-center">Frequently Asked Questions</h1>
             <Stack gap={3}>
-                <FAQEntry title="🤔 So, what exactly is a hackathon?">{LOREM_IPSUM}</FAQEntry>
+                <FAQEntry title="🤔 So, what exactly is a hackathon?">
+                    A hackathon is made up of two sections - a social coding event where
+                    programmers, designers, and developers collaborate in teams to solve a problem.
+                    {"\n\n"}
+                    Alongside a tonne of networking events and seminars/presentations conducted by
+                    our industry and academic sponsors!
+                </FAQEntry>
                 <FAQEntry title="🕒 Cool! When and where is HawkHacks happening?">
-                    {LOREM_IPSUM}
+                    HawkHacks will take place for 36 hours, starting on January 7th, Friday @ 6PM
+                    EDT all the way till January 9th, Sunday @ 2PM EDT.
+                    {"\n\n"}
+                    HawkHacks is a hybrid event, meaning it will be both virtual AND in person! The
+                    virtual parts will be hosted and managed through Twitch, Discord, and ___!
+                    {"\n\n"}
+                    You can attend in person if you fill out the additional forms during the
+                    registration process! We are limited to a fixed number of people that are
+                    allowed to attend in person, so stay tuned for information on that!
                 </FAQEntry>
                 <FAQEntry title="💰 That sounds good and all, but how much does it cost?">
-                    {LOREM_IPSUM}
+                    Nothing! Free! Nada! Due to our amazing sponsors and support systems, attending
+                    and participating at HawkHacks is absolutely free!
                 </FAQEntry>
                 <FAQEntry title="💻 Who can attend? Do I need to be a skilled leet programmer?">
-                    {LOREM_IPSUM}
+                    (incomplete)
                 </FAQEntry>
-                <FAQEntry title="👪 Do I need a team?">{LOREM_IPSUM}</FAQEntry>
-                <FAQEntry title="🍔 Will there be any Food?">{LOREM_IPSUM}</FAQEntry>
-                <FAQEntry title="🏆 Are there any Prizes?">{LOREM_IPSUM}</FAQEntry>
+                <FAQEntry title="👪 Do I need a team?">
+                    You can work alone, or all the way up to a team of 2, 3, or 4 people! We highly
+                    encourage working in a team! If you don't have friends who are attending
+                    HawkHacks, you can find a team in our Discord OR attend our team finding event
+                    before the hackathon!
+                </FAQEntry>
+                <FAQEntry title="🍔 Will there be any Food?">yes. (if in person)</FAQEntry>
+                <FAQEntry title="🏆 Are there any Prizes?">yes. (stay tuned)</FAQEntry>
                 <FAQEntry title="📧 This is a cool FAQ section, but I still have questions!">
-                    {LOREM_IPSUM}
+                    No worries! Reach out to us at communications@hawkhacks.com or our social media,
+                    and we’ll get back to you as soon as our social media and email person wakes up!
                 </FAQEntry>
             </Stack>
         </div>
