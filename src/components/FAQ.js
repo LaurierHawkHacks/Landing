@@ -20,20 +20,20 @@ const FAQ = () => {
         <div className="col-md-9 col-lg-8 col-xl-7 mx-auto">
             <h1 className="text-center">Frequently Asked Questions</h1>
             <Stack gap={3}>
-                <FAQEntry title="So, what exactly is a hackathon?">{LOREM_IPSUM}</FAQEntry>
-                <FAQEntry title="Cool! When and where is HawkHacks happening?">
+                <FAQEntry title="🤔 So, what exactly is a hackathon?">{LOREM_IPSUM}</FAQEntry>
+                <FAQEntry title="🕒 Cool! When and where is HawkHacks happening?">
                     {LOREM_IPSUM}
                 </FAQEntry>
-                <FAQEntry title="That sounds good and all, but how much does it cost?">
+                <FAQEntry title="💰 That sounds good and all, but how much does it cost?">
                     {LOREM_IPSUM}
                 </FAQEntry>
-                <FAQEntry title="Who can attend? Do I need to be a skilled leet programmer?">
+                <FAQEntry title="💻 Who can attend? Do I need to be a skilled leet programmer?">
                     {LOREM_IPSUM}
                 </FAQEntry>
-                <FAQEntry title="Do I need a team?">{LOREM_IPSUM}</FAQEntry>
-                <FAQEntry title="Will there be any Food?">{LOREM_IPSUM}</FAQEntry>
-                <FAQEntry title="Are there any Prizes?">{LOREM_IPSUM}</FAQEntry>
-                <FAQEntry title="This is a cool FAQ section, but I still have questions!">
+                <FAQEntry title="👪 Do I need a team?">{LOREM_IPSUM}</FAQEntry>
+                <FAQEntry title="🍔 Will there be any Food?">{LOREM_IPSUM}</FAQEntry>
+                <FAQEntry title="🏆 Are there any Prizes?">{LOREM_IPSUM}</FAQEntry>
+                <FAQEntry title="📧 This is a cool FAQ section, but I still have questions!">
                     {LOREM_IPSUM}
                 </FAQEntry>
             </Stack>
