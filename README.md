@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Note: Please install ESLint and Prettier in your editor and enable format on save.
+In VSCode, you can do so by by setting `"editor.formatOnSave": true` in you `settings.json`.
+(<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>. Type "settings" and select "Preferences: Open Settings (JSON)")
 
 ## Available Scripts
 
