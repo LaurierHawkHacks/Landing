@@ -20,9 +20,7 @@ const FAQ = () => {
         <div className="col-md-9 col-lg-8 col-xl-7 mx-auto">
             <h1 className="text-center">Frequently Asked Questions</h1>
             <Stack gap={3}>
-                <FAQEntry title="So, what exactly is a hackathon?">
-                    {LOREM_IPSUM}
-                </FAQEntry>
+                <FAQEntry title="So, what exactly is a hackathon?">{LOREM_IPSUM}</FAQEntry>
                 <FAQEntry title="Cool! When and where is HawkHacks happening?">
                     {LOREM_IPSUM}
                 </FAQEntry>

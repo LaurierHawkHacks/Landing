@@ -1,101 +1,97 @@
 :root {
-  --color-accent: #eddadd;
-  --color-main: #0fa3b1;
-  --color-dark: #2f4858;
-  --gradient-top: #fde0df;
-  --gradient-bottom: #c5e8f4;
+    --color-accent: #eddadd;
+    --color-main: #0fa3b1;
+    --color-dark: #2f4858;
+    --gradient-top: #fde0df;
+    --gradient-bottom: #c5e8f4;
 }
 
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height: 40vmin;
+    pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .bg-hh-accent {
-  background-color: var(--color-accent);
+    background-color: var(--color-accent);
 }
 
 .bg-hh-gradient {
-  /* background: var(--gradient-top);
+    /* background: var(--gradient-top);
   background: linear-gradient(from top, var(--gradient-top), var(--gradient-bottom)); */
-  background: rgb(253, 224, 223);
-  background: linear-gradient(
-    180deg,
-    rgba(253, 224, 223, 1) 0%,
-    rgba(197, 232, 244, 1) 100%
-  );
-  height: max-content;
+    background: rgb(253, 224, 223);
+    background: linear-gradient(180deg, rgba(253, 224, 223, 1) 0%, rgba(197, 232, 244, 1) 100%);
+    height: max-content;
 }
 
 .foreground {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
 .color-dark {
-  color: var(--color-dark);
+    color: var(--color-dark);
 }
 .color-main {
-  color: var(--color-main);
+    color: var(--color-main);
 }
 
 .text-right {
-  text-align: right;
+    text-align: right;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  color: var(--color-main);
-  font-weight: bold;
+    color: var(--color-main);
+    font-weight: bold;
 }
 
 h5,
 h6,
 p {
-  color: var(--color-dark);
+    color: var(--color-dark);
 }
 
 a,
 a.active,
 .social-icon {
-  color: var(--color-dark) !important;
-  transition: 0.2s;
+    color: var(--color-dark) !important;
+    transition: 0.2s;
 }
 a:hover,
 a:focus,
@@ -103,42 +99,54 @@ a:focus,
 .social-icon:focus,
 #footer .social-icon:hover,
 #footer .social-icon:focus {
-  color: var(--color-main) !important;
-  cursor: pointer;
-  transition: 0.3s;
+    color: var(--color-main) !important;
+    cursor: pointer;
+    transition: 0.3s;
 }
 #footer .social-icon,
 #footer p {
-  color: white !important;
-  transition: 0.2s;
-  font-weight: bold;
+    color: white !important;
+    transition: 0.2s;
+    font-weight: bold;
 }
 
 .btn {
-  border-radius: 2em;
-  padding: 0.3em 1.8em;
-  margin: 0.3em 0.6em;
+    border-radius: 2em;
+    padding: 0.3em 1.8em;
+    margin: 0.3em 0.6em;
 }
 .btn,
 .btn:hover,
 .btn:focus,
 .btn:active {
-  background-color: var(--color-dark);
-  border-color: var(--color-dark);
-}
-.accordion-item {
-  border-color: var(--color-main);
-  background-color: rgba(255, 255, 255, 0.9);
-}
-.accordion-button:not(.collapsed) {
-  color: var(--color-dark);
-  background-color: rgba(241, 253, 254, 0.9);
-}
-.accordion-button:not(.collapsed)::after {
-  /* I copy-pasted the expanded background image and changed the fill color */
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232f4858'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-color: var(--color-dark);
+    border-color: var(--color-dark);
 }
 
+.accordion-item {
+    border-color: var(--color-main);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.accordion-item:hover {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.accordion-item:first-of-type {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.accordion-item:last-of-type {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
 .accordion-button {
-  background-color: transparent;
+    background-color: transparent;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--color-dark);
+    background-color: rgba(241, 253, 254, 0.9);
+}
+.accordion-button:not(.collapsed)::after {
+    /* I copy-pasted the expanded background image and changed the fill color */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232f4858'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
