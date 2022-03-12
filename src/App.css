@@ -124,8 +124,10 @@ a:focus,
 }
 
 .accordion-item {
-    border-color: var(--color-main);
+    border: 1px solid var(--color-main) !important;
     background-color: rgba(255, 255, 255, 0.9);
+    border-bottom-left-radius: 0.5rem !important;
+    border-bottom-right-radius: 0.5rem !important;
 }
 .accordion-item:hover {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
@@ -135,10 +137,6 @@ a:focus,
 .accordion-button {
     border-top-left-radius: 0.5rem !important;
     border-top-right-radius: 0.5rem !important;
-}
-.accordion-item {
-    border-bottom-left-radius: 0.5rem !important;
-    border-bottom-right-radius: 0.5rem !important;
 }
 .accordion-button {
     background-color: transparent;
