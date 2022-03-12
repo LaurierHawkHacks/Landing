@@ -131,14 +131,14 @@ a:focus,
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     transition: box-shadow 0.3s ease-in-out;
 }
-.accordion-item:first-of-type,
-.accordion-item:first-of-type .accordion-button {
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+.accordion-item,
+.accordion-button {
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important;
 }
-.accordion-item:last-of-type {
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
+.accordion-item {
+    border-bottom-left-radius: 0.5rem !important;
+    border-bottom-right-radius: 0.5rem !important;
 }
 .accordion-button {
     background-color: transparent;
