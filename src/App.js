@@ -14,16 +14,22 @@ const GradientBackground = Styled.div`
 `;
 
 function App() {
-    return (
-        <GradientBackground className="bg-hh-gradient">
-            <Illustration src_name="illustration_1" top="2em" />
-            <Illustration src_name="illustration_2" top="40em" />
-            <Illustration src_name="illustration_3" top="110em" />
-            <Illustration
-                src_name="illustration_4"
-                top="140em"
-                bottom="0"
-                width="100%"
+  return (
+    <GradientBackground className="bg-hh-gradient">
+      <Illustration src_name="illustration_1" top="2em" />
+      <Illustration src_name="illustration_2" top="40em" />
+      <Illustration src_name="illustration_3" top="110em" />
+      <Illustration src_name="illustration_4" top="173.5em" width="100%" maxWidth="102em" />
+
+      <Navbar id="header" expand="lg" sticky="top" className="bg-hh-accent">
+        <Container className="mt-4 mb-3">
+          <Navbar.Brand href="#">
+            <img
+              className="mx-2"
+              src={Icon}
+              width="50"
+              height="50"
+              alt="HawkHacks Icon"
             />
 
             <Navbar id="header" expand="lg" sticky="top" className="bg-hh-accent">
@@ -148,23 +154,23 @@ function App() {
 
             <Container id="team" className="foreground"></Container>
 
-            <Container id="footer" className="foreground">
-                <div className="spacer" style={{ width: "100%", height: "13em" }} />
-                <div className="spacer" style={{ width: "100%", height: "30em" }} />
-                <Row>
-                    <Col className="d-flex align-items-center justify-content-start">
-                        <p className="my-0">Code of Conduct</p>
-                    </Col>
-                    <Col className="d-flex align-items-center justify-content-center">
-                        <p className="my-0">&#169; Copyright 2021 HawkHacks</p>
-                    </Col>
-                    <Col className="d-flex align-items-center justify-content-end">
-                        <SocialIcons />
-                    </Col>
-                </Row>
-            </Container>
-        </GradientBackground>
-    );
+      <Container id="footer" className="foreground" style={{paddingBottom: '2em'}}>
+        <div className="spacer" style={{ width: '100%', height: '13em' }} />
+        <div className="spacer" style={{ width: '100%', height: '30em' }} />
+        <Row>
+          <Col className="d-flex align-items-center justify-content-start">
+            <p className="my-0">Code of Conduct</p>
+          </Col>
+          <Col className="d-flex align-items-center justify-content-center">
+            <p className="my-0">&#169; Copyright {new Date().getFullYear()} HawkHacks</p>
+          </Col>
+          <Col className="d-flex align-items-center justify-content-end">
+            <SocialIcons />
+          </Col>
+        </Row>
+      </Container>
+    </GradientBackground>
+  );
 }
 
 export default App;
