@@ -4,10 +4,11 @@ import illustration_2 from "../assets/illustration_2.svg";
 import illustration_3 from "../assets/illustration_3.svg";
 import illustration_4 from "../assets/illustration_4.svg";
 
-const Illustration = ({ src_name, position='absolute', top=undefined, bottom=undefined, width='max-content', maxWidth='100%' }) => {
+const Illustration = ({ src_name, position='absolute', top=undefined, bottom=undefined, width='max-content', maxWidth='100%', id=undefined }) => {
   return (
     <div
       className="d-flex flex-column align-items-center bg-img-container"
+      id={id}
       style={{
         width: '100%',
         maxHeight: 'max-content',

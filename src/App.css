@@ -6,6 +6,55 @@
     --gradient-bottom: #c5e8f4;
 }
 
+html, body {
+    height: 100%;
+}
+
+.page-wrap {
+    min-height: 100%;
+}
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+.site-footer, .page-wrap:after {
+    width: 100%;
+}
+.site-footer-content {
+    flex-direction: row;
+}
+@media screen and (max-width: 540px) {
+    .site-footer-content {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 576px) {
+    .site-footer {
+        background-color: #99D4D6;
+    }
+}
+@media screen and (min-width: 577px) {
+    #illustration-footer {
+        top: 5em;
+    }
+    .site-footer-content {
+        position: relative;
+        top: 2em;
+    }
+}
+@media screen and (min-width: 992px) {
+    .site-footer-content {
+        position: inherit;
+        top: 1em;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .site-footer-content {
+        position: inherit;
+        top: 0em;
+    }
+}
+
 .App {
     text-align: center;
 }

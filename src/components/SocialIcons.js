@@ -9,7 +9,7 @@ import { FaFacebookSquare as Facebook } from 'react-icons/fa';
 
 const SocialIcons = () => {
     return (
-        <div className="d-flex align-items-center my-2">
+        <div className="d-flex align-items-center my-2 px-0 w-auto">
             {/* <a href="https://hawkhacks.ca/" target="_blank" rel="noreferrer">
         <Facebook
           className="mx-2 social-icon"
