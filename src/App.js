@@ -16,61 +16,50 @@ const GradientBackground = Styled.div`
 function App() {
   return (
     <GradientBackground className="bg-hh-gradient">
-      <Illustration src_name="illustration_1" top="2em" />
-      <Illustration src_name="illustration_2" top="40em" />
-      <Illustration src_name="illustration_3" top="110em" />
-      <Illustration src_name="illustration_4" top="173.5em" width="100%" maxWidth="102em" />
+        <Illustration src_name="illustration_1" top="2em" />
+        <Illustration src_name="illustration_2" top="40em" />
+        <Illustration src_name="illustration_3" top="110em" />
+        <Illustration src_name="illustration_4" top="173.5em" width="100%" maxWidth="102em" />
 
-      <Navbar id="header" expand="lg" sticky="top" className="bg-hh-accent">
-        <Container className="mt-4 mb-3">
-          <Navbar.Brand href="#">
-            <img
-              className="mx-2"
-              src={Icon}
-              width="50"
-              height="50"
-              alt="HawkHacks Icon"
-            />
-
-            <Navbar id="header" expand="lg" sticky="top" className="bg-hh-accent">
-                <Container className="mt-4 mb-3">
-                    <Navbar.Brand href="#">
-                        <img
-                            className="mx-2"
-                            src={Icon}
-                            width="50"
-                            height="50"
-                            alt="HawkHacks Icon"
-                        />
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbar-nav" />
-                    <Navbar.Collapse id="navbar-nav">
-                        <Nav className="nav-main me-auto">
-                            <Nav.Link href="#about" className="mx-1">
-                                About
-                            </Nav.Link>
-                            <Nav.Link href="#pitch" className="mx-1">
-                                Pitch to students (rename)
-                            </Nav.Link>
-                            <Nav.Link href="#faq" className="mx-1">
-                                FAQ
-                            </Nav.Link>
-                            <Nav.Link href="#sponsors" className="mx-1">
-                                Sponsors
-                            </Nav.Link>
-                            <Nav.Link href="#team" className="mx-1">
-                                Meet The Team
-                            </Nav.Link>
-                        </Nav>
-                        <Nav className="nav-right d-flex">
-                            <Nav.Link href="#apply" className="mx-1">
-                                Apply Now
-                            </Nav.Link>
-                            <SocialIcons />
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
+        <Navbar id="header" expand="lg" sticky="top" className="bg-hh-accent">
+            <Container className="mt-4 mb-3">
+                <Navbar.Brand href="#">
+                    <img
+                        className="mx-2"
+                        src={Icon}
+                        width="50"
+                        height="50"
+                        alt="HawkHacks Icon"
+                    />
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="navbar-nav" />
+                <Navbar.Collapse id="navbar-nav">
+                    <Nav className="nav-main me-auto">
+                        <Nav.Link href="#about" className="mx-1">
+                            About
+                        </Nav.Link>
+                        <Nav.Link href="#pitch" className="mx-1">
+                            Pitch to students (rename)
+                        </Nav.Link>
+                        <Nav.Link href="#faq" className="mx-1">
+                            FAQ
+                        </Nav.Link>
+                        <Nav.Link href="#sponsors" className="mx-1">
+                            Sponsors
+                        </Nav.Link>
+                        <Nav.Link href="#team" className="mx-1">
+                            Meet The Team
+                        </Nav.Link>
+                    </Nav>
+                    <Nav className="nav-right d-flex">
+                        <Nav.Link href="#apply" className="mx-1">
+                            Apply Now
+                        </Nav.Link>
+                        <SocialIcons />
+                    </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
 
             <Container
                 id="home"
