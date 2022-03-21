@@ -152,7 +152,14 @@ function App() {
                 <Illustration src_name="illustration_4" width="100%" maxWidth="102em" position="relative" id="illustration-footer" />
                 <div id="footer" className="foreground site-footer m-0 w-100 d-flex justify-content-center">
                     <Row className="site-footer-content d-flex justify-content-center align-items-center">
-                        <p className="my-1 w-auto">Code of Conduct</p>
+                        <a 
+                            className="my-1 w-auto" 
+                            href={"https://static.mlh.io/docs/mlh-code-of-conduct.pdf"} 
+                            target="_blank" rel="noreferrer"
+                            style={{ textDecoration: "none", color: "white" }}
+                        >
+                            Code of Conduct
+                        </a>
                         <p className="my-1 w-auto d-flex flex-grow-1 justify-content-center">
                             &#169; Copyright {new Date().getFullYear()} HawkHacks
                         </p>
