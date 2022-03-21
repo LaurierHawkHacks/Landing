@@ -4,6 +4,9 @@ import {
   AiFillInstagram as Instagram,
   AiOutlineGithub as Github,
 } from 'react-icons/ai';
+
+import { SiDevpost as Devpost } from 'react-icons/si';
+
 // eslint-disable-next-line
 import { FaFacebookSquare as Facebook } from 'react-icons/fa';
 
@@ -49,6 +52,18 @@ const SocialIcons = () => {
                     className="mx-2 social-icon"
                     size="24px"
                     alt="Github social icon"
+                />
+            </a>
+
+            <a
+                href="https://hawkhacks.devpost.com"
+                target="_blank"
+                rel="noreferrer"
+            >
+                <Devpost
+                    className="mx-2 social-icon"
+                    size="24px"
+                    alt="Devpost social icon"
                 />
             </a>
         </div>
