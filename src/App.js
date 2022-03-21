@@ -1,6 +1,6 @@
 import React from "react";
 import Styled from "styled-components";
-import { Button, Col, Container, Nav, Navbar, Row } from "react-bootstrap";
+import { Button, Container, Nav, Navbar, Row } from "react-bootstrap";
 
 import Illustration from "./components/Illustration";
 import SocialIcons from "./components/SocialIcons";
@@ -150,7 +150,7 @@ function App() {
 
             <div>
                 <Illustration src_name="illustration_4" width="100%" maxWidth="102em" position="relative" id="illustration-footer" />
-                <Container id="footer" className="foreground site-footer" style={{paddingBottom: '2em'}}>
+                <div id="footer" className="foreground site-footer m-0 w-100 d-flex justify-content-center">
                     <Row className="site-footer-content d-flex justify-content-center align-items-center">
                         <p className="my-1 w-auto">Code of Conduct</p>
                         <p className="my-1 w-auto d-flex flex-grow-1 justify-content-center">
@@ -158,7 +158,7 @@ function App() {
                         </p>
                         <SocialIcons />
                     </Row>
-                </Container>
+                </div>
             </div>
         </GradientBackground>
     </>

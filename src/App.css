@@ -21,7 +21,11 @@ html, body {
     width: 100%;
 }
 .site-footer-content {
+    background-color: #99D4D6;
     flex-direction: row;
+    width: 100%;
+    max-width: 1632px;
+    min-height: 64px;
 }
 @media screen and (max-width: 540px) {
     .site-footer-content {
@@ -34,24 +38,18 @@ html, body {
     }
 }
 @media screen and (min-width: 577px) {
-    #illustration-footer {
-        top: 5em;
-    }
     .site-footer-content {
-        position: relative;
-        top: 2em;
+        padding: 0 1em;
     }
 }
 @media screen and (min-width: 992px) {
     .site-footer-content {
         position: inherit;
-        top: 1em;
     }
 }
 @media screen and (min-width: 1400px) {
     .site-footer-content {
         position: inherit;
-        top: 0em;
     }
 }
 
