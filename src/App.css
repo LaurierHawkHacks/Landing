@@ -136,7 +136,7 @@ a:focus,
     transition: 0.3s;
 }
 #footer .social-icon,
-#footer p {
+#footer p, a{
     color: white !important;
     transition: 0.2s;
     font-weight: bold;
