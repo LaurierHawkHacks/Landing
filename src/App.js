@@ -78,10 +78,10 @@ function App() {
                     <h1 className="font-weight-bold">2022</h1>
                     <h5>put some fun slogan here</h5>
                     <p>Laurier | On-Campus and Virtual</p>
-                    <div id="home-buttons" className="d-flex flex-column flex-sm-row">
-                        <Button>Apply</Button>
-                        <Button>Sponsor</Button>
-                        <Button>Events</Button>
+                    <div id="home-buttons" className="d-flex flex-column flex-sm-row w-100 px-4 justify-content-center">
+                        <Button className="d-flex flex-grow-1 flex-sm-grow-0 justify-content-center my-2 py-2">Apply</Button>
+                        <Button className="d-flex flex-grow-1 flex-sm-grow-0 justify-content-center my-2 py-2">Sponsor</Button>
+                        <Button className="d-flex flex-grow-1 flex-sm-grow-0 justify-content-center my-2 py-2">Events</Button>
                     </div>
                 </Container>
 
