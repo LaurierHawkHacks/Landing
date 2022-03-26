@@ -1,0 +1,58 @@
+{
+    "bronze": [
+        {
+            "company": "Balsamiq",
+            "logo": "balsamiq.png",
+            "url": "https://balsamiq.com/"
+        },
+        {
+            "company": "Linode",
+            "logo": "linode.png",
+            "url": "https://www.linode.com/"
+        },
+        {
+            "company": "Wolfram",
+            "logo": "",
+            "url": "https://www.wolfram.com/wolfram-one/"
+        },
+        {
+            "company": "1Password",
+            "logo": "1Password.png",
+            "url": "https://1password.com/"
+        },
+        {
+            "company": "Echo3D",
+            "logo": "echo3D.png",
+            "url": "https://www.echo3d.co/"
+        }
+    ],
+    "silver": [
+        {
+            "company": "Digital Ocean",
+            "logo": "",
+            "url": "https://www.digitalocean.com/"
+        },
+        {
+            "company": "System-on-Chip Technologies",
+            "logo": "",
+            "url": "https://www.soctechnologies.com/"
+        },
+        {
+            "company": "MoneyClip",
+            "logo": "",
+            "url": "https://moneyclip.io/"
+        },
+        {
+            "company": "Taskade",
+            "logo": "",
+            "url": "https://www.taskade.com/"
+        }
+    ],
+    "gold": [
+        {
+            "company": "Distributed Computer Labs (DCL)",
+            "logo": "",
+            "url": "https://distributed.computer/"
+        }
+    ]
+}
