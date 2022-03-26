@@ -10,7 +10,6 @@ import Icon from "./assets/icon.svg";
 
 import "./App.css";
 
-
 const GradientBackground = Styled.div`
 `;
 
@@ -90,7 +89,7 @@ function App() {
                     <div className="spacer" style={{ width: "100%", height: "13em" }} />
                     <div className="row">
                         <div className="col-md">
-                            <h1>About HawkHacks</h1>
+                            <h2>About HawkHacks</h2>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -110,7 +109,7 @@ function App() {
                     <div className="row">
                         <div className="col" />
                         <div className="col-md text-right">
-                            <h1>Pitch to students (rename)</h1>
+                            <h2>Laurier's First Large-Scale Hackathon</h2>
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -131,9 +130,9 @@ function App() {
 
                 <Container id="sponsors" className="foreground">
                     <div className="spacer" style={{ width: "100%", height: "13em" }} />
-                    <h1>Our Sponsors</h1>
+                    <h2>Our Sponsors</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        Event's like these aren't possible by the mountain of support provided by our sponsors.
                         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                         minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                         aliquip ex ea commodo consequat. Duis aute irure dolor in
@@ -164,7 +163,7 @@ function App() {
                             Code of Conduct
                         </a>
                         <p className="my-1 w-auto d-flex flex-grow-1 justify-content-center">
-                            &#169; Copyright {new Date().getFullYear()} HawkHacks
+                            &#169; Copyright {new Date().getFullYear()}, HawkHacks
                         </p>
                         <SocialIcons />
                     </Row>
