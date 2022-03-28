@@ -37,7 +37,21 @@ const SponsorCardPaging = Styled(Pagination)`
     `;
 
 const SponsorCardButton = Styled(Button)`
-    
+    margin-left: 0;
+    margin-right: 0;
+    align-self: flex-start;
+
+    background-color: rgba(0, 0, 0, 0.0);
+    border-color: rgba(0, 0, 0, 0.0);
+    text-decoration: underline;
+    color: #0FA3B1;
+
+    :hover {
+        background-color: rgba(0, 0, 0, 0.0);
+        border-color: rgba(0, 0, 0, 0.0);
+        text-decoration: underline;
+        color: var(--color-dark);
+    }
 `;
 
 const SponsorCardContent = Styled.p`
