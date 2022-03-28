@@ -6,6 +6,7 @@ import Illustration from "./components/Illustration";
 import SocialIcons from "./components/SocialIcons";
 import FAQ from "./components/FAQ";
 import SponsorTiersDisplay from "./components/sponsors/SponsorTiersDisplay";
+import SponsorCarousel from "./components/sponsors/SponsorCarousel";
 import Icon from "./assets/icon.svg";
 
 import "./App.css";
@@ -140,7 +141,7 @@ function App() {
                         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                         culpa qui officia deserunt mollit anim id est laborum.
                     </p>
-
+                    <SponsorCarousel/>
                     <SponsorTiersDisplay/>
                 </Container>
 
