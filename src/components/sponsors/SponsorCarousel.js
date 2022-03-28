@@ -33,7 +33,17 @@ const SponsorCardPaging = Styled(Pagination)`
     margin-bottom: 1em;    
     display: flex;
     justify-content: center;
+
     `;
+
+const SponsorCardButton = Styled(Button)`
+    
+`;
+
+const SponsorCardContent = Styled.p`
+    margin-left: 2em;
+    margin-right: 2em;
+`;
 function SponsorCarousel(){
     const [activeCardIndex, setActiveCardIndex] = React.useState(0);
 
@@ -55,11 +65,11 @@ function SponsorCarousel(){
             <SponsorCard>
                 {sponsorData.gold[activeCardIndex].logo ?
                     <SponsorCardImage src={sponsorData.gold[activeCardIndex].logo} alt={sponsorData.gold[activeCardIndex].company} /> 
-                    : <SponsorCardImage src={placeholder} alt={sponsorData.gold[activeCardIndex].name} />
+                    : <SponsorCardImage src={placeholder} />
                 }
                 {/* <h3>{sponsorData.gold[activeCardIndex].company}</h3> */}
-                <p>{sponsorData.gold[activeCardIndex].description}</p>
-                <Button>Learn more</Button>
+                <SponsorCardContent>{sponsorData.gold[activeCardIndex].description}</SponsorCardContent>
+                <SponsorCardButton>Learn more</SponsorCardButton>
             </SponsorCard>
             <SponsorCardPaging>
                 <Pagination.Prev id={'prev'} onClick={handleClick}/>
