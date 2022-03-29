@@ -6,6 +6,7 @@ import {
 } from 'react-icons/ai';
 
 import { SiDevpost as Devpost } from 'react-icons/si';
+import { MdEmail as Email } from 'react-icons/md';
 
 // eslint-disable-next-line
 import { FaFacebookSquare as Facebook } from 'react-icons/fa';
@@ -14,12 +15,25 @@ const SocialIcons = () => {
     return (
         <div className="d-flex align-items-center my-2 px-0 w-auto">
             {/* <a href="https://hawkhacks.ca/" target="_blank" rel="noreferrer">
-        <Facebook
-          className="mx-2 social-icon"
-          size="24px"
-          alt="Facebook social icon"
-        />
-      </a> */}
+            <Facebook
+            className="mx-2 social-icon"
+            size="24px"
+            alt="Facebook social icon"
+            />
+                </a> */}
+
+            <a
+                href="https://www.instagram.com/wluhawkhacks/"
+                target="_blank"
+                rel="noreferrer"
+            >
+                <Instagram
+                    className="mx-2 social-icon"
+                    size="24px"
+                    alt="Instagram social icon"
+                />
+            </a>
+
             <a
                 href="https://twitter.com/wluhawkhacks"
                 target="_blank"
@@ -31,15 +45,16 @@ const SocialIcons = () => {
                     alt="Twitter social icon"
                 />
             </a>
-            <a
-                href="https://www.instagram.com/wluhawkhacks/"
+
+            <a 
+                href="mailto:communications@hawkhacks.ca"
                 target="_blank"
                 rel="noreferrer"
             >
-                <Instagram
+                <Email
                     className="mx-2 social-icon"
                     size="24px"
-                    alt="Instagram social icon"
+                    alt="Email social icon"
                 />
             </a>
 
