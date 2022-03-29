@@ -204,3 +204,26 @@ a:focus,
     background-color: #0fa3b1;
     border-color: #0fa3b1;
 }
+
+/* Using Grid display for the "Our Sponsors" title/subtitle with the bird. Because I wanted to leard grid layout :)*/
+.our-sponsors {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 0.2fr 1.8fr;
+    gap: 10px 10px;
+}
+.sponsors-bird {
+    width: 100%;
+    grid-area: 1 / 2 / 3 / 3;
+    justify-self: center;
+}
+.sponsors-title {
+    grid-area: 1 / 1 / 1 / 1;
+}
+.sponsors-subtitle {
+    grid-area: 2 / 1 / 2 / 1;
+}

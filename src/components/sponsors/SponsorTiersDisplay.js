@@ -35,7 +35,7 @@ const BronzeSponsorLogo = Styled.img`
 `;
 
 function SponsorTiersDisplay() {
-
+// TODO: Fix the logos to be found using the sponsorData.json file.
     return (
         <Container>
             <SponsorSection>
