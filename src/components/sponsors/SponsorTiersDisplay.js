@@ -2,29 +2,30 @@ import React from 'react';
 import {Container, OverlayTrigger, Tooltip} from 'react-bootstrap';
 import Styled from 'styled-components';
 import sponsorData from '../../sponsorData.json';
+import placeholder from '../../assets/placeholder_image.svg';
 
 const SponsorSection = Styled.div`
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-left: 3em;
-    margin-right: 3em;
+
 
 `;
 
-const GoldSponsorLogo = Styled.div`
-    margin-right: 1em;
-    margin-left: 1em;
+const GoldSponsorLogo = Styled.img`
+    max-width: 300px;
+    margin: 0.5em 0.5em 0.5em 0.5em;
 `;
 
-const SilverSponsorLogo = Styled.div`
-    margin-right: 1em;
-    margin-left: 1em;
+const SilverSponsorLogo = Styled.img`
+    max-width: 150px;    
+    margin: 0.5em 0.5em 0.5em 0.5em;
 `;
-const BronzeSponsorLogo = Styled.div`
-    margin-right: 1em;
-    margin-left: 1em;
+const BronzeSponsorLogo = Styled.img`
+    max-width: 100px;
+    margin: 0.5em 0.5em 0.5em 0.5em;
 `;
 
 function SponsorTiersDisplay() {
@@ -43,10 +44,9 @@ function SponsorTiersDisplay() {
                                 </Tooltip>
                             }
                             >
-                                <GoldSponsorLogo >
-                                    <p>{sponsor.Company}</p>
-                                    <img src={sponsor.logo} alt={sponsor.company} />
-                                </GoldSponsorLogo>
+                                {sponsor.logo 
+                                ? <GoldSponsorLogo src={sponsor.logo} alt={sponsor.company}/> 
+                                : <GoldSponsorLogo src={placeholder} alt={sponsor.company}/>}
                             </OverlayTrigger>
                         )}
                     )}
@@ -65,17 +65,15 @@ function SponsorTiersDisplay() {
                                 </Tooltip>
                             }
                             >
-                                <SilverSponsorLogo>
-                                    <img src={sponsor.logo} alt={sponsor.company} />
-                                </SilverSponsorLogo>
+                                {sponsor.logo 
+                                ? <SilverSponsorLogo src={sponsor.logo} alt={sponsor.company}/> 
+                                : <SilverSponsorLogo src={placeholder} alt={sponsor.company}/>}
                             </OverlayTrigger>
                         )}
                     )}
                 
             </SponsorSection>
             <SponsorSection>
-                
-                    
                     {sponsorData.bronze.map((sponsor, index) => {
                         return (
                             <OverlayTrigger 
@@ -87,9 +85,9 @@ function SponsorTiersDisplay() {
                                 </Tooltip>
                             }
                             >
-                                <BronzeSponsorLogo key={index}>
-                                    <img src={sponsor.logo} alt={sponsor.company} />
-                                </BronzeSponsorLogo>
+                                {sponsor.logo 
+                                ? <BronzeSponsorLogo src={sponsor.logo} alt={sponsor.company}/> 
+                                : <BronzeSponsorLogo src={placeholder} alt={sponsor.company}/>}
                             </OverlayTrigger>
                         )}
                     )}

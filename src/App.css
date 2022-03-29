@@ -195,6 +195,11 @@ a:focus,
     border: 1px solid #0fa3b1;
 }
 
+.page-link:hover {
+    background: rgba(10, 105, 114, 1);
+    border: 1px solid #0fa3b1;
+}
+
 .page-item.active .page-link {
     background-color: #0fa3b1;
     border-color: #0fa3b1;
