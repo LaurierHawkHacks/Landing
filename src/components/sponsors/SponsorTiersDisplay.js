@@ -5,26 +5,32 @@ import sponsorData from '../../sponsorData.json';
 import placeholder from '../../assets/placeholder_image.svg';
 
 const SponsorSection = Styled.div`
+    width: 100%;
+    height: auto;
+
+    margin-top: 2em;
+    margin-bottom: 2em;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 
-
 `;
 
 const GoldSponsorLogo = Styled.img`
-    max-width: 300px;
+    width: 100%;
+    max-width: 400px;
     margin: 0.5em 0.5em 0.5em 0.5em;
 `;
 
 const SilverSponsorLogo = Styled.img`
-    max-width: 150px;    
+    max-width: 200px;    
     margin: 0.5em 0.5em 0.5em 0.5em;
 `;
 const BronzeSponsorLogo = Styled.img`
-    max-width: 100px;
+    max-width: 150px;
     margin: 0.5em 0.5em 0.5em 0.5em;
 `;
 
@@ -49,7 +55,7 @@ function SponsorTiersDisplay() {
                                 : <GoldSponsorLogo src={placeholder} alt={sponsor.company}/>}
                             </OverlayTrigger>
                         )}
-                    )}
+                        )}
                 
             </SponsorSection>
             <SponsorSection>
