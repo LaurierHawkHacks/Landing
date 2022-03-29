@@ -10,8 +10,6 @@ const SponsorCard = Styled.div`
     align-items: center;
     justify-content: center;
 
-    margin-left: 1em;
-    margin-right: 1em;
     margin-bottom: 1em;
     margin-top: 1em;
     padding: 1em;
@@ -19,6 +17,25 @@ const SponsorCard = Styled.div`
     background: rgba(252, 252, 252, 0.3);
     border-radius: 20px;
     border: 1px solid #0FA3B1;
+
+    @media (min-width: 1200px) {
+        width: 58.33333%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (min-width: 992px) {
+        width: 66.666666%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (min-width: 768px) {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 `;
 
 const SponsorCardImage = Styled.img`
