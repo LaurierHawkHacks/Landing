@@ -1,6 +1,6 @@
 import React from "react";
 import Styled from "styled-components";
-import { Button, Container, Nav, Navbar, Row } from "react-bootstrap";
+import { Button, Container, Nav, Navbar, Row, InputGroup, FormControl } from "react-bootstrap";
 
 import Illustration from "./components/Illustration";
 import SocialIcons from "./components/SocialIcons";
@@ -9,6 +9,7 @@ import SponsorTiersDisplay from "./components/sponsors/SponsorTiersDisplay";
 import SponsorCarousel from "./components/sponsors/SponsorCarousel";
 import Icon from "./assets/icon.svg";
 import SponsorHawk from "./assets/sponsor_hawk.svg";
+import AboutIllustration from "./assets/illustration_about.svg";
 
 import "./App.css";
 
@@ -41,11 +42,14 @@ function App() {
                                 <Nav.Link href="#about" className="mx-1">
                                     About
                                 </Nav.Link>
-                                <Nav.Link href="#pitch" className="mx-1">
-                                    Pitch to students (rename)
+                                <Nav.Link href="#why-laurier" className="mx-1">
+                                    Why us? (rename?)
                                 </Nav.Link>
                                 <Nav.Link href="#faq" className="mx-1">
                                     FAQ
+                                </Nav.Link>
+                                <Nav.Link href="#newsletter" className="mx-1">
+                                    Newsletter
                                 </Nav.Link>
                                 <Nav.Link href="#sponsors" className="mx-1">
                                     Sponsors
@@ -88,46 +92,102 @@ function App() {
                 </Container>
 
                 <Container id="about" className="foreground">
+                    
+
                     <div className="spacer" style={{ width: "100%", height: "13em" }} />
                     <div className="row">
-                        <div className="col-md">
-                            <h2>About HawkHacks</h2>
+                        <div className="col-md-6">
+                            <h2 className="font-weight-bold">&lt;About HawkHacks/&gt;</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                HawkHacks came out of a desire to give everyone an equal
+                                opportunity to get into tech, whether that be programming,
+                                networking, researching, learning, or teaching.<br/>
+                                <br/>
+                                Join hundreds of students across Canada (and across the
+                                world) in a 36 hour period of exploration, creativity, and
+                                learning!<br/>
+                                <br/>
+                                Remember, you don't have to be a pro to participate - show up
+                                with ten years or ten minutes of experience (oh yeah, and a
+                                great attitute too!)
                             </p>
                         </div>
+
+                        <div className="col-md-6 text-right">
+                            <img src={AboutIllustration} className="img-fluid" alt="About Illustration" style={{opacity: "1.0"}}/>
+                        </div>
+
                         <div className="col" />
                     </div>
                 </Container>
 
-                <Container id="pitch" className="foreground">
+                <Container id="why-laurier" className="foreground">
                     <div className="spacer" style={{ width: "100%", height: "13em" }} />
                     <div className="row">
-                        <div className="col" />
-                        <div className="col-md text-right">
-                            <h2>Laurier's First Large-Scale Hackathon</h2>
+                        <div className="pe-lg-5"/>
+                        <div className="col-md-6 text-center">
+                            {/*eslint-disable-next-line*/}
+                            <h3>// Why Laurier?</h3> 
+                        </div>
+                        <div className="col-md-5 text-left">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Our goal with HawkHacks is to showcase the amazing talent on display at our university. 
+                                Often, smaller universities are outshun by bigger ones - we’d like to change that, 
+                                by showing how awesome of a community exists here too!
                             </p>
                         </div>
                     </div>
+
+                    <div className="spacer" style={{ width: "100%", height: "13em" }} />
+                    <div className="row">
+                        <div className="col-md-12 text-center">
+                            {/*eslint-disable-next-line*/}
+                            <h3>// What can I gain?</h3>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-md-12 text-center">
+                            <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Nam in ligula ut nisi volutpat mollis. 
+                            Mauris in augue quis augue dignissim ullamcorper non porttitor nulla. 
+                            Nam dapibus urna eget sagittis suscipit. 
+                            Sed quis ipsum libero. Aliquam non tempor enim.
+                            </p>
+                        </div>
+                    </div>
+
                 </Container>
 
                 <Container id="faq" className="foreground">
                     <div className="spacer" style={{ width: "100%", height: "13em" }} />
                     <FAQ />
+                </Container>
+
+                <Container id="newsletter" className="foreground">
+                    <div className="spacer" style={{ width: "100%", height: "13em" }} />
+                    <div className="row">
+                        <div className="col-md-6 text-left">
+                            {/*eslint-disable-next-line*/}
+                            <h3>// Want to stay updated?</h3>
+                            <p>
+                                Reach out at <a href="mailto:hello@hawkhacks.ca">hello@hawkhacks.ca</a> for any help or support!
+                                <SocialIcons></SocialIcons>
+                            </p>
+
+                            <InputGroup className="mb-3">
+                                <FormControl
+                                    placeholder="Enter your email to subscribe to our newsletter!"
+                                    aria-label="Recipient's email"
+                                    aria-describedby="basic-addon2"
+                                />
+                                
+                                <Button>
+                                  {">>"}
+                                </Button>
+                            </InputGroup>
+                        </div>
+                    </div>
                 </Container>
 
                 <Container id="sponsors" className="foreground">
