@@ -5,7 +5,10 @@ import { Button, Container, Nav, Navbar, Row } from "react-bootstrap";
 import Illustration from "./components/Illustration";
 import SocialIcons from "./components/SocialIcons";
 import FAQ from "./components/FAQ";
+import SponsorTiersDisplay from "./components/sponsors/SponsorTiersDisplay";
+import SponsorCarousel from "./components/sponsors/SponsorCarousel";
 import Icon from "./assets/icon.svg";
+import SponsorHawk from "./assets/sponsor_hawk.svg";
 
 import "./App.css";
 
@@ -129,16 +132,15 @@ function App() {
 
                 <Container id="sponsors" className="foreground">
                     <div className="spacer" style={{ width: "100%", height: "13em" }} />
-                    <h2>Our Sponsors</h2>
-                    <p>
-                        Event's like these aren't possible by the mountain of support provided by our sponsors.
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                    <div className="our-sponsors">
+                        <h2 className="sponsors-title">{"<Our Sponsors/>"}</h2>
+                        <p className="sponsors-subtitle">
+                            These are the people who make what we do possible. Check out all our amazing sponsors below, and tell them we sent you!
+                        </p>
+                        <img src={SponsorHawk} alt="sponsor bird" className="sponsors-bird"/>
+                    </div>
+                    <SponsorCarousel/>
+                    <SponsorTiersDisplay/>
                 </Container>
 
                 <Container id="team" className="foreground"></Container>

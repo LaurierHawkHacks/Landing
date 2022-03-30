@@ -1,0 +1,64 @@
+{
+    "bronze": [
+        {
+            "company": "Balsamiq",
+            "logo": "balsamiq.png",
+            "url": "https://balsamiq.com/"
+        },
+        {
+            "company": "Linode",
+            "logo": "linode.png",
+            "url": "https://www.linode.com/"
+        },
+        {
+            "company": "Wolfram",
+            "logo": "",
+            "url": "https://www.wolfram.com/wolfram-one/"
+        },
+        {
+            "company": "1Password",
+            "logo": "1Password.png",
+            "url": "https://1password.com/"
+        },
+        {
+            "company": "Echo3D",
+            "logo": "echo3D.png",
+            "url": "https://www.echo3d.co/"
+        }
+    ],
+    "silver": [
+        {
+            "company": "Digital Ocean",
+            "logo": "",
+            "url": "https://www.digitalocean.com/"
+        },
+        {
+            "company": "System-on-Chip Technologies",
+            "logo": "",
+            "url": "https://www.soctechnologies.com/"
+        },
+        {
+            "company": "MoneyClip",
+            "logo": "",
+            "url": "https://moneyclip.io/"
+        },
+        {
+            "company": "Taskade",
+            "logo": "",
+            "url": "https://www.taskade.com/"
+        }
+    ],
+    "gold": [
+        {
+            "company": "Distributed Computer Labs (DCL)",
+            "logo": "",
+            "url": "https://distributed.computer/",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }, {
+            "company": "Placeholder Company",
+            "logo": "",
+            "url": "https://google.com",
+            "description": " placholder :) quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
+    ]
+}

@@ -6,7 +6,8 @@
     --gradient-bottom: #c5e8f4;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -17,11 +18,12 @@ html, body {
     content: "";
     display: block;
 }
-.site-footer, .page-wrap:after {
+.site-footer,
+.page-wrap:after {
     width: 100%;
 }
 .site-footer-content {
-    background-color: #99D4D6;
+    background-color: #99d4d6;
     flex-direction: row;
     width: 100%;
     max-width: 1632px;
@@ -186,4 +188,42 @@ a:focus,
 .accordion-button:not(.collapsed)::after {
     /* I copy-pasted the expanded background image and changed the fill color */
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%232f4858'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.page-link {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #0fa3b1;
+}
+
+.page-link:hover {
+    background: rgba(10, 105, 114, 1);
+    border: 1px solid #0fa3b1;
+}
+
+.page-item.active .page-link {
+    background-color: #0fa3b1;
+    border-color: #0fa3b1;
+}
+
+/* Using Grid display for the "Our Sponsors" title/subtitle with the bird. Because I wanted to leard grid layout :)*/
+.our-sponsors {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-template-rows: 0.2fr 1.8fr;
+    gap: 10px 10px;
+}
+.sponsors-bird {
+    width: 100%;
+    grid-area: 1 / 2 / 3 / 3;
+    justify-self: center;
+}
+.sponsors-title {
+    grid-area: 1 / 1 / 1 / 1;
+}
+.sponsors-subtitle {
+    grid-area: 2 / 1 / 2 / 1;
 }
