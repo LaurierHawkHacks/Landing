@@ -13,7 +13,7 @@ const FAQEntry = ({ eventKey, title, children }) => {
 const FAQ = () => {
     return (
         <div className="col-md-9 col-lg-8 col-xl-7 mx-auto">
-            <h1 className="text-center">Frequently Asked Questions</h1>
+            <h2 className="font-weight-bold text-center">&lt;Frequently Asked Questions/&gt;</h2>
             <Accordion>
                 <Stack gap={3}>
                     <FAQEntry eventKey="0" title="🤔 So, what exactly is a hackathon?">
