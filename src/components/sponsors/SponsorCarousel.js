@@ -84,12 +84,20 @@ function SponsorCarousel(){
     function handleClick(event){
         event.preventDefault();
 
+        console.log("id: ", event.target.id);
+        console.log("Current active index: ", activeCardIndex);
+        console.log("gold arrray len: ", sponsorData.gold.length)
+
         if (event.currentTarget.id === 'prev'){
             setActiveCardIndex(activeCardIndex - 1 < 0 ? sponsorData.gold.length - 1 : activeCardIndex - 1);
         } else if (event.currentTarget.id === 'next'){
+            
             setActiveCardIndex(activeCardIndex + 1 > sponsorData.gold.length - 1 ? 0 : activeCardIndex + 1);
+            
+            console.log("result: ", activeCardIndex + 1 > sponsorData.gold.length - 1 ? 0 : activeCardIndex + 1);
+            console.log("Next hit, new index: ", activeCardIndex);
         } else {
-            setActiveCardIndex(event.currentTarget.id);            
+            setActiveCardIndex(Number(event.currentTarget.id));            
         }
 
     }
