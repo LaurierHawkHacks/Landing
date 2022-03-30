@@ -4,6 +4,8 @@ import Styled from 'styled-components';
 import sponsorData from '../../sponsorData.json';
 import placeholder from '../../assets/placeholder_image.svg';
 
+import * as SponsorImages from "../../assets/sponsors/";
+
 const SponsorSection = Styled.div`
     width: 100%;
     height: auto;
@@ -29,6 +31,7 @@ const SilverSponsorLogo = Styled.img`
     max-width: 200px;    
     margin: 0.5em 0.5em 0.5em 0.5em;
 `;
+
 const BronzeSponsorLogo = Styled.img`
     max-width: 150px;
     margin: 0.5em 0.5em 0.5em 0.5em;
@@ -50,8 +53,8 @@ function SponsorTiersDisplay() {
                                 </Tooltip>
                             }
                             >
-                                {sponsor.logo 
-                                ? <GoldSponsorLogo src={sponsor.logo} alt={sponsor.company}/> 
+                                {sponsor.logoName 
+                                ? <SilverSponsorLogo src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
                                 : <GoldSponsorLogo src={placeholder} alt={sponsor.company}/>}
                             </OverlayTrigger>
                         )}
@@ -71,8 +74,8 @@ function SponsorTiersDisplay() {
                                 </Tooltip>
                             }
                             >
-                                {sponsor.logo 
-                                ? <SilverSponsorLogo src={sponsor.logo} alt={sponsor.company}/> 
+                                {sponsor.logoName 
+                                ? <SilverSponsorLogo src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
                                 : <SilverSponsorLogo src={placeholder} alt={sponsor.company}/>}
                             </OverlayTrigger>
                         )}
@@ -91,8 +94,8 @@ function SponsorTiersDisplay() {
                                 </Tooltip>
                             }
                             >
-                                {sponsor.logo 
-                                ? <BronzeSponsorLogo src={sponsor.logo} alt={sponsor.company}/> 
+                                {sponsor.logoName 
+                                ? <SilverSponsorLogo src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
                                 : <BronzeSponsorLogo src={placeholder} alt={sponsor.company}/>}
                             </OverlayTrigger>
                         )}

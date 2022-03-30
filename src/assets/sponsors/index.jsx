@@ -1,8 +1,10 @@
+// NOTE: Must match the value in "sponsorData.json"
+
 import OnePassword from "./1password.png";
 import Balsamiq from "./balsamiq.png";
 import DigitalOceanHorizontal from "./digitalocean_horizontal.svg";
 import DigitalOceanVertical from "./digitalocean_vertical.svg";
 import Echo3D from "./echo3D.png";
-import Lineode from "./lineode.png";
+import Linode from "./linode.png";
 
-export { OnePassword, Balsamiq, DigitalOceanHorizontal, DigitalOceanVertical, Echo3D, Lineode };
+export { OnePassword, Balsamiq, DigitalOceanHorizontal, DigitalOceanVertical, Echo3D, Linode };
