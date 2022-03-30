@@ -1,0 +1,29 @@
+{
+    "partners": [
+        {
+            "name": "Major League Hacking",
+            "logoName": "MLH",
+            "url": ""
+        },
+        {
+            "name": "Laurier Computing Society",
+            "logoName": "LCS",
+            "url": ""
+        },
+        {
+            "name": "CCubed",
+            "logoName": "C3",
+            "url": ""
+        },
+        {
+            "name": "Laurier Students Union",
+            "logoName": "",
+            "url": ""
+        },
+        {
+            "name": "Faculty of Science Students' Association",
+            "logoName": "",
+            "url": ""
+        }
+    ]
+}

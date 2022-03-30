@@ -106,7 +106,7 @@ function SponsorCarousel(){
         <Container>
             <SponsorCard>
                 {sponsorData.gold[activeCardIndex].logo ?
-                    <SponsorCardImage src={sponsorData.gold[activeCardIndex].logo} alt={sponsorData.gold[activeCardIndex].company} /> 
+                    <SponsorCardImage src={sponsorData.gold[activeCardIndex].logoName} alt={sponsorData.gold[activeCardIndex].company} /> 
                     : <SponsorCardImage src={placeholder} />
                 }
                 {/* <h3>{sponsorData.gold[activeCardIndex].company}</h3> */}

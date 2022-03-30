@@ -12,6 +12,7 @@ import SponsorHawk from "./assets/sponsor_hawk.svg";
 import AboutIllustration from "./assets/illustration_about.svg";
 
 import "./App.css";
+import PartnersSection from "./components/partners/PartnersSection";
 
 const GradientBackground = Styled.div`
 `;
@@ -190,8 +191,13 @@ function App() {
                     </div>
                 </Container>
 
+                <Container id="partners">
+                    <div className="spacer" style={{ width: "100%", height: "8em" }} />
+                    <PartnersSection/>
+                </Container>
+
                 <Container id="sponsors" className="foreground">
-                    <div className="spacer" style={{ width: "100%", height: "13em" }} />
+                    <div className="spacer" style={{ width: "100%", height: "10em" }} />
                     <div className="our-sponsors">
                         <h2 className="sponsors-title">{"<Our Sponsors/>"}</h2>
                         <p className="sponsors-subtitle">
