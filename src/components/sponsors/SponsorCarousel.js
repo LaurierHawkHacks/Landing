@@ -8,8 +8,7 @@ const SponsorCard = Styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
+    
     margin-bottom: 1em;
     margin-top: 1em;
     padding: 1em;
@@ -18,10 +17,11 @@ const SponsorCard = Styled.div`
     border-radius: 20px;
     border: 1px solid #0FA3B1;
 
-    @media (min-width: 1200px) {
-        width: 58.33333%;
+    @media (min-width: 768px) {
+        width: 75%;
         margin-left: auto;
         margin-right: auto;
+        height: 500px;
     }
 
     @media (min-width: 992px) {
@@ -30,11 +30,10 @@ const SponsorCard = Styled.div`
         margin-right: auto;
     }
 
-    @media (min-width: 768px) {
-        width: 75%;
+    @media (min-width: 1200px) {
+        width: 58.33333%;
         margin-left: auto;
         margin-right: auto;
-        height: 500px;
     }
 
 `;
@@ -44,6 +43,7 @@ const SponsorCardImage = Styled.img`
     max-width: 300px;
     height: auto;
     margin-bottom: 1em;
+    margin-top: 1em;
 `;
 
 const SponsorCardPaging = Styled(Pagination)`
@@ -73,6 +73,7 @@ const SponsorCardButton = Styled(Button)`
 `;
 
 const SponsorCardContent = Styled.p`
+    margin-top: 1em;
     margin-left: 2em;
     margin-right: 2em;
 `;
