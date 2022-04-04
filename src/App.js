@@ -13,6 +13,7 @@ import SponsorHawk from "./assets/sponsor_hawk.svg";
 import AboutIllustration from "./assets/illustration_about.svg";
 
 import "./App.css";
+import HeroButtons from "./components/HeroButtons";
 
 const GradientBackground = Styled.div`
 `;
@@ -91,26 +92,7 @@ function App() {
                             Wilfrid Laurier University | Fully Virtual | May 13<sup>th</sup> - 15
                             <sup>th</sup>
                         </p>
-                        <div
-                            id="home-buttons"
-                            className="d-flex flex-column flex-sm-row w-100 px-4 justify-content-center"
-                        >
-                            <a
-                                href="https://hawkhacks.ca/sponsorships.pdf"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                <HeroButtonSecondary className="my-2" size="sm">
-                                    Sponsor Us
-                                </HeroButtonSecondary>
-                            </a>
-                            <HeroButtonPrimary className="px-5" size="sm">
-                                Join Now!
-                            </HeroButtonPrimary>
-                            <HeroButtonSecondary className="my-2" size="sm">
-                                Become a Mentor!
-                            </HeroButtonSecondary>
-                        </div>
+                        <HeroButtons />
                     </Container>
 
                     <Container id="about" className="foreground">
