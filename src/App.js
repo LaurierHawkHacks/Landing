@@ -145,7 +145,7 @@ function App() {
 
                     <Container id="why-laurier" className="foreground">
                         <div className="spacer" style={{ width: "100%", height: "10em" }} />
-                        <div className="row">
+                        <div className="row align-items-center">
                             <div className="pe-lg-5" />
                             <div className="col-md-6 text-center">
                                 <h3>// Why Laurier?</h3>
