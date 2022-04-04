@@ -243,6 +243,7 @@ a:focus,
     grid-area: 2 / 1 / 2 / 1;
 }
 
+
 @media (min-width: 770px) {
     .our-sponsors {
         grid-template-columns: 1.5fr 0.5fr;
