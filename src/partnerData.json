@@ -1,0 +1,29 @@
+{
+    "partners": [
+        {
+            "org": "Major League Hacking",
+            "logoName": "MLH",
+            "url": "https://mlh.io"
+        },
+        {
+            "org": "Laurier Computing Society",
+            "logoName": "LCS",
+            "url": "https://lauriercs.ca"
+        },
+        {
+            "org": "Computing Councils of Canada",
+            "logoName": "CCubed",
+            "url": "https://ccubed.dev"
+        },
+        {
+            "org": "Wilfrid Laurier University Students' Union",
+            "logoName": "SU",
+            "url": "https://yourstudentsunion.ca/"
+        },
+        {
+            "org": "Faculty of Science Students Association",
+            "logoName": "FOSSA",
+            "url": "http://fossa.ca/"
+        }
+    ]
+}
