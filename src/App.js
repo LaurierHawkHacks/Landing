@@ -107,9 +107,15 @@ function App() {
                             id="home-buttons"
                             className="d-flex flex-column flex-sm-row w-100 px-4 justify-content-center"
                         >
-                            <HeroButtonSecondary className="my-2" size="sm">
-                                Sponsor Us
-                            </HeroButtonSecondary>
+                            <a
+                                href="https://hawkhacks.ca/sponsorships.pdf"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <HeroButtonSecondary className="my-2" size="sm">
+                                    Sponsor Us
+                                </HeroButtonSecondary>
+                            </a>
                             <HeroButtonPrimary className="px-5" size="sm">
                                 Join Now!
                             </HeroButtonPrimary>
