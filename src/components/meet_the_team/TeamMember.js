@@ -7,7 +7,7 @@ const MemberCardContainer = Styled.div`
 `;
 
 const MemberCardImage = Styled.div`
-
+border
 `;
 
 const MemberCardContent = Styled.p1`
