@@ -42,14 +42,14 @@ function App() {
                                 <Nav.Link href="#about" className="mx-1">
                                     About
                                 </Nav.Link>
-                                <Nav.Link href="#why-laurier" className="mx-1">
-                                    Why us? (rename?)
-                                </Nav.Link>
                                 <Nav.Link href="#faq" className="mx-1">
                                     FAQ
                                 </Nav.Link>
                                 <Nav.Link href="#newsletter" className="mx-1">
                                     Newsletter
+                                </Nav.Link>
+                                <Nav.Link href="#partners" className="mx-1">
+                                    Partners
                                 </Nav.Link>
                                 <Nav.Link href="#sponsors" className="mx-1">
                                     Sponsors
