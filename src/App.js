@@ -107,13 +107,13 @@ function App() {
                             id="home-buttons"
                             className="d-flex flex-column flex-sm-row w-100 px-4 justify-content-center"
                         >
-                            <HeroButtonSecondary className="my-2" size="sm">
+                            <HeroButtonSecondary href="#sponsors" className="my-2" size="sm">
                                 Sponsor Us
                             </HeroButtonSecondary>
-                            <HeroButtonPrimary className="px-5" size="sm">
+                            <HeroButtonPrimary href="https://www.google.com/" className="px-5" size="sm">
                                 Join Now!
                             </HeroButtonPrimary>
-                            <HeroButtonSecondary className="my-2" size="sm">
+                            <HeroButtonSecondary href="#sponsors" className="my-2" size="sm">
                                 Become a Mentor!
                             </HeroButtonSecondary>
                         </div>
