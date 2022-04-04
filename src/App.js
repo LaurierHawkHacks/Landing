@@ -17,6 +17,20 @@ import PartnersSection from "./components/partners/PartnersSection";
 const GradientBackground = Styled.div`
 `;
 
+const HeroButtonPrimary = Styled(Button)`
+    color: white;
+    background-color: #0fa3b1;
+    border-width: 0;
+    font-weight: 600;
+`;
+
+const HeroButtonSecondary = Styled(Button)`
+    color: #2f4858;
+    background-color: #eddadd;
+    border-width: 0;
+    font-weight: 600;
+`;
+
 function App() {
     return (
         <>
@@ -93,15 +107,15 @@ function App() {
                             id="home-buttons"
                             className="d-flex flex-column flex-sm-row w-100 px-4 justify-content-center"
                         >
-                            <Button className="d-flex flex-grow-1 flex-sm-grow-0 justify-content-center my-2 py-2">
-                                Apply
-                            </Button>
-                            <Button className="d-flex flex-grow-1 flex-sm-grow-0 justify-content-center my-2 py-2">
-                                Sponsor
-                            </Button>
-                            <Button className="d-flex flex-grow-1 flex-sm-grow-0 justify-content-center my-2 py-2">
-                                Events
-                            </Button>
+                            <HeroButtonSecondary className="my-2" size="sm">
+                                Sponsor Us
+                            </HeroButtonSecondary>
+                            <HeroButtonPrimary className="px-5" size="sm">
+                                Join Now!
+                            </HeroButtonPrimary>
+                            <HeroButtonSecondary className="my-2" size="sm">
+                                Become a Mentor!
+                            </HeroButtonSecondary>
                         </div>
                     </Container>
 
