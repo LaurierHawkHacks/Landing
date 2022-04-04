@@ -114,8 +114,6 @@ function App() {
                     </Container>
 
                     <Container id="about" className="foreground">
-
-
                         <div className="spacer" style={{ width: "100%", height: "13em" }} />
                         <div className="row">
                             <div className="col-md-6">
@@ -123,11 +121,12 @@ function App() {
                                 <p>
                                     HawkHacks came out of a desire to give everyone an equal
                                     opportunity to get into tech, whether that be programming,
-                                    networking, researching, learning, or teaching.<br />
+                                    networking, researching, learning, or teaching.
                                     <br />
-                                    Join hundreds of students across Canada (and across the
-                                    world) in a 36 hour period of exploration, creativity, and
-                                    learning!<br />
+                                    <br />
+                                    Join hundreds of students across Canada (and across the world)
+                                    in a 36 hour period of exploration, creativity, and learning!
+                                    <br />
                                     <br />
                                     Remember, you don't have to be a pro to participate - show up
                                     with ten years or ten minutes of experience (oh yeah, and a
@@ -136,7 +135,12 @@ function App() {
                             </div>
 
                             <div className="col-md-6 text-right">
-                                <img src={AboutIllustration} className="img-fluid" alt="About Illustration" style={{ opacity: "1.0" }} />
+                                <img
+                                    src={AboutIllustration}
+                                    className="img-fluid"
+                                    alt="About Illustration"
+                                    style={{ opacity: "1.0" }}
+                                />
                             </div>
 
                             <div className="col" />
@@ -153,9 +157,10 @@ function App() {
                             </div>
                             <div className="col-md-5 text-left">
                                 <p>
-                                    Our goal with HawkHacks is to showcase the amazing talent on display at our university.
-                                    Often, smaller universities are outshun by bigger ones - we’d like to change that,
-                                    by showing how awesome of a community exists here too!
+                                    Our goal with HawkHacks is to showcase the amazing talent on
+                                    display at our university. Often, smaller universities are
+                                    outshun by bigger ones - we’d like to change that, by showing
+                                    how awesome of a community exists here too!
                                 </p>
                             </div>
                         </div>
@@ -170,15 +175,14 @@ function App() {
                         <div className="row">
                             <div className="col-md-12 text-center">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Nam in ligula ut nisi volutpat mollis.
-                                    Mauris in augue quis augue dignissim ullamcorper non porttitor nulla.
-                                    Nam dapibus urna eget sagittis suscipit.
-                                    Sed quis ipsum libero. Aliquam non tempor enim.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in
+                                    ligula ut nisi volutpat mollis. Mauris in augue quis augue
+                                    dignissim ullamcorper non porttitor nulla. Nam dapibus urna eget
+                                    sagittis suscipit. Sed quis ipsum libero. Aliquam non tempor
+                                    enim.
                                 </p>
                             </div>
                         </div>
-
                     </Container>
 
                     <Container id="faq" className="foreground">
@@ -193,7 +197,9 @@ function App() {
                                 {/*eslint-disable-next-line*/}
                                 <h3>// Want to stay updated?</h3>
                                 <p>
-                                    Reach out at <a href="mailto:hello@hawkhacks.ca">hello@hawkhacks.ca</a> for any help or support!
+                                    Reach out at{" "}
+                                    <a href="mailto:hello@hawkhacks.ca">hello@hawkhacks.ca</a> for
+                                    any help or support!
                                     <SocialIcons></SocialIcons>
                                 </p>
 
@@ -204,9 +210,7 @@ function App() {
                                         aria-describedby="basic-addon2"
                                     />
 
-                                    <Button>
-                                        {">>"}
-                                    </Button>
+                                    <Button>{">>"}</Button>
                                 </InputGroup>
                             </div>
                         </div>
@@ -217,7 +221,8 @@ function App() {
                         <div className="our-sponsors">
                             <h2 className="sponsors-title">{"<Our Sponsors/>"}</h2>
                             <p className="sponsors-subtitle">
-                                These are the people who make what we do possible. Check out all our amazing sponsors below, and tell them we sent you!
+                                These are the people who make what we do possible. Check out all our
+                                amazing sponsors below, and tell them we sent you!
                             </p>
                             <img src={SponsorHawk} alt="sponsor bird" className="sponsors-bird" />
                         </div>
@@ -234,13 +239,23 @@ function App() {
                 </div>
 
                 <div>
-                    <Illustration src_name="illustration_4" width="100%" maxWidth="102em" position="relative" id="illustration-footer" />
-                    <div id="footer" className="foreground site-footer m-0 w-100 d-flex justify-content-center">
+                    <Illustration
+                        src_name="illustration_4"
+                        width="100%"
+                        maxWidth="102em"
+                        position="relative"
+                        id="illustration-footer"
+                    />
+                    <div
+                        id="footer"
+                        className="foreground site-footer m-0 w-100 d-flex justify-content-center"
+                    >
                         <Row className="site-footer-content d-flex justify-content-center align-items-center">
                             <a
                                 className="my-1 w-auto"
                                 href={"https://static.mlh.io/docs/mlh-code-of-conduct.pdf"}
-                                target="_blank" rel="noreferrer"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={{ textDecoration: "none", color: "white" }}
                             >
                                 Code of Conduct
