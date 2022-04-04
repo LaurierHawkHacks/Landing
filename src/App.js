@@ -17,6 +17,21 @@ import "./App.css";
 const GradientBackground = Styled.div`
 `;
 
+const HeroButtonPrimary = Styled(Button)`
+    color: white;
+    background-color: #0fa3b1;
+    border-width: 0;
+    font-weight: 600;
+`;
+
+const HeroButtonSecondary = Styled(Button)`
+    color: #2f4858;
+    background-color: #eddadd;
+    border-width: 0;
+    font-weight: 600;
+`;
+
+
 function App() {
     return (
         <>
