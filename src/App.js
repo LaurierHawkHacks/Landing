@@ -88,7 +88,7 @@ function App() {
                         id="home"
                         className="d-flex flex-column align-items-center foreground"
                     >
-                        <div className="spacer" style={{ width: "100%", height: "8em" }} />
+                        <div className="spacer" style={{ width: "100%", height: "7.5em" }} />
                         <img
                             className="mx-2"
                             src={Icon}
@@ -131,7 +131,7 @@ function App() {
                     <Container id="about" className="foreground">
 
 
-                        <div className="spacer" style={{ width: "100%", height: "13em" }} />
+                        <div className="spacer" style={{ width: "100%", height: "10em" }} />
                         <div className="row">
                             <div className="col-md-6">
                                 <h2 className="font-weight-bold">&lt;About HawkHacks/&gt;</h2>
@@ -159,11 +159,10 @@ function App() {
                     </Container>
 
                     <Container id="why-laurier" className="foreground">
-                        <div className="spacer" style={{ width: "100%", height: "13em" }} />
+                        <div className="spacer" style={{ width: "100%", height: "10em" }} />
                         <div className="row">
                             <div className="pe-lg-5" />
                             <div className="col-md-6 text-center">
-                                {/*eslint-disable-next-line*/}
                                 <h3>// Why Laurier?</h3>
                             </div>
                             <div className="col-md-5 text-left">
@@ -175,10 +174,9 @@ function App() {
                             </div>
                         </div>
 
-                        <div className="spacer" style={{ width: "100%", height: "13em" }} />
+                        <div className="spacer" style={{ width: "100%", height: "10em" }} />
                         <div className="row">
                             <div className="col-md-12 text-center">
-                                {/*eslint-disable-next-line*/}
                                 <h3>// What can I gain?</h3>
                             </div>
                         </div>
@@ -197,19 +195,18 @@ function App() {
                     </Container>
 
                     <Container id="faq" className="foreground">
-                        <div className="spacer" style={{ width: "100%", height: "13em" }} />
+                        <div className="spacer" style={{ width: "100%", height: "10em" }} />
                         <FAQ />
                     </Container>
 
                     <Container id="newsletter" className="foreground">
-                        <div className="spacer" style={{ width: "100%", height: "13em" }} />
+                        <div className="spacer" style={{ width: "100%", height: "10em" }} />
                         <div className="row">
                             <div className="col-md-6 text-left">
-                                {/*eslint-disable-next-line*/}
                                 <h3>// Want to stay updated?</h3>
                                 <p>
                                     Reach out at <a href="mailto:hello@hawkhacks.ca">hello@hawkhacks.ca</a> for any help or support!
-                                    <SocialIcons></SocialIcons>
+                                    <SocialIcons/>
                                 </p>
 
                                 <InputGroup className="mb-3">
@@ -228,7 +225,7 @@ function App() {
                     </Container>
 
                     <Container id="sponsors" className="foreground">
-                        <div className="spacer" style={{ width: "100%", height: "13em" }} />
+                        <div className="spacer" style={{ width: "100%", height: "10em" }} />
                         <div className="our-sponsors">
                             <h2 className="sponsors-title">{"<Our Sponsors/>"}</h2>
                             <p className="sponsors-subtitle">
@@ -243,9 +240,6 @@ function App() {
                     <Container id="meettheteam" className="foreground">
                         <MeetTheTeam />
                     </Container>
-
-                    {/* <div className="spacer" style={{ width: '100%', height: '13em' }} />
-                <div className="spacer" style={{ width: '100%', height: '30em' }} /> */}
                 </div>
 
                 <div>
