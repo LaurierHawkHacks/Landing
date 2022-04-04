@@ -9,6 +9,8 @@
 html,
 body {
     height: 100%;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .page-wrap {
@@ -107,14 +109,27 @@ body {
     text-align: right;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    color: var(--color-main);
+h1 {
+    font-size: 3em;
     font-weight: bold;
+    margin-bottom: 0.5em;
+    color: var(--color-main);
+}
+h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: var(--color-main);
 }
 
+h3 {
+    font-size: 2.25em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: var(--color-main);
+}
+
+h4,
 h5,
 h6,
 p {
