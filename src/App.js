@@ -238,7 +238,7 @@ function App() {
                         position="relative"
                         id="illustration-footer"
                     />
-                    <div
+                    <footer
                         id="footer"
                         className="foreground site-footer m-0 w-100 d-flex justify-content-center"
                     >
@@ -257,7 +257,7 @@ function App() {
                             </p>
                             <SocialIcons />
                         </Row>
-                    </div>
+                    </footer>
                 </div>
             </GradientBackground>
         </>

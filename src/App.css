@@ -20,12 +20,14 @@ body {
     content: "";
     display: block;
 }
+.site-footer {
+    background-color: #99d4d6;
+}
 .site-footer,
 .page-wrap:after {
     width: 100%;
 }
 .site-footer-content {
-    background-color: #99d4d6;
     flex-direction: row;
     width: 100%;
     max-width: 1632px;
