@@ -43,14 +43,14 @@ function App() {
                                 <Nav.Link href="#about" className="mx-1">
                                     About
                                 </Nav.Link>
-                                <Nav.Link href="#why-laurier" className="mx-1">
-                                    Why us? (rename?)
-                                </Nav.Link>
                                 <Nav.Link href="#faq" className="mx-1">
                                     FAQ
                                 </Nav.Link>
                                 <Nav.Link href="#newsletter" className="mx-1">
                                     Newsletter
+                                </Nav.Link>
+                                <Nav.Link href="#partners" className="mx-1">
+                                    Partners
                                 </Nav.Link>
                                 <Nav.Link href="#sponsors" className="mx-1">
                                     Sponsors
@@ -83,8 +83,8 @@ function App() {
                     />
                     <h1 className="font-weight-bold">&lt;HawkHacks/&gt;</h1>
                     <h1 className="font-weight-bold">2022</h1>
-                    <h5>put some fun slogan here</h5>
-                    <p>Laurier | On-Campus and Virtual</p>
+                    <h5><b>Wilfrid Laurier’s first large-scale global hackathon!</b></h5>
+                    <p>Wilfrid Laurier University | Fully Virtual | May 13<sup>th</sup> - 15<sup>th</sup></p>
                     <div id="home-buttons" className="d-flex flex-column flex-sm-row w-100 px-4 justify-content-center">
                         <Button className="d-flex flex-grow-1 flex-sm-grow-0 justify-content-center my-2 py-2">Apply</Button>
                         <Button className="d-flex flex-grow-1 flex-sm-grow-0 justify-content-center my-2 py-2">Sponsor</Button>
