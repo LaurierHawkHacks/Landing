@@ -189,12 +189,14 @@ function App() {
                         <div className="row">
                             <div className="col-md-6 text-left">
                                 <h3>// Want to stay updated?</h3>
-                                <p>
+                                <p className="mb-0">
                                     Reach out at{" "}
                                     <a href="mailto:hello@hawkhacks.ca">hello@hawkhacks.ca</a> for
                                     any help or support!
-                                    <SocialIcons />
                                 </p>
+                                <div className="pb-1">
+                                    <SocialIcons />
+                                </div>
 
                                 <InputGroup className="mb-3">
                                     <FormControl
