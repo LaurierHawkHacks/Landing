@@ -13,6 +13,7 @@ import AboutIllustration from "./assets/illustration_about.svg";
 
 import "./App.css";
 import PartnersSection from "./components/partners/PartnersSection";
+import TeamMemberLayout from "./components/meet_the_team/TeamMemberLayout";
 
 const GradientBackground = Styled.div`
 `;
@@ -214,6 +215,12 @@ function App() {
                 {/* <div className="spacer" style={{ width: '100%', height: '13em' }} />
                 <div className="spacer" style={{ width: '100%', height: '30em' }} /> */}
             </div>
+
+            <div>
+                <h2>Meet the Team (TEST)</h2>
+                <TeamMemberLayout/>
+            </div>
+
 
             <div>
                 <Illustration src_name="illustration_4" width="100%" maxWidth="102em" position="relative" id="illustration-footer" />
