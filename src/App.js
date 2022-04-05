@@ -1,6 +1,6 @@
 import React from "react";
 import Styled from "styled-components";
-import { Button, Container, Nav, Navbar, Row, InputGroup, FormControl } from "react-bootstrap";
+import { Button, Container, Row, InputGroup, FormControl } from "react-bootstrap";
 
 import Illustration from "./components/Illustration";
 import SocialIcons from "./components/SocialIcons";
@@ -14,22 +14,9 @@ import AboutIllustration from "./assets/illustration_about.svg";
 
 import "./App.css";
 import HeroButtons from "./components/HeroButtons";
+import AppNavbar from "./components/Navbar";
 
 const GradientBackground = Styled.div`
-`;
-
-const HeroButtonPrimary = Styled(Button)`
-    color: white;
-    background-color: #0fa3b1;
-    border-width: 0;
-    font-weight: 600;
-`;
-
-const HeroButtonSecondary = Styled(Button)`
-    color: #2f4858;
-    background-color: #eddadd;
-    border-width: 0;
-    font-weight: 600;
 `;
 
 function App() {
@@ -41,48 +28,7 @@ function App() {
                     <Illustration src_name="illustration_2" top="40em" />
                     <Illustration src_name="illustration_3" top="110em" />
 
-                    <Navbar id="header" expand="lg" sticky="top" className="bg-hh-accent">
-                        <Container className="mt-4 mb-3">
-                            <Navbar.Brand href="#">
-                                <img
-                                    className="mx-2"
-                                    src={Icon}
-                                    width="50"
-                                    height="50"
-                                    alt="HawkHacks Icon"
-                                />
-                            </Navbar.Brand>
-                            <Navbar.Toggle aria-controls="navbar-nav" />
-                            <Navbar.Collapse id="navbar-nav">
-                                <Nav className="nav-main me-auto">
-                                    <Nav.Link href="#about" className="mx-1">
-                                        About
-                                    </Nav.Link>
-                                    <Nav.Link href="#faq" className="mx-1">
-                                        FAQ
-                                    </Nav.Link>
-                                    <Nav.Link href="#newsletter" className="mx-1">
-                                        Newsletter
-                                    </Nav.Link>
-                                    <Nav.Link href="#partners" className="mx-1">
-                                        Partners
-                                    </Nav.Link>
-                                    <Nav.Link href="#sponsors" className="mx-1">
-                                        Sponsors
-                                    </Nav.Link>
-                                    <Nav.Link href="#team" className="mx-1">
-                                        Meet The Team
-                                    </Nav.Link>
-                                </Nav>
-                                <Nav className="nav-right d-flex">
-                                    <Nav.Link href="#apply" className="mx-1">
-                                        Apply Now
-                                    </Nav.Link>
-                                    <SocialIcons />
-                                </Nav>
-                            </Navbar.Collapse>
-                        </Container>
-                    </Navbar>
+                    <AppNavbar />
 
                     <Container
                         id="home"
