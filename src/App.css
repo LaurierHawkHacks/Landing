@@ -9,6 +9,8 @@
 html,
 body {
     height: 100%;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .page-wrap {
@@ -18,12 +20,14 @@ body {
     content: "";
     display: block;
 }
+.site-footer {
+    background-color: #99d4d6;
+}
 .site-footer,
 .page-wrap:after {
     width: 100%;
 }
 .site-footer-content {
-    background-color: #99d4d6;
     flex-direction: row;
     width: 100%;
     max-width: 1632px;
@@ -107,14 +111,27 @@ body {
     text-align: right;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    color: var(--color-main);
+h1 {
+    font-size: 3em;
     font-weight: bold;
+    margin-bottom: 0.5em;
+    color: var(--color-main);
+}
+h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: var(--color-main);
 }
 
+h3 {
+    font-size: 2.25em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: var(--color-main);
+}
+
+h4,
 h5,
 h6,
 p {
@@ -227,6 +244,7 @@ a:focus,
 .sponsors-subtitle {
     grid-area: 2 / 1 / 2 / 1;
 }
+
 
 @media (min-width: 770px) {
     .our-sponsors {

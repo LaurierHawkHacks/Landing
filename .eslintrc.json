@@ -1,6 +1,7 @@
 {
     "extends": ["react-app", "prettier"],
     "rules": {
-        "react/prop-types": 0
+        "react/prop-types": 0,
+        "react/jsx-no-comment-textnodes": 0
     }
 }
