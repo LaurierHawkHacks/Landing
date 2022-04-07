@@ -3,24 +3,23 @@ import styled, { keyframes } from "styled-components";
 import TeamMember from "./TeamMember";
 
 
-    const TeamsContainer = styled.div`
+const TeamsContainer = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    background: pink;
 `;
 
 const TeamName = styled.div`
-width: 100%;
+    width: 100%;
     font-size: 20px;
-  color: red;
+    color: red;
 `;
 
 const Team = styled.div`
-display: grid;
-grid-gap: 30px;
-grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-background: blue;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    
 `;
 
 
