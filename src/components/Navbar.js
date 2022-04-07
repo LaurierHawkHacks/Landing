@@ -56,11 +56,6 @@ const NavLink = Styled(Nav.Link)`
     font-weight: 600;
 `;
 
-const NavButton = Styled(PopupButton)`
-    font-size: 0.92rem;
-    font-weight: 600;
-`;
-
 const AppNavbar = () => {
     return (
         <Navbar id="header" expand="xl" sticky="top" className="bg-hh-accent">
@@ -79,9 +74,9 @@ const AppNavbar = () => {
                         <NavLink href="#team">Meet The Team</NavLink>
                     </Nav>
                     <Nav className="nav-right d-flex align-items-center">
-                        <NavButton id="ud88xVfK" className="nav-link" as="a">
+                        <PopupButton id="ud88xVfK" className="nav-link" as="a">
                             Apply Now
-                        </NavButton>
+                        </PopupButton>
                         <SocialIcons />
                     </Nav>
                 </Navbar.Collapse>

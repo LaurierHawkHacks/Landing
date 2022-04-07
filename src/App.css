@@ -222,6 +222,10 @@ a:focus,
     border-color: #0fa3b1;
 }
 
+.nav-link {
+    font-weight: 600;
+}
+
 /* Using Grid display for the "Our Sponsors" title/subtitle with the bird. Because I wanted to leard grid layout :)*/
 
 .our-sponsors {
