@@ -11,7 +11,7 @@ import {
 } from 'react-icons/si';
 import { MdEmail as Email } from 'react-icons/md';
 
-const SocialIcons = () => {
+const SocialIcons = ({ size = "24px" }) => {
     return (
         <div className="d-flex align-items-center my-2 px-0 w-auto">
             <a
@@ -21,7 +21,7 @@ const SocialIcons = () => {
             >
                 <Devpost
                     className="mx-2 social-icon"
-                    size="24px"
+                    size={size}
                     alt="Devpost social icon"
                 />
             </a>
@@ -33,7 +33,7 @@ const SocialIcons = () => {
             >
                 <Discord
                     className="mx-2 social-icon"
-                    size="24px"
+                    size={size}
                     alt="Discord social icon"
                 />
             </a>
@@ -45,7 +45,7 @@ const SocialIcons = () => {
             >
                 <Instagram
                     className="mx-2 social-icon"
-                    size="24px"
+                    size={size}
                     alt="Instagram social icon"
                 />
             </a>
@@ -57,7 +57,7 @@ const SocialIcons = () => {
             >
                 <Twitter
                     className="mx-2 social-icon"
-                    size="24px"
+                    size={size}
                     alt="Twitter social icon"
                 />
             </a>
@@ -69,7 +69,7 @@ const SocialIcons = () => {
             >
                 <LinkedIn
                     className="mx-2 social-icon"
-                    size="24px"
+                    size={size}
                     alt=": social icon"
                 />
             </a>
@@ -81,7 +81,7 @@ const SocialIcons = () => {
             >
                 <Email
                     className="mx-2 social-icon"
-                    size="24px"
+                    size={size}
                     alt="Email social icon"
                 />
             </a>
