@@ -16,8 +16,7 @@ import "./App.css";
 import HeroButtons from "./components/HeroButtons";
 import AppNavbar from "./components/Navbar";
 
-const GradientBackground = Styled.div`
-`;
+const GradientBackground = Styled.div``;
 
 function App() {
     return (
