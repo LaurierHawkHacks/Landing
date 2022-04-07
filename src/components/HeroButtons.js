@@ -8,6 +8,7 @@ const HeroButtonPrimary = Styled(PopupButton)`
     background-color: #0fa3b1;
     border-width: 0;
     font-weight: 600;
+    font-size: 1rem;
 `;
 
 const HeroButtonSponsor = Styled(Button)`
@@ -33,10 +34,11 @@ const HeroButtons = () => {
             <HeroButtonSponsor
                 size="sm"
                 onClick={() => window.open("https://hawkhacks.ca/sponsorships.pdf", "_blank")}
+                className="my-2"
             >
-                Sponsor Us
+                Sponsor Us!
             </HeroButtonSponsor>
-            <HeroButtonPrimary id="ud88xVfK" className="px-5 btn btn-primary btn-sm">
+            <HeroButtonPrimary id="ud88xVfK" className="py-2 px-5 my-1 btn btn-primary btn-sm">
                 Join Now!
             </HeroButtonPrimary>
             <HeroButtonMentor id="ZAfURzED" className="my-2 btn btn-primary btn-sm">

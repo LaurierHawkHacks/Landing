@@ -51,6 +51,11 @@ const MLHBanner = () => {
     );
 };
 
+const NavLink = Styled(Nav.Link)`
+    font-size: 0.86rem;
+    font-weight: 600;
+`;
+
 const AppNavbar = () => {
     return (
         <Navbar id="header" expand="xl" sticky="top" className="bg-hh-accent">
@@ -61,14 +66,14 @@ const AppNavbar = () => {
                 <Navbar.Toggle aria-controls="navbar-nav" />
                 <Navbar.Collapse id="navbar-nav">
                     <Nav className="nav-main me-auto">
-                        <Nav.Link href="#about">About</Nav.Link>
-                        <Nav.Link href="#faq">FAQ</Nav.Link>
-                        <Nav.Link href="#newsletter">Newsletter</Nav.Link>
-                        <Nav.Link href="#partners">Partners</Nav.Link>
-                        <Nav.Link href="#sponsors">Sponsors</Nav.Link>
-                        <Nav.Link href="#team">Meet The Team</Nav.Link>
+                        <NavLink href="#about">About</NavLink>
+                        <NavLink href="#faq">FAQ</NavLink>
+                        <NavLink href="#newsletter">Newsletter</NavLink>
+                        <NavLink href="#partners">Partners</NavLink>
+                        <NavLink href="#sponsors">Sponsors</NavLink>
+                        <NavLink href="#team">Meet The Team</NavLink>
                     </Nav>
-                    <Nav className="nav-right d-flex">
+                    <Nav className="nav-right d-flex align-items-center">
                         <PopupButton id="ud88xVfK" className="nav-link" as="a">
                             Apply Now
                         </PopupButton>

@@ -16,8 +16,7 @@ import "./App.css";
 import HeroButtons from "./components/HeroButtons";
 import AppNavbar from "./components/Navbar";
 
-const GradientBackground = Styled.div`
-`;
+const GradientBackground = Styled.div``;
 
 function App() {
     return (
@@ -138,9 +137,17 @@ function App() {
                                 <p className="mb-0">
                                     Reach out at{" "}
                                     <a href="mailto:hello@hawkhacks.ca">hello@hawkhacks.ca</a> for
-                                    any help or support!
+                                    any help or support, and please be sure to join the{" "}
+                                    <a
+                                        href="https://discord.gg/z8XbEEXkqN"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        HawkHacks Discord
+                                    </a>
+                                    {" "}community!
                                 </p>
-                                <div className="pb-1">
+                                <div className="pb-1 my-2">
                                     <SocialIcons />
                                 </div>
 
@@ -190,16 +197,15 @@ function App() {
                     >
                         <Row className="site-footer-content d-flex justify-content-center align-items-center">
                             <a
-                                className="my-1 w-auto"
+                                className="my-1 w-auto footer-link"
                                 href={"https://static.mlh.io/docs/mlh-code-of-conduct.pdf"}
                                 target="_blank"
                                 rel="noreferrer"
-                                style={{ textDecoration: "none", color: "white" }}
                             >
                                 Code of Conduct
                             </a>
-                            <p className="my-1 w-auto d-flex flex-grow-1 justify-content-center">
-                                &#169; Copyright {new Date().getFullYear()}, HawkHacks
+                            <p className="footer-copyright my-1 w-auto d-flex flex-grow-1 justify-content-center">
+                                Copyright &#169; {new Date().getFullYear()} HawkHacks
                             </p>
                             <SocialIcons />
                         </Row>

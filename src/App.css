@@ -222,6 +222,21 @@ a:focus,
     border-color: #0fa3b1;
 }
 
+.nav-link {
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+.footer-link:hover {
+    text-decoration: underline;
+}
+.footer-copyright {
+    font-size: 0.86rem;
+}
+
 /* Using Grid display for the "Our Sponsors" title/subtitle with the bird. Because I wanted to leard grid layout :)*/
 
 .our-sponsors {
