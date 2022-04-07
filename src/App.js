@@ -138,7 +138,13 @@ function App() {
                                     Reach out at{" "}
                                     <a href="mailto:hello@hawkhacks.ca">hello@hawkhacks.ca</a> for
                                     any help or support, and please be sure to join the{" "}
-                                    <a href="https://discord.gg/z8XbEEXkqN">HawkHacks Discord</a>
+                                    <a
+                                        href="https://discord.gg/z8XbEEXkqN"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        HawkHacks Discord
+                                    </a>
                                     {" "}community!
                                 </p>
                                 <div className="pb-1 my-2">
