@@ -1,6 +1,4 @@
 import React from "react";
-import Styled from "styled-components";
-
 import styled, { keyframes } from "styled-components";
 
 const dropdownAnimationDown = keyframes`
@@ -57,7 +55,6 @@ const Wrapper = styled.div`
     
     // width: fit-content;
     height: fit-content;
-    background: red;
     
     
 `;
@@ -70,10 +67,15 @@ const Card = styled.div`
     height: fit-content;
     max-height: 100px;
     top: 0;
+    padding: 5px;
     
+    background: #E4EDF2;
+    border: 1px solid #0FA3B1;
+    border-radius: 86px;
+
     display: flex;
     flex-direction: row;
-    /*   background: red; */
+     
     z-index: 1;
 `;
 
@@ -81,7 +83,6 @@ const Image = styled.div`
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: solid black 2px;
     background: grey;
     margin-right: 10px;
 `;
@@ -102,17 +103,27 @@ const Role = styled.div`
 `;
 
 const Description = styled.div`
+    visibility: hidden;
+    
     position: relative;
+    
     max-height: 0;
     overflow: hidden;
     width: 100%;
-    
-    background: yellow;
+
+    margin-top: 10px;
+    padding: 10px;
+    background: #E4EDF2;
+
+    border: 1px solid #0FA3B1;
+    box-sizing: border-box;
+    border-radius: 14px;
+
     z-index: -1;
 
-        -moz-transition: top 1s;
-        -o-transition: top 1s;
-        transition: top 1s;
+    -moz-transition: top 1s;
+    -o-transition: top 1s;
+    transition: top 1s;
 
     // transition: top 1s ease-out; 
     transition: max-height 1s ease-out;
@@ -120,10 +131,9 @@ const Description = styled.div`
     ${Wrapper}:hover &{
         max-height: 500px;
         transition: max-height 1s ease-in;
+        visibility: visible;
     }
 `;
-
-
 
 
 export default function TeamMember(props) {
