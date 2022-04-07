@@ -2,11 +2,13 @@ import React from "react";
 import {
   AiOutlineTwitter as Twitter,
   AiFillInstagram as Instagram,
-  AiFillLinkedin as LinkedIn,
-  AiFillFacebook as Facebook
+  AiFillLinkedin as LinkedIn
 } from 'react-icons/ai';
 
-import { SiDevpost as Devpost } from 'react-icons/si';
+import {
+    SiDevpost as Devpost,
+    SiDiscord as Discord,
+} from 'react-icons/si';
 import { MdEmail as Email } from 'react-icons/md';
 
 const SocialIcons = () => {
@@ -25,6 +27,18 @@ const SocialIcons = () => {
             </a>
 
             <a
+                href="https://discord.gg/z8XbEEXkqN"
+                target="_blank"
+                rel="noreferrer"
+            >
+                <Discord
+                    className="mx-2 social-icon"
+                    size="24px"
+                    alt="Discord social icon"
+                />
+            </a>
+
+            <a
                 href="https://instagram.com/wluhawkhacks/"
                 target="_blank"
                 rel="noreferrer"
@@ -37,14 +51,14 @@ const SocialIcons = () => {
             </a>
 
             <a
-                href="https://instagram.com/wluhawkhacks/"
+                href="https://twitter.com/wluhawkhacks"
                 target="_blank"
                 rel="noreferrer"
             >
-                <Facebook
+                <Twitter
                     className="mx-2 social-icon"
                     size="24px"
-                    alt="Facebook social icon"
+                    alt="Twitter social icon"
                 />
             </a>
 
@@ -57,18 +71,6 @@ const SocialIcons = () => {
                     className="mx-2 social-icon"
                     size="24px"
                     alt=": social icon"
-                />
-            </a>
-
-            <a
-                href="https://twitter.com/wluhawkhacks"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <Twitter
-                    className="mx-2 social-icon"
-                    size="24px"
-                    alt="Twitter social icon"
                 />
             </a>
 
