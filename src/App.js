@@ -197,11 +197,10 @@ function App() {
                     >
                         <Row className="site-footer-content d-flex justify-content-center align-items-center">
                             <a
-                                className="my-1 w-auto"
+                                className="my-1 w-auto footer-link"
                                 href={"https://static.mlh.io/docs/mlh-code-of-conduct.pdf"}
                                 target="_blank"
                                 rel="noreferrer"
-                                style={{ textDecoration: "none", color: "white" }}
                             >
                                 Code of Conduct
                             </a>

@@ -227,6 +227,12 @@ a:focus,
     font-weight: 600;
 }
 
+.footer-link {
+    text-decoration: none;
+}
+.footer-link:hover {
+    text-decoration: underline;
+}
 .footer-copyright {
     font-size: 0.86rem;
 }
