@@ -227,6 +227,10 @@ a:focus,
     font-weight: 600;
 }
 
+.footer-copyright {
+    font-size: 0.86rem;
+}
+
 /* Using Grid display for the "Our Sponsors" title/subtitle with the bird. Because I wanted to leard grid layout :)*/
 
 .our-sponsors {

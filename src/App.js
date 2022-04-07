@@ -205,8 +205,8 @@ function App() {
                             >
                                 Code of Conduct
                             </a>
-                            <p className="my-1 w-auto d-flex flex-grow-1 justify-content-center">
-                                &#169; Copyright {new Date().getFullYear()}, HawkHacks
+                            <p className="footer-copyright my-1 w-auto d-flex flex-grow-1 justify-content-center">
+                                Copyright &#169; {new Date().getFullYear()} HawkHacks
                             </p>
                             <SocialIcons />
                         </Row>
