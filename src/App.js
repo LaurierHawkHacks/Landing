@@ -138,9 +138,11 @@ function App() {
                                 <p className="mb-0">
                                     Reach out at{" "}
                                     <a href="mailto:hello@hawkhacks.ca">hello@hawkhacks.ca</a> for
-                                    any help or support!
+                                    any help or support, and please be sure to join the{" "}
+                                    <a href="https://discord.gg/z8XbEEXkqN">HawkHacks Discord</a>
+                                    {" "}community!
                                 </p>
-                                <div className="pb-1">
+                                <div className="pb-1 my-2">
                                     <SocialIcons />
                                 </div>
 
