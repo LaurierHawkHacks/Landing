@@ -52,7 +52,7 @@ const MLHBanner = () => {
 };
 
 const NavLink = Styled(Nav.Link)`
-    font-size: 0.92rem;
+    font-size: 0.86rem;
     font-weight: 600;
 `;
 

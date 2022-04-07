@@ -223,6 +223,7 @@ a:focus,
 }
 
 .nav-link {
+    font-size: 0.92rem;
     font-weight: 600;
 }
 
