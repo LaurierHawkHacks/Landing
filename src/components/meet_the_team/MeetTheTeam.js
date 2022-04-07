@@ -17,8 +17,8 @@ const TeamName = styled.div`
 
 const Team = styled.div`
     display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     
 `;
 

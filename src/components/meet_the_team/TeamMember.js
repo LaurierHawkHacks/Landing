@@ -51,7 +51,6 @@ const dropdownAnimationUp = keyframes`
 
 const Wrapper = styled.div`
     position: relative;
-    overflow: hidden;
     
     // width: fit-content;
     height: fit-content;
@@ -105,8 +104,9 @@ const Role = styled.div`
 const Description = styled.div`
     visibility: hidden;
     
-    position: relative;
-    
+    position: absolute;
+    top: 100%;
+
     max-height: 0;
     overflow: hidden;
     width: 100%;
@@ -119,7 +119,7 @@ const Description = styled.div`
     box-sizing: border-box;
     border-radius: 14px;
 
-    z-index: -1;
+    z-index: 2;
 
     -moz-transition: top 1s;
     -o-transition: top 1s;
@@ -127,6 +127,9 @@ const Description = styled.div`
 
     // transition: top 1s ease-out; 
     transition: max-height 1s ease-out;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
 
     ${Wrapper}:hover &{
         max-height: 500px;
