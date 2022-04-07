@@ -2,52 +2,35 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 
 const dropdownAnimationDown = keyframes`
-  0% { transform: translateY(0%); } /* slide the dropdown down */
-  100% { transform: translateY(30%); }
+  0% { 
+        visablility: visable;
+        opacity: 0;
+        max-height: 0;
+        transform: translateY(-50%); /* slide the dropdown down */
+    } 
+  100% { 
+        transform: translateY(0%); 
+        opacity: 1;
+        max-height: 500px;
+        visibility: visible;
+    }
 `;
 
 const dropdownAnimationUp = keyframes`
-  0% { transform: translateY(30%); } /* slide the dropdown up */
-  100% { transform: translateY(0%); }
+  0% {
+        transform: translateY(0%); 
+        opacity: 1;
+        max-height: 500px;
+        visibility: visible;;
+    } 
+  100% { 
+        visablility: visable;
+        opacity: 0;
+        max-height: 0;
+        transform: translateY(-50%); /* slide the dropdown down */
+      
+    }
 `;
-
-
-
-// const CardDiv = styled.div`
-//   width: 300px;
-
-//   :hover {
-//     cursor: pointer;
-//     ${ButtonDiv} {
-//       animation-name: ${dropdownAnimationDown};
-//       animation-duration: 0.3s;
-//       animation-fill-mode: forwards;
-//     }
-//   }
-// `;
-
-
-// const Card = styled.div`
-//   margin-top: 1em;
-//   background-color: blue;
-//   height: 80px;
-// `;
-
-// const ButtonDiv = styled.div`
-//   margin-top: 1em; /* added margin-top to both the card and button so they would line-up*/
-
-//   position: absolute; /* allows the button div to sit behind the card */
-//   top: 0px;
-//   z-index: -1; /* allows the button div to sit behind the card */
-
-//   height: 80px;
-//   width: inherit;
-//   background-color: red;
-
-//   animation-name: ${dropdownAnimationUp};
-//   animation-duration: 0.3s;
-//   animation-fill-mode: forwards;
-// `;
 
 const Wrapper = styled.div`
     position: relative;
@@ -102,14 +85,15 @@ const Role = styled.div`
 `;
 
 const Description = styled.div`
-    visibility: hidden;
+    visibility: visible;
+    opacity: 0;
     
     position: absolute;
     top: 100%;
 
     max-height: 0;
     overflow: hidden;
-    width: 100%;
+    width: 300px; /* same as card */
 
     margin-top: 10px;
     padding: 10px;
@@ -121,23 +105,20 @@ const Description = styled.div`
 
     z-index: 2;
 
-    -moz-transition: top 1s;
-    -o-transition: top 1s;
-    transition: top 1s;
-
-    // transition: top 1s ease-out; 
-    transition: max-height 1s ease-out;
-
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
+    animation-delay: 0s;
+    animation-name: ${dropdownAnimationUp};
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
 
     ${Wrapper}:hover &{
-        max-height: 500px;
-        transition: max-height 1s ease-in;
-        visibility: visible;
+        // max-height: 500px;
+        animation-name: ${dropdownAnimationDown};
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
     }
 `;
-
 
 export default function TeamMember(props) {
     return (
