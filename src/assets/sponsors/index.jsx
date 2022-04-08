@@ -7,6 +7,6 @@ import OnePassword from "./1password.svg";
 import Balsamiq from "./balsamiq.png";
 import Echo3D from "./echo3D.png";
 
-import Linode from "./linode.png";
+// import Linode from "./linode.png";
 
-export { DCL, Taskade, DigitalOceanHorizontal, DigitalOceanVertical, OnePassword, Balsamiq, Echo3D, Linode };
+export { DCL, Taskade, DigitalOceanHorizontal, DigitalOceanVertical, OnePassword, Balsamiq, Echo3D };
