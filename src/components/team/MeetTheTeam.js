@@ -30,17 +30,19 @@ const MeetTheTeam = () => {
                     {Object.keys(teamBios).map((teamKey, i) => {
                         return (
                             <>
-                                <TeamName>
+                                <TeamName key={teamKey}>
                                     <b>{teamKey}</b>
                                 </TeamName>
                                 <Team>
                                     {teamBios[teamKey].map((memberObject, i) => {
                                         return (
                                             <TeamMember
+                                                key={memberObject.name}
                                                 name={memberObject.name}
                                                 link={memberObject.link}
                                                 bio={memberObject.bio}
                                                 roles={memberObject.roles}
+                                                image={memberObject.image}
                                             />
                                         );
                                     })}

@@ -1,6 +1,9 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
+import * as TeamImages from "../../assets/team";
+
+
 const dropdownAnimationDown = keyframes`
   0% { 
         visablility: visable;
@@ -122,7 +125,7 @@ export default function TeamMember(props) {
     return (
         <Wrapper>
             <Card>
-                <Image src={encodeURI(props.img_path)} />
+                <Image key={props.image} src={TeamImages[props.image]} />
                 <Header>
                     <Name>
                         <b> {props.name} </b>
@@ -139,11 +142,13 @@ export default function TeamMember(props) {
                 </Header>
             </Card>
             <Description>
-                <a href={props.link} style={{ "word-wrap": "break-Word" }}>
+                {props.bio}{" "}
+                <br />
+                <br />
+
+                <a href={props.link} style={{ "wordWrap": "break-Word" }}>
                     LinkedIn
                 </a>
-                <br />
-                {props.bio}{" "}
             </Description>
         </Wrapper>
     );
