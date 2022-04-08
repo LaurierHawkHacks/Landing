@@ -69,7 +69,7 @@ function App() {
                                     in a 36 hour period of exploration, creativity, and learning!
                                     <br />
                                     <br />
-                                    Remember, you don\u2019t have to be a pro to participate - show up
+                                    Remember, you don’t have to be a pro to participate - show up
                                     with ten years or ten minutes of experience (oh yeah, and a
                                     great attitute too!)
                                 </p>
@@ -114,11 +114,8 @@ function App() {
                         <div className="row">
                             <div className="col-md-12 text-center">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in
-                                    ligula ut nisi volutpat mollis. Mauris in augue quis augue
-                                    dignissim ullamcorper non porttitor nulla. Nam dapibus urna eget
-                                    sagittis suscipit. Sed quis ipsum libero. Aliquam non tempor
-                                    enim.
+                                Hackathons are a great place to gain experience, knowledge, connections, and cool swag. 
+                                Every participant in HawkHacks will be delivered their very own shipment of swag!
                                 </p>
                             </div>
                         </div>
