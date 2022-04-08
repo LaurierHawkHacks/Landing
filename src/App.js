@@ -69,7 +69,7 @@ function App() {
                                     in a 36 hour period of exploration, creativity, and learning!
                                     <br />
                                     <br />
-                                    Remember, you don\u2019t have to be a pro to participate - show up
+                                    Remember, you don’t have to be a pro to participate - show up
                                     with ten years or ten minutes of experience (oh yeah, and a
                                     great attitute too!)
                                 </p>
