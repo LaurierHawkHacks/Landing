@@ -104,6 +104,7 @@ function SponsorCarousel(){
         }
 
     }
+
     return (
         <Container>
             <SponsorCard>
@@ -116,8 +117,9 @@ function SponsorCarousel(){
             </SponsorCard>
             <SponsorCardPaging>
                 <Pagination.Prev id={'prev'} onClick={handleClick}/>
-                <Pagination.Item id={0} active={activeCardIndex === 0 ? true : false} onClick={handleClick}>1</Pagination.Item>
-                {/* <Pagination.Item id={1} active={activeCardIndex === 1 ? true : false} onClick={handleClick}>2</Pagination.Item> */}
+                {sponsorData.gold.length > 0 ? <Pagination.Item id={0} active={activeCardIndex === 0 ? true : false} onClick={handleClick}>1</Pagination.Item> : null}
+                {sponsorData.gold.length > 1 ? <Pagination.Item id={1} active={activeCardIndex === 1 ? true : false} onClick={handleClick}>2</Pagination.Item> : null}
+                {sponsorData.gold.length > 2 ? <Pagination.Item id={2} active={activeCardIndex === 2 ? true : false} onClick={handleClick}>3</Pagination.Item> : null}
                 <Pagination.Next id={'next'} onClick={handleClick}/>
             </SponsorCardPaging>
         </Container>
