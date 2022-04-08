@@ -10,7 +10,7 @@ import SponsorTiersDisplay from "./components/sponsors/SponsorTiersDisplay";
 import SponsorCarousel from "./components/sponsors/SponsorCarousel";
 import MeetTheTeam from "./components/team/MeetTheTeam";
 import Icon from "./assets/icon.svg";
-import SponsorHawk from "./assets/sponsor_hawk.svg";
+import SponsorHawk from "./assets/sponsor_hawk_heart.png";
 import AboutIllustration from "./assets/illustration_about.svg";
 
 import "./App.css";
