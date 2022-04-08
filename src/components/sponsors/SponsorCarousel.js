@@ -21,7 +21,7 @@ const SponsorCard = Styled.div`
         width: 75%;
         margin-left: auto;
         margin-right: auto;
-        height: 500px;
+        height: auto;
     }
 
     @media (min-width: 992px) {
