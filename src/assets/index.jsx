@@ -8,6 +8,6 @@ import Illustration1 from "./illustration_1.svg";
 import Illustration2 from "./illustration_2.svg";
 import Illustration3 from "./illustration_3.svg";
 
-import SponsorHawk from "./sponsor_hawk.svg";
+import SponsorHawk from "./sponsor_hawk_heart.png";
 
 export { Icon, LogoBlack, LogoWhite, PlaceholderImage, Illustration1, Illustration2, Illustration3, SponsorHawk, PlaceholderHeadshot };
