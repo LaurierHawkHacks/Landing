@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import SocialIcons from "../SocialIcons";
 import Styled from "styled-components";
 
@@ -30,21 +29,20 @@ const FormButton = Styled.button`
 
 const NewsletterForm = () => {
     return (
-        <Container id="newsletter" className="foreground">
-            <div className="spacer" style={{ width: "100%", height: "10em" }} />
+        <>
             <div className="row">
                 <div className="col-md-6 text-left">
                     <h3>// Want to stay updated?</h3>
                     <p className="mb-0">
-                      Reach out at{" "}
+                         Reach out at{" "}
                         <a href="mailto:hello@hawkhacks.ca">hello@hawkhacks.ca</a> for
-                      any help or support, and please be sure to join the{" "}
+                         any help or support, and please be sure to join the{" "}
                         <a
                             href="https://discord.gg/z8XbEEXkqN"
                             target="_blank"
                             rel="noreferrer"
                         >
-                          HawkHacks Discord
+                              HawkHacks Discord
                         </a>
                         {" "}community!
                     </p>
@@ -53,14 +51,15 @@ const NewsletterForm = () => {
                     </div>
 
                     {/* <InputGroup className="mb-3">
-                      <FormControl
-                          placeholder="Enter your email to subscribe to our newsletter!"
-                          aria-label="Recipient's email"
-                          aria-describedby="basic-addon2"
-                      />
+                         <FormControl
+                              placeholder="Enter your email to subscribe to our newsletter!"
+                              aria-label="Recipient's email"
+                              aria-describedby="basic-addon2"
+                         />
 
-                      <Button>{">>"}</Button>
-                  </InputGroup> */}
+                         <Button>{">>"}</Button>
+                    </InputGroup> */}
+                    
                     <div id="mc_embed_signup">
                         <form action="https://hawkhacks.us6.list-manage.com/subscribe/post?u=26e2afc1662a30dadf0c725af&id=050d487d87" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
                             <div id="mc_embed_signup_scroll">
@@ -82,7 +81,7 @@ const NewsletterForm = () => {
                     </div>
                 </div>
             </div>
-        </Container>
+        </>
     );
 };
 
