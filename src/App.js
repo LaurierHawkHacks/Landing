@@ -8,7 +8,7 @@ import FAQ from "./components/FAQ";
 import PartnersSection from "./components/partners/PartnersSection";
 import SponsorTiersDisplay from "./components/sponsors/SponsorTiersDisplay";
 import SponsorCarousel from "./components/sponsors/SponsorCarousel";
-import MeetTheTeam from "./components/meet_the_team/MeetTheTeam";
+import MeetTheTeam from "./components/team/MeetTheTeam";
 import Icon from "./assets/icon.svg";
 import SponsorHawk from "./assets/sponsor_hawk.svg";
 import AboutIllustration from "./assets/illustration_about.svg";
@@ -134,11 +134,11 @@ function App() {
                         <div className="spacer" style={{ width: "100%", height: "10em" }} />
                         <div className="row">
                             <div className="col-md-6 text-left">
-                                <h3>// Want to stay updated?</h3>
+                                <h2 className="font-weight-bold">&lt;Stay Connected/&gt;</h2>
                                 <p className="mb-0">
                                     Reach out at{" "}
                                     <a href="mailto:hello@hawkhacks.ca">hello@hawkhacks.ca</a> for
-                                    any help or support, and please be sure to join the{" "}
+                                    any help or support, and be sure to join the{" "}
                                     <a
                                         href="https://discord.gg/z8XbEEXkqN"
                                         target="_blank"
@@ -185,6 +185,7 @@ function App() {
                     </Container>
 
                     <Container id="meettheteam" className="foreground">
+                        <div className="spacer" style={{ width: "100%", height: "10em" }} />
                         <MeetTheTeam />
                     </Container>
                 </div>

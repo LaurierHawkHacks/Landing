@@ -68,7 +68,7 @@ const AppNavbar = () => {
                     <Nav className="nav-main me-auto">
                         <NavLink href="#about">About</NavLink>
                         <NavLink href="#faq">FAQ</NavLink>
-                        <NavLink href="#newsletter">Newsletter</NavLink>
+                        <NavLink href="#contact">Stay Connected</NavLink>
                         <NavLink href="#partners">Partners</NavLink>
                         <NavLink href="#sponsors">Sponsors</NavLink>
                         <NavLink href="#team">Meet The Team</NavLink>
