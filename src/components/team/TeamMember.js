@@ -1,12 +1,9 @@
 import React from "react";
-import styled, {
-    keyframes
-} from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 import * as TeamImages from "../../assets/team";
 
-
-const dropdownAnimationDown = keyframes `
+const dropdownAnimationDown = keyframes`
   0% { 
         visablility: visable;
         opacity: 0;
@@ -21,7 +18,7 @@ const dropdownAnimationDown = keyframes `
     }
 `;
 
-const dropdownAnimationUp = keyframes `
+const dropdownAnimationUp = keyframes`
   0% {
         transform: translateY(0%); 
         opacity: 1;
@@ -37,14 +34,14 @@ const dropdownAnimationUp = keyframes `
     }
 `;
 
-const Wrapper = styled.div `
+const Wrapper = styled.div`
     position: relative;
 
     height: fit-content;
     border-radius: 35px;
 `;
 
-const Card = styled.div `
+const Card = styled.div`
     position: relative;
     top: 0;
     display: flex;
@@ -66,7 +63,7 @@ const Card = styled.div `
     }
 `;
 
-const Image = styled.img `
+const Image = styled.img`
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -75,24 +72,24 @@ const Image = styled.img `
     object-fit: cover;
 `;
 
-const Header = styled.div `
+const Header = styled.div`
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     flex: 1;
 `;
 
-const Name = styled.div `
+const Name = styled.div`
     font-size: 18px;
     width: 100%;
 `;
 
-const Roles = styled.div `
+const Roles = styled.div`
     font-size: 16px;
     width: 100%;
 `;
 
-const Description = styled.div `
+const Description = styled.div`
     position: absolute;
     top: 100%;
     // margin-top: 10px;
@@ -125,63 +122,39 @@ const Description = styled.div `
 `;
 
 export default function TeamMember(props) {
-    return ( <
-        Wrapper >
-        <
-        Card >
-        <
-        Image key = {
-            props.image
-        }
-        src = {
-            TeamImages[props.image]
-        }
-        /> <
-        Header >
-        <
-        Name >
-        <
-        b > {
-            props.name
-        } < /b> <
-        /Name> <
-        Roles > {
-            props.roles.map((x) => {
-                return ( <
-                    > {
-                        x
-                    } < br / >
-                    <
-                    />
-                );
-            })
-        } <
-        /Roles> <
-        /Header> <
-        /Card> <
-        Description > {
-            props.bio
-        } {
-            " "
-        } <
-        br / >
-        <
-        br / >
-
-        <
-        a href = {
-            props.link
-        }
-        target = "_blank"
-        style = {
-            {
-                "wordWrap": "break-Word"
-            }
-        }
-        rel = "noreferrer" >
-        LinkedIn <
-        /a> <
-        /Description> <
-        /Wrapper>
+    return (
+        <Wrapper>
+            <Card>
+                <Image key={props.image} src={TeamImages[props.image]} />
+                <Header>
+                    <Name>
+                        <b> {props.name} </b>
+                    </Name>
+                    <Roles>
+                        {props.roles.map((x) => {
+                            return (
+                                <>
+                                    {x} <br />
+                                </>
+                            );
+                        })}
+                    </Roles>
+                </Header>
+            </Card>
+            <Description>
+                <a
+                    href={props.link}
+                    target="_blank"
+                    style={{
+                        wordWrap: "break-Word",
+                    }}
+                    rel="noreferrer"
+                >
+                    LinkedIn
+                </a>
+                {props.bio} <br />
+                <br />
+            </Description>
+        </Wrapper>
     );
 }
