@@ -129,7 +129,10 @@ function App() {
                         <FAQ />
                     </Container>
                     
-                    <NewsletterForm/>
+                    <Container id="contact" className="foreground">
+                        <div className="spacer" style={{ width: "100%", height: "10em" }} />
+                        <NewsletterForm/>
+                    </Container>
 
                     <Container id="partners">
                         <div className="spacer" style={{ width: "100%", height: "10em" }} />
@@ -150,7 +153,7 @@ function App() {
                         <SponsorTiersDisplay />
                     </Container>
 
-                    <Container id="meettheteam" className="foreground">
+                    <Container id="team" className="foreground">
                         <div className="spacer" style={{ width: "100%", height: "10em" }} />
                         <MeetTheTeam />
                     </Container>
