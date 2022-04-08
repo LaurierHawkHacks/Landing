@@ -141,14 +141,13 @@ export default function TeamMember(props) {
                 </Header>
             </Card>
             <Description>
-                {props.bio}
-                <br />
-                <br />
+                <p style={{ marginBottom: "8px" }}>{props.bio}</p>
                 <a
                     href={props.linkedin}
                     target="_blank"
                     style={{
                         wordWrap: "break-Word",
+                        padding: "12px 8px",
                     }}
                     rel="noreferrer"
                 >
