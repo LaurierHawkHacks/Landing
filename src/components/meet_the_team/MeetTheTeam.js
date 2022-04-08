@@ -12,8 +12,9 @@ const TeamsContainer = styled.div`
 
 const TeamName = styled.div`
     width: 100%;
-    font-size: 20px;
-    color: red;
+    font-size: 25px;
+    // font: 
+    // color: red;
 `;
 
 const Team = styled.div`
@@ -38,7 +39,7 @@ const MeetTheTeam = () => {
     return (
         <div>
 
-            <div className="col-md-9 col-lg-8 col-xl-7 mx-auto">
+            <div className="col-md-9 col-lg-10 col-xl-8 mx-auto">
                 <h2 className="font-weight-bold text-center">Meet The Team</h2>
                 <div>Subtitle</div>
                 <TeamsContainer>

@@ -1,7 +1,9 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled, {
+    keyframes
+} from "styled-components";
 
-const dropdownAnimationDown = keyframes`
+const dropdownAnimationDown = keyframes `
   0% { 
         visablility: visable;
         opacity: 0;
@@ -16,7 +18,7 @@ const dropdownAnimationDown = keyframes`
     }
 `;
 
-const dropdownAnimationUp = keyframes`
+const dropdownAnimationUp = keyframes `
   0% {
         transform: translateY(0%); 
         opacity: 1;
@@ -32,7 +34,7 @@ const dropdownAnimationUp = keyframes`
     }
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled.div `
     position: relative;
     
     // width: fit-content;
@@ -41,11 +43,12 @@ const Wrapper = styled.div`
     
 `;
 
-const Card = styled.div`
+const Card = styled.div `
     position: relative;
     overflow: hidden;
     
     width: 300px;
+    width: 100%;
     height: fit-content;
     max-height: 100px;
     top: 0;
@@ -53,7 +56,7 @@ const Card = styled.div`
     
     background: #E4EDF2;
     border: 1px solid #0FA3B1;
-    border-radius: 86px;
+    border-radius: 35px;
 
     display: flex;
     flex-direction: row;
@@ -61,7 +64,7 @@ const Card = styled.div`
     z-index: 1;
 `;
 
-const Image = styled.div`
+const Image = styled.div `
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -69,22 +72,23 @@ const Image = styled.div`
     margin-right: 10px;
 `;
 
-const Header = styled.div`
+const Header = styled.div `
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     flex: 1;
 `;
 
-const Name = styled.div`
+const Name = styled.div `
+    font-size: 18px;
     width: 100%;
 `;
 
-const Role = styled.div`
+const Role = styled.div `
     width: 100%;
 `;
 
-const Description = styled.div`
+const Description = styled.div `
     visibility: visible;
     opacity: 0;
     
@@ -94,6 +98,7 @@ const Description = styled.div`
     max-height: 0;
     overflow: hidden;
     width: 300px; /* same as card */
+    width: 100%; /* same as card */
 
     margin-top: 10px;
     padding: 10px;
@@ -121,22 +126,34 @@ const Description = styled.div`
 `;
 
 export default function TeamMember(props) {
-    return (
-        <Wrapper>
-            <Card>
-                <Image></Image>
-                <Header>
-                    <Name>{props.name}</Name>
-                    <Role>Role X
-                    {props.roles.map((x)=>{ return (
-                    <>{x}<br /></>)
-                    })}
+    return ( <
+        Wrapper >
+        <
+        Card >
+        <
+        Image > < /Image> <
+        Header >
+        <
+        Name > < b > {
+            props.name
+        } < /b> </Name >
+        <
+        Role > Role X {
+            props.roles.map((x) => {
+                        return ( <
+                            > {
+                                x
+                            } < br / > < />)
+                        })
+                }
 
-                    </Role>
-                </Header>
-            </Card>
-            <Description>{props.bio}</Description>
-        </Wrapper>
-    );
-}
-
+                <
+                /Role> <
+                /Header> <
+                /Card> <
+                Description > {
+                    props.bio
+                } < /Description> <
+                /Wrapper>
+        );
+    }
