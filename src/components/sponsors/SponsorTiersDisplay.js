@@ -25,40 +25,57 @@ const GoldSponsorLogo = Styled.img`
     width: 100%;
     max-width: 400px;
     margin: 0.5em 0.5em 0.5em 0.5em;
+
+    :hover {
+        cursor: pointer;
+    }
 `;
 
 const SilverSponsorLogo = Styled.img`
     max-width: 250px;    
     margin: 0.5em 0.5em 0.5em 0.5em;
+
+    :hover {
+        cursor: pointer;
+    }
 `;
 
 const BronzeSponsorLogo = Styled.img`
     max-width: 150px;
     margin: 0.5em 0.5em 0.5em 0.5em;
+
+    :hover {
+        cursor: pointer;
+    }
 `;
 
 function SponsorTiersDisplay() {
+
+    function handleClick(url) {
+        window.open(url, "_blank");
+    }
+
     return (
         <Container>
             <SponsorSection>
                 {sponsorData.gold.map((sponsor, index) => {
                     return (
-                        <a key={index} href={sponsor.url} target="_blank" rel="noreferrer">
-                            <OverlayTrigger
-                                
-                                key={index} 
-                                placement="bottom"
-                                overlay={
-                                    <Tooltip id={`tooltip-${index}`}>
-                                        {sponsor.company}
-                                    </Tooltip>
-                                }
-                            >
-                                {sponsor.logoName 
-                                    ? <GoldSponsorLogo src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
-                                    : <GoldSponsorLogo src={placeholder} alt={sponsor.company}/>}
-                            </OverlayTrigger>
-                        </a>
+                       
+                        <OverlayTrigger 
+                            key={index} 
+                            
+                            placement="bottom"
+                            overlay={
+                                <Tooltip id={`tooltip-gold-${index}`}>
+                                    {sponsor.company}
+                                </Tooltip>
+                            }
+                        >
+                            {sponsor.logoName 
+                                ? <GoldSponsorLogo onClick={() => handleClick(sponsor.url)} src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
+                                : <GoldSponsorLogo src={placeholder} alt={sponsor.company}/>}
+                        </OverlayTrigger>
+                        
                     );}
                 )}
                 
@@ -66,21 +83,21 @@ function SponsorTiersDisplay() {
             <SponsorSection>
                 {sponsorData.silver.map((sponsor, index) => {
                     return (
-                        <a key={index} href={sponsor.url} target="_blank" rel="noreferrer">
-                            <OverlayTrigger 
-                                key={index} 
-                                placement="bottom"
-                                overlay={
-                                    <Tooltip id={`tooltip-${index}`}>
-                                        {sponsor.company}
-                                    </Tooltip>
-                                }
-                            >
-                                {sponsor.logoName 
-                                    ? <SilverSponsorLogo src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
-                                    : <SilverSponsorLogo src={placeholder} alt={sponsor.company}/>}
-                            </OverlayTrigger>
-                        </a>
+                        
+                        <OverlayTrigger 
+                            key={index} 
+                            placement="bottom"
+                            overlay={
+                                <Tooltip id={`tooltip-silver-${index}`}>
+                                    {sponsor.company}
+                                </Tooltip>
+                            }
+                        >
+                            {sponsor.logoName 
+                                ? <SilverSponsorLogo onClick={() => handleClick(sponsor.url)} src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
+                                : <SilverSponsorLogo src={placeholder} alt={sponsor.company}/>}
+                        </OverlayTrigger>
+                        
                     );}
                 )}
                 
@@ -88,21 +105,21 @@ function SponsorTiersDisplay() {
             <SponsorSection>
                 {sponsorData.bronze.map((sponsor, index) => {
                     return (
-                        <a key={index} href={sponsor.url} target="_blank" rel="noreferrer">
-                            <OverlayTrigger 
-                                key={index} 
-                                placement="bottom"
-                                overlay={
-                                    <Tooltip id={`tooltip-${index}`}>
-                                        {sponsor.company}
-                                    </Tooltip>
-                                }
-                            >
-                                {sponsor.logoName 
-                                    ? <BronzeSponsorLogo src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
-                                    : <BronzeSponsorLogo src={placeholder} alt={sponsor.company}/>}
-                            </OverlayTrigger>
-                        </a>
+                        
+                        <OverlayTrigger 
+                            key={index} 
+                            placement="bottom"
+                            overlay={
+                                <Tooltip id={`tooltip-bronze-${index}`}>
+                                    {sponsor.company}
+                                </Tooltip>
+                            }
+                        >
+                            {sponsor.logoName 
+                                ? <BronzeSponsorLogo onClick={() => handleClick(sponsor.url)} src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
+                                : <BronzeSponsorLogo src={placeholder} alt={sponsor.company}/>}
+                        </OverlayTrigger>
+                        
                     );}
                 )}
              
