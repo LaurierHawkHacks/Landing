@@ -32,7 +32,7 @@ const GoldSponsorLogo = Styled.img`
 `;
 
 const SilverSponsorLogo = Styled.img`
-    max-width: 250px;    
+    max-width: 300px;    
     margin: 1.5em;
 
     :hover {
