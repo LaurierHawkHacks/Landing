@@ -69,7 +69,7 @@ const NewsletterForm = () => {
                               <h5>Sign up for our newsletter!</h5>
 
                               <div className="mc-field-group">
-                                   <FormInput type="email" placeholder="Enter your email to subscribe!" name="EMAIL" className="required email" id="mce-EMAIL" />
+                                   <FormInput type="email" placeholder="Enter your email !" name="EMAIL" className="required email" id="mce-EMAIL" />
                                    <FormButton type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button">Subscribe!</FormButton>
                               </div>
 
