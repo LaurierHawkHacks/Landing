@@ -80,8 +80,6 @@ const SponsorCardContent = Styled.p`
     margin-right: 2em;
 `;
 function SponsorCarousel(){
-    // TODO: Fix the logos to be found using the sponsorData.json file.
-
     const [activeCardIndex, setActiveCardIndex] = React.useState(0);
 
     function handleClick(event){

@@ -38,7 +38,6 @@ const BronzeSponsorLogo = Styled.img`
 `;
 
 function SponsorTiersDisplay() {
-// TODO: Fix the logos to be found using the sponsorData.json file.
     return (
         <Container>
             <SponsorSection>
@@ -58,11 +57,10 @@ function SponsorTiersDisplay() {
                                 : <GoldSponsorLogo src={placeholder} alt={sponsor.company}/>}
                             </OverlayTrigger>
                         )}
-                        )}
+                    )}
                 
             </SponsorSection>
             <SponsorSection>
-                    
                     {sponsorData.silver.map((sponsor, index) => {
                         return (
                             <OverlayTrigger 
