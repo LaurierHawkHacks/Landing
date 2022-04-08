@@ -69,7 +69,7 @@ const NewsletterForm = () => {
 
                                 <div className="mc-field-group">
                                     <FormInput type="email" placeholder="Enter your email" name="EMAIL" className="required email" id="mce-EMAIL" />
-                                    <FormButton type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button">>>></FormButton>
+                                    <FormButton type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button">{">>>"}</FormButton>
                                 </div>
 
                                 <div id="mce-responses" className="clear foot">
