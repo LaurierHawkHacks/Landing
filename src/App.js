@@ -18,6 +18,23 @@ import "./App.css";
 
 const GradientBackground = Styled.div``;
 
+const AnimatedIcon = Styled.img`
+    transition: all 0.25s ease;
+    :hover {
+        filter: brightness(75%);
+        transition: all 0.25s ease;
+        animation-name:rotate;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        @keyframes rotate{
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+    }
+`;
+
 function App() {
     return (
         <>
@@ -34,7 +51,7 @@ function App() {
                         className="d-flex flex-column align-items-center foreground"
                     >
                         <div className="spacer" style={{ width: "100%", height: "7.5em" }} />
-                        <img
+                        <AnimatedIcon
                             className="mx-2"
                             src={Icon}
                             width="110"
