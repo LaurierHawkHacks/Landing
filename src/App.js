@@ -5,6 +5,7 @@ import { Button, Container, Row, InputGroup, FormControl } from "react-bootstrap
 import Illustration from "./components/Illustration";
 import SocialIcons from "./components/SocialIcons";
 import FAQ from "./components/FAQ";
+import PartnersSection from "./components/partners/PartnersSection";
 import SponsorTiersDisplay from "./components/sponsors/SponsorTiersDisplay";
 import SponsorCarousel from "./components/sponsors/SponsorCarousel";
 import MeetTheTeam from "./components/meet_the_team/MeetTheTeam";
@@ -162,6 +163,11 @@ function App() {
                                 </InputGroup>
                             </div>
                         </div>
+                    </Container>
+
+                    <Container id="partners">
+                        <div className="spacer" style={{ width: "100%", height: "10em" }} />
+                        <PartnersSection/>
                     </Container>
 
                     <Container id="sponsors" className="foreground">

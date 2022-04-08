@@ -3,22 +3,22 @@
         {
             "name": "Major League Hacking",
             "logoName": "MLH",
-            "url": ""
+            "url": "https://mlh.io"
         },
         {
             "name": "Laurier Computing Society",
             "logoName": "LCS",
-            "url": "https://lauriercs.ca/"
+            "url": "https://lauriercs.ca"
         },
         {
             "name": "CCubed",
             "logoName": "C3",
-            "url": ""
+            "url": "https://ccubed.dev"
         },
         {
             "name": "Laurier Students Union",
-            "logoName": "",
-            "url": ""
+            "logoName": "SU",
+            "url": "https://yourstudentsunion.ca"
         },
         {
             "name": "Faculty of Science Students' Association",

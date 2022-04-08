@@ -6,7 +6,6 @@ import placeholder from "../../assets/placeholder_image.svg";
 
 import * as PartnerImages from "../../assets/partners";
 
-
 const PartnerLogoContainer = Styled.div`
     width: 100%;
     height: auto;
@@ -43,9 +42,6 @@ const SubHeading = Styled.p`
     text-align: center;
 `;
 
-/*
- * TODO: Get the SVGs of SU and FOSSA 
- */
 function PartnersSection(){
 
     return(
