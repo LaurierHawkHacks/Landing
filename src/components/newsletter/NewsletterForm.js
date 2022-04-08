@@ -34,9 +34,9 @@ const NewsletterForm = () => {
                 <div className="col-md-6 text-left">
                     <h3>// Want to stay updated?</h3>
                     <p className="mb-0">
-                         Reach out at{" "}
+                         Reach out at
                         <a href="mailto:hello@hawkhacks.ca">hello@hawkhacks.ca</a> for
-                         any help or support, and please be sure to join the{" "}
+                         any help or support, and please be sure to join the
                         <a
                             href="https://discord.gg/z8XbEEXkqN"
                             target="_blank"
@@ -44,7 +44,7 @@ const NewsletterForm = () => {
                         >
                               HawkHacks Discord
                         </a>
-                        {" "}community!
+                        community!
                     </p>
                     <div className="pb-1 my-2">
                         <SocialIcons />
