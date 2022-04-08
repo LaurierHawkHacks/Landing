@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import TeamMember from "./TeamMember";
-import teamBios from "../../teamBios_grouped.json";
+import teamBios from "../../teamBios.json";
 
 
 const TeamsContainer = styled.div`
@@ -26,6 +26,15 @@ const Team = styled.div`
 
 const MeetTheTeam = () => {
     console.log("GEllo");
+
+    // for (let key in teamBios) {
+    //     let array = teamBios[key];
+    // }
+
+    // Object.keys(teamBios).forEach(function(x){
+    //     console.log(x + ' - ' + teamBios[0]);
+    // });
+
     return (
         <div>
 
@@ -33,20 +42,32 @@ const MeetTheTeam = () => {
                 <h2 className="font-weight-bold text-center">Meet The Team</h2>
                 <div>Subtitle</div>
                 <TeamsContainer>
-                    {teamBios.map((team, members))}
+                    {Object.keys(teamBios).map((teamKey, i ) => { return(
+                        <>
+                        <TeamName>{teamKey}</TeamName>
+                        <Team>
+                            {teamBios[teamKey].map((memberObject, i)=>{ return(
+                                <TeamMember name={memberObject.name} />
+                            )})}
+                        </Team>
+                        </>
+                        )
+                    })}
 
-                    <TeamName> Development Team </TeamName>
-                    <Team>
-                        <TeamMember name="GongKong" />
-                        <TeamMember name="GongKong" />
-                        <TeamMember name="GongKong" />
-                        <TeamMember name="GongKong" />
-                    </Team>
+                    
                 </TeamsContainer>
             </div>
         </div>
     );
 
 }
+
+{/* <TeamName> Development Team </TeamName>
+    <Team>
+        <TeamMember name="GongKong" />
+        <TeamMember name="GongKong" />
+        <TeamMember name="GongKong" />
+        <TeamMember name="GongKong" />
+    </Team> */}
 
 export default MeetTheTeam;
