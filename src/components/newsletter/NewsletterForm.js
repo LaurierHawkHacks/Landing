@@ -34,9 +34,9 @@ const NewsletterForm = () => {
                 <div className="col-md-6 text-left">
                     <h3>// Want to stay updated?</h3>
                     <p className="mb-0">
-                         Reach out at{" "}
+                         Reach out at
                         <a href="mailto:hello@hawkhacks.ca">hello@hawkhacks.ca</a> for
-                         any help or support, and please be sure to join the{" "}
+                         any help or support, and please be sure to join the
                         <a
                             href="https://discord.gg/z8XbEEXkqN"
                             target="_blank"
@@ -44,7 +44,7 @@ const NewsletterForm = () => {
                         >
                               HawkHacks Discord
                         </a>
-                        {" "}community!
+                        community!
                     </p>
                     <div className="pb-1 my-2">
                         <SocialIcons />
@@ -59,7 +59,8 @@ const NewsletterForm = () => {
 
                          <Button>{">>"}</Button>
                     </InputGroup> */}
-                    
+                    <div className="spacer" style={{ width: "100%", height: "1.5em" }} />
+
                     <div id="mc_embed_signup">
                         <form action="https://hawkhacks.us6.list-manage.com/subscribe/post?u=26e2afc1662a30dadf0c725af&id=050d487d87" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
                             <div id="mc_embed_signup_scroll">
@@ -67,8 +68,8 @@ const NewsletterForm = () => {
                                 <h5>Sign up for our newsletter!</h5>
 
                                 <div className="mc-field-group">
-                                    <FormInput type="email" placeholder="Enter your email !" name="EMAIL" className="required email" id="mce-EMAIL" />
-                                    <FormButton type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button">Subscribe!</FormButton>
+                                    <FormInput type="email" placeholder="Enter your email" name="EMAIL" className="required email" id="mce-EMAIL" />
+                                    <FormButton type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button">{">>>"}</FormButton>
                                 </div>
 
                                 <div id="mce-responses" className="clear foot">
