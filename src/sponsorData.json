@@ -7,12 +7,12 @@
         },
         {
             "company": "Cisco",
-            "logoName": "",
+            "logoName": "TempCisco",
             "url": "https://cisco.com/c/en_ca"
         },
         {
             "company": "LeadingLearners",
-            "logoName": "",
+            "logoName": "TempLeadingLearners",
             "url": "https://leading-learners.com"
         },
         {
@@ -22,7 +22,7 @@
         },
         {
             "company": "Dhari Inc.",
-            "logoName": "",
+            "logoName": "TempDhari",
             "url": "https://dhari.ca"
         },
         {
@@ -32,17 +32,17 @@
         },
         {
             "company": "Linode",
-            "logoName": "Linode",
+            "logoName": "TempLinode",
             "url": "https://linode.com"
         },
         {
             "company": "Wolfram",
-            "logoName": "",
+            "logoName": "TempWolfram",
             "url": "https://wolfram.com/wolfram-one"
         },
         {
             "company": "GeeksForGeeks",
-            "logoName": "",
+            "logoName": "TempGFG",
             "url": "https://geeksforgeeks.org"
         }
     ],
@@ -54,12 +54,12 @@
         },
         {
             "company": "System-on-Chip Technologies",
-            "logoName": "SOC",
+            "logoName": "TempSOC",
             "url": "https://soctechnologies.com"
         },
         {
             "company": "MoneyClip",
-            "logoName": "MoneyClip",
+            "logoName": "TempMoneyClip",
             "url": "https://moneyclip.io/"
         },
         {
