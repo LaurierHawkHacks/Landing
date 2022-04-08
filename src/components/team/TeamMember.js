@@ -47,8 +47,7 @@ const Card = styled.div`
 
     width: 100%;
     height: fit-content;
-    max-height: 100px;
-    padding: 3px;
+    padding: 3px 3px 4px 3px;
     overflow: hidden;
 
     border: 2px solid rgba(255, 0, 0, 0);
@@ -58,7 +57,7 @@ const Card = styled.div`
 
     &:hover {
         background: #e4edf2;
-        border: 2px solid #0FA3B1;
+        border: 2px solid #0fa3b1;
     }
 `;
 
@@ -90,13 +89,13 @@ const Roles = styled.div`
 const Description = styled.div`
     position: absolute;
     top: 100%;
-    margin-top: 10px;
+    // margin-top: 10px;
     padding: 10px;
     max-height: 0;
     overflow: hidden;
     width: 100%; /* same as card */
 
-    font-size: 18px;
+    font-size: 16px;
     background: #e4edf2;
     border: 1px solid #0fa3b1;
     box-sizing: border-box;
@@ -123,12 +122,13 @@ export default function TeamMember(props) {
     return (
         <Wrapper>
             <Card>
-                <Image/>
+                <Image />
                 <Header>
                     <Name>
-                        <b> {props.name} </b>
-                    </Name>
+                        <b> {props.name} </b>{" "}
+                    </Name>{" "}
                     <Roles>
+                        {" "}
                         {props.roles.map((x) => {
                             return (
                                 <>
@@ -136,11 +136,13 @@ export default function TeamMember(props) {
                                     {x} <br />{" "}
                                 </>
                             );
-                        })}
-                    </Roles>
-                </Header>
-            </Card>
-            <Description> {props.bio} </Description>
+                        })}{" "}
+                    </Roles>{" "}
+                </Header>{" "}
+            </Card>{" "}
+            <Description> 
+                <a href={props.link} style={{'word-wrap': 'break-Word'}}>{props.link}</a><br />
+                {props.bio} </Description>{" "}
         </Wrapper>
     );
 }
