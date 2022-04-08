@@ -27,7 +27,7 @@ const Illustration = ({ src_name, position='absolute', top=undefined, bottom=und
             ? illustration_3
             : src_name === 'illustration_4'
             ? illustration_4
-            : console.log(src_name)
+            : null
         }
         style={{
           width: width,
