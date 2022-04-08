@@ -146,7 +146,7 @@ export default function TeamMember(props) {
                 <br />
                 <br />
 
-                <a href={props.link} style={{ "wordWrap": "break-Word" }}>
+                <a href={props.link} target="_blank" style={{ "wordWrap": "break-Word" }} rel="noreferrer">
                     LinkedIn
                 </a>
             </Description>
