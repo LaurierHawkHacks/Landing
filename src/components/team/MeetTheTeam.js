@@ -25,7 +25,7 @@ const MeetTheTeam = () => {
     return (
         <div>
             <div className="col-md-9 col-lg-10 col-xl-8 mx-auto">
-                <h2 className="font-weight-bold text-center">Meet The Team</h2>
+                <h2 className="font-weight-bold text-center">{"<Meet The Team/>"}</h2>
                 <TeamsContainer>
                     {Object.keys(teamBios).map((teamKey) => {
                         return (
