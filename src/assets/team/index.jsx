@@ -3,6 +3,7 @@ import Anna from "./anna.jpg";
 import BenP from "./benp.jpg";
 import BenS from "./bens.jpg";
 import Branden from "./branden.jpg";
+import Brianna from "./brianna.jpg";
 import Daner from "./daner.jpg";
 import Declan from "./declan.jpg";
 import Dhari from "./dhari.jpg";
@@ -27,4 +28,4 @@ import Steven from "./steven.jpg";
 import Taha from "./taha.jpg";
 import Zaza from "./zaza.jpg";
 
-export { Aidan, Anna, BenP, BenS, Branden, Daner, Declan, Dhari, Gavan, Isaac, Jacqueline, Katya, Kelvin, Leanne, Mack, Mahek, Manson, Nathan, Nausher, Nish, Obi, Polina, Priyanshi, Riley, Robert, Steven, Taha, Zaza };
+export { Aidan, Anna, BenP, BenS, Branden, Brianna, Daner, Declan, Dhari, Gavan, Isaac, Jacqueline, Katya, Kelvin, Leanne, Mack, Mahek, Manson, Nathan, Nausher, Nish, Obi, Polina, Priyanshi, Riley, Robert, Steven, Taha, Zaza };

@@ -141,6 +141,9 @@ export default function TeamMember(props) {
                 </Header>
             </Card>
             <Description>
+                {props.bio}
+                <br />
+                <br />
                 <a
                     href={props.link}
                     target="_blank"
@@ -151,8 +154,6 @@ export default function TeamMember(props) {
                 >
                     LinkedIn
                 </a>
-                {props.bio} <br />
-                <br />
             </Description>
         </Wrapper>
     );
