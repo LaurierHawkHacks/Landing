@@ -114,11 +114,8 @@ function App() {
                         <div className="row">
                             <div className="col-md-12 text-center">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in
-                                    ligula ut nisi volutpat mollis. Mauris in augue quis augue
-                                    dignissim ullamcorper non porttitor nulla. Nam dapibus urna eget
-                                    sagittis suscipit. Sed quis ipsum libero. Aliquam non tempor
-                                    enim.
+                                Hackathons are a great place to gain experience, knowledge, connections, and cool swag. 
+                                Every participant in HawkHacks will be delivered their very own shipment of swag!
                                 </p>
                             </div>
                         </div>
