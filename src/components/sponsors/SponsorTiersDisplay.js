@@ -43,19 +43,22 @@ function SponsorTiersDisplay() {
             <SponsorSection>
                 {sponsorData.gold.map((sponsor, index) => {
                     return (
-                        <OverlayTrigger 
-                            key={index} 
-                            placement="bottom"
-                            overlay={
-                                <Tooltip id={`tooltip-${index}`}>
-                                    {sponsor.company}
-                                </Tooltip>
-                            }
-                        >
-                            {sponsor.logoName 
-                                ? <GoldSponsorLogo src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
-                                : <GoldSponsorLogo src={placeholder} alt={sponsor.company}/>}
-                        </OverlayTrigger>
+                        <a key={index} href={sponsor.url} target="_blank" rel="noreferrer">
+                            <OverlayTrigger
+                                
+                                key={index} 
+                                placement="bottom"
+                                overlay={
+                                    <Tooltip id={`tooltip-${index}`}>
+                                        {sponsor.company}
+                                    </Tooltip>
+                                }
+                            >
+                                {sponsor.logoName 
+                                    ? <GoldSponsorLogo src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
+                                    : <GoldSponsorLogo src={placeholder} alt={sponsor.company}/>}
+                            </OverlayTrigger>
+                        </a>
                     );}
                 )}
                 
@@ -63,19 +66,21 @@ function SponsorTiersDisplay() {
             <SponsorSection>
                 {sponsorData.silver.map((sponsor, index) => {
                     return (
-                        <OverlayTrigger 
-                            key={index} 
-                            placement="bottom"
-                            overlay={
-                                <Tooltip id={`tooltip-${index}`}>
-                                    {sponsor.company}
-                                </Tooltip>
-                            }
-                        >
-                            {sponsor.logoName 
-                                ? <SilverSponsorLogo src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
-                                : <SilverSponsorLogo src={placeholder} alt={sponsor.company}/>}
-                        </OverlayTrigger>
+                        <a key={index} href={sponsor.url} target="_blank" rel="noreferrer">
+                            <OverlayTrigger 
+                                key={index} 
+                                placement="bottom"
+                                overlay={
+                                    <Tooltip id={`tooltip-${index}`}>
+                                        {sponsor.company}
+                                    </Tooltip>
+                                }
+                            >
+                                {sponsor.logoName 
+                                    ? <SilverSponsorLogo src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
+                                    : <SilverSponsorLogo src={placeholder} alt={sponsor.company}/>}
+                            </OverlayTrigger>
+                        </a>
                     );}
                 )}
                 
@@ -83,19 +88,21 @@ function SponsorTiersDisplay() {
             <SponsorSection>
                 {sponsorData.bronze.map((sponsor, index) => {
                     return (
-                        <OverlayTrigger 
-                            key={index} 
-                            placement="bottom"
-                            overlay={
-                                <Tooltip id={`tooltip-${index}`}>
-                                    {sponsor.company}
-                                </Tooltip>
-                            }
-                        >
-                            {sponsor.logoName 
-                                ? <BronzeSponsorLogo src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
-                                : <BronzeSponsorLogo src={placeholder} alt={sponsor.company}/>}
-                        </OverlayTrigger>
+                        <a key={index} href={sponsor.url} target="_blank" rel="noreferrer">
+                            <OverlayTrigger 
+                                key={index} 
+                                placement="bottom"
+                                overlay={
+                                    <Tooltip id={`tooltip-${index}`}>
+                                        {sponsor.company}
+                                    </Tooltip>
+                                }
+                            >
+                                {sponsor.logoName 
+                                    ? <BronzeSponsorLogo src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
+                                    : <BronzeSponsorLogo src={placeholder} alt={sponsor.company}/>}
+                            </OverlayTrigger>
+                        </a>
                     );}
                 )}
              
