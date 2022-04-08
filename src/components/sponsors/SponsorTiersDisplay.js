@@ -33,7 +33,7 @@ const GoldSponsorLogo = Styled.img`
 
 const SilverSponsorLogo = Styled.img`
     max-width: 250px;    
-    margin: 0.5em 0.5em 0.5em 0.5em;
+    margin: 1.5em;
 
     :hover {
         cursor: pointer;
@@ -42,7 +42,7 @@ const SilverSponsorLogo = Styled.img`
 
 const BronzeSponsorLogo = Styled.img`
     max-width: 150px;
-    margin: 0.5em 0.5em 0.5em 0.5em;
+    margin: 1.5em;
 
     :hover {
         cursor: pointer;
