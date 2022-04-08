@@ -16,6 +16,7 @@ import Leanne from "./leanne.jpg";
 import Mack from "./mack.jpg";
 import Mahek from "./mahek.jpg";
 import Manson from "./manson.png";
+import Natalie from "./natalie.jpg";
 import Nathan from "./nathan.jpg";
 import Nausher from "./nausher.png";
 import Nish from "./nish.jpg";
@@ -28,4 +29,4 @@ import Steven from "./steven.jpg";
 import Taha from "./taha.jpg";
 import Zaza from "./zaza.jpg";
 
-export { Aidan, Anna, BenP, BenS, Branden, Brianna, Daner, Declan, Dhari, Gavan, Isaac, Jacqueline, Katya, Kelvin, Leanne, Mack, Mahek, Manson, Nathan, Nausher, Nish, Obi, Polina, Priyanshi, Riley, Robert, Steven, Taha, Zaza };
+export { Aidan, Anna, BenP, BenS, Branden, Brianna, Daner, Declan, Dhari, Gavan, Isaac, Jacqueline, Katya, Kelvin, Leanne, Mack, Mahek, Manson, Natalie, Nathan, Nausher, Nish, Obi, Polina, Priyanshi, Riley, Robert, Steven, Taha, Zaza };
