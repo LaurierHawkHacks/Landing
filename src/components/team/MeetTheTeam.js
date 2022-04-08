@@ -38,6 +38,7 @@ const MeetTheTeam = () => {
                                         return (
                                             <TeamMember
                                                 name={memberObject.name}
+                                                link={memberObject.link}
                                                 bio={memberObject.bio}
                                                 roles={memberObject.roles}
                                             />
