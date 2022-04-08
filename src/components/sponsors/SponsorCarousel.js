@@ -4,6 +4,8 @@ import Styled from 'styled-components';
 import sponsorData from '../../sponsorData.json'
 import placeholder from '../../assets/placeholder_image.svg';
 
+import * as SponsorImages from "../../assets/sponsors/";
+
 const SponsorCard = Styled.div`
     display: flex;
     flex-direction: column;
@@ -102,22 +104,20 @@ function SponsorCarousel(){
         }
 
     }
-
     return (
         <Container>
             <SponsorCard>
-                {sponsorData.gold[activeCardIndex].logo ?
-                    <SponsorCardImage src={sponsorData.gold[activeCardIndex].logoName} alt={sponsorData.gold[activeCardIndex].company} /> 
+                {sponsorData.gold[activeCardIndex].logoName ?
+                    <SponsorCardImage src={SponsorImages[sponsorData.gold[activeCardIndex].logoName]} alt={sponsorData.gold[activeCardIndex].company} /> 
                     : <SponsorCardImage src={placeholder} />
                 }
-                {/* <h3>{sponsorData.gold[activeCardIndex].company}</h3> */}
                 <SponsorCardContent>{sponsorData.gold[activeCardIndex].description}</SponsorCardContent>
-                <SponsorCardButton>Learn more</SponsorCardButton>
+                <SponsorCardButton target="_blank" href={sponsorData.gold[activeCardIndex].url}>Learn more</SponsorCardButton>
             </SponsorCard>
             <SponsorCardPaging>
                 <Pagination.Prev id={'prev'} onClick={handleClick}/>
                 <Pagination.Item id={0} active={activeCardIndex === 0 ? true : false} onClick={handleClick}>1</Pagination.Item>
-                <Pagination.Item id={1} active={activeCardIndex === 1 ? true : false} onClick={handleClick}>2</Pagination.Item>
+                {/* <Pagination.Item id={1} active={activeCardIndex === 1 ? true : false} onClick={handleClick}>2</Pagination.Item> */}
                 <Pagination.Next id={'next'} onClick={handleClick}/>
             </SponsorCardPaging>
         </Container>
