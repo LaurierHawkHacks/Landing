@@ -35,7 +35,6 @@ const dropdownAnimationUp = keyframes`
 const Wrapper = styled.div`
     position: relative;
 
-    // width: fit-content;
     height: fit-content;
     border-radius: 35px;
 `;
@@ -114,7 +113,6 @@ const Description = styled.div`
     animation-fill-mode: forwards;
 
     ${Wrapper}:hover & {
-        // max-height: 500px;
         animation-name: ${dropdownAnimationDown};
         animation-duration: 0.3s;
         animation-fill-mode: forwards;

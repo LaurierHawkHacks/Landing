@@ -2,8 +2,6 @@ import React from "react";
 import TeamMember from "./TeamMember";
 
 function TeamMemberLayout(){
-
-
     return (
         <>
             <TeamMember 
@@ -19,7 +17,6 @@ function TeamMemberLayout(){
             />
         </>
     );
-
 }
 
 export default TeamMemberLayout;

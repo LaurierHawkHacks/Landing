@@ -12,7 +12,6 @@ const TeamsContainer = styled.div`
 const TeamName = styled.div`
     width: 100%;
     font-size: 22px;
-    // color: red;
 `;
 
 const Team = styled.div`
@@ -53,15 +52,5 @@ const MeetTheTeam = () => {
         </div>
     );
 };
-
-{
-    /* <TeamName> Development Team </TeamName>
-    <Team>
-        <TeamMember name="GongKong" />
-        <TeamMember name="GongKong" />
-        <TeamMember name="GongKong" />
-        <TeamMember name="GongKong" />
-    </Team> */
-}
 
 export default MeetTheTeam;
