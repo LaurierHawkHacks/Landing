@@ -1,0 +1,176 @@
+{
+    "Admin": [
+        {
+            "bio": "I am a father to many and none.",
+            "name": "Nausher Rao",
+            "roles": []
+        },
+        {
+            "bio": "Hey, my name's Branden and I'm the Head of Operations of HawkHacks! I've never actually competed in a hackathon but I love coding and organizing huge events for students!",
+            "link": "https://www.linkedin.com/in/brandenwheeler/",
+            "name": "Branden Wheeler",
+            "roles": []
+        },
+        {
+            "bio": "Hey, all! My name is Mahek currently a third-year CS student as well as the Logistics Coordinator for HawkHacks ",
+            "link": "https://www.linkedin.com/in/mahekshah28/",
+            "name": "Mahek Shah",
+            "roles": []
+        }
+    ],
+    "Communcations": [
+        {
+            "bio": "Hey guys! My name is Dhari and I\u2019m currently a third-year Data Science student at Laurier. Here at HawkHacks, I am a Hacker and Corporate Newsletter Chief as well as a Social Media Coordinator. I love reading in my spare time, if you have any good sci-fi recommendations let me know!",
+            "link": "linkedin.com/in/dhari-gandhi/",
+            "name": "Dhari Gandhi",
+            "roles": []
+        },
+        {
+            "bio": "Hey everyone! My name is Priyanshi and I\u2019m a first-year student in the Business Technology Management Program. I am the Social Media Market for CCubed. I love spending time reading, travelling and am most definitely not addicted to Tiktok\u2026",
+            "link": "linkedin.com/in/priyanshipatel02",
+            "name": "Priyanshi Patel",
+            "roles": []
+        },
+        {
+            "bio": "Heya! I\u2019m Zaza, a 3rd-year Computer Science student at the University of Guelph :) I\u2019m the Director of Comms here at HawkHacks and for Ccubed as well! I love writing and reading both poetry and novels, and am a fan of music and dance! Oh, I\u2019m also the Co-chair of GryphHacks :p",
+            "link": "https://www.linkedin.com/in/shaiza-hashmi/",
+            "name": "Zaza Hashmi",
+            "roles": []
+        },
+        {
+            "bio": "Name's Anna. I'm a 4th-year animation student who illustrates graphics and draws a lot in her spare time.",
+            "name": "Anna L",
+            "roles": []
+        }
+    ],
+    "Corporate Relations": [
+        {
+            "bio": "Hey Everyone! My name is Nish and I am a third-year Computer Science Student and the Head of Corporate Relations Department here at HawkHacks. I love music, programming, cars, mountain biking, swimming, and hiking!",
+            "link": "https://www.linkedin.com/in/nish-tewari/",
+            "name": "Nishant Tewari",
+            "roles": []
+        },
+        {
+            "bio": "I\u2019m Ben. A UoG Alumni, Development Team Lead, and Director of Partnerships at CCubed, through which I\u2019m enjoying helping out with HawkHacks sponsorships. I\u2019m a big fan of high fantasy novels and meeting new members of the tech community",
+            "link": "https://www.linkedin.com/in/benpearo/",
+            "name": "Ben Pearo",
+            "roles": []
+        },
+        {
+            "bio": "Hi! I\u2019m Riley. Currently a third-year Computer Science w/ Management Student at WLU, and Coordinator of Partnerships at CCubed. I also help run the MansWithOpinions Podcast, and I enjoy meeting new people and learning new things.",
+            "link": "linkedin.com/in/riley-m-adams",
+            "name": "Riley Adams",
+            "roles": []
+        },
+        {
+            "bio": "Hey! My name is Declan and I\u2019m a 3rd-year Computer Science student and a part of the HawkHacks Corporate Relations team. I have a strong passion for music, technology and basketball!",
+            "link": "https://www.linkedin.com/in/declanhollingworth/",
+            "name": "Declan Hollingworth",
+            "roles": []
+        },
+        {
+            "bio": "Hello, World! My name is Gavan and I\u2019m a third-year Computer Science student at Wilfrid Laurier University. I am on the Corporate Relations Team, where I look forward to spending time with my teammates. I love travelling and going to gyms in different countries. ALSO, I LOVE DOGGOS!!",
+            "link": "linkedin.com/in/gavanjeetsingh",
+            "name": "Gavanjeet Singh",
+            "roles": []
+        },
+        {
+            "bio": "Hi hi! I\u2019m Manson. I made a bowl of curry the other day while watching a video essay on Star Wars. I really like psychology and I\u2019m currently reading a book about body language and manipulation\u2026 Oh, and I\u2019m also part of the corporate relations team.",
+            "name": "Manson Wong",
+            "roles": []
+        },
+        {
+            "bio": "Hi guys! I\u2019m Taha. I\u2019m in my third year of CS and I love Rocket League!",
+            "link": "https://www.linkedin.com/in/mashwanit/",
+            "name": "Taha Amir",
+            "roles": []
+        }
+    ],
+    "Development": [
+        {
+            "bio": "Ben I am. Like to code I do. Check my GitHub you will.",
+            "link": "https://github.com/bensengupta",
+            "name": "Ben Sengupta",
+            "roles": []
+        },
+        {
+            "bio": "What\u2019s good! My name\u2019s Isaac and I am a first-year Computer Science at Wilfrid Laurier. As a developer for HawkHacks and CCubed, I look forward to contributing to the team and learning as I go along :)",
+            "link": "https://www.linkedin.com/in/isaacaddai/",
+            "name": "Isaac Addai",
+            "roles": []
+        },
+        {
+            "bio": "Hello! I\u2019m Katya and I\u2019m a 3rd year applied math/computer science student at the University of Waterloo. My favourite hobby is learning random things on the internet instead of studying. I\u2019m a part of the dev team :)",
+            "link": "https://www.linkedin.com/in/kat-d-b15630178",
+            "name": "Katya Driscoll",
+            "roles": []
+        },
+        {
+            "bio": "Hey there! My name is Kelvin and I\u2019m a third-year Computer Science student and a front-end developer for HawkHacks. I love music, programming, design, gardening, hiking, and spending time with the people I care about most!",
+            "link": "https://www.linkedin.com/in/kelvinkellner/",
+            "name": "Kelvin Kellner",
+            "roles": []
+        },
+        {
+            "bio": "Good day, good day. I\u2019m Aidan, a 2nd-year computer science student at Laurier. I\u2019m a frontend developer at HawkHacks.",
+            "link": "https://www.linkedin.com/in/aidan-traboulay/",
+            "name": "Aidan Traboulay",
+            "roles": []
+        },
+        {
+            "bio": "Whats up, I\u2019m Obi, i\u2019m 21 and I never learned how to read. VP of Development at LCS, founder of LCS Pods, and your moms favorite friend you have.",
+            "link": "https://www.linkedin.com/in/moshe-obi-ihej/",
+            "name": "Obi Ihejirika",
+            "roles": []
+        },
+        {
+            "bio": "Hey, I\u2019m Robert. I ordered a Comp Sci degree with a side option of Business Management from Laurier, but the 4-year shipping time is brutal. I\u2019m on the dev team for HawkHacks and LCS, but enjoy product work more than the coding.",
+            "link": "https://www.linkedin.com/in/robert-mazza-6a8063203/",
+            "name": "Robert Mazza",
+            "roles": []
+        },
+        {
+            "bio": "Hey, I\u2019m Steven, a 2nd Year BBA/CS student at Laurier. I'm part of the dev team at HawkHacks. My favourite thing to do on the weekends is riding the elevator in my building.",
+            "name": "Steven Tohme",
+            "roles": []
+        },
+        {
+            "bio": "Hello friends! I\u2019m Brianna, 3rd year CS major and psychology minor. At HawkHacks I\u2019m a UI/UX designer! I\u2019m interested in game and XR development. I look forward to seeing the ideas built at HawkHacks!",
+            "link": "https://www.linkedin.com/in/brianna-loc-nguyen/",
+            "name": "Brianna Nguyen",
+            "roles": []
+        },
+        {
+            "bio": "Hey everyone! My name is Polina and I primarily do UX and Graphic Design work at HawkHacks! I\u2019m currently taking a year off to do product & customer work at an EdTech startup, but I love to stay involved with the Laurier community!",
+            "link": "https://www.linkedin.com/in/polina-ivanov-80b47b18b/",
+            "name": "Polina Ivanov",
+            "roles": []
+        }
+    ],
+    "Logistics": [
+        {
+            "bio": "Hey! I\u2019m Daner and I\u2019m a 3rd year CS student. I love to eat foods that Nausher can\u2019t have.",
+            "link": "https://www.linkedin.com/in/daneryasin/",
+            "name": "Daner Yasin",
+            "roles": []
+        },
+        {
+            "bio": "Yo, I\u2019m Nathan. I\u2019m okay with a guitar, I like talking about almost anything, and my room is too cluttered. I do things like run the MansWithOpinions Podcast and CCubed. Here\u2019s a Hot Take for your troubles: A bot is nothing more than a script with a chron job",
+            "link": "https://www.linkedin.com/in/nathan-laundry-b047a1214/",
+            "name": "Nathan Laundry",
+            "roles": []
+        },
+        {
+            "bio": "My name is Mack. I am a 3rd-year computer science student at the University of Guelph. I am the Director of Finance at CCubed and on the logistics team at HawkHacks. I am really interested in participating in more Hackathons and am super excited to help make HackHawks a great time for all those who attend! Oh and I\u2019m also part of the MansWithOpinions Podcast time if you\u2019d ever like to come to say hello.",
+            "link": "https://www.linkedin.com/in/mackenzie-kean/",
+            "name": "Mack Kean",
+            "roles": []
+        },
+        {
+            "bio": "Hello! I\u2019m Leanne, Co-President of CCubed and a hackathon winner & veteran, and I\u2019m looking forward to helping out our friends at Hawkhacks through our new CCubed accelerator program for brand new student-run events and initiatives! I\u2019m very excited to see the hackathon spirit blossom at Laurier and hope through our new initiative we can continue inspiring schools across Canada to bring their student communities together with similar events.",
+            "link": "https://www.linkedin.com/in/leanneyoung/",
+            "name": "Leanne Young",
+            "roles": []
+        }
+    ]
+}
