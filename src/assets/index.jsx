@@ -7,7 +7,7 @@ import PlaceholderHeadshot from "./placeholder_headshot.svg";
 import Illustration1 from "./illustration_1.svg";
 import Illustration2 from "./illustration_2.svg";
 import Illustration3 from "./illustration_3.svg";
-import Illustration4 from "./illustration_4.svg";
+import Illustration4 from "./illustration_4.png";
 
 import HawkBronze from "./mascot/hawkbronze.png";
 import HawkSilver from "./mascot/hawksilver.png";
