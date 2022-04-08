@@ -123,13 +123,12 @@ export default function TeamMember(props) {
     return (
         <Wrapper>
             <Card>
-                <Image> </Image>
+                <Image/>
                 <Header>
                     <Name>
                         <b> {props.name} </b>
                     </Name>
                     <Roles>
-                        Role X
                         {props.roles.map((x) => {
                             return (
                                 <>
