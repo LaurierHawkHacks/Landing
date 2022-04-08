@@ -27,19 +27,20 @@ const MeetTheTeam = () => {
             <div className="col-md-9 col-lg-10 col-xl-8 mx-auto">
                 <h2 className="font-weight-bold text-center">Meet The Team</h2>
                 <TeamsContainer>
-                    {Object.keys(teamBios).map((teamKey, i) => {
+                    {Object.keys(teamBios).map((teamKey) => {
                         return (
                             <>
                                 <TeamName key={teamKey}>
                                     <b>{teamKey}</b>
                                 </TeamName>
                                 <Team>
-                                    {teamBios[teamKey].map((memberObject, i) => {
+                                    {teamBios[teamKey].map((memberObject) => {
                                         return (
                                             <TeamMember
                                                 key={memberObject.name}
                                                 name={memberObject.name}
-                                                link={memberObject.link}
+                                                linkedin={memberObject.linkedin}
+                                                instagram={memberObject.ig}
                                                 bio={memberObject.bio}
                                                 roles={memberObject.roles}
                                                 image={memberObject.image}
