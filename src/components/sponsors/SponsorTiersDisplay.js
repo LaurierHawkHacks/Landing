@@ -28,7 +28,7 @@ const GoldSponsorLogo = Styled.img`
 `;
 
 const SilverSponsorLogo = Styled.img`
-    max-width: 200px;    
+    max-width: 250px;    
     margin: 0.5em 0.5em 0.5em 0.5em;
 `;
 
@@ -53,7 +53,7 @@ function SponsorTiersDisplay() {
                             }
                             >
                                 {sponsor.logoName 
-                                ? <SilverSponsorLogo src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
+                                ? <GoldSponsorLogo src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
                                 : <GoldSponsorLogo src={placeholder} alt={sponsor.company}/>}
                             </OverlayTrigger>
                         )}
@@ -93,7 +93,7 @@ function SponsorTiersDisplay() {
                             }
                             >
                                 {sponsor.logoName 
-                                ? <SilverSponsorLogo src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
+                                ? <BronzeSponsorLogo src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
                                 : <BronzeSponsorLogo src={placeholder} alt={sponsor.company}/>}
                             </OverlayTrigger>
                         )}
