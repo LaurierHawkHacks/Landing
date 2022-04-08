@@ -47,7 +47,7 @@ const MeetTheTeam = () => {
                         <TeamName>{teamKey}</TeamName>
                         <Team>
                             {teamBios[teamKey].map((memberObject, i)=>{ return(
-                                <TeamMember name={memberObject.name} />
+                                <TeamMember name={memberObject.name} bio={memberObject.bio} roles={memberObject.roles}/>
                             )})}
                         </Team>
                         </>

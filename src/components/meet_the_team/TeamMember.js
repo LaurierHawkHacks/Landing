@@ -141,33 +141,21 @@ const Description = styled.div`
 
 export default function TeamMember(props) {
     return (
-        // <CardDiv>
-        //     <Card>{props.name}</Card>
-        //     <ButtonDiv></ButtonDiv>
-        // </CardDiv>
         <Wrapper>
             <Card>
                 <Image></Image>
                 <Header>
                     <Name>{props.name}</Name>
-                    <Role>Role 1</Role>
+                    <Role>Role X
+                    {props.roles.map((x)=>{ return (
+                    <>{x}<br /></>)
+                    })}
+
+                    </Role>
                 </Header>
             </Card>
-            <Description>Lorem ipsum dipsum</Description>
+            <Description>{props.bio}</Description>
         </Wrapper>
-
-        /* <div className="wrapper">
-        <div className="card"> 
-          <img className="card-image" src="" alt=""></img>
-          <div className="card-header">
-              <div className="class-header__name">Person Name</div>
-              <div className="class-header__roles">Position 1</div>
-          </div>
-        </div>
-        
-        <div className="card-hover-description">Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum</div>
-        
-        </div> */
     );
 }
 
