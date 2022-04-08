@@ -51,14 +51,14 @@ const Card = styled.div`
     padding: 3px 3px 4px 3px;
     overflow: hidden;
 
-    border: 2px solid rgba(255, 0, 0, 0);
+    border: 3px solid rgba(255, 0, 0, 0);
     border-radius: 35px;
     transition: all 0.2s ease;
     z-index: 1;
 
     &:hover {
         background: #e4edf2;
-        border: 2px solid #0fa3b1;
+        border: 3px solid #0fa3b1;
     }
 `;
 
@@ -68,7 +68,7 @@ const Image = styled.img`
     border-radius: 50%;
     background: grey;
     margin-right: 10px;
-    object-fit: contain;
+    object-fit: cover;
 `;
 
 const Header = styled.div`
@@ -141,13 +141,18 @@ export default function TeamMember(props) {
                 </Header>
             </Card>
             <Description>
-                {props.bio}{" "}
-                <br />
-                <br />
-
-                <a href={props.link} target="_blank" style={{ "wordWrap": "break-Word" }} rel="noreferrer">
+                <a
+                    href={props.link}
+                    target="_blank"
+                    style={{
+                        wordWrap: "break-Word",
+                    }}
+                    rel="noreferrer"
+                >
                     LinkedIn
                 </a>
+                {props.bio} <br />
+                <br />
             </Description>
         </Wrapper>
     );
