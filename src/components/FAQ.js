@@ -45,7 +45,7 @@ const FAQ = () => {
                     <FAQEntry eventKey="4" title="👪 Do I need a team?">
                         You can work alone, or all the way up to a team of 2, 3, or 4 people! 
                         We highly encourage working in a team! 
-                        If you don\u2019t have friends who are attending, you can find a team in our Discord OR attend our team finding event before the hackathon!
+                        If you don't have friends who are attending, you can find a team in our Discord OR attend our team finding event before the hackathon!
                     </FAQEntry>
                     <FAQEntry eventKey="5" title="🐦 Why did y'all choose a bird as the mascot?">
                         Midas, the Golden Hawk, is our school mascot!
