@@ -114,8 +114,7 @@ function App() {
                         <div className="row">
                             <div className="col-md-12 text-center">
                                 <p>
-                                Hackathons are a great place to gain experience, knowledge, connections, and cool swag. 
-                                Every participant in HawkHacks will be delivered their very own shipment of swag!
+                                Hackathons are a great place to gain experience, knowledge, connections, and cool swag. Every participant in HawkHacks will be delivered their very own shipment of swag! Otherwise, there’s ample oppurtunities to attend mini-gaming events, workshops, seminars, and networking events hosted by our industry partners with some giveaways on the side too! 
                                 </p>
                             </div>
                         </div>
