@@ -34,9 +34,9 @@ const NewsletterForm = () => {
                 <div className="col-md-6 text-left">
                     <h3>// Want to stay updated?</h3>
                     <p className="mb-0">
-                         Reach out at
-                        <a href="mailto:hello@hawkhacks.ca">hello@hawkhacks.ca</a> for
-                         any help or support, and please be sure to join the
+                        {"Reach out at "}
+                        <a href="mailto:hello@hawkhacks.ca">hello@hawkhacks.ca</a>
+                        {" for any help or support, and please be sure to join the "}
                         <a
                             href="https://discord.gg/z8XbEEXkqN"
                             target="_blank"
@@ -44,7 +44,7 @@ const NewsletterForm = () => {
                         >
                               HawkHacks Discord
                         </a>
-                        community!
+                        {" community!"}
                     </p>
                     <div className="pb-1 my-2">
                         <SocialIcons />
@@ -68,7 +68,7 @@ const NewsletterForm = () => {
                                 <h5>Sign up for our newsletter!</h5>
 
                                 <div className="mc-field-group">
-                                    <FormInput type="email" placeholder="Enter your email" name="EMAIL" className="required email" id="mce-EMAIL" />
+                                    <FormInput type="email" width="200px" placeholder="Enter your email" name="EMAIL" className="required email" id="mce-EMAIL" />
                                     <FormButton type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button">{">>>"}</FormButton>
                                 </div>
 
