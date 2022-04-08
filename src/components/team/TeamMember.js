@@ -61,7 +61,7 @@ const Card = styled.div`
     }
 `;
 
-const Image = styled.div`
+const Image = styled.img`
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -122,27 +122,29 @@ export default function TeamMember(props) {
     return (
         <Wrapper>
             <Card>
-                <Image />
+                <Image src={encodeURI(props.img_path)} />
                 <Header>
                     <Name>
-                        <b> {props.name} </b>{" "}
-                    </Name>{" "}
+                        <b> {props.name} </b>
+                    </Name>
                     <Roles>
-                        {" "}
                         {props.roles.map((x) => {
                             return (
                                 <>
-                                    {" "}
-                                    {x} <br />{" "}
+                                    {x} <br />
                                 </>
                             );
-                        })}{" "}
-                    </Roles>{" "}
-                </Header>{" "}
-            </Card>{" "}
-            <Description> 
-                <a href={props.link} style={{'word-wrap': 'break-Word'}}>{props.link}</a><br />
-                {props.bio} </Description>{" "}
+                        })}
+                    </Roles>
+                </Header>
+            </Card>
+            <Description>
+                <a href={props.link} style={{ "word-wrap": "break-Word" }}>
+                    LinkedIn
+                </a>
+                <br />
+                {props.bio}{" "}
+            </Description>
         </Wrapper>
     );
 }
