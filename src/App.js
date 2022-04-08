@@ -1,7 +1,7 @@
 import React from "react";
 import Styled from "styled-components";
 import { Container, Row } from "react-bootstrap";
-import { Icon, HawkHeart } from "./assets";
+import { Icon, HawkHeart, HawkGold } from "./assets";
 
 import FAQ from "./components/FAQ";
 import Illustration from "./components/Illustration";
@@ -77,7 +77,7 @@ function App() {
 
                             <div className="col-md-6 text-right">
                                 <img
-                                    src={HawkHeart}
+                                    src={HawkGold}
                                     className="img-fluid"
                                     alt="About Illustration"
                                     style={{ opacity: "1.0" }}
