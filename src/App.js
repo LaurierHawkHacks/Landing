@@ -16,6 +16,7 @@ import AboutIllustration from "./assets/illustration_about.svg";
 import "./App.css";
 import HeroButtons from "./components/HeroButtons";
 import AppNavbar from "./components/Navbar";
+import NewsletterForm from "./components/newsletter/NewsletterForm";
 
 const GradientBackground = Styled.div``;
 
@@ -129,41 +130,8 @@ function App() {
                         <div className="spacer" style={{ width: "100%", height: "10em" }} />
                         <FAQ />
                     </Container>
-
-                    <Container id="newsletter" className="foreground">
-                        <div className="spacer" style={{ width: "100%", height: "10em" }} />
-                        <div className="row">
-                            <div className="col-md-6 text-left">
-                                <h2 className="font-weight-bold">&lt;Stay Connected/&gt;</h2>
-                                <p className="mb-0">
-                                    Reach out at{" "}
-                                    <a href="mailto:hello@hawkhacks.ca">hello@hawkhacks.ca</a> for
-                                    any help or support, and be sure to join the{" "}
-                                    <a
-                                        href="https://discord.gg/z8XbEEXkqN"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        HawkHacks Discord
-                                    </a>
-                                    {" "}community!
-                                </p>
-                                <div className="pb-1 my-2">
-                                    <SocialIcons />
-                                </div>
-
-                                <InputGroup className="mb-3">
-                                    <FormControl
-                                        placeholder="Enter your email to subscribe to our newsletter!"
-                                        aria-label="Recipient's email"
-                                        aria-describedby="basic-addon2"
-                                    />
-
-                                    <Button>{">>"}</Button>
-                                </InputGroup>
-                            </div>
-                        </div>
-                    </Container>
+                    
+                    <NewsletterForm/>
 
                     <Container id="partners">
                         <div className="spacer" style={{ width: "100%", height: "10em" }} />
