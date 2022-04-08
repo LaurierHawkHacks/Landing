@@ -180,6 +180,7 @@ function App() {
                         maxWidth="102em"
                         position="relative"
                         id="illustration-footer"
+                        top="5px"
                     />
                     <footer
                         id="footer"
