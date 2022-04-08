@@ -19,7 +19,7 @@ const Team = styled.div`
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-    padding-bottom: 7vh;
+    padding: 15px 0 5vh 0;
 `;
 
 const MeetTheTeam = () => {

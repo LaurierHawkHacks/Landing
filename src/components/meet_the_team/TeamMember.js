@@ -49,17 +49,17 @@ const Card = styled.div`
     width: 100%;
     height: fit-content;
     max-height: 100px;
-    padding: 5px;
+    padding: 3px;
     overflow: hidden;
 
-    border: 1px solid rgba(255, 0, 0, 0);
+    border: 2px solid rgba(255, 0, 0, 0);
     border-radius: 35px;
     transition: all 0.2s ease;
     z-index: 1;
 
     &:hover {
         background: #e4edf2;
-        border: 1px solid #0fa3b1;
+        border: 2px solid #0FA3B1;
     }
 `;
 
