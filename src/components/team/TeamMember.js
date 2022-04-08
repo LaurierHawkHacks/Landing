@@ -70,6 +70,7 @@ const Image = styled.img`
     border-radius: 50%;
     background: grey;
     margin-right: 10px;
+    object-fit: cover;
 `;
 
 const Header = styled.div`
