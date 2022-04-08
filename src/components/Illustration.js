@@ -1,5 +1,5 @@
 import React from "react";
-import { Illustration1, Illustration2, Illustration3 } from "../assets";
+import { Illustration1, Illustration2, Illustration3, Illustration4 } from "../assets";
 
 const Illustration = ({ src_name, position="absolute", top=undefined, bottom=undefined, width="max-content", maxWidth="100%", id=undefined }) => {
     return (
@@ -22,7 +22,7 @@ const Illustration = ({ src_name, position="absolute", top=undefined, bottom=und
                             ? Illustration2
                             : src_name === "illustration_3"
                                 ? Illustration3
-                                : null
+                                : src_name === "illustration_4" ? Illustration4 : null
                 }
                 style={{
                     width: width,
