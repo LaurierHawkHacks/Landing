@@ -142,11 +142,13 @@ export default function TeamMember(props) {
                 </Header>
             </Card>
             <Description>
+                {props.bio}{" "}
+                <br />
+                <br />
+
                 <a href={props.link} style={{ "wordWrap": "break-Word" }}>
                     LinkedIn
                 </a>
-                <br />
-                {props.bio}{" "}
             </Description>
         </Wrapper>
     );
