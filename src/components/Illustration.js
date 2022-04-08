@@ -1,7 +1,7 @@
 import React from "react";
 import { Illustration1, Illustration2, Illustration3, Illustration4 } from "../assets";
 
-const Illustration = ({ src_name, position="absolute", top=undefined, bottom=undefined, width="max-content", maxWidth="100%", id=undefined }) => {
+const Illustration = ({ src_name, position="absolute", top=undefined, bottom=undefined, width="max-content", height="max-content", maxWidth="100%", id=undefined }) => {
     return (
         <div
             className="d-flex flex-column align-items-center bg-img-container"
@@ -27,7 +27,7 @@ const Illustration = ({ src_name, position="absolute", top=undefined, bottom=und
                 style={{
                     width: width,
                     maxWidth: maxWidth,
-                    height: "max-content",
+                    height: height,
                 }}
                 alt=""
             />
