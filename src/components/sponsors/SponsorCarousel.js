@@ -1,9 +1,9 @@
-import React from 'react';
-import { Container, Pagination, Button } from 'react-bootstrap';
-import Styled from 'styled-components';
-import sponsorData from '../../sponsorData.json'
-import placeholder from '../../assets/placeholder_image.svg';
+import React from "react";
+import Styled from "styled-components";
+import { Container, Pagination, Button } from "react-bootstrap";
 
+import sponsorData from "../../sponsorData.json";
+import placeholder from "../../assets/placeholder_image.svg";
 import * as SponsorImages from "../../assets/sponsors/";
 
 const SponsorCard = Styled.div`
@@ -84,10 +84,10 @@ function SponsorCarousel(){
 
     function handleClick(event){
         event.preventDefault();
-        if(event.currentTarget.id === 'prev')
+        if(event.currentTarget.id === "prev")
             setActiveCardIndex(activeCardIndex - 1 < 0 ? sponsorData.gold.length - 1 : activeCardIndex - 1);
         
-        else if(event.currentTarget.id === 'next')
+        else if(event.currentTarget.id === "next")
             setActiveCardIndex(activeCardIndex + 1 > sponsorData.gold.length - 1 ? 0 : activeCardIndex + 1);
             
         else 
@@ -105,11 +105,11 @@ function SponsorCarousel(){
                 <SponsorCardButton target="_blank" href={sponsorData.gold[activeCardIndex].url}>Learn more</SponsorCardButton>
             </SponsorCard>
             <SponsorCardPaging>
-                <Pagination.Prev id={'prev'} onClick={handleClick}/>
+                <Pagination.Prev id={"prev"} onClick={handleClick}/>
                 {sponsorData.gold.length > 0 ? <Pagination.Item id={0} active={activeCardIndex === 0 ? true : false} onClick={handleClick}>1</Pagination.Item> : null}
                 {sponsorData.gold.length > 1 ? <Pagination.Item id={1} active={activeCardIndex === 1 ? true : false} onClick={handleClick}>2</Pagination.Item> : null}
                 {sponsorData.gold.length > 2 ? <Pagination.Item id={2} active={activeCardIndex === 2 ? true : false} onClick={handleClick}>3</Pagination.Item> : null}
-                <Pagination.Next id={'next'} onClick={handleClick}/>
+                <Pagination.Next id={"next"} onClick={handleClick}/>
             </SponsorCardPaging>
         </Container>
     );

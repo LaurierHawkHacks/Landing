@@ -1,8 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-
 import * as TeamImages from "../../assets/team";
-
 
 const dropdownAnimationDown = keyframes`
   0% { 

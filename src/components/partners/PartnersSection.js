@@ -45,17 +45,17 @@ const SubHeading = Styled.p`
 function PartnersSection(){
 
     return(
-    <>
-        <TextContainer>
-            <Heading>{"<Our Partners/>"}</Heading>
-            <SubHeading>
+        <>
+            <TextContainer>
+                <Heading>{"<Our Partners/>"}</Heading>
+                <SubHeading>
                 Our team is made up of and supported by all these amazing organisations. Check out all the amazing talent on display!
-            </SubHeading>
-        </TextContainer>
-        <PartnerLogoContainer>
-            {partnerData.partners.map((partner, index) => {
-                return(
-                    <OverlayTrigger 
+                </SubHeading>
+            </TextContainer>
+            <PartnerLogoContainer>
+                {partnerData.partners.map((partner, index) => {
+                    return(
+                        <OverlayTrigger 
                             key={index} 
                             placement="bottom"
                             overlay={
@@ -63,15 +63,15 @@ function PartnersSection(){
                                     {partner.name}
                                 </Tooltip>
                             }
-                            >
-                                {partner.logoName 
+                        >
+                            {partner.logoName 
                                 ? <PartnerLogo src={`${PartnerImages[partner.logoName]}`} alt={partner.company}/> 
                                 : <PartnerLogo src={placeholder} alt={partner.name}/>}
-                            </OverlayTrigger>
-                )
-            })}
-        </PartnerLogoContainer>
-    </>
+                        </OverlayTrigger>
+                    );
+                })}
+            </PartnerLogoContainer>
+        </>
     );
 
 

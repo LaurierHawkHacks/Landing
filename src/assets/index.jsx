@@ -8,6 +8,9 @@ import Illustration1 from "./illustration_1.svg";
 import Illustration2 from "./illustration_2.svg";
 import Illustration3 from "./illustration_3.svg";
 
-import SponsorHawk from "./sponsor_hawk_heart.png";
+import HawkBronze from "./mascot/hawkbronze.png";
+import HawkSilver from "./mascot/hawksilver.png";
+import HawkGold from "./mascot/hawkgold.png";
+import HawkHeart from "./mascot/hawkheart.png";
 
-export { Icon, LogoBlack, LogoWhite, PlaceholderImage, Illustration1, Illustration2, Illustration3, SponsorHawk, PlaceholderHeadshot };
+export { Icon, LogoBlack, LogoWhite, PlaceholderImage, PlaceholderHeadshot, Illustration1, Illustration2, Illustration3, HawkBronze, HawkSilver, HawkGold, HawkHeart };

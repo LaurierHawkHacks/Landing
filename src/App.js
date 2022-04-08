@@ -1,22 +1,20 @@
 import React from "react";
 import Styled from "styled-components";
-import { Button, Container, Row, InputGroup, FormControl } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
+import { Icon, HawkHeart } from "./assets";
 
+import FAQ from "./components/FAQ";
 import Illustration from "./components/Illustration";
 import SocialIcons from "./components/SocialIcons";
-import FAQ from "./components/FAQ";
 import PartnersSection from "./components/partners/PartnersSection";
 import SponsorTiersDisplay from "./components/sponsors/SponsorTiersDisplay";
 import SponsorCarousel from "./components/sponsors/SponsorCarousel";
 import MeetTheTeam from "./components/team/MeetTheTeam";
-import Icon from "./assets/icon.svg";
-import SponsorHawk from "./assets/sponsor_hawk_heart.png";
-import AboutIllustration from "./assets/illustration_about.svg";
-
-import "./App.css";
 import HeroButtons from "./components/HeroButtons";
 import AppNavbar from "./components/Navbar";
 import NewsletterForm from "./components/newsletter/NewsletterForm";
+
+import "./App.css";
 
 const GradientBackground = Styled.div``;
 
@@ -71,7 +69,7 @@ function App() {
                                     in a 36 hour period of exploration, creativity, and learning!
                                     <br />
                                     <br />
-                                    Remember, you don't have to be a pro to participate - show up
+                                    Remember, you don\u2019t have to be a pro to participate - show up
                                     with ten years or ten minutes of experience (oh yeah, and a
                                     great attitute too!)
                                 </p>
@@ -79,7 +77,7 @@ function App() {
 
                             <div className="col-md-6 text-right">
                                 <img
-                                    src={AboutIllustration}
+                                    src={HawkHeart}
                                     className="img-fluid"
                                     alt="About Illustration"
                                     style={{ opacity: "1.0" }}
@@ -146,7 +144,7 @@ function App() {
                                 These are the people who make what we do possible. Check out all our
                                 amazing sponsors below, and tell them we sent you!
                             </p>
-                            <img src={SponsorHawk} alt="sponsor bird" className="sponsors-bird" />
+                            <img src={HawkHeart} alt="sponsor bird" className="sponsors-bird" />
                         </div>
                         <SponsorCarousel />
                         <SponsorTiersDisplay />

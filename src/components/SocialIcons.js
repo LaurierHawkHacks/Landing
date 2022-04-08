@@ -1,15 +1,15 @@
 import React from "react";
+import { MdEmail as Email } from "react-icons/md";
 import {
-  AiOutlineTwitter as Twitter,
-  AiFillInstagram as Instagram,
-  AiFillLinkedin as LinkedIn
-} from 'react-icons/ai';
+    AiOutlineTwitter as Twitter,
+    AiFillInstagram as Instagram,
+    AiFillLinkedin as LinkedIn
+} from "react-icons/ai";
 
 import {
     SiDevpost as Devpost,
     SiDiscord as Discord,
-} from 'react-icons/si';
-import { MdEmail as Email } from 'react-icons/md';
+} from "react-icons/si";
 
 const SocialIcons = ({ size = "24px" }) => {
     return (

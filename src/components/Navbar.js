@@ -1,9 +1,9 @@
 import React from "react";
 import Styled from "styled-components";
+import SocialIcons from "./SocialIcons";
 import { PopupButton } from "@typeform/embed-react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import SocialIcons from "./SocialIcons";
-import Icon from "../assets/icon.svg";
+import { Icon } from "../assets";
 
 const MLHAnchor = Styled.a`
 	max-width: 100px;
