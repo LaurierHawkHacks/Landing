@@ -1,9 +1,7 @@
 import React from "react";
-import styled, {
-    keyframes
-} from "styled-components";
+import styled, { keyframes } from "styled-components";
 
-const dropdownAnimationDown = keyframes `
+const dropdownAnimationDown = keyframes`
   0% { 
         visablility: visable;
         opacity: 0;
@@ -18,7 +16,7 @@ const dropdownAnimationDown = keyframes `
     }
 `;
 
-const dropdownAnimationUp = keyframes `
+const dropdownAnimationUp = keyframes`
   0% {
         transform: translateY(0%); 
         opacity: 1;
@@ -34,37 +32,38 @@ const dropdownAnimationUp = keyframes `
     }
 `;
 
-const Wrapper = styled.div `
+const Wrapper = styled.div`
     position: relative;
-    
+
     // width: fit-content;
     height: fit-content;
-    
-    
+    border-radius: 35px;
 `;
 
-const Card = styled.div `
+const Card = styled.div`
     position: relative;
-    overflow: hidden;
-    
-    width: 300px;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+
     width: 100%;
     height: fit-content;
     max-height: 100px;
-    top: 0;
     padding: 5px;
-    
-    background: #E4EDF2;
-    border: 1px solid #0FA3B1;
-    border-radius: 35px;
+    overflow: hidden;
 
-    display: flex;
-    flex-direction: row;
-     
+    border: 1px solid rgba(255, 0, 0, 0);
+    border-radius: 35px;
+    transition: all 0.2s ease;
     z-index: 1;
+
+    &:hover {
+        background: #e4edf2;
+        border: 1px solid #0fa3b1;
+    }
 `;
 
-const Image = styled.div `
+const Image = styled.div`
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -72,44 +71,41 @@ const Image = styled.div `
     margin-right: 10px;
 `;
 
-const Header = styled.div `
+const Header = styled.div`
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     flex: 1;
 `;
 
-const Name = styled.div `
+const Name = styled.div`
     font-size: 18px;
     width: 100%;
 `;
 
-const Role = styled.div `
+const Roles = styled.div`
+    font-size: 16px;
     width: 100%;
 `;
 
-const Description = styled.div `
-    visibility: visible;
-    opacity: 0;
-    
+const Description = styled.div`
     position: absolute;
     top: 100%;
-
-    max-height: 0;
-    overflow: hidden;
-    width: 300px; /* same as card */
-    width: 100%; /* same as card */
-
     margin-top: 10px;
     padding: 10px;
-    background: #E4EDF2;
+    max-height: 0;
+    overflow: hidden;
+    width: 100%; /* same as card */
 
-    border: 1px solid #0FA3B1;
+    font-size: 18px;
+    background: #e4edf2;
+    border: 1px solid #0fa3b1;
     box-sizing: border-box;
     border-radius: 14px;
 
+    visibility: visible;
+    opacity: 0;
     z-index: 2;
-
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
     animation-delay: 0s;
@@ -117,7 +113,7 @@ const Description = styled.div `
     animation-duration: 0.3s;
     animation-fill-mode: forwards;
 
-    ${Wrapper}:hover &{
+    ${Wrapper}:hover & {
         // max-height: 500px;
         animation-name: ${dropdownAnimationDown};
         animation-duration: 0.3s;
@@ -126,34 +122,28 @@ const Description = styled.div `
 `;
 
 export default function TeamMember(props) {
-    return ( <
-        Wrapper >
-        <
-        Card >
-        <
-        Image > < /Image> <
-        Header >
-        <
-        Name > < b > {
-            props.name
-        } < /b> </Name >
-        <
-        Role > Role X {
-            props.roles.map((x) => {
-                        return ( <
-                            > {
-                                x
-                            } < br / > < />)
-                        })
-                }
-
-                <
-                /Role> <
-                /Header> <
-                /Card> <
-                Description > {
-                    props.bio
-                } < /Description> <
-                /Wrapper>
-        );
-    }
+    return (
+        <Wrapper>
+            <Card>
+                <Image> </Image>
+                <Header>
+                    <Name>
+                        <b> {props.name} </b>
+                    </Name>
+                    <Roles>
+                        Role X
+                        {props.roles.map((x) => {
+                            return (
+                                <>
+                                    {" "}
+                                    {x} <br />{" "}
+                                </>
+                            );
+                        })}
+                    </Roles>
+                </Header>
+            </Card>
+            <Description> {props.bio} </Description>
+        </Wrapper>
+    );
+}
