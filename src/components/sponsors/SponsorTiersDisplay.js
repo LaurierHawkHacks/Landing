@@ -50,11 +50,6 @@ const BronzeSponsorLogo = Styled.img`
 `;
 
 function SponsorTiersDisplay() {
-
-    function handleClick(url) {
-        window.open(url, "_blank");
-    }
-
     return (
         <Container>
             <SponsorSection>
@@ -63,7 +58,6 @@ function SponsorTiersDisplay() {
                        
                         <OverlayTrigger 
                             key={index} 
-                            
                             placement="bottom"
                             overlay={
                                 <Tooltip id={`tooltip-gold-${index}`}>
@@ -83,7 +77,6 @@ function SponsorTiersDisplay() {
             <SponsorSection>
                 {sponsorData.silver.map((sponsor, index) => {
                     return (
-                        
                         <OverlayTrigger 
                             key={index} 
                             placement="bottom"
@@ -97,7 +90,6 @@ function SponsorTiersDisplay() {
                                 ? <SilverSponsorLogo onClick={() => handleClick(sponsor.url)} src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
                                 : <SilverSponsorLogo src={placeholder} alt={sponsor.company}/>}
                         </OverlayTrigger>
-                        
                     );}
                 )}
                 
@@ -105,7 +97,6 @@ function SponsorTiersDisplay() {
             <SponsorSection>
                 {sponsorData.bronze.map((sponsor, index) => {
                     return (
-                        
                         <OverlayTrigger 
                             key={index} 
                             placement="bottom"
@@ -124,9 +115,12 @@ function SponsorTiersDisplay() {
                 )}
              
             </SponsorSection>
-
-        </ Container>
+        </Container>
     );
 }
+
+const handleClick = (url) => {
+    window.open(url, "_blank");
+};
 
 export default SponsorTiersDisplay;

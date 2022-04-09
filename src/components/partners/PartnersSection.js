@@ -24,6 +24,10 @@ const PartnerLogoContainer = Styled.div`
 const PartnerLogo = Styled.img`
     max-width: 250px;    
     margin: 0.5em 0.5em 0.5em 0.5em;
+
+    :hover {
+        cursor: pointer;
+    }
 `;
 
 const TextContainer = Styled.div`
@@ -43,7 +47,6 @@ const SubHeading = Styled.p`
 `;
 
 function PartnersSection(){
-
     return(
         <>
             <TextContainer>
@@ -65,7 +68,7 @@ function PartnersSection(){
                             }
                         >
                             {partner.logoName 
-                                ? <PartnerLogo src={`${PartnerImages[partner.logoName]}`} alt={partner.company}/> 
+                                ? <PartnerLogo onClick={() => handleClick(partner.url)} src={`${PartnerImages[partner.logoName]}`} alt={partner.company}/> 
                                 : <PartnerLogo src={placeholder} alt={partner.name}/>}
                         </OverlayTrigger>
                     );
@@ -73,8 +76,10 @@ function PartnersSection(){
             </PartnerLogoContainer>
         </>
     );
-
-
 }
+
+const handleClick = (url) => {
+    window.open(url, "_blank");
+};
 
 export default PartnersSection;
