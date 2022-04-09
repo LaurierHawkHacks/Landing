@@ -17,7 +17,8 @@
         "styled-components": "^5.3.3",
         "web-vitals": "^2.1.4"
     },
-    "homepage": "https://laurierhawkhacks.github.io/Landing",
+    "homepage": "https://hawkhacks.ca",
+    "dev-homepage": "https://laurierhawkhacks.github.io/Landing",
     "scripts": {
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build",
