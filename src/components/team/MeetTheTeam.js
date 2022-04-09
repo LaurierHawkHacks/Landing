@@ -27,7 +27,8 @@ const MeetTheTeam = () => {
             <div className="col-md-9 col-lg-10 col-xl-8 mx-auto">
                 <h2 className="font-weight-bold text-center">{"<Meet The Team/>"}</h2>
                 <div className="row">
-                    <div className="col-md-8 text-center">
+                    <div className="col-md-1"/>
+                    <div className="col-md-10 text-center">
                         <p>
                             {"HawkHacks is brought to you by students who have an insane amount of passion in making student communities better - for students, by students."}
                         </p>

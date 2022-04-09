@@ -91,7 +91,6 @@ const Roles = styled.div`
 const Description = styled.div`
     position: absolute;
     top: 100%;
-    // margin-top: 10px;
     padding: 10px;
     max-height: 0;
     overflow: hidden;
