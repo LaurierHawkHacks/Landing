@@ -27,7 +27,7 @@ const SocialIcons = ({ size = "24px" }) => {
             </a>
 
             <a
-                href="https://discord.gg/z8XbEEXkqN"
+                href="https://discord.gg/cXn65c6VZ7"
                 target="_blank"
                 rel="noreferrer"
             >

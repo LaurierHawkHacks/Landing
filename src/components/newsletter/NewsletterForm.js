@@ -38,7 +38,7 @@ const NewsletterForm = () => {
                         <a href="mailto:hello@hawkhacks.ca">hello@hawkhacks.ca</a>
                         {" for any help or support, and please be sure to join the "}
                         <a
-                            href="https://discord.gg/z8XbEEXkqN"
+                            href="https://discord.gg/cXn65c6VZ7"
                             target="_blank"
                             rel="noreferrer"
                         >
