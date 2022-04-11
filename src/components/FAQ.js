@@ -18,7 +18,7 @@ const FAQ = () => {
                 <Stack gap={3}>
                     <FAQEntry eventKey="0" title="🤔 So, what exactly is a hackathon?">
                         A hackathon is made up of two sections - a social coding event where programmers, designers, and developers collaborate in teams to solve a problem. 
-                        You can either create that falls under a category hack, or make whatever your heart desires as a general hack.
+                        You can either create a software-based project that falls under a category hack, or make whatever your heart desires as a general hack.
                         {"\n\n"}
                         The second section is networking events, seminars, and presentations that happen throughout the hackathon conducted by industry and academic professionals -
                         if you’ve been putting off learning that one programming language for a while, now might be the time to learn!
