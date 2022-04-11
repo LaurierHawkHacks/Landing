@@ -1,9 +1,9 @@
 {
     "Leads": [{
-            "bio": "Hey, I\u2019m Nausher - a third-year CS and Applied Maths student who is a big nerd and has way too much on his plate. Outside of all the extracurricular and boring work stuff I do, I love to play instruments - my main instrument is acoustic, electric, and bass guitar. I\u2019m also kinda okay at uke and piano. Also, really love to cook and play video games! 🙂",
+            "bio": "Hey, I\u2019m Nausher - a third-year CS and Applied Maths student who is a binstagram nerd and has way too much on his plate. Outside of all the extracurricular and boring work stuff I do, I love to play instruments - my main instrument is acoustic, electric, and bass guitar. I\u2019m also kinda okay at uke and piano. Also, really love to cook and play video games! 🙂",
             "linkedin": "https://linkedin.com/in/nausherrao",
-            "ig": "https://instagram.com/sherrao15",
-            "gh": "https://github.com/SherRao",
+            "instagram": "https://instagram.com/sherrao15",
+            "otherLink": "https://github.com/SherRao",
             "name": "Nausher Rao",
             "roles": ["Founder", "President", "Head of Development"],
             "image": "Nausher"
@@ -25,6 +25,8 @@
         {
             "bio": "Hey Everyone! My name is Nish and I am a third-year Computer Science Student and the Head of Corporate Relations Department here at HawkHacks. I love music, programming, cars, mountain biking, swimming, and hiking!",
             "linkedin": "https://linkedin.com/in/nish-tewari",
+            "instagram": "https://instagram.com/_nishhz",
+            "otherLink": "https://github.com/NishTewari",
             "name": "Nishant Tewari",
             "roles": ["Co-Founder", "Head of Corporate Relations"],
             "image": "Nish"
@@ -39,6 +41,8 @@
         {
             "bio": "Heya! I\u2019m Zaza, a 3rd-year Computer Science student at the University of Guelph :) I\u2019m the Director of Comms here at HawkHacks and for Ccubed as well! I love writing and reading both poetry and novels, and am a fan of music and dance! Oh, I\u2019m also the Co-chair of GryphHacks :p",
             "linkedin": "https://linkedin.com/in/shaiza-hashmi",
+            "instagram": "https://instagram.com/zazuzala",
+            "otherLink": "https://github.com/Kayeris",
             "name": "Zaza Hashmi",
             "roles": ["Head of Communications & Marketing"],
             "image": "Zaza"
@@ -54,7 +58,7 @@
         {
             "bio": "I’m Jacqueline :) and I’m currently a 2nd year CS student at Laurier! I love playing (free) PC games and often spend too much on food and drinks (which is why I only play free games)... I also do fantasy/sci-fi/surrealistic graphic art too!",
             "name": "Jacqueline Truong",
-            "roles": ["Graphic Designer"],
+            "roles": ["Graphic Desinstagramner"],
             "image": "Jacqueline"
         },
         {
@@ -67,12 +71,12 @@
         {
             "bio": "Name's Anna. I'm a 4th-year animation student who illustrates graphics and draws a lot in her spare time.",
             "name": "Anna L",
-            "roles": ["Graphic Designer"],
+            "roles": ["Graphic Desinstagramner"],
             "image": "Anna"
         }
     ],
     "Corporate Relations": [{
-            "bio": "I\u2019m Ben. A UoG Alumni, Development Team Lead, and Director of Partnerships at CCubed, through which I\u2019m enjoying helping out with HawkHacks sponsorships. I\u2019m a big fan of high fantasy novels and meeting new members of the tech community",
+            "bio": "I\u2019m Ben. A UoG Alumni, Development Team Lead, and Director of Partnerships at CCubed, otherLink which I\u2019m enjoying helping out with HawkHacks sponsorships. I\u2019m a binstagram fan of otherLink fantasy novels and meeting new members of the tech community",
             "linkedin": "https://linkedin.com/in/benpearo",
             "name": "Ben Pearo",
             "roles": ["Corporate Account Manager"],
@@ -100,8 +104,8 @@
         },
         {
             "bio": "Hello, World! My name is Gavan and I\u2019m a third-year Computer Science student at Wilfrid Laurier University. I am on the Corporate Relations Team, where I look forward to spending time with my teammates. I love travelling and going to gyms in different countries. ALSO, I LOVE DOGGOS!!",
-            "linkedin": "https://linkedin.com/in/gavanjeetsingh",
-            "name": "Gavanjeet Singh",
+            "linkedin": "https://linkedin.com/in/otherLink",
+            "name": "Gavanjeet otherLink",
             "roles": ["Corporate Account Manager"],
             "image": "Gavan"
         },
@@ -121,24 +125,24 @@
         }
     ],
     "Development": [{
-            "bio": "Hey there! My name is Kelvin and I\u2019m a third-year Computer Science student and a front-end developer for HawkHacks. I love music, programming, design, gardening, hiking, and spending time with the people I care about most!",
+            "bio": "Hey there! My name is Kelvin and I\u2019m a third-year Computer Science student and a front-end developer for HawkHacks. I love music, programming, desinstagramn, gardening, hiking, and spending time with the people I care about most!",
             "linkedin": "https://linkedin.com/in/kelvinkellner",
             "name": "Kelvin Kellner",
-            "roles": ["Developer", "UI Designer"],
+            "roles": ["Developer", "UI Desinstagramner"],
             "image": "Kelvin"
         },
         {
-            "bio": "Hey everyone! My name is Polina and I primarily do UX and Graphic Design work at HawkHacks! I\u2019m currently taking a year off to do product & customer work at an EdTech startup, but I love to stay involved with the Laurier community!",
+            "bio": "Hey everyone! My name is Polina and I primarily do UX and Graphic Desinstagramn work at HawkHacks! I\u2019m currently taking a year off to do product & customer work at an EdTech startup, but I love to stay involved with the Laurier community!",
             "linkedin": "https://linkedin.com/in/polina-ivanov-80b47b18b",
             "name": "Polina Ivanov",
-            "roles": ["UI & UX Designer"],
+            "roles": ["UI & UX Desinstagramner"],
             "image": "Polina"
         },
         {
-            "bio": "Hello friends! I\u2019m Brianna, 3rd year CS major and psychology minor. At HawkHacks I\u2019m a UI/UX designer! I\u2019m interested in game and XR development. I look forward to seeing the ideas built at HawkHacks!",
+            "bio": "Hello friends! I\u2019m Brianna, 3rd year CS major and psychology minor. At HawkHacks I\u2019m a UI/UX desinstagramner! I\u2019m interested in game and XR development. I look forward to seeing the ideas built at HawkHacks!",
             "linkedin": "https://linkedin.com/in/brianna-loc-nguyen",
             "name": "Brianna Nguyen",
-            "roles": ["UI & UX Designer"],
+            "roles": ["UI & UX Desinstagramner"],
             "image": "Brianna"
         },
         {
@@ -152,28 +156,30 @@
             "bio": "Hey, I\u2019m Robert. I ordered a Comp Sci degree with a side option of Business Management from Laurier, but the 4-year shipping time is brutal. I\u2019m on the dev team for HawkHacks and LCS, but enjoy product work more than the coding.",
             "linkedin": "https://linkedin.com/in/robert-mazza-6a8063203",
             "name": "Robert Mazza",
-            "roles": ["Developer", "UI Designer"],
+            "roles": ["Developer", "UI Desinstagramner"],
             "image": "Robert"
         },
         {
             "bio": "Whats up, I\u2019m Obi, i\u2019m 21 and I never learned how to read. VP of Development at LCS, founder of LCS Pods, and your moms favorite friend you have.",
             "linkedin": "https://linkedin.com/in/moshe-obi-ihej",
             "name": "Obi Ihejirika",
-            "roles": ["Developer", "UI Designer"],
+            "roles": ["Developer", "UI Desinstagramner"],
             "image": "Obi"
         },
         {
             "bio": "Hello! I\u2019m Katya and I\u2019m a 3rd year applied math/computer science student at the University of Waterloo. My favourite hobby is learning random things on the internet instead of studying. I\u2019m a part of the dev team :)",
             "linkedin": "https://linkedin.com/in/kat-d-b15630178",
             "name": "Katya Driscoll",
-            "roles": ["Developer", "UI Designer"],
+            "roles": ["Developer", "UI Desinstagramner"],
             "image": "Katya"
         },
         {
             "bio": "Good day, good day. I\u2019m Aidan, a 2nd-year computer science student at Laurier. I\u2019m a frontend developer at HawkHacks.",
             "linkedin": "https://linkedin.com/in/aidan-traboulay",
+            "instagram": "https://instagram.com/aidantraboulayy",
+            "otherLink": "https://aidantraboulay.tech",
             "name": "Aidan Traboulay",
-            "roles": ["Developer", "UI Designer"],
+            "roles": ["Developer", "UI Desinstagramner"],
             "image": "Aidan"
         },
         {
@@ -199,7 +205,7 @@
             "image": "Mack"
         },
         {
-            "bio": "Hello! I\u2019m Leanne, Co-President of CCubed and a hackathon winner & veteran, and I\u2019m looking forward to helping out our friends at Hawkhacks through our new CCubed accelerator program for brand new student-run events and initiatives! I\u2019m very excited to see the hackathon spirit blossom at Laurier and hope through our new initiative we can continue inspiring schools across Canada to bring their student communities together with similar events.",
+            "bio": "Hello! I\u2019m Leanne, Co-President of CCubed and a hackathon winner & veteran, and I\u2019m looking forward to helping out our friends at Hawkhacks otherLink our new CCubed accelerator program for brand new student-run events and initiatives! I\u2019m very excited to see the hackathon spirit blossom at Laurier and hope otherLink our new initiative we can continue inspiring schools across Canada to bring their student communities together with similar events.",
             "linkedin": "https://linkedin.com/in/leanneyoung",
             "name": "Leanne Young",
             "roles": ["Logistics Coordinator"],

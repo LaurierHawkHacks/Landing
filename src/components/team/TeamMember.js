@@ -160,14 +160,14 @@ export default function TeamMember(props) {
                 </a> : ""
                 }
 
-                {props.github ? " | " : ""}
-                {props.github ? <a
-                    href={props.github}
+                {props.otherLink ? " | " : ""}
+                {props.otherLink ? <a
+                    href={props.otherLink}
                     target="_blank"
                     style={{ wordWrap: "break-Word" }}
                     rel="noreferrer"
                 >
-                    {"Github"}
+                    {"Website"}
                 </a> : ""
                 }
 

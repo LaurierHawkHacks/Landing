@@ -48,8 +48,8 @@ const MeetTheTeam = () => {
                                                 key={memberObject.name}
                                                 name={memberObject.name}
                                                 linkedin={memberObject.linkedin}
-                                                instagram={memberObject.ig}
-                                                github={memberObject.gh}
+                                                instagram={memberObject.instagram}
+                                                otherLink={memberObject.otherLink}
                                                 bio={memberObject.bio}
                                                 roles={memberObject.roles}
                                                 image={memberObject.image}
