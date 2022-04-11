@@ -1,7 +1,7 @@
 import React from "react";
 import Styled from "styled-components";
 import TeamMember from "./TeamMember";
-import teamBios from "../../teamData.json";
+import teamBios from "../../data/teamData.json";
 
 const TeamsContainer = Styled.div`
     width: 100%;

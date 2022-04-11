@@ -1,7 +1,7 @@
 import React from "react";
 import Styled from "styled-components";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
-import partnerData from "../../partnerData.json";
+import partnerData from "../../data/partnerData.json";
 import placeholder from "../../assets/placeholder_image.svg";
 
 import * as PartnerImages from "../../assets/partners";

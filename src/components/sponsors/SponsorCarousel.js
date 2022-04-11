@@ -2,7 +2,7 @@ import React from "react";
 import Styled from "styled-components";
 import { Container, Pagination, Button } from "react-bootstrap";
 
-import sponsorData from "../../sponsorData.json";
+import sponsorData from "../../data/sponsorData.json";
 import placeholder from "../../assets/placeholder_image.svg";
 import * as SponsorImages from "../../assets/sponsors/";
 
