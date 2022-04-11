@@ -140,30 +140,38 @@ export default function TeamMember(props) {
                 </Header>
             </Card>
             <Description>
-                <p style={{ marginBottom: "8px" }}>{props.bio}</p>
-                <a
-                    href={props.linkedin}
+                {<a href={props.linkedin}
                     target="_blank"
-                    style={{
-                        wordWrap: "break-Word",
-                        padding: "12px 8px",
-                    }}
+                    style={{ wordWrap: "break-Word" }}
                     rel="noreferrer"
                 >
-                    LinkedIn
+                    {"LinkedIn"}
                 </a>
+                }
 
-                {props.instagram ? "  |  " : ""}
+                {props.instagram ? " | " : ""}
                 {props.instagram ? <a
                     href={props.instagram}
                     target="_blank"
-                    style={{
-                        wordWrap: "break-Word",
-                    }}
+                    style={{ wordWrap: "break-Word" }}
                     rel="noreferrer"
                 >
-                    Instagram
-                </a> : ""}
+                    {"Instagram"}
+                </a> : ""
+                }
+
+                {props.github ? " | " : ""}
+                {props.github ? <a
+                    href={props.github}
+                    target="_blank"
+                    style={{ wordWrap: "break-Word" }}
+                    rel="noreferrer"
+                >
+                    {"Github"}
+                </a> : ""
+                }
+
+                <p style={{ marginBottom: "8px" }}>{props.bio}</p>
             </Description>
         </Wrapper>
     );
