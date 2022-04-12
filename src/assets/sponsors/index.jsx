@@ -12,7 +12,6 @@ import TempLeadingLearners from "./temp/leadinglearners.png";
 import TempDhari from "./temp/dhari.png";
 import TempWolfram from "./temp/wolfram.png";
 import TempGFG from "./temp/gfg.png";
-import TempLinode from "./temp/linode.svg";
 import TempCisco from "./temp/cisco.png";
 
-export { DCL, Taskade, DigitalOcean, OnePassword, Balsamiq, Echo3D, TempSOC, TempMoneyClip, TempLeadingLearners, TempDhari, TempWolfram, TempGFG, TempLinode, TempCisco };
+export { DCL, Taskade, DigitalOcean, OnePassword, Balsamiq, Echo3D, TempSOC, TempMoneyClip, TempLeadingLearners, TempDhari, TempWolfram, TempGFG, TempCisco };
