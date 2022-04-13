@@ -58,6 +58,11 @@
             "url": "https://digitalocean.com"
         },
         {
+            "company": "Taskade",
+            "logoName": "Taskade",
+            "url": "https://taskade.com/"
+        },
+        {
             "company": "System-on-Chip Technologies",
             "logoName": "TempSOC",
             "url": "https://soctechnologies.com"
@@ -66,12 +71,8 @@
             "company": "MoneyClip",
             "logoName": "TempMoneyClip",
             "url": "https://moneyclip.io/"
-        },
-        {
-            "company": "Taskade",
-            "logoName": "Taskade",
-            "url": "https://taskade.com/"
         }
+
     ],
     "gold": [
         {
