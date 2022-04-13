@@ -59,7 +59,7 @@
         {
             "bio": "I’m Jacqueline :) and I’m currently a 2nd year CS student at Laurier! I love playing (free) PC games and often spend too much on food and drinks (which is why I only play free games)... I also do fantasy/sci-fi/surrealistic graphic art too!",
             "name": "Jacqueline Truong",
-            "roles": ["Graphic Desinstagramner"],
+            "roles": ["Graphic Designer"],
             "image": "Jacqueline"
         },
         {
@@ -72,7 +72,7 @@
         {
             "bio": "Name's Anna. I'm a 4th-year animation student who illustrates graphics and draws a lot in her spare time.",
             "name": "Anna L",
-            "roles": ["Graphic Desinstagramner"],
+            "roles": ["Graphic Designer"],
             "image": "Anna"
         }
     ],
@@ -129,21 +129,21 @@
             "bio": "Hey there! My name is Kelvin and I\u2019m a third-year Computer Science student and a front-end developer for HawkHacks. I love music, programming, desinstagramn, gardening, hiking, and spending time with the people I care about most!",
             "linkedin": "https://linkedin.com/in/kelvinkellner",
             "name": "Kelvin Kellner",
-            "roles": ["Developer", "UI Desinstagramner"],
+            "roles": ["Developer", "UI Designer"],
             "image": "Kelvin"
         },
         {
             "bio": "Hey everyone! My name is Polina and I primarily do UX and Graphic Desinstagramn work at HawkHacks! I\u2019m currently taking a year off to do product & customer work at an EdTech startup, but I love to stay involved with the Laurier community!",
             "linkedin": "https://linkedin.com/in/polina-ivanov-80b47b18b",
             "name": "Polina Ivanov",
-            "roles": ["UI & UX Desinstagramner"],
+            "roles": ["UI & UX Designer"],
             "image": "Polina"
         },
         {
-            "bio": "Hello friends! I\u2019m Brianna, 3rd year CS major and psychology minor. At HawkHacks I\u2019m a UI/UX desinstagramner! I\u2019m interested in game and XR development. I look forward to seeing the ideas built at HawkHacks!",
+            "bio": "Hello friends! I\u2019m Brianna, 3rd year CS major and psychology minor. At HawkHacks I\u2019m a UI/UX Designer! I\u2019m interested in game and XR development. I look forward to seeing the ideas built at HawkHacks!",
             "linkedin": "https://linkedin.com/in/brianna-loc-nguyen",
             "name": "Brianna Nguyen",
-            "roles": ["UI & UX Desinstagramner"],
+            "roles": ["UI & UX Designer"],
             "image": "Brianna"
         },
         {
@@ -157,21 +157,21 @@
             "bio": "Hey, I\u2019m Robert. I ordered a Comp Sci degree with a side option of Business Management from Laurier, but the 4-year shipping time is brutal. I\u2019m on the dev team for HawkHacks and LCS, but enjoy product work more than the coding.",
             "linkedin": "https://linkedin.com/in/robert-mazza-6a8063203",
             "name": "Robert Mazza",
-            "roles": ["Developer", "UI Desinstagramner"],
+            "roles": ["Developer", "UI Designer"],
             "image": "Robert"
         },
         {
             "bio": "Whats up, I\u2019m Obi, i\u2019m 21 and I never learned how to read. VP of Development at LCS, founder of LCS Pods, and your moms favorite friend you have.",
             "linkedin": "https://linkedin.com/in/moshe-obi-ihej",
             "name": "Obi Ihejirika",
-            "roles": ["Developer", "UI Desinstagramner"],
+            "roles": ["Developer", "UI Designer"],
             "image": "Obi"
         },
         {
             "bio": "Hello! I\u2019m Katya and I\u2019m a 3rd year applied math/computer science student at the University of Waterloo. My favourite hobby is learning random things on the internet instead of studying. I\u2019m a part of the dev team :)",
             "linkedin": "https://linkedin.com/in/kat-d-b15630178",
             "name": "Katya Driscoll",
-            "roles": ["Developer", "UI Desinstagramner"],
+            "roles": ["Developer", "UI Designer"],
             "image": "Katya"
         },
         {
@@ -180,7 +180,7 @@
             "instagram": "https://instagram.com/aidantraboulayy",
             "otherLink": "https://aidantraboulay.tech",
             "name": "Aidan Traboulay",
-            "roles": ["Developer", "UI Desinstagramner"],
+            "roles": ["Developer", "UI Designer"],
             "image": "Aidan"
         },
         {
