@@ -5,6 +5,8 @@ import DigitalOcean from "./digitalocean.svg";
 import OnePassword from "./1password.svg";
 import Balsamiq from "./balsamiq.png";
 import Echo3D from "./echo3D.png";
+import FDMGroup from "./fdmgroup.svg";
+import Roomiez from "./roomiez.png";
 
 import TempSOC from "./temp/soc.png";
 import TempMoneyClip from "./temp/moneyclip.svg";
@@ -14,4 +16,4 @@ import TempWolfram from "./temp/wolfram.png";
 import TempGFG from "./temp/gfg.png";
 import TempCisco from "./temp/cisco.png";
 
-export { DCL, Taskade, DigitalOcean, OnePassword, Balsamiq, Echo3D, TempSOC, TempMoneyClip, TempLeadingLearners, TempDhari, TempWolfram, TempGFG, TempCisco };
+export { DCL, Taskade, DigitalOcean, OnePassword, Balsamiq, Echo3D, FDMGroup, Roomiez, TempSOC, TempMoneyClip, TempLeadingLearners, TempDhari, TempWolfram, TempGFG, TempCisco };

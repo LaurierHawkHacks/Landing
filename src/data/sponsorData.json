@@ -1,6 +1,16 @@
 {
     "bronze": [
         {
+            "company": "FDM Group",
+            "logoName": "FDMGroup",
+            "url": "https://www.fdmgroup.com/en-ca/ca-careers/graduates/technical/"
+        },
+        {
+            "company": "Roomiez",
+            "logoName": "Roomiez",
+            "url": "https://roomiez.ca/"
+        },
+        {
             "company": "1Password",
             "logoName": "OnePassword",
             "url": "https://1password.com"
