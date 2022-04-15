@@ -49,6 +49,11 @@
             "company": "GeeksForGeeks",
             "logoName": "TempGFG",
             "url": "https://geeksforgeeks.org"
+        },
+        {
+            "company": "System-on-Chip Technologies",
+            "logoName": "SOC",
+            "url": "https://soctechnologies.com"
         }
     ],
     "silver": [
@@ -61,11 +66,6 @@
             "company": "Taskade",
             "logoName": "Taskade",
             "url": "https://taskade.com/"
-        },
-        {
-            "company": "System-on-Chip Technologies",
-            "logoName": "TempSOC",
-            "url": "https://soctechnologies.com"
         },
         {
             "company": "MoneyClip",
