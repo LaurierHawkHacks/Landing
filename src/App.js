@@ -15,6 +15,7 @@ import AppNavbar from "./components/Navbar";
 import NewsletterForm from "./components/newsletter/NewsletterForm";
 
 import "./App.css";
+import ScheduleSection from "./components/schedule/ScheduleSection";
 
 const GradientBackground = Styled.div``;
 
@@ -147,6 +148,11 @@ function App() {
                             </div>
                         </div>
                     </Container>
+
+                    <div id="schedule" className="foreground">
+                        <div className="spacer" style={{ width: "100%", height: "5em" }} />
+                        <ScheduleSection/>
+                    </div>
 
                     <Container id="faq" className="foreground">
                         <div className="spacer" style={{ width: "100%", height: "10em" }} />
