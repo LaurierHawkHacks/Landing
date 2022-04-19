@@ -35,11 +35,13 @@ const EventTag = Styled.p`
 
     padding-left: 1em;
     padding-right: 1em;
-
-    ${props => props.tagStyle === "Optional" ? "background: #0FA3B1;": ""}
-    ${props => props.tagStyle === "Manditory" ? "background: #CA6868;": ""}
-    ${props => props.tagStyle === "Workshop" ? "background: #7EB456;": ""}
     border-radius: 50px;
+
+    ${props => props.tagStyle === "Optional" && "background: #0FA3B1;"}
+    ${props => props.tagStyle === "Mandatory" && "background: #9968CA;"}
+    ${props => props.tagStyle === "Deadline" && "background: #CA6868;"}
+    ${props => props.tagStyle === "Workshop" && "background: #7EB456;"}
+    
 `;
 
 const EventContainer = Styled.div`
