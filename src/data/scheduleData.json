@@ -1,0 +1,34 @@
+[
+    [
+        {
+            "time": "10:00 AM",
+            "title": "Example Title",
+            "subtitle": "Change this stuff in the data/scheduleData.json file",
+            "tag": "optional"
+        },
+        {
+            "time": "12:00 PM",
+            "title": "Example Title 2",
+            "subtitle": "Change this stuff in the data/scheduleData.json file",
+            "tag": "optional"
+        }
+    ],
+
+    [
+        {
+            "time": "10:00 AM",
+            "title": "Example Title",
+            "subtitle": "Change this stuff in the data/scheduleData.json file",
+            "tag": "optional"
+        }
+    ],
+
+    [
+        {
+            "time": "10:00 PM",
+            "title": "Example Title",
+            "subtitle": "Change this stuff in the data/scheduleData.json file",
+            "tag": ""
+        }
+    ]
+]
