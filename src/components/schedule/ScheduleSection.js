@@ -78,7 +78,7 @@ function ScheduleSection(){
         <Container>
             <div style={{ display:"flex", alignItems: "center", flexDirection: "column" ,width: "100%" }}>
                 <h2>{"<Schedule/>"}</h2>
-                <p>Don&apos;t miss out on all the awesome events we have planned!</p>
+                <p>{"Don't miss out on all the awesome events we have planned! All times are in EDT (UTC-4)."}</p>
             </div>
             <ButtonContainer style={{ display:"flex", justifyContent: "center", width: "100%" }}>
                 <DayButton active={activeDayIndex === 0 && true} onClick={() => handleDayButtonClick(0)}>

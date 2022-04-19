@@ -1,34 +1,46 @@
 [
     [
         {
-            "time": "10:00 AM",
-            "title": "Example Title",
-            "subtitle": "Change this stuff in the data/scheduleData.json file",
-            "tag": "optional"
+            "time": "12:00 PM",
+            "title": "Hacker Registration Opens",
+            "tag": "Mandatory"
         },
         {
-            "time": "12:00 PM",
-            "title": "Example Title 2",
-            "subtitle": "Change this stuff in the data/scheduleData.json file",
-            "tag": "optional"
+            "time": "6:00 PM",
+            "title": "Main Opening Ceremony",
+            "tag": "Mandatory"
         }
     ],
 
     [
         {
-            "time": "10:00 AM",
-            "title": "Example Title",
-            "subtitle": "Change this stuff in the data/scheduleData.json file",
-            "tag": "optional"
+            "time": "9:00 AM",
+            "title": "Day #2 Opening Ceremony",
+            "tag": "Optional"
+        },
+        {
+            "time": "1:00 PM",
+            "title": "Introduction to the Distributed Compute Protocol (DCP): Your Personal Supercomputer",
+            "tag": "Workshop",
+            "subtitle": "Presented By Dr. Dan Desjardins & Ellie Mehltretter"
         }
     ],
 
     [
         {
-            "time": "10:00 PM",
-            "title": "Example Title",
-            "subtitle": "Change this stuff in the data/scheduleData.json file",
-            "tag": ""
+            "time": "9:00 AM",
+            "title": "Day #3 Opening Ceremony",
+            "tag": "Optional"
+        },
+        {
+            "time": "2:00 PM",
+            "title": "Submissions Close",
+            "tag": "Deadline"
+        },
+        {
+            "time": "8:00 PM",
+            "title": "Main Closing Ceremony",
+            "tag": "Mandatory"
         }
     ]
 ]
