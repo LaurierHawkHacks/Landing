@@ -13,6 +13,7 @@ import MeetTheTeam from "./components/team/MeetTheTeam";
 import HeroButtons from "./components/HeroButtons";
 import AppNavbar from "./components/Navbar";
 import NewsletterForm from "./components/newsletter/NewsletterForm";
+import Banner from "./components/Banner";
 
 import "./App.css";
 import ScheduleSection from "./components/schedule/ScheduleSection";
@@ -132,7 +133,6 @@ function App() {
                                 </p>
                             </div>
                         </div>
-
                         <div className="spacer" style={{ width: "100%", height: "10em" }} />
                         <div className="row">
                             <div className="col-md-12 text-center">
@@ -149,6 +149,10 @@ function App() {
                         </div>
                     </Container>
 
+
+                    <div className="spacer" style={{ width: "100%", height: "3em" }} />
+                    <Banner/>
+                    
                     <div id="schedule" className="foreground">
                         <div className="spacer" style={{ width: "100%", height: "5em" }} />
                         <ScheduleSection/>
