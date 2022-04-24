@@ -78,20 +78,22 @@ function ScheduleSection(){
         <Container>
             <div style={{ display:"flex", alignItems: "center", flexDirection: "column" ,width: "100%" }}>
                 <h2>{"<Schedule/>"}</h2>
-                <p>{"Don't miss out on all the awesome events we have planned! All times are in EDT (UTC-4)."}</p>
+                <div className="col-md-8 text-center">
+                    <p>{"Don't miss out on all the awesome events we have planned! All times are in "}<strong>{"Eastern Daylight Time (EDT / UTC-4)"}</strong>{" and the schedule is still a work in progress!"}</p>
+                </div>
             </div>
             <ButtonContainer style={{ display:"flex", justifyContent: "center", width: "100%" }}>
                 <DayButton active={activeDayIndex === 0 && true} onClick={() => handleDayButtonClick(0)}>
                     <DayButtonTitle>Day 1</DayButtonTitle>
-                    <DayButtonSubtitle>[date]</DayButtonSubtitle>
+                    <DayButtonSubtitle>{"May 13"}<sup>th</sup>{", 2022"}</DayButtonSubtitle>
                 </DayButton>
                 <DayButton active={activeDayIndex === 1 && true} onClick={() => handleDayButtonClick(1)}>
                     <DayButtonTitle>Day 2</DayButtonTitle>
-                    <DayButtonSubtitle>[date]</DayButtonSubtitle>
+                    <DayButtonSubtitle>{"May 14"}<sup>th</sup>{", 2022"}</DayButtonSubtitle>
                 </DayButton>
                 <DayButton active={activeDayIndex === 2 && true} onClick={() => handleDayButtonClick(2)}>
                     <DayButtonTitle>Day 3</DayButtonTitle>
-                    <DayButtonSubtitle>[date]</DayButtonSubtitle>
+                    <DayButtonSubtitle>{"May 15"}<sup>th</sup>{", 2022"}</DayButtonSubtitle>
                 </DayButton>
             </ButtonContainer>
             <EventsList>
