@@ -84,11 +84,12 @@ const AppNavbar = () => {
                 <Navbar.Collapse id="navbar-nav">
                     <Nav className="nav-main me-auto">
                         <NavLink href="#about">About</NavLink>
+                        <NavLink href="#schedule">Schedule</NavLink>
                         <NavLink href="#faq">FAQ</NavLink>
-                        <NavLink href="#contact">Stay Connected</NavLink>
+                        <NavLink href="#contact">Contact</NavLink>
                         <NavLink href="#partners">Partners</NavLink>
                         <NavLink href="#sponsors">Sponsors</NavLink>
-                        <NavLink href="#team">Meet The Team</NavLink>
+                        <NavLink href="#team">The Team</NavLink>
                     </Nav>
                     <Nav className="nav-right d-flex align-items-center">
                         <PopupButton id="ud88xVfK" className="nav-link" as="a">
