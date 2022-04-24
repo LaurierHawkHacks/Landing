@@ -35,9 +35,13 @@ const EventTag = Styled.p`
 
     padding-left: 1em;
     padding-right: 1em;
-
-    background: #0FA3B1;
     border-radius: 50px;
+
+    ${props => props.tagStyle === "Optional" && "background: #0FA3B1;"}
+    ${props => props.tagStyle === "Mandatory" && "background: #9968CA;"}
+    ${props => props.tagStyle === "Deadline" && "background: #CA6868;"}
+    ${props => props.tagStyle === "Workshop" && "background: #7EB456;"}
+    
 `;
 
 const EventContainer = Styled.div`
@@ -59,7 +63,10 @@ function ScheduleEvent({timeStr, title, subtitle, tagText}){
             <EventTime>{timeStr}</EventTime>
             <EventTitle>{title}</EventTitle>
             <EventSubtitle>{subtitle}</EventSubtitle>
-            <EventTag>{tagText}</EventTag>
+            {/* 
+                tagStyle can be either "Optional", "Manditory, or "Workshop"
+            */}
+            <EventTag tagStyle={tagText}>{tagText}</EventTag>
         </EventContainer>
     );
 }
