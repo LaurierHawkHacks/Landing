@@ -9,7 +9,13 @@
             "time": "6:00 PM",
             "title": "Main Opening Ceremony",
             "tag": "Mandatory"
+        },
+        {
+            "time": "9:00 PM",
+            "title": "Minecraft Build Competition Starts",
+            "tag": "Optional"
         }
+
     ],
 
     [
@@ -35,6 +41,11 @@
         {
             "time": "2:00 PM",
             "title": "Submissions Close",
+            "tag": "Deadline"
+        },
+        {
+            "time": "2:00 PM",
+            "title": "Minecraft Build Competition Submissions Close",
             "tag": "Deadline"
         },
         {
