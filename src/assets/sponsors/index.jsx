@@ -7,11 +7,12 @@ import Balsamiq from "./balsamiq.png";
 import Echo3D from "./echo3D.png";
 import FDMGroup from "./fdmgroup.svg";
 import Roomiez from "./roomiez.png";
-
+import Ollon from "./ollon.svg";
 import SOC from "./soc.jpg";
-import TempLeadingLearners from "./temp/leadinglearners.png";
+import LeadingLearners from "./leadinglearners.png";
+
 import TempDhari from "./temp/dhari.png";
 import TempGFG from "./temp/gfg.png";
 import TempCisco from "./temp/cisco.png";
 
-export { DCL, Taskade, DigitalOcean, OnePassword, Balsamiq, Echo3D, FDMGroup, Roomiez, SOC, TempLeadingLearners, TempDhari, TempGFG, TempCisco };
+export { DCL, Taskade, DigitalOcean, OnePassword, Balsamiq, Echo3D, FDMGroup, Roomiez, Ollon, SOC, LeadingLearners, TempDhari, TempGFG, TempCisco };
