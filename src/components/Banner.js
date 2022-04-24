@@ -64,15 +64,15 @@ function Banner() {
     return(
         <BannerContainer>
             <BannerItem>
-                <BannerH2>20K+</BannerH2>
+                <BannerH2>$20K+</BannerH2>
                 <BannerP>In Prizes</BannerP>
             </BannerItem>
             <BannerItem>
-                <BannerH2>48</BannerH2>
-                <BannerP>Hours</BannerP>
+                <BannerH2>36 Hours</BannerH2>
+                <BannerP>Of Hacking</BannerP>
             </BannerItem>
             <BannerItem>
-                <BannerH2>XXX+</BannerH2>
+                <BannerH2>300+</BannerH2>
                 <BannerP>Hackers</BannerP>
             </BannerItem>
         </BannerContainer>

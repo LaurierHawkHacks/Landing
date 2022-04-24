@@ -118,7 +118,7 @@ function App() {
                     </Container>
 
                     <Container id="why-laurier" className="foreground">
-                        <div className="spacer" style={{ width: "100%", height: "10em" }} />
+                        <div className="spacer" style={{ width: "100%", height: "7.5em" }} />
                         <div className="row align-items-center">
                             <div className="pe-lg-5" />
                             <div className="col-md-6 text-center">
@@ -133,6 +133,12 @@ function App() {
                                 </p>
                             </div>
                         </div>
+                    </Container>
+
+                    <div className="spacer" style={{ width: "100%", height: "5em" }} />
+                    <Banner/>
+                    
+                    <Container id="what-can-i-gain" className="foreground">
                         <div className="spacer" style={{ width: "100%", height: "10em" }} />
                         <div className="row">
                             <div className="col-md-12 text-center">
@@ -149,10 +155,6 @@ function App() {
                         </div>
                     </Container>
 
-
-                    <div className="spacer" style={{ width: "100%", height: "3em" }} />
-                    <Banner/>
-                    
                     <div id="schedule" className="foreground">
                         <div className="spacer" style={{ width: "100%", height: "5em" }} />
                         <ScheduleSection/>
