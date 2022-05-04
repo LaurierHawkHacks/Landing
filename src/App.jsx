@@ -60,7 +60,7 @@ function App() {
 
                     <Container
                         id="home"
-                        className="d-flex flex-column align-items-center foreground"
+                        className="hero-container foreground"
                     >
                         <div className="spacer" style={{ width: "100%", height: "7.5em" }} />
                         <AnimatedIcon

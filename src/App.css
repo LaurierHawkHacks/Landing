@@ -21,7 +21,7 @@ body {
     display: block;
 }
 .site-footer {
-    background-color: #9BD4D7;
+    background-color: #9bd4d7;
 }
 .site-footer,
 .page-wrap:after {
@@ -117,6 +117,7 @@ h1 {
     margin-bottom: 0.5em;
     color: var(--color-main);
 }
+
 h2 {
     font-size: 2.5em;
     font-weight: bold;
@@ -136,6 +137,24 @@ h5,
 h6,
 p {
     color: var(--color-dark);
+}
+
+@media screen and (max-width: 770px) {
+    h1 {
+        font-size: 6vw;
+    }
+    h2 {
+        font-size: 5.5vw;
+    }
+    h3 {
+        font-size: 4vw;
+    }
+    h4,
+    h5,
+    h6,
+    p {
+        font-size: 3.5vw;
+    }
 }
 
 a,
@@ -178,6 +197,13 @@ a:focus,
 .btn:active {
     background-color: var(--color-dark);
     border-color: var(--color-dark);
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .accordion-item {
@@ -259,7 +285,6 @@ a:focus,
 .sponsors-subtitle {
     grid-area: 2 / 1 / 2 / 1;
 }
-
 
 @media (min-width: 770px) {
     .our-sponsors {
