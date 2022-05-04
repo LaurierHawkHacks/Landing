@@ -10,6 +10,7 @@ import PartnersSection from "./components/partners/PartnersSection";
 import SponsorTiersDisplay from "./components/sponsors/SponsorTiersDisplay";
 import SponsorCarousel from "./components/sponsors/SponsorCarousel";
 import MeetTheTeam from "./components/team/MeetTheTeam";
+import MeetTheJudges from "./components/judges/MeetTheJudges";
 import HeroButtons from "./components/HeroButtons";
 import AppNavbar from "./components/Navbar";
 import NewsletterForm from "./components/newsletter/NewsletterForm";
@@ -112,7 +113,7 @@ function App() {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-md-12 text-center">
+                            <div className="col-md-10 text-center">
                                 <p>
                                 Hackathons are a great place to gain experience, knowledge, connections, and cool swag. Every participant in HawkHacks will be delivered their very own shipment of swag! Otherwise, there’s ample oppurtunities to attend mini-gaming events, workshops, seminars, and networking events hosted by our industry partners with some giveaways on the side too! 
                                 </p>
@@ -152,6 +153,11 @@ function App() {
                     <Container id="team" className="foreground">
                         <div className="spacer" style={{ width: "100%", height: "10em" }} />
                         <MeetTheTeam />
+                    </Container>
+
+                    <Container id="team" className="foreground">
+                        <div className="spacer" style={{ width: "100%", height: "10em" }} />
+                        <MeetTheJudges />
                     </Container>
                 </div>
 
