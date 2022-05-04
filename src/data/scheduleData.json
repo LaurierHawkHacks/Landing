@@ -1,0 +1,57 @@
+[
+    [
+        {
+            "time": "12:00 PM",
+            "title": "Hacker Registration Opens",
+            "tag": "Mandatory"
+        },
+        {
+            "time": "6:00 PM",
+            "title": "Main Opening Ceremony",
+            "tag": "Mandatory"
+        },
+        {
+            "time": "9:00 PM",
+            "title": "Minecraft Build Competition Starts",
+            "tag": "Optional"
+        }
+
+    ],
+
+    [
+        {
+            "time": "9:00 AM",
+            "title": "Day #2 Opening Ceremony",
+            "tag": "Optional"
+        },
+        {
+            "time": "1:00 PM",
+            "title": "Introduction to the Distributed Compute Protocol (DCP): Your Personal Supercomputer",
+            "tag": "Workshop",
+            "subtitle": "Presented By Dr. Dan Desjardins & Ellie Mehltretter"
+        }
+    ],
+
+    [
+        {
+            "time": "9:00 AM",
+            "title": "Day #3 Opening Ceremony",
+            "tag": "Optional"
+        },
+        {
+            "time": "2:00 PM",
+            "title": "Submissions Close",
+            "tag": "Deadline"
+        },
+        {
+            "time": "2:00 PM",
+            "title": "Minecraft Build Competition Submissions Close",
+            "tag": "Deadline"
+        },
+        {
+            "time": "8:00 PM",
+            "title": "Main Closing Ceremony",
+            "tag": "Mandatory"
+        }
+    ]
+]

@@ -1,6 +1,16 @@
 {
     "bronze": [
         {
+            "company": "FDM Group",
+            "logoName": "FDMGroup",
+            "url": "https://www.fdmgroup.com/en-ca/ca-careers/graduates/technical/"
+        },
+        {
+            "company": "Roomiez",
+            "logoName": "Roomiez",
+            "url": "https://roomiez.ca/"
+        },
+        {
             "company": "1Password",
             "logoName": "OnePassword",
             "url": "https://1password.com"
@@ -31,19 +41,19 @@
             "url": "https://echo3d.co"
         },
         {
-            "company": "Linode",
-            "logoName": "TempLinode",
-            "url": "https://linode.com"
-        },
-        {
-            "company": "Wolfram",
-            "logoName": "TempWolfram",
-            "url": "https://wolfram.com/wolfram-one"
-        },
-        {
             "company": "GeeksForGeeks",
             "logoName": "TempGFG",
             "url": "https://geeksforgeeks.org"
+        },
+        {
+            "company": "System-on-Chip Technologies",
+            "logoName": "SOC",
+            "url": "https://soctechnologies.com"
+        },
+        {
+            "company": "Ollon",
+            "logoName": "Ollon",
+            "url": "https://ollon.ca/"
         }
     ],
     "silver": [
@@ -53,20 +63,11 @@
             "url": "https://digitalocean.com"
         },
         {
-            "company": "System-on-Chip Technologies",
-            "logoName": "TempSOC",
-            "url": "https://soctechnologies.com"
-        },
-        {
-            "company": "MoneyClip",
-            "logoName": "TempMoneyClip",
-            "url": "https://moneyclip.io/"
-        },
-        {
             "company": "Taskade",
             "logoName": "Taskade",
             "url": "https://taskade.com/"
         }
+
     ],
     "gold": [
         {

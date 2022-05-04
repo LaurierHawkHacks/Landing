@@ -90,7 +90,6 @@ const Roles = styled.div`
 const Description = styled.div`
     position: absolute;
     top: 100%;
-    // margin-top: 10px;
     padding: 10px;
     max-height: 0;
     overflow: hidden;
@@ -140,31 +139,38 @@ export default function TeamMember(props) {
                 </Header>
             </Card>
             <Description>
-                {props.bio}
-                <br />
-                <br />
-                <a
-                    href={props.linkedin}
+                {<a href={props.linkedin}
                     target="_blank"
-                    style={{
-                        wordWrap: "break-Word",
-                    }}
+                    style={{ wordWrap: "break-Word" }}
                     rel="noreferrer"
                 >
-                    LinkedIn
+                    {"LinkedIn"}
                 </a>
+                }
 
-                {props.instagram ? "  |  " : ""}
+                {props.instagram ? " | " : ""}
                 {props.instagram ? <a
                     href={props.instagram}
                     target="_blank"
-                    style={{
-                        wordWrap: "break-Word",
-                    }}
+                    style={{ wordWrap: "break-Word" }}
                     rel="noreferrer"
                 >
-                    Instagram
-                </a> : ""}
+                    {"Instagram"}
+                </a> : ""
+                }
+
+                {props.otherLink ? " | " : ""}
+                {props.otherLink ? <a
+                    href={props.otherLink}
+                    target="_blank"
+                    style={{ wordWrap: "break-Word" }}
+                    rel="noreferrer"
+                >
+                    {"Website"}
+                </a> : ""
+                }
+
+                <p style={{ marginBottom: "8px" }}>{props.bio}</p>
             </Description>
         </Wrapper>
     );

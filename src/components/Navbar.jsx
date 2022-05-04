@@ -5,6 +5,23 @@ import { PopupButton } from "@typeform/embed-react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Icon } from "../assets";
 
+const AnimatedIcon = Styled.img`
+    transition: all 0.25s ease;
+    :hover {
+        filter: brightness(75%);
+        transition: all 0.25s ease;
+        animation-name:rotate;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        @keyframes rotate{
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+    }
+`;
+
 const MLHAnchor = Styled.a`
 	max-width: 100px;
 	min-width: 60px;
@@ -61,17 +78,18 @@ const AppNavbar = () => {
         <Navbar id="header" expand="xl" sticky="top" className="bg-hh-accent">
             <Container>
                 <Navbar.Brand href="#">
-                    <img className="mx-2" src={Icon} width="50" height="50" alt="HawkHacks Icon" />
+                    <AnimatedIcon className="mx-2" src={Icon} width="50" height="50" alt="HawkHacks Icon" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbar-nav" />
                 <Navbar.Collapse id="navbar-nav">
                     <Nav className="nav-main me-auto">
                         <NavLink href="#about">About</NavLink>
+                        <NavLink href="#schedule">Schedule</NavLink>
                         <NavLink href="#faq">FAQ</NavLink>
-                        <NavLink href="#contact">Stay Connected</NavLink>
+                        <NavLink href="#contact">Contact</NavLink>
                         <NavLink href="#partners">Partners</NavLink>
                         <NavLink href="#sponsors">Sponsors</NavLink>
-                        <NavLink href="#team">Meet The Team</NavLink>
+                        <NavLink href="#team">The Team</NavLink>
                     </Nav>
                     <Nav className="nav-right d-flex align-items-center">
                         <PopupButton id="ud88xVfK" className="nav-link" as="a">

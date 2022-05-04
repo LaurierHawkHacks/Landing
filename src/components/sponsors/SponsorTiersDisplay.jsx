@@ -2,7 +2,7 @@ import React from "react";
 import Styled from "styled-components";
 import { Container, OverlayTrigger, Tooltip } from "react-bootstrap";
 
-import sponsorData from "../../sponsorData.json";
+import sponsorData from "../../data/sponsorData.json";
 import placeholder from "../../assets/placeholder_image.svg";
 import * as SponsorImages from "../../assets/sponsors/";
 
@@ -25,16 +25,28 @@ const GoldSponsorLogo = Styled.img`
     width: 100%;
     max-width: 400px;
     margin: 0.5em 0.5em 0.5em 0.5em;
+
+    :hover {
+        cursor: pointer;
+    }
 `;
 
 const SilverSponsorLogo = Styled.img`
-    max-width: 250px;    
-    margin: 0.5em 0.5em 0.5em 0.5em;
+    max-width: 300px;    
+    margin: 1.5em;
+
+    :hover {
+        cursor: pointer;
+    }
 `;
 
 const BronzeSponsorLogo = Styled.img`
     max-width: 150px;
-    margin: 0.5em 0.5em 0.5em 0.5em;
+    margin: 1.5em;
+
+    :hover {
+        cursor: pointer;
+    }
 `;
 
 function SponsorTiersDisplay() {
@@ -43,19 +55,21 @@ function SponsorTiersDisplay() {
             <SponsorSection>
                 {sponsorData.gold.map((sponsor, index) => {
                     return (
+                       
                         <OverlayTrigger 
                             key={index} 
                             placement="bottom"
                             overlay={
-                                <Tooltip id={`tooltip-${index}`}>
+                                <Tooltip id={`tooltip-gold-${index}`}>
                                     {sponsor.company}
                                 </Tooltip>
                             }
                         >
                             {sponsor.logoName 
-                                ? <GoldSponsorLogo src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
+                                ? <GoldSponsorLogo onClick={() => handleClick(sponsor.url)} src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
                                 : <GoldSponsorLogo src={placeholder} alt={sponsor.company}/>}
                         </OverlayTrigger>
+                        
                     );}
                 )}
                 
@@ -67,13 +81,13 @@ function SponsorTiersDisplay() {
                             key={index} 
                             placement="bottom"
                             overlay={
-                                <Tooltip id={`tooltip-${index}`}>
+                                <Tooltip id={`tooltip-silver-${index}`}>
                                     {sponsor.company}
                                 </Tooltip>
                             }
                         >
                             {sponsor.logoName 
-                                ? <SilverSponsorLogo src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
+                                ? <SilverSponsorLogo onClick={() => handleClick(sponsor.url)} src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
                                 : <SilverSponsorLogo src={placeholder} alt={sponsor.company}/>}
                         </OverlayTrigger>
                     );}
@@ -87,22 +101,26 @@ function SponsorTiersDisplay() {
                             key={index} 
                             placement="bottom"
                             overlay={
-                                <Tooltip id={`tooltip-${index}`}>
+                                <Tooltip id={`tooltip-bronze-${index}`}>
                                     {sponsor.company}
                                 </Tooltip>
                             }
                         >
                             {sponsor.logoName 
-                                ? <BronzeSponsorLogo src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
+                                ? <BronzeSponsorLogo onClick={() => handleClick(sponsor.url)} src={`${SponsorImages[sponsor.logoName]}`} alt={sponsor.company}/> 
                                 : <BronzeSponsorLogo src={placeholder} alt={sponsor.company}/>}
                         </OverlayTrigger>
+                        
                     );}
                 )}
              
             </SponsorSection>
-
-        </ Container>
+        </Container>
     );
 }
+
+const handleClick = (url) => {
+    window.open(url, "_blank");
+};
 
 export default SponsorTiersDisplay;

@@ -14,12 +14,41 @@ import MeetTheJudges from "./components/judges/MeetTheJudges";
 import HeroButtons from "./components/HeroButtons";
 import AppNavbar from "./components/Navbar";
 import NewsletterForm from "./components/newsletter/NewsletterForm";
+import Banner from "./components/Banner";
 
 import "./App.css";
+import ScheduleSection from "./components/schedule/ScheduleSection";
 
 const GradientBackground = Styled.div``;
 
+const AnimatedIcon = Styled.img`
+    transition: all 0.25s ease;
+    :hover {
+        filter: brightness(75%);
+        transition: all 0.25s ease;
+        animation-name:rotate;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        @keyframes rotate{
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+    }
+`;
+
 function App() {
+    React.useEffect(() => {
+        const subdomain = window.location.host.split(".")[0];
+        if (subdomain == "mentoring" || subdomain == "mentor")
+            window.location = "https://hawkhacks.notion.site/Mentoring-Information-Package-211cefb551024b09a467f225a151e445";
+
+        else if (subdomain == "judging" || subdomain == "judge")
+            window.location = "https://hawkhacks.notion.site/Judging-Information-Package-27f1709a196e4d0b96a5026e87ac3816";
+
+    }, []);
+
     return (
         <>
             <GradientBackground className="bg-hh-gradient">
@@ -35,7 +64,7 @@ function App() {
                         className="d-flex flex-column align-items-center foreground"
                     >
                         <div className="spacer" style={{ width: "100%", height: "7.5em" }} />
-                        <img
+                        <AnimatedIcon
                             className="mx-2"
                             src={Icon}
                             width="110"
@@ -90,7 +119,7 @@ function App() {
                     </Container>
 
                     <Container id="why-laurier" className="foreground">
-                        <div className="spacer" style={{ width: "100%", height: "10em" }} />
+                        <div className="spacer" style={{ width: "100%", height: "7.5em" }} />
                         <div className="row align-items-center">
                             <div className="pe-lg-5" />
                             <div className="col-md-6 text-center">
@@ -105,7 +134,12 @@ function App() {
                                 </p>
                             </div>
                         </div>
+                    </Container>
 
+                    <div className="spacer" style={{ width: "100%", height: "5em" }} />
+                    <Banner />
+
+                    <Container id="what-can-i-gain" className="foreground">
                         <div className="spacer" style={{ width: "100%", height: "10em" }} />
                         <div className="row">
                             <div className="col-md-12 text-center">
@@ -113,27 +147,33 @@ function App() {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-md-10 text-center">
+                            <div className="col-md-2" />
+                            <div className="col-md-8 text-center">
                                 <p>
-                                Hackathons are a great place to gain experience, knowledge, connections, and cool swag. Every participant in HawkHacks will be delivered their very own shipment of swag! Otherwise, there’s ample oppurtunities to attend mini-gaming events, workshops, seminars, and networking events hosted by our industry partners with some giveaways on the side too! 
+                                    Hackathons are a great place to gain experience, knowledge, connections, and cool swag. Every participant in HawkHacks will be delivered their very own shipment of swag! Otherwise, there’s ample oppurtunities to attend mini-gaming events, workshops, seminars, and networking events hosted by our industry partners with some giveaways on the side too!
                                 </p>
                             </div>
                         </div>
                     </Container>
 
+                    <div id="schedule" className="foreground">
+                        <div className="spacer" style={{ width: "100%", height: "5em" }} />
+                        <ScheduleSection />
+                    </div>
+
                     <Container id="faq" className="foreground">
                         <div className="spacer" style={{ width: "100%", height: "10em" }} />
                         <FAQ />
                     </Container>
-                    
+
                     <Container id="contact" className="foreground">
                         <div className="spacer" style={{ width: "100%", height: "10em" }} />
-                        <NewsletterForm/>
+                        <NewsletterForm />
                     </Container>
 
                     <Container id="partners">
                         <div className="spacer" style={{ width: "100%", height: "10em" }} />
-                        <PartnersSection/>
+                        <PartnersSection />
                     </Container>
 
                     <Container id="sponsors" className="foreground">
@@ -168,6 +208,7 @@ function App() {
                         maxWidth="102em"
                         position="relative"
                         id="illustration-footer"
+                        top="5px"
                     />
                     <footer
                         id="footer"

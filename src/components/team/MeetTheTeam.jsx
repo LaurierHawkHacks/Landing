@@ -1,20 +1,20 @@
 import React from "react";
-import styled from "styled-components";
+import Styled from "styled-components";
 import TeamMember from "./TeamMember";
-import teamBios from "../../teamData.json";
+import teamBios from "../../data/teamData.json";
 
-const TeamsContainer = styled.div`
+const TeamsContainer = Styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
 `;
 
-const TeamName = styled.div`
+const TeamName = Styled.div`
     width: 100%;
     font-size: 22px;
 `;
 
-const Team = styled.div`
+const Team = Styled.div`
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
@@ -26,6 +26,14 @@ const MeetTheTeam = () => {
         <div>
             <div className="col-md-9 col-lg-10 col-xl-8 mx-auto">
                 <h2 className="font-weight-bold text-center">{"<Meet The Team/>"}</h2>
+                <div className="row">
+                    <div className="col-md-1"/>
+                    <div className="col-md-10 text-center">
+                        <p>
+                            {"HawkHacks is brought to you by students who have an insane amount of passion in making student communities better - for students, by students."}
+                        </p>
+                    </div>
+                </div>                
                 <TeamsContainer>
                     {Object.keys(teamBios).map((teamKey) => {
                         return (
@@ -40,7 +48,8 @@ const MeetTheTeam = () => {
                                                 key={memberObject.name}
                                                 name={memberObject.name}
                                                 linkedin={memberObject.linkedin}
-                                                instagram={memberObject.ig}
+                                                instagram={memberObject.instagram}
+                                                otherLink={memberObject.otherLink}
                                                 bio={memberObject.bio}
                                                 roles={memberObject.roles}
                                                 image={memberObject.image}
