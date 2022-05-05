@@ -51,14 +51,13 @@ const Card = styled.div`
     padding: 3px 3px 4px 3px;
     overflow: hidden;
 
-    border: 3px solid rgba(255, 0, 0, 0);
+    border: 1px solid rgba(255, 0, 0, 0);
     border-radius: 35px;
     transition: all 0.2s ease;
     z-index: 1;
 
     &:hover {
-        background: #e4edf2;
-        border: 3px solid #0fa3b1;
+        border-color: #0fa3b1;
     }
 `;
 
