@@ -1,11 +1,68 @@
 [{
-        "name": "Dimetrius",
-        "position": "staff",
-        "company": "High Risk Industries"
+        "name": "Adrian Krebs",
+        "position": "Program Lead",
+        "company": "WLU Startup Lab"
     },
     {
-        "name": "MrT",
+        "name": "Marshall Asch",
+        "position": "DevOps Engineer",
+        "company": "Plex"
+    },
+    {
+        "name": "Prof. Qutaiba Albluwi",
+        "position": "Professor",
+        "company": "Wilfrid Laurier University"
+    },
+    {
+        "name": "Jake Uskoski",
+        "position": "Sr Software Engineer",
+        "company": "Unity"
+    },
+    {
+        "name": "Liam Burns",
+        "position": "Freelance Web Developer",
+        "company": "Bellwoods Web Development and Civiconnect"
+    },
+    {
+        "name": "Stephanie Pitman",
+        "position": "Software Developer",
+        "company": "D2L"
+    },
+    {
+        "name": "Dan Desjardins",
         "position": "CEO",
-        "company": "Fckem up Records"
+        "company": "Kings Distributed Systems"
+    },
+    {
+        "name": "Ammar Abuleil",
+        "position": "Development Team Lead",
+        "company": "Sonova Group"
+    },
+    {
+        "name": "Benjamin Segall",
+        "position": "Software Developer",
+        "company": "Google"
+    },
+    {
+        "name": "Ben Pearo",
+        "position": "Development Team Lead",
+        "company": "Value Connect Inc"
+    },
+    {
+        "name": "James Lemieux",
+        "position": "Software Engineer",
+        "company": "Meta"
+    },
+    {
+        "name": "Braydon Kains",
+        "position": "Software Developer",
+        "company": "Google"
+    },
+    {
+        "name": "MLH Coach",
+        "position": "",
+        "company": "MLH"
     }
+    
+    
 ]
