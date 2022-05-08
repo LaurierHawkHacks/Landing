@@ -5,9 +5,10 @@ import Styled from "styled-components";
 const EventTitle = Styled.h3`
     color: #0A6972;
     margin-bottom: 0em;
+    font-size: 1em;
 
     @media (max-width: 650px) {
-        font-size: 1.5em;
+        font-size: 1em;
     }
 `;
 
