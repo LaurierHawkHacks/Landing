@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Judge from "./Judge.js";
-import judgeBios from "../../judgeData.json";
+import judgeBios from "../../data/judgeData.json";
 
 const JudgeContainer = styled.div`
     width: 100%;
@@ -30,6 +30,7 @@ const MeetTheJudges = () => {
                                     name={judgeObject.name}
                                     position={judgeObject.position}
                                     company={judgeObject.company}
+                                    image={judgeObject.image}
                                 />
                             );
                         })}

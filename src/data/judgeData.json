@@ -1,67 +1,80 @@
 [{
         "name": "Adrian Krebs",
         "position": "Program Lead",
-        "company": "WLU Startup Lab"
+        "company": "WLU Startup Lab",
+        "image": ""
     },
     {
         "name": "Marshall Asch",
         "position": "DevOps Engineer",
-        "company": "Plex"
+        "company": "Plex",
+        "image": ""
     },
     {
         "name": "Prof. Qutaiba Albluwi",
         "position": "Professor",
-        "company": "Wilfrid Laurier University"
+        "company": "Wilfrid Laurier University",
+        "image": ""
     },
     {
         "name": "Jake Uskoski",
         "position": "Sr Software Engineer",
-        "company": "Unity"
+        "company": "Unity",
+        "image": ""
     },
     {
         "name": "Liam Burns",
         "position": "Freelance Web Developer",
-        "company": "Bellwoods Web Development and Civiconnect"
+        "company": "Bellwoods Web Development and Civiconnect",
+        "image": ""
     },
     {
         "name": "Stephanie Pitman",
         "position": "Software Developer",
-        "company": "D2L"
+        "company": "D2L",
+        "image": ""
     },
     {
         "name": "Dan Desjardins",
         "position": "CEO",
-        "company": "Kings Distributed Systems"
+        "company": "Kings Distributed Systems",
+        "image": ""
     },
     {
         "name": "Ammar Abuleil",
         "position": "Development Team Lead",
-        "company": "Sonova Group"
+        "company": "Sonova Group",
+        "image": ""
     },
     {
         "name": "Benjamin Segall",
         "position": "Software Developer",
-        "company": "Google"
+        "company": "Google",
+        "image": ""
     },
     {
         "name": "Ben Pearo",
         "position": "Development Team Lead",
-        "company": "Value Connect Inc"
+        "company": "Value Connect Inc",
+        "image": ""
     },
     {
         "name": "James Lemieux",
         "position": "Software Engineer",
-        "company": "Meta"
+        "company": "Meta",
+        "image": ""
     },
     {
         "name": "Braydon Kains",
         "position": "Software Developer",
-        "company": "Google"
+        "company": "Google",
+        "image": ""
     },
     {
         "name": "MLH Coach",
         "position": "",
-        "company": "MLH"
+        "company": "MLH",
+        "image": ""
     }
     
     
