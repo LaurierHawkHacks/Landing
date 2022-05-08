@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-//import * as TeamImages from "../../assets/team";
+import * as JudgeImages from "../../assets/judges";
 import placeholder from "../../assets/placeholder_headshot.svg";
 
 const Wrapper = styled.div`
@@ -64,7 +64,7 @@ export default function Judge(props) {
     return (
         <Wrapper>
             <Card>
-                <Image key={props.image} src={props.image === "" ? placeholder : props.image} />
+                <Image key={props.image} src={JudgeImages[props.image] === undefined ? placeholder : JudgeImages[props.image]} />
                 <Header>
                     <Name>
                         <b> {props.name} </b>
