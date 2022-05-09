@@ -22,7 +22,7 @@
         },
         {
             "company": "LeadingLearners",
-            "logoName": "TempLeadingLearners",
+            "logoName": "LeadingLearners",
             "url": "https://leading-learners.com"
         },
         {
@@ -41,11 +41,6 @@
             "url": "https://echo3d.co"
         },
         {
-            "company": "GeeksForGeeks",
-            "logoName": "TempGFG",
-            "url": "https://geeksforgeeks.org"
-        },
-        {
             "company": "System-on-Chip Technologies",
             "logoName": "SOC",
             "url": "https://soctechnologies.com"
@@ -53,7 +48,17 @@
         {
             "company": "Ollon",
             "logoName": "Ollon",
-            "url": "https://ollon.ca/"
+            "url": "https://ollon.ca"
+        },
+        {
+            "company": "Veritas AI",
+            "logoName": "VeritasAI",
+            "url": "https://veritasai.com"
+        },
+        {
+            "company": "AssemblyAI",
+            "logoName": "AssemblyAI",
+            "url": "https://assemblyai.com"
         }
     ],
     "silver": [
@@ -66,8 +71,12 @@
             "company": "Taskade",
             "logoName": "Taskade",
             "url": "https://taskade.com/"
+        },
+        {
+            "company": "MoneyClip",
+            "logoName": "",
+            "url": ""
         }
-
     ],
     "gold": [
         {

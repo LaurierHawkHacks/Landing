@@ -10,9 +10,11 @@ import Roomiez from "./roomiez.png";
 import Ollon from "./ollon.svg";
 import SOC from "./soc.jpg";
 import LeadingLearners from "./leadinglearners.png";
+import VeritasAI from "./veritas.png";
+import AssemblyAI from "./assembly.svg";
 
 import TempDhari from "./temp/dhari.png";
 import TempGFG from "./temp/gfg.png";
 import TempCisco from "./temp/cisco.png";
 
-export { DCL, Taskade, DigitalOcean, OnePassword, Balsamiq, Echo3D, FDMGroup, Roomiez, Ollon, SOC, LeadingLearners, TempDhari, TempGFG, TempCisco };
+export { DCL, Taskade, DigitalOcean, OnePassword, Balsamiq, Echo3D, FDMGroup, Roomiez, Ollon, SOC, LeadingLearners, VeritasAI, AssemblyAI, TempDhari, TempGFG, TempCisco };
