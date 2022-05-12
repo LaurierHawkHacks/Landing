@@ -1,6 +1,6 @@
 import React from "react";
 import Styled from "styled-components";
-
+import CountUp from "react-countup";
 
 const BannerContainer = Styled.div`
     padding-left: 20%;
@@ -64,15 +64,15 @@ function Banner() {
     return(
         <BannerContainer>
             <BannerItem>
-                <BannerH2>$20K+</BannerH2>
+                <BannerH2>${<CountUp end={20} duration={1.0} />}K+</BannerH2>
                 <BannerP>In Prizes</BannerP>
             </BannerItem>
             <BannerItem>
-                <BannerH2>36 Hours</BannerH2>
+                <BannerH2>{<CountUp end={36} duration={1.5}/>} Hours</BannerH2>
                 <BannerP>Of Hacking</BannerP>
             </BannerItem>
             <BannerItem>
-                <BannerH2>300+</BannerH2>
+                <BannerH2>{<CountUp end={650} duration={2.0}/>}+</BannerH2>
                 <BannerP>Hackers</BannerP>
             </BannerItem>
         </BannerContainer>
