@@ -43,7 +43,7 @@ const EventTag = Styled.p`
     ${props => props.tagStyle === "Important Deadline" && "background: #3CC580;"}
 
     ${props => props.tagStyle === "Mandatory" && "background: #FF312E;"}
-    ${props => props.tagStyle === "Mandatory / Hopin" && "background: #0FA3B1;"}
+    ${props => props.tagStyle === "Mandatory / Hopin" && "background: #FF312E;"}
 `;
 
 const EventContainer = Styled.div`
