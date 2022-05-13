@@ -1,57 +1,125 @@
 [
     [
         {
-            "time": "12:00 PM",
-            "title": "Hacker Registration Opens",
+            "time": "12:00 PM - 6:00 PM",
+            "title": "Team Registration & Hacker Verification",
             "tag": "Mandatory"
         },
         {
-            "time": "6:00 PM",
-            "title": "Main Opening Ceremony",
-            "tag": "Mandatory"
+            "time": "6:00 PM - 6:50 PM",
+            "title": "Day #1 Opening Ceremony", 
+            "tag": "Presentation"
         },
         {
-            "time": "9:00 PM",
-            "title": "Minecraft Build Competition Starts",
-            "tag": "Optional"
+            "time": "9:00 PM - 9:30 PM",
+            "title": "Minecraft Build Competition & MS Paint Meme Competition Starts",
+            "tag": "Discord Event"
+        },
+        {
+            "time": "9:30 PM - 10:30 PM",
+            "title": "Fireside Chat",
+            "tag": "Discord Event"
         }
-
     ],
 
     [
         {
-            "time": "9:00 AM",
+            "time": "9:00 AM - 9:15 AM",
             "title": "Day #2 Opening Ceremony",
-            "tag": "Optional"
+            "tag": "Presentation"
         },
         {
-            "time": "1:00 PM",
+            "time": "9:30 AM - 10:30 AM",
+            "title": "Intro to Git/Github Workshop",
+            "tag": "Hopin Event"
+        },
+        {
+            "time": "10:30 AM - 11:30 AM",
+            "title": "FDM Group Workshop",
+            "tag": "Hopin Event"
+        },
+        {
+            "time": "11:30 AM - 11:50 AM",
+            "title": "Guide to Resumes Workshop",
+            "tag": "Hopin Event"
+        },
+        {
+            "time": "1:00 PM - 1:30 PM",
             "title": "Introduction to the Distributed Compute Protocol (DCP): Your Personal Supercomputer",
-            "tag": "Workshop",
-            "subtitle": "Presented By Dr. Dan Desjardins & Ellie Mehltretter"
+            "tag": "Hopin Event"
+        },
+        {
+            "time": "1:30 PM - 2:30 PM",
+            "title": "What They Don’t Tell You About Tech Interviews",
+            "tag": "Hopin Event"
+        },
+        {
+            "time": "2:00 PM - 2:30 PM",
+            "title": "Kahoot",
+            "tag": "Discord Event"
+        },
+        {
+            "time": "2:00 PM - 3:00 PM",
+            "title": "What They Don’t Tell You About Tech Interviews",
+            "tag": "Hopin Event"
+        },
+        {
+            "time": "3:00 PM - 4:00 PM",
+            "title": "Veritas AI Workshop",
+            "tag": "Hopin Event"
+        },
+        {
+            "time": "4:00 PM - 4:30 PM",
+            "title": "Intro to Vim",
+            "tag": "Hopin Event"
+        },
+        {
+            "time": "5:00 Pm - 5:50 PM",
+            "title": "Intro to Design Thinking",
+            "tag": "Hopin Event"
+        },
+        {
+            "time": "7:00 PM - 8:00 PM",
+            "title": "Guide to LinkedIn Workshop",
+            "tag": "Hopin Event"
+        },
+        {
+            "time": "8:00 PM - 9:00 PM",
+            "title": "Game Night",
+            "tag": "Discord Event"
+        },
+        {
+            "time": "9:00 PM - 10:00 PM",
+            "title": "Fireside Chat",
+            "tag": "Discord Event"
         }
     ],
 
     [
         {
-            "time": "9:00 AM",
+            "time": "9:00 AM - 9:15 AM",
             "title": "Day #3 Opening Ceremony",
-            "tag": "Optional"
+            "tag": "Presentation"
+        },
+        {
+            "time": "11:00 AM - 12:00 PM",
+            "title": "Fireside Chat",
+            "tag": "Discord Event"
         },
         {
             "time": "2:00 PM",
             "title": "Submissions Close",
-            "tag": "Deadline"
-        },
-        {
-            "time": "2:00 PM",
-            "title": "Minecraft Build Competition Submissions Close",
-            "tag": "Deadline"
-        },
-        {
-            "time": "8:00 PM",
-            "title": "Main Closing Ceremony",
             "tag": "Mandatory"
+        },
+        {
+            "time": "2:00 PM - 2:15 PM",
+            "title": "Minecraft Build Competition & MS Paint Meme Competition Ends",
+            "tag": "Discord / Hopin Event"
+        },
+        {
+            "time": "8:00 PM - 9:00 PM",
+            "title": "Closing Ceremony",
+            "tag": "Presentation"
         }
     ]
 ]

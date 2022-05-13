@@ -38,11 +38,12 @@ const EventTag = Styled.p`
     padding-right: 1em;
     border-radius: 50px;
 
-    ${props => props.tagStyle === "Optional" && "background: #0FA3B1;"}
-    ${props => props.tagStyle === "Mandatory" && "background: #9968CA;"}
-    ${props => props.tagStyle === "Deadline" && "background: #CA6868;"}
-    ${props => props.tagStyle === "Workshop" && "background: #7EB456;"}
-    
+    ${props => props.tagStyle === "Hopin Event" && "background: #DB8E58;"}
+    ${props => props.tagStyle === "Discord Event" && "background: #8C6DC5;"}
+    ${props => props.tagStyle === "Discord / Hopin Event" && "background: #3CC580;"}
+
+    ${props => props.tagStyle === "Mandatory" && "background: #FF312E;"}
+    ${props => props.tagStyle === "Presentation" && "background: #0FA3B1;"}
 `;
 
 const EventContainer = Styled.div`
@@ -56,17 +57,12 @@ const EventContainer = Styled.div`
     justify-content: flex-start;
 `;
 
-
-
 function ScheduleEvent({timeStr, title, subtitle, tagText}){
     return(
         <EventContainer>
             <EventTime>{timeStr}</EventTime>
             <EventTitle>{title}</EventTitle>
             <EventSubtitle>{subtitle}</EventSubtitle>
-            {/* 
-                tagStyle can be either "Optional", "Manditory, or "Workshop"
-            */}
             <EventTag tagStyle={tagText}>{tagText}</EventTag>
         </EventContainer>
     );
