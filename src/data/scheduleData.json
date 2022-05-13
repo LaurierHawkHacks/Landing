@@ -12,7 +12,7 @@
         },
         {
             "time": "9:00 PM - 9:30 PM",
-            "title": "Minecraft Build Competition Starts & MS Paint Meme Competition Starts",
+            "title": "Minecraft Build Competition & MS Paint Meme Competition Starts",
             "tag": "Discord Event"
         },
         {
@@ -44,10 +44,9 @@
             "tag": "Hopin Event"
         },
         {
-            "time": "1:00 PM",
+            "time": "1:00 PM - 1:30 PM",
             "title": "Introduction to the Distributed Compute Protocol (DCP): Your Personal Supercomputer",
-            "tag": "Hopin Event",
-            "subtitle": "Presented By Dr. Dan Desjardins & Ellie Mehltretter"
+            "tag": "Hopin Event"
         },
         {
             "time": "1:30 PM - 2:30 PM",
@@ -111,6 +110,11 @@
             "time": "2:00 PM",
             "title": "Submissions Close",
             "tag": "Mandatory"
+        },
+        {
+            "time": "2:00 PM - 2:15 PM",
+            "title": "Minecraft Build Competition & MS Paint Meme Competition Ends",
+            "tag": "Discord / Hopin Event"
         },
         {
             "time": "8:00 PM - 9:00 PM",
