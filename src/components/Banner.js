@@ -13,10 +13,9 @@ const BannerContainer = Styled.div`
     align-items: center;
     background-color: #0FA3B1;
 
-    @media (max-width: 850px) {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
+    padding-left: 10%;
+    padding-right: 10%;
+
 
     
 `;
@@ -31,16 +30,14 @@ const BannerItem = Styled.div`
 const BannerH2 = Styled.h2`
     height: 70px;
     font-weight: 700;
-    font-size: 64px;
+    font-size: 6vw;
     line-height: 77px;
 
     color: #EBE3E6;
     margin-top: 0;
     margin-bottom: 0;
 
-    @media (max-width: 800px) {
-        font-size: 6vw;
-    }
+
 `;
 
 const BannerP = Styled.p`
@@ -49,14 +46,11 @@ const BannerP = Styled.p`
 
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 3vw;
     line-height: 30px;
 
     color: #FFFFFF;
 
-    @media (max-width: 800px) {
-        font-size: 3vw;
-    }
 
 `;
 
