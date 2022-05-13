@@ -79,7 +79,7 @@ function ScheduleSection(){
             <div style={{ display:"flex", alignItems: "center", flexDirection: "column" ,width: "100%" }}>
                 <h2>{"<Schedule/>"}</h2>
                 <div className="col-md-8 text-center">
-                    <p>{"Don't miss out on all the awesome events we have planned! All times are in "}<strong>{"Eastern Daylight Time (EDT / UTC-4)"}</strong>{" and the schedule is still a work in progress!"}</p>
+                    <p>{"Don't miss out on all the awesome events we have planned! All times are in "}<strong>{"Eastern Daylight Time (EDT / UTC-4)!"}</strong></p>
                 </div>
             </div>
             <ButtonContainer style={{ display:"flex", justifyContent: "center", width: "100%" }}>
