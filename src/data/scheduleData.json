@@ -35,11 +35,15 @@
             "subtitle": "Presented by Sooraj Modi"
         },
         {
+            "time": "10:00 AM",
+            "title": "Minecraft Build Competition Begins",
+            "tag": "Important Deadline"
+        },
+        {
             "time": "10:30 AM - 11:30 AM",
             "title": "Data Visualization with Python",
             "tag": "Hopin",
             "subtitle": "Presented by FDM Group"
-
         },
         {
             "time": "11:30 AM - 11:50 AM",
@@ -118,6 +122,11 @@
         {
             "time": "2:00 PM",
             "title": "MS Paint Meme Competition Ends",
+            "tag": "Important Deadline"
+        },
+        {
+            "time": "2:00 PM",
+            "title": "Minecraft Build Competition Ends",
             "tag": "Important Deadline"
         },
         {
