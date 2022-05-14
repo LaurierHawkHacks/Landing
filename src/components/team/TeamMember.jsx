@@ -23,7 +23,7 @@ const Card = styled.div`
     overflow: hidden;
 
     border: 1px solid rgba(255, 0, 0, 0);
-    border-radius: 35px 35px 0 0;
+    border-radius: 35px;
     transition: all 0.3s ease;
     z-index: 1;
 
@@ -73,11 +73,7 @@ const Description = styled.div`
     font-size: 14px;
     background: #D2E6EF;
     color: white;
-    border: 2px solid #0fa3b1;
-    border-top: none;
-    border-radius: 0 0 35px 35px;
-    box-shadow: 0px 6px 10px #D2E6EF;
-    
+    border-bottom: 2px solid #0fa3b1;
     z-index: -1;
     opacity: 0;
 
