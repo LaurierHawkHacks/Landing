@@ -30,7 +30,7 @@ const BannerItem = Styled.div`
 const BannerH2 = Styled.h2`
     height: 70px;
     font-weight: 700;
-    font-size: 6vw;
+    font-size: 3vw;
     line-height: 77px;
 
     color: #EBE3E6;
@@ -46,7 +46,7 @@ const BannerP = Styled.p`
 
     font-style: normal;
     font-weight: 400;
-    font-size: 3vw;
+    font-size: 1.5vw;
     line-height: 30px;
 
     color: #FFFFFF;
