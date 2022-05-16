@@ -1,7 +1,7 @@
 import React from "react";
 import Styled from "styled-components";
 import SocialIcons from "./SocialIcons";
-import { PopupButton } from "@typeform/embed-react";
+// import { PopupButton } from "@typeform/embed-react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Icon } from "../assets";
 
@@ -91,12 +91,13 @@ const AppNavbar = () => {
                         <NavLink href="#sponsors">Sponsors</NavLink>
                         <NavLink href="#team">The Team</NavLink>
                     </Nav>
-                    <Nav className="nav-right d-flex align-items-center">
+                    {/* <Nav className="nav-right d-flex align-items-center">
                         <PopupButton id="ud88xVfK" className="nav-link" as="a">
                             Apply Now
                         </PopupButton>
-                        <SocialIcons />
-                    </Nav>
+
+                    </Nav> */}
+                    <SocialIcons />
                 </Navbar.Collapse>
             </Container>
             <MLHBanner />
