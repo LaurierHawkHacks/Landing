@@ -82,10 +82,17 @@ function App() {
                             <sup>th</sup>
                         </p>
                         <HeroButtons />
+
+                        <div className="col-md-6">
+                            <p style={{ textAlign: "center", paddingTop: "2em", fontWeight: "bold"}}>
+                                Thank you for joining us this year! We have a lot in store for next year
+                                and we are excited to make HawkHacks even better for you.
+                            </p>
+                        </div>
                     </Container>
 
                     <Container id="about" className="foreground">
-                        <div className="spacer" style={{ width: "100%", height: "10em" }} />
+                        <div className="spacer" style={{ width: "100%", height: "8em" }} />
                         <div className="row">
                             <div className="col-md-6">
                                 <h2 className="font-weight-bold">&lt;About HawkHacks/&gt;</h2>
