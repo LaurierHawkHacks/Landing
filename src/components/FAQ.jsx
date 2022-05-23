@@ -77,9 +77,9 @@ const FAQ = () => {
                         title="📧 This is a cool FAQ section, but I still have questions!"
                     >
                         No worries! 
-                        {"Reach out to us at "} 
-                        <a href="mailto:hello@hawkhacks.com" target="_blank" rel="noreferrer">
-                            <strong>hello@hawkhacks.com</strong>
+                        {" Reach out to us at "} 
+                        <a href="mailto:hello@hawkhacks.ca" target="_blank" rel="noreferrer">
+                            <strong>hello@hawkhacks.ca</strong>
                         </a> or our social media, and we’ll get back to you as soon as our social media and email person wakes up!
                     </FAQEntry>
                 </Stack>
