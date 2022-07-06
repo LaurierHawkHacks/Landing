@@ -1,6 +1,6 @@
 # HawkHacks 2022 Landing
 
-See the landing page in action [here](https://laurierhawkhacks.github.io/Landing/) (WIP).
+See the final landing page in action [here](https://hawkhacks.ca).
 
 ⚠️ Before deploying to production, edit `public/robots.txt` to allow search engine indexing.
 
