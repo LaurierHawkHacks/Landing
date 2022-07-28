@@ -5,6 +5,7 @@ import placeholder from "../../assets/placeholder_headshot.svg";
 
 export default function Judge(props) {
     return (
-    <p>hello world</p>
+        <p>hello world my name is x</p>
+
     );
 }
