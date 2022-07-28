@@ -15,8 +15,8 @@ const EventTitle = Styled.h3`
 const EventSubtitle = Styled.p`
     font-style: italic;
     margin-top: 0.1em;
-    margin-bottom: 0.1em; 
-    
+    margin-bottom: 0.1em;
+
     @media (max-width: 650px) {
         font-size: 0.8em;
     }
@@ -46,24 +46,11 @@ const EventTag = Styled.p`
     ${props => props.tagStyle === "Mandatory / Hopin" && "background: #FF312E;"}
 `;
 
-const EventContainer = Styled.div`
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-`;
 
 function ScheduleEvent({timeStr, title, subtitle, tagText}){
     return(
         <EventContainer>
             <EventTime>{timeStr}</EventTime>
-            <EventTitle>{title}</EventTitle>
-            <EventSubtitle>{subtitle}</EventSubtitle>
-            <EventTag tagStyle={tagText}>{tagText}</EventTag>
         </EventContainer>
     );
 }
