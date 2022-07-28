@@ -1,4 +1,4 @@
-# HawkHacks 2022 Landing
+# HawkHacks 2022 Landing Page
 
 See the final landing page in action [here](https://hawkhacks.ca).
 
