@@ -14,11 +14,11 @@ See the final landing page in action [here](https://hawkhacks.ca).
     ```
 -   Install dependencies
     ```bash
-    npm install
+    yarn
     ```
 -   Run the development server
     ```bash
-    npm start
+    yarn start
     ```
 
 Note: Please install ESLint and Prettier in your editor and enable format on save.
@@ -28,5 +28,5 @@ In VSCode, you can do so by by setting `"editor.formatOnSave": true` in you `set
 ## Deploy to Github Pages
 
 ```bash
-npm run deploy
+yarn deploy
 ```
