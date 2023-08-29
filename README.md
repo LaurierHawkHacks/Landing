@@ -1,32 +1,66 @@
-# HawkHacks 2022 Landing Page
+<div align="center">
 
-See the final landing page in action [here](https://hawkhacks.ca).
+```
+                      _                     _        
+  /\  /\__ ___      _| | __ /\  /\__ _  ___| | _____ 
+ / /_/ / _` \ \ /\ / / |/ // /_/ / _` |/ __| |/ / __|
+/ __  / (_| |\ V  V /|   </ __  / (_| | (__|   <\__ \
+\/ /_/ \__,_| \_/\_/ |_|\_\/ /_/ \__,_|\___|_|\_\___/
+
+2024
+
+```
+                                                     
+
+![GitHub](https://img.shields.io/github/license/LaurierHawkHacks/Landing?style=flat-square)
+
+#### The official landing page for HawkHakcs - see [here](https://hawkhacks.ca).
+
+
+</div>
+
+
+## Quick Setup :hammer:
+
+> Install Node.js
+```sh
+https://nodejs.org/en/download/
+```
+
+> Install yarn using npm
+```sh
+$ npm install -g yarn
+```
+
+> Clone the repo
+```sh
+$ git clone https://github.com/LaurierHawkHacks/Landing.git
+```
+
+> From your terminal, navigate to the root path of clone
+```sh
+$ cd path/to/your/clone
+```
+
+> Install dependencies
+```sh
+$ yarn
+```
+
+> Run local server
+```sh
+$ yarn dev
+```
 
 ⚠️ Before deploying to production, edit `public/robots.txt` to allow search engine indexing.
 
-## Setup
-
--   Install [Node 14+](https://nodejs.org/en/)
--   Clone the project
-    ```bash
-    git clone https://github.com/LaurierHawkHacks/Landing
-    cd Landing
-    ```
--   Install dependencies
-    ```bash
-    yarn
-    ```
--   Run the development server
-    ```bash
-    yarn start
-    ```
-
-Note: Please install ESLint and Prettier in your editor and enable format on save.
+⚠️ Note: Please install ESLint and Prettier in your editor and enable format on save.
 In VSCode, you can do so by by setting `"editor.formatOnSave": true` in you `settings.json`.
 (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>. Type "settings" and select "Preferences: Open Settings (JSON)")
 
-## Deploy to Github Pages
+## Deployment :rocket:
 
+> Deploys to GitHub Pages
 ```bash
 yarn deploy
 ```
