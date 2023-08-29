@@ -58,12 +58,12 @@ $ yarn dev
 In VSCode, you can do so by by setting `"editor.formatOnSave": true` in you `settings.json`.
 (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>. Type "settings" and select "Preferences: Open Settings (JSON)")
 
-## Contributing 🥇
-- We welcome all contributions for further information see [here](https://github.com/LaurierHawkHacks/Landing/blob/main/CONTRIBUTING.md)
-
 ## Deployment :rocket:
 
 > Deploys to GitHub Pages
 ```bash
 yarn deploy
 ```
+
+## Contributing 🥇
+- We welcome all contributions for further information see [here](https://github.com/LaurierHawkHacks/Landing/blob/main/CONTRIBUTING.md)
