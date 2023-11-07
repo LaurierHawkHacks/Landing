@@ -27,9 +27,9 @@
 https://nodejs.org/en/download/
 ```
 
-> Install yarn using npm
+> Install pnpm using npm
 ```sh
-$ npm install -g yarn
+$ npm install -g pnpm
 ```
 
 > Clone the repo
@@ -44,12 +44,12 @@ $ cd path/to/your/clone
 
 > Install dependencies
 ```sh
-$ yarn
+$ pnpm i
 ```
 
 > Run local server
 ```sh
-$ yarn dev
+$ pnpm run dev
 ```
 
 ⚠️ Before deploying to production, edit `public/robots.txt` to allow search engine indexing.
@@ -62,7 +62,7 @@ In VSCode, you can do so by by setting `"editor.formatOnSave": true` in you `set
 
 > Deploys to GitHub Pages
 ```bash
-yarn deploy
+pnpm deploy
 ```
 
 ## Contributing 🥇
