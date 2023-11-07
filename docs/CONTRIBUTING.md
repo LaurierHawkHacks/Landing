@@ -1,6 +1,6 @@
 # Welcome to Hawk Hacks Contributing Guide
 
-Thanks for investing your time in contributing to Hawk Hacks Dashboard project for our hackers and mentors!
+Thanks for investing your time in contributing to Hawk Hacks Landing project for our hackers and mentors!
 
 This document covers an overview of the contribution workflow from opening an issue, branch naming, creating a PR, reviewing and merging the PR.
 
