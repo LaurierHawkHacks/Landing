@@ -66,4 +66,4 @@ pnpm deploy
 ```
 
 ## Contributing 🥇
-- We welcome all contributions for further information see [here](https://github.com/LaurierHawkHacks/Landing/blob/main/CONTRIBUTING.md)
+- We welcome all contributions for further information see [here](https://github.com/LaurierHawkHacks/Landing/blob/main/docs/CONTRIBUTING.md)
