@@ -5,6 +5,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				sans: ['"Raleway"', ...defaultTheme.fontFamily.sans],
+				roboto: ['"Poppins"', ...(defaultTheme.fontFamily.sans - serif)],
 			},
 		},
 	},
