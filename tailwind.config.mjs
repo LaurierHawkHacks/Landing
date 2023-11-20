@@ -10,7 +10,7 @@ export default {
                 "midnight": "#001236",
                 "lilac": "#523FF4",
                 "tahiti": "#8375FF",
-                "cyan": "#12B3C2",
+                "mint": "#12B3C2",
                 "lavender": "#CEDFFF",
             },
         },
