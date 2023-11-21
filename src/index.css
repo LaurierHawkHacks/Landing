@@ -6,10 +6,12 @@
 	font-family: "Raleway", system-ui, sans-serif;
 }
 
-.dropdown-text {
-	font-family: "Raleway", system-ui, sans-serif;
-	font-size: 2.5rem;
-	font-weight: 200;
+@layer utilities {
+	.dropdown-text {
+		font-family: "Raleway", system-ui, sans-serif;
+		font-size: 2.5rem;
+		font-weight: 200;
+	}
 }
 
 h1 {
