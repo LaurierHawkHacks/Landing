@@ -1,9 +1,6 @@
+import { InfoSection } from "@components";
 const Landing = () => {
-     return (
-          <div>
-               <h1>Landing</h1>
-          </div>
-     );
+  return <div>{InfoSection}</div>;
 };
 
 export { Landing };
