@@ -1,9 +1,17 @@
-import { HeroSection, FAQSection, Navbar, FooterSection } from "@components";
+import {
+  HeroSection,
+  InfoSection,
+  FAQSection,
+  Navbar,
+  FooterSection,
+} from "@components";
+
 const Landing = () => {
   return (
     <div>
       <Navbar />
       <HeroSection />
+      <InfoSection />
       <FAQSection />
       <FooterSection />
     </div>
