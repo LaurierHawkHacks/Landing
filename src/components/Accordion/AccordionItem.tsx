@@ -50,12 +50,12 @@ const AccordionItem = (props: AccordionValue) => {
             <div className="relative inline-block aspect-square w-8">
               <span
                 className={`absolute inset-0 m-auto block h-5 w-1 bg-white transition-all duration-500 ${
-                  open && "-rotate-90"
+                  !open && "-rotate-90"
                 }`}
               ></span>
               <span
                 className={`absolute inset-0 m-auto block h-1 w-5 bg-white transition-all duration-500 ${
-                  open && "-rotate-180 opacity-0"
+                  !open && "-rotate-180 opacity-0"
                 }`}
               ></span>
             </div>
