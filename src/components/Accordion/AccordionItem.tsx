@@ -30,11 +30,6 @@ const AccordionItem = (props: AccordionValue) => {
     return setOpen((open) => !open);
   };
 
-  const showAnswerCSS = {
-    gridTemplateRows: !open ? "0fr" : "1fr",
-    transition: "grid-template-rows 500ms",
-  };
-
   return (
     <div
       className={`accordion-item  ${
@@ -42,9 +37,7 @@ const AccordionItem = (props: AccordionValue) => {
       }`}
       key={id}
     >
-      <h2
-        className="text-3xl font-bold uppercase text-white"
-      >
+      <h2 className="text-3xl font-bold uppercase text-white">
         <button
           onClick={buttonHandler}
           className="relative w-full py-5 pr-12 text-left"
@@ -56,12 +49,12 @@ const AccordionItem = (props: AccordionValue) => {
           <div className="absolute right-0 top-5 ">
             <div className="relative inline-block aspect-square w-8">
               <span
-                className={`absolute inset-0 m-auto block h-5 w-1 bg-white transition-all duration-300 ${
+                className={`absolute inset-0 m-auto block h-5 w-1 bg-white transition-all duration-500 ${
                   open && "-rotate-90"
                 }`}
               ></span>
               <span
-                className={`absolute inset-0 m-auto block h-1 w-5 bg-white transition-all duration-300 ${
+                className={`absolute inset-0 m-auto block h-1 w-5 bg-white transition-all duration-500 ${
                   open && "-rotate-180 opacity-0"
                 }`}
               ></span>
@@ -71,8 +64,9 @@ const AccordionItem = (props: AccordionValue) => {
       </h2>
       <div
         id={`panel-content-${id}`}
-        className="grid font-light"
-        style={showAnswerCSS}
+        className={`grid font-light transition-[grid-template-rows] duration-500 ${
+          open ? "grid-rows-[0fr]" : "grid-rows-[1fr]"
+        }`}
         role="region"
         aria-hidden={!open}
       >
