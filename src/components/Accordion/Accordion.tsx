@@ -27,7 +27,6 @@ const Accordion = () => {
   const AccordionItems = faqs.map((faq, index) => (
     <AccordionItem
       key={index}
-      id={index}
       question={faq.question}
       answers={faq.answers}
     />

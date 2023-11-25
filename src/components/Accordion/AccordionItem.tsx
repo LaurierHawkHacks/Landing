@@ -1,15 +1,13 @@
 import { useState } from "react";
 
-interface AccordionValue {
-  id: number;
+interface AccordionItemProps {
   question: string;
   answers: string[];
 }
 
-const AccordionItem = (props: AccordionValue) => {
+const AccordionItem = (props: AccordionItemProps) => {
   const [open, setOpen] = useState(false);
 
-  const id = props.id;
   const question = props.question;
   const answers = props.answers
     ? props.answers.map((answer, id) => {
@@ -31,18 +29,12 @@ const AccordionItem = (props: AccordionValue) => {
   };
 
   return (
-    <div
-      className={`accordion-item  ${
-        id === props.answers.length ? "border-y" : "border-t"
-      }`}
-      key={id}
-    >
+    <div>
       <h2 className="text-3xl font-bold uppercase text-white">
         <button
           onClick={buttonHandler}
           className="relative w-full py-5 pr-12 text-left"
           aria-expanded={open}
-          aria-controls={`panel-content-${id}`}
         >
           {question}
 
@@ -50,12 +42,12 @@ const AccordionItem = (props: AccordionValue) => {
             <div className="relative inline-block aspect-square w-8">
               <span
                 className={`absolute inset-0 m-auto block h-5 w-1 bg-white transition-all duration-500 ${
-                  !open && "-rotate-90"
+                  open && "-rotate-90"
                 }`}
               ></span>
               <span
                 className={`absolute inset-0 m-auto block h-1 w-5 bg-white transition-all duration-500 ${
-                  !open && "-rotate-180 opacity-0"
+                  open && "-rotate-180 opacity-0"
                 }`}
               ></span>
             </div>
@@ -63,9 +55,8 @@ const AccordionItem = (props: AccordionValue) => {
         </button>
       </h2>
       <div
-        id={`panel-content-${id}`}
         className={`grid font-light transition-[grid-template-rows] duration-500 ${
-          open ? "grid-rows-[0fr]" : "grid-rows-[1fr]"
+          !open ? "grid-rows-[0fr]" : "grid-rows-[1fr]"
         }`}
         role="region"
         aria-hidden={!open}
