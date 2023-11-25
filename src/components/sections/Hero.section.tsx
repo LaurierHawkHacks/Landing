@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { HeroIllustration } from '@assets';
 import {
+  HeroIllustration,
   LinkedInIcon,
   TwitterIcon,
   InstagramIcon,
@@ -39,7 +39,7 @@ const HeroSection: React.FC = () => {
             </h1>
             <p className="pb-2 text-lg">Wilfrid Laurier’s first large-scale global hackathon!</p>
             <p className="pb-3 text-xs font-thin [word-spacing:5px]">Waterloo, ON | April 6th - 8th | In-Person</p>
-            <p className="mx-5 space-x-8 text-xs font-bold [word-spacing:50px]">{countdown}</p>
+            <p className="mx-5 space-x-8 text-2sm font-bold [word-spacing:45px]">{countdown}</p>
             <p className="pb-3 text-sm font-thin [word-spacing:35px] mr-[-0.5rem]">Days Hrs Mins Secs</p>
             <button className="bg-mint text-white px-4 py-1 rounded">
               REGISTER
