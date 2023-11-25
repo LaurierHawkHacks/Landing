@@ -1,11 +1,11 @@
-import { HeroSection } from '@components';
-
+import { HeroSection, FAQSection } from '@components';
 const Landing = () => {
-  return (
-    <div>
-      <HeroSection />
-    </div>
-  );
+     return (
+          <div>
+               <HeroSection />
+               <FAQSection />
+          </div>
+     );
 };
 
 export { Landing };
