@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { HeroIllustration } from '@assets';
 import {
   LinkedInIcon,
@@ -7,13 +7,11 @@ import {
   DiscordIcon
 } from '@assets';
 
-
 const HeroSection: React.FC = () => {
   const [countdown, setCountdown] = useState<string>('');
 
-  // Function to calculate the countdown
-  const calculateCountdown = () => {
-    const targetDate = new Date('2024-04-06T00:00:00'); // Set your target date here
+  const calculateCountdown = useCallback(() => {
+    const targetDate = new Date('2024-04-06T00:00:00');
     const currentDate = new Date();
     const difference = targetDate.getTime() - currentDate.getTime();
 
@@ -23,17 +21,15 @@ const HeroSection: React.FC = () => {
     const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
     setCountdown(`${days} ${hours} ${minutes} ${seconds}`);
-  };
+  }, []); 
 
-  // Update the countdown every second
   useEffect(() => {
     const interval = setInterval(() => {
       calculateCountdown();
     }, 1000);
-
-    // Cleanup the interval on component unmount
     return () => clearInterval(interval);
-  }, []);
+  }, [calculateCountdown]);
+
 
     return (
         <div className="bg-midnight text-white py-16">
@@ -44,7 +40,7 @@ const HeroSection: React.FC = () => {
             <p className="pb-2 text-lg">Wilfrid Laurier’s first large-scale global hackathon!</p>
             <p className="pb-3 text-xs font-thin [word-spacing:5px]">Waterloo, ON | April 6th - 8th | In-Person</p>
             <p className="mx-5 space-x-8 text-xs font-bold [word-spacing:50px]">{countdown}</p>
-            <p className="pb-3 text-sm font-thin [word-spacing:33px]">Days Hrs Mins Secs</p>
+            <p className="pb-3 text-sm font-thin [word-spacing:35px] mr-[-0.5rem]">Days Hrs Mins Secs</p>
             <button className="bg-mint text-white px-4 py-1 rounded">
               REGISTER
             </button>

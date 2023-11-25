@@ -4,7 +4,7 @@ import {
     TwitterIcon,
     InstagramIcon,
     DiscordIcon
-  } from './Social-Icons';
+  } from './Social.Icons';
 
 export {
     HeroIllustration,
