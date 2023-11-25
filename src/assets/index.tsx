@@ -8,8 +8,6 @@ import {
 
 export {
     HeroIllustration,
-}
-  export {
     LinkedInIcon,
     TwitterIcon,
     InstagramIcon,
