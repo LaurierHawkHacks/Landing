@@ -1,9 +1,8 @@
-import { FAQSection } from "@components";
-
+import { HeroSection, FAQSection } from '@components';
 const Landing = () => {
      return (
           <div>
-               <h1>Landing</h1>
+               <HeroSection />
                <FAQSection />
           </div>
      );
