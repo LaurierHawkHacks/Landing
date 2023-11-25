@@ -24,7 +24,7 @@ const Navbar = () => {
 					</ul>
 				</div>
 
-				<div className="w-1/5 mr-5">
+				<div className="w-1/5">
 					<a
 						href="/"
 						className="tracking-widest border rounded-md p-2 hover:bg-white hover:text-black transition-colors"
@@ -35,7 +35,7 @@ const Navbar = () => {
 					<img
 						src="./src/assets/mlh_banner.svg"
 						alt="MLH Banner Logo"
-						className="w-[200px] absolute right-10 top-0"
+						className="absolute right-10 top-0"
 					/>
 				</div>
 			</nav>
