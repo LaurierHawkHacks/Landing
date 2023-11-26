@@ -1,3 +1,9 @@
+/*
+ *
+ * @component Navbar
+ *
+ */
+export { Navbar } from "./Navbar";
 
 /*
  *
@@ -14,7 +20,7 @@ export { HeroSection } from "./sections/Hero.section";
 export { FAQSection } from "./sections/FAQ.section";
 
 /*
- * @component Accordioin 
+ * @component Accordioin
  */
 export { Accordion } from "./Accordion/Accordion";
-export { AccordionItem } from "./Accordion/AccordionItem"
+export { AccordionItem } from "./Accordion/AccordionItem";
