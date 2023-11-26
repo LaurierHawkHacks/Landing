@@ -21,10 +21,10 @@ const Navbar = () => {
 	return (
 		<>
 			<nav
-				className={`flex w-full items-center gap-2 bg-midnight text-white sticky top-0  z-50 px-24 justify-between ${
+				className={`flex w-full items-center gap-2  text-white fixed top-0 z-50 px-24 justify-between ${
 					scrollPos > 100
-						? "shadow-lg p-4 transition-all duration-500 ease-in-out"
-						: "p-8 transition-all duration-500 ease-in-out"
+						? "shadow-lg p-4 transition-all duration-500 ease-in-out bg-midnight"
+						: "p-8 transition-all duration-500 ease-in-out "
 				} `}
 			>
 				<div className="flex items-center gap-8">
