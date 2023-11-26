@@ -52,22 +52,29 @@ const Navbar = () => {
 				<div className="relative">
 					<a
 						href="/"
-						className={`tracking-widest border-2 rounded-md p-2 hover:bg-white hover:text-black transition-all duration-500 ease-in-out ${
-							scrollPos < 100 ? "mr-48" : "mr-0"
+						className={`tracking-widest border-2 rounded-md p-2 px-4 font-bold hover:bg-white hover:text-black transition-all duration-500 ease-in-out ${
+							scrollPos < 100 ? "mr-40" : "mr-0"
 						}`}
 					>
 						LIVE PORTAL
 					</a>
-					<img
-						src="./src/assets/mlh_banner.svg"
-						alt="MLH Banner Logo"
-						className="absolute right-0 -top-10 shadow-2xl"
-						style={{
-							opacity: bannerOpacity,
-							transition: "opacity 0.8s ease-out",
-						}}
-						width={scrollPos < 100 ? "150px" : "0px"}
-					/>
+					<a
+						id="mlh-trust-badge"
+						href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<img
+							src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
+							alt="Major League Hacking 2024 Hackathon Season"
+							className="absolute right-0 -top-10 shadow-2xl"
+							style={{
+								opacity: bannerOpacity,
+								transition: "opacity 0.8s ease-out",
+							}}
+							width={scrollPos < 100 ? "100px" : "0px"}
+						/>
+					</a>
 				</div>
 			</nav>
 		</>
