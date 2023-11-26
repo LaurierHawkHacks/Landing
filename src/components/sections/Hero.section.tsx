@@ -35,14 +35,14 @@ const HeroSection: React.FC = () => {
         <div className="bg-midnight text-white py-16">
           <div className="text-center">
             <h1 className="font-bold text-mint">&lt;HawkHacks 2024/&gt;</h1>           
-            <p className="pb-2 text-lg">Wilfrid Laurier’s first large-scale global hackathon!</p>
-            <p className="pb-3 text-xs font-thin [word-spacing:5px]">Waterloo, ON | April 6th - 8th | In-Person</p>
+            <p className="pb-2 text-xl">Wilfrid Laurier’s first large-scale global hackathon!</p>
+            <p className="pb-3 text-sm font-thin [word-spacing:5px]">Waterloo, ON | April 6th - 8th | In-Person</p>
             <p className="mx-5 space-x-8 text-base font-bold [word-spacing:45px]">{countdown}</p>
             <p className="pb-3 text-sm mb-2 font-thin [word-spacing:35px] mr-[-0.5rem]">Days Hrs Mins Secs</p>
             <button className="bg-mint text-white mb-3 px-4 py-2 rounded font-bold [letter-spacing:2px]">
               REGISTER
             </button>
-            <img  className="mt-[-0.5rem]" src={HeroIllustration} alt="Hero Illustration" />
+            <img  className="-mt-2" src={HeroIllustration} alt="Hero Illustration" />
             <div className="flex items-center justify-center space-x-4 mt-[-6.5rem]">
             <LinkedInIcon />
             <TwitterIcon />
