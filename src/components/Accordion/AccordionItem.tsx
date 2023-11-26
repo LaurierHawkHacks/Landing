@@ -15,7 +15,7 @@ const AccordionItem = (props: AccordionItemProps) => {
           <p
             className={`${
               id === props.answers.length - 1 && "mb-8"
-            } text-3xl font-light leading-normal`}
+            } text-lg font-xlight leading-normal`}
             key={id}
           >
             {answer}
@@ -30,7 +30,7 @@ const AccordionItem = (props: AccordionItemProps) => {
 
   return (
     <div>
-      <h2 className="text-3xl font-bold uppercase text-white">
+      <h2 className="text-xl font-bold uppercase text-white">
         <button
           onClick={buttonHandler}
           className="relative w-full py-5 pr-12 text-left"
