@@ -29,7 +29,7 @@ const AccordionItem = (props: AccordionItemProps) => {
   };
 
   return (
-    <div>
+    <div className="first:border-t border-b">
       <h2 className="text-xl font-bold uppercase text-white">
         <button
           onClick={buttonHandler}
