@@ -43,7 +43,7 @@ const HeroSection: React.FC = () => {
 				<p className="mx-5 space-x-8 text-lg font-bold [word-spacing:45px]">
 					{countdown}
 				</p>
-				<p className="pb-3 text-base mb-2 font-thin [word-spacing:35px] -mr-2">
+				<p className="pb-3 text-base mb-2 font-thin [word-spacing:35px]">
 					Days Hrs Mins Secs
 				</p>
 				<button className="bg-mint text-white mb-3 px-4 py-2 rounded font-bold [letter-spacing:2px]">
