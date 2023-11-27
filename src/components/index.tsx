@@ -20,6 +20,13 @@ export { HeroSection } from "./sections/Hero.section";
 export { FAQSection } from "./sections/FAQ.section";
 
 /*
+ *
+ * @section FooterSection
+ *
+ */
+export { FooterSection } from "./sections/Footer.section";
+
+/*
  * @component Accordioin
  */
 export { Accordion } from "./Accordion/Accordion";
