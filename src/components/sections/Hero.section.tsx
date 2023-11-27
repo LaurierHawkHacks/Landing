@@ -54,12 +54,6 @@ const HeroSection: React.FC = () => {
 					REGISTER
 				</button>
 				<img className="-mt-2" src={HeroIllustration} alt="Hero Illustration" />
-				<div className="flex items-center justify-center space-x-4 mt-[-6.5rem]">
-					<LinkedInIcon />
-					<TwitterIcon />
-					<InstagramIcon />
-					<DiscordIcon />
-				</div>
 			</div>
 		</div>
 	);
