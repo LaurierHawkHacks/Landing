@@ -1,10 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import {
-	HeroIllustration,
-	LinkedInIcon,
-	TwitterIcon,
-	InstagramIcon,
-	DiscordIcon,
+	HeroIllustration
 } from "@assets";
 
 const HeroSection: React.FC = () => {
