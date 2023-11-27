@@ -1,5 +1,4 @@
 const InfoSection = () => {
-  //  00092d
   return (
     <>
       <section className="flex flex-col pb-20 text-center text-white bg-gradient-to-b from-[#000a32] to-midnight">
