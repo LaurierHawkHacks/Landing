@@ -41,3 +41,11 @@ span {
 	font-size: 1.875rem;
 	font-weight: 200;
 }
+
+a {
+    display: inline-block;
+
+	font-family: "Poppins", system-ui, sans-serif;
+	font-size: 1rem;
+	font-weight: 200;
+}

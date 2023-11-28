@@ -1,11 +1,13 @@
-import { HeroSection, FAQSection } from '@components';
+import { HeroSection, FAQSection, Navbar, FooterSection } from "@components";
 const Landing = () => {
-     return (
-          <div>
-               <HeroSection />
-               <FAQSection />
-          </div>
-     );
+  return (
+    <div>
+      <Navbar />
+      <HeroSection />
+      <FAQSection />
+      <FooterSection />
+    </div>
+  );
 };
 
 export { Landing };
