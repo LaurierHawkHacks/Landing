@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
 	return (
 		<div className="bg-midnight text-white py-32">
 			<div className="text-center">
-				<h1 className=" mb-2 font-bold text-mint text-7xl">
+				<h1 className="mb-2 mt-14 font-bold text-mint text-7xl">
 					&lt;HawkHacks 2024/&gt;
 				</h1>
 				<p className="pb-2 text-2xl">
