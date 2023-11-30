@@ -14,6 +14,13 @@ export { HeroSection } from "./sections/Hero.section";
 
 /*
  *
+ * @section InfoSection
+ *
+ */
+export { InfoSection } from "./sections/Info.section";
+
+/*
+ *
  * @section FAQSection
  *
  */
