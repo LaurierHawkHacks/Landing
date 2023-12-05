@@ -22,6 +22,8 @@ const HeroSection: React.FC = () => {
 	}, []);
 
 	useEffect(() => {
+        calculateCountdown();
+
 		const interval = setInterval(() => {
 			calculateCountdown();
 		}, 1000);
