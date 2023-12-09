@@ -17,8 +17,17 @@ export default {
 				mint: "#12B3C2",
 				lavender: "#CEDFFF",
 			},
-		},
-	},
-	plugins: [],
+			dropShadow: {
+				'sm': '0px 10px 15px rgba(255, 255, 255, 0.20)',
+				'2xl': [
+				'0 35px 35px rgba(255, 255, 255, 0.25)',
+				'0 45px 65px rgba(255, 255, 255, 0.15)'
+				]
+			}
+        },
+  },
+  plugins: [],
 };
+			
+
 
