@@ -21,6 +21,13 @@ export { InfoSection } from "./sections/Info.section";
 
 /*
  *
+ * @section StatSection
+ *
+ */
+export { StatSection } from "./sections/Stat.section";
+
+/*
+ *
  * @section FAQSection
  *
  */

@@ -1,6 +1,7 @@
 import {
   HeroSection,
   InfoSection,
+  StatSection,
   FAQSection,
   Navbar,
   FooterSection,
@@ -12,6 +13,7 @@ const Landing = () => {
       <Navbar />
       <HeroSection />
       <InfoSection />
+      <StatSection />
       <FAQSection />
       <FooterSection />
     </div>
