@@ -3,45 +3,52 @@
  * @component Navbar
  *
  */
-export { Navbar } from "./Navbar";
+export { Loader } from './Loader';
+
+/*
+ *
+ * @component Navbar
+ *
+ */
+export { Navbar } from './Navbar';
 
 /*
  *
  * @section HeroSection
  *
  */
-export { HeroSection } from "./sections/Hero.section";
+export { HeroSection } from './sections/Hero.section';
 
 /*
  *
  * @section InfoSection
  *
  */
-export { InfoSection } from "./sections/Info.section";
+export { InfoSection } from './sections/Info.section';
 
 /*
  *
  * @section StatSection
  *
  */
-export { StatSection } from "./sections/Stat.section";
+export { StatSection } from './sections/Stat.section';
 
 /*
  *
  * @section FAQSection
  *
  */
-export { FAQSection } from "./sections/FAQ.section";
+export { FAQSection } from './sections/FAQ.section';
 
 /*
  *
  * @section FooterSection
  *
  */
-export { FooterSection } from "./sections/Footer.section";
+export { FooterSection } from './sections/Footer.section';
 
 /*
  * @component Accordioin
  */
-export { Accordion } from "./Accordion/Accordion";
-export { AccordionItem } from "./Accordion/AccordionItem";
+export { Accordion } from './Accordion/Accordion';
+export { AccordionItem } from './Accordion/AccordionItem';
