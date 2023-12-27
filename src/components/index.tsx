@@ -1,6 +1,6 @@
 /*
  *
- * @component Navbar
+ * @component Loader
  *
  */
 export { Loader } from './Loader';

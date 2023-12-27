@@ -1,4 +1,5 @@
 import {
+    Loader,
     HeroSection,
     InfoSection,
     StatSection,
@@ -9,14 +10,13 @@ import {
 import { useState, useEffect } from 'react';
 
 const Landing = () => {
-    // State to control loader visibility
     const [isLoading, setIsLoading] = useState(true);
 
-    // Simulate loading (e.g., fetching data)
+    // This simulates loading
     useEffect(() => {
         const timer = setTimeout(() => {
             setIsLoading(false);
-        }, 3000); // 3 seconds load time
+        }, 3000); // <--- 3 second timer
 
         return () => clearTimeout(timer);
     }, []);
@@ -24,7 +24,7 @@ const Landing = () => {
     return (
         <div>
             {isLoading ? (
-                <div className="loader"></div>
+                <Loader />
             ) : (
                 <div>
                     <Navbar />
