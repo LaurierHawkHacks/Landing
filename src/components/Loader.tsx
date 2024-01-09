@@ -1,13 +1,7 @@
-import { HeroIllustration } from '@assets';
-
 const Loader = () => {
+    // Loader component CSS class can be found in index.css
     return (
-        <div className="w-screen h-screen flex justify-center items-center bg-midnight">
-            <img
-                className="absolute bottom-0"
-                src={HeroIllustration}
-                alt="Hero Illustration"
-            />
+        <div className="w-full h-full flex justify-center items-center bg-midnight">
             <div className=" mb-60 loader z-10"></div>
         </div>
     );
