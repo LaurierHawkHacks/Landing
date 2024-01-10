@@ -1,53 +1,76 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-	font-family: "Raleway", system-ui, sans-serif;
+    font-family: 'Raleway', system-ui, sans-serif;
     font-variant-numeric: lining-nums;
-    font-feature-settings:"lnum" 1;
+    font-feature-settings: 'lnum' 1;
 }
 
 @layer utilities {
-	.dropdown-text {
-		font-family: "Raleway", system-ui, sans-serif;
-		font-size: 2.5rem;
-		font-weight: 200;
-	}
+    .dropdown-text {
+        font-family: 'Raleway', system-ui, sans-serif;
+        font-size: 2.5rem;
+        font-weight: 200;
+    }
 }
 
 h1 {
-	font-family: "Raleway", system-ui, sans-serif;
-	font-size: 4rem;
-	font-weight: 700;
+    font-family: 'Raleway', system-ui, sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
 }
 
 h2 {
-	font-family: "Raleway", system-ui, sans-serif;
-	font-size: 2.5rem;
-	font-weight: 900;
+    font-family: 'Raleway', system-ui, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 900;
 }
 
 h3 {
-	font-family: "Poppins", system-ui, sans-serif;
-	font-size: 2.25rem;
-	font-weight: 400;
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-size: 2.25rem;
+    font-weight: 400;
 }
 
 p,
 span {
-	font-family: "Raleway", system-ui, sans-serif;
-	font-size: 1.875rem;
-	font-weight: 200;
+    font-family: 'Raleway', system-ui, sans-serif;
+    font-size: 1.875rem;
+    font-weight: 200;
 }
 
 a {
     display: inline-block;
 
-	font-family: "Poppins", system-ui, sans-serif;
-	font-size: 1rem;
-	font-weight: 200;
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+/* LOADER */
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: fit-content;
+    font-weight: bold;
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-size: 30px;
+    color: #0000;
+    background: linear-gradient(90deg, #12b3c2 calc(50% + 0.5ch), #cedfff 0)
+        right/calc(200% + 1ch) 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: l7 2s infinite steps(24);
+}
+.loader:before {
+    content: 'Loading...';
+}
+@keyframes l7 {
+    to {
+        background-position: left;
+    }
 }
