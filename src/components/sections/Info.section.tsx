@@ -9,7 +9,7 @@ const InfoSection = () => {
                             HawkHacks?
                         </span>
                     </h2>
-                    <p className="text-xl max-w-[50rem]">
+                    <p className="text-xl max-w-[50rem] px-12 md:px-0">
                         HawkHacks came out of a desire to give everyone an equal
                         opportunity to get into tech, whether that be
                         programming, networking, researching, learning, or
@@ -17,13 +17,13 @@ const InfoSection = () => {
                         across the world) in a 36 hour period of exploration,
                         creativity, and learning!
                     </p>
-                    <p className="text-xl max-w-[50rem] mt-6 ">
+                    <p className="text-xl max-w-[50rem] mt-6 px-12 md:px-0">
                         Remember, you do not have to be a pro to participate -
                         show up with ten years or ten minutes of experience (oh
                         yeah, and a great attitude as well!)
                     </p>
                 </div>
-                <div className="flex flex-col mx-auto mt-16 py-8 px-10 text-center rounded-lg bg-gradient-to-b from-[#D9D9D9]/[0.15]">
+                <div className="flex flex-col mx-5 md:mx-auto mt-16 py-8 px-10 text-center rounded-lg bg-gradient-to-b from-[#D9D9D9]/[0.15]">
                     <h2 className="uppercase text-4xl ">Our Goals</h2>
                     <p className="text-xl max-w-[50rem] mt-6">
                         Our goal with HawkHacks is to showcase the amazing
