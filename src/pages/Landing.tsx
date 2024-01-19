@@ -5,6 +5,7 @@ import {
     FAQSection,
     Navbar,
     FooterSection,
+    SponsorsSection,
 } from '@components';
 
 const Landing = () => {
@@ -15,6 +16,7 @@ const Landing = () => {
             <InfoSection />
             <StatSection />
             <FAQSection />
+            <SponsorsSection />
             <FooterSection />
         </div>
     );

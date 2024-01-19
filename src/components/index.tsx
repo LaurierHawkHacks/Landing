@@ -48,6 +48,13 @@ export { FAQSection } from './sections/FAQ.section';
 export { FooterSection } from './sections/Footer.section';
 
 /*
+ *
+ * @section SponsorsSection
+ *
+ */
+export { SponsorsSection } from './sections/Sponsors.section';
+
+/*
  * @component Accordioin
  */
 export { Accordion } from './Accordion/Accordion';

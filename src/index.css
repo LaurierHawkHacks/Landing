@@ -74,3 +74,71 @@ a {
         background-position: left;
     }
 }
+
+/* Sponsors Section */
+
+/* Sponsor tiers */
+.sponsor-row {
+    display: flex;
+    flex-direction: row; /* Ensures logos are in a horizontal line */
+    align-items: center; /* Centers logos vertically */
+    justify-content: center; /* Optional: centers the whole row horizontally in its container */
+    gap: 20px; /* Optional: adds some space between logos */
+}
+
+/* Sponsor tiers with fixed max-width */
+.gold-sponsor .sponsor-logo {
+    max-width: 250px;
+}
+
+.silver-sponsor .sponsor-logo {
+    max-width: 150px;
+}
+
+.bronze-sponsor .sponsor-logo {
+    max-width: 90px;
+}
+
+.sponsor-logo-container {
+    position: relative;
+    display: inline-block;
+}
+
+.sponsor-logo-container::after {
+    content: attr(data-sponsor-name);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #12b3c2;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    white-space: nowrap;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.sponsor-logo-container::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #12b3c2;
+    transform: translateX(-50%) translateY(-10px);
+    z-index: 11;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.sponsor-logo-container:hover::after,
+.sponsor-logo-container:hover::before {
+    opacity: 1;
+    pointer-events: auto;
+}
