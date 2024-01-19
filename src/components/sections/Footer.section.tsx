@@ -12,7 +12,7 @@ function FooterSection() {
   return (
     <footer className="bg-midnight text-white">
       <img 
-        style={{ width: '100%', display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
+        className="w-full block mx-auto"
         src={HeroIllustration} 
         alt="Hero Illustration" 
       />
