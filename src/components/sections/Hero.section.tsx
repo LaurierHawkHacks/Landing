@@ -52,7 +52,7 @@ const HeroSection: React.FC = () => {
                     REGISTER
                 </button>
                 <img
-                    className="-mt-2"
+                    className="w-full block mx-auto"
                     src={HeroIllustration}
                     alt="Hero Illustration"
                 />
