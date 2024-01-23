@@ -8,7 +8,7 @@ export const DiscordIcon: React.FC = () => (
             height="41"
             viewBox="0 0 42 41"
             fill="currentColor"
-            className="w-6"
+            className="w-4"
         >
             <g clipPath="url(#clip0_179_223)">
                 <path
@@ -38,7 +38,7 @@ export const InstagramIcon: React.FC = () => (
             height="41"
             viewBox="0 0 42 41"
             fill="currentColor"
-            className="w-6"
+            className="w-4"
         >
             <g clipPath="url(#clip0_179_221)">
                 <path
@@ -76,7 +76,7 @@ export const TwitterIcon: React.FC = () => (
             height="41"
             viewBox="0 0 42 41"
             fill="currentColor"
-            className="w-6"
+            className="w-4"
         >
             <path
                 d="M31.8075 3.25244H37.5705L24.98 17.6426L39.7917 37.2243H28.1942L19.1107 25.3481L8.71703 37.2243H2.95053L16.4173 21.8324L2.20837 3.25244H14.1003L22.311 14.1078L31.8075 3.25244ZM29.7848 33.7749H32.9782L12.3651 6.52071H8.93829L29.7848 33.7749Z"
@@ -94,7 +94,7 @@ export const LinkedInIcon: React.FC = () => (
             height="41"
             viewBox="0 0 42 41"
             fill="currentColor"
-            className="w-6"
+            className="w-4"
         >
             <g clipPath="url(#clip0_179_222)">
                 <path
