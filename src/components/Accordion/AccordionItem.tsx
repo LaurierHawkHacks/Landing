@@ -30,7 +30,7 @@ const AccordionItem = (props: AccordionItemProps) => {
 
   return (
     <div className="first:border-t border-b">
-      <h2 className="text-xl font-bold uppercase text-white">
+      <h2 className="text-xl font-bold uppercase text-white leading-relaxed">
         <button
           onClick={buttonHandler}
           className="relative w-full py-5 pr-12 text-left"
@@ -61,7 +61,7 @@ const AccordionItem = (props: AccordionItemProps) => {
         role="region"
         aria-hidden={!open}
       >
-        <div className="grid gap-8 overflow-hidden">{answers}</div>
+        <div className="grid gap-6 overflow-hidden">{answers}</div>
       </div>
     </div>
   );
