@@ -2,7 +2,7 @@ import { Accordion } from "@components";
 
 const FAQSection = () => {
   return (
-    <section className="bg-midnight text-white">
+    <section className="bg-midnight text-white px-8">
       <h2 className="mb-10 text-center font-bold uppercase">
         Frequently Asked
         <span className="text-5xl font-bold text-mint"> Questions</span>
