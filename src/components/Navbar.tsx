@@ -18,6 +18,10 @@ const useScrollPosition = () => {
 const Navbar = () => {
     const scrollPos = useScrollPosition();
     const bannerOpacity = Math.max(1 - scrollPos / 100, 0);
+    const [showMenu, setShowMenu] = useState(false);
+
+    const toggleMenu = () => setShowMenu(!showMenu);
+
     return (
         <nav
             className={`flex w-full items-center gap-2  text-white fixed top-0 z-50 px-24 justify-between ${
