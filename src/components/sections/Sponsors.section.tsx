@@ -82,7 +82,7 @@ const SponsorsSection = () => {
                 href={sponsor.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`${tier}-sponsor sponsor-logo-container flex p-4`}
+                className={`${tier}-sponsor flex p-4`}
                 data-sponsor-name={sponsor.name}
             >
                 <img
