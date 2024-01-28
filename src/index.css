@@ -83,7 +83,8 @@ a {
     flex-direction: row; /* Ensures logos are in a horizontal line */
     align-items: center; /* Centers logos vertically */
     justify-content: center; /* Optional: centers the whole row horizontally in its container */
-    gap: 20px; /* Optional: adds some space between logos */
+    flex-wrap: wrap;
+    gap: 10px; /* Optional: adds some space between logos */
 }
 
 /* Sponsor tiers with fixed max-width */
@@ -99,11 +100,11 @@ a {
     max-width: 90px;
 }
 
-.sponsor-logo-container {
+/* .sponsor-logo-container {
     position: relative;
     display: inline-block;
-}
-
+} */
+/*
 .sponsor-logo-container::after {
     content: attr(data-sponsor-name);
     position: absolute;
@@ -141,4 +142,4 @@ a {
 .sponsor-logo-container:hover::before {
     opacity: 1;
     pointer-events: auto;
-}
+} */
