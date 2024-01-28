@@ -88,7 +88,7 @@ const SponsorsSection = () => {
                 <img
                     src={sponsor.logo}
                     alt={`${sponsor.name} Logo`}
-                    className="sponsor-logo flex-initial"
+                    className="sponsor-logo"
                 />
             </a>
         ));
