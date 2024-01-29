@@ -1,5 +1,5 @@
 import { MouseEventHandler, useEffect, useState } from 'react';
-import { useLockBodyScroll } from '@uidotdev/usehooks';
+import { useWindowSize, useLockBodyScroll } from '@uidotdev/usehooks';
 
 interface SideMenu {
     showMenu: boolean;
@@ -89,12 +89,20 @@ const SideMenu = ({ showMenu, handleClose, scrollPos }: SideMenu) => {
 };
 
 const Navbar = () => {
+    const LG_BREAKPOINT_PX = 1024;
     const SPACE_INLINE = 10;
+    const windowSize = useWindowSize();
     const scrollPos = useScrollPosition();
     const bannerOpacity = Math.max(1 - scrollPos / 100, 0);
 
     const [showMenu, setShowMenu] = useState(false);
     const toggleMenu = () => setShowMenu(!showMenu);
+
+    useEffect(() => {
+        if ((windowSize.width as number) >= LG_BREAKPOINT_PX) {
+            setShowMenu(false);
+        }
+    }, [windowSize]);
 
     return (
         <nav
@@ -135,7 +143,7 @@ const Navbar = () => {
             {/* solution: adding a div before the banner */}
             <div className="banner-holder order-first w-[50px] lg:hidden"></div>
             <div
-                className={`banner absolute top-0 left-${SPACE_INLINE} lg:left-auto lg:right-${SPACE_INLINE}`}
+                className={`banner absolute top-0 left-10 lg:left-auto lg:right-10`}
             >
                 <a
                     id="mlh-trust-badge"
