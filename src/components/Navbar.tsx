@@ -104,7 +104,7 @@ const Navbar = () => {
         >
             <div className="logo lg:mr-8">
                 <img
-                    className="w-[55px]  md:w-[60px] lg:w-[50px]"
+                    className="w-[55px] md:w-[60px] lg:w-[50px]"
                     src="./src/assets/logo.svg"
                     alt="HawkHacks Logo"
                 />
@@ -128,10 +128,11 @@ const Navbar = () => {
                 <LivePortalBtn />
             </div>
 
-            {/* banner holder is for styling purposes only */}
-            {/* problem: since banner is positioned absolute, justify-between does not affect the banner element */}
-            {/* solution: adding a div before the banner */}
-            <div className="banner-holder order-first w-[50px] lg:hidden"></div>
+            <div
+                className={`banner-holder order-first w-[50px] lg:hidden ${
+                    scrollPos < 100 ? 'block' : 'hidden'
+                }`}
+            ></div>
             <div
                 className={`banner absolute top-0 left-10 lg:left-auto lg:right-10`}
             >
@@ -155,16 +156,10 @@ const Navbar = () => {
             </div>
 
             <div className="menu-toggle-btn lg:hidden z-[60]">
-                {/* <button onClick={toggleMenu}>
-                    <img
-                        src="./src/assets/hamburger-icon.svg"
-                        alt="open the menu with this button"
-                    />
-                </button> */}
                 <Hamburger
                     toggled={showMenu}
                     toggle={setShowMenu}
-                    size={20}
+                    size={25}
                     label="Show menu"
                 />
             </div>
