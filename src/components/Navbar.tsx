@@ -1,5 +1,6 @@
 import { MouseEventHandler, useEffect, useState } from 'react';
 import { useWindowSize, useLockBodyScroll } from '@uidotdev/usehooks';
+import Hamburger from 'hamburger-react';
 
 interface SideMenu {
     showMenu: boolean;
@@ -63,17 +64,6 @@ const SideMenu = ({ showMenu, handleClose, scrollPos }: SideMenu) => {
                 showMenu ? 'block' : 'hidden'
             }`}
         >
-            <button
-                className={`close-btn text-white absolute ${
-                    scrollPos < 100 ? 'top-8 right-10' : 'top-5 right-10'
-                }`}
-                onClick={handleClose}
-            >
-                <img
-                    src="./src/assets/close-icon.svg"
-                    alt="click this button to close the side menu"
-                />
-            </button>
             <ul className="flex gap-8 flex-col lg:p-0 ">
                 {links.map((link) => (
                     <li>
@@ -164,13 +154,19 @@ const Navbar = () => {
                 </a>
             </div>
 
-            <div className="menu-toggle-btn lg:hidden">
-                <button onClick={toggleMenu}>
+            <div className="menu-toggle-btn lg:hidden z-[60]">
+                {/* <button onClick={toggleMenu}>
                     <img
                         src="./src/assets/hamburger-icon.svg"
                         alt="open the menu with this button"
                     />
-                </button>
+                </button> */}
+                <Hamburger
+                    toggled={showMenu}
+                    toggle={setShowMenu}
+                    size={20}
+                    label="Show menu"
+                />
             </div>
 
             <div className="side-menu absolute">
