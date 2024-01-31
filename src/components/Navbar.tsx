@@ -9,33 +9,7 @@ interface SideMenu {
     scrollPos: number;
 }
 
-interface Link {
-    title: string;
-    anchor: string;
-}
-
-const links: Link[] = [
-    {
-        title: 'Home',
-        anchor: 'home',
-    },
-    {
-        title: 'About',
-        anchor: 'about',
-    },
-    {
-        title: 'FAQ',
-        anchor: 'faq',
-    },
-    {
-        title: 'Sponsors',
-        anchor: 'sponsors',
-    },
-    {
-        title: 'Contact',
-        anchor: 'contact',
-    },
-];
+const links = ['home', 'about', 'faq', 'sponsors', 'contact'];
 
 const useScrollPosition = () => {
     const [scrollPos, setScrollPos] = useState(0);
@@ -54,17 +28,17 @@ const useScrollPosition = () => {
 
 const Links = () => {
     return links.map((link) => (
-        <li>
+        <li className="capitalize">
             <Link
                 activeClass="active"
-                className={link.anchor}
-                to={link.anchor}
+                className={link}
+                to={link}
                 offset={-150}
                 smooth={true}
                 spy={true}
                 duration={500}
             >
-                {link.title}
+                {link}
             </Link>
         </li>
     ));
