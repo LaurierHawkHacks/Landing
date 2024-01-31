@@ -1,4 +1,5 @@
 import { MouseEventHandler, useEffect, useState } from 'react';
+import { Link } from 'react-scroll';
 import { useWindowSize, useLockBodyScroll } from '@uidotdev/usehooks';
 import Hamburger from 'hamburger-react';
 
@@ -8,26 +9,31 @@ interface SideMenu {
     scrollPos: number;
 }
 
-const links = [
+interface Link {
+    title: string;
+    anchor: string;
+}
+
+const links: Link[] = [
     {
         title: 'Home',
-        anchor: '#',
+        anchor: 'home',
     },
     {
         title: 'About',
-        anchor: '/about',
-    },
-    {
-        title: 'Sponsors',
-        anchor: '/sponsors',
+        anchor: 'about',
     },
     {
         title: 'FAQ',
-        anchor: '/faq',
+        anchor: 'faq',
+    },
+    {
+        title: 'Sponsors',
+        anchor: 'sponsors',
     },
     {
         title: 'Contact',
-        anchor: '/contact',
+        anchor: 'contact',
     },
 ];
 
@@ -46,6 +52,24 @@ const useScrollPosition = () => {
     return scrollPos;
 };
 
+const Links = () => {
+    return links.map((link) => (
+        <li>
+            <Link
+                activeClass="active"
+                className={link.anchor}
+                to={link.anchor}
+                offset={-150}
+                smooth={true}
+                spy={true}
+                duration={500}
+            >
+                {link.title}
+            </Link>
+        </li>
+    ));
+};
+
 const LivePortalBtn = () => (
     <a
         href="/"
@@ -55,7 +79,7 @@ const LivePortalBtn = () => (
         LIVE PORTAL
     </a>
 );
-const SideMenu = ({ showMenu, handleClose, scrollPos }: SideMenu) => {
+const SideMenu = ({ showMenu }: SideMenu) => {
     useLockBodyScroll();
 
     return (
@@ -65,11 +89,7 @@ const SideMenu = ({ showMenu, handleClose, scrollPos }: SideMenu) => {
             }`}
         >
             <ul className="flex gap-8 flex-col lg:p-0 ">
-                {links.map((link) => (
-                    <li>
-                        <a href={link.anchor}>{link.title}</a>
-                    </li>
-                ))}
+                <Links />
             </ul>
             <div className="live-portal-btn mt-20">
                 <LivePortalBtn />
@@ -112,11 +132,7 @@ const Navbar = () => {
 
             <div className="nav-items hidden lg:block lg:mr-auto">
                 <ul className="flex gap-8 flex-row items-center ">
-                    {links.map((link) => (
-                        <li>
-                            <a href={link.anchor}>{link.title}</a>
-                        </li>
-                    ))}
+                    <Links />
                 </ul>
             </div>
 

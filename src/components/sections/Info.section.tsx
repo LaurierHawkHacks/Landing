@@ -1,6 +1,8 @@
+import { Element } from "react-scroll"
+
 const InfoSection = () => {
     return (
-        <>
+        <Element name="about">
             <section className="flex flex-col pb-20 text-center text-white bg-gradient-to-b from-[#000a32] to-midnight">
                 <div className="mx-auto flex flex-col">
                     <h2 className="mb-10 pt-12 text-center font-bold uppercase">
@@ -34,7 +36,7 @@ const InfoSection = () => {
                     </p>
                 </div>
             </section>
-        </>
+        </Element>
     );
 };
 

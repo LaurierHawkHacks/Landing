@@ -1,17 +1,23 @@
-import { Accordion } from "@components";
+import { Accordion } from '@components';
+import { Element } from 'react-scroll';
 
 const FAQSection = () => {
-  return (
-    <section className="bg-midnight text-white px-8">
-      <h2 className="mb-10 text-center font-bold uppercase">
-        Frequently Asked
-        <span className="text-5xl font-bold text-mint"> Questions</span>
-      </h2>
-      <div className="mx-auto max-w-[62.5rem]">
-        <Accordion />
-      </div>
-    </section>
-  );
+    return (
+        <Element name="faq">
+            <section className="bg-midnight text-white px-8">
+                <h2 className="mb-10 text-center font-bold uppercase">
+                    Frequently Asked
+                    <span className="text-5xl font-bold text-mint">
+                        {' '}
+                        Questions
+                    </span>
+                </h2>
+                <div className="mx-auto max-w-[62.5rem]">
+                    <Accordion />
+                </div>
+            </section>
+        </Element>
+    );
 };
 
 export { FAQSection };

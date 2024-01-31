@@ -1,4 +1,4 @@
-import React from 'react';
+import { Element } from "react-scroll"
 
 const goldSponsors = [
     { name: 'DCL', logo: 'src/assets/logos/dcl.png', link: 'https://www.dcl.com' },
@@ -32,22 +32,23 @@ const SponsorsSection = () => {
     };
     
     return (
-        <section className="bg-midnight text-white py-20">
-            <div className="text-center">
-                <h2 className="text-5xl font-bold text-white mb-10">SPONSORS</h2>
-                
-                <div className="sponsor-row">
-                    {renderSponsors(goldSponsors, 'gold')}
-                </div>
-                <div className="sponsor-row">
-                    {renderSponsors(silverSponsors, 'silver')}
-                </div>
-                <div className="sponsor-row">
-                    {renderSponsors(bronzeSponsors, 'bronze')}
-                </div>
-
-            </div>
-        </section>
+        <Element name="sponsors">
+          <section className="bg-midnight text-white py-20">
+              <div className="text-center">
+                  <h2 className="text-5xl font-bold text-white mb-10">SPONSORS</h2>
+          
+                  <div className="sponsor-row">
+                      {renderSponsors(goldSponsors, 'gold')}
+                  </div>
+                  <div className="sponsor-row">
+                      {renderSponsors(silverSponsors, 'silver')}
+                  </div>
+                  <div className="sponsor-row">
+                      {renderSponsors(bronzeSponsors, 'bronze')}
+                  </div>
+              </div>
+          </section>
+        </Element>
     );
 };
 
