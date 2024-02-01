@@ -25,32 +25,36 @@ const HeroSection: React.FC = () => {
         calculateCountdown();
 
         const interval = setInterval(() => {
-          calculateCountdown();
+            calculateCountdown();
         }, 1000);
         return () => clearInterval(interval);
     }, [calculateCountdown]);
 
     return (
-        <div className="bg-midnight text-white pt-32">
-            <div className="text-center">
-                <h1 className="mb-2 mt-14 font-bold text-mint text-3xl sm:text-7xl xs:text-6xl">
-                    &lt;HawkHacks 2024/&gt;
-                </h1>
-                <p className="pb-2 text-2xl">
-                    Wilfrid Laurier’s first large-scale global hackathon!
-                </p>
-                <p className="pb-3 text-base font-thin [word-spacing:5px]">
-                    Waterloo, ON | April 5th - 7th | In-Person
-                </p>
-                <p className="mx-5 space-x-8 text-lg font-bold [word-spacing:45px]">
-                    {countdown}
-                </p>
-                <p className="pb-3 text-base mb-2 font-thin [word-spacing:35px]">
-                    Days Hrs Mins Secs
-                </p>
-                <button className="bg-mint text-white mb-3 px-4 py-2 rounded font-bold [letter-spacing:2px]">
-                    REGISTER
-                </button>
+        <div className="bg-midnight text-white pt-32 h-screen sm:h-full">
+            <div className="text-center flex flex-col justify-between h-full">
+                <div className="flex flex-col justify-between space-y-5 sm:space-y-1">
+                    <h1 className="mb-2 mt-14 font-bold text-mint text-3xl sm:text-7xl xs:text-6xl">
+                        &lt;HawkHacks 2024/&gt;
+                    </h1>
+                    <p className="pb-2 px-10 text-2xl">
+                        Wilfrid Laurier’s first large-scale global hackathon!
+                    </p>
+                    <p className="pb-3 text-base font-thin [word-spacing:5px]">
+                        Waterloo, ON | April 5th - 7th | In-Person
+                    </p>
+                    <p className="mx-5 space-x-8 text-lg font-bold [word-spacing:45px]">
+                        {countdown}
+                    </p>
+                    <p className="pb-3 text-base mb-2 font-thin [word-spacing:35px]">
+                        Days Hrs Mins Secs
+                    </p>
+                    <div>
+                        <button className="bg-mint  text-white mb-3 px-4 py-2 rounded font-bold [letter-spacing:2px]">
+                            REGISTER
+                        </button>
+                    </div>
+                </div>
                 <img
                     className="w-full block mx-auto"
                     src={HeroIllustration}
