@@ -3,7 +3,7 @@ const InfoSection = () => {
         <>
             <section className="flex flex-col pb-20 text-center text-white bg-gradient-to-b from-[#000a32] to-midnight">
                 <div className="mx-auto flex flex-col">
-                    <h2 className="mb-10 pt-12 text-center font-bold uppercase">
+                    <h2 className="mb-10 pt-12 px-8 text-center font-bold uppercase">
                         What is{' '}
                         <span className="text-mint text-5xl font-bold">
                             HawkHacks?
@@ -23,7 +23,7 @@ const InfoSection = () => {
                         yeah, and a great attitude as well!)
                     </p>
                 </div>
-                <div className="flex flex-col mx-5 md:mx-auto mt-16 py-8 px-10 text-center rounded-lg bg-gradient-to-b from-[#D9D9D9]/[0.15]">
+                <div className="flex flex-col mx-5 sm:mx-7 lg:mx-auto mt-16 py-8 px-10 text-center rounded-lg bg-gradient-to-b from-[#D9D9D9]/[0.15]">
                     <h2 className="uppercase text-4xl ">Our Goals</h2>
                     <p className="text-xl max-w-[50rem] mt-6">
                         Our goal with HawkHacks is to showcase the amazing

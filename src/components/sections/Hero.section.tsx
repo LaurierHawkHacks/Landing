@@ -31,9 +31,9 @@ const HeroSection: React.FC = () => {
     }, [calculateCountdown]);
 
     return (
-        <div className="bg-midnight text-white pt-32 h-screen sm:h-full">
+        <div className="bg-midnight text-white pt-20 sm:pt-32 h-screen sm:h-full">
             <div className="text-center flex flex-col justify-between h-full">
-                <div className="flex flex-col justify-between space-y-5 sm:space-y-1">
+                <div className="flex flex-col justify-between space-y-2 sm:space-y-1">
                     <h1 className="mb-2 mt-14 font-bold text-mint text-3xl sm:text-7xl xs:text-6xl">
                         &lt;HawkHacks 2024/&gt;
                     </h1>
@@ -50,7 +50,7 @@ const HeroSection: React.FC = () => {
                         Days Hrs Mins Secs
                     </p>
                     <div>
-                        <button className="bg-mint  text-white mb-3 px-4 py-2 rounded font-bold [letter-spacing:2px]">
+                        <button className="bg-mint text-white mb-3 px-4 py-2 rounded font-bold [letter-spacing:2px]">
                             REGISTER
                         </button>
                     </div>
