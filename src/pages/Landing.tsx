@@ -1,23 +1,7 @@
-import {
-    HeroSection,
-    InfoSection,
-    StatSection,
-    FAQSection,
-    Navbar,
-    FooterSection,
-    SponsorsSection,
-} from '@components';
-
-const Landing = () => {
+const Landing: React.FC = () => {
     return (
         <div>
-            <Navbar />
-            <HeroSection />
-            <InfoSection />
-            <StatSection />
-            <FAQSection />
-            <SponsorsSection />
-            <FooterSection />
+ 
         </div>
     );
 };
