@@ -2,8 +2,6 @@ import { useEffect, useState } from 'react';
 import { useWindowSize, useWindowScroll } from '@uidotdev/usehooks';
 
 import Hamburger from 'hamburger-react';
-
-import { LivePortalBtn } from '@components';
 import { SideMenu } from '@components';
 import { NavItems } from '@components';
 
@@ -52,7 +50,12 @@ const Navbar = () => {
                     scrollPositionY < 100 ? 'lg:mr-40' : 'lg:mr-0'
                 }`}
             >
-                <LivePortalBtn />
+                <a
+                    href="/"
+                    className="tracking-widest border-2 rounded-md p-2 px-4 font-bold hover:bg-white hover:text-black transition-all duration-500 ease-in-out"
+                >
+                    LIVE PORTAL
+                </a>
             </div>
 
             <div

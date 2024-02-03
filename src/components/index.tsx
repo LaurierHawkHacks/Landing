@@ -11,7 +11,6 @@ export { Loader } from './Loader';
  *
  */
 export { Navbar } from './Navbar/Navbar';
-export { LivePortalBtn } from './Navbar/LivePortalBtn';
 export { SideMenu } from './Navbar/SideMenu';
 export { NavItems } from './Navbar/NavItems';
 

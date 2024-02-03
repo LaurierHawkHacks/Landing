@@ -1,6 +1,5 @@
 import { useLockBodyScroll } from '@uidotdev/usehooks';
 
-import { LivePortalBtn } from '@components';
 import { NavItems } from '@components';
 
 interface SideMenu {
@@ -19,7 +18,12 @@ const SideMenu = ({ showMenu, setShowMenu }: SideMenu) => {
         >
             <NavItems isHorizontal={false} handleClick={setShowMenu} />
             <div className="live-portal-btn mt-20">
-                <LivePortalBtn />
+                <a
+                    href="/"
+                    className="tracking-widest border-2 rounded-md p-2 px-4 font-bold hover:bg-white hover:text-black transition-all duration-500 ease-in-out"
+                >
+                    LIVE PORTAL
+                </a>
             </div>
         </div>
     );
