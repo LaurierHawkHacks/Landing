@@ -10,7 +10,10 @@ export { Loader } from './Loader';
  * @component Navbar
  *
  */
-export { Navbar } from './Navbar';
+export { Navbar } from './Navbar/Navbar';
+export { LivePortalBtn } from './Navbar/LivePortalBtn';
+export { SideMenu } from './Navbar/SideMenu';
+export { NavItems } from './Navbar/NavItems';
 
 /*
  *
@@ -55,7 +58,7 @@ export { FooterSection } from './sections/Footer.section';
 export { SponsorsSection } from './sections/Sponsors.section';
 
 /*
- * @component Accordioin
+ * @component Accordion
  */
 export { Accordion } from './Accordion/Accordion';
 export { AccordionItem } from './Accordion/AccordionItem';

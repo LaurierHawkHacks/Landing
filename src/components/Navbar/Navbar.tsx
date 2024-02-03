@@ -1,69 +1,22 @@
 import { useEffect, useState } from 'react';
-import {
-    useWindowSize,
-    useWindowScroll,
-    useLockBodyScroll,
-} from '@uidotdev/usehooks';
+import { useWindowSize, useWindowScroll } from '@uidotdev/usehooks';
 
 import Hamburger from 'hamburger-react';
-import { Link } from 'react-scroll';
 
 import { LivePortalBtn } from '@components';
-
-// !
-interface SideMenu {
-    showMenu: boolean;
-    setShowMenu: () => void;
-    scrollPos: number;
-}
-
-// ?
-const links = ['home', 'about', 'faq', 'sponsors', 'contact'];
-
-// !refactor
-const SideMenu = ({ showMenu, setShowMenu }: SideMenu) => {
-    useLockBodyScroll();
-
-    return (
-        <div
-            className={`fixed top-0 right-0 h-full max-w-[65%] w-full oveflow-hidden backdrop-blur-xl z-50 py-24 px-10 ${
-                showMenu ? 'block' : 'hidden'
-            }`}
-        >
-            <ul className="flex gap-8 flex-col lg:p-0 ">
-                {links.map((link, index) => (
-                    <li key={index} className="capitalize">
-                        <Link
-                            className={link}
-                            to={link}
-                            offset={-150}
-                            onClick={setShowMenu}
-                        >
-                            {link}
-                        </Link>
-                    </li>
-                ))}
-            </ul>
-            <div className="live-portal-btn mt-20">
-                <LivePortalBtn />
-            </div>
-        </div>
-    );
-};
-
-// !navbar
+import { SideMenu } from '@components';
+import { NavItems } from '@components';
 
 const Navbar = () => {
     const LG_BREAKPOINT_PX = 1024;
     const SPACE_INLINE = 10;
+
     const windowSize = useWindowSize();
     const [scrollPos] = useWindowScroll();
     const scrollPositionY = scrollPos.y as number;
-
     const bannerOpacity = Math.max(1 - scrollPositionY / 100, 0);
 
     const [showMenu, setShowMenu] = useState(false);
-    const toggleMenu = () => setShowMenu(!showMenu);
 
     useEffect(() => {
         if ((windowSize.width as number) >= LG_BREAKPOINT_PX) {
@@ -88,20 +41,10 @@ const Navbar = () => {
             </div>
 
             <div className="nav-items hidden lg:block lg:mr-auto">
-                <ul className="flex gap-8 flex-row items-center ">
-                    {links.map((link, index) => (
-                        <li key={index} className="capitalize">
-                            <Link
-                                className={link}
-                                to={link}
-                                offset={-150}
-                                activeClass="active"
-                            >
-                                {link}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
+                <NavItems
+                    isHorizontal={true}
+                    handleClick={() => setShowMenu(!showMenu)}
+                />
             </div>
 
             <div
@@ -142,7 +85,7 @@ const Navbar = () => {
             <div className="menu-toggle-btn lg:hidden z-[60]">
                 <Hamburger
                     toggled={showMenu}
-                    toggle={setShowMenu}
+                    toggle={() => setShowMenu(!showMenu)}
                     size={25}
                     label="Show menu"
                 />
@@ -151,9 +94,8 @@ const Navbar = () => {
             <div className="side-menu absolute">
                 {showMenu && (
                     <SideMenu
-                        scrollPos={scrollPositionY}
                         showMenu={showMenu}
-                        setShowMenu={toggleMenu}
+                        setShowMenu={() => setShowMenu(!showMenu)}
                     />
                 )}
             </div>
