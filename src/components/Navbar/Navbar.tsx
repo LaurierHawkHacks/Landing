@@ -1,49 +1,24 @@
-import { MouseEventHandler, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import {
+    useWindowSize,
+    useWindowScroll,
+    useLockBodyScroll,
+} from '@uidotdev/usehooks';
+
 import { Link } from 'react-scroll';
-import { useWindowSize, useLockBodyScroll } from '@uidotdev/usehooks';
 import Hamburger from 'hamburger-react';
 
+// !
 interface SideMenu {
     showMenu: boolean;
-    handleClose: MouseEventHandler;
+    setShowMenu: () => void;
     scrollPos: number;
 }
 
+// ?
 const links = ['home', 'about', 'faq', 'sponsors', 'contact'];
 
-const useScrollPosition = () => {
-    const [scrollPos, setScrollPos] = useState(0);
-
-    const handleScroll = () => {
-        setScrollPos(window.scrollY);
-    };
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
-    return scrollPos;
-};
-
-const Links = () => {
-    return links.map((link) => (
-        <li className="capitalize">
-            <Link
-                activeClass="active"
-                className={link}
-                to={link}
-                offset={-150}
-                smooth={true}
-                spy={true}
-                duration={500}
-            >
-                {link}
-            </Link>
-        </li>
-    ));
-};
-
+// !fix
 const LivePortalBtn = () => (
     <a
         href="/"
@@ -53,7 +28,9 @@ const LivePortalBtn = () => (
         LIVE PORTAL
     </a>
 );
-const SideMenu = ({ showMenu }: SideMenu) => {
+
+// !refactor
+const SideMenu = ({ showMenu, setShowMenu }: SideMenu) => {
     useLockBodyScroll();
 
     return (
@@ -63,7 +40,18 @@ const SideMenu = ({ showMenu }: SideMenu) => {
             }`}
         >
             <ul className="flex gap-8 flex-col lg:p-0 ">
-                <Links />
+                {links.map((link, index) => (
+                    <li key={index} className="capitalize">
+                        <Link
+                            className={link}
+                            to={link}
+                            offset={-150}
+                            onClick={setShowMenu}
+                        >
+                            {link}
+                        </Link>
+                    </li>
+                ))}
             </ul>
             <div className="live-portal-btn mt-20">
                 <LivePortalBtn />
@@ -72,12 +60,15 @@ const SideMenu = ({ showMenu }: SideMenu) => {
     );
 };
 
+// !navbar
+
 const Navbar = () => {
     const LG_BREAKPOINT_PX = 1024;
     const SPACE_INLINE = 10;
     const windowSize = useWindowSize();
-    const scrollPos = useScrollPosition();
-    const bannerOpacity = Math.max(1 - scrollPos / 100, 0);
+    const [scrollPos] = useWindowScroll();
+
+    const bannerOpacity = Math.max(1 - (scrollPos.y as number) / 100, 0);
 
     const [showMenu, setShowMenu] = useState(false);
     const toggleMenu = () => setShowMenu(!showMenu);
@@ -91,7 +82,7 @@ const Navbar = () => {
     return (
         <nav
             className={`fixed top-0 w-full h-fit flex items-center justify-between lg:justify-normal text-white z-50 px-10 ${
-                scrollPos > 100
+                (scrollPos.y as number) > 100
                     ? 'shadow-lg p-4 transition-all duration-500 ease-in-out bg-midnight'
                     : 'p-8 transition-all duration-500 ease-in-out '
             }`}
@@ -106,13 +97,24 @@ const Navbar = () => {
 
             <div className="nav-items hidden lg:block lg:mr-auto">
                 <ul className="flex gap-8 flex-row items-center ">
-                    <Links />
+                    {links.map((link, index) => (
+                        <li key={index} className="capitalize">
+                            <Link
+                                className={link}
+                                to={link}
+                                offset={-150}
+                                activeClass="active"
+                            >
+                                {link}
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
             </div>
 
             <div
                 className={`live-portal-btn hidden lg:block transition-all duration-500 ease-in-out ${
-                    scrollPos < 100 ? 'lg:mr-40' : 'lg:mr-0'
+                    (scrollPos.y as number) < 100 ? 'lg:mr-40' : 'lg:mr-0'
                 }`}
             >
                 <LivePortalBtn />
@@ -120,7 +122,7 @@ const Navbar = () => {
 
             <div
                 className={`banner-holder order-first w-[50px] lg:hidden ${
-                    scrollPos < 100 ? 'block' : 'hidden'
+                    (scrollPos.y as number) < 100 ? 'block' : 'hidden'
                 }`}
             ></div>
             <div
@@ -140,7 +142,7 @@ const Navbar = () => {
                             opacity: bannerOpacity,
                             transition: 'opacity ms ease-out',
                         }}
-                        width={scrollPos < 100 ? '100px' : '0px'}
+                        width={(scrollPos.y as number) < 100 ? '100px' : '0px'}
                     />
                 </a>
             </div>
@@ -157,9 +159,9 @@ const Navbar = () => {
             <div className="side-menu absolute">
                 {showMenu && (
                     <SideMenu
-                        scrollPos={scrollPos}
+                        scrollPos={scrollPos.y as number}
                         showMenu={showMenu}
-                        handleClose={toggleMenu}
+                        setShowMenu={toggleMenu}
                     />
                 )}
             </div>
