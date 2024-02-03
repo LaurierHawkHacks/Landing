@@ -11,7 +11,7 @@ const Navbar = () => {
     const LG_BREAKPOINT_PX = 1024;
     const SPACE_INLINE = 10;
 
-    const windowSize = useWindowSize();
+    const windowSizeWidth = useWindowSize().width as number;
     const [scrollPos] = useWindowScroll();
     const scrollPositionY = scrollPos.y as number;
     const bannerOpacity = Math.max(1 - scrollPositionY / 100, 0);
@@ -19,17 +19,17 @@ const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     useEffect(() => {
-        if ((windowSize.width as number) >= LG_BREAKPOINT_PX) {
+        if (windowSizeWidth >= LG_BREAKPOINT_PX) {
             setShowMenu(false);
         }
-    }, [windowSize]);
+    }, [windowSizeWidth]);
 
     return (
         <nav
             className={`fixed top-0 w-full h-fit flex items-center justify-between lg:justify-normal text-white z-50 px-10 ${
-                scrollPositionY > 100
-                    ? 'shadow-lg p-4 transition-all duration-500 ease-in-out bg-midnight'
-                    : 'p-8 transition-all duration-500 ease-in-out '
+                scrollPositionY < 100
+                    ? 'p-8 transition-all duration-500 ease-in-out '
+                    : 'shadow-lg p-4 transition-all duration-500 ease-in-out bg-midnight'
             }`}
         >
             <div className="logo lg:mr-8">
