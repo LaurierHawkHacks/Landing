@@ -5,8 +5,10 @@ import {
     useLockBodyScroll,
 } from '@uidotdev/usehooks';
 
-import { Link } from 'react-scroll';
 import Hamburger from 'hamburger-react';
+import { Link } from 'react-scroll';
+
+import { LivePortalBtn } from '@components';
 
 // !
 interface SideMenu {
@@ -17,17 +19,6 @@ interface SideMenu {
 
 // ?
 const links = ['home', 'about', 'faq', 'sponsors', 'contact'];
-
-// !fix
-const LivePortalBtn = () => (
-    <a
-        href="/"
-        className={`tracking-widest border-2 rounded-md p-2 px-4 font-bold hover:bg-white hover:text-black transition-all duration-500 ease-in-out
-    }`}
-    >
-        LIVE PORTAL
-    </a>
-);
 
 // !refactor
 const SideMenu = ({ showMenu, setShowMenu }: SideMenu) => {
@@ -67,8 +58,9 @@ const Navbar = () => {
     const SPACE_INLINE = 10;
     const windowSize = useWindowSize();
     const [scrollPos] = useWindowScroll();
+    const scrollPositionY = scrollPos.y as number;
 
-    const bannerOpacity = Math.max(1 - (scrollPos.y as number) / 100, 0);
+    const bannerOpacity = Math.max(1 - scrollPositionY / 100, 0);
 
     const [showMenu, setShowMenu] = useState(false);
     const toggleMenu = () => setShowMenu(!showMenu);
@@ -82,7 +74,7 @@ const Navbar = () => {
     return (
         <nav
             className={`fixed top-0 w-full h-fit flex items-center justify-between lg:justify-normal text-white z-50 px-10 ${
-                (scrollPos.y as number) > 100
+                scrollPositionY > 100
                     ? 'shadow-lg p-4 transition-all duration-500 ease-in-out bg-midnight'
                     : 'p-8 transition-all duration-500 ease-in-out '
             }`}
@@ -114,7 +106,7 @@ const Navbar = () => {
 
             <div
                 className={`live-portal-btn hidden lg:block transition-all duration-500 ease-in-out ${
-                    (scrollPos.y as number) < 100 ? 'lg:mr-40' : 'lg:mr-0'
+                    scrollPositionY < 100 ? 'lg:mr-40' : 'lg:mr-0'
                 }`}
             >
                 <LivePortalBtn />
@@ -122,7 +114,7 @@ const Navbar = () => {
 
             <div
                 className={`banner-holder order-first w-[50px] lg:hidden ${
-                    (scrollPos.y as number) < 100 ? 'block' : 'hidden'
+                    scrollPositionY < 100 ? 'block' : 'hidden'
                 }`}
             ></div>
             <div
@@ -142,7 +134,7 @@ const Navbar = () => {
                             opacity: bannerOpacity,
                             transition: 'opacity ms ease-out',
                         }}
-                        width={(scrollPos.y as number) < 100 ? '100px' : '0px'}
+                        width={scrollPositionY < 100 ? '100px' : '0px'}
                     />
                 </a>
             </div>
@@ -159,7 +151,7 @@ const Navbar = () => {
             <div className="side-menu absolute">
                 {showMenu && (
                     <SideMenu
-                        scrollPos={scrollPos.y as number}
+                        scrollPos={scrollPositionY}
                         showMenu={showMenu}
                         setShowMenu={toggleMenu}
                     />
