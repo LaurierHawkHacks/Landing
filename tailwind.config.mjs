@@ -8,7 +8,6 @@ export default {
             },
             fontFamily: {
                 sans: ['"Raleway"', ...defaultTheme.fontFamily.sans],
-                serif: ['"Poppins"', ...defaultTheme.fontFamily.serif],
             },
             colors: {
                 peachPuff: '#FDDDB7',
