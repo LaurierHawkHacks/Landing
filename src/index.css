@@ -42,7 +42,7 @@ body {
     }
 
     button {
-        @apply text-white px-8 py-3 md:px-10 md:py-4 shadow-lg bg-cadetBlue rounded-border hover:bg-[#3F9098] focus:bg-[#3F9098] focus:shadow-none;
+        @apply text-white px-8 py-3 md:px-10 md:py-4 shadow-lg bg-[#2B6469] rounded-border hover:bg-[#3F9098] focus:bg-[#3F9098] focus:shadow-none;
     }
 }
 
