@@ -1,4 +1,4 @@
-const iconStyle = 'w-11';
+const iconStyle = 'w-10';
 const buttonStyle = 'aspect-square';
 
 const MailIcon: React.FC = () => (
