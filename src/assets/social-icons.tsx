@@ -1,5 +1,5 @@
 const iconStyle = 'w-11';
-const buttonStyle = "aspect-square";
+const buttonStyle = 'aspect-square';
 
 const MailIcon: React.FC = () => (
     <button type="button" className={buttonStyle}>
@@ -101,10 +101,10 @@ const DevpostIcon: React.FC = () => (
             fill="currentColor"
             className={iconStyle}
         >
-            <g clip-path="url(#clip0_106_1065)">
+            <g clipPath="url(#clip0_106_1065)">
                 <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M0.75 21.8705L13.1294 43.2916H37.8706L50.25 21.8705L37.8706 0.431641H13.1294L0.75 21.8705ZM16.4141 34.868H24.1843C30.8774 34.868 37.4997 31.0181 37.4997 21.8704C37.4997 12.3519 31.9899 8.85529 24.5552 8.85529H16.4141V34.868ZM21.606 13.9059H24.3609C29.8708 13.9059 32.1489 16.5549 32.1312 21.8528C32.1312 26.6209 29.6235 29.8173 24.1667 29.8173H21.606V13.9059Z"
                     fill="currentColor"
                 />
