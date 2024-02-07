@@ -15,7 +15,7 @@ const FooterSection = () => {
     };
 
     return (
-        <footer className="sm:text-center">
+        <footer className="p-4 sm:text-center">
             <div className="sm:space-x-2 md:space-x-3">
                 <MailIcon />
                 <LinkedInIcon />
