@@ -4,7 +4,13 @@ export default {
     theme: {
         extend: {
             fontSize: {
-                '5xl': '2.5rem',
+                '2.5xl': '1.6875rem',
+                '3.5xl': '2rem',
+                '4.5xl': '2.6875rem',
+                '5.5xl': '3.375rem',
+                '6.5xl': '4.125rem',
+                '7.5xl': '5.25rem',
+                '8.5xl': '6.875rem'
             },
             fontFamily: {
                 sans: ['"Raleway"', ...defaultTheme.fontFamily.sans],
