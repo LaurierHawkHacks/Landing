@@ -28,16 +28,13 @@ body {
         @apply text-2xl;
     }
 
-    p {
-        @apply text-base lg:text-2xl 2xl:text-3.5xl;
-    }
-
+    p,
     span {
-        @apply text-base lg:text-lg 2xl:text-2xl;
+        @apply text-base lg:text-lg 2xl:text-3.5xl;
     }
 
     a {
-        @apply text-base lg:text-2xl 2xl:text-3.5xl inline-block;
+        @apply text-base lg:text-lg 2xl:text-2xl inline-block;
     }
 
     button {
