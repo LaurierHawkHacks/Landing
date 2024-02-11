@@ -1,8 +1,8 @@
 const iconStyle = 'w-10';
-const buttonStyle = 'aspect-square';
+const containerStyle = 'aspect-square';
 
 const MailIcon: React.FC = () => (
-    <button type="button" className={buttonStyle}>
+    <a href="#" target="_blank" className={containerStyle}>
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -16,11 +16,11 @@ const MailIcon: React.FC = () => (
                 fill="currentColor"
             />
         </svg>
-    </button>
+    </a>
 );
 
 const LinkedInIcon: React.FC = () => (
-    <button type="button" className={buttonStyle}>
+    <a href="#" target="_blank" className={containerStyle}>
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="51"
@@ -34,11 +34,11 @@ const LinkedInIcon: React.FC = () => (
                 fill="currentColor"
             />
         </svg>
-    </button>
+    </a>
 );
 
 const InstagramIcon: React.FC = () => (
-    <button type="button" className={buttonStyle}>
+    <a href="#" target="_blank" className={containerStyle}>
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -52,11 +52,11 @@ const InstagramIcon: React.FC = () => (
                 fill="currentColor"
             />
         </svg>
-    </button>
+    </a>
 );
 
 const TwitterIcon: React.FC = () => (
-    <button type="button" className={buttonStyle}>
+    <a href="#" target="_blank" className={containerStyle}>
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -70,11 +70,11 @@ const TwitterIcon: React.FC = () => (
                 fill="currentColor"
             />
         </svg>
-    </button>
+    </a>
 );
 
 const FacebookIcon: React.FC = () => (
-    <button type="button" className={buttonStyle}>
+    <a href="#" target="_blank" className={containerStyle}>
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="50"
@@ -88,11 +88,11 @@ const FacebookIcon: React.FC = () => (
                 fill="currentColor"
             />
         </svg>
-    </button>
+    </a>
 );
 
 const DevpostIcon: React.FC = () => (
-    <button type="button" className={buttonStyle}>
+    <a href="#" target="_blank" className={containerStyle}>
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="51"
@@ -120,7 +120,7 @@ const DevpostIcon: React.FC = () => (
                 </clipPath>
             </defs>
         </svg>
-    </button>
+    </a>
 );
 
 export {
