@@ -28,7 +28,9 @@ const FooterSection = () => {
                 <a href={links.codeOfConduct}>Code of Conduct</a>
                 <a href={links.becomeASponsor}>Become a Sponsor</a>
             </div>
-            <p className="pt-4 lg:pt-8">Copyright © {currentYear} HawkHacks</p>
+            <p className="mt-4 lg:mt-8 2xl:text-2xl">
+                Copyright © {currentYear} HawkHacks
+            </p>
         </footer>
     );
 };
