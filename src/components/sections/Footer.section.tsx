@@ -25,8 +25,12 @@ const FooterSection = () => {
                 <DevpostIcon />
             </div>
             <div className="links flex flex-col sm:flex-row sm:justify-center sm:gap-3 ">
-                <a href={links.codeOfConduct}>Code of Conduct</a>
-                <a href={links.becomeASponsor}>Become a Sponsor</a>
+                <a className="underline link-hover--one" href={links.codeOfConduct}>
+                    Code of Conduct
+                </a>
+                <a className="underline link-hover--one" href={links.becomeASponsor}>
+                    Become a Sponsor
+                </a>
             </div>
             <p className="mt-4 lg:mt-8 2xl:text-2xl">
                 Copyright © {currentYear} HawkHacks
