@@ -19,7 +19,9 @@ const Menu: React.FC<ShowMenu> = ({ showMenu, hideMenu }) => {
             <NavItems isHorizontal={false} handleClick={hideMenu} />
 
             <div className="portal-btn mt-20">
-                <button>Application Portal</button>
+                <button className="w-full py-4 rounded-lg">
+                    Application Portal
+                </button>
             </div>
         </div>
     );

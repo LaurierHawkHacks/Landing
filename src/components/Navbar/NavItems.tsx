@@ -18,7 +18,7 @@ const NavItems: React.FC<{
     const scrollPadding = -150;
 
     return (
-        <ul className={`flex gap-8 ${isHorizontal ? rowStyle : colStyle}`}>
+        <ul className={`flex gap-7 ${isHorizontal ? rowStyle : colStyle}`}>
             {links.map((link, index) => (
                 <li key={index}>
                     <Link

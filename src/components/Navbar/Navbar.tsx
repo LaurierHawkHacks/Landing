@@ -47,10 +47,10 @@ const Navbar = () => {
             {/* portal button */}
             <div
                 className={`portal-btn hidden lg:block transition-all duration-500 ease-in-out ${
-                    scrollPosY < 100 ? 'lg:mr-40' : 'lg:mr-0'
+                    scrollPosY < 100 ? 'lg:mr-32' : 'lg:mr-0'
                 }`}
             >
-                <button>Application Portal</button>
+                <button className="px-4 py-2 xl:px-6 xl:py-3 rounded-lg">Application Portal</button>
             </div>
 
             {/* banner */}
