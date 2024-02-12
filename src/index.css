@@ -1,5 +1,53 @@
-/* import fonts here */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: 'Ralewap', system-ui, sans-serif;
+    font-variant-numeric: lining-nums;
+    font-feature-settings: 'lnum' 1;
+    font-weight: 600;
+}
+
+@layer base {
+    h1 {
+        @apply text-8xl 2xl:text-8.5xl font-extrabold;
+    }
+
+    h2 {
+        @apply text-6xl 2xl:text-8.5xl font-extrabold;
+    }
+
+    h3 {
+        @apply text-3.5xl;
+    }
+
+    h4 {
+        @apply text-2xl;
+    }
+
+    p,
+    span {
+        @apply text-base lg:text-lg 2xl:text-3.5xl;
+    }
+
+    a {
+        @apply text-base lg:text-lg 2xl:text-2xl inline-block;
+    }
+
+    button {
+        @apply text-white bg-[#2B6469] hover:bg-[#3F9098] focus:bg-[#3F9098];
+    }
+}
+
+@layer components {
+    .link-hover--one {
+        @apply hover:text-[#0FA3B1] focus:text-[#1D7882];
+    }
+
+    .link-hover--two {
+        @apply hover:underline focus:text-[#2B6469];
+    }
+}
