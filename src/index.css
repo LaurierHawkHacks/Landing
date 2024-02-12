@@ -13,74 +13,41 @@ body {
 
 @layer base {
     h1 {
-        @apply text-7xl sm:text-8xl lg:text-[110px] font-extrabold;
+        @apply text-8xl 2xl:text-8.5xl font-extrabold;
     }
 
     h2 {
-        @apply text-6xl sm:text-7xl lg:text-8xl font-black;
+        @apply text-6xl 2xl:text-8.5xl font-extrabold;
     }
 
     h3 {
-        @apply text-3xl;
+        @apply text-3.5xl;
     }
 
     h4 {
         @apply text-2xl;
     }
 
-    h5 {
-        @apply text-xl;
-    }
-
     p,
     span {
-        @apply text-base;
+        @apply text-base lg:text-lg 2xl:text-3.5xl;
     }
 
     a {
-        @apply inline-block;
+        @apply text-base lg:text-lg 2xl:text-2xl inline-block;
     }
 
     button {
-        @apply text-white px-8 py-3 md:px-10 md:py-4 shadow-lg bg-[#2B6469] rounded-border hover:bg-[#3F9098] focus:bg-[#3F9098] focus:shadow-none;
+        @apply text-white bg-[#2B6469] hover:bg-[#3F9098] focus:bg-[#3F9098];
     }
 }
 
 @layer components {
-    .header--3 {
-        font-size: 2rem;
-        line-height: 3rem;
-    }
-
-    .header--4 {
-        font-size: 1.5rem;
-        line-height: 1.75rem;
-    }
-
-    .header--5 {
-        font-size: 1.25rem;
-    }
-
     .link-hover--one {
         @apply hover:text-[#0FA3B1] focus:text-[#1D7882];
     }
 
     .link-hover--two {
         @apply hover:underline focus:text-[#2B6469];
-    }
-}
-
-@layer utilities {
-    .rounded-border {
-        @apply rounded-xl box-shadow;
-    }
-
-    .box-shadow {
-        box-shadow:
-            0 1px 1px hsl(0deg 0% 0% / 0.05),
-            0 2px 2px hsl(0deg 0% 0% / 0.05),
-            0 4px 4px hsl(0deg 0% 0% / 0.05),
-            0 8px 8px hsl(0deg 0% 0% / 0.05),
-            0 16px 16px hsl(0deg 0% 0% / 0.05);
     }
 }
