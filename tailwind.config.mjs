@@ -23,18 +23,12 @@ export default {
                 paleViolet: '#BAA3FA',
                 blueGreen: '#0FA3B1',
                 cadetBlue: '#0C6975',
+                deepMarine: "#2B6469",
                 slateGray: '#31495C',
                 copper: '#DE846E',
                 khakiYellow: '#F0E698',
                 dimGray: '#4A4F50',
-            },
-            dropShadow: {
-                sm: '0px 10px 15px rgba(255, 255, 255, 0.20)',
-                '2xl': [
-                    '0 35px 35px rgba(255, 255, 255, 0.25)',
-                    '0 45px 65px rgba(255, 255, 255, 0.15)',
-                ],
-            },
+            }
         },
     },
     plugins: [],
