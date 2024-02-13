@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useWindowScroll } from '@uidotdev/usehooks';
 
 import Hamburger from 'hamburger-react';
@@ -12,6 +12,11 @@ const Navbar = () => {
 
     const hideMenu = () => setShowMenu(false);
 
+    useEffect(() => {
+        (document.querySelector('body') as HTMLBodyElement).style.overflowY =
+            showMenu ? 'hidden' : 'auto';
+    }, [showMenu]);
+
     return (
         <nav
             className={`gradient fixed top-0 z-50 flex h-fit w-full items-center justify-between px-10 text-white lg:justify-normal ${
@@ -20,7 +25,6 @@ const Navbar = () => {
                     : 'bg-midnight p-4 shadow-lg transition-all duration-500 ease-in-out'
             }`}
         >
-            {/* logo */}
             <div className="logo lg:mr-8">
                 <img
                     className="w-14"
@@ -29,12 +33,10 @@ const Navbar = () => {
                 />
             </div>
 
-            {/* nav items */}
             <div className="nav-items hidden lg:mr-auto lg:block">
                 <NavItems isHorizontal={true} handleClick={hideMenu} />
             </div>
 
-            {/* portal button */}
             <div
                 className={`portal-btn hidden transition-all duration-500 ease-in-out lg:block ${
                     scrollPosY < 100 ? 'lg:mr-32' : 'lg:mr-0'
@@ -45,8 +47,8 @@ const Navbar = () => {
                 </button>
             </div>
 
-            {/* banner */}
-            <div className="banner-holder order-first w-[50px] lg:hidden"></div>
+            {/* banner-holder: banner is out of flow, to prevent banner affect the desired flow, adding a placeholder banner holder when the screen is smaller  */}
+            <div className="banner-holder order-first w-12 lg:hidden"></div>
             <div className="banner absolute left-10 top-0 lg:left-auto lg:right-10">
                 <a
                     id="mlh-trust-badge"
@@ -54,7 +56,6 @@ const Navbar = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    {/* !keep the image on all the time */}
                     <img
                         src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
                         alt="Major League Hacking 2024 Hackathon Season"
@@ -63,7 +64,6 @@ const Navbar = () => {
                 </a>
             </div>
 
-            {/* menu button */}
             <div className="menu-toggle-btn z-[60] lg:hidden">
                 <Hamburger
                     size={25}
@@ -74,7 +74,6 @@ const Navbar = () => {
                 />
             </div>
 
-            {/* side menu */}
             <div className="menu absolute lg:hidden">
                 <Menu showMenu={showMenu} hideMenu={hideMenu} />
             </div>
