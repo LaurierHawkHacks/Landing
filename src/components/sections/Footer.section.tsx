@@ -19,10 +19,16 @@ const FooterSection = () => {
                 <DevpostIcon />
             </div>
             <div className="links flex flex-col sm:flex-row sm:justify-center sm:gap-3 ">
-                <a className="underline link-hover--one" href="#">
+                <a
+                    className="underline hover:text-[#0FA3B1] focus:text-[#1D7882]"
+                    href="#"
+                >
                     Code of Conduct
                 </a>
-                <a className="underline link-hover--one" href="#">
+                <a
+                    className="underline hover:text-[#0FA3B1] focus:text-[#1D7882]"
+                    href="#"
+                >
                     Become a Sponsor
                 </a>
             </div>
