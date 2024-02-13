@@ -8,12 +8,6 @@ import {
 } from '@assets';
 
 const FooterSection = () => {
-    const currentYear = new Date().getFullYear();
-    const links = {
-        codeOfConduct: '#',
-        becomeASponsor: '#',
-    };
-
     return (
         <footer className="p-4 sm:text-center">
             <div className="sm:space-x-2 md:space-x-3">
@@ -25,15 +19,15 @@ const FooterSection = () => {
                 <DevpostIcon />
             </div>
             <div className="links flex flex-col sm:flex-row sm:justify-center sm:gap-3 ">
-                <a className="underline link-hover--one" href={links.codeOfConduct}>
+                <a className="underline link-hover--one" href="#">
                     Code of Conduct
                 </a>
-                <a className="underline link-hover--one" href={links.becomeASponsor}>
+                <a className="underline link-hover--one" href="#">
                     Become a Sponsor
                 </a>
             </div>
             <p className="mt-4 lg:mt-8 2xl:text-2xl">
-                Copyright © {currentYear} HawkHacks
+                Copyright © 2024 HawkHacks
             </p>
         </footer>
     );
