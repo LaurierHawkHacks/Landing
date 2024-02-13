@@ -69,7 +69,7 @@ const Navbar = () => {
                     size={25}
                     label="Show menu"
                     toggled={showMenu}
-                    toggle={() => setShowMenu(!showMenu)}
+                    toggle={setShowMenu}
                     color="#2B6469"
                 />
             </div>
