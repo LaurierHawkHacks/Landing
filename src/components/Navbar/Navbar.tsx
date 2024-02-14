@@ -13,8 +13,8 @@ const Navbar = () => {
     const hideMenu = () => setShowMenu(false);
 
     useEffect(() => {
-        (document.querySelector('body') as HTMLBodyElement).style.overflowY =
-            showMenu ? 'hidden' : 'auto';
+        if (showMenu) document.body.classList.add('overflow-y-hidden')
+        else document.body.classList.remove('overflow-y-hidden');
     }, [showMenu]);
 
     return (
