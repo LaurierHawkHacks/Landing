@@ -1,11 +1,18 @@
 /*
  *
- * @component 
+ * @component
  *
  */
 
 /*
  *
- * @section 
+ * @section
  *
  */
+
+/*
+ *
+ * @section About
+ *
+ */
+export { About } from './About.section';
