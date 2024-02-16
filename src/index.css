@@ -5,7 +5,6 @@
 @tailwind utilities;
 
 body {
-    font-family: 'Ralewap', system-ui, sans-serif;
     font-variant-numeric: lining-nums;
     font-feature-settings: 'lnum' 1;
     font-weight: 600;
