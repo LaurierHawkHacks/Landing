@@ -191,7 +191,7 @@ const TeamSection = () => {
                     alt=""
                 />
                 <img
-                    className="relative z-10 -translate-y-10 md:-translate-y-12 lg:-translate-y-16"
+                    className="relative z-10 sm:-translate-y-8  md:-translate-y-12 lg:-translate-y-16"
                     src="src/assets/team/clouds.svg"
                     alt=""
                 />
