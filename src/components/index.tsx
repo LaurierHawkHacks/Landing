@@ -1,11 +1,12 @@
 /*
  *
- * @component 
+ * @component
  *
  */
 
 /*
  *
- * @section 
+ * @section
  *
  */
+export { TeamSection } from './sections/team.section';
