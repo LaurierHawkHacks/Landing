@@ -10,9 +10,4 @@
  *
  */
 
-/*
- *
- * @section About
- *
- */
-export { About } from './About.section';
+export { About } from './sections/About.section';
