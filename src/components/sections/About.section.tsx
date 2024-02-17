@@ -1,4 +1,4 @@
-import billboard from '../assets/svg/billboard.svg';
+import billboard from '../../assets/about/billboard.svg';
 
 const About: React.FC = () => {
     return (
