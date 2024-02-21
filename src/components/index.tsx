@@ -1,11 +1,14 @@
 /*
  *
- * @component 
+ * @component
  *
  */
+export { NavItems } from './Navbar/NavItems';
+export { Navbar } from './Navbar/Navbar';
+export { Menu } from './Navbar/Menu';
 
 /*
  *
- * @section 
+ * @section
  *
  */
