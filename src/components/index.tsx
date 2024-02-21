@@ -12,7 +12,7 @@ export { Menu } from './Navbar/Menu';
  * @section
  *
  */
-export { TeamSection } from './sections/team.section';
+export { TeamSection } from './sections/Team.section';
 
 /*
  *
@@ -20,3 +20,4 @@ export { TeamSection } from './sections/team.section';
  *
  */
 export { FooterSection } from './sections/Footer.section';
+
