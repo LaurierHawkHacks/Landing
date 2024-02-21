@@ -14,4 +14,4 @@ export { Menu } from './Navbar/Menu';
  */
 export { FooterSection } from './sections/Footer.section';
 
-export { ContactSection } from './sections/contact.section';
+export { ContactSection } from './sections/Contact.section';
