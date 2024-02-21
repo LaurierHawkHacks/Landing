@@ -32,12 +32,13 @@ const ContactSection: React.FC = () => {
                         <input
                             type="email"
                             placeholder="Enter your email"
-                            className="border-2 border-gray-300 bg-white h-8 sm:h-10 md:h-12 pl-3 sm:pl-4 md:pl-5 pr-6 sm:pr-8 md:pr-10 rounded-full text-xs sm:text-sm md:text-sm focus:outline-none w-full"
+                            className="border-2 border-gray-300 bg-white h-8 sm:h-10 md:h-12 pl-3 sm:pl-4 md:pl-5 pr-20 sm:pr-24 md:pr-28 rounded-full text-xs sm:text-sm md:text-base focus:outline-none w-full"
                         />
-                        <button type="submit" className="absolute inset-y-0 right-2 sm:right-3 md:right-4 flex items-center justify-center top-1/2 transform -translate-y-1/2">
+                        <button type="submit" className="custom-button absolute inset-y-0 left-[80%] mr-2 sm:mr-3 md:mr-4 flex items-center justify-center px-3 h-8 sm:h-10 md:h-12 w-16">
                             <img src={ArrowRightIcon} alt="Submit" />
                         </button>
                     </div>
+
                     <div className="flex space-x-3 sm:space-x-4 md:space-x-6 mt-1 sm:mt-2 md:mt-3 lg:justify-start">
                         <a href="mailto:hello@hawkhacks.com" target="_blank" rel="noopener noreferrer" className="w-6 sm:w-8 md:w-10 h-6 sm:h-8 md:h-10">
                             <img src={EmailSVG} alt="Email" />
