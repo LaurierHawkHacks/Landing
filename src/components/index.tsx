@@ -9,6 +9,7 @@ export { Menu } from './Navbar/Menu';
 
 /*
  *
- * @section
+ * @section FooterSection
  *
  */
+export { FooterSection } from './sections/Footer.section';
