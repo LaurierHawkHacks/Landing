@@ -15,9 +15,10 @@ import DevpostSVG from '../../assets/contact/devpost.svg';
 const ContactSection: React.FC = () => {
     return (
         <section className="contact-section relative" style={{ position: 'relative', zIndex: '2' }}>
+
             <img src={GreyBorderTop} alt="Top Border" className="w-full" style={{ zIndex: '1' }} />
-            <img src={HawkSVG} alt="Bird" className="absolute right-0 top-0 transform -translate-y-1/4 lg:translate-y-[-27%]" style={{ zIndex: '-1' }} />
-            <img src={BirdPartsSVG} alt="Bird Parts" className="absolute right-[calc(3%)] top-0 transform -translate-y-1/3 lg:translate-y-[-42.5%] z-50" />
+            <img src={HawkSVG} alt="Bird" className="absolute right-0 top-0 transform -translate-y-1/4 scale-100 z-[-1]" />
+            <img src={BirdPartsSVG} alt="Bird Parts" className="absolute right-0 top-0 transform -translate-y-[42.5%] translate-x-[1%] scale-100 z-50 lg:-translate-x-[5%]" />
             <div className="absolute inset-x-0 mx-auto max-w-4xl px-5 pt-4 sm:pt-8 md:pt-12 lg:pt-32 xl:pt-48" style={{ zIndex: '2' }}>
                 <div className="contact-info mb-2 sm:mb-4 md:mb-6 lg:mb-12 text-center lg:text-left">
                     <h2 className="font-raleway text-2xl sm:text-4xl md:text-5xl lg:text-8xl font-extrabold leading-tight tracking-wider text-[#32848C] md:leading-tight lg:leading-[7.3125rem]">CONTACT US</h2>
