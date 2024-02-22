@@ -4,9 +4,9 @@ interface Member {
     profile: string;
 }
 
-interface MemberProp extends Member {}
+interface MemberProps extends Member {}
 
-interface DepartmentProp {
+interface DepartmentProps {
     title: string;
     members: Member[];
 }
@@ -144,7 +144,7 @@ const departments = [
     },
 ];
 
-const Member: React.FC<MemberProp> = ({ name, title, profile }) => {
+const Member: React.FC<MemberProps> = ({ name, title, profile }) => {
     return (
         <li className="grid lg:grid-cols-5 lg:space-x-4">
             <img
@@ -165,7 +165,7 @@ const Member: React.FC<MemberProp> = ({ name, title, profile }) => {
     );
 };
 
-const Department: React.FC<DepartmentProp> = ({ title, members }) => {
+const Department: React.FC<DepartmentProps> = ({ title, members }) => {
     return (
         <div key={title}>
             <h3 className="mb-4 text-xl font-semibold capitalize md:mb-6 lg:mb-8 lg:text-2xl">
