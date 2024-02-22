@@ -13,7 +13,7 @@ const HeroSection = () => {
                     src="src/assets/logo.svg"
                     alt="Hawkhack logo"
                 />
-                <h1 className="hero-title-gradient text-4xl font-extrabold lg:text-5.5xl xl:text-7xl">
+                <h1 className="bg-gradient-to-b from-[#2B6469] to-[#00CEDB] bg-clip-text text-transparent text-4xl font-extrabold lg:text-5.5xl xl:text-7xl">
                     HawkHack 2024
                 </h1>
                 <p className="text-2xl font-bold sm:hidden">April 5th - 7th</p>
