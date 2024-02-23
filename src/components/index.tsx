@@ -13,3 +13,4 @@ export { Menu } from './Navbar/Menu';
  *
  */
 export { FooterSection } from './sections/Footer.section';
+export { SponsorSection } from './sections/Sponsor.section';
