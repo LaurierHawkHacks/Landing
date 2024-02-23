@@ -3,7 +3,7 @@ import { Navbar } from '@components';
 
 const Landing: React.FC = () => {
     return (
-        <div>
+        <div className="pt-36">
             <Navbar />
             <FooterSection />
         </div>
