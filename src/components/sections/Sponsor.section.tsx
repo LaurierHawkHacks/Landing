@@ -31,7 +31,7 @@ const SponsorSection: React.FC = () => {
             <img src={HawkSVG} alt="Bird" className="absolute left-0 top-0 transform -translate-y-1/4 scale-x-[-1] scale-100 z-[-1]" />
             <img src={BirdPartsSVG} alt="Bird Parts" className="absolute left-0 top-0 transform -translate-y-[42.5%] -translate-x-[1%] scale-x-[-1] scale-100 z-50 lg:translate-x-[5%]" />
             <div className="relative">
-            <img src={MiddleBody} alt="Middle Body" className="w-full object-cover h-auto" style={{ zIndex: '1', minHeight: '1200px' }} />
+            <img src={MiddleBody} alt="Middle Body" className="w-full object-cover h-auto h-[1200px] sm:h-[1400px] md:h-[1300px] lg:h-[1200px]" style={{ zIndex: '1' }} />
                 <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col items-center space-y-6 sm:space-y-12" style={{ paddingTop: '200px' }}>
                     <div className="absolute top-24 left-1/2 transform -translate-x-1/2">
                         <div className="text-center font-raleway font-black text-[50px] leading-[117px] tracking-widest text-[#404040] drop-shadow-lg sm:text-[80px] vs:text-[60px]">
