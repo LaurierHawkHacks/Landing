@@ -14,11 +14,6 @@ const Navbar = () => {
     }, [showMenu]);
 
     return (
-        //   ${
-        //     scrollPosY < 100
-        //         ? 'p-8 transition-all duration-500 ease-in-out'
-        //         : 'bg-midnight p-4 shadow-lg transition-all duration-500 ease-in-out'
-        // }
         <nav className="gradient fixed top-0 z-50 flex h-fit w-full items-center justify-between p-8 px-10 text-white lg:justify-normal">
             <div className="logo lg:mr-8">
                 <img
