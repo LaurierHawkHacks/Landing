@@ -6,18 +6,14 @@ import AboutSection from '../../assets/about/AboutSection.svg';
 
 const About: React.FC = () => {
     return (
-        <div className="relative h-screen w-screen">
-            <div className="relative left-0 top-64 ml-10 h-auto w-[128%] overflow-hidden">
-                <img
-                    src={AboutSection}
-                    alt="Billboard"
-                    className="block" // Adjust classes as needed
-                />
+        <div className="relative h-full w-screen bg-brightUbe">
+            <div className="relative left-[-11%] top-64 h-auto w-[145%] overflow-hidden">
+                <img src={AboutSection} alt="Billboard" className="block" />
             </div>
             <img
                 src={AboutAirBalloon}
                 alt="Billboard"
-                className="absolute left-[50%] top-[140%] w-[20%]"
+                className="absolute left-[70%] top-[150%] w-[20%]"
             />
         </div>
     );
