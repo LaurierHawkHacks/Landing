@@ -2,19 +2,42 @@
 // import AboutWifi from '../../assets/about/AboutWifi.svg';
 // import AboutDetails from '../../assets/about/AboutDetails.svg';
 import AboutAirBalloon from '../../assets/about/AboutAirBalloon.svg';
-import AboutSection from '../../assets/about/AboutSection.svg';
+import AboutSection from '../../assets/about/AboutMeSection.svg';
 
 const About: React.FC = () => {
     return (
-        <div className="relative h-full w-screen bg-brightUbe">
-            <div className="relative left-[-11%] top-64 h-auto w-[145%] overflow-hidden">
+        <div className="relative h-full bg-gradient-to-b from-peachPuff to-brightUbe">
+            <div className="relative left-[-4%] top-64 h-auto w-[115%] overflow-hidden">
                 <img src={AboutSection} alt="Billboard" className="block" />
             </div>
             <img
                 src={AboutAirBalloon}
                 alt="Billboard"
-                className="absolute left-[70%] top-[150%] w-[20%]"
+                className="absolute left-[70%] top-[35%] w-[20%]"
             />
+            <div className="absolute left-1/2 top-[72%] w-2/3 -translate-x-1/2 -translate-y-1/2 transform text-white ">
+                <h1 className="mb-5 text-center text-5.5xl uppercase drop-shadow-md lg:text-6.5xl xl:text-7.5xl">
+                    About Hawkhacks
+                </h1>
+                <div className="space-y-10 text-center">
+                    <p>
+                        HawkHacks came out of a desire to give everyone an equal
+                        opportunity to get into tech, whether that be
+                        programming, networking, researching, learning, or
+                        teaching.
+                    </p>
+                    <p>
+                        Join hundreds of students across Canada (and across the
+                        world) in a 36 hour period of exploration, creativity,
+                        and learning!
+                    </p>
+                    <p>
+                        Remember, you don’t have to be a pro to participate -
+                        show up with ten years or ten minutes of experience (oh
+                        yeah, and a great attitute too!)
+                    </p>
+                </div>
+            </div>
         </div>
     );
 };
