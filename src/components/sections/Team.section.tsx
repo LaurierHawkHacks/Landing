@@ -167,7 +167,7 @@ const Member: React.FC<MemberProps> = ({ name, title, profile }) => {
 
 const Department: React.FC<DepartmentProps> = ({ title, members }) => {
     return (
-        <div key={title}>
+        <div>
             <h3 className="mb-4 text-xl font-semibold capitalize md:mb-6 lg:mb-8 lg:text-2xl">
                 {title}
             </h3>
