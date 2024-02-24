@@ -5,7 +5,6 @@
 @tailwind utilities;
 
 body {
-    font-family: 'Ralewap', system-ui, sans-serif;
     font-variant-numeric: lining-nums;
     font-feature-settings: 'lnum' 1;
     font-weight: 600;
@@ -13,11 +12,11 @@ body {
 
 @layer base {
     h1 {
-        @apply text-8xl 2xl:text-8.5xl font-extrabold;
+        @apply text-8xl font-extrabold 2xl:text-8.5xl;
     }
 
     h2 {
-        @apply text-6xl 2xl:text-8.5xl font-extrabold;
+        @apply text-6xl font-extrabold 2xl:text-8.5xl;
     }
 
     h3 {
@@ -34,20 +33,21 @@ body {
     }
 
     a {
-        @apply text-base lg:text-lg 2xl:text-2xl inline-block;
+        @apply inline-block cursor-pointer text-base lg:text-lg 2xl:text-2xl;
     }
 
     button {
-        @apply text-white bg-[#2B6469] hover:bg-[#3F9098] focus:bg-[#3F9098];
+        @apply w-full rounded-lg border-black bg-[#2B6469] p-4 text-white shadow-[2px_2px_0px_0px_black] hover:bg-[#3F9098]/90 focus:bg-[#3F9098] focus:shadow-none transition-shadow;
     }
 }
 
 @layer components {
-    .link-hover--one {
-        @apply hover:text-[#0FA3B1] focus:text-[#1D7882];
-    }
-
-    .link-hover--two {
-        @apply hover:underline focus:text-[#2B6469];
+    .gradient {
+        background: linear-gradient(
+            180deg,
+            #fdddb7 0%,
+            #cbaaf4 328.99%,
+            #8b6ab6 494.83%
+        );
     }
 }
