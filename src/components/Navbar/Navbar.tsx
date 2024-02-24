@@ -22,7 +22,7 @@ const Navbar = () => {
         <nav className="gradient fixed top-0 z-50 flex h-fit w-full items-center justify-between p-8 px-10 text-white lg:justify-normal">
             <div className="logo lg:mr-8">
                 <img
-                    className="w-14"
+                    className="w-14 h-14"
                     src="./src/assets/logo.svg"
                     alt="HawkHacks Logo"
                 />
