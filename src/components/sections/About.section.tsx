@@ -1,10 +1,19 @@
-// import AboutBillboard from '../../assets/about/AboutBillboard.svg';
-// import AboutWifi from '../../assets/about/AboutWifi.svg';
-// import AboutDetails from '../../assets/about/AboutDetails.svg';
+import React, { useEffect, useState } from 'react';
 import AboutAirBalloon from '../../assets/about/AboutAirBalloon.svg';
 import AboutSection from '../../assets/about/AboutMeSection.svg';
 
 const About: React.FC = () => {
+    const [offsetY, setOffsetY] = useState(0);
+
+    const handleScroll = () => {
+        setOffsetY(window.scrollY * 0.45); // Handles the speed at which the balloon moves
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
     return (
         <div className="relative h-full bg-gradient-to-b from-peachPuff to-brightUbe">
             <div className="relative left-[-4%] top-64 h-auto w-[115%] overflow-hidden">
@@ -13,7 +22,8 @@ const About: React.FC = () => {
             <img
                 src={AboutAirBalloon}
                 alt="Billboard"
-                className="absolute left-[70%] top-[35%] w-[20%]"
+                className="absolute left-[70%] w-[20%]"
+                style={{ top: `calc(30% + ${offsetY}px)` }} // Move balloon with scroll
             />
             <div className="absolute left-1/2 top-[72%] w-2/3 -translate-x-1/2 -translate-y-1/2 transform text-white ">
                 <h1 className="mb-5 text-center text-5.5xl uppercase drop-shadow-md lg:text-6.5xl xl:text-7.5xl">
