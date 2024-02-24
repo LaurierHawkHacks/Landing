@@ -7,9 +7,9 @@ const HeroSection = () => {
                 <HeroBackgroundMobile className={'block sm:hidden'} />
                 <HeroBackgroundDesktop className={'hidden sm:block'} />
             </div>
-            <div className="relative -mt-72 space-y-4 text-center sm:absolute sm:left-0 sm:top-0 sm:mt-0 sm:p-10 lg:p-14 sm:space-y-2 sm:text-left lg:space-y-7">
+            <div className="relative -translate-y-2/3 space-y-4 text-center sm:translate-y-0 sm:absolute sm:left-0 sm:top-0 sm:mt-0 sm:p-10 lg:p-14 sm:space-y-2 sm:text-left lg:space-y-7">
                 <img
-                    className="mx-auto aspect-square w-24 sm:mx-0 lg:w-28 xl:w-32"
+                    className="mx-auto aspect-square w-20 sm:mx-0 lg:w-28 xl:w-32"
                     src="src/assets/logo.svg"
                     alt="Hawkhack logo"
                 />
