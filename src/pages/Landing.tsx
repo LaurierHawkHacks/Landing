@@ -1,9 +1,11 @@
-import { HeroSection } from '@components';
+import { Navbar, HeroSection, FooterSection } from '@components';
 
 const Landing: React.FC = () => {
     return (
-        <div className="bg-[#ffdcbc]">
+        <div>
+            <Navbar />
             <HeroSection />
+            <FooterSection />
         </div>
     );
 };
