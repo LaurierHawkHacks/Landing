@@ -14,7 +14,7 @@ import DevpostSVG from '../../assets/contact/devpost.svg';
 
 const ContactSection: React.FC = () => {
     return (
-        <section className="contact-section relative" style={{ position: 'relative', zIndex: '2' }}>
+        <section className="contact-section relative z-[2]">
 
             <img src={GreyBorderTop} alt="Top Border" className="w-full" style={{ zIndex: '1' }} />
             <img src={HawkSVG} alt="Bird" className="absolute right-0 top-0 transform -translate-y-1/4 scale-100 z-[-1]" />
