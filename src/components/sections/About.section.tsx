@@ -15,18 +15,14 @@ const About: React.FC = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
     return (
-        <div className="relative h-full bg-gradient-to-b from-peachPuff to-brightUbe">
-            <div className="relative left-[-4%] top-64 h-auto w-[115%] overflow-hidden">
+        <div className="relative bg-gradient-to-b from-peachPuff to-brightUbe pb-10 pt-48">
+            {/* MAIN SVG (Background) */}
+            <div className="relative left-[-4%] w-[115%] overflow-hidden">
                 <img src={AboutSection} alt="Billboard" className="block" />
             </div>
-            <img
-                src={AboutAirBalloon}
-                alt="Billboard"
-                className="absolute left-[70%] w-[20%]"
-                style={{ top: `calc(30% + ${offsetY}px)` }} // Move balloon with scroll
-            />
-            <div className="absolute left-1/2 top-[72%] w-2/3 -translate-x-1/2 -translate-y-1/2 transform text-white ">
-                <h1 className="mb-5 text-center text-5.5xl uppercase drop-shadow-md lg:text-6.5xl xl:text-7.5xl">
+            {/* About HawkHacks Content */}
+            <div className="absolute left-1/2 top-[70%] w-2/3 -translate-x-1/2 -translate-y-1/2 transform text-white ">
+                <h1 className="mb-5 text-center text-4.5xl uppercase drop-shadow-md lg:text-6.5xl xl:text-7.5xl">
                     About Hawkhacks
                 </h1>
                 <div className="space-y-10 text-center">
@@ -48,6 +44,13 @@ const About: React.FC = () => {
                     </p>
                 </div>
             </div>
+            {/* Hawk Air Balloon */}
+            <img
+                src={AboutAirBalloon}
+                alt="Billboard"
+                className="absolute left-[70%] w-[20%]"
+                style={{ top: `calc(30% + ${offsetY}px)` }} // Move balloon with scroll
+            />
         </div>
     );
 };
