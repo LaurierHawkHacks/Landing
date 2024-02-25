@@ -34,7 +34,7 @@ const ContactSection: React.FC = () => {
                             placeholder="Enter your email"
                             className="border-2 border-gray-300 bg-white h-8 sm:h-10 md:h-12 pl-3 sm:pl-4 md:pl-5 pr-20 sm:pr-24 md:pr-28 rounded-full text-xs sm:text-sm md:text-base focus:outline-none w-full"
                         />
-                        <button type="submit" className="custom-button absolute inset-y-0 left-[80%] mr-2 sm:mr-3 md:mr-4 flex items-center justify-center px-3 h-8 sm:h-10 md:h-12 w-16">
+                        <button type="submit" className="absolute inset-y-0 left-[80%] mr-2 sm:mr-3 md:mr-4 flex items-center justify-center px-3 shadow-none hover:bg-transparent focus:bg-transparent h-8 sm:h-10 md:h-12 w-16">
                             <img src={ArrowRightIcon} alt="Submit" />
                         </button>
                     </div>
