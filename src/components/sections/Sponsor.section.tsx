@@ -26,7 +26,7 @@ import FossaLogo from '../../assets/logos/fossa.png';
 import LcsLogo from '../../assets/logos/lcs.png';
 const SponsorSection: React.FC = () => {
     return (
-        <section className="sponsor-section relative" style={{ position: 'relative', zIndex: '2' }}>
+        <section className="sponsor-section relative z-[2]">
             <img src={GreyBorderTop} alt="Top Border" className="w-full" style={{ zIndex: '1' }} />
             <img src={HawkSVG} alt="Bird" className="absolute left-0 top-0 transform -translate-y-1/4 scale-x-[-1] scale-100 z-[-1]" />
             <img src={BirdPartsSVG} alt="Bird Parts" className="absolute left-0 top-0 transform -translate-y-[42.5%] -translate-x-[1%] scale-x-[-1] scale-100 z-50 lg:translate-x-[5%]" />
