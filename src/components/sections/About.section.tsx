@@ -3,10 +3,12 @@ import AboutAirBalloon from '../../assets/about/AboutAirBalloon.svg';
 import AboutSection from '../../assets/about/AboutSection.svg';
 
 const About: React.FC = () => {
-    const [offsetY, setOffsetY] = useState(0);
+    const [translateY, setTranslateY] = useState(0);
 
     const handleScroll = () => {
-        setOffsetY(window.scrollY * 0.45); // Handles the speed at which the balloon moves
+        // Control the speed at which the Balloon travels
+        const newTranslateY = window.scrollY * 0.45;
+        setTranslateY(newTranslateY);
     };
 
     useEffect(() => {
@@ -18,7 +20,7 @@ const About: React.FC = () => {
         <div className="relative bg-gradient-to-b from-peachPuff to-brightUbe pb-10 pt-48">
             {/* MAIN SVG (Background) */}
             <div className="relative w-screen">
-                <img src={AboutSection} alt="Billboard" className="block" />
+                <img src={AboutSection} alt="" className="block" />
             </div>
             {/* About HawkHacks Content */}
             <div className="absolute left-1/2 top-[70%] w-2/3 -translate-x-1/2 -translate-y-1/2 transform text-white ">
@@ -47,9 +49,9 @@ const About: React.FC = () => {
             {/* Hawk Air Balloon */}
             <img
                 src={AboutAirBalloon}
-                alt="Billboard"
-                className="absolute left-[70%] w-[20%]"
-                style={{ top: `calc(30% + ${offsetY}px)` }} // Move balloon with scroll
+                alt=""
+                className="absolute left-[70%]  top-1/3 w-[20%] sm:top-1/4"
+                style={{ transform: `translateY(${translateY}px)` }} // Move balloon with scroll
             />
         </div>
     );
