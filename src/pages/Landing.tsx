@@ -3,7 +3,7 @@ import { Navbar } from '@components';
 
 const Landing: React.FC = () => {
     return (
-        <div className="grid grid-cols-1">
+        <div>
             <Navbar />
             <About />
             <FooterSection />
