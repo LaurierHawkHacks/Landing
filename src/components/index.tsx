@@ -8,13 +8,8 @@ export { Navbar } from './Navbar/Navbar';
 export { Menu } from './Navbar/Menu';
 /*
  *
- * @section About
+ * @section
  *
  */
 export { About } from './sections/About.section';
-/*
- *
- * @section FooterSection
- *
- */
 export { FooterSection } from './sections/Footer.section';
