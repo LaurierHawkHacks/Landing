@@ -9,7 +9,7 @@ export { Menu } from './Navbar/Menu';
 
 /*
  *
- * @section FooterSection
+ * @section
  *
  */
 export { HeroSection } from "./sections/Hero.section"
