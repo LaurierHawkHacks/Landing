@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import AboutAirBalloon from '../../assets/about/AboutAirBalloon.svg';
-import AboutSection from '../../assets/about/AboutMeSection.svg';
+import AboutSection from '../../assets/about/AboutSection.svg';
 
 const About: React.FC = () => {
     const [offsetY, setOffsetY] = useState(0);
@@ -17,7 +17,7 @@ const About: React.FC = () => {
     return (
         <div className="relative bg-gradient-to-b from-peachPuff to-brightUbe pb-10 pt-48">
             {/* MAIN SVG (Background) */}
-            <div className="relative left-[-4%] w-[115%] overflow-hidden">
+            <div className="relative w-screen">
                 <img src={AboutSection} alt="Billboard" className="block" />
             </div>
             {/* About HawkHacks Content */}
