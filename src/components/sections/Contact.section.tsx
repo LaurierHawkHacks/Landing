@@ -1,16 +1,5 @@
 import React from 'react';
-import GreyBorderTop from '../../assets/contact/top-border.svg';
-import GreyBorderBottom from '../../assets/contact/bottom-border.svg';
-import MiddleBody from '../../assets/contact/middle-body.svg';
-import ArrowRightIcon from '../../assets/contact/arrow-right-icon.svg';
-import HawkSVG from '../../assets/contact/hawk.svg';
-import BirdPartsSVG from '../../assets/contact/bird_parts.svg';
-import EmailSVG from '../../assets/contact/email.svg';
-import LinkedInSVG from '../../assets/contact/linkedin.svg';
-import InstagramSVG from '../../assets/contact/instagram.svg';
-import TwitterSVG from '../../assets/contact/twitter.svg';
-import FacebookSVG from '../../assets/contact/facebook.svg';
-import DevpostSVG from '../../assets/contact/devpost.svg';
+import { GreyBorderTop, GreyBorderBottom, MiddleBody, ArrowRightIcon, HawkSVG, BirdPartsSVG, EmailSVG, LinkedInSVG, InstagramSVG, TwitterSVG, FacebookSVG, DevpostSVG } from '../../assets/contact';
 
 const ContactSection: React.FC = () => {
     return (
