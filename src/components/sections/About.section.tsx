@@ -20,7 +20,11 @@ const About: React.FC = () => {
         <div className="relative bg-gradient-to-b from-peachPuff to-brightUbe pb-10 pt-48">
             {/* MAIN SVG (Background) */}
             <div className="relative w-screen">
-                <img src={AboutSection} alt="" className="block" />
+                <img
+                    src={AboutSection}
+                    alt="about-statistics"
+                    className="block"
+                />
             </div>
             {/* About HawkHacks Content */}
             <div className="absolute left-1/2 top-[70%] w-2/3 -translate-x-1/2 -translate-y-1/2 transform text-white ">
