@@ -54,7 +54,7 @@ const About: React.FC = () => {
             <img
                 src={AboutAirBalloon}
                 alt=""
-                className="absolute left-[70%]  top-1/3 w-[20%] sm:top-1/4"
+                className="absolute left-[70%] top-1/3 hidden w-[20%] sm:top-1/4 md:block"
                 style={{ transform: `translateY(${translateY}px)` }} // Move balloon with scroll
             />
         </div>
