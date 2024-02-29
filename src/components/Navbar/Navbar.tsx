@@ -1,13 +1,9 @@
 import { useEffect, useState } from 'react';
-import { useWindowScroll } from '@uidotdev/usehooks';
 
 import Hamburger from 'hamburger-react';
 import { NavItems, Menu } from '@components';
 
 const Navbar = () => {
-    const [scrollPos] = useWindowScroll();
-    const scrollPosY = scrollPos.y as number;
-
     const [showMenu, setShowMenu] = useState(false);
 
     const hideMenu = () => setShowMenu(false);
@@ -18,16 +14,10 @@ const Navbar = () => {
     }, [showMenu]);
 
     return (
-        <nav
-            className={`gradient fixed top-0 z-50 flex h-fit w-full items-center justify-between px-10 text-white lg:justify-normal ${
-                scrollPosY < 100
-                    ? 'p-8 transition-all duration-500 ease-in-out'
-                    : 'bg-midnight p-4 shadow-lg transition-all duration-500 ease-in-out'
-            }`}
-        >
+        <nav className="gradient fixed top-0 z-50 flex h-fit w-full items-center justify-between p-8 px-10 text-white lg:justify-normal">
             <div className="logo lg:mr-8">
                 <img
-                    className="w-14"
+                    className="w-14 h-14"
                     src="./src/assets/logo.svg"
                     alt="HawkHacks Logo"
                 />
@@ -37,11 +27,7 @@ const Navbar = () => {
                 <NavItems isHorizontal={true} handleClick={hideMenu} />
             </div>
 
-            <div
-                className={`portal-btn hidden transition-all duration-500 ease-in-out lg:block ${
-                    scrollPosY < 100 ? 'lg:mr-32' : 'lg:mr-0'
-                }`}
-            >
+            <div className="portal-btn hidden transition-all duration-500 ease-in-out lg:mr-32 lg:block">
                 <button className="px-4 py-2 xl:px-6 xl:py-3">
                     Application Portal
                 </button>
