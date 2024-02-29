@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import AboutAirBalloon from '../../assets/about/AboutAirBalloon.svg';
 import AboutSection from '../../assets/about/AboutSection.svg';
+import AboutMobileSection from '../../assets/about/AboutMobileSection.svg';
 
 const About: React.FC = () => {
     const [translateY, setTranslateY] = useState(0);
@@ -19,11 +20,16 @@ const About: React.FC = () => {
     return (
         <div className="relative bg-gradient-to-b from-peachPuff to-brightUbe pb-10 pt-48">
             {/* MAIN SVG (Background) */}
-            <div className="relative w-screen">
+            <div className="relative w-screen object-cover">
                 <img
                     src={AboutSection}
                     alt="about-statistics"
-                    className="block"
+                    className="hidden md:block"
+                />
+                <img
+                    src={AboutMobileSection}
+                    alt="about-statistics"
+                    className="block md:hidden"
                 />
             </div>
             {/* About HawkHacks Content */}
