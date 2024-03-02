@@ -11,5 +11,5 @@ export { Menu } from './Navbar/Menu';
  * @section
  *
  */
-export { About } from './sections/About.section';
+export { AboutSection } from './sections/About.section';
 export { FooterSection } from './sections/Footer.section';
