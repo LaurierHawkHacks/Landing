@@ -20,7 +20,7 @@ const AboutSection: React.FC = () => {
     return (
         <div className="relative bg-gradient-to-b from-peachPuff to-brightUbe pb-10 pt-48">
             {/* MAIN SVG (Background) */}
-            <div className="relative w-screen object-cover">
+            <div className="relative w-full object-cover">
                 <img
                     src={AboutSectionDesktop}
                     alt="about-statistics"
