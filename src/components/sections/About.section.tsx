@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import AboutAirBalloon from '../../assets/about/AboutAirBalloon.svg';
-import AboutSection from '../../assets/about/AboutSection.svg';
-import AboutMobileSection from '../../assets/about/AboutMobileSection.svg';
+import AboutSectionDesktop from '../../assets/about/AboutSection.svg';
+import AboutSectionMobile from '../../assets/about/AboutMobileSection.svg';
 
-const About: React.FC = () => {
+const AboutSection: React.FC = () => {
     const [translateY, setTranslateY] = useState(0);
 
     const handleScroll = () => {
@@ -22,12 +22,12 @@ const About: React.FC = () => {
             {/* MAIN SVG (Background) */}
             <div className="relative w-screen object-cover">
                 <img
-                    src={AboutSection}
+                    src={AboutSectionDesktop}
                     alt="about-statistics"
                     className="hidden md:block"
                 />
                 <img
-                    src={AboutMobileSection}
+                    src={AboutSectionMobile}
                     alt="about-statistics"
                     className="block md:hidden"
                 />
@@ -67,4 +67,4 @@ const About: React.FC = () => {
     );
 };
 
-export { About };
+export { AboutSection };
