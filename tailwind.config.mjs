@@ -29,6 +29,11 @@ export default {
                 khakiYellow: '#F0E698',
                 dimGray: '#4A4F50',
             },
+            backgroundImage: {
+                'faq-image': "url('/src/assets/background/faq-background.png')",
+                
+                
+            }
         },
     },
     plugins: [],
