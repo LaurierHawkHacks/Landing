@@ -1,3 +1,4 @@
+import { Button } from '@components';
 import { Link } from 'react-scroll';
 
 const links = [
@@ -35,6 +36,7 @@ const NavItems: React.FC<{
                     </Link>
                 </li>
             ))}
+            <Button className="block lg:hidden">Application Portal</Button>
         </ul>
     );
 };
