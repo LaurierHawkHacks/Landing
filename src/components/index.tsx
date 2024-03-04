@@ -10,6 +10,13 @@ export { Menu } from './Navbar/Menu';
 
 /*
  *
+ * @section
+ *
+ */
+export { TeamSection } from './sections/Team.section';
+
+/*
+ *
  * @section FooterSection
  *
  */
