@@ -3,12 +3,7 @@
  * @component
  *
  */
-export { Button } from "./Button/Button"
-export {
-  getButtonStyles,
-  type ButtonStylesProps,
-} from "./Button/Button.styles";
-
+export { Button } from './Button/Button';
 export { NavItems } from './Navbar/NavItems';
 export { Navbar } from './Navbar/Navbar';
 export { Menu } from './Navbar/Menu';
