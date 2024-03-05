@@ -1,5 +1,4 @@
-import { FooterSection, AboutSection } from '@components';
-import { Navbar } from '@components';
+import { Navbar, AboutSection, TeamSection, FooterSection } from '@components';
 
 const Landing: React.FC = () => {
     return (
@@ -10,6 +9,7 @@ const Landing: React.FC = () => {
         <div className="pt-[7.5rem]">
             <Navbar />
             <AboutSection />
+            <TeamSection />
             <FooterSection />
         </div>
     );
