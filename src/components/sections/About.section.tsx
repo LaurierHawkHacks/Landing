@@ -24,12 +24,12 @@ const AboutSection: React.FC = () => {
                 <img
                     src={AboutSectionDesktop}
                     alt="about-statistics"
-                    className="hidden md:block"
+                    className="hidden w-full md:block"
                 />
                 <img
                     src={AboutSectionMobile}
                     alt="about-statistics"
-                    className="block md:hidden"
+                    className="block w-full md:hidden"
                 />
             </div>
             {/* About HawkHacks Content */}
