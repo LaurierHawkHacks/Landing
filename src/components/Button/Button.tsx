@@ -1,6 +1,6 @@
-import { getButtonStyles } from "@components";
+import { getButtonStyles } from "./Button.styles";
 
-import type { ButtonStylesProps } from "@components";
+import type { ButtonStylesProps } from "./Button.styles";
 
 type ButtonProps = ButtonStylesProps &
     React.ButtonHTMLAttributes<HTMLButtonElement>;
