@@ -1,7 +1,7 @@
 import { SVGProps } from 'react';
 const HeroBackgroundDesktop = (props: SVGProps<SVGSVGElement>) => (
     <svg
-        viewBox="0 0 1920 4283"
+        viewBox="0 0 1920 3000"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         {...props}
