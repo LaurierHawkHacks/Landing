@@ -1,4 +1,3 @@
-// components/sections/FAQ.section.tsx
 import React from 'react';
 import Accordion from '../Accordion';
 
@@ -14,35 +13,20 @@ const FAQSection: React.FC = () => {
     // Add more FAQ items as needed
   ];
 
-/** 
-return (
-  <section className="bg-faq-image ">
-    <div className="h-full flex flex-col justify-center items-center">
-      <h2 className="mt-60 text-center text-black font-bold">
-        FAQ
-      </h2>
-      <div className="mx-auto max-w-[66.5rem] mb-80">
-        <Accordion items={faqData} />
+
+  return (
+    <section className="bg-faq-image bg-brightUbe bg-cover">
+      <div className="h-full flex flex-col justify-center items-center">
+        <h2 className="mt-60 text-center text-white font-bold drop-shadow-md">
+          FAQ
+        </h2>
+        <div className="mx-auto max-w-[66.5rem] mb-96">
+          <Accordion items={faqData} />
+        </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
 };
 
-export { FAQSection};
-*/
-return (
-  <section className="bg-faq-image bg-brightUbe bg-cover">
-    <div className="h-full flex flex-col justify-center items-center">
-      <h2 className="mt-60 text-center text-white font-bold drop-shadow-md">
-        FAQ
-      </h2>
-      <div className="mx-auto max-w-[66.5rem] mb-96">
-        <Accordion items={faqData} />
-      </div>
-    </div>
-  </section>
-);
-};
 
 export { FAQSection};

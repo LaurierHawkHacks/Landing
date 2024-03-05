@@ -30,9 +30,7 @@ export default {
                 dimGray: '#4A4F50',
             },
             backgroundImage: {
-                'faq-image': "url('/src/assets/background/faq-background.png')",
-                
-                
+                'faq-image': "url('/src/assets/background/faqBackground.png')",
             }
         },
     },
