@@ -1,6 +1,6 @@
 /*
  *
- * @page Landing  
- * 
+ * @page Landing
+ *
  */
 export { Landing } from './Landing';
