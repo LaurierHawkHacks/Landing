@@ -1,6 +1,4 @@
-import { TeamSection } from '@components';
-import { FooterSection } from '@components';
-import { Navbar } from '@components';
+import { Navbar, HeroSection, TeamSection, FooterSection } from '@components';
 
 const Landing: React.FC = () => {
     return (
@@ -10,6 +8,7 @@ const Landing: React.FC = () => {
         // total top padding = 3.5 + 4 = 7.5rem
         <div className="pt-[7.5rem]">
             <Navbar />
+            <HeroSection />
             <TeamSection />
             <FooterSection />
         </div>

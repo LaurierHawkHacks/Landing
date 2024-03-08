@@ -14,10 +14,5 @@ export { Menu } from './Navbar/Menu';
  *
  */
 export { TeamSection } from './sections/Team.section';
-
-/*
- *
- * @section FooterSection
- *
- */
+export { HeroSection } from "./sections/Hero.section"
 export { FooterSection } from './sections/Footer.section';
