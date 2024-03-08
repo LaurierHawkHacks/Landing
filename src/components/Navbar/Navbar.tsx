@@ -14,7 +14,7 @@ const Navbar = () => {
     }, [showMenu]);
 
     return (
-        <nav className="gradient fixed top-0 z-50 flex h-fit w-full items-center justify-between p-8 px-10 text-white lg:justify-normal">
+        <nav className="gradient fixed top-0 z-50 flex h-fit w-full items-center justify-between p-8 px-10 lg:justify-normal">
             <div className="logo lg:mr-8">
                 <img
                     className="h-14 w-14"
@@ -23,7 +23,7 @@ const Navbar = () => {
                 />
             </div>
 
-            <div className="nav-items hidden lg:mr-auto lg:block">
+            <div className="nav-items hidden text-tbrand lg:mr-auto lg:block">
                 <NavItems isHorizontal={true} handleClick={hideMenu} />
             </div>
 

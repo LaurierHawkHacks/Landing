@@ -12,6 +12,7 @@ export { Menu } from './Navbar/Menu';
  * @section
  *
  */
+export { HeroSection } from "./sections/Hero.section"
 export { AboutSection } from './sections/About.section';
 export { TeamSection } from './sections/Team.section';
 export { FooterSection } from './sections/Footer.section';

@@ -1,4 +1,3 @@
-import { Button } from '@components';
 import { Link } from 'react-scroll';
 
 const links = [
@@ -20,7 +19,7 @@ const NavItems: React.FC<{
 }> = ({ isHorizontal, handleClick }) => {
     return (
         <ul
-            className={`flex gap-7 text-deepMarine ${
+            className={`text-deepMarine flex gap-7 ${
                 isHorizontal ? rowStyle : colStyle
             }`}
         >
@@ -36,7 +35,6 @@ const NavItems: React.FC<{
                     </Link>
                 </li>
             ))}
-            <Button className="block lg:hidden">Application Portal</Button>
         </ul>
     );
 };

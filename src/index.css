@@ -87,4 +87,23 @@ body {
         --gap: 2.5rem;
         --min: 25ch;
     }
+
+    .stacked {
+      display: grid;
+    }
+
+    .stacked > * {
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+    }
+
+    .stacked > .media {
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+    }
+
+    .place-items-end-center {
+      place-items: end center;
+    }
 }
