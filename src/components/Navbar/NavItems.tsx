@@ -19,7 +19,7 @@ const NavItems: React.FC<{
 }> = ({ isHorizontal, handleClick }) => {
     return (
         <ul
-            className={`text-deepMarine flex gap-7 ${
+            className={`flex gap-7 text-deepMarine ${
                 isHorizontal ? rowStyle : colStyle
             }`}
         >
@@ -29,7 +29,7 @@ const NavItems: React.FC<{
                         to={link.href}
                         offset={scrollPadding}
                         onClick={handleClick}
-                        className="link-hover--two"
+                        className="link-hover--two lg:text-xl"
                     >
                         {link.title}
                     </Link>
