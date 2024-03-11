@@ -16,4 +16,5 @@ export { HeroSection } from "./sections/Hero.section"
 export { AboutSection } from './sections/About.section';
 export { TeamSection } from './sections/Team.section';
 export { ContactSection } from './sections/Contact.section';
+export { SponsorSection } from './sections/Sponsor.section';
 export { FooterSection } from './sections/Footer.section';
