@@ -10,6 +10,7 @@ const Landing: React.FC = () => {
             <Navbar />
             <HeroSection />
             <AboutSection />
+            <SponsorSection />
             <TeamSection />
             <ContactSection />
             <FooterSection />
