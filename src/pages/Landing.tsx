@@ -1,4 +1,4 @@
-import { Navbar, HeroSection, AboutSection, TeamSection, ContactSection, FooterSection } from '@components';
+import { Navbar, HeroSection, AboutSection, TeamSection, ContactSection, SponsorSection, FooterSection } from '@components';
 
 const Landing: React.FC = () => {
     return (
