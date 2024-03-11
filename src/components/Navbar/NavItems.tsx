@@ -19,7 +19,7 @@ const NavItems: React.FC<{
 }> = ({ isHorizontal, handleClick }) => {
     return (
         <ul
-            className={`flex gap-7 text-deepMarine ${
+            className={`text-deepMarine flex gap-7 ${
                 isHorizontal ? rowStyle : colStyle
             }`}
         >

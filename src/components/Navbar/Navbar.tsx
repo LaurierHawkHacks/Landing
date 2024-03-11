@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 import Hamburger from 'hamburger-react';
-import { NavItems, Menu } from '@components';
+import { NavItems, Menu, Button } from '@components';
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -14,23 +14,21 @@ const Navbar = () => {
     }, [showMenu]);
 
     return (
-        <nav className="gradient fixed top-0 z-50 flex h-fit w-full items-center justify-between p-8 px-10 text-white lg:justify-normal">
+        <nav className="gradient fixed top-0 z-50 flex h-fit w-full items-center justify-between p-8 px-10 lg:justify-normal">
             <div className="logo lg:mr-8">
                 <img
-                    className="w-14 h-14"
+                    className="h-14 w-14"
                     src="./src/assets/logo.svg"
                     alt="HawkHacks Logo"
                 />
             </div>
 
-            <div className="nav-items hidden lg:mr-auto lg:block">
+            <div className="nav-items hidden text-tbrand lg:mr-auto lg:block">
                 <NavItems isHorizontal={true} handleClick={hideMenu} />
             </div>
 
             <div className="portal-btn hidden transition-all duration-500 ease-in-out lg:mr-32 lg:block">
-                <button className="px-4 py-2 xl:px-6 xl:py-3">
-                    Application Portal
-                </button>
+                <Button className="xl:px-6 xl:py-3">Application Portal</Button>
             </div>
 
             {/* banner-holder: banner is out of flow, to prevent banner affect the desired flow, adding a placeholder banner holder when the screen is smaller  */}
