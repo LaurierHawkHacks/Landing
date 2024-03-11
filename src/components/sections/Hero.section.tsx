@@ -17,10 +17,10 @@ const HeroSection = () => {
                     alt="Hawkhack logo"
                 />
                 <div className="sm:space-y-2">
-                    <h1 className="bg-gradient-to-b from-[#2B6469] to-[#00CEDB] bg-clip-text text-4xl font-extrabold text-transparent lg:text-5.5xl xl:text-7xl">
-                        HawkHack 2024
+                    <h1 className="bg-gradient-to-b from-[#2B6469] to-[#00CEDB] bg-clip-text text-5.5xl font-extrabold text-transparent lg:text-7xl xl:text-8.5xl">
+                        HawkHacks 2024
                     </h1>
-                    <p className="font-semibold text-[#2B6469] xl:text-2xl 2xl:text-3.5xl ">
+                    <p className="text-base font-semibold text-[#2B6469] lg:text-xl xl:text-3.5xl">
                         Hosted at Wilfrid Laurier University
                     </p>
                 </div>
