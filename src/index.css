@@ -35,6 +35,10 @@ body {
     a {
         @apply inline-block cursor-pointer text-base lg:text-lg 2xl:text-2xl;
     }
+
+    button {
+        @apply w-full rounded-lg border-black bg-[#2B6469] p-4 text-white shadow-[2px_2px_0px_0px_black] hover:bg-[#3F9098]/90 focus:bg-[#3F9098] focus:shadow-none transition-shadow;
+    }
 }
 
 @layer components {
