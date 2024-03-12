@@ -23,11 +23,17 @@ export default {
                 paleViolet: '#BAA3FA',
                 blueGreen: '#0FA3B1',
                 cadetBlue: '#0C6975',
-                deepMarine: '#2B6469',
                 slateGray: '#31495C',
                 copper: '#DE846E',
                 khakiYellow: '#F0E698',
                 dimGray: '#4A4F50',
+                tbrand: '#2B6469',
+                'tbrand-hover': '#3F9098',
+                'tbrand-mouse-down': '#1D7882',
+                'tbrand-highlight': '#00CEDB',
+            },
+            translate: {
+                0.75: '0.1875rem', // value in between of 0.5 and 1 (0.125rem + 0.25) / 2
             },
             backgroundImage: {
                 'faq-image': "url('/src/assets/background/faqBackground.png')",

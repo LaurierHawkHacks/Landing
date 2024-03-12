@@ -29,7 +29,7 @@ const NavItems: React.FC<{
                         to={link.href}
                         offset={scrollPadding}
                         onClick={handleClick}
-                        className="link-hover--two"
+                        className="link-hover--two text-xl"
                     >
                         {link.title}
                     </Link>
