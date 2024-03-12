@@ -185,7 +185,7 @@ const Department: React.FC<DepartmentProps> = ({ title, members }) => {
 
 const TeamSection = () => {
     return (
-        <section className="relative isolate overflow-hidden bg-[#9f7eca] p-4 md:p-6 lg:p-12">
+        <section id="team-section" className="relative isolate overflow-hidden bg-[#9f7eca] p-4 md:p-6 lg:p-12">
             <div className="mx-auto mb-10 w-fit lg:mb-12">
                 <img
                     className="mx-auto w-full max-w-fit scale-110 sm:scale-100"
