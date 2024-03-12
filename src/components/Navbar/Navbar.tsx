@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
+import { NavItems, Menu, Button } from '@components';
 
 import Hamburger from 'hamburger-react';
-import { NavItems, Menu, Button } from '@components';
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -28,7 +28,9 @@ const Navbar = () => {
             </div>
 
             <div className="portal-btn hidden transition-all duration-500 ease-in-out lg:mr-32 lg:block">
-                <Button className="xl:px-6 xl:py-3">Application Portal</Button>
+                <Button className="xl:px-6 xl:py-3">
+                    Application Portal
+                </Button>
             </div>
 
             {/* banner-holder: banner is out of flow, to prevent banner affect the desired flow, adding a placeholder banner holder when the screen is smaller  */}
