@@ -24,9 +24,10 @@ import CcubedLogo from '../../assets/logos/ccubed.png';
 import MlhLogo from '../../assets/logos/mlh.png';
 import FossaLogo from '../../assets/logos/fossa.png';
 import LcsLogo from '../../assets/logos/lcs.png';
+
 const SponsorSection: React.FC = () => {
     return (
-        <section className="sponsor-section relative z-20">
+        <section id="sponsors-section" className="sponsor-section relative z-20">
             <img src={GreyBorderTop} alt="Top Border" className="w-full z-10" />
             <img src={HawkSVG} alt="Bird" className="absolute left-0 top-0 transform -translate-y-1/4 scale-x-[-1] scale-100 z-[-1]" />
             <img src={BirdPartsSVG} alt="Bird Parts" className="absolute left-0 top-0 transform -translate-y-[42.5%] -translate-x-[1%] scale-x-[-1] scale-100 z-50 lg:translate-x-[5%]" />
@@ -85,7 +86,7 @@ const SponsorSection: React.FC = () => {
                             <img src={DclLogo} alt="DCL" className="max-h-full" />
                         </div>
                     </div>
-                    <div className="mt-20">
+                    <div className="mt-20" id="partners-section">
                         <div className="text-center font-raleway font-black text-[50px] leading-[117px] tracking-widest text-[#404040] drop-shadow-lg mt-36 sm:text-[80px] vs:text-[60px]">
                             PARTNERS
                         </div>
