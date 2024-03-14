@@ -26,7 +26,7 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
             <span>{activeIndex === index ? '^' : '⌄'}</span>
           </div>
           {activeIndex === index && (
-            <div className="p-2 bg-blueGreen border-black rounded-xl rounded-t-none border">
+            <div className="p-2 bg-deepMarine border-black rounded-xl rounded-t-none border">
               <h6 className="text-white">{item.answer}</h6>
             </div>
           )}
