@@ -19,7 +19,7 @@ const AboutSection: React.FC = () => {
     }, []);
     return (
         <section id="about-section">
-            <div className="relative bg-gradient-to-b from-peachPuff to-brightUbe pb-10 pt-48">
+            <div className="relative pb-10 pt-48">
                 {/* MAIN SVG (Background) */}
                 <div className="relative w-full object-cover">
                     <img
@@ -40,20 +40,20 @@ const AboutSection: React.FC = () => {
                     </h1>
                     <div className="space-y-10 text-center">
                         <p>
-                            HawkHacks came out of a desire to give everyone an equal
-                            opportunity to get into tech, whether that be
+                            HawkHacks came out of a desire to give everyone an
+                            equal opportunity to get into tech, whether that be
                             programming, networking, researching, learning, or
                             teaching.
                         </p>
                         <p>
-                            Join hundreds of students across Canada (and across the
-                            world) in a 36 hour period of exploration, creativity,
-                            and learning!
+                            Join hundreds of students across Canada (and across
+                            the world) in a 36 hour period of exploration,
+                            creativity, and learning!
                         </p>
                         <p>
-                            Remember, you don’t have to be a pro to participate -
-                            show up with ten years or ten minutes of experience (oh
-                            yeah, and a great attitute too!)
+                            Remember, you don’t have to be a pro to participate
+                            - show up with ten years or ten minutes of
+                            experience (oh yeah, and a great attitute too!)
                         </p>
                     </div>
                 </div>

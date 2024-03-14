@@ -1,4 +1,14 @@
-import { Navbar, HeroSection, AboutSection, TeamSection, FAQSection, ContactSection, SponsorSection, FooterSection } from '@components';
+import HeroStatSection from '../components/sections/HeroStats.section';
+import {
+    Navbar,
+    // HeroSection,
+    // AboutSection,
+    TeamSection,
+    FAQSection,
+    ContactSection,
+    SponsorSection,
+    FooterSection,
+} from '@components';
 
 const Landing: React.FC = () => {
     return (
@@ -8,13 +18,14 @@ const Landing: React.FC = () => {
         // total top padding = 3.5 + 4 = 7.5rem
         <div className="pt-[7.5rem]">
             <Navbar />
-            <HeroSection />
-            <AboutSection />
-            <SponsorSection />
-            <FAQSection/>
-            <TeamSection />
-            <ContactSection />
-            <FooterSection />
+            {/* <HeroSection /> */}
+            {/* <AboutSection /> */}
+            <HeroStatSection />
+            {/* <SponsorSection /> */}
+            {/* <FAQSection /> */}
+            {/* <TeamSection /> */}
+            {/* <ContactSection /> */}
+            {/* <FooterSection /> */}
         </div>
     );
 };

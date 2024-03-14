@@ -9,10 +9,10 @@ export { Navbar } from './Navbar/Navbar';
 export { Menu } from './Navbar/Menu';
 /*
  *
- * @section 
+ * @section
  *
  */
-export { HeroSection } from "./sections/Hero.section"
+export { HeroSection } from './sections/Hero.section';
 export { AboutSection } from './sections/About.section';
 export { TeamSection } from './sections/Team.section';
 export { ContactSection } from './sections/Contact.section';
