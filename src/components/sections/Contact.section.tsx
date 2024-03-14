@@ -1,13 +1,13 @@
 import React from 'react';
-import { GreyBorderTop, GreyBorderBottom, MiddleBody, ArrowRightIcon, HawkSVG, BirdPartsSVG, EmailSVG, LinkedInSVG, InstagramSVG, TwitterSVG, FacebookSVG, DevpostSVG } from '../../assets/contact';
+import { TopBorder, BottomBorder, MiddleBody, ArrowRightIcon, Hawk, BirdParts, Email, LinkedIn, Instagram, Twitter, Facebook, DevPost } from '@assets';
 
 const ContactSection: React.FC = () => {
     return (
         <section className="contact-section relative z-10">
 
-            <img src={GreyBorderTop} className="w-full z-0" />
-            <img src={HawkSVG} className="absolute right-0 top-0 transform -translate-y-1/4 scale-100 -z-10" />
-            <img src={BirdPartsSVG} className="absolute right-0 top-0 transform -translate-y-[42.5%] translate-x-[1%] scale-100 z-50 lg:-translate-x-[5%]" />
+            <img src={TopBorder} className="w-full z-0" />
+            <img src={Hawk} className="absolute right-0 top-0 transform -translate-y-1/4 scale-100 -z-10" />
+            <img src={BirdParts} className="absolute right-0 top-0 transform -translate-y-[42.5%] translate-x-[1%] scale-100 z-50 lg:-translate-x-[5%]" />
             <div className="absolute xs:text-center xs:ml-16 inset-x-0 mx-auto max-w-4xl px-5 pt-4 sm:pt-8 md:pt-12 lg:pt-32 xl:pt-48 z-10">
                 <div className="contact-info text-center sm:text-left sm:mt-5 md:mt-8 lg:mt-0 mb-2 sm:mb-4 md:mb-6 lg:mb-12 text-left">
                     <h2 className="font-raleway text-2xl sm:text-4xl md:text-5xl lg:text-8xl font-extrabold leading-tight tracking-wider text-[#32848C] md:leading-tight lg:leading-[7.3125rem]">CONTACT US</h2>
@@ -32,22 +32,22 @@ const ContactSection: React.FC = () => {
                         </div>
                     <div className="flex space-x-3 sm:space-x-4 md:space-x-6 ml-1 mt-3 sm:mt-2 md:mt-3 lg:justify-start">
                         <a href="mailto:hello@hawkhacks.com" target="_blank" rel="noopener noreferrer" className="w-6 sm:w-8 md:w-10 h-6 sm:h-8 md:h-10">
-                            <img src={EmailSVG} alt="Email" />
+                            <img src={Email} alt="Email" />
                         </a>
                         <a href="https://www.linkedin.com/company/hawkhacks/" target="_blank" rel="noopener noreferrer" className="w-6 sm:w-8 md:w-10 h-6 sm:h-8 md:h-10">
-                            <img src={LinkedInSVG} alt="LinkedIn" />
+                            <img src={LinkedIn} alt="LinkedIn" />
                         </a>
                         <a href="https://www.instagram.com/wluhawkhacks/" target="_blank" rel="noopener noreferrer" className="w-6 sm:w-8 md:w-10 h-6 sm:h-8 md:h-10">
-                            <img src={InstagramSVG} alt="Instagram" />
+                            <img src={Instagram} alt="Instagram" />
                         </a>
                         <a href="https://twitter.com/wluhawkhacks" target="_blank" rel="noopener noreferrer" className="w-6 sm:w-8 md:w-10 h-6 sm:h-8 md:h-10">
-                            <img src={TwitterSVG} alt="Twitter" />
+                            <img src={Twitter} alt="Twitter" />
                         </a>
                         <a href="https://www.facebook.com/Hawkhacks/" target="_blank" rel="noopener noreferrer" className="w-6 sm:w-8 md:w-10 h-6 sm:h-8 md:h-10">
-                            <img src={FacebookSVG} alt="Facebook" />
+                            <img src={Facebook} alt="Facebook" />
                         </a>
                         <a href="https://hawkhacks.devpost.com/" target="_blank" rel="noopener noreferrer" className="mt-0.5 w-6 sm:w-8 md:w-10 h-6 sm:h-8 md:h-10">
-                            <img src={DevpostSVG} alt="Devpost" />
+                            <img src={DevPost} alt="Devpost" />
                         </a>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ const ContactSection: React.FC = () => {
             <div className="relative w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[700px] z-0">
                 <img src={MiddleBody} className="w-full h-full object-cover" />
             </div>
-            <img src={GreyBorderBottom} className="w-full z-0" />
+            <img src={BottomBorder} className="w-full z-0" />
         </section>
     );
 };

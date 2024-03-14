@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import AboutAirBalloon from '../../assets/about/about-air-balloon.svg';
-import AboutSectionDesktop from '../../assets/about/about-section-desktop.svg';
-import AboutSectionMobile from '../../assets/about/about-section-mobile.svg';
+import { AboutAirBalloon, AboutSectionDesktop, AboutSectionMobile } from '@assets';
 
 const AboutSection: React.FC = () => {
     const [translateY, setTranslateY] = useState(0);
