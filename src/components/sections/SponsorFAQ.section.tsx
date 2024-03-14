@@ -186,7 +186,7 @@ const SponsorFAQSection = () => {
               FAQ
             </h2>
           </div>
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <Accordion items={faqData} />
           </div>
         </div>
