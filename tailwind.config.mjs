@@ -23,6 +23,7 @@ export default {
                 paleViolet: '#BAA3FA',
                 blueGreen: '#0FA3B1',
                 cadetBlue: '#0C6975',
+                deepMarine: '#2B6469',
                 slateGray: '#31495C',
                 copper: '#DE846E',
                 khakiYellow: '#F0E698',
