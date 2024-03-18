@@ -1,33 +1,27 @@
 import React from "react";
 import Accordion from "../Accordion";
-import {
-  GreyBorderTop,
-  GreyBorderBottom,
-  MiddleBody,
-  HawkSVG,
-  BirdPartsSVG,
-} from "../../assets/sponsor/SponsorSection";
+import { TopBorder, BottomBorder, MiddleBody, Hawk, BirdParts } from "@assets";
 
 import {
-  VeritasLogo,
-  AssemblyLogo,
-  SocLogo,
-  FdmLogo,
-  Echo3dLogo,
-  LeadingLogo,
-  OllonLogo,
-  OnePasswordLogo,
-  RoomiezLogo,
-  BalsamiqLogo,
-  DigitalOceanLogo,
-  TaskadeLogo,
-  DclLogo,
-  StudentUnionLogo,
-  CcubedLogo,
-  MlhLogo,
-  FossaLogo,
-  LcsLogo,
-} from "../../assets/logos/Sponsors";
+  Veritas,
+  Assembly,
+  SOC,
+  FDM,
+  Echo3D,
+  LeadingLeaders,
+  Ollon,
+  OnePassword,
+  Roomiez,
+  Balsamiq,
+  DigitalOcean,
+  Taskade,
+  DCL,
+  StudentsUnion,
+  CCubed,
+  MLH,
+  FOSSA,
+  LCS,
+} from "@assets";
 
 const SponsorFAQSection = () => {
   const faqData = [
@@ -56,14 +50,14 @@ const SponsorFAQSection = () => {
   return (
     <div>
       <section id="sponsors-section" className="sponsor-section relative z-20">
-        <img src={GreyBorderTop} alt="Top Border" className="w-full z-10" />
+        <img src={TopBorder} alt="Top Border" className="w-full z-10" />
         <img
-          src={HawkSVG}
+          src={Hawk}
           alt="Bird"
           className="absolute left-0 top-0 transform -translate-y-1/4 scale-x-[-1] scale-100 z-[-1]"
         />
         <img
-          src={BirdPartsSVG}
+          src={BirdParts}
           alt="Bird Parts"
           className="absolute left-0 top-0 transform -translate-y-[42.5%] -translate-x-[1%] scale-x-[-1] scale-100 z-50 lg:translate-x-[5%]"
         />
@@ -81,57 +75,57 @@ const SponsorFAQSection = () => {
             </div>
             <div className="flex justify-center items-center sm:space-x-16 space-x-4 px-4">
               <div className="h-14 sm:h-15 flex justify-center items-center">
-                <img src={VeritasLogo} alt="Veritas" className="max-h-full" />
+                <img src={Veritas} alt="Veritas" className="max-h-full" />
               </div>
               <div className="h-12 sm:h-15 flex justify-center items-center">
-                <img src={AssemblyLogo} alt="Assembly" className="max-h-full" />
+                <img src={Assembly} alt="Assembly" className="max-h-full" />
               </div>
               <div className="h-12 sm:h-15 flex justify-center items-center">
-                <img src={SocLogo} alt="Soc" className="max-h-full" />
+                <img src={SOC} alt="Soc" className="max-h-full" />
               </div>
               <div className="h-12 sm:h-15 flex justify-center items-center">
-                <img src={FdmLogo} alt="FDM" className="max-h-full" />
+                <img src={FDM} alt="FDM" className="max-h-full" />
               </div>
               <div className="h-12 sm:h-15 flex justify-center items-center">
-                <img src={Echo3dLogo} alt="Echo3D" className="max-h-full" />
+                <img src={Echo3D} alt="Echo3D" className="max-h-full" />
               </div>
             </div>
             <div className="flex justify-center items-center space-x-6 px-4">
               <div className="h-12 sm:h-15 flex justify-center items-center">
-                <img src={LeadingLogo} alt="Leading" className="max-h-full" />
+                <img src={LeadingLeaders} alt="Leading" className="max-h-full" />
               </div>
               <div className="h-12 sm:h-15 flex justify-center items-center">
-                <img src={OllonLogo} alt="Ollon" className="max-h-full" />
+                <img src={Ollon} alt="Ollon" className="max-h-full" />
               </div>
               <div className="h-12 sm:h-15 flex justify-center items-center">
                 <img
-                  src={OnePasswordLogo}
+                  src={OnePassword}
                   alt="1Password"
                   className="max-h-full"
                 />
               </div>
               <div className="h-12 sm:h-15 flex justify-center items-center">
-                <img src={RoomiezLogo} alt="Roomiez" className="max-h-full" />
+                <img src={Roomiez} alt="Roomiez" className="max-h-full" />
               </div>
               <div className="h-12 sm:h-15 flex justify-center items-center">
-                <img src={BalsamiqLogo} alt="Balsamiq" className="max-h-full" />
+                <img src={Balsamiq} alt="Balsamiq" className="max-h-full" />
               </div>
             </div>
             <div className="flex justify-center items-center space-x-6 px-4">
               <div className="h-13 sm:h-16 flex justify-center items-center">
                 <img
-                  src={DigitalOceanLogo}
+                  src={DigitalOcean}
                   alt="DigitalOcean"
                   className="max-h-full"
                 />
               </div>
               <div className="h-13 sm:h-16 flex justify-center items-center">
-                <img src={TaskadeLogo} alt="Taskade" className="max-h-full" />
+                <img src={Taskade} alt="Taskade" className="max-h-full" />
               </div>
             </div>
             <div className="flex justify-center items-center px-8">
               <div className="h-28 sm:h-32 flex justify-center items-center">
-                <img src={DclLogo} alt="DCL" className="max-h-full" />
+                <img src={DCL} alt="DCL" className="max-h-full" />
               </div>
             </div>
             <div className="mt-20" id="partners-section">
@@ -140,27 +134,27 @@ const SponsorFAQSection = () => {
               </div>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-items-center items-center mt-8 gap-y-4 gap-x-10">
                 <img
-                  src={StudentUnionLogo}
+                  src={StudentsUnion}
                   alt="Student Union"
                   className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
                 />
                 <img
-                  src={CcubedLogo}
+                  src={CCubed}
                   alt="Ccubed"
                   className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
                 />
                 <img
-                  src={MlhLogo}
+                  src={MLH}
                   alt="MLH"
                   className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
                 />
                 <img
-                  src={FossaLogo}
+                  src={FOSSA}
                   alt="Fossa"
                   className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
                 />
                 <img
-                  src={LcsLogo}
+                  src={LCS}
                   alt="LCS"
                   className="h-16 sm:h-18 md:h-21 lg:h-24 xl:h-24 col-span-2 md:col-span-1 justify-self-center"
                 />
@@ -171,7 +165,7 @@ const SponsorFAQSection = () => {
           </div>
         </div>
         <img
-          src={GreyBorderBottom}
+          src={BottomBorder}
           alt="Bottom Border"
           className="w-full z-10"
         />
