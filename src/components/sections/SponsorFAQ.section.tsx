@@ -133,7 +133,7 @@ const SponsorFAQSection = () => {
               <div className="text-center font-raleway font-black mt-6 text-[50px] leading-[117px] tracking-widest text-[#404040] drop-shadow-lg sm:text-[80px] vs:text-[60px]">
                 PARTNERS
               </div>
-              <div className="flex flex-wrap justify-center items-center gap-4">
+              <div className="flex flex-wrap justify-center items-center gap-3">
                 <img
                   src={StudentsUnion}
                   alt="Student Union"
