@@ -12,7 +12,7 @@ const HeroStatSection = () => {
 
     const handleScroll = () => {
         // Control the speed at which the Balloon travels
-        const newTranslateY = window.scrollY * 0.45;
+        const newTranslateY = window.scrollY * 0.6;
         setTranslateY(newTranslateY);
     };
 
@@ -71,7 +71,7 @@ const HeroStatSection = () => {
                         </p>
                     </div>
                 </div>
-                <div className="absolute left-1/2 top-[70%] w-2/3 -translate-x-1/2 -translate-y-1/2 transform text-white ">
+                <div className="absolute left-1/2 top-3/4 w-2/3 -translate-x-1/2 -translate-y-1/2 transform text-white ">
                     <h1 className="mb-5 text-center text-4.5xl uppercase drop-shadow-md lg:text-6.5xl xl:text-7.5xl">
                         About Hawkhacks
                     </h1>

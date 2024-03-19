@@ -10,7 +10,7 @@ import {
     DevpostIcon,
 } from './social-icons';
 
-import HeroAboutDesktop from './hero-about-2.svg';
+import HeroAboutDesktop from './hero-about-3.svg';
 
 export { HeroAboutDesktop };
 
