@@ -65,14 +65,15 @@ const SponsorFAQSection = () => {
           <img
             src={MiddleBody}
             alt="Middle Body"
-            className="w-full object-cover h-[1200px] sm:h-[1400px] md:h-[1300px] lg:h-[1200px] z-10"
+            className="w-full object-cover h-[810px] sm:h-[925px] md:h-[925px] lg:h-[950px] z-10"
           />
-          <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col items-center space-y-6 sm:space-y-12 pt-[200px]">
-            <div className="absolute top-24 left-1/2 transform -translate-x-1/2">
+          <div className="absolute top-6 left-0 right-0 bottom-0 flex flex-col items-center space-y-6 sm:space-y-12 pt-[110px]">
+            <div className="absolute top-6 left-1/2 transform -translate-x-1/2 ">
               <div className="text-center font-raleway font-black text-[50px] leading-[117px] tracking-widest text-[#404040] drop-shadow-lg sm:text-[80px] vs:text-[60px]">
                 SPONSORS
               </div>
             </div>
+            
             <div className="flex justify-center items-center sm:space-x-16 space-x-4 px-4">
               <div className="h-14 sm:h-15 flex justify-center items-center">
                 <img src={Veritas} alt="Veritas" className="max-h-full" />
@@ -129,10 +130,10 @@ const SponsorFAQSection = () => {
               </div>
             </div>
             <div className="mt-20" id="partners-section">
-              <div className="text-center font-raleway font-black text-[50px] leading-[117px] tracking-widest text-[#404040] drop-shadow-lg mt-36 sm:text-[80px] vs:text-[60px]">
+              <div className="text-center font-raleway font-black mt-6 text-[50px] leading-[117px] tracking-widest text-[#404040] drop-shadow-lg sm:text-[80px] vs:text-[60px]">
                 PARTNERS
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 justify-items-center items-center mt-8 gap-y-4 gap-x-10">
+              <div className="flex flex-wrap justify-center items-center gap-4">
                 <img
                   src={StudentsUnion}
                   alt="Student Union"
