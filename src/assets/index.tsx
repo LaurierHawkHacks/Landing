@@ -10,9 +10,17 @@ import {
     DevpostIcon,
 } from './social-icons';
 
-import HeroAboutDesktop from './hero-about-3.svg';
+import HeroAboutDesktop from './hero-about/hero-about-desktop.svg';
+import HeroAboutMobile from './hero-about/hero-about-mobile.svg';
+import HeroAboutAirBalloon from './hero-about/about-air-balloon.svg';
+import HawkHacksLogo from './logo.svg';
 
-export { HeroAboutDesktop };
+export {
+    HeroAboutDesktop,
+    HeroAboutMobile,
+    HeroAboutAirBalloon,
+    HawkHacksLogo,
+};
 
 export {
     MailIcon,

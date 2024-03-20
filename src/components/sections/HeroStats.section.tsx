@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
-import AboutAirBalloon from '../../assets/about/about-air-balloon.svg';
-// import AboutSectionDesktop from '../../assets/about/about-section-desktop.svg';
-// import AboutSectionMobile from '../../assets/about/about-section-mobile.svg';
-// import { HeroBackgroundMobile, HeroBackgroundDesktop } from '@assets';
-import { HeroAboutDesktop } from '@assets';
+import {
+    HawkHacksLogo,
+    HeroAboutMobile,
+    HeroAboutAirBalloon,
+    HeroAboutDesktop,
+} from '@assets';
 
 const HeroStatSection = () => {
     const [translateY, setTranslateY] = useState(0);
@@ -12,7 +13,7 @@ const HeroStatSection = () => {
 
     const handleScroll = () => {
         // Control the speed at which the Balloon travels
-        const newTranslateY = window.scrollY * 0.6;
+        const newTranslateY = window.scrollY * 0.58;
         setTranslateY(newTranslateY);
     };
 
@@ -42,17 +43,23 @@ const HeroStatSection = () => {
         <div className="relative">
             <section
                 ref={heroRef}
-                className="hero-section stacked place-items-end-center absolute bg-peachPuff sm:place-items-start"
+                className="hero-section stacked absolute bg-peachPuff sm:place-items-start"
             >
-                <img src={HeroAboutDesktop} />
-                {/* <HeroBackgroundMobile className="media block pb-16 sm:hidden xl:translate-y-20" /> */}
-                {/* <HeroBackgroundDesktop className="media hidden sm:block xl:translate-y-20" /> */}
-
+                <img
+                    src={HeroAboutDesktop}
+                    alt="Hawkhacks stats"
+                    className="hidden w-full md:block"
+                />
+                <img
+                    src={HeroAboutMobile}
+                    alt="Hawkhacks stats"
+                    className="block w-full md:hidden"
+                />
                 <div className="space-y-1 pb-4 text-center sm:pl-24 sm:pt-12 sm:text-left lg:pl-16 lg:pt-16 2xl:pl-60 2xl:pt-24">
                     <img
                         className="inline-block aspect-square w-20 sm:mx-0 lg:w-28 xl:w-32 2xl:w-52"
-                        src="src/assets/logo.svg"
-                        alt="Hawkhack logo"
+                        src={HawkHacksLogo}
+                        alt="Hawkhacks logo"
                     />
                     <div className="sm:space-y-2">
                         <h1 className="bg-gradient-to-b from-[#2B6469] to-[#00CEDB] bg-clip-text text-5.5xl font-extrabold text-transparent lg:text-7xl xl:text-8.5xl">
@@ -96,31 +103,11 @@ const HeroStatSection = () => {
                 </div>
                 {/* Hawk Air Balloon */}
                 <img
-                    src={AboutAirBalloon}
+                    src={HeroAboutAirBalloon}
                     alt=""
                     className="absolute left-[70%] top-1/3 hidden w-[20%] sm:top-1/4 md:block"
                     style={{ transform: `translateY(${translateY}px)` }} // Move balloon with scroll
                 />
-            </section>
-
-            {/* about section */}
-            <section ref={aboutRef} id="about-section" className="absolute">
-                <div className="relative pb-10">
-                    {/* MAIN SVG (Background) */}
-                    {/* <div className="relative w-full object-cover"> */}
-                    {/*     <img */}
-                    {/*         src={AboutSectionDesktop} */}
-                    {/*         alt="about-statistics" */}
-                    {/*         className="hidden w-full md:block" */}
-                    {/*     /> */}
-                    {/*     <img */}
-                    {/*         src={AboutSectionMobile} */}
-                    {/*         alt="about-statistics" */}
-                    {/*         className="block w-full md:hidden" */}
-                    {/*     /> */}
-                    {/* </div> */}
-                    {/* About HawkHacks Content */}
-                </div>
             </section>
         </div>
     );
