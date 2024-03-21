@@ -6,7 +6,7 @@ import {
     HeroAboutDesktop,
 } from '@assets';
 
-const HeroStatSection = () => {
+const HeroStatSection: React.FC = () => {
     const [translateY, setTranslateY] = useState(0);
     const heroRef = useRef<HTMLElement | null>(null);
     const aboutRef = useRef<HTMLElement | null>(null);
