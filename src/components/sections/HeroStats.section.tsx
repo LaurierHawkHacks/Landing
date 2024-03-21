@@ -113,4 +113,4 @@ const HeroStatSection: React.FC = () => {
     );
 };
 
-export default HeroStatSection;
+export { HeroStatSection };
