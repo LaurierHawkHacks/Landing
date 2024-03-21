@@ -43,7 +43,7 @@ const HeroStatSection = () => {
         <div className="relative">
             <section
                 ref={heroRef}
-                className="hero-section stacked absolute bg-peachPuff sm:place-items-start"
+                className="hero-section stacked bg-peachPuff sm:place-items-start"
             >
                 <img
                     src={HeroAboutDesktop}
@@ -55,14 +55,14 @@ const HeroStatSection = () => {
                     alt="Hawkhacks stats"
                     className="block w-full md:hidden"
                 />
-                <div className="space-y-1 pb-4 text-center sm:pl-24 sm:pt-12 sm:text-left lg:pl-16 lg:pt-16 2xl:pl-60 2xl:pt-24">
+                <div className="space-y-1 pb-4 pl-10 text-left sm:pl-24 sm:pt-12 lg:pl-16 lg:pt-16 2xl:pl-60 2xl:pt-24">
                     <img
-                        className="inline-block aspect-square w-20 sm:mx-0 lg:w-28 xl:w-32 2xl:w-52"
+                        className="inline-block aspect-square w-16 sm:mx-0 lg:w-28 xl:w-32 2xl:w-52"
                         src={HawkHacksLogo}
                         alt="Hawkhacks logo"
                     />
                     <div className="sm:space-y-2">
-                        <h1 className="bg-gradient-to-b from-[#2B6469] to-[#00CEDB] bg-clip-text text-5.5xl font-extrabold text-transparent lg:text-7xl xl:text-8.5xl">
+                        <h1 className="bg-gradient-to-b from-[#2B6469] to-[#00CEDB] bg-clip-text  text-4xl font-extrabold text-transparent sm:text-5.5xl lg:text-7xl xl:text-8.5xl">
                             HawkHacks 2024
                         </h1>
                         <p className="text-base font-semibold text-[#2B6469] lg:text-xl xl:text-3.5xl">
@@ -70,10 +70,10 @@ const HeroStatSection = () => {
                         </p>
                     </div>
                     <div>
-                        <p className="text-2xl font-bold text-[#2B6469] sm:hidden">
+                        <p className="text-xl font-bold text-[#2B6469] sm:hidden sm:text-2xl">
                             April 5th - 7th
                         </p>
-                        <p className="text-2xl font-bold text-[#2B6469] sm:hidden">
+                        <p className="text-xl font-bold text-[#2B6469] sm:hidden sm:text-2xl">
                             In Person
                         </p>
                     </div>
@@ -82,7 +82,7 @@ const HeroStatSection = () => {
                     <h1 className="mb-5 text-center text-4.5xl uppercase drop-shadow-md lg:text-6.5xl xl:text-7.5xl">
                         About Hawkhacks
                     </h1>
-                    <div className="space-y-10 text-center">
+                    <div className="space-y-3 text-center sm:space-y-10">
                         <p>
                             HawkHacks came out of a desire to give everyone an
                             equal opportunity to get into tech, whether that be

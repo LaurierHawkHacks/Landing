@@ -1,8 +1,6 @@
-import HeroStatSection from '../components/sections/HeroStats.section';
 import {
     Navbar,
-    // HeroSection,
-    // AboutSection,
+    HeroStatSection,
     TeamSection,
     FAQSection,
     ContactSection,
@@ -18,14 +16,12 @@ const Landing: React.FC = () => {
         // total top padding = 3.5 + 4 = 7.5rem
         <div className="pt-[7.5rem]">
             <Navbar />
-            {/* <HeroSection /> */}
-            {/* <AboutSection /> */}
             <HeroStatSection />
-            {/* <SponsorSection /> */}
-            {/* <FAQSection /> */}
-            {/* <TeamSection /> */}
-            {/* <ContactSection /> */}
-            {/* <FooterSection /> */}
+            <SponsorSection />
+            <FAQSection />
+            <TeamSection />
+            <ContactSection />
+            <FooterSection />
         </div>
     );
 };
