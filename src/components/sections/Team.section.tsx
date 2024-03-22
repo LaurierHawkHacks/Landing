@@ -168,7 +168,7 @@ const Member: React.FC<MemberProps> = ({ name, title, profile }) => {
 const Department: React.FC<DepartmentProps> = ({ title, members }) => {
     return (
         <div>
-            <h3 className="ext-2xl mb-6 text-2xl font-semibold capitalize md:mb-8">
+            <h3 className="text-2xl mb-6 text-2xl font-semibold capitalize md:mb-8">
                 {title}
             </h3>
             <ul className="grid-auto-md lg:grid-auto-xl">
