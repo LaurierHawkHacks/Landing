@@ -192,7 +192,7 @@ const TeamSection = () => {
             <div className="mx-auto mb-10 w-fit lg:mb-12">
                 <img
                     className="mx-auto w-full max-w-fit scale-110 sm:scale-100"
-                    src="src/assets/team/meet-the-team-balloon-banner.svg"
+                    src="src/assets/team/meet-the-team-balloon-banner.webp"
                     alt=""
                 />
                 <img

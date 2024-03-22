@@ -1,15 +1,15 @@
 /*
  *
- * Hero Section SVGs 
- * 
+ * Hero Section SVGs
+ *
  */
 export { HeroBackgroundMobile } from './hero/bg-mobile-svg';
 export { HeroBackgroundDesktop } from './hero/bg-desktop-svg';
 
 /*
  *
- * Social Icons SVGs 
- * 
+ * Social Icons SVGs
+ *
  */
 import {
     MailIcon,
@@ -31,23 +31,19 @@ export {
 
 /*
  *
- * About Section SVGs 
- * 
+ * About Section SVGs
+ *
  */
 import AboutAirBalloon from './about/about-air-balloon.svg';
 import AboutSectionDesktop from './about/about-section-desktop.svg';
 import AboutSectionMobile from './about/about-section-mobile.svg';
 
-export { 
-    AboutAirBalloon, 
-    AboutSectionDesktop, 
-    AboutSectionMobile 
-};
+export { AboutAirBalloon, AboutSectionDesktop, AboutSectionMobile };
 
 /*
  *
- * Contact Section SVGs 
- * 
+ * Contact Section SVGs
+ *
  */
 import ArrowRightIcon from './contact/arrow-right-icon.svg';
 import BirdParts from './contact/bird_parts.svg';
@@ -80,7 +76,7 @@ export {
 /*
  *
  * Sponsor & Partner logos PNGs
- * 
+ *
  */
 import OnePassword from './logos/1password.png';
 import Assembly from './logos/assembly.png';
@@ -125,10 +121,10 @@ export {
 /*
  *
  * Team SVGs
- * 
+ *
  */
 import Clouds from './team/clouds.svg';
-import MeetTheTeamBalloon from './team/meet-the-team-balloon-banner.svg';
+import MeetTheTeamBalloon from './team/meet-the-team-balloon-banner.webp';
 import MeetTheTeamBuildingLeft from './team/meet-the-team-building-left.svg';
 import MeetTheTeamBuildingRight from './team/meet-the-team-building-right.svg';
 
