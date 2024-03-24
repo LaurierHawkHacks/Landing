@@ -5,8 +5,8 @@ import { TopBorder, BottomBorder, MiddleBody, Hawk, BirdParts } from "@assets";
 import {
   Veritas,
   Assembly,
-  SOC,
-  FDM,
+  Soc,
+  Fdm,
   Echo3D,
   LeadingLeaders,
   Ollon,
@@ -15,12 +15,12 @@ import {
   Balsamiq,
   DigitalOcean,
   Taskade,
-  DCL,
+  Dcl,
   StudentsUnion,
   CCubed,
-  MLH,
-  FOSSA,
-  LCS,
+  Mlh,
+  Fossa,
+  Lcs,
 } from "@assets";
 
 const SponsorFAQSection = () => {
@@ -82,10 +82,10 @@ const SponsorFAQSection = () => {
                 <img src={Assembly} alt="Assembly" className="max-h-full" />
               </div>
               <div className="h-12 sm:h-15 flex justify-center items-center">
-                <img src={SOC} alt="Soc" className="max-h-full" />
+                <img src={Soc} alt="Soc" className="max-h-full" />
               </div>
               <div className="h-12 sm:h-15 flex justify-center items-center">
-                <img src={FDM} alt="FDM" className="max-h-full" />
+                <img src={Fdm} alt="FDM" className="max-h-full" />
               </div>
               <div className="h-12 sm:h-15 flex justify-center items-center">
                 <img src={Echo3D} alt="Echo3D" className="max-h-full" />
@@ -126,7 +126,7 @@ const SponsorFAQSection = () => {
             </div>
             <div className="flex justify-center items-center px-8">
               <div className="h-28 sm:h-32 flex justify-center items-center">
-                <img src={DCL} alt="DCL" className="max-h-full" />
+                <img src={Dcl} alt="DCL" className="max-h-full" />
               </div>
             </div>
             <div className="mt-20" id="partners-section">
@@ -145,17 +145,17 @@ const SponsorFAQSection = () => {
                   className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
                 />
                 <img
-                  src={MLH}
+                  src={Mlh}
                   alt="MLH"
                   className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
                 />
                 <img
-                  src={FOSSA}
+                  src={Fossa}
                   alt="Fossa"
                   className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
                 />
                 <img
-                  src={LCS}
+                  src={Lcs}
                   alt="LCS"
                   className="h-16 sm:h-18 md:h-21 lg:h-24 xl:h-24 col-span-2 md:col-span-1 justify-self-center"
                 />
