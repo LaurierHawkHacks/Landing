@@ -2,9 +2,8 @@ import {
     Navbar,
     HeroStatSection,
     TeamSection,
-    FAQSection,
     ContactSection,
-    SponsorSection,
+    SponsorFAQSection,
     FooterSection,
 } from '@components';
 
@@ -17,8 +16,7 @@ const Landing: React.FC = () => {
         <div className="pt-[7.5rem]">
             <Navbar />
             <HeroStatSection />
-            <SponsorSection />
-            <FAQSection />
+            <SponsorFAQSection />
             <TeamSection />
             <ContactSection />
             <FooterSection />
