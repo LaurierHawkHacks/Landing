@@ -1,7 +1,6 @@
 import {
     Navbar,
-    HeroSection,
-    AboutSection,
+    HeroStatSection,
     TeamSection,
     ContactSection,
     SponsorFAQSection,
@@ -16,8 +15,7 @@ const Landing: React.FC = () => {
         // total top padding = 3.5 + 4 = 7.5rem
         <div className="pt-[7.5rem]">
             <Navbar />
-            <HeroSection />
-            <AboutSection />
+            <HeroStatSection />
             <SponsorFAQSection />
             <TeamSection />
             <ContactSection />
