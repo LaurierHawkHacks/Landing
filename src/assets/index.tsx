@@ -31,17 +31,19 @@ export {
 
 /*
  *
- * About Section SVGs 
+ * Hero Section SVGs 
  * 
  */
-import AboutAirBalloon from './about/about-air-balloon.svg';
-import AboutSectionDesktop from './about/about-section-desktop.svg';
-import AboutSectionMobile from './about/about-section-mobile.svg';
+import HeroAboutDesktop from './hero-about/hero-about-desktop.svg';
+import HeroAboutMobile from './hero-about/hero-about-mobile.svg';
+import HeroAboutAirBalloon from './hero-about/about-air-balloon.svg';
+import HawkHacksLogo from './logo.svg';
 
-export { 
-    AboutAirBalloon, 
-    AboutSectionDesktop, 
-    AboutSectionMobile 
+export {
+    HeroAboutDesktop,
+    HeroAboutMobile,
+    HeroAboutAirBalloon,
+    HawkHacksLogo,
 };
 
 /*

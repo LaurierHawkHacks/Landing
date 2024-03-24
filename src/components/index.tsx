@@ -13,8 +13,7 @@ export { Menu } from './Navbar/Menu';
  * @sections
  *
  */
-export { HeroSection } from "./sections/Hero.section"
-export { AboutSection } from './sections/About.section';
+export { HeroStatSection } from './sections/HeroStats.section';
 export { TeamSection } from './sections/Team.section';
 export { ContactSection } from './sections/Contact.section';
 export { FooterSection } from './sections/Footer.section';
