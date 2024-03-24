@@ -48,12 +48,12 @@ const HeroStatSection: React.FC = () => {
                 <img
                     src={HeroAboutDesktop}
                     alt="Hawkhacks stats"
-                    className="hidden w-full md:block"
+                    className="hidden w-full sm:block"
                 />
                 <img
                     src={HeroAboutMobile}
                     alt="Hawkhacks stats"
-                    className="block w-full md:hidden"
+                    className="block w-full sm:hidden"
                 />
                 <div className="space-y-1 pb-4 pl-10 text-left sm:pl-24 sm:pt-12 lg:pl-16 lg:pt-16 2xl:pl-60 2xl:pt-24">
                     <img
@@ -78,7 +78,7 @@ const HeroStatSection: React.FC = () => {
                         </p>
                     </div>
                 </div>
-                <div className="absolute left-1/2 top-2/3 w-2/3 -translate-x-1/2 -translate-y-1/2 transform text-white md:top-3/4 ">
+                <div className="absolute left-1/2 top-2/3 w-2/3 -translate-x-1/2 -translate-y-1/2 transform text-white sm:top-[70%] md:top-3/4 ">
                     <h1 className="mb-5 text-center text-4.5xl uppercase drop-shadow-md lg:text-6.5xl xl:text-7.5xl">
                         About Hawkhacks
                     </h1>
