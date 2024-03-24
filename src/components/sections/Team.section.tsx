@@ -148,7 +148,7 @@ const Member: React.FC<MemberProps> = ({ name, title, profile }) => {
     return (
         <li className="grid lg:grid-cols-5 lg:space-x-4">
             <img
-                className="w-full object-cover lg:col-span-2 lg:aspect-square lg:rounded-full"
+                className="aspect-square w-full rounded-full object-cover lg:col-span-2"
                 src={profile}
                 alt={title}
             />
@@ -168,7 +168,7 @@ const Member: React.FC<MemberProps> = ({ name, title, profile }) => {
 const Department: React.FC<DepartmentProps> = ({ title, members }) => {
     return (
         <div>
-            <h3 className="mb-4 text-xl font-semibold capitalize md:mb-6 lg:mb-8 lg:text-2xl">
+            <h3 className="text-2xl mb-6 text-2xl font-semibold capitalize md:mb-8">
                 {title}
             </h3>
             <ul className="grid-auto-md lg:grid-auto-xl">
@@ -185,11 +185,14 @@ const Department: React.FC<DepartmentProps> = ({ title, members }) => {
 
 const TeamSection = () => {
     return (
-        <section id="team-section" className="relative isolate overflow-hidden bg-[#9f7eca] p-4 md:p-6 lg:p-12">
+        <section
+            id="team-section"
+            className="relative isolate overflow-hidden bg-[#9f7eca] p-4 md:p-6 lg:p-12"
+        >
             <div className="mx-auto mb-10 w-fit lg:mb-12">
                 <img
                     className="mx-auto w-full max-w-fit scale-110 sm:scale-100"
-                    src="src/assets/team/meet-the-team-balloon-banner.svg"
+                    src="src/assets/team/meet-the-team-balloon-banner.webp"
                     alt=""
                 />
                 <img

@@ -1,15 +1,15 @@
 /*
  *
- * Hero Section SVGs 
- * 
+ * Hero Section SVGs
+ *
  */
 export { HeroBackgroundMobile } from './hero/bg-mobile-svg';
 export { HeroBackgroundDesktop } from './hero/bg-desktop-svg';
 
 /*
  *
- * Social Icons SVGs 
- * 
+ * Social Icons SVGs
+ *
  */
 import {
     MailIcon,
@@ -48,8 +48,8 @@ export {
 
 /*
  *
- * Contact Section SVGs 
- * 
+ * Contact Section SVGs
+ *
  */
 import ArrowRightIcon from './contact/arrow-right-icon.svg';
 import BirdParts from './contact/bird_parts.svg';
@@ -82,23 +82,23 @@ export {
 /*
  *
  * Sponsor & Partner logos PNGs
- * 
+ *
  */
 import OnePassword from './logos/1password.png';
 import Assembly from './logos/assembly.png';
 import Balsamiq from './logos/balsamiq.png';
 import CCubed from './logos/ccubed.png';
-import DCL from './logos/dcl.png';
+import Dcl from './logos/dcl.png';
 import DigitalOcean from './logos/digitalocean.png';
 import Echo3D from './logos/echo3d.png';
-import FDM from './logos/fdm.png';
-import FOSSA from './logos/fossa.png';
-import LCS from './logos/lcs.png';
+import Fdm from './logos/fdm.png';
+import Fossa from './logos/fossa.png';
+import Lcs from './logos/lcs.png';
 import LeadingLeaders from './logos/leadingleaders.png';
-import MLH from './logos/mlh.png';
+import Mlh from './logos/mlh.png';
 import Ollon from './logos/ollon.png';
 import Roomiez from './logos/roomiez.png';
-import SOC from './logos/soc.png';
+import Soc from './logos/soc.png';
 import StudentsUnion from './logos/studentsunion.png';
 import Taskade from './logos/taskade.png';
 import Veritas from './logos/veritas.png';
@@ -108,17 +108,17 @@ export {
     Assembly,
     Balsamiq,
     CCubed,
-    DCL,
+    Dcl,
     DigitalOcean,
     Echo3D,
-    FDM,
-    FOSSA,
-    LCS,
+    Fdm,
+    Fossa,
+    Lcs,
     LeadingLeaders,
-    MLH,
+    Mlh,
     Ollon,
     Roomiez,
-    SOC,
+    Soc,
     StudentsUnion,
     Taskade,
     Veritas,
@@ -127,10 +127,10 @@ export {
 /*
  *
  * Team SVGs
- * 
+ *
  */
 import Clouds from './team/clouds.svg';
-import MeetTheTeamBalloon from './team/meet-the-team-balloon-banner.svg';
+import MeetTheTeamBalloon from './team/meet-the-team-balloon-banner.webp';
 import MeetTheTeamBuildingLeft from './team/meet-the-team-building-left.svg';
 import MeetTheTeamBuildingRight from './team/meet-the-team-building-right.svg';
 
