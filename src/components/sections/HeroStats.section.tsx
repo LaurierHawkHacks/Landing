@@ -43,7 +43,7 @@ const HeroStatSection: React.FC = () => {
         <div className="relative">
             <section
                 ref={heroRef}
-                className="hero-section stacked bg-peachPuff sm:place-items-start"
+                className="hero-section stacked bg-gradient-to-b from-peachPuff to-brightUbe sm:place-items-start"
             >
                 <img
                     src={HeroAboutDesktop}
@@ -78,7 +78,7 @@ const HeroStatSection: React.FC = () => {
                         </p>
                     </div>
                 </div>
-                <div className="absolute left-1/2 top-2/3 w-2/3 -translate-x-1/2 -translate-y-1/2 transform text-white sm:top-[70%] md:top-3/4 ">
+                <div className="absolute left-1/2 top-2/3 w-2/3 -translate-x-1/2 -translate-y-1/2 transform text-[#2B6469] sm:top-[70%] md:top-3/4 ">
                     <h1 className="mb-5 text-center text-4.5xl uppercase drop-shadow-md lg:text-6.5xl xl:text-7.5xl">
                         About Hawkhacks
                     </h1>
