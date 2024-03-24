@@ -78,11 +78,11 @@ const HeroStatSection: React.FC = () => {
                         </p>
                     </div>
                 </div>
-                <div className="absolute left-1/2 top-3/4 w-2/3 -translate-x-1/2 -translate-y-1/2 transform text-white ">
+                <div className="absolute left-1/2 top-2/3 w-2/3 -translate-x-1/2 -translate-y-1/2 transform text-white md:top-3/4 ">
                     <h1 className="mb-5 text-center text-4.5xl uppercase drop-shadow-md lg:text-6.5xl xl:text-7.5xl">
                         About Hawkhacks
                     </h1>
-                    <div className="space-y-3 text-center sm:space-y-10">
+                    <div className="space-y-3 text-center text-[#2B6469] sm:space-y-10">
                         <p>
                             HawkHacks came out of a desire to give everyone an
                             equal opportunity to get into tech, whether that be
