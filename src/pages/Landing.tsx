@@ -5,6 +5,7 @@ import {
     ContactSection,
     SponsorFAQSection,
     FooterSection,
+    ScrollButton,
 } from '@components';
 
 const Landing: React.FC = () => {
@@ -20,6 +21,7 @@ const Landing: React.FC = () => {
             <TeamSection />
             <ContactSection />
             <FooterSection />
+            <ScrollButton />
         </div>
     );
 };
