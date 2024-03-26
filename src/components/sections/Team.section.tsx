@@ -189,7 +189,7 @@ const TeamSection = () => {
             className="relative isolate overflow-hidden bg-[#9f7eca] p-5 md:p-8 lg:p-12"
         >
             {/* image at the top */}
-            <div className="mx-auto mb-10 w-fit lg:mb-12">
+            <div className="relative mx-auto mb-10 sm:mb-24 w-fit lg:mb-32">
                 {/* keep the banner only in mobile view */}
                 {/* keep the balloon after mobile view */}
                 <img
@@ -198,12 +198,12 @@ const TeamSection = () => {
                     alt=""
                 />
                 <img
-                    className="mx-auto hidden w-full max-w-fit sm:block"
+                    className="mx-auto hidden w-full max-w-[70rem] sm:block"
                     src="src/assets/team/meet-the-team-balloon-banner.webp"
                     alt=""
                 />
                 <img
-                    className="relative z-10 hidden sm:block"
+                    className="absolute bottom-0 translate-y-1/2  z-10 hidden sm:block"
                     src="src/assets/team/clouds.svg"
                     alt=""
                 />
