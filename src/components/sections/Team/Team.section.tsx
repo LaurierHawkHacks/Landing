@@ -79,7 +79,7 @@ const TeamSection = () => {
                 alt=""
             />
 
-            <div className="mx-auto max-w-7xl space-y-12 pb-64 lg:pb-96">
+            <div className="mx-auto max-w-7xl space-y-12 pb-52 md:pb-80 lg:pb-96">
                 {departments.map((department) => (
                     <Department {...department} key={department.title} />
                 ))}
