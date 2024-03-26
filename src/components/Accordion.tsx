@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
+import { IoIosArrowDown } from 'react-icons/io';
 
 interface AccordionProps {
     items: { question: string; answer: string }[];
@@ -23,7 +23,13 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
                       onClick={() => toggleAccordion(index)}
                     >
                       <h6 className="text-black">{item.question}</h6>
-                      <span>{activeIndex === index ? <IoIosArrowUp /> : <IoIosArrowDown />}</span>
+                      <span
+                        className={`${
+                          activeIndex === index ? 'animate-rotateUp' : 'animate-rotateDown'
+                        }`}
+                      >
+                        <IoIosArrowDown />
+                      </span>
                     </div>
 
                     {activeIndex === index && (
