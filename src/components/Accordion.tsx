@@ -17,7 +17,7 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
             {items.map((item, index) => (
                 <div key={index} className="px-3 w-full md:w-1/2 mb-5">
                     <div
-                        className={`cursor-pointer flex justify-between items-center p-2 bg-white border-black rounded-xl border ${
+                        className={`cursor-pointer flex justify-between items-center p-4 bg-white border-black rounded-xl border ${
                           activeIndex === index ? 'rounded-b-none' : ''
                         }`}
                         onClick={() => toggleAccordion(index)}
@@ -33,7 +33,7 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
                     </div>
 
                     {activeIndex === index && (
-                        <div className="p-2 bg-deepMarine border-black rounded-xl rounded-t-none border">
+                        <div className="p-5 bg-deepMarine border-black rounded-xl rounded-t-none border">
                             {item.answer.split('\\n').map((line, idx, arr) => (
                                 <React.Fragment key={idx}>
                                     <p className="text-white text-sm">
