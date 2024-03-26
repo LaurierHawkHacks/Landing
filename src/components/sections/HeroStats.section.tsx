@@ -44,6 +44,7 @@ const HeroStatSection: React.FC = () => {
             <section
                 ref={heroRef}
                 className="hero-section stacked bg-gradient-to-b from-peachPuff to-brightUbe sm:place-items-start"
+                id="top"
             >
                 <img
                     src={HeroAboutDesktop}
