@@ -193,12 +193,17 @@ const TeamSection = () => {
                 {/* keep the banner only in mobile view */}
                 {/* keep the balloon after mobile view */}
                 <img
-                    className="mx-auto w-full max-w-fit"
+                    className="mx-auto w-full max-w-fit sm:hidden"
+                    src="src/assets/team/meet-the-team-banner.webp"
+                    alt=""
+                />
+                <img
+                    className="mx-auto hidden w-full max-w-fit sm:block"
                     src="src/assets/team/meet-the-team-balloon-banner.webp"
                     alt=""
                 />
                 <img
-                    className="relative z-10"
+                    className="relative z-10 hidden sm:block"
                     src="src/assets/team/clouds.svg"
                     alt=""
                 />
