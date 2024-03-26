@@ -146,19 +146,15 @@ const departments = [
 
 const Member: React.FC<MemberProps> = ({ name, title, profile }) => {
     return (
-        // grid column span is weird
-        // small screen: 1 col a row
-        // medium screen: 2 cols
-        // maximum 3 cols
-        // width can be fixed (84 when small, 128 when big or large viewport)
-        <li className="grid lg:space-x-4">
+        // ?width can be fixed (84 when small, 128 when big or large viewport) (done)
+        <li className="flex items-center gap-x-4">
             <img
-                className="aspect-square w-[84px] rounded-full object-cover"
+                className="aspect-square w-20 rounded-full object-cover lg:w-32"
                 src={profile}
                 alt={title}
             />
 
-            <div className="">
+            <div>
                 <p className="text-lg font-extrabold">{name}</p>
                 <p className="text-base font-normal">{title}</p>
             </div>
@@ -168,11 +164,11 @@ const Member: React.FC<MemberProps> = ({ name, title, profile }) => {
 
 const Department: React.FC<DepartmentProps> = ({ title, members }) => {
     return (
-        <div>
-            <h3 className="mb-6 text-2xl font-semibold capitalize md:mb-8">
+        <div className="department">
+            <h3 className="mb-6 text-3xl font-bold capitalize md:mb-8">
                 {title}
             </h3>
-            <ul>
+            <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
                 {members.map((member, index) => (
                     <Member
                         {...member}
