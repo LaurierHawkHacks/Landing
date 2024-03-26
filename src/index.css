@@ -8,6 +8,7 @@ body {
     font-variant-numeric: lining-nums;
     font-feature-settings: 'lnum' 1;
     font-weight: 600;
+    background-color: #FDDDB7;
 }
 
 @layer base {
