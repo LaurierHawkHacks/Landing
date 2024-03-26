@@ -14,10 +14,10 @@ const Landing: React.FC = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        // Set a delay for the loading animation
+        // Delay for LoadingAnimation
         const timer = setTimeout(() => {
             setIsLoading(false);
-        }, 2000); // 3000ms = 3 seconds
+        }, 2500);
 
         return () => clearTimeout(timer);
     }, []);
@@ -25,6 +25,7 @@ const Landing: React.FC = () => {
     if (isLoading) {
         return <LoadingAnimation />;
     }
+
     return (
         <div className="pt-[5rem] transition ease-in">
             <Navbar />
