@@ -168,7 +168,7 @@ const Department: React.FC<DepartmentProps> = ({ title, members }) => {
             <h3 className="mb-6 text-3xl font-bold capitalize md:mb-8">
                 {title}
             </h3>
-            <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+            <ul className="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8">
                 {members.map((member, index) => (
                     <Member
                         {...member}
@@ -186,14 +186,14 @@ const TeamSection = () => {
         // or right now, i can focus on the section and increase the padding
         <section
             id="team-section"
-            className="relative isolate overflow-hidden bg-[#9f7eca] p-4 md:p-6 lg:p-12"
+            className="relative isolate overflow-hidden bg-[#9f7eca] p-5 md:p-8 lg:p-12"
         >
             {/* image at the top */}
             <div className="mx-auto mb-10 w-fit lg:mb-12">
                 {/* keep the banner only in mobile view */}
                 {/* keep the balloon after mobile view */}
                 <img
-                    className="mx-auto w-full max-w-fit scale-110 sm:scale-100"
+                    className="mx-auto w-full max-w-fit"
                     src="src/assets/team/meet-the-team-balloon-banner.webp"
                     alt=""
                 />
