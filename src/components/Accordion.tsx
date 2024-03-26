@@ -17,25 +17,33 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
             {items.map((item, index) => (
                 <div key={index} className="px-3 w-full md:w-1/2 mb-5">
                     <div
-                      className={`cursor-pointer flex justify-between items-center p-2 bg-white border-black rounded-xl border ${
-                        activeIndex === index ? 'rounded-b-none' : ''
-                      }`}
-                      onClick={() => toggleAccordion(index)}
-                    >
-                      <h6 className="text-black">{item.question}</h6>
-                      <span
-                        className={`${
-                          activeIndex === index ? 'animate-rotateUp' : 'animate-rotateDown'
+                        className={`cursor-pointer flex justify-between items-center p-2 bg-white border-black rounded-xl border ${
+                          activeIndex === index ? 'rounded-b-none' : ''
                         }`}
-                      >
-                        <IoIosArrowDown />
-                      </span>
+                        onClick={() => toggleAccordion(index)}
+                    >
+                        <h6 className="text-black">{item.question}</h6>
+                        <span
+                          className={`${
+                            activeIndex === index ? 'animate-rotateUp' : 'animate-rotateDown'
+                          }`}
+                        >
+                          <IoIosArrowDown />
+                        </span>
                     </div>
 
                     {activeIndex === index && (
-                      <div className="p-2 bg-deepMarine border-black rounded-xl rounded-t-none border">
-                        <h6 className="text-white">{item.answer}</h6>
-                      </div>
+                        <div className="p-2 bg-deepMarine border-black rounded-xl rounded-t-none border">
+                            {item.answer.split('\\n').map((line, idx, arr) => (
+                                <React.Fragment key={idx}>
+                                    <p className="text-white text-sm">
+                                      <span className="text-white">‣ </span>
+                                      { line }
+                                    </p>
+                                    {idx < arr.length - 1 && <br />}
+                                </React.Fragment>
+                            ))}
+                        </div>
                     )}
                 </div>
             ))}
