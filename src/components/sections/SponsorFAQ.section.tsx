@@ -66,7 +66,7 @@ const SponsorFAQSection = () => {
             <img
             src={Hawk}
             alt="Bird"
-            className="absolute left-0 top-0 transform -translate-y-1/4 scale-x-[-1] scale-100 z-[-1]"
+            className="absolute left-0 top-0 transform -translate-y-1/2 scale-x-[-1] scale-100 z-[-1]"
             />
             <img
             src={BirdParts}
