@@ -16,7 +16,7 @@ const departments = [
         title: 'design',
         members: [
             {
-                name: 'John Doe John Doe John Doe',
+                name: 'John Doe',
                 title: 'Designer',
                 profile: 'https://placehold.co/600x400/png',
             },
@@ -146,20 +146,21 @@ const departments = [
 
 const Member: React.FC<MemberProps> = ({ name, title, profile }) => {
     return (
-        <li className="grid lg:grid-cols-5 lg:space-x-4">
+        // grid column span is weird
+        // small screen: 1 col a row
+        // medium screen: 2 cols
+        // maximum 3 cols
+        // width can be fixed (84 when small, 128 when big or large viewport)
+        <li className="grid lg:space-x-4">
             <img
-                className="aspect-square w-full rounded-full object-cover lg:col-span-2"
+                className="aspect-square w-[84px] rounded-full object-cover"
                 src={profile}
                 alt={title}
             />
 
-            <div className="lg:col-span-3">
-                <p className="text-center text-lg font-extrabold lg:text-left">
-                    {name}
-                </p>
-                <p className="text-center text-base font-normal lg:text-left">
-                    {title}
-                </p>
+            <div className="">
+                <p className="text-lg font-extrabold">{name}</p>
+                <p className="text-base font-normal">{title}</p>
             </div>
         </li>
     );
@@ -168,10 +169,10 @@ const Member: React.FC<MemberProps> = ({ name, title, profile }) => {
 const Department: React.FC<DepartmentProps> = ({ title, members }) => {
     return (
         <div>
-            <h3 className="text-2xl mb-6 text-2xl font-semibold capitalize md:mb-8">
+            <h3 className="mb-6 text-2xl font-semibold capitalize md:mb-8">
                 {title}
             </h3>
-            <ul className="grid-auto-md lg:grid-auto-xl">
+            <ul>
                 {members.map((member, index) => (
                     <Member
                         {...member}
@@ -185,29 +186,35 @@ const Department: React.FC<DepartmentProps> = ({ title, members }) => {
 
 const TeamSection = () => {
     return (
+        // should have decide the consistent padding
+        // or right now, i can focus on the section and increase the padding
         <section
             id="team-section"
             className="relative isolate overflow-hidden bg-[#9f7eca] p-4 md:p-6 lg:p-12"
         >
+            {/* image at the top */}
             <div className="mx-auto mb-10 w-fit lg:mb-12">
+                {/* keep the banner only in mobile view */}
+                {/* keep the balloon after mobile view */}
                 <img
                     className="mx-auto w-full max-w-fit scale-110 sm:scale-100"
                     src="src/assets/team/meet-the-team-balloon-banner.webp"
                     alt=""
                 />
                 <img
-                    className="relative z-10 sm:-translate-y-8  md:-translate-y-12 lg:-translate-y-16"
+                    className="relative z-10"
                     src="src/assets/team/clouds.svg"
                     alt=""
                 />
             </div>
 
+            {/* right building image */}
             <img
                 className="absolute right-0 -z-10 hidden translate-x-1/3 lg:block 2xl:translate-x-32"
                 src="src/assets/team/meet-the-team-building-right.svg"
                 alt=""
             />
-
+            {/* left building image */}
             <img
                 className="absolute bottom-0 left-0 -z-10 hidden -translate-x-1/3 translate-y-1/2 lg:block 2xl:translate-y-[30%]"
                 src="src/assets/team/meet-the-team-building-left.svg"
