@@ -3,6 +3,7 @@
  * @components
  *
  */
+export { Accordion } from './Accordion';
 export { Button } from './Button/Button';
 export { NavItems } from './Navbar/NavItems';
 export { Navbar } from './Navbar/Navbar';
