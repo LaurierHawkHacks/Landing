@@ -33,13 +33,15 @@ export default {
             fontFamily: {
                 sans: ['"Raleway"', ...defaultTheme.fontFamily.sans],
             },
-            
+
             colors: {
                 peachPuff: '#FDDDB7',
                 eggShell: '#F1E7DF',
                 dustStorm: '#EBCACC',
                 brightUbe: '#CBAAF4',
                 paleViolet: '#BAA3FA',
+                darkViolet: '#8B6AB6',
+                weirdViolet: '#C8B8F6',
                 blueGreen: '#0FA3B1',
                 cadetBlue: '#0C6975',
                 deepMarine: '#2B6469',
