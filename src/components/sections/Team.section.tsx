@@ -155,8 +155,8 @@ const Member: React.FC<MemberProps> = ({ name, title, profile }) => {
             />
 
             <div>
-                <p className="text-lg font-extrabold">{name}</p>
-                <p className="text-base font-normal">{title}</p>
+                <p className="text-lg lg:text-2xl font-extrabold">{name}</p>
+                <p className="text-base lg:text-lg font-normal">{title}</p>
             </div>
         </li>
     );
