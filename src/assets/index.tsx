@@ -8,29 +8,6 @@ export { HeroBackgroundDesktop } from './hero/bg-desktop-svg';
 
 /*
  *
- * Social Icons SVGs
- *
- */
-import {
-    MailIcon,
-    LinkedInIcon,
-    InstagramIcon,
-    TwitterIcon,
-    FacebookIcon,
-    DevpostIcon,
-} from './social-icons';
-
-export {
-    MailIcon,
-    LinkedInIcon,
-    InstagramIcon,
-    TwitterIcon,
-    FacebookIcon,
-    DevpostIcon,
-};
-
-/*
- *
  * Hero Section SVGs 
  * 
  */
@@ -54,29 +31,17 @@ export {
 import ArrowRightIcon from './contact/arrow-right-icon.svg';
 import BirdParts from './contact/bird_parts.svg';
 import BottomBorder from './contact/bottom-border.svg';
-import DevPost from './contact/devpost.svg';
-import Email from './contact/email.svg';
-import Facebook from './contact/facebook.svg';
 import Hawk from './contact/hawk.svg';
-import Instagram from './contact/instagram.svg';
-import LinkedIn from './contact/linkedin.svg';
 import MiddleBody from './contact/middle-body.svg';
 import TopBorder from './contact/top-border.svg';
-import Twitter from './contact/twitter.svg';
 
 export {
     ArrowRightIcon,
     BirdParts,
     BottomBorder,
-    DevPost,
-    Email,
-    Facebook,
     Hawk,
-    Instagram,
-    LinkedIn,
     MiddleBody,
     TopBorder,
-    Twitter,
 };
 
 /*
