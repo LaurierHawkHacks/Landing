@@ -3,6 +3,23 @@ export default {
     content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
     theme: {
         extend: {
+            keyframes: {
+                rotateUp: {
+                  '0%': { transform: 'rotate(0deg)' },
+                  '100%': { transform: 'rotate(-180deg)' },
+                },
+
+                rotateDown: {
+                  '0%': { transform: 'rotate(-180deg)' },
+                  '100%': { transform: 'rotate(0deg)' },
+                },
+            },
+
+            animation: {
+                rotateUp: 'rotateUp 0.3s forwards',
+                rotateDown: 'rotateDown 0.3s forwards',
+            },
+
             fontSize: {
                 '2.5xl': ['1.6875rem', '1.2'],
                 '3.5xl': ['2rem', '1.2'],
@@ -12,9 +29,11 @@ export default {
                 '7.5xl': ['5.25rem', '1'],
                 '8.5xl': ['6.875rem', '1'],
             },
+
             fontFamily: {
                 sans: ['"Raleway"', ...defaultTheme.fontFamily.sans],
             },
+            
             colors: {
                 peachPuff: '#FDDDB7',
                 eggShell: '#F1E7DF',
