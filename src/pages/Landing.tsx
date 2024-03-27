@@ -13,14 +13,17 @@ import {
 const Landing: React.FC = () => {
     const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-        // Delay for LoadingAnimation
-        const timer = setTimeout(() => {
-            setIsLoading(false);
-        }, 3000);
+        useEffect(() => {
+            const handleLoad = () => {
+                setTimeout(() => {
+                    setIsLoading(false);
+                }, 1000); 
+            };
 
-        return () => clearTimeout(timer);
-    }, []);
+            window.addEventListener('load', handleLoad);
+
+            return () => window.removeEventListener('load', handleLoad);
+        }, []);
 
     if (isLoading) {
         return <LoadingAnimation />;
