@@ -17,4 +17,5 @@ export { HeroStatSection } from './sections/HeroStats.section';
 export { TeamSection } from './sections/Team.section';
 export { ContactSection } from './sections/Contact.section';
 export { FooterSection } from './sections/Footer.section';
-export { SponsorFAQSection } from './sections/SponsorFAQ.section';
+export { SponsorFAQSection } from './sections/Sponsor.section';
+export { SponsorFAQAndTeamSection } from './sections/Faqandteam.section';

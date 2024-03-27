@@ -7,7 +7,7 @@ const ContactSection: React.FC = () => {
 
             <img src={TopBorder} className="w-full z-0" />
             <img src={Hawk} className="absolute right-0 top-0 transform -translate-y-1/4 scale-100 -z-10" />
-            <img src={BirdParts} className="absolute right-0 top-0 transform -translate-y-[42.5%] translate-x-[1%] scale-100 z-50 lg:-translate-x-[5%]" />
+            <img src={BirdParts} className="absolute right-0 top-0 transform -translate-y-[42.5%] scale-100 z-50 lg:-translate-x-[5%]" />
             <div className="absolute xs:text-center xs:ml-16 inset-x-0 mx-auto max-w-4xl px-5 pt-4 sm:pt-8 md:pt-12 lg:pt-32 xl:pt-48 z-10">
                 <div className="contact-info text-center sm:text-left sm:mt-5 md:mt-8 lg:mt-0 mb-2 sm:mb-4 md:mb-6 lg:mb-12 text-left">
                     <h2 className="font-raleway text-2xl sm:text-4xl md:text-5xl lg:text-8xl font-extrabold leading-tight tracking-wider text-[#32848C] md:leading-tight lg:leading-[7.3125rem]">CONTACT US</h2>

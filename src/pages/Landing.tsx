@@ -1,10 +1,10 @@
 import {
     Navbar,
     HeroStatSection,
-    TeamSection,
     ContactSection,
     SponsorFAQSection,
     FooterSection,
+    SponsorFAQAndTeamSection
 } from '@components';
 
 const Landing: React.FC = () => {
@@ -17,9 +17,10 @@ const Landing: React.FC = () => {
             <Navbar />
             <HeroStatSection />
             <SponsorFAQSection />
-            <TeamSection />
+            <SponsorFAQAndTeamSection/>
             <ContactSection />
             <FooterSection />
+            
         </div>
     );
 };

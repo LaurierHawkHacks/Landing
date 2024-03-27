@@ -1,5 +1,4 @@
 import React from "react";
-import Accordion from "../Accordion";
 import { TopBorder, BottomBorder, MiddleBody, Hawk, BirdParts } from "@assets";
 
 import {
@@ -24,29 +23,6 @@ import {
 } from "@assets";
 
 const SponsorFAQSection = () => {
-  const faqData = [
-    {
-      question: "So, what exactly is a hackathon?",
-      answer: "Our product is...",
-    },
-    { question: "Do I need a team?", answer: "Our product is..." },
-    {
-      question: "When and where is HawkHacks happening?",
-      answer: "Our product is...",
-    },
-    { question: "Are there any prizes?", answer: "Our product is..." },
-    { question: "How much does it cost?", answer: "Our product is..." },
-    {
-      question: "Who can attend? Do I need to be a skilled leet programmer?",
-      answer: "Our product is...",
-    },
-    {
-      question: "This is a cool FAQ but I still have questions!",
-      answer: "Our product is...",
-    },
-    // Add more FAQ items as needed
-  ];
-
   return (
     <div>
       <section id="sponsors-section" className="sponsor-section relative z-20">
@@ -54,7 +30,7 @@ const SponsorFAQSection = () => {
         <img
           src={Hawk}
           alt="Bird"
-          className="absolute left-0 top-0 transform -translate-y-1/4 scale-x-[-1] scale-100 z-[-1]"
+          className="absolute left-0 top-0 transform -translate-y-1/4 scale-x[-1] scale-100 z-[-1]"
         />
         <img
           src={BirdParts}
@@ -161,8 +137,6 @@ const SponsorFAQSection = () => {
                 />
               </div>
             </div>
-
-            {/* FAQ Section*/}
           </div>
         </div>
         <img
@@ -170,21 +144,6 @@ const SponsorFAQSection = () => {
           alt="Bottom Border"
           className="w-full z-10"
         />
-      </section>
-      <section
-        id="faq-section"
-        className="py-12 lg:py bg-brightUbe bg-faq-image bg-cover"
-      >
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-10">
-            <h2 className="mt-60 text-center text-white font-bold drop-shadow-md">
-              FAQ
-            </h2>
-          </div>
-          <div className="max-w-6xl mx-auto">
-            <Accordion items={faqData} />
-          </div>
-        </div>
       </section>
     </div>
   );

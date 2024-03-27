@@ -9,8 +9,8 @@ import {
 
 const FooterSection = () => {
     return (
-        <footer className="p-4 sm:text-center">
-            <div className="sm:space-x-2 md:space-x-3">
+        <footer className="p-12 sm:text-center bg-[#9f7eca]">
+            <div className="sm:space-x-2 md:space-x-3 mt-12">
                 <MailIcon />
                 <LinkedInIcon />
                 <InstagramIcon />
@@ -18,7 +18,7 @@ const FooterSection = () => {
                 <FacebookIcon />
                 <DevpostIcon />
             </div>
-            <div className="links flex flex-col sm:flex-row sm:justify-center sm:gap-3 ">
+            <div className="links flex flex-col sm:flex-row sm:justify-center sm:gap-3">
                 <a
                     className="underline hover:text-[#0FA3B1] focus:text-[#1D7882]"
                     href="#"
