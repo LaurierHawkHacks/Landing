@@ -55,8 +55,8 @@ const HeroStatSection: React.FC = () => {
                     alt="Hawkhacks stats"
                     className="block w-full sm:hidden"
                 />
-                <div className="mx-auto mt-16 lg:ml-20 lg:mt-24 xl:ml-24 xl:mt-32">
-                    <div className="sm:space-y-2 ">
+                <div className="px-4 sm:px-0 mx-auto mt-16 lg:ml-20 lg:mt-24 xl:ml-24 xl:mt-32">
+                    <div className="sm:space-y-2">
                         <h1 className="bg-gradient-to-b from-[#2B6469] to-[#00CEDB] bg-clip-text text-4xl font-extrabold text-transparent sm:text-5.5xl lg:text-8xl xl:text-8.5xl">
                             HawkHacks 2024
                         </h1>
