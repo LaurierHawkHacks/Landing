@@ -8,6 +8,7 @@ export { Button } from './Button/Button';
 export { NavItems } from './Navbar/NavItems';
 export { Navbar } from './Navbar/Navbar';
 export { Menu } from './Navbar/Menu';
+export { LoadingAnimation } from './LoadingAnimation';
 export { ScrollButton } from './Scroll.button';
 export { SocialIcons } from './SocialIcons';
 
