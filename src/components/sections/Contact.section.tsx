@@ -15,11 +15,11 @@ const ContactSection: React.FC = () => {
             <img src={TopBorder} className="z-0 w-full" />
             <img
                 src={Hawk}
-                className="absolute right-0 top-0 z-[-1] w-full max-w-5xl -translate-x-2  -translate-y-1/2    md:-translate-x-3"
+                className="absolute right-0 top-0 z-[-1] w-full max-w-5xl -translate-x-2  -translate-y-1/2 md:-translate-x-3 xl:right-10 2xl:right-52"
             />
             <img
                 src={BirdParts}
-                className="absolute right-0 top-0 z-50 w-full max-w-5xl -translate-y-[42.5%]"
+                className="absolute right-0 top-0 z-50 w-full max-w-5xl -translate-y-[42.5%] xl:right-10 2xl:right-52"
             />
             <div className="absolute inset-x-0 z-10 mx-auto max-w-4xl px-5 pt-10 sm:pt-16 md:pt-20 lg:pt-32 xl:pt-32">
                 <div className="contact-info mb-2 text-center sm:mb-4 sm:text-left md:mb-6 lg:mb-12">
