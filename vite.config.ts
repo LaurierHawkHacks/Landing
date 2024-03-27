@@ -2,7 +2,10 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import * as path from 'path';
 
+const isProduction = process.env.NODE_ENV === 'production';
+
 export default defineConfig({
+    base: isProduction ? '/Landing/' : '/',
     plugins: [react()],
     resolve: {
         alias: {
