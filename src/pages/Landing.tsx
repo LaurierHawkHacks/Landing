@@ -9,45 +9,38 @@ import {
     ScrollButton,
     LoadingAnimation,
 } from '@components';
+import { HeroAboutDesktop } from '@assets';
 
 const Landing: React.FC = () => {
     const [isLoading, setIsLoading] = useState(true);
+    const [componentLoaded, setComponentLoaded] = useState(false);
 
     useEffect(() => {
-        const handleLoad = () => {
-            setTimeout(() => {
-                setIsLoading(false);
-            }, 1000); // Extra second after load event
-        };
-
-        window.addEventListener('load', handleLoad);
-
-        if (document.readyState === 'complete') {
-            setTimeout(() => {
-                setIsLoading(false);
-            }, 1000);
-        }
-
-        return () => window.removeEventListener('load', handleLoad);
+        const image = new Image();
+        image.src = HeroAboutDesktop;
+        image.onload = () => setComponentLoaded(true);
     }, []);
 
+    useEffect(() => {
+        if (componentLoaded) {
+            setIsLoading(false);
+        }
+    }, [componentLoaded]);
+
+    if (isLoading) {
+        return <LoadingAnimation />;
+    }
+
     return (
-        <>
-            {isLoading && (
-                <div className="loading-overlay">
-                    <LoadingAnimation />
-                </div>
-            )}
-            <div className={`pt-[5rem] transition ease-in ${isLoading ? 'hidden' : 'block'}`}>
-                <Navbar />
-                <HeroStatSection />
-                <SponsorFAQSection />
-                <TeamSection />
-                <ContactSection />
-                <FooterSection />
-                <ScrollButton />
-            </div>
-        </>
+        <div className="pt-[5rem] transition ease-in">
+            <Navbar />
+            <HeroStatSection />
+            <SponsorFAQSection />
+            <TeamSection />
+            <ContactSection />
+            <FooterSection />
+            <ScrollButton />
+        </div>
     );
 };
 
