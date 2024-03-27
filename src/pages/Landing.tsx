@@ -17,7 +17,7 @@ const Landing: React.FC = () => {
         // Delay for LoadingAnimation
         const timer = setTimeout(() => {
             setIsLoading(false);
-        }, 2500);
+        }, 3000);
 
         return () => clearTimeout(timer);
     }, []);
