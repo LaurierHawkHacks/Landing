@@ -48,8 +48,9 @@ const ContactSection: React.FC = () => {
                             />
                             <button
                                 type="submit"
-                                className="absolute inset-y-0 right-0 flex w-12 items-center justify-center rounded-r-lg px-4 focus:bg-transparent focus:outline-none"
+                                className="absolute inset-y-0 right-0 flex items-center justify-center px-4 w-12 rounded-r-lg focus:bg-transparent focus:outline-none shadow-none"               
                             >
+                                
                                 <img src={ArrowRightIcon} alt="Submit" />
                             </button>
                         </div>
