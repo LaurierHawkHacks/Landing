@@ -13,32 +13,41 @@ import {
 const Landing: React.FC = () => {
     const [isLoading, setIsLoading] = useState(true);
 
-        useEffect(() => {
-            const handleLoad = () => {
-                setTimeout(() => {
-                    setIsLoading(false);
-                }, 1000); 
-            };
+    useEffect(() => {
+        const handleLoad = () => {
+            setTimeout(() => {
+                setIsLoading(false);
+            }, 1000); // Extra second after load event
+        };
 
-            window.addEventListener('load', handleLoad);
+        window.addEventListener('load', handleLoad);
 
-            return () => window.removeEventListener('load', handleLoad);
-        }, []);
+        if (document.readyState === 'complete') {
+            setTimeout(() => {
+                setIsLoading(false);
+            }, 1000);
+        }
 
-    if (isLoading) {
-        return <LoadingAnimation />;
-    }
+        return () => window.removeEventListener('load', handleLoad);
+    }, []);
 
     return (
-        <div className="pt-[5rem] transition ease-in">
-            <Navbar />
-            <HeroStatSection />
-            <SponsorFAQSection />
-            <TeamSection />
-            <ContactSection />
-            <FooterSection />
-            <ScrollButton />
-        </div>
+        <>
+            {isLoading && (
+                <div className="loading-overlay">
+                    <LoadingAnimation />
+                </div>
+            )}
+            <div className={`pt-[5rem] transition ease-in ${isLoading ? 'hidden' : 'block'}`}>
+                <Navbar />
+                <HeroStatSection />
+                <SponsorFAQSection />
+                <TeamSection />
+                <ContactSection />
+                <FooterSection />
+                <ScrollButton />
+            </div>
+        </>
     );
 };
 
