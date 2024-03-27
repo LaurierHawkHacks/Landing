@@ -1,12 +1,12 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route, HashRouter } from 'react-router-dom'
 import { Landing } from '@pages'
 
 const Router = () => (
-  <BrowserRouter>
+  <HashRouter basename='/Landing'>
     <Routes>
       <Route path="/" element={<Landing />} />
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export { Router };
