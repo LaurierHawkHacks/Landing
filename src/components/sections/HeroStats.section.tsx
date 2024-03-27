@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
 import {
-    HawkHacksLogo,
     HeroAboutMobile,
     HeroAboutAirBalloon,
     HeroAboutDesktop,
@@ -56,12 +55,12 @@ const HeroStatSection: React.FC = () => {
                     alt="Hawkhacks stats"
                     className="block w-full sm:hidden"
                 />
-                <div className="mx-auto mt-16 lg:mt-16 xl:mt-24">
+                <div className="mx-auto mt-16 lg:ml-20 lg:mt-24 xl:ml-24 xl:mt-32">
                     <div className="sm:space-y-2 ">
-                        <h1 className="bg-gradient-to-b from-[#2B6469] to-[#00CEDB] bg-clip-text  text-4xl font-extrabold text-transparent sm:text-5.5xl lg:text-7xl xl:text-8.5xl">
+                        <h1 className="bg-gradient-to-b from-[#2B6469] to-[#00CEDB] bg-clip-text text-4xl font-extrabold text-transparent sm:text-5.5xl lg:text-8xl xl:text-8.5xl">
                             HawkHacks 2024
                         </h1>
-                        <p className="text-base font-semibold text-[#2B6469] lg:text-xl xl:text-3.5xl">
+                        <p className="text-base text-[#2B6469] lg:text-3xl xl:text-3.5xl">
                             Hosted at Wilfrid Laurier University
                         </p>
                     </div>
@@ -75,7 +74,10 @@ const HeroStatSection: React.FC = () => {
                     </div>
                 </div>
                 <div className="absolute left-1/2 top-2/3 w-2/3 -translate-x-1/2 -translate-y-1/2 transform text-[#1D4549] sm:top-[70%] md:top-3/4 ">
-                    <h1 className="mb-5 text-center text-4.5xl uppercase drop-shadow-md lg:text-6.5xl xl:text-7.5xl" id="about-section">
+                    <h1
+                        className="mb-5 text-center text-4.5xl uppercase drop-shadow-md lg:text-6.5xl xl:text-7.5xl"
+                        id="about-section"
+                    >
                         About Hawkhacks
                     </h1>
                     <div className="space-y-3 text-center text-[#1D4549] lg:space-y-10">
