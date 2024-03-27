@@ -15,14 +15,14 @@ const ContactSection: React.FC = () => {
             <img src={TopBorder} className="z-0 w-full" />
             <img
                 src={Hawk}
-                className="absolute right-0 top-0 -z-10 transform -translate-y-1/2 scale-90 md:scale-100 md:-translate-y-1/2"
+                className="absolute right-0 top-0 z-[-1] w-full max-w-5xl -translate-x-2  -translate-y-1/2 md:-translate-x-3 xl:right-10 2xl:right-52"
             />
             <img
                 src={BirdParts}
-                className="absolute right-0 top-0 z-50 -translate-y-[42.5%] translate-x-[1%] scale-100 transform lg:-translate-x-[5%]"
+                className="absolute right-0 top-0 z-50 w-full max-w-5xl -translate-y-[42.5%] xl:right-10 2xl:right-52"
             />
 
-            <div className="absolute inset-x-0 z-10 mx-auto max-w-4xl px-4 pt-10 sm:pt-16 md:pt-20 md:px-8 lg:px-12 lg:pt-32 xl:pt-32">
+            <div className="absolute inset-x-0 z-10 mx-auto max-w-4xl px-4 pt-10 sm:pt-16 md:px-8 md:pt-20 lg:px-12 lg:pt-32 xl:pt-32">
                 <div className="contact-info mb-2 text-center sm:mb-4 sm:text-left md:mb-6 lg:mb-12">
                     <h2 className="font-raleway text-2xl font-extrabold leading-tight tracking-wider text-[#32848C] sm:text-4xl md:text-5xl lg:text-8xl">
                         CONTACT US
@@ -48,9 +48,8 @@ const ContactSection: React.FC = () => {
                             />
                             <button
                                 type="submit"
-                                className="absolute inset-y-0 right-0 flex items-center justify-center px-4 w-12 rounded-r-lg focus:bg-transparent focus:outline-none shadow-none"               
+                                className="absolute inset-y-0 right-0 flex w-12 items-center justify-center rounded-r-lg px-4 shadow-none focus:bg-transparent focus:outline-none"
                             >
-                                
                                 <img src={ArrowRightIcon} alt="Submit" />
                             </button>
                         </div>
