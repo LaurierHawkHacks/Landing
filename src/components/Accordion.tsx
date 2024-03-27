@@ -17,10 +17,9 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
             {items.map((item, index) => (
                 <div key={index} className="w-full">
                     <div
-                        className={`cursor-pointer flex justify-between items-center p-4 bg-white border-black rounded-xl border ${
-                          activeIndex === index ? 'rounded-b-none' : ''
-                        }`}
+                        className={`cursor-pointer flex justify-between items-center p-4 bg-white border-black rounded-xl border select-none ${activeIndex === index ? 'rounded-b-none' : ''}`}
                         onClick={() => toggleAccordion(index)}
+                        role="button"
                     >
                         <h6 className="text-black">{item.question}</h6>
                         <span
