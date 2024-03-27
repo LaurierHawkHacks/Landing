@@ -16,9 +16,10 @@ const Landing: React.FC = () => {
     const [componentLoaded, setComponentLoaded] = useState(false);
 
     useEffect(() => {
-        const image = new Image();
-        image.src = HeroAboutDesktop;
-        image.onload = () => setComponentLoaded(true);
+        const desktopImage = new Image();
+
+        desktopImage.src = HeroAboutDesktop;
+        desktopImage.onload = () => setComponentLoaded(true);
     }, []);
 
     useEffect(() => {
