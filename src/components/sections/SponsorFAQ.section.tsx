@@ -71,12 +71,12 @@ const SponsorFAQSection = () => {
                 <img
                     src={Hawk}
                     alt="Bird"
-                    className="absolute left-0 top-0 z-[-1] -translate-y-1/2 scale-100 scale-x-[-1] transform"
+                    className="absolute left-0 top-0 z-[-1] w-full max-w-5xl -translate-y-1/2 scale-x-[-1] xl:left-10 2xl:left-52"
                 />
                 <img
                     src={BirdParts}
                     alt="Bird Parts"
-                    className="absolute left-0 top-0 z-50 -translate-x-[1%] -translate-y-[42.5%] scale-100 scale-x-[-1] transform lg:translate-x-[5%]"
+                    className="md: absolute left-0 top-0 z-50 w-full max-w-5xl  -translate-x-2 -translate-y-[42.5%] scale-x-[-1] md:-translate-x-3 xl:left-10 2xl:left-52"
                 />
                 <div className="relative">
                     <img
@@ -85,7 +85,7 @@ const SponsorFAQSection = () => {
                         className="z-10 h-[810px] w-full object-cover sm:h-[925px] md:h-[925px] lg:h-[950px]"
                     />
                     <div className="absolute bottom-0 left-0 right-0 top-6 flex flex-col items-center space-y-6 pt-[110px] sm:space-y-12">
-                        <div className="absolute left-1/2 top-6 -translate-x-1/2 transform ">
+                        <div className="absolute left-1/2 top-6 -translate-x-1/2 transform">
                             <div className="font-raleway vs:text-[60px] text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg sm:text-[80px]">
                                 SPONSORS
                             </div>
