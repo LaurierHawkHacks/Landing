@@ -3,6 +3,7 @@ import {
     HeroAboutMobile,
     HeroAboutAirBalloon,
     HeroAboutDesktop,
+    HawkHacksLogo,
 } from '@assets';
 
 const HeroStatSection: React.FC = () => {
@@ -55,12 +56,18 @@ const HeroStatSection: React.FC = () => {
                     alt="Hawkhacks stats"
                     className="block w-full sm:hidden"
                 />
-                <div className="px-4 sm:px-0 mx-auto mt-16 lg:ml-20 lg:mt-24 xl:ml-24 xl:mt-32">
-                    <div className="sm:space-y-2">
-                        <h1 className="bg-gradient-to-b from-[#2B6469] to-[#00CEDB] bg-clip-text text-4xl font-extrabold text-transparent sm:text-5.5xl lg:text-8xl xl:text-8.5xl">
+                <div className="mx-auto mt-16 px-4 sm:ml-16 sm:mt-16 sm:px-0 lg:ml-20 lg:mt-24 xl:ml-24 xl:mt-32 2xl:mt-10">
+                    <div>
+                        {/* lg:w-36 */}
+                        <img
+                            className="hidden aspect-square sm:mb-4 sm:block sm:w-28 lg:mb-10 xl:w-36 2xl:w-60"
+                            src={HawkHacksLogo}
+                            alt="Hawkhacks logo"
+                        />
+                        <h1 className="bg-gradient-to-b from-[#2B6469] to-[#00CEDB] bg-clip-text text-4xl font-extrabold text-transparent sm:text-5.5xl lg:text-7xl 2xl:text-7.5xl">
                             HawkHacks 2024
                         </h1>
-                        <p className="text-base text-[#2B6469] lg:text-3xl xl:text-3.5xl">
+                        <p className="text-base text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
                             Hosted at Wilfrid Laurier University
                         </p>
                     </div>
