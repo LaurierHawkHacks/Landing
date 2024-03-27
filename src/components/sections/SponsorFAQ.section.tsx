@@ -235,13 +235,13 @@ const SponsorFAQSection = () => {
                 id="faq-section"
                 className="lg:py bg-brightUbe bg-faq-image bg-cover py-12"
             >
-                <div className="container mx-auto max-w-7xl px-4">
+                <div className="container mx-auto px-4 md:px-8 lg:px-12">
                     <div className="mb-10 text-center">
                         <h2 className="mt-60 text-center font-bold text-white drop-shadow-md lg:text-6.5xl xl:text-7.5xl">
                             FAQ
                         </h2>
                     </div>
-                    <div className="mx-auto">
+                    <div className="mx-auto max-w-6xl">
                         <Accordion items={faqData} />
                     </div>
                 </div>

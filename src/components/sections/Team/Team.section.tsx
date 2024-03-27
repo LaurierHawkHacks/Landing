@@ -45,7 +45,7 @@ const TeamSection = () => {
     return (
         <section
             id="team-section"
-            className="relative isolate overflow-hidden bg-[#9f7eca] p-5 md:p-8 lg:p-12"
+            className="relative isolate overflow-hidden bg-[#9f7eca] p-4 md:p-8 lg:p-12"
         >
             {/* top images */}
             <div className="relative mx-auto mb-10 w-fit sm:mb-24 lg:mb-32">
