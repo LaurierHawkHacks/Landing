@@ -15,7 +15,7 @@ const ContactSection: React.FC = () => {
             <img src={TopBorder} className="z-0 w-full" />
             <img
                 src={Hawk}
-                className="absolute right-0 top-0 -z-10 -translate-y-1/2 scale-100 transform"
+                className="absolute right-0 top-0 -z-10 transform -translate-y-1/2 scale-90 md:scale-100 md:-translate-y-1/2"
             />
             <img
                 src={BirdParts}
