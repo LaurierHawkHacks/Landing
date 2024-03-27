@@ -4,7 +4,7 @@ const FooterSection = () => {
     return (
         <footer className="px-4 text-center bg-darkViolet py-20">
             <div className="flex justify-center items-center pb-6">
-                <SocialIcons />
+                <SocialIcons color="#C8B8F6"/>
             </div>
             <div className="links flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
                 <a
@@ -20,7 +20,7 @@ const FooterSection = () => {
                     Become a Sponsor
                 </a>
             </div>
-            <p className="mt-4 lg:mt-8 2xl:text-2xl">
+            <p className="mt-4 lg:mt-8 2xl:text-2xl text-weirdViolet">
                 Copyright © 2024 HawkHacks
             </p>
         </footer>
