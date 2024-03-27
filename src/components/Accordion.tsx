@@ -15,7 +15,7 @@ const Accordion: React.FC<AccordionProps> = ({ items }) => {
     return (
         <div className="py-20 flex flex-wrap">
             {items.map((item, index) => (
-                <div key={index} className="px-3 w-full md:w-1/2 mb-5">
+                <div key={index} className="w-full md:w-1/2 mb-5">
                     <div
                         className={`cursor-pointer flex justify-between items-center p-4 bg-white border-black rounded-xl border ${
                           activeIndex === index ? 'rounded-b-none' : ''

@@ -2,7 +2,7 @@ import { SocialIcons } from "@components";
 
 const FooterSection = () => {
     return (
-        <footer className="p-4 text-center bg-darkViolet py-20">
+        <footer className="px-4 text-center bg-darkViolet py-20">
             <div className="flex justify-center items-center pb-6">
                 <SocialIcons />
             </div>
