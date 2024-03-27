@@ -14,7 +14,7 @@ interface DepartmentProps {
 const Department: React.FC<DepartmentProps> = ({ title, members }) => {
     return (
         <div className="department">
-            <h3 className="mb-6 text-3xl font-bold capitalize md:mb-8">
+            <h3 className="mb-6 text-3xl text-white drop-shadow-md font-bold capitalize md:mb-8">
                 {title}
             </h3>
             <ul className="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8">
@@ -27,10 +27,10 @@ const Department: React.FC<DepartmentProps> = ({ title, members }) => {
                         />
 
                         <div>
-                            <p className="text-lg font-extrabold lg:text-2xl">
+                            <p className="text-lg text-white drop-shadow-md font-extrabold lg:text-2xl">
                                 {member.name}
                             </p>
-                            <p className="text-base font-normal lg:text-lg">
+                            <p className="text-base drop-shadow-md text-white font-normal lg:text-lg">
                                 {member.title}
                             </p>
                         </div>
