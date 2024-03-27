@@ -56,7 +56,8 @@ const HeroStatSection: React.FC = () => {
                     alt="Hawkhacks stats"
                     className="block w-full sm:hidden"
                 />
-                <div className="px-4 sm:px-0">
+                {/*  */}
+                <div className="px-4 sm:px-0 space-y-1 pb-4 pl-10 text-left sm:pl-24 sm:pt-12 lg:pl-16 lg:pt-16 2xl:pl-60 2xl:pt-24">
                     <img
                         className="inline-block aspect-square w-16 sm:mx-0 lg:w-28 xl:w-32 2xl:w-52"
                         src={HawkHacksLogo}
