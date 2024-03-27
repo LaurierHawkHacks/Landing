@@ -14,28 +14,40 @@ const Landing: React.FC = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        // Delay for LoadingAnimation
-        const timer = setTimeout(() => {
-            setIsLoading(false);
-        }, 3000);
+        const handleLoad = () => {
+            setTimeout(() => {
+                setIsLoading(false);
+            }, 1000); // Extra second after load event
+        };
 
-        return () => clearTimeout(timer);
+        window.addEventListener('load', handleLoad);
+
+        if (document.readyState === 'complete') {
+            setTimeout(() => {
+                setIsLoading(false);
+            }, 1000);
+        }
+
+        return () => window.removeEventListener('load', handleLoad);
     }, []);
 
-    if (isLoading) {
-        return <LoadingAnimation />;
-    }
-
     return (
-        <div className="pt-[5rem] transition ease-in">
-            <Navbar />
-            <HeroStatSection />
-            <SponsorFAQSection />
-            <TeamSection />
-            <ContactSection />
-            <FooterSection />
-            <ScrollButton />
-        </div>
+        <>
+            {isLoading && (
+                <div className="loading-overlay">
+                    <LoadingAnimation />
+                </div>
+            )}
+            <div className={`pt-[5rem] transition ease-in ${isLoading ? 'hidden' : 'block'}`}>
+                <Navbar />
+                <HeroStatSection />
+                <SponsorFAQSection />
+                <TeamSection />
+                <ContactSection />
+                <FooterSection />
+                <ScrollButton />
+            </div>
+        </>
     );
 };
 
