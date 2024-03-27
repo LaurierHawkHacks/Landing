@@ -1,4 +1,3 @@
-import React from 'react';
 import { Accordion } from '@components';
 import { TopBorder, BottomBorder, MiddleBody, Hawk, BirdParts } from '@assets';
 
