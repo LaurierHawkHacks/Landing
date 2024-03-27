@@ -49,6 +49,7 @@ export default {
                 copper: '#DE846E',
                 khakiYellow: '#F0E698',
                 dimGray: '#4A4F50',
+                accordionHover: '#D4EBED',
                 tbrand: '#2B6469',
                 'tbrand-hover': '#3F9098',
                 'tbrand-mouse-down': '#1D7882',
