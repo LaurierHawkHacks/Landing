@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
 import {
-    HawkHacksLogo,
     HeroAboutMobile,
     HeroAboutAirBalloon,
     HeroAboutDesktop,
+    HawkHacksLogo,
 } from '@assets';
 
 const HeroStatSection: React.FC = () => {
@@ -56,17 +56,17 @@ const HeroStatSection: React.FC = () => {
                     alt="Hawkhacks stats"
                     className="block w-full sm:hidden"
                 />
-                <div className="space-y-1 pb-4 pl-10 text-left sm:pl-24 sm:pt-12 lg:pl-16 lg:pt-16 2xl:pl-60 2xl:pt-24">
-                    <img
-                        className="inline-block aspect-square w-16 sm:mx-0 lg:w-28 xl:w-32 2xl:w-52"
-                        src={HawkHacksLogo}
-                        alt="Hawkhacks logo"
-                    />
-                    <div className="sm:space-y-2">
-                        <h1 className="bg-gradient-to-b from-[#2B6469] to-[#00CEDB] bg-clip-text  text-4xl font-extrabold text-transparent sm:text-5.5xl lg:text-7xl xl:text-8.5xl">
+                <div className="mx-auto mt-16 px-4 sm:ml-16 sm:mt-16 sm:px-0 lg:ml-20 lg:mt-24 xl:ml-24 xl:mt-32 2xl:mt-10">
+                    <div>
+                        <img
+                            className="hidden aspect-square sm:mb-4 sm:block sm:w-28 lg:mb-10 xl:w-36 2xl:w-60"
+                            src={HawkHacksLogo}
+                            alt="Hawkhacks logo"
+                        />
+                        <h1 className="bg-gradient-to-b from-[#2B6469] to-[#00CEDB] bg-clip-text text-4xl font-extrabold text-transparent sm:text-5.5xl lg:text-7xl 2xl:text-7.5xl">
                             HawkHacks 2024
                         </h1>
-                        <p className="text-base font-semibold text-[#2B6469] lg:text-xl xl:text-3.5xl">
+                        <p className="text-base text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
                             Hosted at Wilfrid Laurier University
                         </p>
                     </div>
@@ -80,7 +80,10 @@ const HeroStatSection: React.FC = () => {
                     </div>
                 </div>
                 <div className="absolute left-1/2 top-2/3 w-2/3 -translate-x-1/2 -translate-y-1/2 transform text-[#1D4549] sm:top-[70%] md:top-3/4 ">
-                    <h1 className="mb-5 text-center text-4.5xl uppercase drop-shadow-md lg:text-6.5xl xl:text-7.5xl" id="about-section">
+                    <h1
+                        className="mb-5 text-center text-4.5xl uppercase drop-shadow-md lg:text-6.5xl xl:text-7.5xl"
+                        id="about-section"
+                    >
                         About Hawkhacks
                     </h1>
                     <div className="space-y-3 text-center text-[#1D4549] lg:space-y-10">
