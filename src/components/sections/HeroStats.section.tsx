@@ -58,7 +58,6 @@ const HeroStatSection: React.FC = () => {
                 />
                 <div className="mx-auto mt-16 px-4 sm:ml-16 sm:mt-16 sm:px-0 lg:ml-20 lg:mt-24 xl:ml-24 xl:mt-32 2xl:mt-10">
                     <div>
-                        {/* lg:w-36 */}
                         <img
                             className="hidden aspect-square sm:mb-4 sm:block sm:w-28 lg:mb-10 xl:w-36 2xl:w-60"
                             src={HawkHacksLogo}
