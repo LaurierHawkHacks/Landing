@@ -12,6 +12,9 @@ const ComingSoonPage: React.FC = () => {
     return (
         <div className="flex justify-center items-center h-screen">
             <div className="max-w-md p-8 bg-white shadow-lg rounded-lg">
+            <Link to="/" className="absolute left-4 top-4 bg-deepMarine hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded">
+                    Back to Landing
+                </Link>
                 <h1 className="text-5xl font-bold text-center mb-4 text-deepMarine">Coming Soon</h1>
                 <p className="text-center mb-4">
                     This page is under construction. Stay tuned!
