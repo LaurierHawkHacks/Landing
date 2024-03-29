@@ -11,6 +11,33 @@ import { SocialIcons } from '@components';
 import axios from 'axios';
 
 const ContactSection: React.FC = () => {
+    const [email, setEmail] = useState('');
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        try {
+            const response = await axios.post(
+                'https://us6.api.mailchimp.com/3.0/lists/050d487d87/members',
+                {
+                    email_address: email,
+                    status: 'subscribed',
+                },
+                {
+                    headers: {
+                        Authorization: `c98c4f298fa4008840f46ab61638f69d-us6`,
+                        'Content-Type': 'application/json',
+                    },
+                }
+            );
+
+            if (response.status === 200) {
+                console.log('Subscribed successfully!');
+            }
+        } catch (error) {
+            console.error('Subscription error:', error);
+        }
+    };
     return (
         <section className="contact-section relative z-10">
             <img src={TopBorder} className="z-0 w-full" />
@@ -40,19 +67,26 @@ const ContactSection: React.FC = () => {
                     </h3>
                     <div className="mt-2 flex flex-col items-center sm:items-start md:mt-4">
                         <div className="relative mb-4 w-full sm:mb-6 sm:w-1/2 lg:max-w-lg">
-                            {' '}
-                            {/* Adjusted margin-bottom for small screens */}
-                            <input
-                                type="email"
-                                placeholder="Enter your email"
-                                className="h-12 w-full rounded-lg border-2 border-gray-400 bg-white pl-4 pr-12 text-sm focus:outline-none"
-                            />
-                            <button
-                                type="submit"
-                                className="absolute inset-y-0 right-0 flex w-12 items-center justify-center rounded-r-lg px-4 shadow-none focus:bg-transparent focus:outline-none"
+                            <form
+                                onSubmit={handleSubmit}
+                                className="contact-section"
                             >
-                                <img src={ArrowRightIcon} alt="Submit" />
-                            </button>
+                                {' '}
+                                {/* Adjusted margin-bottom for small screens */}
+                                <input
+                                    type="email"
+                                    placeholder="Enter your email"
+                                    className="h-12 w-full rounded-lg border-2 border-gray-400 bg-white pl-4 pr-12 text-sm focus:outline-none"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                />
+                                <button
+                                    type="submit"
+                                    className="absolute inset-y-0 right-0 flex w-12 items-center justify-center rounded-r-lg px-4 shadow-none focus:bg-transparent focus:outline-none"
+                                >
+                                    <img src={ArrowRightIcon} alt="Submit" />
+                                </button>
+                            </form>
                         </div>
                         <div className="pt-2 sm:pt-4">
                             <SocialIcons color="#32848C" />
