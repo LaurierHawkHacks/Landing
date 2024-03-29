@@ -17,8 +17,7 @@ const links = [
 const rowStyle = 'flex-row items-center';
 const colStyle = 'flex-col lg:p-0';
 const navbarHeightPx = 80;
-const scrollPaddingPx = -(navbarHeightPx + 20); // navbarHeight + extra padding
-
+const scrollPaddingPx = -navbarHeightPx; // navbarHeight + extra padding
 
 const NavItems: React.FC<NavItemsProps> = ({ isHorizontal, handleClick }) => {
     return (
