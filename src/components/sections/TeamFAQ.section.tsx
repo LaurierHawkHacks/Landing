@@ -48,20 +48,15 @@ const Department: React.FC<DepartmentProps> = ({ title, members }) => {
 // not separate enough...
 const TeamSection = () => {
     return (
-        <div className='bg-brightUbe'>
-            <section
-                id="faq-section"
-                className="stacked -mb-24  bg-cover"
-            >
+        <div className="bg-brightUbe">
+            <section id="faq-section" className="stacked -mb-24 bg-cover">
                 <img src={FaqBackground} alt="" className="w-full" />
                 <div className="container mx-auto px-4">
-                    <div className="mb-10 text-center">
-                        <h2 className="mt-60 text-center font-bold text-white drop-shadow-md">
-                            FAQ
-                        </h2>
-                    </div>
+                    <h2 className="mt-20 text-center font-bold text-white drop-shadow-md md:mt-32">
+                        FAQ
+                    </h2>
 
-                    <div className="mx-auto max-w-6xl pb-60">
+                    <div className="mx-auto max-w-6xl pb-12">
                         <Accordion items={faqData} />
                     </div>
                 </div>
@@ -69,10 +64,10 @@ const TeamSection = () => {
 
             <section
                 id="team-section"
-                className="relative isolate  p-4 md:p-8 lg:p-12"
+                className="relative isolate p-4 md:p-8 lg:p-12 md:-translate-y-[10%] xl:-translate-y-[15%]"
             >
                 {/* remove the overflow, and set negative offset works like a charm */}
-                <div className="relative mx-auto mb-10 w-fit sm:mb-24 lg:mb-32 ">
+                <div className="relative mx-auto mb-10 w-fit sm:mb-24 lg:mb-32">
                     <img
                         className="mx-auto w-full max-w-fit sm:hidden"
                         src="src/assets/team/meet-the-team-banner.webp"
