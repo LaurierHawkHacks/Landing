@@ -9,45 +9,42 @@ import {
     ScrollButton,
     LoadingAnimation,
 } from '@components';
+import { HeroAboutDesktop } from '@assets';
 
 const Landing: React.FC = () => {
     const [isLoading, setIsLoading] = useState(true);
+    const [componentLoaded, setComponentLoaded] = useState(false);
+    const [timerFinished, setTimerFinished] = useState(false);
 
     useEffect(() => {
-        const handleLoad = () => {
-            setTimeout(() => {
-                setIsLoading(false);
-            }, 1000); // Extra second after load event
-        };
+        const desktopImage = new Image();
+        desktopImage.src = HeroAboutDesktop;
+        desktopImage.onload = () => setComponentLoaded(true);
 
-        window.addEventListener('load', handleLoad);
-
-        if (document.readyState === 'complete') {
-            setTimeout(() => {
-                setIsLoading(false);
-            }, 1000);
-        }
-
-        return () => window.removeEventListener('load', handleLoad);
+        setTimeout(() => setTimerFinished(true), 2000);
     }, []);
 
+    // Once the timer and component are finished -> display the page
+    useEffect(() => {
+        if (componentLoaded && timerFinished) {
+            setIsLoading(false);
+        }
+    }, [componentLoaded, timerFinished]);
+
+    if (isLoading) {
+        return <LoadingAnimation />;
+    }
+
     return (
-        <>
-            {isLoading && (
-                <div className="loading-overlay">
-                    <LoadingAnimation />
-                </div>
-            )}
-            <div className={`pt-[5rem] transition ease-in ${isLoading ? 'hidden' : 'block'}`}>
-                <Navbar />
-                <HeroStatSection />
-                <SponsorFAQSection />
-                <TeamSection />
-                <ContactSection />
-                <FooterSection />
-                <ScrollButton />
-            </div>
-        </>
+        <div className="pt-[5rem] transition ease-in">
+            <Navbar />
+            <HeroStatSection />
+            <SponsorFAQSection />
+            <TeamSection />
+            <ContactSection />
+            <FooterSection />
+            <ScrollButton />
+        </div>
     );
 };
 
