@@ -7,11 +7,11 @@ interface NavItemsProps {
 
 const links = [
     { title: 'About', href: 'about-anchor' },
-    { title: 'Sponsors', href: 'sponsors-anchor' },
-    { title: 'Partners', href: 'partners-anchor' },
-    { title: 'FAQ', href: 'faq-anchor' },
+    { title: 'Sponsors', href: 'sponsors-anchor', offset: 200 },
+    { title: 'Partners', href: 'partners-anchor', offset: 20 },
+    { title: 'FAQ', href: 'faq-anchor', offset: 120 },
     { title: 'The Team', href: 'team-anchor' },
-    { title: 'Contact', href: 'contact-anchor' },
+    { title: 'Contact', href: 'contact-anchor', offset: 500 },
 ];
 
 const rowStyle = 'flex-row items-center';
@@ -32,7 +32,11 @@ const NavItems: React.FC<NavItemsProps> = ({ isHorizontal, handleClick }) => {
                         to={link.href}
                         smooth
                         duration={500}
-                        offset={scrollPaddingPx}
+                        offset={
+                            link.offset
+                                ? -link.offset + scrollPaddingPx
+                                : scrollPaddingPx
+                        }
                         className="text-md w-full"
                         onClick={handleClick}
                     >
