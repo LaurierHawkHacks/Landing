@@ -8,8 +8,8 @@ export { HeroBackgroundDesktop } from './hero/bg-desktop-svg';
 
 /*
  *
- * Hero Section SVGs 
- * 
+ * Hero Section SVGs
+ *
  */
 import HeroAboutDesktop from './hero-about/hero-about-desktop.svg';
 import HeroAboutMobile from './hero-about/hero-about-mobile.svg';
@@ -35,14 +35,7 @@ import Hawk from './contact/hawk.svg';
 import MiddleBody from './contact/middle-body.svg';
 import TopBorder from './contact/top-border.svg';
 
-export {
-    ArrowRightIcon,
-    BirdParts,
-    BottomBorder,
-    Hawk,
-    MiddleBody,
-    TopBorder,
-};
+export { ArrowRightIcon, BirdParts, BottomBorder, Hawk, MiddleBody, TopBorder };
 
 /*
  *
@@ -88,6 +81,17 @@ export {
     Taskade,
     Veritas,
 };
+
+/*
+ *
+ * FAQ Section
+ *
+ */
+import FaqBackground from './faq/bg-desktop.svg';
+
+export {
+  FaqBackground
+}
 
 /*
  *
