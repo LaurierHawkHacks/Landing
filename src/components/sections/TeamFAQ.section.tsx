@@ -86,7 +86,7 @@ const TeamSection = () => {
                 </div>
 
                 <img
-                    className="absolute right-0 -z-10 hidden translate-x-1/3 lg:block 2xl:translate-x-32"
+                    className="absolute right-0 -z-10 hidden lg:block "
                     src="src/assets/team/meet-the-team-building-right.svg"
                     alt=""
                 />
