@@ -52,139 +52,45 @@ const SponsorFAQSection = () => {
                                 SPONSORS
                             </div>
                         </div>
+                        
+                    <div className="flex overflow-x-auto overflow-y-hidden space-x-4 px-4 sm:space-x-16 py-3">
+                        <img src={Veritas} alt="Veritas" className="sm:h-15 h-14" />
+                        <img src={Assembly} alt="Assembly" className="sm:h-15 h-12" />
+                        <img src={Soc} alt="Soc" className="sm:h-15 h-12" />
+                        <img src={Fdm} alt="FDM" className="sm:h-15 h-12" />
+                        <img src={Echo3D} alt="Echo3D" className="sm:h-15 h-12" />
+                    </div>
 
-                        <div className="flex items-center justify-center space-x-4 px-4 sm:space-x-16">
-                            <div className="sm:h-15 flex h-14 items-center justify-center">
-                                <img
-                                    src={Veritas}
-                                    alt="Veritas"
-                                    className="max-h-full"
-                                />
-                            </div>
-                            <div className="sm:h-15 flex h-12 items-center justify-center">
-                                <img
-                                    src={Assembly}
-                                    alt="Assembly"
-                                    className="max-h-full"
-                                />
-                            </div>
-                            <div className="sm:h-15 flex h-12 items-center justify-center">
-                                <img
-                                    src={Soc}
-                                    alt="Soc"
-                                    className="max-h-full"
-                                />
-                            </div>
-                            <div className="sm:h-15 flex h-12 items-center justify-center">
-                                <img
-                                    src={Fdm}
-                                    alt="FDM"
-                                    className="max-h-full"
-                                />
-                            </div>
-                            <div className="sm:h-15 flex h-12 items-center justify-center">
-                                <img
-                                    src={Echo3D}
-                                    alt="Echo3D"
-                                    className="max-h-full"
-                                />
-                            </div>
+                    <div className="flex overflow-x-auto overflow-y-hidden space-x-6 px-4 py-3">
+                        <img src={LeadingLeaders} alt="LeadingLeaders" className="sm:h-15 h-12" />
+                        <img src={Ollon} alt="Ollon" className="sm:h-15 h-12" />
+                        <img src={OnePassword} alt="OnePassword" className="sm:h-15 h-12" />
+                        <img src={Roomiez} alt="Roomiez" className="sm:h-15 h-12" />
+                        <img src={Balsamiq} alt="Balsamiq" className="sm:h-15 h-12" />
+                    </div>
+
+                    <div className="flex overflow-x-auto overflow-y-hidden space-x-6 px-5 py-4">
+                        <img src={DigitalOcean} alt="DigitalOcean" className="h-12 sm:h-14" />
+                        <img src={Taskade} alt="Taskade" className="h-12 sm:h-14" />
+                    </div>
+
+                    <div className="flex overflow-x-auto overflow-y-hidden py-120">
+                        <img src={Dcl} alt="DCL" className="h-28 sm:h-46 mb-10" />
+                    </div>
+
+                    <div className="mt-20" id="partners-section">
+                        <div className="font-raleway vs:text-[60px] mt-6 text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg sm:text-[80px]">
+                            PARTNERS
                         </div>
-                        <div className="flex items-center justify-center space-x-6 px-4">
-                            <div className="sm:h-15 flex h-12 items-center justify-center">
-                                <img
-                                    src={LeadingLeaders}
-                                    alt="Leading"
-                                    className="max-h-full"
-                                />
-                            </div>
-                            <div className="sm:h-15 flex h-12 items-center justify-center">
-                                <img
-                                    src={Ollon}
-                                    alt="Ollon"
-                                    className="max-h-full"
-                                />
-                            </div>
-                            <div className="sm:h-15 flex h-12 items-center justify-center">
-                                <img
-                                    src={OnePassword}
-                                    alt="1Password"
-                                    className="max-h-full"
-                                />
-                            </div>
-                            <div className="sm:h-15 flex h-12 items-center justify-center">
-                                <img
-                                    src={Roomiez}
-                                    alt="Roomiez"
-                                    className="max-h-full"
-                                />
-                            </div>
-                            <div className="sm:h-15 flex h-12 items-center justify-center">
-                                <img
-                                    src={Balsamiq}
-                                    alt="Balsamiq"
-                                    className="max-h-full"
-                                />
-                            </div>
-                        </div>
-                        <div className="flex items-center justify-center space-x-6 px-4">
-                            <div className="h-13 flex items-center justify-center sm:h-16">
-                                <img
-                                    src={DigitalOcean}
-                                    alt="DigitalOcean"
-                                    className="max-h-full"
-                                />
-                            </div>
-                            <div className="h-13 flex items-center justify-center sm:h-16">
-                                <img
-                                    src={Taskade}
-                                    alt="Taskade"
-                                    className="max-h-full"
-                                />
-                            </div>
-                        </div>
-                        <div className="flex items-center justify-center px-8">
-                            <div className="flex h-28 items-center justify-center sm:h-32">
-                                <img
-                                    src={Dcl}
-                                    alt="DCL"
-                                    className="max-h-full"
-                                />
-                            </div>
-                        </div>
-                        <div className="mt-20" id="partners-section">
-                            <div className="font-raleway vs:text-[60px] mt-6 text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg sm:text-[80px]">
-                                PARTNERS
-                            </div>
-                            <div className="flex flex-wrap items-center justify-center gap-3">
-                                <img
-                                    src={StudentsUnion}
-                                    alt="Student Union"
-                                    className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
-                                />
-                                <img
-                                    src={CCubed}
-                                    alt="Ccubed"
-                                    className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
-                                />
-                                <img
-                                    src={Mlh}
-                                    alt="MLH"
-                                    className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
-                                />
-                                <img
-                                    src={Fossa}
-                                    alt="Fossa"
-                                    className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
-                                />
-                                <img
-                                    src={Lcs}
-                                    alt="LCS"
-                                    className="sm:h-18 md:h-21 col-span-2 h-16 justify-self-center md:col-span-1 lg:h-24 xl:h-24"
-                                />
-                            </div>
+                        <div className="flex overflow-x-auto overflow-y-hidden space-x-3 px-4 py-2">
+                            <img src={StudentsUnion} alt="Student Union" className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32" />
+                            <img src={CCubed} alt="Ccubed" className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32" />
+                            <img src={Mlh} alt="MLH" className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32" />
+                            <img src={Fossa} alt="Fossa" className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32" />
+                            <img src={Lcs} alt="LCS" className="h-16 sm:h-18 md:h-21 lg:h-24 xl:h-32" />
                         </div>
                     </div>
+                </div>
                 </div>
                 <img
                     src={BottomBorder}
