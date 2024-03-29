@@ -82,7 +82,7 @@ const HeroStatSection: React.FC = () => {
                 <div className="absolute left-1/2 top-2/3 w-2/3 -translate-x-1/2 -translate-y-1/2 transform text-[#1D4549] sm:top-[70%] md:top-3/4 ">
                     <h1
                         className="mb-5 text-center text-4.5xl uppercase drop-shadow-md lg:text-6.5xl xl:text-7.5xl"
-                        id="about-section"
+                        id="about-anchor"
                     >
                         About Hawkhacks
                     </h1>

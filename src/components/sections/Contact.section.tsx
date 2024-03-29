@@ -11,7 +11,7 @@ import { SocialIcons } from '@components';
 
 const ContactSection: React.FC = () => {
     return (
-        <section className="contact-section relative z-10">
+        <section className="relative z-10">
             <img src={TopBorder} className="z-0 w-full" />
             <img
                 src={Hawk}
@@ -24,7 +24,10 @@ const ContactSection: React.FC = () => {
 
             <div className="absolute inset-x-0 z-10 mx-auto max-w-4xl px-4 pt-10 sm:pt-16 md:px-8 md:pt-20 lg:px-12 lg:pt-32 xl:pt-32">
                 <div className="contact-info mb-2 text-center sm:mb-4 sm:text-left md:mb-6 lg:mb-12">
-                    <h2 className="font-raleway text-2xl font-extrabold leading-tight tracking-wider text-[#32848C] sm:text-4xl md:text-5xl lg:text-8xl">
+                    <h2
+                        id="contact-anchor"
+                        className="font-raleway text-2xl font-extrabold leading-tight tracking-wider text-[#32848C] sm:text-4xl md:text-5xl lg:text-8xl"
+                    >
                         CONTACT US
                     </h2>
                     <p className="text-md lg:text-lg xl:mt-9">

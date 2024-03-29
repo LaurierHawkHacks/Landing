@@ -25,10 +25,7 @@ import {
 const SponsorFAQSection = () => {
     return (
         <div>
-            <section
-                id="sponsors-section"
-                className="sponsor-section relative z-20"
-            >
+            <section className="sponsor-section relative z-20">
                 <img src={TopBorder} alt="Top Border" className="z-10 w-full" />
                 <img
                     src={Hawk}
@@ -48,7 +45,10 @@ const SponsorFAQSection = () => {
                     />
                     <div className="absolute bottom-0 left-0 right-0 top-6 flex flex-col items-center space-y-6 pt-[110px] sm:space-y-12">
                         <div className="absolute left-1/2 top-6 -translate-x-1/2 transform">
-                            <div className="font-raleway vs:text-[60px] text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg sm:text-[80px]">
+                            <div
+                                id="sponsors-anchor"
+                                className="font-raleway vs:text-[60px] text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg sm:text-[80px]"
+                            >
                                 SPONSORS
                             </div>
                         </div>
@@ -152,8 +152,11 @@ const SponsorFAQSection = () => {
                                 />
                             </div>
                         </div>
-                        <div className="mt-20" id="partners-section">
-                            <div className="font-raleway vs:text-[60px] mt-6 text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg sm:text-[80px]">
+                        <div className="mt-20">
+                            <div
+                                className="font-raleway vs:text-[60px] mt-6 text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg sm:text-[80px]"
+                                id="partners-anchor"
+                            >
                                 PARTNERS
                             </div>
                             <div className="flex flex-wrap items-center justify-center gap-3">
