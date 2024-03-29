@@ -17,10 +17,8 @@ const links = [
 
 const rowStyle = 'flex-row items-center';
 const colStyle = 'flex-col lg:p-0';
-// got a hardcoded value here?
-// do i want to get the value dynamically?
-// maybe no need, the navbar is always 80px
-const scrollPaddingPx = -80;
+const navbarHeightPx = 80;
+const scrollPaddingPx = -(navbarHeightPx + 20); // navbarHeight + extra padding
 
 const NavItems: React.FC<NavItemsProps> = ({ isHorizontal, handleClick }) => {
     return (
@@ -37,9 +35,9 @@ const NavItems: React.FC<NavItemsProps> = ({ isHorizontal, handleClick }) => {
                         duration={500}
                         offset={scrollPaddingPx}
                         onClick={() => {
-                          console.log("hello world")
-                          // hide the side menu
-                          
+                            console.log('hello world');
+                            // hide the side menu
+                            // hideMenu()
                         }}
                         className="text-md"
                     >
