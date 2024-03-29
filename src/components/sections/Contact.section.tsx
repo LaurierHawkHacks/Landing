@@ -46,7 +46,7 @@ const ContactSection: React.FC = () => {
                                 onClick={handleSubmit}
                                 className="inset-y-0 flex w-1/3 justify-center rounded-r-lg px-4 sm:w-2/3 sm:justify-start"
                             >
-                                Newsletter
+                                Subscribe
                             </Button>
                         </div>
                         <div className="pt-2 sm:pt-4">
