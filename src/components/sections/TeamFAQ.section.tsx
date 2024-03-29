@@ -64,8 +64,8 @@ const TeamSection = () => {
 
             <section className="relative isolate p-4 md:-translate-y-[10%] md:p-8 lg:p-12 xl:-translate-y-[15%]">
                 <div
-                    className="relative mx-auto mb-10 w-fit sm:mb-24 lg:mb-32"
                     id="team-anchor"
+                    className="relative mx-auto mb-10 w-fit sm:mb-24 lg:mb-32"
                 >
                     <img
                         className="mx-auto w-full max-w-fit sm:hidden"
