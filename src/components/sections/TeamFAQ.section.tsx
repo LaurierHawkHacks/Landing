@@ -1,3 +1,4 @@
+import { FaqBackground } from '@assets';
 import { departments, faqData } from './data';
 import { Accordion } from '@components';
 
@@ -15,7 +16,7 @@ interface DepartmentProps {
 const Department: React.FC<DepartmentProps> = ({ title, members }) => {
     return (
         <div className="department">
-            <h3 className="mb-6 text-3xl text-white drop-shadow-md font-bold capitalize md:mb-8">
+            <h3 className="mb-6 text-3xl font-bold capitalize text-white drop-shadow-md md:mb-8">
                 {title}
             </h3>
             <ul className="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8">
@@ -28,10 +29,10 @@ const Department: React.FC<DepartmentProps> = ({ title, members }) => {
                         />
 
                         <div>
-                            <p className="text-lg text-white drop-shadow-md font-extrabold lg:text-2xl">
+                            <p className="text-lg font-extrabold text-white drop-shadow-md lg:text-2xl">
                                 {member.name}
                             </p>
-                            <p className="text-base drop-shadow-md text-white font-normal lg:text-lg">
+                            <p className="text-base font-normal text-white drop-shadow-md lg:text-lg">
                                 {member.title}
                             </p>
                         </div>
@@ -42,41 +43,53 @@ const Department: React.FC<DepartmentProps> = ({ title, members }) => {
     );
 };
 
+// the naming is confusing...
+// faq section first, but the meet the team banner is within faq section...
+// not separate enough...
 const TeamSection = () => {
     return (
-        <div>
+        <div className='bg-brightUbe'>
             <section
                 id="faq-section"
-                className="py-16 lg:py-24 bg-brightUbe bg-faq-image bg-cover"
+                className="stacked -mb-24  bg-cover"
             >
+                <img src={FaqBackground} alt="" className="w-full" />
                 <div className="container mx-auto px-4">
-                    <div className="text-center mb-10">
-                        <h2 className="mt-60 text-center text-white font-bold drop-shadow-md">FAQ</h2>
+                    <div className="mb-10 text-center">
+                        <h2 className="mt-60 text-center font-bold text-white drop-shadow-md">
+                            FAQ
+                        </h2>
                     </div>
 
-                    <div className="max-w-6xl mx-auto pb-60">
+                    <div className="mx-auto max-w-6xl pb-60">
                         <Accordion items={faqData} />
                     </div>
-
-                    <div className="mx-auto mt-60 mb-10 w-fit lg:mb-12">
-                            <img
-                                className="mx-auto w-full max-w-fit scale-110 sm:scale-100"
-                                src="src/assets/team/meet-the-team-balloon-banner.webp"
-                                alt=""
-                            />
-                            <img
-                                className="relative z-10 sm:-translate-y-8  md:-translate-y-12 lg:-translate-y-16 "
-                                src="src/assets/team/clouds.svg"
-                                alt=""
-                            />
-                        </div>
-                    </div>
+                </div>
             </section>
-            
+
             <section
                 id="team-section"
-                className="relative isolate overflow-hidden bg-brightUbe p-4 md:p-8 lg:p-12"
+                className="relative isolate  p-4 md:p-8 lg:p-12"
             >
+                {/* remove the overflow, and set negative offset works like a charm */}
+                <div className="relative mx-auto mb-10 w-fit sm:mb-24 lg:mb-32 ">
+                    <img
+                        className="mx-auto w-full max-w-fit sm:hidden"
+                        src="src/assets/team/meet-the-team-banner.webp"
+                        alt=""
+                    />
+                    <img
+                        className="mx-auto hidden w-full max-w-[70rem] sm:block"
+                        src="src/assets/team/meet-the-team-balloon-banner.webp"
+                        alt=""
+                    />
+                    <img
+                        className="absolute bottom-0 z-10  hidden translate-y-1/2 sm:block"
+                        src="src/assets/team/clouds.svg"
+                        alt=""
+                    />
+                </div>
+
                 <img
                     className="absolute right-0 -z-10 hidden translate-x-1/3 lg:block 2xl:translate-x-32"
                     src="src/assets/team/meet-the-team-building-right.svg"
