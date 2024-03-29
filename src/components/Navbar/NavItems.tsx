@@ -20,7 +20,7 @@ const colStyle = 'flex-col lg:p-0';
 const navbarHeightPx = 80;
 const scrollPaddingPx = -(navbarHeightPx + 20); // navbarHeight + extra padding
 
-const NavItems: React.FC<NavItemsProps> = ({ isHorizontal, handleClick }) => {
+const NavItems: React.FC<NavItemsProps> = ({ isHorizontal }) => {
     return (
         <ul
             className={`flex gap-7 text-deepMarine ${
@@ -28,18 +28,13 @@ const NavItems: React.FC<NavItemsProps> = ({ isHorizontal, handleClick }) => {
             }`}
         >
             {links.map((link) => (
-                <li key={link.title}>
+                <li key={link.title} onClick={() => console.log("do something")}>
                     <Link
                         to={link.href}
                         smooth
                         duration={500}
                         offset={scrollPaddingPx}
-                        onClick={() => {
-                            console.log('hello world');
-                            // hide the side menu
-                            // hideMenu()
-                        }}
-                        className="text-md"
+                        className="text-md w-full border"
                     >
                         {link.title}
                     </Link>
