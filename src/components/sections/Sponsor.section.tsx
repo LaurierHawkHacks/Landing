@@ -24,85 +24,86 @@ import {
 const SponsorFAQSection = () => {
     const carouselRefs = useRef([]);
     useEffect(() => {
-        let animationFrameIds = new Map(); // Track animation frame IDs for each carousel
-        const resizeObservers = [];
+        let animationFrameIds = new Map();
+        
+        const initializeScrollAnimation = (carousel) => {
+            const totalAnimationTime = 8000; // Total cycle time for moving, excluding pauses
+            const pauseDuration = 2000; // Duration of pause at each end
+            let pauseScheduled = false;
+            let animationStartTime = Date.now() - pauseDuration; // Start with a pause
+            let lastAnimationPhase = 'pause';
     
-        const initializeScrollAnimation = (carousel, breakpoint) => {
             const handleScroll = () => {
                 const totalWidth = carousel.scrollWidth;
                 const visibleWidth = carousel.clientWidth;
-                if (visibleWidth >= breakpoint) {
-                    // Logic for automated scrolling with easing
-                    const totalAnimationTime = 8000; // Total cycle time for moving, excluding pauses
-                    const pauseDuration = 2000; // Duration of pause at each end
-                    let animationStartTime = Date.now() - pauseDuration; // Start with a pause
-                    let pauseScheduled = false;
-                    let lastAnimationPhase = 'pause';
-                    const buffer = visibleWidth * 0.03;
-                    const scrollDistance = totalWidth - visibleWidth + buffer;
+                const buffer = visibleWidth * 0.03; // Slightly less buffer for tighter right side
+                const scrollDistance = totalWidth - visibleWidth + buffer;
     
-                    const easeInOutCubic = (t) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+                const easeInOutCubic = (t) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
     
-                    const updatePosition = () => {
-                        const currentTime = Date.now();
-                        const timeElapsedSinceStart = currentTime - animationStartTime;
-                        const cycleDuration = totalAnimationTime + pauseDuration * 2;
-                        const cyclePosition = timeElapsedSinceStart % cycleDuration;
+                const updatePosition = () => {
+                    const currentTime = Date.now();
+                    const timeElapsedSinceStart = currentTime - animationStartTime;
+                    const cycleDuration = totalAnimationTime + pauseDuration * 2; // Total duration including pauses
+                    const cyclePosition = timeElapsedSinceStart % cycleDuration;
     
-                        let currentPosition;
+                    let currentPosition;
     
-                        if (cyclePosition < pauseDuration) {
-                            currentPosition = 0;
-                            if (lastAnimationPhase !== 'pause') {
-                                pauseScheduled = false;
-                            }
-                        } else if (cyclePosition < totalAnimationTime / 2 + pauseDuration) {
-                            const progress = (cyclePosition - pauseDuration) / (totalAnimationTime / 2);
-                            currentPosition = easeInOutCubic(progress) * scrollDistance;
-                            lastAnimationPhase = 'forward';
-                        } else if (cyclePosition < totalAnimationTime / 2 + pauseDuration * 2) {
-                            currentPosition = scrollDistance;
-                            if (!pauseScheduled) {
-                                lastAnimationPhase = 'pause';
-                                pauseScheduled = true;
-                            }
-                        } else {
-                            const progress = (cyclePosition - totalAnimationTime / 2 - pauseDuration * 2) / (totalAnimationTime / 2);
-                            currentPosition = scrollDistance - easeInOutCubic(progress) * scrollDistance;
-                            lastAnimationPhase = 'backward';
+                    if (cyclePosition < pauseDuration) {
+                        currentPosition = 0;
+                        if (lastAnimationPhase !== 'pause') {
+                            pauseScheduled = false;
                         }
-    
-                        carousel.style.transform = `translateX(-${currentPosition}px)`;
-                        animationFrameIds.set(carousel, requestAnimationFrame(updatePosition));
-                    };
-    
-                    animationFrameIds.set(carousel, requestAnimationFrame(updatePosition));
-                } else {
-                    // Stop animation and clear transformation if below breakpoint
-                    if (animationFrameIds.has(carousel)) {
-                        cancelAnimationFrame(animationFrameIds.get(carousel));
-                        carousel.style.transform = '';
-                        animationFrameIds.delete(carousel);
+                    } else if (cyclePosition < totalAnimationTime / 2 + pauseDuration) {
+                        const progress = (cyclePosition - pauseDuration) / (totalAnimationTime / 2);
+                        currentPosition = easeInOutCubic(progress) * scrollDistance;
+                        lastAnimationPhase = 'forward';
+                    } else if (cyclePosition < totalAnimationTime / 2 + pauseDuration * 2) {
+                        currentPosition = scrollDistance;
+                        if (!pauseScheduled) {
+                            lastAnimationPhase = 'pause';
+                            pauseScheduled = true;
+                        }
+                    } else {
+                        const progress = (cyclePosition - totalAnimationTime / 2 - pauseDuration * 2) / (totalAnimationTime / 2);
+                        currentPosition = scrollDistance - easeInOutCubic(progress) * scrollDistance;
+                        lastAnimationPhase = 'backward';
                     }
+    
+                    carousel.style.transform = `translateX(-${currentPosition}px)`;
+                    animationFrameIds.set(carousel, requestAnimationFrame(updatePosition));
+                };
+    
+                // Only start the animation if the carousel is actually wider than the viewport
+                if (scrollDistance > buffer) {
+                    animationFrameIds.set(carousel, requestAnimationFrame(updatePosition));
                 }
             };
     
-            const observer = new ResizeObserver(handleScroll);
-            observer.observe(carousel);
-            resizeObservers.push(observer);
+            // Observe carousel for resize events
+            const resizeObserver = new ResizeObserver((entries) => {
+                entries.forEach(entry => {
+                    if (animationFrameIds.has(carousel)) {
+                        cancelAnimationFrame(animationFrameIds.get(carousel));
+                        carousel.style.transform = ''; // Reset transform to prevent jumpiness
+                    }
+                    handleScroll(); // Re-evaluate whether to start or stop the animation based on new size
+                });
+            });
+            resizeObserver.observe(carousel);
         };
     
-        // Initialize scrolling for each carousel with its corresponding breakpoint
-        carouselRefs.current.forEach((carousel, index) => {
-            const carouselWidth = carousel.scrollWidth;
-            const breakpoint = carouselWidth - carousel.clientWidth + carousel.clientWidth * 0.03; // Dynamic breakpoint based on content width
-            initializeScrollAnimation(carousel, breakpoint);
+        carouselRefs.current.forEach((carousel) => {
+            initializeScrollAnimation(carousel);
         });
     
         return () => {
-            // Clean up observers and cancel animation frames
-            resizeObservers.forEach((observer, index) => observer.unobserve(carouselRefs.current[index]));
-            animationFrameIds.forEach((id, carousel) => cancelAnimationFrame(id));
+            carouselRefs.current.forEach((carousel) => {
+                if (animationFrameIds.has(carousel)) {
+                    cancelAnimationFrame(animationFrameIds.get(carousel));
+                }
+            });
+            // This is where you would also disconnect your resize observers if you had any
         };
     }, []);
     
