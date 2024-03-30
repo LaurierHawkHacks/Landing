@@ -56,10 +56,9 @@ const HeroStatSection: React.FC = () => {
                     alt="Hawkhacks stats"
                     className="block w-full sm:hidden"
                 />
-                {/*  */}
-                <div className="px-4 sm:px-0 space-y-1 pb-4 pl-10 text-left sm:pl-24 sm:pt-12 lg:pl-16 lg:pt-16 2xl:pl-60 2xl:pt-24">
+                <div className="mt-16 px-4 sm:ml-16 sm:mt-16 sm:px-0 lg:ml-20 lg:mt-24 xl:ml-24 xl:mt-32 2xl:mt-10">
                     <img
-                        className="inline-block aspect-square w-16 sm:mx-0 lg:w-28 xl:w-32 2xl:w-52"
+                        className="hidden aspect-square sm:mb-4 sm:block sm:w-28 lg:mb-10 xl:w-36 2xl:w-60"
                         src={HawkHacksLogo}
                         alt="Hawkhacks logo"
                     />
@@ -73,18 +72,18 @@ const HeroStatSection: React.FC = () => {
                     </div>
                     <div>
                         <p className="text-xl font-bold text-[#2B6469] sm:hidden sm:text-2xl">
-                            April 5th - 7th
+                            May 17 - 19
                         </p>
                         <p className="text-xl font-bold text-[#2B6469] sm:hidden sm:text-2xl">
                             In Person
                         </p>
                     </div>
                 </div>
-                <div className="absolute left-1/2 top-2/3 w-2/3 -translate-x-1/2 -translate-y-1/2 transform text-[#1D4549] sm:top-[70%] md:top-3/4 ">
-                    <h1
-                        className="mb-5 text-center text-4.5xl uppercase drop-shadow-md lg:text-6.5xl xl:text-7.5xl"
-                        id="about-section"
-                    >
+                <div
+                    id="about-anchor"
+                    className="absolute left-1/2 top-2/3 w-2/3 -translate-x-1/2 -translate-y-1/2 transform pt-24 text-[#1D4549] sm:top-[70%] sm:pt-36 md:top-3/4 md:pt-36 "
+                >
+                    <h1 className="mb-5 text-center text-4.5xl uppercase drop-shadow-md lg:text-6.5xl xl:text-7.5xl">
                         About Hawkhacks
                     </h1>
                     <div className="space-y-3 text-center text-[#1D4549] lg:space-y-10">

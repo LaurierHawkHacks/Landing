@@ -43,16 +43,16 @@ const Department: React.FC<DepartmentProps> = ({ title, members }) => {
     );
 };
 
-// the naming is confusing...
-// faq section first, but the meet the team banner is within faq section...
-// not separate enough...
 const TeamSection = () => {
     return (
         <div className="bg-brightUbe">
-            <section id="faq-section" className="stacked -mb-24 bg-cover">
+            <section className="stacked -mb-24 bg-cover">
                 <img src={FaqBackground} alt="" className="w-full" />
                 <div className="container mx-auto px-4">
-                    <h2 className="mt-20 text-center font-bold text-white drop-shadow-md md:mt-32">
+                    <h2
+                        id="faq-anchor"
+                        className="mt-20 text-center font-bold text-white drop-shadow-md md:mt-32"
+                    >
                         FAQ
                     </h2>
 
@@ -62,12 +62,11 @@ const TeamSection = () => {
                 </div>
             </section>
 
-            <section
-                id="team-section"
-                className="relative isolate p-4 md:p-8 lg:p-12 md:-translate-y-[10%] xl:-translate-y-[15%]"
-            >
-                {/* remove the overflow, and set negative offset works like a charm */}
-                <div className="relative mx-auto mb-10 w-fit sm:mb-24 lg:mb-32">
+            <section className="relative isolate p-4 md:-translate-y-[10%] md:p-8 lg:p-12 xl:-translate-y-[15%]">
+                <div
+                    id="team-anchor"
+                    className="relative mx-auto mb-10 w-fit sm:mb-24 lg:mb-32"
+                >
                     <img
                         className="mx-auto w-full max-w-fit sm:hidden"
                         src="src/assets/team/meet-the-team-banner.webp"
@@ -86,7 +85,7 @@ const TeamSection = () => {
                 </div>
 
                 <img
-                    className="absolute right-0 -z-10 hidden translate-x-1/3 lg:block 2xl:translate-x-32"
+                    className="absolute right-0 -z-10 hidden lg:block "
                     src="src/assets/team/meet-the-team-building-right.svg"
                     alt=""
                 />

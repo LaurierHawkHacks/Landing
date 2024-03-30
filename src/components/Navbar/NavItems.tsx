@@ -6,17 +6,18 @@ interface NavItemsProps {
 }
 
 const links = [
-    { title: 'About', href: 'about-section' },
-    { title: 'Sponsors', href: 'sponsors-section' },
-    { title: 'Partners', href: 'partners-section' },
-    { title: 'FAQ', href: 'faq-section' },
-    { title: 'The Team', href: 'team-section' },
-    { title: 'Contact', href: 'contact-section' },
+    { title: 'About', href: 'about-anchor' },
+    { title: 'Sponsors', href: 'sponsors-anchor', offset: 200 },
+    { title: 'Partners', href: 'partners-anchor', offset: 20 },
+    { title: 'FAQ', href: 'faq-anchor', offset: 120 },
+    { title: 'The Team', href: 'team-anchor' },
+    { title: 'Contact', href: 'contact-anchor', offset: 100 },
 ];
 
 const rowStyle = 'flex-row items-center';
 const colStyle = 'flex-col lg:p-0';
-const scrollPadding = -120;
+const navbarHeightPx = 80;
+const scrollPaddingPx = -navbarHeightPx; // navbarHeight + extra padding
 
 const NavItems: React.FC<NavItemsProps> = ({ isHorizontal, handleClick }) => {
     return (
@@ -29,10 +30,15 @@ const NavItems: React.FC<NavItemsProps> = ({ isHorizontal, handleClick }) => {
                 <li key={link.title}>
                     <Link
                         to={link.href}
-                        smooth duration={500}
-                        offset={scrollPadding}
+                        smooth
+                        duration={500}
+                        offset={
+                            link.offset
+                                ? -link.offset + scrollPaddingPx
+                                : scrollPaddingPx
+                        }
+                        className="text-md w-full"
                         onClick={handleClick}
-                        className="link-hover--two text-md"
                     >
                         {link.title}
                     </Link>
