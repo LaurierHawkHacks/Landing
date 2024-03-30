@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { NavItems, Menu, Button } from '@components';
 import { Link } from 'react-router-dom';
 
-
 import Hamburger from 'hamburger-react';
 
 const Navbar = () => {
@@ -16,7 +15,7 @@ const Navbar = () => {
     }, [showMenu]);
 
     return (
-        <nav className="fixed top-0 z-50 flex h-fit w-full items-center justify-between p-3 px-10 lg:justify-normal backdrop-blur-md">
+        <nav className="fixed top-0 z-50 flex h-fit w-full items-center justify-between p-3 px-10 backdrop-blur-md lg:justify-normal">
             <div className="logo lg:mr-8">
                 <img
                     className="h-14 w-14"
@@ -30,8 +29,11 @@ const Navbar = () => {
             </div>
 
             <div className="portal-btn hidden transition-all duration-500 ease-in-out lg:mr-32 lg:block">
-                <Button className="xl:px-6 xl:py-3">
-                    <Link to="/comingsoon">
+                <Button className="p-0">
+                    <Link
+                        className="px-5 py-2 xl:px-6 xl:py-3"
+                        to="/comingsoon"
+                    >
                         Application Portal
                     </Link>
                 </Button>
