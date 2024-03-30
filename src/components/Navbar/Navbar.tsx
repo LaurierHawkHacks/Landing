@@ -13,9 +13,10 @@ const Navbar = () => {
         if (showMenu) document.body.classList.add('overflow-y-hidden');
         else document.body.classList.remove('overflow-y-hidden');
     }, [showMenu]);
-
+    
     return (
-        <nav className="fixed top-0 z-50 flex h-fit w-full items-center justify-between p-3 px-10 backdrop-blur-md lg:justify-normal">
+        <nav 
+          className="navbar fixed top-0 z-50 flex h-fit w-full items-center justify-between p-3 px-10 | lg:justify-normal">
             <div className="logo lg:mr-8">
                 <img
                     className="h-14 w-14"

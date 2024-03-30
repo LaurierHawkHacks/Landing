@@ -51,6 +51,18 @@ body {
             #8b6ab6 494.83%
         );
     }
+
+    /* since chrome didn't support nested backdrops, we can only apply the blur effect on the pseudoelement instead  */
+    .navbar::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      backdrop-filter: blur(5px);
+      z-index: -1;
+  }
 }
 
 @layer utilities {
