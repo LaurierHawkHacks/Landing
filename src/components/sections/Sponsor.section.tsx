@@ -24,11 +24,12 @@ import {
 const SponsorFAQSection = () => {
     const carouselRefs = useRef([]);
     useEffect(() => {
-        const totalAnimationTime = 8000; // Total cycle time for moving, excluding pauses
-        const pauseDuration = 2000; // Duration of pause at each end
-        let pauseScheduled = false;
-    
-        carouselRefs.current.forEach((carousel) => {
+        let animationFrameIds = new Map();
+        
+        const initializeScrollAnimation = (carousel) => {
+            const totalAnimationTime = 8000; // Total cycle time for moving, excluding pauses
+            const pauseDuration = 2000; // Duration of pause at each end
+            let pauseScheduled = false;
             let animationStartTime = Date.now() - pauseDuration; // Start with a pause
             let lastAnimationPhase = 'pause';
     
@@ -36,7 +37,7 @@ const SponsorFAQSection = () => {
                 const totalWidth = carousel.scrollWidth;
                 const visibleWidth = carousel.clientWidth;
                 const buffer = visibleWidth * 0.03; // Slightly less buffer for tighter right side
-                const scrollDistance = totalWidth - visibleWidth + buffer; 
+                const scrollDistance = totalWidth - visibleWidth + buffer;
     
                 const easeInOutCubic = (t) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
     
@@ -49,46 +50,60 @@ const SponsorFAQSection = () => {
                     let currentPosition;
     
                     if (cyclePosition < pauseDuration) {
-                        // Initial pause at the beginning
                         currentPosition = 0;
                         if (lastAnimationPhase !== 'pause') {
                             pauseScheduled = false;
                         }
                     } else if (cyclePosition < totalAnimationTime / 2 + pauseDuration) {
-                        // Moving forward
                         const progress = (cyclePosition - pauseDuration) / (totalAnimationTime / 2);
                         currentPosition = easeInOutCubic(progress) * scrollDistance;
                         lastAnimationPhase = 'forward';
                     } else if (cyclePosition < totalAnimationTime / 2 + pauseDuration * 2) {
-                        // Pause at the end
                         currentPosition = scrollDistance;
                         if (!pauseScheduled) {
                             lastAnimationPhase = 'pause';
                             pauseScheduled = true;
                         }
                     } else {
-                        // Moving backward
                         const progress = (cyclePosition - totalAnimationTime / 2 - pauseDuration * 2) / (totalAnimationTime / 2);
                         currentPosition = scrollDistance - easeInOutCubic(progress) * scrollDistance;
                         lastAnimationPhase = 'backward';
                     }
     
                     carousel.style.transform = `translateX(-${currentPosition}px)`;
-                    requestAnimationFrame(updatePosition);
+                    animationFrameIds.set(carousel, requestAnimationFrame(updatePosition));
                 };
     
-                if (totalWidth > visibleWidth) {
-                    requestAnimationFrame(updatePosition);
+                // Only start the animation if the carousel is actually wider than the viewport
+                if (scrollDistance > buffer) {
+                    animationFrameIds.set(carousel, requestAnimationFrame(updatePosition));
                 }
             };
     
-            handleScroll();
-            window.addEventListener('resize', () => {
-                animationStartTime = Date.now() - pauseDuration; // Reset to start with a pause
-                lastAnimationPhase = 'pause';
-                handleScroll();
+            // Observe carousel for resize events
+            const resizeObserver = new ResizeObserver((entries) => {
+                entries.forEach(entry => {
+                    if (animationFrameIds.has(carousel)) {
+                        cancelAnimationFrame(animationFrameIds.get(carousel));
+                        carousel.style.transform = ''; // Reset transform to prevent jumpiness
+                    }
+                    handleScroll(); // Re-evaluate whether to start or stop the animation based on new size
+                });
             });
+            resizeObserver.observe(carousel);
+        };
+    
+        carouselRefs.current.forEach((carousel) => {
+            initializeScrollAnimation(carousel);
         });
+    
+        return () => {
+            carouselRefs.current.forEach((carousel) => {
+                if (animationFrameIds.has(carousel)) {
+                    cancelAnimationFrame(animationFrameIds.get(carousel));
+                }
+            });
+        };
     }, []);
     
 
@@ -184,7 +199,6 @@ const SponsorFAQSection = () => {
         <div className="h-20 md:h-28 w-auto flex-shrink-0">
             <img src={Dcl} alt="DCL" className="h-full w-auto" />
         </div>
-        {/* Repeat for each carousel item, adjusting sizes and paddings as needed */}
     </div>
 </div>
 
