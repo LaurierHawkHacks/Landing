@@ -10,7 +10,7 @@ const Menu: React.FC<MenuProp> = ({ showMenu, hideMenu }) => {
     if (!showMenu) return;
 
     return (
-        <div className="oveflow-hidden fixed right-0 top-0 z-50 w-full max-w-[65%] border px-10 py-24 backdrop-blur-xl">
+        <div className="oveflow-hidden gradient fixed right-0 top-0 z-50 h-screen max-w-[65%] border-l border-black px-10 py-24">
             <NavItems isHorizontal={false} handleClick={hideMenu} />
             <Button className="mt-20 block lg:hidden">
                 <Link to="/comingsoon">Application Portal</Link>
