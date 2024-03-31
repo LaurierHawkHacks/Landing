@@ -1,4 +1,4 @@
-import { ExternBalloon, MeetTheTeamBuildingLeft } from "@assets";
+import { ExternalBalloon, MeetTheTeamBuildingLeft } from "@assets";
 
 const ErrorPage: React.FC = () => {
     return (
@@ -9,7 +9,7 @@ const ErrorPage: React.FC = () => {
             }}
         >
             <img
-                src={ExternBalloon}
+                src={ExternalBalloon}
                 alt="Balloon"
                 className="absolute top-0 right-0 w-1/4 max-w-md"
             />
