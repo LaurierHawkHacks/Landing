@@ -45,7 +45,8 @@ const Department: React.FC<DepartmentProps> = ({ title, members }) => {
 
 const TeamSection = () => {
     return (
-        <div className="bg-brightUbe">
+        // currently this div is the container of both faq and team section
+        <div className="bg-gradient-to-b from-[#CBAAF4] to-[#85C1C5] to-[120%]">
             <section className="stacked -mb-24 bg-cover">
                 <img src={FaqBackground} alt="" className="w-full" />
                 <div className="container mx-auto px-4">
