@@ -5,7 +5,7 @@ const faqData = [
     },
     {
         question: '🕒 When and where is HawkHacks happening?',
-        answer: 'HawkHacks will take place for 36 hours, starting on some day idk, Some day @ 6PM EDT all the way till Someday @ 2PM EDT.  \\n HawkHacks is a fully in-person event, meaning everything will be hosted and managed at Wilfrid Laurier University!',
+        answer: 'HawkHacks will take place for 36 hours, starting on May 17th @ 6PM EDT all the way till May 19th @ 2PM EDT.  \\n HawkHacks is a fully in-person event, meaning everything will be hosted and managed at Wilfrid Laurier University!',
     },
     {
         question: '💰 How much does it cost?',

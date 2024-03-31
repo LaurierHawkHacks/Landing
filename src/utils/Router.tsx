@@ -7,6 +7,7 @@ const Router = () => (
     <Routes>
       <Route path="/" element={<Landing />} />
       <Route path="/comingsoon" element={<ComingSoonPage />}/>
+      <Route path="*" element={<ErrorPage />} />
     </Routes>
   </BrowserRouter>
 );

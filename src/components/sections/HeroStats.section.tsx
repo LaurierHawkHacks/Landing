@@ -62,7 +62,7 @@ const HeroStatSection: React.FC = () => {
                         src={HawkHacksLogo}
                         alt="Hawkhacks logo"
                     />
-                    <div className="sm:space-y-2">
+                    <div className="sm:space-y-2 mt-12">
                         <h1 className="bg-gradient-to-b from-[#2B6469] to-[#00CEDB] bg-clip-text  text-4xl font-extrabold text-transparent sm:text-5.5xl lg:text-7xl xl:text-8.5xl">
                             HawkHacks 2024
                         </h1>
@@ -72,7 +72,7 @@ const HeroStatSection: React.FC = () => {
                     </div>
                     <div>
                         <p className="text-xl font-bold text-[#2B6469] sm:hidden sm:text-2xl">
-                            April 5th - 7th
+                            May 17th - 19th
                         </p>
                         <p className="text-xl font-bold text-[#2B6469] sm:hidden sm:text-2xl">
                             In Person
