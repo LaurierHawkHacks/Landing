@@ -109,3 +109,12 @@ export {
     MeetTheTeamBuildingLeft,
     MeetTheTeamBuildingRight,
 };
+
+/*
+ *
+ * 404 / Coming Soon SVGs
+ *
+ */
+import ExternalBalloon from './external/balloon.svg';
+
+export { ExternalBalloon };
