@@ -29,10 +29,14 @@ const Navbar = () => {
                 <NavItems isHorizontal={true} handleClick={hideMenu} />
             </div>
 
+            {/* <div className="portal-btn hidden transition-all duration-500 ease-in-out lg:mr-32 lg:block">
+                <Button className="xl:px-6 xl:py-3">Application Portal</Button>
+            </div> */}
+
             <div className="portal-btn hidden transition-all duration-500 ease-in-out lg:mr-32 lg:block">
-                <Button className="p-0">
+                <Button className="xl:px-6 xl:py-3">
                     <Link
-                        className="px-5 py-2 xl:px-6 xl:py-3"
+                        className="text-sm"
                         to="/comingsoon"
                     >
                         Application Portal
