@@ -72,7 +72,7 @@ const HeroStatSection: React.FC = () => {
                     </div>
                     <div>
                         <p className="text-xl font-bold text-[#2B6469] sm:hidden sm:text-2xl">
-                            May 17 - 19
+                            May 17th - 19th
                         </p>
                         <p className="text-xl font-bold text-[#2B6469] sm:hidden sm:text-2xl">
                             In Person
