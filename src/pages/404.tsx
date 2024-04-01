@@ -20,7 +20,7 @@ const ErrorPage: React.FC = () => {
             />
             <div className="container mx-auto px-4 flex justify-center items-center min-h-screen">
                 <div className="text-center">
-                    <h2 className="font-bold text-white drop-shadow-md mb-4">
+                    <h2 className="font-bold text-tbrand drop-shadow-md mb-4">
                         404 Error
                     </h2>
 
@@ -30,7 +30,7 @@ const ErrorPage: React.FC = () => {
 
                     <a
                         href="/"
-                        className="text-white drop-shadow-md underline hover:text-deepMarine hover:no-underline"
+                        className="text-tbrand drop-shadow-md underline hover:text-deepMarine hover:no-underline"
                     >
                         Return to the homepage
                     </a>
