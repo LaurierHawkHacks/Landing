@@ -1,6 +1,13 @@
 import { FaqBackground } from '@assets';
 import { departments, faqData } from './data';
 import { Accordion } from '@components';
+import {
+    Clouds,
+    MeetTheTeamBalloon,
+    MeetTheTeamBanner,
+    MeetTheTeamBuildingLeft,
+    MeetTheTeamBuildingRight,
+} from '@assets';
 
 interface Member {
     name: string;
@@ -70,30 +77,30 @@ const TeamSection = () => {
                 >
                     <img
                         className="mx-auto w-full max-w-fit sm:hidden"
-                        src="src/assets/team/meet-the-team-banner.webp"
+                        src={MeetTheTeamBalloon}
                         alt=""
                     />
                     <img
                         className="mx-auto hidden w-full max-w-[70rem] sm:block"
-                        src="src/assets/team/meet-the-team-balloon-banner.webp"
+                        src={MeetTheTeamBanner}
                         alt=""
                     />
                     <img
                         className="absolute bottom-0 z-10  hidden translate-y-1/2 sm:block"
-                        src="src/assets/team/clouds.svg"
+                        src={Clouds}
                         alt=""
                     />
                 </div>
 
                 <img
                     className="absolute right-0 -z-10 hidden lg:block "
-                    src="src/assets/team/meet-the-team-building-right.svg"
+                    src={MeetTheTeamBuildingRight}
                     alt=""
                 />
 
                 <img
                     className="absolute bottom-0 left-0 -z-10 hidden -translate-x-1/3 translate-y-1/2 lg:block 2xl:translate-y-[30%]"
-                    src="src/assets/team/meet-the-team-building-left.svg"
+                    src={MeetTheTeamBuildingLeft}
                     alt=""
                 />
 

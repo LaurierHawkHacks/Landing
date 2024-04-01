@@ -100,12 +100,14 @@ export {
  */
 import Clouds from './team/clouds.svg';
 import MeetTheTeamBalloon from './team/meet-the-team-balloon-banner.webp';
+import MeetTheTeamBanner from "./team/meet-the-team-banner.webp"
 import MeetTheTeamBuildingLeft from './team/meet-the-team-building-left.svg';
 import MeetTheTeamBuildingRight from './team/meet-the-team-building-right.svg';
 
 export {
     Clouds,
     MeetTheTeamBalloon,
+    MeetTheTeamBanner,
     MeetTheTeamBuildingLeft,
     MeetTheTeamBuildingRight,
 };
