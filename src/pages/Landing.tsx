@@ -12,7 +12,6 @@ import {
 import { HeroAboutDesktop, HeroAboutMobile } from '@assets';
 
 const Landing: React.FC = () => {
-    const [isLoading, setIsLoading] = useState(true);
     const [desktopImageLoaded, setDesktopImageLoaded] = useState(false);
     const [mobileImageLoaded, setMobileImageLoaded] = useState(false);
     const [timerFinished, setTimerFinished] = useState(false);
@@ -32,13 +31,11 @@ const Landing: React.FC = () => {
         setTimeout(() => setTimerFinished(true), 2000);
     }, []);
 
-    useEffect(() => {
-        if (desktopImageLoaded && mobileImageLoaded && timerFinished) {
-            setIsLoading(false);
-        }
-    }, [desktopImageLoaded, mobileImageLoaded, timerFinished]);
-
-    const isLoading = !(desktopImageLoaded && mobileImageLoaded && timerFinished);
+    const isLoading = !(
+        desktopImageLoaded &&
+        mobileImageLoaded &&
+        timerFinished
+    );
     if (isLoading) {
         return <LoadingAnimation />;
     }
