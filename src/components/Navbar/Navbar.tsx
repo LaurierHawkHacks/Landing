@@ -29,8 +29,13 @@ const Navbar = () => {
             </div>
 
             <div className="portal-btn hidden transition-all duration-500 ease-in-out lg:mr-32 lg:block">
-                <Button className="xl:px-6 xl:py-3">
-                    <Link to="/coming-soon">Application Portal</Link>
+                <Button className="px-0 py-0">
+                    <Link
+                        to="/coming-soon"
+                        className="px-5 py-2 xl:px-6 xl:py-3"
+                    >
+                        Application Portal
+                    </Link>
                 </Button>
             </div>
 
