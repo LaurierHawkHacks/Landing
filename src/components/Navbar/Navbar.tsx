@@ -14,7 +14,7 @@ const Navbar = () => {
     }, [showMenu]);
 
     return (
-        <nav className="gradient fixed top-0 z-50 flex h-fit w-full items-center justify-between p-3 px-10 lg:justify-normal">
+        <nav className="navbar fixed top-0 z-50 flex h-fit w-full items-center justify-between p-3 px-10 | lg:justify-normal">
             <div className="logo lg:mr-8">
                 <img
                     className="h-14 w-14"
