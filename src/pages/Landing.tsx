@@ -38,6 +38,7 @@ const Landing: React.FC = () => {
         }
     }, [desktopImageLoaded, mobileImageLoaded, timerFinished]);
 
+    const isLoading = !(desktopImageLoaded && mobileImageLoaded && timerFinished);
     if (isLoading) {
         return <LoadingAnimation />;
     }
