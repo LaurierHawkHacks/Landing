@@ -39,17 +39,14 @@ const ContactSection: React.FC = () => {
                     </p>
                 </div>
                 <div className="newsletter text-center sm:text-left lg:mt-6">
-                    <h3 className="font-raleway text-lg font-bold text-[#32848C] md:text-xl lg:text-2xl">
-                        Sign up for our newsletter!
-                    </h3>
                     <div className="mt-2 flex flex-col items-center sm:items-start md:mt-4">
                         <div className="relative mb-4 flex w-full justify-center sm:mb-6 sm:w-1/2 sm:justify-start lg:max-w-lg">
                             <Button
                                 type="button" // Changed to type="button" to prevent form submission
                                 onClick={handleSubmit}
-                                className="inset-y-0 flex w-1/3 justify-center rounded-r-lg px-4 sm:w-2/3 sm:justify-start"
+                                className="inset-y-0 flex w-1/3 justify-center rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover px-4 sm:w-2/3 sm:justify-start"
                             >
-                                Subscribe
+                                Sign up for our newsletter!
                             </Button>
                         </div>
                         <div className="pt-2 sm:pt-4">
