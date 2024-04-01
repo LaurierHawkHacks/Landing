@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { TopBorder, BottomBorder, MiddleBody, Hawk, BirdParts } from "@assets";
 import {
   Veritas,
@@ -22,11 +22,12 @@ import {
 } from "@assets";
 
 const SponsorFAQSection = () => {
-  const carouselRefs = useRef([]);
-  useEffect(() => {
-    let animationFrameIds = new Map();
+  const carouselRefs = useRef<HTMLDivElement[]>([]);
 
-    const initializeScrollAnimation = (carousel) => {
+  useEffect(() => {
+    const animationFrameIds = new Map<HTMLDivElement, number>();
+
+    const initializeScrollAnimation = (carousel: HTMLDivElement) => {
       const totalAnimationTime = 8000; // Total cycle time for moving, excluding pauses
       const pauseDuration = 2000; // Duration of pause at each end
       let pauseScheduled = false;
@@ -39,7 +40,7 @@ const SponsorFAQSection = () => {
         const buffer = visibleWidth * 0.03; // Slightly less buffer for tighter right side
         const scrollDistance = totalWidth - visibleWidth + buffer;
 
-        const easeInOutCubic = (t) =>
+        const easeInOutCubic = (t: number) =>
           t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
 
         const updatePosition = () => {
@@ -95,27 +96,25 @@ const SponsorFAQSection = () => {
       };
 
       // Observe carousel for resize events
-      const resizeObserver = new ResizeObserver((entries) => {
-        entries.forEach((entry) => {
-          if (animationFrameIds.has(carousel)) {
-            cancelAnimationFrame(animationFrameIds.get(carousel));
-            carousel.style.transform = ""; // Reset transform to prevent jumpiness
-          }
-          handleScroll(); // Re-evaluate whether to start or stop the animation based on new size
-        });
+      const resizeObserver = new ResizeObserver(() => {
+        if (animationFrameIds.has(carousel)) {
+          cancelAnimationFrame(animationFrameIds.get(carousel)!);
+        }
+        
+        handleScroll(); // Re-evaluate whether to start or stop the animation based on new size
       });
       resizeObserver.observe(carousel);
     };
 
     carouselRefs.current.forEach((carousel) => {
-      initializeScrollAnimation(carousel);
+      if (carousel) initializeScrollAnimation(carousel);
     });
 
     return () => {
       carouselRefs.current.forEach((carousel) => {
-        if (animationFrameIds.has(carousel)) {
-          cancelAnimationFrame(animationFrameIds.get(carousel));
-        }
+        if (carousel && animationFrameIds.has(carousel)) {
+          cancelAnimationFrame(animationFrameIds.get(carousel)!);
+        }        
       });
     };
   }, []);
@@ -149,7 +148,7 @@ const SponsorFAQSection = () => {
 
             <div className="overflow-hidden">
               <div
-                ref={(el) => (carouselRefs.current[0] = el)}
+                ref={(el) => el && (carouselRefs.current[0] = el)}
                 className="flex items-center justify-start space-x-4 px-4 sm:space-x-16 transition-transform duration-[50ms] ease-linear"
               >
                 <div className="h-14 w-auto flex-shrink-0">
@@ -176,7 +175,7 @@ const SponsorFAQSection = () => {
 
             <div className="overflow-hidden">
               <div
-                ref={(el) => (carouselRefs.current[1] = el)}
+                ref={(el) => el && (carouselRefs.current[1] = el)}
                 className="flex items-center justify-start space-x-6 px-4 transition-transform duration-[50ms] ease-linear"
               >
                 <div className="h-12 w-auto flex-shrink-0">
@@ -211,7 +210,7 @@ const SponsorFAQSection = () => {
 
             <div className="overflow-hidden">
               <div
-                ref={(el) => (carouselRefs.current[2] = el)}
+                ref={(el) => el && (carouselRefs.current[2] = el)}
                 className="flex items-center justify-start space-x-6 px-4 transition-transform duration-[50ms] ease-linear"
               >
                 <div className="h-12 w-auto flex-shrink-0">
