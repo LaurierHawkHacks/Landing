@@ -36,7 +36,7 @@ const Landing: React.FC = () => {
     }, []);
 
     useEffect(() => {
-        const milestones = Array.from({ length: 20 }, (_, i) => false); // Create an array for each 5% milestone
+        const milestones = Array.from({ length: 20 }, () => false); // Create an array for each 5% milestone
     
         const trackScrollPercentage = () => {
             const scrolledPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
