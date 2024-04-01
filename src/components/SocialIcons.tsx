@@ -29,11 +29,11 @@ const SocialIcons: React.FC<SocialIconsProps> = ({ color = "currentColor" }) => 
         return (
             <a
                 href={href}
+                target="_blank"
                 onMouseEnter={() => setIconColor(hoverColor)}
                 onMouseLeave={() => setIconColor(color)}
-                style={{ transition: 'color 0.3s' }}
             >
-                <Icon size={iconSize} color={iconColor} />
+                <Icon size={iconSize} color={iconColor} style={{transition: "color 0.5s"}} />
             </a>
         );
     };
