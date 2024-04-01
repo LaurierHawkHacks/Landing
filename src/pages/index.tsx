@@ -11,3 +11,10 @@ export { Landing } from './Landing';
  *
  */
 export { ErrorPage } from './404';
+
+/*
+ *
+ * @page ComingSoon
+ *
+ */
+export { ComingSoon } from './ComingSoon';
