@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { NavItems, Menu, Button } from '@components';
-
+import { HawkHacksLogo } from '@assets';
 import Hamburger from 'hamburger-react';
 
 const Navbar = () => {
@@ -18,7 +18,7 @@ const Navbar = () => {
             <div className="logo lg:mr-8">
                 <img
                     className="h-14 w-14"
-                    src="./src/assets/logo.svg"
+                    src={HawkHacksLogo}
                     alt="HawkHacks Logo"
                 />
             </div>
