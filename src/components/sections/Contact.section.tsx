@@ -1,6 +1,7 @@
 import React from 'react';
 import { TopBorder, BottomBorder, MiddleBody, Hawk, BirdParts } from '@assets';
 import { Button, SocialIcons } from '@components';
+import { logEvent, analytics } from '../../components/Analytics';
 
 const ContactSection: React.FC = () => {
     const openInNewTab = (url: string) => {
@@ -11,6 +12,7 @@ const ContactSection: React.FC = () => {
     const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault(); // Prevent default form submission behavior
         openInNewTab('http://eepurl.com/hDHf8b');
+        logEvent(analytics, 'subscribe_button_click', { section: 'Contact' });
     };
     return (
         <section className="relative z-10">

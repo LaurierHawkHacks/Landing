@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaEnvelope, FaLinkedin, FaDiscord, FaTiktok } from "react-icons/fa";
 import { SiDevpost } from "react-icons/si";
 import { RiInstagramFill } from "react-icons/ri";
+import { logEvent, analytics } from '../components/Analytics';
 
 interface SocialIconsProps {
     color?: string;
@@ -21,30 +22,31 @@ const SocialIcons: React.FC<SocialIconsProps> = ({ color = "currentColor" }) => 
 
         return () => window.removeEventListener("resize", handleResize);
     }, []);
-
-    const SocialIconLink = ({ href, Icon }: { href: string, Icon: React.ElementType }) => {
-        const [iconColor, setIconColor] = useState(color);
-
-        return (
-            <a
-                href={href}
-                onMouseEnter={() => setIconColor(hoverColor)}
-                onMouseLeave={() => setIconColor(color)}
-                style={{ transition: 'color 0.3s' }}
-            >
-                <Icon size={iconSize} color={iconColor} />
-            </a>
-        );
-    };
-
+    const handleClick = (platform: string) => {
+        console.log(platform);
+        logEvent(analytics, 'social_icon_click', { platform });
+    };    
+    
     return (
         <div className="flex justify-center items-center space-x-7">
-            <SocialIconLink href="mailto:hello@hawkhawks.ca" Icon={FaEnvelope} />
-            <SocialIconLink href="https://www.linkedin.com/company/hawkhacks/" Icon={FaLinkedin} />
-            <SocialIconLink href="https://discord.gg/CwQ7mGg98N" Icon={FaDiscord} />
-            <SocialIconLink href="https://tiktok.com/@hawkhacks" Icon={FaTiktok} />
-            <SocialIconLink href="https://www.instagram.com/wluhawkhacks/" Icon={RiInstagramFill} />
-            <SocialIconLink href="https://hawkhacks.devpost.com/" Icon={SiDevpost} />
+            <a href="mailto:hello@hawkhawks.ca" onClick={() => handleClick('email')}>
+                <FaEnvelope size={iconSize} color={color} />
+            </a>
+            <a href="https://www.linkedin.com/company/hawkhacks/" onClick={() => handleClick('linkedin')}>
+                <FaLinkedin size={iconSize} color={color} />
+            </a>
+            <a href="https://discord.gg/CwQ7mGg98N" onClick={() => handleClick('discord')}>
+                <FaDiscord size={iconSize} color={color} />
+            </a>
+            <a href="https://tiktok.com/@hawkhacks" onClick={() => handleClick('tiktok')}>
+                <FaTiktok size={iconSize} color={color} />
+            </a>
+            <a href="https://www.instagram.com/wluhawkhacks/" onClick={() => handleClick('instagram')}>
+                <RiInstagramFill size={iconSize} color={color} />
+            </a>
+            <a href="https://hawkhacks.devpost.com/" onClick={() => handleClick('devpost')}>
+                <SiDevpost size={iconSize} color={color} />
+            </a>
         </div>
     );
 };
