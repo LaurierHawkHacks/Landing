@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { NavItems, Menu, Button } from '@components';
 import { HawkHacksLogo } from '@assets';
 import Hamburger from 'hamburger-react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -14,7 +15,7 @@ const Navbar = () => {
     }, [showMenu]);
 
     return (
-        <nav className="navbar fixed top-0 z-50 flex h-fit w-full items-center justify-between p-3 px-10 | lg:justify-normal">
+        <nav className="navbar | fixed top-0 z-50 flex h-fit w-full items-center justify-between p-3 px-10 lg:justify-normal">
             <div className="logo lg:mr-8">
                 <img
                     className="h-14 w-14"
@@ -29,11 +30,7 @@ const Navbar = () => {
 
             <div className="portal-btn hidden transition-all duration-500 ease-in-out lg:mr-32 lg:block">
                 <Button className="xl:px-6 xl:py-3">
-                    <a
-                        href="/coming-soon"
-                    >
-                        Application Portal
-                    </a>
+                    <Link to="/coming-soon">Application Portal</Link>
                 </Button>
             </div>
 
