@@ -28,7 +28,13 @@ const Navbar = () => {
             </div>
 
             <div className="portal-btn hidden transition-all duration-500 ease-in-out lg:mr-32 lg:block">
-                <Button className="xl:px-6 xl:py-3">Application Portal</Button>
+                <Button className="xl:px-6 xl:py-3">
+                    <a
+                        href="/coming-soon"
+                    >
+                        Application Portal
+                    </a>
+                </Button>
             </div>
 
             {/* banner-holder: banner is out of flow, to prevent banner affect the desired flow, adding a placeholder banner holder when the screen is smaller  */}
