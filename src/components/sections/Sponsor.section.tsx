@@ -25,7 +25,7 @@ const SponsorFAQSection = () => {
   const carouselRefs = useRef<HTMLDivElement[]>([]);
 
   useEffect(() => {
-    let animationFrameIds = new Map<HTMLDivElement, number>();
+    const animationFrameIds = new Map<HTMLDivElement, number>();
 
     const initializeScrollAnimation = (carousel: HTMLDivElement) => {
       const totalAnimationTime = 8000; // Total cycle time for moving, excluding pauses
