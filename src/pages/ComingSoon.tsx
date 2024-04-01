@@ -1,5 +1,6 @@
-import { ExternalBalloon, MeetTheTeamBuildingLeft } from "@assets";
-import { Button } from "@components";
+import { Link } from 'react-router-dom';
+import { ExternalBalloon, MeetTheTeamBuildingLeft } from '@assets';
+import { Button } from '@components';
 
 const ComingSoon: React.FC = () => {
     const openInNewTab = (url: string) => {
@@ -14,15 +15,16 @@ const ComingSoon: React.FC = () => {
 
     return (
         <section
-            className="stacked -mb-24 bg-cover relative"
+            className="stacked relative -mb-24 bg-cover"
             style={{
-                background: "linear-gradient(180deg, #FDDDB7 0%, #CBAAF4 328.99%, #8B6AB6 494.83%)",
+                background:
+                    'linear-gradient(180deg, #FDDDB7 0%, #CBAAF4 328.99%, #8B6AB6 494.83%)',
             }}
         >
             <img
                 src={ExternalBalloon}
                 alt="Balloon"
-                className="absolute top-0 right-0 w-1/4 max-w-md"
+                className="absolute right-0 top-0 w-1/4 max-w-md"
             />
 
             <img
@@ -30,39 +32,40 @@ const ComingSoon: React.FC = () => {
                 alt="Building"
                 className="absolute bottom-0 left-0 w-1/4 max-w-md"
             />
-            
-            <div className="container mx-auto px-4 flex justify-center items-center min-h-screen">
+
+            <div className="container mx-auto flex min-h-screen items-center justify-center px-4">
                 <div className="text-center">
-                    <h2 className="font-bold text-tbrand drop-shadow-md mb-4">
+                    <h2 className="mb-4 font-bold text-tbrand drop-shadow-md">
                         Coming Soon!
                     </h2>
 
-                    <p className="text-white drop-shadow-md mb-4">
+                    <p className="mb-4 text-white drop-shadow-md">
                         This page is currently under construction 🚧
                     </p>
 
-                    <hr className="border-white w-1/2 mx-auto mb-4" />
+                    <hr className="mx-auto mb-4 w-1/2 border-white" />
 
                     <div className="pb-8">
-                        <p className="text-tbrand drop-shadow-md mb-4">
-                            Subscribe to our newsletter to get notified when it is launched!
+                        <p className="mb-4 text-tbrand drop-shadow-md">
+                            Subscribe to our newsletter to get notified when it
+                            is launched!
                         </p>
-            
+
                         <Button
                             type="button"
                             onClick={handleSubmit}
-                            className="mx-auto w-full sm:w-auto justify-center rounded-lg bg-gradient-to-b from-tbrand to-tbrand-hover px-4 py-2"
+                            className="mx-auto w-full justify-center rounded-lg bg-gradient-to-b from-tbrand to-tbrand-hover px-4 py-2 sm:w-auto"
                         >
                             Subscribe
                         </Button>
                     </div>
 
-                    <a
-                        href="/"
-                        className="text-tbrand drop-shadow-md underline hover:text-deepMarine hover:no-underline"
+                    <Link
+                        to="/"
+                        className="text-tbrand underline drop-shadow-md hover:text-deepMarine hover:no-underline"
                     >
                         Return to the homepage
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>
@@ -70,3 +73,4 @@ const ComingSoon: React.FC = () => {
 };
 
 export { ComingSoon };
+
