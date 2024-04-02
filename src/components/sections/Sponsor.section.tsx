@@ -148,7 +148,6 @@ const SponsorFAQSection = () => {
                 SPONSORS
               </div>
             </div>
-
             <div className="overflow-hidden">
               <div
                 ref={(el) => el && (carouselRefs.current[0] = el)}
@@ -156,12 +155,16 @@ const SponsorFAQSection = () => {
               >
                 <a
                   href="https://www.veritasai.com/"
+                  target="_blank" 
+                  rel="noopener noreferrer"
                   className="h-14 w-auto flex-shrink-0"
                 >
                   <img src={Veritas} alt="Veritas" className="h-full w-auto" />
                 </a>
                 <a
                   href="https://www.assemblyai.com/"
+                  target="_blank" 
+                  rel="noopener noreferrer"                
                   className="h-12 w-auto flex-shrink-0"
                 >
                   <img
@@ -172,25 +175,30 @@ const SponsorFAQSection = () => {
                 </a>
                 <a
                   href="https://www.soctechnologies.com/"
+                  target="_blank" 
+                  rel="noopener noreferrer"                
                   className="h-12 w-auto flex-shrink-0"
                 >
                   <img src={Soc} alt="Soc" className="h-full w-auto" />
                 </a>
                 <a
-                  href="https://www.fdmgroup.com/en-ca/"
+                  href="https://www.fdmgroup.com/en-ca/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
                   className="h-12 w-auto flex-shrink-0"
                 >
                   <img src={Fdm} alt="FDM" className="h-full w-auto" />
                 </a>
                 <a
-                  href="https://www.echo3d.com/"
+                  href="https://www.echo3d.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
                   className="h-12 w-auto flex-shrink-0"
                 >
                   <img src={Echo3D} alt="Echo3D" className="h-full w-auto" />
                 </a>
               </div>
             </div>
-
             <div className="overflow-hidden">
               <div
                 ref={(el) => el && (carouselRefs.current[1] = el)}
@@ -198,6 +206,8 @@ const SponsorFAQSection = () => {
               >
                 <a
                   href="https://www.leading-learners.com/"
+                  target="_blank" 
+                  rel="noopener noreferrer"
                   className="h-12 w-auto flex-shrink-0"
                 >
                   <img
@@ -206,16 +216,18 @@ const SponsorFAQSection = () => {
                     className="h-full w-auto"
                   />
                 </a>
-
                 <a
                   href="https://www.ollon.ca/"
+                  target="_blank" 
+                  rel="noopener noreferrer"                
                   className="h-12 w-auto flex-shrink-0"
                 >
                   <img src={Ollon} alt="Ollon" className="h-full w-auto" />
                 </a>
-
                 <a
                   href="https://1password.com/"
+                  target="_blank" 
+                  rel="noopener noreferrer"                
                   className="h-12 w-auto flex-shrink-0"
                 >
                   <img
@@ -226,12 +238,16 @@ const SponsorFAQSection = () => {
                 </a>
                 <a
                   href="https://www.linkedin.com/company/roomiez/about/"
+                  target="_blank" 
+                  rel="noopener noreferrer"
                   className="h-12 w-auto flex-shrink-0"
                 >
                   <img src={Roomiez} alt="Roomiez" className="h-full w-auto" />
                 </a>
                 <a
                   href="https://balsamiq.com/"
+                  target="_blank" 
+                  rel="noopener noreferrer"                
                   className="h-12 w-auto flex-shrink-0"
                 >
                   <img
@@ -242,7 +258,6 @@ const SponsorFAQSection = () => {
                 </a>
               </div>
             </div>
-
             <div className="overflow-hidden">
               <div
                 ref={(el) => el && (carouselRefs.current[2] = el)}
@@ -250,6 +265,8 @@ const SponsorFAQSection = () => {
               >
                 <a
                   href="https://www.digitalocean.com/"
+                  target="_blank" 
+                  rel="noopener noreferrer"
                   className="h-12 w-auto flex-shrink-0"
                 >
                   <img
@@ -260,24 +277,26 @@ const SponsorFAQSection = () => {
                 </a>
                 <a
                   href="https://www.taskade.com/"
+                  target="_blank" 
+                  rel="noopener noreferrer"                
                   className="h-12 w-auto flex-shrink-0"
                 >
                   <img src={Taskade} alt="Taskade" className="h-full w-auto" />
                 </a>
               </div>
             </div>
-
             <div className="overflow-hidden">
               <div className="flex items-center justify-start px-2 md:px-8 transition-transform duration-[50ms] ease-linear">
                 <a
-                  href="https://sparc.network/"
+                  href="https://sparc.network/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
                   className="h-20 md:h-28 w-auto flex-shrink-0"
                 >
                   <img src={Dcl} alt="DCL" className="h-full w-auto" />
                 </a>
               </div>
             </div>
-
             <div className="mt-20" id="partners-section">
               <div
                 id="partners-anchor"
@@ -288,6 +307,8 @@ const SponsorFAQSection = () => {
               <div className="flex flex-wrap items-center justify-center gap-3">
                 <a
                   href="https://www.yourstudentsunion.ca/"
+                  target="_blank" 
+                  rel="noopener noreferrer"                
                   className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
                 >
                   <img
@@ -298,24 +319,32 @@ const SponsorFAQSection = () => {
                 </a>
                 <a
                   href="https://www.ccubed.dev/"
+                  target="_blank" 
+                  rel="noopener noreferrer"                
                   className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
                 >
                   <img src={CCubed} alt="Ccubed" className="h-full" />
                 </a>
                 <a
-                  href="https://mlh.io/"
+                  href="https://mlh.io/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
                   className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
                 >
                   <img src={Mlh} alt="MLH" className="h-full" />
                 </a>
                 <a
                   href="https://fossa.ca/"
+                  target="_blank" 
+                  rel="noopener noreferrer"                
                   className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
                 >
                   <img src={Fossa} alt="Fossa" className="h-full" />
                 </a>
                 <a
                   href="https://lauriercs.ca/"
+                  target="_blank" 
+                  rel="noopener noreferrer"                
                   className="sm:h-18 md:h-21 col-span-2 h-16 justify-self-center md:col-span-1 lg:h-24 xl:h-24"
                 >
                   <img src={Lcs} alt="LCS" className="h-full" />
