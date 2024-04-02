@@ -1,6 +1,6 @@
 import React from 'react';
 import { TopBorder, BottomBorder, MiddleBody, Hawk, BirdParts } from '@assets';
-import { Button, SocialIcons } from '@components';
+import { Button } from '@components';
 
 const ContactSection: React.FC = () => {
     const openInNewTab = (url: string) => {
@@ -32,28 +32,21 @@ const ContactSection: React.FC = () => {
                     >
                         CONTACT US
                     </h2>
-                    <p className="text-md lg:text-lg xl:mt-9">
+                    <p className="my-6">
                         Reach out at <b>hello@hawkhacks.ca</b> for any help or
                         support, and please be sure to join the{' '}
                         <b>HawkHacks Discord</b> community!
                     </p>
                 </div>
-                <div className="newsletter text-center sm:text-left lg:mt-6">
-                    <div className="mt-2 flex flex-col items-center sm:items-start md:mt-4">
-                        <div className="relative mb-4 flex w-full justify-center sm:mb-6 sm:w-1/2 sm:justify-start lg:max-w-lg">
-                            <Button
-                                type="button" // Changed to type="button" to prevent form submission
-                                onClick={handleSubmit}
-                                className="inset-y-0 flex w-1/3 justify-center rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover px-4 sm:w-2/3 sm:justify-start"
-                            >
-                                Sign up for our newsletter!
-                            </Button>
-                        </div>
-                        <div className="pt-2 sm:pt-4">
-                            <SocialIcons color="#32848C" />
-                        </div>
-                    </div>
-                </div>
+                <Button
+                    type="button" // Changed to type="button" to prevent form submission
+                    onClick={handleSubmit}
+                    className="relative mx-auto block w-fit rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0"
+                >
+                    <span className="whitespace-nowrap">
+                        Sign up for our newsletter!
+                    </span>
+                </Button>
             </div>
             <img
                 src={MiddleBody}
