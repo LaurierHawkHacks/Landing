@@ -9,28 +9,33 @@ import {
     ScrollButton,
     LoadingAnimation,
 } from '@components';
-import { HeroAboutDesktop } from '@assets';
+import { HeroAboutDesktop, HeroAboutMobile } from '@assets';
 
 const Landing: React.FC = () => {
-    const [isLoading, setIsLoading] = useState(true);
-    const [componentLoaded, setComponentLoaded] = useState(false);
+    const [desktopImageLoaded, setDesktopImageLoaded] = useState(false);
+    const [mobileImageLoaded, setMobileImageLoaded] = useState(false);
     const [timerFinished, setTimerFinished] = useState(false);
 
     useEffect(() => {
+        // Load Desktop SVG
         const desktopImage = new Image();
         desktopImage.src = HeroAboutDesktop;
-        desktopImage.onload = () => setComponentLoaded(true);
+        desktopImage.onload = () => setDesktopImageLoaded(true);
 
+        // Load Mobile SVG
+        const mobileImage = new Image();
+        mobileImage.src = HeroAboutMobile;
+        mobileImage.onload = () => setMobileImageLoaded(true);
+
+        // Timer
         setTimeout(() => setTimerFinished(true), 2000);
     }, []);
 
-    // Once the timer and component are finished -> display the page
-    useEffect(() => {
-        if (componentLoaded && timerFinished) {
-            setIsLoading(false);
-        }
-    }, [componentLoaded, timerFinished]);
-
+    const isLoading = !(
+        desktopImageLoaded &&
+        mobileImageLoaded &&
+        timerFinished
+    );
     if (isLoading) {
         return <LoadingAnimation />;
     }
