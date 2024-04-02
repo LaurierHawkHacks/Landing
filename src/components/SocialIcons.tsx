@@ -10,7 +10,6 @@ interface SocialIconsProps {
 
 const SocialIcons: React.FC<SocialIconsProps> = ({ color = "currentColor" }) => {
     const [iconSize, setIconSize] = useState(40);
-    const hoverColor = '#0FA3B1'; 
 
     useEffect(() => {
         const handleResize = () => {
