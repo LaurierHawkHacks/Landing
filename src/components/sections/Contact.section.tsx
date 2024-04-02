@@ -41,7 +41,7 @@ const ContactSection: React.FC = () => {
                 <Button
                     type="button" // Changed to type="button" to prevent form submission
                     onClick={handleSubmit}
-                    className="relative w-fit rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10"
+                    className="relative mx-auto block w-fit rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0"
                 >
                     <span className="whitespace-nowrap">
                         Sign up for our newsletter!
