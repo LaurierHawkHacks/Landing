@@ -1,7 +1,7 @@
 import React from 'react';
 import { TopBorder, BottomBorder, MiddleBody, Hawk, BirdParts } from '@assets';
 import { Button, SocialIcons } from '@components';
-import { logEvent, analytics } from '../../components/Analytics';
+import { logEvent, analytics } from '../../utils/Analytics';
 
 const ContactSection: React.FC = () => {
     const openInNewTab = (url: string) => {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaEnvelope, FaLinkedin, FaDiscord, FaTiktok } from "react-icons/fa";
 import { SiDevpost } from "react-icons/si";
 import { RiInstagramFill } from "react-icons/ri";
-import { logEvent, analytics } from '../components/Analytics';
+import { logEvent, analytics } from '../utils/Analytics';
 
 interface SocialIconsProps {
     color?: string;

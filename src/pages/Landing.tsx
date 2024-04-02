@@ -10,7 +10,7 @@ import {
     LoadingAnimation,
 } from '@components';
 import { HeroAboutDesktop } from '@assets';
-import { logEvent, analytics } from '../components/Analytics';
+import { logEvent, analytics } from '../utils/Analytics';
 
 const Landing: React.FC = () => {
     const [isLoading, setIsLoading] = useState(true);
