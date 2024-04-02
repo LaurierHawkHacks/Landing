@@ -100,7 +100,7 @@ const SponsorFAQSection = () => {
         if (animationFrameIds.has(carousel)) {
           cancelAnimationFrame(animationFrameIds.get(carousel)!);
         }
-        
+
         handleScroll(); // Re-evaluate whether to start or stop the animation based on new size
       });
       resizeObserver.observe(carousel);
@@ -114,7 +114,7 @@ const SponsorFAQSection = () => {
       carouselRefs.current.forEach((carousel) => {
         if (carousel && animationFrameIds.has(carousel)) {
           cancelAnimationFrame(animationFrameIds.get(carousel)!);
-        }        
+        }
       });
     };
   }, []);
@@ -141,7 +141,10 @@ const SponsorFAQSection = () => {
           />
           <div className="absolute bottom-0 left-0 right-0 top-6 flex flex-col items-center space-y-6 pt-[110px] sm:space-y-12">
             <div className="absolute left-1/2 top-6 -translate-x-1/2 transform">
-              <div id="sponsors-anchor" className="font-raleway vs:text-[60px] text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg sm:text-[80px]">
+              <div
+                id="sponsors-anchor"
+                className="font-raleway vs:text-[60px] text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg sm:text-[80px]"
+              >
                 SPONSORS
               </div>
             </div>
@@ -151,25 +154,40 @@ const SponsorFAQSection = () => {
                 ref={(el) => el && (carouselRefs.current[0] = el)}
                 className="flex items-center justify-start space-x-4 px-4 sm:space-x-16 transition-transform duration-[50ms] ease-linear"
               >
-                <div className="h-14 w-auto flex-shrink-0">
+                <a
+                  href="https://www.veritasai.com/"
+                  className="h-14 w-auto flex-shrink-0"
+                >
                   <img src={Veritas} alt="Veritas" className="h-full w-auto" />
-                </div>
-                <div className="h-12 w-auto flex-shrink-0">
+                </a>
+                <a
+                  href="https://www.assemblyai.com/"
+                  className="h-12 w-auto flex-shrink-0"
+                >
                   <img
                     src={Assembly}
                     alt="Assembly"
                     className="h-full w-auto"
                   />
-                </div>
-                <div className="h-12 w-auto flex-shrink-0">
+                </a>
+                <a
+                  href="https://www.soctechnologies.com/"
+                  className="h-12 w-auto flex-shrink-0"
+                >
                   <img src={Soc} alt="Soc" className="h-full w-auto" />
-                </div>
-                <div className="h-12 w-auto flex-shrink-0">
+                </a>
+                <a
+                  href="https://www.fdmgroup.com/en-ca/"
+                  className="h-12 w-auto flex-shrink-0"
+                >
                   <img src={Fdm} alt="FDM" className="h-full w-auto" />
-                </div>
-                <div className="h-12 w-auto flex-shrink-0">
+                </a>
+                <a
+                  href="https://www.echo3d.com/"
+                  className="h-12 w-auto flex-shrink-0"
+                >
                   <img src={Echo3D} alt="Echo3D" className="h-full w-auto" />
-                </div>
+                </a>
               </div>
             </div>
 
@@ -178,33 +196,50 @@ const SponsorFAQSection = () => {
                 ref={(el) => el && (carouselRefs.current[1] = el)}
                 className="flex items-center justify-start space-x-6 px-4 transition-transform duration-[50ms] ease-linear"
               >
-                <div className="h-12 w-auto flex-shrink-0">
+                <a
+                  href="https://www.leading-learners.com/"
+                  className="h-12 w-auto flex-shrink-0"
+                >
                   <img
                     src={LeadingLeaders}
                     alt="Leading"
                     className="h-full w-auto"
                   />
-                </div>
-                <div className="h-12 w-auto flex-shrink-0">
+                </a>
+
+                <a
+                  href="https://www.ollon.ca/"
+                  className="h-12 w-auto flex-shrink-0"
+                >
                   <img src={Ollon} alt="Ollon" className="h-full w-auto" />
-                </div>
-                <div className="h-12 w-auto flex-shrink-0">
+                </a>
+
+                <a
+                  href="https://1password.com/"
+                  className="h-12 w-auto flex-shrink-0"
+                >
                   <img
                     src={OnePassword}
                     alt="1Password"
                     className="h-full w-auto"
                   />
-                </div>
-                <div className="h-12 w-auto flex-shrink-0">
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/roomiez/about/"
+                  className="h-12 w-auto flex-shrink-0"
+                >
                   <img src={Roomiez} alt="Roomiez" className="h-full w-auto" />
-                </div>
-                <div className="h-12 w-auto flex-shrink-0">
+                </a>
+                <a
+                  href="https://balsamiq.com/"
+                  className="h-12 w-auto flex-shrink-0"
+                >
                   <img
                     src={Balsamiq}
                     alt="Balsamiq"
                     className="h-full w-auto"
                   />
-                </div>
+                </a>
               </div>
             </div>
 
@@ -213,57 +248,78 @@ const SponsorFAQSection = () => {
                 ref={(el) => el && (carouselRefs.current[2] = el)}
                 className="flex items-center justify-start space-x-6 px-4 transition-transform duration-[50ms] ease-linear"
               >
-                <div className="h-12 w-auto flex-shrink-0">
+                <a
+                  href="https://www.digitalocean.com/"
+                  className="h-12 w-auto flex-shrink-0"
+                >
                   <img
                     src={DigitalOcean}
                     alt="DigitalOcean"
                     className="h-full w-auto"
                   />
-                </div>
-                <div className="h-12 w-auto flex-shrink-0">
+                </a>
+                <a
+                  href="https://www.taskade.com/"
+                  className="h-12 w-auto flex-shrink-0"
+                >
                   <img src={Taskade} alt="Taskade" className="h-full w-auto" />
-                </div>
+                </a>
               </div>
             </div>
 
             <div className="overflow-hidden">
               <div className="flex items-center justify-start px-2 md:px-8 transition-transform duration-[50ms] ease-linear">
-                <div className="h-20 md:h-28 w-auto flex-shrink-0">
+                <a
+                  href="https://sparc.network/"
+                  className="h-20 md:h-28 w-auto flex-shrink-0"
+                >
                   <img src={Dcl} alt="DCL" className="h-full w-auto" />
-                </div>
+                </a>
               </div>
             </div>
 
             <div className="mt-20" id="partners-section">
-              <div id="partners-anchor" className="font-raleway vs:text-[60px] mt-6 text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg sm:text-[80px]">
+              <div
+                id="partners-anchor"
+                className="font-raleway vs:text-[60px] mt-6 text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg sm:text-[80px]"
+              >
                 PARTNERS
               </div>
               <div className="flex flex-wrap items-center justify-center gap-3">
-                <img
-                  src={StudentsUnion}
-                  alt="Student Union"
+                <a
+                  href="https://www.yourstudentsunion.ca/"
                   className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
-                />
-                <img
-                  src={CCubed}
-                  alt="Ccubed"
+                >
+                  <img
+                    src={StudentsUnion}
+                    alt="Student Union"
+                    className="h-full"
+                  />
+                </a>
+                <a
+                  href="https://www.ccubed.dev/"
                   className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
-                />
-                <img
-                  src={Mlh}
-                  alt="MLH"
+                >
+                  <img src={CCubed} alt="Ccubed" className="h-full" />
+                </a>
+                <a
+                  href="https://mlh.io/"
                   className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
-                />
-                <img
-                  src={Fossa}
-                  alt="Fossa"
+                >
+                  <img src={Mlh} alt="MLH" className="h-full" />
+                </a>
+                <a
+                  href="https://fossa.ca/"
                   className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
-                />
-                <img
-                  src={Lcs}
-                  alt="LCS"
+                >
+                  <img src={Fossa} alt="Fossa" className="h-full" />
+                </a>
+                <a
+                  href="https://lauriercs.ca/"
                   className="sm:h-18 md:h-21 col-span-2 h-16 justify-self-center md:col-span-1 lg:h-24 xl:h-24"
-                />
+                >
+                  <img src={Lcs} alt="LCS" className="h-full" />
+                </a>
               </div>
             </div>
           </div>
