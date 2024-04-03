@@ -76,12 +76,12 @@ const TeamSection = () => {
                     className="relative mx-auto mb-10 w-fit sm:mb-24 lg:mb-32"
                 >
                     <img
-                        className="mx-auto w-full max-w-fit sm:hidden"
+                        className="mx-auto hidden w-full max-w-fit sm:block"
                         src={MeetTheTeamBalloon}
                         alt=""
                     />
                     <img
-                        className="mx-auto hidden w-full max-w-[70rem] sm:block"
+                        className="mx-auto w-full max-w-[70rem] sm:hidden"
                         src={MeetTheTeamBanner}
                         alt=""
                     />
