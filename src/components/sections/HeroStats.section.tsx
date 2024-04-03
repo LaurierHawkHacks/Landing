@@ -101,7 +101,7 @@ const HeroStatSection: React.FC = () => {
                         <p className="text-base md:text-lg lg:text-2xl xl:text-2.5xl">
                             Remember, you don’t have to be a pro to participate
                             - show up with ten years or ten minutes of
-                            experience (oh yeah, and a great attitute too!)
+                            experience (oh yeah, and a great attitude too!)
                         </p>
                     </div>
                 </div>
