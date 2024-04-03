@@ -15,7 +15,7 @@ const Navbar = () => {
     }, [showMenu]);
 
     return (
-        <nav className="navbar | fixed top-0 z-50 flex h-fit w-full items-center justify-between p-3 px-10 lg:justify-normal">
+        <header className="fixed top-0 z-50 flex h-fit w-full items-center justify-between p-3 px-10 lg:justify-normal">
             <div className="logo lg:mr-8">
                 <img
                     className="h-14 w-14"
@@ -24,12 +24,12 @@ const Navbar = () => {
                 />
             </div>
 
-            <div className="nav-items hidden text-tbrand lg:mr-auto lg:block">
+            <nav className="nav-items hidden text-tbrand lg:mr-auto lg:block">
                 <NavItems isHorizontal={true} handleClick={hideMenu} />
-            </div>
+            </nav>
 
             <div className="portal-btn hidden transition-all duration-500 ease-in-out lg:mr-32 lg:block">
-                <Button className="px-0 py-0">
+                <Button className="px-0 py-0" tabIndex={-1}>
                     <Link
                         to="/coming-soon"
                         className="px-5 py-2 xl:px-6 xl:py-3"
@@ -63,13 +63,14 @@ const Navbar = () => {
                     toggled={showMenu}
                     toggle={setShowMenu}
                     color="#2B6469"
+                    hideOutline={false}
                 />
             </div>
 
             <div className="menu absolute lg:hidden">
                 <Menu showMenu={showMenu} hideMenu={hideMenu} />
             </div>
-        </nav>
+        </header>
     );
 };
 

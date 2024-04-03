@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import {
     Navbar,
     HeroStatSection,
-    TeamSection,
+    TeamFAQSection,
     ContactSection,
-    SponsorFAQSection,
+    SponsorSection,
     FooterSection,
     ScrollButton,
     LoadingAnimation,
@@ -43,10 +43,12 @@ const Landing: React.FC = () => {
     return (
         <div className="pt-[5rem] transition ease-in">
             <Navbar />
-            <HeroStatSection />
-            <SponsorFAQSection />
-            <TeamSection />
-            <ContactSection />
+            <main>
+                <HeroStatSection />
+                <SponsorSection />
+                <TeamFAQSection />
+                <ContactSection />
+            </main>
             <FooterSection />
             <ScrollButton />
         </div>

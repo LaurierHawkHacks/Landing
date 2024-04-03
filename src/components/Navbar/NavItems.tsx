@@ -27,7 +27,10 @@ const NavItems: React.FC<NavItemsProps> = ({ isHorizontal, handleClick }) => {
             }`}
         >
             {links.map((link) => (
-                <li key={link.title} className="hover:text-[#0FA3B1] transition-colors duration-200">
+                <li
+                    key={link.title}
+                    className="transition-colors duration-200 hover:text-[#0FA3B1]"
+                >
                     <Link
                         to={link.href}
                         smooth

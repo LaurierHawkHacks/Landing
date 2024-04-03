@@ -14,14 +14,16 @@ const ContactSection: React.FC = () => {
     };
     return (
         <section className="relative z-10">
-            <img src={TopBorder} className="z-0 w-full" />
+            <img src={TopBorder} className="z-0 w-full" alt="" />
             <img
                 src={Hawk}
                 className="absolute right-0 top-0 z-[-1] w-full max-w-5xl -translate-x-2  -translate-y-1/2 md:-translate-x-3 xl:right-10 2xl:right-52"
+                alt=""
             />
             <img
                 src={BirdParts}
                 className="absolute right-0 top-0 z-50 w-full max-w-5xl -translate-y-[42.5%] xl:right-10 2xl:right-52"
+                alt=""
             />
 
             <div className="absolute inset-x-0 z-10 mx-auto max-w-4xl px-4 pt-10 sm:pt-16 md:px-8 md:pt-20 lg:px-12 lg:pt-32 xl:pt-32">
@@ -51,8 +53,9 @@ const ContactSection: React.FC = () => {
             <img
                 src={MiddleBody}
                 className="z-0 h-[300px] w-full object-cover sm:h-[350px] md:h-[400px] lg:h-[700px]"
+                alt=""
             />
-            <img src={BottomBorder} className="z-0 w-full" />
+            <img src={BottomBorder} className="z-0 w-full" alt="" />
         </section>
     );
 };

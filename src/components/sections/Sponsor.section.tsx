@@ -21,7 +21,7 @@ import {
   Lcs,
 } from "@assets";
 
-const SponsorFAQSection = () => {
+const SponsorSection = () => {
   const carouselRefs = useRef<HTMLDivElement[]>([]);
 
   useEffect(() => {
@@ -31,7 +31,7 @@ const SponsorFAQSection = () => {
       const totalAnimationTime = 8000; // Total cycle time for moving, excluding pauses
       const pauseDuration = 2000; // Duration of pause at each end
       let pauseScheduled = false;
-      let animationStartTime = Date.now() - pauseDuration; // Start with a pause
+      const animationStartTime = Date.now() - pauseDuration; // Start with a pause
       let lastAnimationPhase = "pause";
 
       const handleScroll = () => {
@@ -274,4 +274,4 @@ const SponsorFAQSection = () => {
   );
 };
 
-export { SponsorFAQSection };
+export { SponsorSection };

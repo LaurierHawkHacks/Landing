@@ -74,7 +74,7 @@ body {
     }
 }
 
-.navbar::before {
+header::before {
     content: '';
     position: absolute;
     width: 100%;
