@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import {
   Navbar,
   HeroStatSection,
-  TeamSection,
+  TeamFAQSection,
   ContactSection,
-  SponsorFAQSection,
+  SponsorSection,
   FooterSection,
   ScrollButton,
   LoadingAnimation,

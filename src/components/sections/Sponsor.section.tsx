@@ -21,7 +21,7 @@ import {
     Lcs,
 } from '@assets';
 
-const SponsorFAQSection = () => {
+const SponsorSection = () => {
     const carouselRefs = useRef<HTMLDivElement[]>([]);
 
     useEffect(() => {
