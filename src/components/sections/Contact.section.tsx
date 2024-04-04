@@ -14,7 +14,7 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <section className="relative z-10">
+    <section id="contact" className="relative z-10">
       <img src={TopBorder} className="z-0 w-full" />
       <img
         src={Hawk}
