@@ -3,6 +3,7 @@ import { NavItems, Menu, Button } from '@components';
 import { HawkHacksLogo } from '@assets';
 import Hamburger from 'hamburger-react';
 import { Link } from 'react-router-dom';
+import { logEvent, analytics } from '../../utils/Analytics';
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -42,18 +43,21 @@ const Navbar = () => {
             {/* banner-holder: banner is out of flow, to prevent banner affect the desired flow, adding a placeholder banner holder when the screen is smaller  */}
             <div className="banner-holder order-first w-12 lg:hidden"></div>
             <div className="banner absolute left-10 top-0 lg:left-auto lg:right-10">
-                <a
-                    id="mlh-trust-badge"
-                    href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <img
-                        src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
-                        alt="Major League Hacking 2024 Hackathon Season"
-                        className="w-20 lg:w-24"
-                    />
-                </a>
+            <a
+                id="mlh-trust-badge"
+                href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => {
+                logEvent(analytics, 'click_mlh_trust_badge');
+                }}
+            >
+                <img
+                src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
+                alt="Major League Hacking 2024 Hackathon Season"
+                className="w-20 lg:w-24"
+                />
+            </a>
             </div>
 
             <div className="menu-toggle-btn z-[60] lg:hidden">
