@@ -30,16 +30,17 @@ const Navbar = () => {
             </div>
 
             <div className="portal-btn hidden transition-all duration-500 ease-in-out lg:mr-32 lg:block">
-                <Button className="px-0 py-0">
-                    <Link
-                        to="/coming-soon"
-                        className="px-5 py-2 xl:px-6 xl:py-3"
-                    >
-                        Application Portal
-                    </Link>
-                </Button>
+            <Button
+                className="px-0 py-0"
+                onClick={() => {
+                logEvent(analytics, 'click_application_portal_button');
+                }}
+            >
+                <Link to="/coming-soon" className="px-5 py-2 xl:px-6 xl:py-3">
+                Application Portal
+                </Link>
+            </Button>
             </div>
-
             {/* banner-holder: banner is out of flow, to prevent banner affect the desired flow, adding a placeholder banner holder when the screen is smaller  */}
             <div className="banner-holder order-first w-12 lg:hidden"></div>
             <div className="banner absolute left-10 top-0 lg:left-auto lg:right-10">
