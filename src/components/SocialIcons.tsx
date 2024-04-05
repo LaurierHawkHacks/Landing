@@ -3,6 +3,7 @@ import { RiInstagramLine, RiLinkedinLine, RiDiscordLine, RiTiktokLine } from "re
 import { FaRegEnvelope } from "react-icons/fa";
 import { SiLinktree } from "react-icons/si";
 import { logEvent, analytics } from '../utils/Analytics';
+import { Links } from '../utils/SocialLinks';
 
 interface SocialIconsProps {
   color?: string;
@@ -46,12 +47,12 @@ const SocialIcons: React.FC<SocialIconsProps> = ({ color = "currentColor" }) => 
 
   return (
     <div className="flex justify-center items-center space-x-7">
-      <SocialIconLink href="mailto:hello@hawkhawks.ca" Icon={FaRegEnvelope} platform="email" />
-      <SocialIconLink href="https://linkedin.com/company/hawkhacks/" Icon={RiLinkedinLine} platform="linkedin" />
-      <SocialIconLink href="https://discord.gg/GxwvFEn9TB" Icon={RiDiscordLine} platform="discord" />
-      <SocialIconLink href="https://tiktok.com/@hawkhacks" Icon={RiTiktokLine} platform="tiktok" />
-      <SocialIconLink href="https://instagram.com/wluhawkhacks/" Icon={RiInstagramLine} platform="instagram" />
-      <SocialIconLink href="https://linktr.ee/hawkhacks" Icon={SiLinktree} platform="linktree" />
+      <SocialIconLink href={Links.email} Icon={FaRegEnvelope} platform="email" />
+      <SocialIconLink href={Links.linkedin} Icon={RiLinkedinLine} platform="linkedin" />
+      <SocialIconLink href={Links.discord} Icon={RiDiscordLine} platform="discord" />
+      <SocialIconLink href={Links.tiktok} Icon={RiTiktokLine} platform="tiktok" />
+      <SocialIconLink href={Links.instagram} Icon={RiInstagramLine} platform="instagram" />
+      <SocialIconLink href={Links.linktree} Icon={SiLinktree} platform="linktree" />
     </div>
   );
 };
