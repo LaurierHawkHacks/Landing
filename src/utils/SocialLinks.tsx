@@ -5,6 +5,6 @@ const Links = {
     tiktok: "https://tiktok.com/@hawkhacks",
     instagram: "https://instagram.com/wluhawkhacks/",
     linktree: "https://linktr.ee/hawkhacks",
-}
+};
 
-export { Links }
+export { Links };

@@ -7,6 +7,6 @@ const Links = {
 
     distributive: "https://distributive.network/",
     near: "https://near.org/",
-}
+};
 
-export { Links }
+export { Links };
