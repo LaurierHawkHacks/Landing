@@ -29,10 +29,10 @@ const Navbar = () => {
             </div>
 
             <div className="portal-btn hidden transition-all duration-500 ease-in-out lg:mr-32 lg:block">
-                <Button className="px-0 py-0">
+                <Button className="relative font-medium mx-auto block w-fit rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0">
                     <Link
                         to="/coming-soon"
-                        className="px-5 py-2 xl:px-6 xl:py-3"
+                        className="px-5 py-1.5 min-[1024px]:px-1 max-[1024px]:py-0.5"
                     >
                         Application Portal
                     </Link>
@@ -51,7 +51,7 @@ const Navbar = () => {
                     <img
                         src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
                         alt="Major League Hacking 2024 Hackathon Season"
-                        className="w-20 lg:w-24"
+                        className="w-20 lg:w-24 onhover:dark:filter-none hover:scale-105 transition-transform duration-300 ease-in-out"
                     />
                 </a>
             </div>
