@@ -48,7 +48,7 @@ const SocialIcons: React.FC<SocialIconsProps> = ({ color = "currentColor" }) => 
     <div className="flex justify-center items-center space-x-7">
       <SocialIconLink href="mailto:hello@hawkhawks.ca" Icon={FaRegEnvelope} platform="email" />
       <SocialIconLink href="https://linkedin.com/company/hawkhacks/" Icon={RiLinkedinLine} platform="linkedin" />
-      <SocialIconLink href="https://discord.gg/vfeuenPv7T" Icon={RiDiscordLine} platform="discord" />
+      <SocialIconLink href="https://discord.gg/GxwvFEn9TB" Icon={RiDiscordLine} platform="discord" />
       <SocialIconLink href="https://tiktok.com/@hawkhacks" Icon={RiTiktokLine} platform="tiktok" />
       <SocialIconLink href="https://instagram.com/wluhawkhacks/" Icon={RiInstagramLine} platform="instagram" />
       <SocialIconLink href="https://linktr.ee/hawkhacks" Icon={SiLinktree} platform="linktree" />
