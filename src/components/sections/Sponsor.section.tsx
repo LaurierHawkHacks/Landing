@@ -166,24 +166,27 @@ const SponsorSection = () => {
                     className="md: absolute left-0 top-0 z-50 w-full max-w-5xl -translate-x-2 -translate-y-[42.5%] scale-x-[-1] md:-translate-x-3 xl:left-10 2xl:left-52"
                 />
                 <div className="relative">
-                    <div className="top-6 flex flex-col items-center space-y-6 bg-[#f2f2f0] pt-[110px] sm:space-y-12">
-                        <div className="sponsor-content">
-                            <div
+                    <div className="main-container flex flex-col items-center space-y-6 bg-[#f2f2f0] py-8 sm:space-y-12 md:py-16 xl:py-32">
+                        <div className="sponsor-content mx-auto max-w-6xl space-y-4 px-4 pb-10 text-center md:space-y-8 lg:space-y-16">
+                            <h2
                                 id="sponsors-anchor"
-                                className="font-raleway vs:text-[60px] text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg sm:text-[80px]"
+                                className="font-raleway vs:text-[60px] text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg md:text-[80px]"
                             >
                                 SPONSORS
-                            </div>
+                            </h2>
                             <div className="grid gap-4">
-                                <p>
+                                <p className="text-base md:text-lg lg:text-2xl xl:text-2.5xl">
                                     Thanks to our dedicated sponsors, we’re able
                                     to give hackers an invaluable space to
                                     connect and grow! Their contributions fuel
                                     the creative energy and unforgettable
                                     experiences that HawkHacks strives for.
                                 </p>
-                                <p>Further sponsor updates coming soon!</p>
+                                <p className="text-base md:text-lg lg:text-2xl xl:text-2.5xl">
+                                    Further sponsor updates coming soon!
+                                </p>
                             </div>
+                            {/* className="mt-8 md:mt-16 lg:mt-20" */}
                             <button>Become a sponsor!</button>
                         </div>
 
@@ -317,7 +320,7 @@ const SponsorSection = () => {
                         <div className="mt-20" id="partners-section">
                             <div
                                 id="partners-anchor"
-                                className="font-raleway vs:text-[60px] mt-6 text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg sm:text-[80px]"
+                                className="font-raleway vs:text-[60px] mt-6 text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg md:text-[80px]"
                             >
                                 PARTNERS
                             </div>
