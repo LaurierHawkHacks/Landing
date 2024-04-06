@@ -1,27 +1,20 @@
 import { useEffect, useRef } from 'react';
-import { TopBorder, BottomBorder, Hawk, BirdParts } from '@assets';
+import { TopBorder, BottomBorder, Hawk, BirdParts, StreamYard } from '@assets';
 import {
     OnePassword,
-    Assembly,
     Balsamiq,
     CCubed,
-    Dcl,
-    DigitalOcean,
     Echo3D,
-    Fdm,
     Fossa,
     Lcs,
-    LeadingLeaders,
     Mlh,
-    Ollon,
-    Roomiez,
-    Soc,
     StudentsUnion,
     Taskade,
-    Veritas,
     Certopus,
     Cisco,
     DeFiBlocks,
+    Dominos,
+    Distributive,
     Ennios,
     Fantuan,
     IndoFood,
@@ -38,6 +31,7 @@ import {
     Fintech,
     Wolfram,
     Solana,
+    Rosenfeld,
 } from '@assets';
 
 const SponsorSection = () => {
@@ -186,22 +180,33 @@ const SponsorSection = () => {
                                     Further sponsor updates coming soon!
                                 </p>
                             </div>
-                            {/* className="mt-8 md:mt-16 lg:mt-20" */}
                             <button>Become a sponsor!</button>
                         </div>
 
+                        {/* each div is a section */}
+                        {/* the height define the size of the image */}
+
+                        {/* first tier */}
                         <div className="overflow-hidden">
                             <div className="flex items-center justify-start px-2 transition-transform duration-[50ms] ease-linear md:px-8">
                                 <div className="h-20 w-auto flex-shrink-0 md:h-28">
                                     <img
-                                        src={Dcl}
-                                        alt="DCL"
+                                        src={Solana}
+                                        alt="Solana"
+                                        className="h-full w-auto"
+                                    />
+                                </div>
+                                <div className="h-20 w-auto flex-shrink-0 md:h-28">
+                                    <img
+                                        src={Near}
+                                        alt="Near"
                                         className="h-full w-auto"
                                     />
                                 </div>
                             </div>
                         </div>
 
+                        {/* second tier */}
                         <div className="overflow-hidden">
                             <div
                                 ref={(el) =>
@@ -211,21 +216,43 @@ const SponsorSection = () => {
                             >
                                 <div className="h-12 w-auto flex-shrink-0">
                                     <img
-                                        src={DigitalOcean}
-                                        alt="DigitalOcean"
+                                        src={Fantuan}
+                                        alt="Fantuan"
                                         className="h-full w-auto"
                                     />
                                 </div>
                                 <div className="h-12 w-auto flex-shrink-0">
                                     <img
-                                        src={Taskade}
-                                        alt="Taskade"
+                                        src={SmokesPoutinerie}
+                                        alt="SmokesPoutinerie"
+                                        className="h-full w-auto"
+                                    />
+                                </div>
+                                <div className="h-12 w-auto flex-shrink-0">
+                                    <img
+                                        src={Dominos}
+                                        alt="Dominos"
+                                        className="h-full w-auto"
+                                    />
+                                </div>
+                                <div className="h-12 w-auto flex-shrink-0">
+                                    <img
+                                        src={Nibiru}
+                                        alt="Nibiru"
+                                        className="h-full w-auto"
+                                    />
+                                </div>
+                                <div className="h-12 w-auto flex-shrink-0">
+                                    <img
+                                        src={Distributive}
+                                        alt="Distributive"
                                         className="h-full w-auto"
                                     />
                                 </div>
                             </div>
                         </div>
 
+                        {/* third tier */}
                         <div className="overflow-hidden">
                             <div
                                 ref={(el) =>
@@ -235,42 +262,36 @@ const SponsorSection = () => {
                             >
                                 <div className="h-14 w-auto flex-shrink-0">
                                     <img
-                                        src={Veritas}
-                                        alt="Veritas"
+                                        src={IndoFood}
+                                        alt="VeriIndoFoodtas"
                                         className="h-full w-auto"
                                     />
                                 </div>
                                 <div className="h-12 w-auto flex-shrink-0">
                                     <img
-                                        src={Assembly}
-                                        alt="Assembly"
+                                        src={Roku}
+                                        alt="Roku"
                                         className="h-full w-auto"
                                     />
                                 </div>
                                 <div className="h-12 w-auto flex-shrink-0">
                                     <img
-                                        src={Soc}
-                                        alt="Soc"
+                                        src={SweetLouLogo}
+                                        alt="SweetLouLogo"
                                         className="h-full w-auto"
                                     />
                                 </div>
                                 <div className="h-12 w-auto flex-shrink-0">
                                     <img
-                                        src={Fdm}
-                                        alt="FDM"
-                                        className="h-full w-auto"
-                                    />
-                                </div>
-                                <div className="h-12 w-auto flex-shrink-0">
-                                    <img
-                                        src={Echo3D}
-                                        alt="Echo3D"
+                                        src={Cisco}
+                                        alt="Cisco"
                                         className="h-full w-auto"
                                     />
                                 </div>
                             </div>
                         </div>
 
+                        {/* last tiers */}
                         <div className="overflow-hidden">
                             <div
                                 ref={(el) =>
@@ -280,15 +301,8 @@ const SponsorSection = () => {
                             >
                                 <div className="h-12 w-auto flex-shrink-0">
                                     <img
-                                        src={LeadingLeaders}
-                                        alt="Leading"
-                                        className="h-full w-auto"
-                                    />
-                                </div>
-                                <div className="h-12 w-auto flex-shrink-0">
-                                    <img
-                                        src={Ollon}
-                                        alt="Ollon"
+                                        src={Echo3D}
+                                        alt="Echo3D"
                                         className="h-full w-auto"
                                     />
                                 </div>
@@ -301,8 +315,8 @@ const SponsorSection = () => {
                                 </div>
                                 <div className="h-12 w-auto flex-shrink-0">
                                     <img
-                                        src={Roomiez}
-                                        alt="Roomiez"
+                                        src={Wolfram}
+                                        alt="Wolfram"
                                         className="h-full w-auto"
                                     />
                                 </div>
@@ -310,6 +324,83 @@ const SponsorSection = () => {
                                     <img
                                         src={Balsamiq}
                                         alt="Balsamiq"
+                                        className="h-full w-auto"
+                                    />
+                                </div>
+                                <div className="h-12 w-auto flex-shrink-0">
+                                    <img
+                                        src={Rosenfeld}
+                                        alt="Rosenfeld"
+                                        className="h-full w-auto"
+                                    />
+                                </div>
+                                <div className="h-12 w-auto flex-shrink-0">
+                                    <img
+                                        src={Taskade}
+                                        alt="Taskade"
+                                        className="h-full w-auto"
+                                    />
+                                </div>
+                                <div className="h-12 w-auto flex-shrink-0">
+                                    <img
+                                        src={StreamYard}
+                                        alt="StreamYard"
+                                        className="h-full w-auto"
+                                    />
+                                </div>
+                                <div className="h-12 w-auto flex-shrink-0">
+                                    <img
+                                        src={DeFiBlocks}
+                                        alt="DeFiBlocks"
+                                        className="h-full w-auto"
+                                    />
+                                </div>
+                                <div className="h-12 w-auto flex-shrink-0">
+                                    <img
+                                        src={InterviewCake}
+                                        alt="InterviewCake"
+                                        className="h-full w-auto"
+                                    />
+                                </div>
+                                <div className="h-12 w-auto flex-shrink-0">
+                                    <img
+                                        src={Ennios}
+                                        alt="Ennios"
+                                        className="h-full w-auto"
+                                    />
+                                </div>
+                                <div className="h-12 w-auto flex-shrink-0">
+                                    <img
+                                        src={Certopus}
+                                        alt="Certopus"
+                                        className="h-full w-auto"
+                                    />
+                                </div>
+                                <div className="h-12 w-auto flex-shrink-0">
+                                    <img
+                                        src={InterviewBuddy}
+                                        alt="InterviewBuddy"
+                                        className="h-full w-auto"
+                                    />
+                                </div>
+                                <div className="h-12 w-auto flex-shrink-0">
+                                    <img
+                                        src={Verbwire}
+                                        alt="Verbwire"
+                                        className="h-full w-auto"
+                                    />
+                                </div>
+                                <div className="h-12 w-auto flex-shrink-0">
+                                    <img
+                                        src={JDoodle}
+                                        alt="JDoodle"
+                                        className="h-full w-auto"
+                                    />
+                                </div>
+                                <div className="h-12 w-auto flex-shrink-0">
+                                    <img
+                                        src={Vectara}
+                                        alt="Vectara"
                                         className="h-full w-auto"
                                     />
                                 </div>
@@ -331,11 +422,6 @@ const SponsorSection = () => {
                                     className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
                                 />
                                 <img
-                                    src={CCubed}
-                                    alt="Ccubed"
-                                    className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
-                                />
-                                <img
                                     src={Mlh}
                                     alt="MLH"
                                     className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
@@ -343,6 +429,11 @@ const SponsorSection = () => {
                                 <img
                                     src={Fossa}
                                     alt="Fossa"
+                                    className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
+                                />
+                                <img
+                                    src={Fintech}
+                                    alt="Fintech"
                                     className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
                                 />
                                 <img

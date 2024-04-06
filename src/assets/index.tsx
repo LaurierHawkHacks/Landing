@@ -64,6 +64,8 @@ import Veritas from './logos/veritas.png';
 import Certopus from './logos/Certopus.png';
 import Cisco from './logos/Cisco.png';
 import DeFiBlocks from './logos/DeFiBlocks.png';
+import Dominos from './logos/Dominos.png';
+import Distributive from './logos/distributive.png';
 import Ennios from './logos/ennios.png';
 import Fantuan from './logos/Fantuan.png';
 import IndoFood from './logos/IndoFood.png';
@@ -80,6 +82,8 @@ import Verbwire from './logos/Verbwire.png';
 import Fintech from './logos/WLU-Fintech.png';
 import Wolfram from './logos/Wolfram.png';
 import Solana from './logos/Solana.png';
+import Rosenfeld from './logos/rosenfeld.png';
+import StreamYard from './logos/StreamYard.png';
 
 export {
     OnePassword,
@@ -88,6 +92,8 @@ export {
     CCubed,
     Dcl,
     DigitalOcean,
+    Dominos,
+    Distributive,
     Echo3D,
     Fdm,
     Fossa,
@@ -118,7 +124,9 @@ export {
     Verbwire,
     Fintech,
     Wolfram,
-    Solana
+    Solana,
+    Rosenfeld,
+    StreamYard,
 };
 
 /*
