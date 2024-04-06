@@ -61,6 +61,26 @@ import StudentsUnion from './logos/studentsunion.png';
 import Taskade from './logos/taskade.png';
 import Veritas from './logos/veritas.png';
 
+import Certopus from './logos/Certopus.png';
+import Cisco from './logos/Cisco.png';
+import DeFiBlocks from './logos/DeFiBlocks.png';
+import Ennios from './logos/ennios.png';
+import Fantuan from './logos/Fantuan.png';
+import IndoFood from './logos/IndoFood.png';
+import InterviewBuddy from './logos/InterviewBuddy.png';
+import InterviewCake from './logos/interviewcake.png';
+import JDoodle from './logos/JDoodle.png';
+import Near from './logos/NEAR.png';
+import Nibiru from './logos/Nibiru.png';
+import Roku from './logos/Roku.png';
+import SmokesPoutinerie from './logos/Smokes-Poutinerie.png';
+import SweetLouLogo from './logos/SweetLouLogo.png';
+import Vectara from './logos/Vectara.png';
+import Verbwire from './logos/Verbwire.png';
+import Fintech from './logos/WLU-Fintech.png';
+import Wolfram from './logos/Wolfram.png';
+import Solana from './logos/Solana.png';
+
 export {
     OnePassword,
     Assembly,
@@ -80,6 +100,25 @@ export {
     StudentsUnion,
     Taskade,
     Veritas,
+    Certopus,
+    Cisco,
+    DeFiBlocks,
+    Ennios,
+    Fantuan,
+    IndoFood,
+    InterviewBuddy,
+    InterviewCake,
+    JDoodle,
+    Near,
+    Nibiru,
+    Roku,
+    SmokesPoutinerie,
+    SweetLouLogo,
+    Vectara,
+    Verbwire,
+    Fintech,
+    Wolfram,
+    Solana
 };
 
 /*
@@ -89,9 +128,7 @@ export {
  */
 import FaqBackground from './faq/bg-desktop.svg';
 
-export {
-  FaqBackground
-}
+export { FaqBackground };
 
 /*
  *
@@ -100,7 +137,7 @@ export {
  */
 import Clouds from './team/clouds.svg';
 import MeetTheTeamBalloon from './team/meet-the-team-balloon-banner.webp';
-import MeetTheTeamBanner from "./team/meet-the-team-banner.webp"
+import MeetTheTeamBanner from './team/meet-the-team-banner.webp';
 import MeetTheTeamBuildingLeft from './team/meet-the-team-building-left.svg';
 import MeetTheTeamBuildingRight from './team/meet-the-team-building-right.svg';
 
