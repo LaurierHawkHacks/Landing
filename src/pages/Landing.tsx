@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import {
   Navbar,
   HeroStatSection,
-  TeamSection,
+  TeamFAQSection,
   ContactSection,
-  SponsorFAQSection,
+  SponsorSection,
   FooterSection,
   ScrollButton,
   LoadingAnimation,
@@ -13,70 +13,72 @@ import { HeroAboutDesktop, HeroAboutMobile } from '@assets';
 import { logEvent, analytics } from '../utils/Analytics';
 
 const Landing: React.FC = () => {
-  const [desktopImageLoaded, setDesktopImageLoaded] = useState(false);
-  const [mobileImageLoaded, setMobileImageLoaded] = useState(false);
-  const [timerFinished, setTimerFinished] = useState(false);
+    const [desktopImageLoaded, setDesktopImageLoaded] = useState(false);
+    const [mobileImageLoaded, setMobileImageLoaded] = useState(false);
+    const [timerFinished, setTimerFinished] = useState(false);
+    
+    const isLoading = !(
+        desktopImageLoaded &&
+        mobileImageLoaded &&
+        timerFinished
+    );
+        
+    useEffect(() => {
+        // Load Desktop SVG
+        const desktopImage = new Image();
+        desktopImage.src = HeroAboutDesktop;
+        desktopImage.onload = () => setDesktopImageLoaded(true);
 
-  useEffect(() => {
-    // Load Desktop SVG
-    const desktopImage = new Image();
-    desktopImage.src = HeroAboutDesktop;
-    desktopImage.onload = () => setDesktopImageLoaded(true);
+        // Load Mobile SVG
+        const mobileImage = new Image();
+        mobileImage.src = HeroAboutMobile;
+        mobileImage.onload = () => setMobileImageLoaded(true);
 
-    // Load Mobile SVG
-    const mobileImage = new Image();
-    mobileImage.src = HeroAboutMobile;
-    mobileImage.onload = () => setMobileImageLoaded(true);
+        // Timer
+        setTimeout(() => setTimerFinished(true), 2000);
+    }, []);
+    
+    useEffect(() => {
+      logEvent(analytics, 'page_view');
+    }, []);
 
-    // Timer
-    setTimeout(() => setTimerFinished(true), 2000);
-  }, []);
+    useEffect(() => {
+      const milestones = Array.from({ length: 20 }, () => false); // Create an array for each 5% milestone
 
-  const isLoading = !(
-    desktopImageLoaded &&
-    mobileImageLoaded &&
-    timerFinished
-  );
+      const trackScrollPercentage = () => {
+        const scrolledPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
 
-  useEffect(() => {
-    logEvent(analytics, 'page_view');
-  }, []);
+        milestones.forEach((reached, index) => {
+          const milestone = (index + 1) * 5;
+          if (scrolledPercentage >= milestone && !reached) {
+            logEvent(analytics, 'scroll', { percentage: `${milestone}%` });
+            milestones[index] = true; // Mark this milestone as reached
+          }
+        });
+      };
 
-  useEffect(() => {
-    const milestones = Array.from({ length: 20 }, () => false); // Create an array for each 5% milestone
+      window.addEventListener('scroll', trackScrollPercentage);
 
-    const trackScrollPercentage = () => {
-      const scrolledPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+      return () => window.removeEventListener('scroll', trackScrollPercentage);
+    }, []);
 
-      milestones.forEach((reached, index) => {
-        const milestone = (index + 1) * 5;
-        if (scrolledPercentage >= milestone && !reached) {
-          logEvent(analytics, 'scroll', { percentage: `${milestone}%` });
-          milestones[index] = true; // Mark this milestone as reached
-        }
-      });
-    };
+    if (isLoading) {
+        return <LoadingAnimation />;
+    }
 
-    window.addEventListener('scroll', trackScrollPercentage);
-
-    return () => window.removeEventListener('scroll', trackScrollPercentage);
-  }, []);
-
-  if (isLoading) {
-    return <LoadingAnimation />;
-  }
-
-  return (
-    <div className="pt-[5rem] transition ease-in">
-      <Navbar />
-      <HeroStatSection />
-      <SponsorFAQSection />
-      <TeamSection />
-      <ContactSection />
-      <FooterSection />
-      <ScrollButton />
-    </div>
-  );
+    return (
+        <div className="pt-[5rem] transition ease-in">
+            <Navbar />
+            <main>
+                <HeroStatSection />
+                <SponsorSection />
+                <TeamFAQSection />
+                <ContactSection />
+            </main>
+            <FooterSection />
+            <ScrollButton />
+        </div>
+    );
 };
 
 export { Landing };

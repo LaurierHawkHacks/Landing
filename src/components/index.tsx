@@ -18,7 +18,7 @@ export { SocialIcons } from './SocialIcons';
  *
  */
 export { HeroStatSection } from './sections/HeroStats.section';
-export { TeamSection } from './sections/TeamFAQ.section';
+export { TeamFAQSection } from './sections/TeamFAQ.section';
 export { ContactSection } from './sections/Contact.section';
 export { FooterSection } from './sections/Footer.section';
-export { SponsorFAQSection } from './sections/Sponsor.section';
+export { SponsorSection } from './sections/Sponsor.section';

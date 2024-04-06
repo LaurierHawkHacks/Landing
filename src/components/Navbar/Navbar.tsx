@@ -15,7 +15,7 @@ const Navbar = () => {
     }, [showMenu]);
 
     return (
-        <nav className="navbar | fixed top-0 z-50 flex h-fit w-full items-center justify-between p-3 px-10 lg:justify-normal">
+        <header className="fixed top-0 z-50 flex h-fit w-full items-center justify-between p-3 px-10 lg:justify-normal">
             <div className="logo lg:mr-8">
                 <img
                     className="h-14 w-14"
@@ -24,12 +24,12 @@ const Navbar = () => {
                 />
             </div>
 
-            <div className="nav-items hidden text-tbrand lg:mr-auto lg:block">
+            <nav className="nav-items hidden text-tbrand lg:mr-auto lg:block">
                 <NavItems isHorizontal={true} handleClick={hideMenu} />
-            </div>
+            </nav>
 
             <div className="portal-btn hidden transition-all duration-500 ease-in-out lg:mr-32 lg:block">
-                <Button className="relative font-medium mx-auto block w-fit rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0">
+                <Button className="relative font-medium mx-auto block w-fit rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0" tabIndex={-1}>
                     <Link
                         to="/coming-soon"
                         className="px-5 py-1.5 min-[1024px]:px-1 max-[1024px]:py-0.5"
@@ -63,13 +63,14 @@ const Navbar = () => {
                     toggled={showMenu}
                     toggle={setShowMenu}
                     color="#2B6469"
+                    hideOutline={false}
                 />
             </div>
 
             <div className="menu absolute lg:hidden">
                 <Menu showMenu={showMenu} hideMenu={hideMenu} />
             </div>
-        </nav>
+        </header>
     );
 };
 
