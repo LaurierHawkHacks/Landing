@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { TopBorder, BottomBorder, MiddleBody, Hawk, BirdParts } from '@assets';
+import { TopBorder, BottomBorder, Hawk, BirdParts } from '@assets';
 import {
     Veritas,
     Assembly,
@@ -147,19 +147,25 @@ const SponsorSection = () => {
                     className="md: absolute left-0 top-0 z-50 w-full max-w-5xl -translate-x-2 -translate-y-[42.5%] scale-x-[-1] md:-translate-x-3 xl:left-10 2xl:left-52"
                 />
                 <div className="relative">
-                    <img
-                        src={MiddleBody}
-                        alt="Middle Body"
-                        className="z-10 h-[810px] w-full object-cover sm:h-[925px] md:h-[925px] lg:h-[950px]"
-                    />
-                    <div className="absolute bottom-0 left-0 right-0 top-6 flex flex-col items-center space-y-6 pt-[110px] sm:space-y-12">
-                        <div className="absolute left-1/2 top-6 -translate-x-1/2 transform">
+                    <div className="top-6 flex flex-col items-center space-y-6 bg-[#f2f2f0] pt-[110px] sm:space-y-12">
+                        <div className="sponsor-content">
                             <div
                                 id="sponsors-anchor"
                                 className="font-raleway vs:text-[60px] text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg sm:text-[80px]"
                             >
                                 SPONSORS
                             </div>
+                            <div className="grid gap-4">
+                                <p>
+                                    Thanks to our dedicated sponsors, we’re able
+                                    to give hackers an invaluable space to
+                                    connect and grow! Their contributions fuel
+                                    the creative energy and unforgettable
+                                    experiences that HawkHacks strives for.
+                                </p>
+                                <p>Further sponsor updates coming soon!</p>
+                            </div>
+                            <button>Become a sponsor!</button>
                         </div>
 
                         <div className="overflow-hidden">
@@ -179,7 +185,7 @@ const SponsorSection = () => {
                                 ref={(el) =>
                                     el && (carouselRefs.current[2] = el)
                                 }
-                                className="flex items-center justify-start space-x-6 px-4 transition-transform duration-[50ms] ease-linear"
+                                className="golden flex items-center justify-start space-x-6 px-4 transition-transform duration-[50ms] ease-linear"
                             >
                                 <div className="h-12 w-auto flex-shrink-0">
                                     <img
@@ -203,7 +209,7 @@ const SponsorSection = () => {
                                 ref={(el) =>
                                     el && (carouselRefs.current[0] = el)
                                 }
-                                className="flex items-center justify-start space-x-4 px-4 transition-transform duration-[50ms] ease-linear sm:space-x-16"
+                                className="silver flex items-center justify-start space-x-4 px-4 transition-transform duration-[50ms] ease-linear sm:space-x-16"
                             >
                                 <div className="h-14 w-auto flex-shrink-0">
                                     <img
@@ -248,7 +254,7 @@ const SponsorSection = () => {
                                 ref={(el) =>
                                     el && (carouselRefs.current[1] = el)
                                 }
-                                className="flex items-center justify-start space-x-6 px-4 transition-transform duration-[50ms] ease-linear"
+                                className="bronze flex items-center justify-start space-x-6 px-4 transition-transform duration-[50ms] ease-linear"
                             >
                                 <div className="h-12 w-auto flex-shrink-0">
                                     <img
