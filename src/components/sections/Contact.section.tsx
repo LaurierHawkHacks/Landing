@@ -62,7 +62,7 @@ const ContactSection: React.FC = () => {
                 src={MiddleBody}
                 className="z-0 h-[300px] w-full object-cover sm:h-[350px] md:h-[400px] lg:h-[700px]"
             />
-            <img src={BottomBorder} className="z-0" />
+            <img src={BottomBorder} className="z-0 w-full" />
         </section>
     );
 };
