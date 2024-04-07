@@ -66,24 +66,24 @@ const HeroStatSection: React.FC = () => {
                         alt="Hawkhacks logo"
                     />
                     <div className="sm:space-y-2 mt-12">
-                        <h1 className="bg-gradient-to-b pb-8 from-[#2B6469] to-[#00CEDB] bg-clip-text  text-4xl font-extrabold text-transparent sm:text-5.5xl lg:text-7xl xl:text-8.5xl">
+                        <h1 className="bg-gradient-to-b pb-6 from-[#2B6469] to-[#00CEDB] bg-clip-text text-4xl font-extrabold text-transparent sm:text-5.5xl lg:text-7xl xl:text-8.5xl">
                             HawkHacks 2024
                         </h1>
 
-                        <p className="text-base text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
+                        <p className="text-lg font-bold text-[#2B6469] lg:text-2.5xl 2xl:text-3.5xl">
                             Hosted at Wilfrid Laurier University
                         </p>
 
                         <div className="hidden lg:block">
                             <p className="text-base pt-8 text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
-                                Hacker applications are now <strong> OPEN! </strong> Applications close <u> May 3rd at 11:59PM EDT.</u>
+                                Hacker applications are now <strong className="font-bold"> OPEN! </strong> Applications close <u className="font-bold"> May 3rd at 11:59PM EDT.</u>
                             </p>
 
                             <p className="text-base pt-8 pb-3 text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
                                 Interested in sponsoring us?
                             </p>
 
-                            <Button className="relative font-normal mx-auto block w-fit rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0">
+                            <Button className="relative font-medium mx-auto block w-fit rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0">
                                 <Link
                                     to="/sponsorships.pdf"
                                     className="px-5 py-1.5"
@@ -94,10 +94,10 @@ const HeroStatSection: React.FC = () => {
                         </div>
                     </div>
                     <div>
-                        <p className="text-xl font-bold text-[#2B6469] sm:hidden sm:text-2xl">
+                        <p className="text-lg font-bold text-[#2B6469] sm:hidden sm:text-2xl">
                             May 17th - 19th
                         </p>
-                        <p className="text-xl font-bold text-[#2B6469] sm:hidden sm:text-2xl">
+                        <p className="text-lg font-bold text-[#2B6469] sm:hidden sm:text-2xl">
                             In Person
                         </p>
                     </div>
