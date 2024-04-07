@@ -7,7 +7,7 @@
 body {
     font-variant-numeric: lining-nums;
     font-feature-settings: 'lnum' 1;
-    font-weight: 600;
+    font-weight: 500;
     background-color: #fdddb7;
 }
 
@@ -38,7 +38,7 @@ body {
     }
 
     button {
-        @apply w-full rounded-lg border-black bg-[#2B6469] p-4 text-white shadow-[2px_2px_0px_0px_black] transition-shadow hover:bg-[#3F9098]/90 focus:bg-[#3F9098] focus:shadow-none;
+        @apply w-full rounded-lg border-black bg-cadetBlue p-4 text-white shadow-[2px_2px_0px_0px_black] transition-shadow hover:bg-[#3F9098]/90 focus:bg-[#3F9098] focus:shadow-none;
     }
 }
 
@@ -74,7 +74,7 @@ body {
     }
 }
 
-.navbar::before {
+header::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -83,4 +83,13 @@ body {
     left: 0;
     backdrop-filter: blur(5px);
     z-index: -1;
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
 }

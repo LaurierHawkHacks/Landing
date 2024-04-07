@@ -1,126 +1,19 @@
 import { useEffect, useRef } from "react";
 import { TopBorder, BottomBorder, MiddleBody, Hawk, BirdParts } from "@assets";
 import { logEvent, analytics } from '../../utils/Analytics';
-import {
-  Veritas,
-  Assembly,
-  Soc,
-  Fdm,
-  Echo3D,
-  LeadingLeaders,
-  Ollon,
-  OnePassword,
-  Roomiez,
-  Balsamiq,
-  DigitalOcean,
-  Taskade,
-  Dcl,
-  StudentsUnion,
-  CCubed,
-  Mlh,
-  Fossa,
-  Lcs,
-} from "@assets";
+import { sponsors } from './data';
+import { Button } from '@components';
 
-const SponsorFAQSection = () => {
-  const carouselRefs = useRef<HTMLDivElement[]>([]);
-
-  useEffect(() => {
-    const animationFrameIds = new Map<HTMLDivElement, number>();
-
-    const initializeScrollAnimation = (carousel: HTMLDivElement) => {
-      const totalAnimationTime = 8000; // Total cycle time for moving, excluding pauses
-      const pauseDuration = 2000; // Duration of pause at each end
-      let pauseScheduled = false;
-      let animationStartTime = Date.now() - pauseDuration; // Start with a pause
-      let lastAnimationPhase = "pause";
-
-      const handleScroll = () => {
-        const totalWidth = carousel.scrollWidth;
-        const visibleWidth = carousel.clientWidth;
-        const buffer = visibleWidth * 0.03; // Slightly less buffer for tighter right side
-        const scrollDistance = totalWidth - visibleWidth + buffer;
-
-        const easeInOutCubic = (t: number) =>
-          t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-
-        const updatePosition = () => {
-          const currentTime = Date.now();
-          const timeElapsedSinceStart = currentTime - animationStartTime;
-          const cycleDuration = totalAnimationTime + pauseDuration * 2; // Total duration including pauses
-          const cyclePosition = timeElapsedSinceStart % cycleDuration;
-
-          let currentPosition;
-
-          if (cyclePosition < pauseDuration) {
-            currentPosition = 0;
-            if (lastAnimationPhase !== "pause") {
-              pauseScheduled = false;
-            }
-          } else if (cyclePosition < totalAnimationTime / 2 + pauseDuration) {
-            const progress =
-              (cyclePosition - pauseDuration) / (totalAnimationTime / 2);
-            currentPosition = easeInOutCubic(progress) * scrollDistance;
-            lastAnimationPhase = "forward";
-          } else if (
-            cyclePosition <
-            totalAnimationTime / 2 + pauseDuration * 2
-          ) {
-            currentPosition = scrollDistance;
-            if (!pauseScheduled) {
-              lastAnimationPhase = "pause";
-              pauseScheduled = true;
-            }
-          } else {
-            const progress =
-              (cyclePosition - totalAnimationTime / 2 - pauseDuration * 2) /
-              (totalAnimationTime / 2);
-            currentPosition =
-              scrollDistance - easeInOutCubic(progress) * scrollDistance;
-            lastAnimationPhase = "backward";
-          }
-
-          carousel.style.transform = `translateX(-${currentPosition}px)`;
-          animationFrameIds.set(
-            carousel,
-            requestAnimationFrame(updatePosition)
-          );
-        };
-
-        // Only start the animation if the carousel is actually wider than the viewport
-        if (scrollDistance > buffer) {
-          animationFrameIds.set(
-            carousel,
-            requestAnimationFrame(updatePosition)
-          );
-        }
-      };
-
-      // Observe carousel for resize events
-      const resizeObserver = new ResizeObserver(() => {
-        if (animationFrameIds.has(carousel)) {
-          cancelAnimationFrame(animationFrameIds.get(carousel)!);
-        }
-        
-        handleScroll(); // Re-evaluate whether to start or stop the animation based on new size
-      });
-      resizeObserver.observe(carousel);
+const SponsorSection = () => {
+    const openInNewTab = (url: string) => {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+        if (newWindow) newWindow.opener = null;
     };
 
-    carouselRefs.current.forEach((carousel) => {
-      if (carousel) initializeScrollAnimation(carousel);
-    });
-
-    return () => {
-      carouselRefs.current.forEach((carousel) => {
-        if (carousel && animationFrameIds.has(carousel)) {
-          cancelAnimationFrame(animationFrameIds.get(carousel)!);
-        }        
-      });
+    const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault(); 
+        openInNewTab('https://hawkhacks.ca/sponsorships.pdf');
     };
-  }, []);
-
-  
   
   return (
     <div>
@@ -137,275 +30,153 @@ const SponsorFAQSection = () => {
           className="md: absolute left-0 top-0 z-50 w-full max-w-5xl -translate-x-2 -translate-y-[42.5%] scale-x-[-1] md:-translate-x-3 xl:left-10 2xl:left-52"
         />
         <div className="relative">
-          <img
-            src={MiddleBody}
-            alt="Middle Body"
-            className="z-10 h-[810px] w-full object-cover sm:h-[925px] md:h-[925px] lg:h-[950px]"
-          />
-          <div className="absolute bottom-0 left-0 right-0 top-6 flex flex-col items-center space-y-6 pt-[110px] sm:space-y-12">
-            <div className="absolute left-1/2 top-6 -translate-x-1/2 transform">
-              <div
+          <div className="main-container flex flex-col items-center space-y-6 bg-[#f2f2f0] py-8 sm:space-y-12 md:py-16 xl:py-32">
+            <div className="sponsor-content mx-auto max-w-6xl space-y-4 px-4 pb-10 text-center md:space-y-8 lg:space-y-16">
+              <h2
                 id="sponsors-anchor"
-                className="font-raleway vs:text-[60px] text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg sm:text-[80px]"
+                className="font-raleway vs:text-[60px] text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg md:text-[80px]"
               >
                 SPONSORS
+              </h2>
+              <div className="grid gap-4">
+                <p className="text-base md:text-lg lg:text-2xl xl:text-2.5xl">
+                  Thanks to our dedicated sponsors, we're able
+                  to give hackers an invaluable space to
+                  connect and grow! Their contributions fuel
+                  the creative energy and unforgettable
+                  experiences that HawkHacks strives for.
+                </p>
+                <p className="text-base md:text-lg lg:text-2xl xl:text-2.5xl">
+                  Further sponsor updates coming soon!
+                </p>
               </div>
-            </div>
-            <div className="overflow-hidden">
-              <div className="flex items-center justify-start px-2 md:px-8 transition-transform duration-[50ms] ease-linear">
-                <a
-                  href="https://sparc.network/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-20 md:h-28 w-auto flex-shrink-0"
-                  onClick={() => {
-                    logEvent(analytics, 'click_sponsor', { sponsor: 'Dcl' });
-                  }}
-                >
-                  <img src={Dcl} alt="DCL" className="h-full w-auto" />
-                </a>
-              </div>
-            </div>
-            <div className="overflow-hidden">
-              <div
-                ref={(el) => el && (carouselRefs.current[2] = el)}
-                className="flex items-center justify-start space-x-6 px-4 transition-transform duration-[50ms] ease-linear"
+              <Button
+                className="mx-auto block w-fit p-0 bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10"
+                tabIndex={-1}
+                type="button" 
+                onClick={handleSubmit}
               >
-                <a
-                  href="https://www.digitalocean.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-12 w-auto flex-shrink-0"
-                  onClick={() => {
-                    logEvent(analytics, 'click_sponsor', { sponsor: 'DigitalOcean' });
-                  }}
-                >
-                  <img
-                    src={DigitalOcean}
-                    alt="DigitalOcean"
-                    className="h-full w-auto"
-                  />
-                </a>
-                <a
-                  href="https://www.taskade.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-12 w-auto flex-shrink-0"
-                  onClick={() => {
-                    logEvent(analytics, 'click_sponsor', { sponsor: 'Taskade' });
-                  }}
-                >
-                  <img src={Taskade} alt="Taskade" className="h-full w-auto" />
-                </a>
+                <p className="px-10 py-3 text-base font-medium md:text-lg lg:px-[123px] lg:py-[24px] lg:text-2xl xl:text-2.5xl">Become a sponsor!</p>
+              </Button>
+            </div>
+
+            {/* first tier */}
+            <div className="max-w-[100rem]">
+              <div className="mb-[2rem] flex items-center justify-center gap-6 px-3 md:gap-16 md:px-4 xl:px-6">
+                {sponsors.platinumSponsors.map((sponsor) => (
+                  <a
+                    href={sponsor.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="h-40 cursor-pointer md:h-60 lg:h-80 xl:h-90"
+                    onClick={() => {
+                      logEvent(analytics, 'click_sponsor', { sponsor: sponsor.name });
+                    }}
+                  >
+                    <img
+                      src={sponsor.image}
+                      alt={sponsor.name}
+                      className="aspect-video h-full w-auto object-contain hover:scale-105 transition-transform duration-300 ease-in-out"
+                    />
+                  </a>
+                ))}
               </div>
             </div>
-            <div className="overflow-hidden">
-              <div
-                ref={(el) => el && (carouselRefs.current[1] = el)}
-                className="flex items-center justify-start space-x-6 px-4 transition-transform duration-[50ms] ease-linear"
-              >
-                <a
-                  href="https://www.leading-learners.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-12 w-auto flex-shrink-0"
-                  onClick={() => {
-                    logEvent(analytics, 'click_sponsor', { sponsor: 'LeadingLeaders' });
-                  }}
-                >
-                  <img
-                    src={LeadingLeaders}
-                    alt="Leading"
-                    className="h-full w-auto"
-                  />
-                </a>
-                <a
-                  href="https://www.ollon.ca/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-12 w-auto flex-shrink-0"
-                  onClick={() => {
-                    logEvent(analytics, 'click_sponsor', { sponsor: 'Ollon' });
-                  }}
-                >
-                  <img src={Ollon} alt="Ollon" className="h-full w-auto" />
-                </a>
-                <a
-                  href="https://1password.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-12 w-auto flex-shrink-0"
-                  onClick={() => {
-                    logEvent(analytics, 'click_sponsor', { sponsor: 'OnePassword' });
-                  }}
-                >
-                  <img
-                    src={OnePassword}
-                    alt="1Password"
-                    className="h-full w-auto"
-                  />
-                </a>
-                <a
-                  href="https://www.linkedin.com/company/roomiez/about/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-12 w-auto flex-shrink-0"
-                  onClick={() => {
-                    logEvent(analytics, 'click_sponsor', { sponsor: 'Roomiez' });
-                  }}
-                >
-                  <img src={Roomiez} alt="Roomiez" className="h-full w-auto" />
-                </a>
-                <a
-                  href="https://balsamiq.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-12 w-auto flex-shrink-0"
-                  onClick={() => {
-                    logEvent(analytics, 'click_sponsor', { sponsor: 'Balsamiq' });
-                  }}
-                >
-                  <img
-                    src={Balsamiq}
-                    alt="Balsamiq"
-                    className="h-full w-auto"
-                  />
-                </a>
+
+            {/* second tier */}
+            <div className="max-w-[100rem] overflow-hidden">
+              <div className="mb-[2rem] flex flex-wrap items-center justify-center gap-4 lg:gap-12">
+                {sponsors.goldSponsors.map((sponsor) => (
+                  <a
+                    href={sponsor.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="h-16 w-auto flex-shrink-0 sm:h-24 md:h-32 lg:h-36 xl:h-44"
+                    onClick={() => {
+                      logEvent(analytics, 'click_sponsor', { sponsor: sponsor.name });
+                    }}
+                  >
+                    <img
+                      src={sponsor.image}
+                      alt={sponsor.name}
+                      className="aspect-video h-full w-auto object-contain hover:scale-105 transition-transform duration-300 ease-in-out"
+                    />
+                  </a>
+                ))}
               </div>
             </div>
-            <div className="overflow-hidden">
-              <div
-                ref={(el) => el && (carouselRefs.current[0] = el)}
-                className="flex items-center justify-start space-x-4 px-4 sm:space-x-16 transition-transform duration-[50ms] ease-linear"
-              >
-                <a
-                  href="https://www.veritas.com/en/ca"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-14 w-auto flex-shrink-0"
-                  onClick={() => {
-                    logEvent(analytics, 'click_sponsor', { sponsor: 'Veritas' });
-                  }}
-                >
-                  <img src={Veritas} alt="Veritas" className="h-full w-auto" />
-                </a>
-                <a
-                  href="https://www.assemblyai.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-12 w-auto flex-shrink-0"
-                  onClick={() => {
-                    logEvent(analytics, 'click_sponsor', { sponsor: 'Assembly' });
-                  }}
-                >
-                  <img
-                    src={Assembly}
-                    alt="Assembly"
-                    className="h-full w-auto"
-                  />
-                </a>
-                <a
-                  href="https://www.soctechnologies.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-12 w-auto flex-shrink-0"
-                  onClick={() => {
-                    logEvent(analytics, 'click_sponsor', { sponsor: 'Soc' });
-                  }}
-                >
-                  <img src={Soc} alt="Soc" className="h-full w-auto" />
-                </a>
-                <a
-                  href="https://www.fdmgroup.com/en-ca/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-12 w-auto flex-shrink-0"
-                  onClick={() => {
-                    logEvent(analytics, 'click_sponsor', { sponsor: 'Fdm' });
-                  }}
-                >
-                  <img src={Fdm} alt="FDM" className="h-full w-auto" />
-                </a>
-                <a
-                  href="https://www.echo3d.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-12 w-auto flex-shrink-0"
-                  onClick={() => {
-                    logEvent(analytics, 'click_sponsor', { sponsor: 'Echo3D' });
-                  }}
-                >
-                  <img src={Echo3D} alt="Echo3D" className="h-full w-auto" />
-                </a>
+
+            {/* third tier */}
+            <div className="max-w-[100rem] overflow-hidden">
+              <div className="mb-[2rem] flex flex-wrap items-center justify-center gap-8 lg:gap-12">
+                {sponsors.silverSponsors.map((sponsor) => (
+                  <a
+                    href={sponsor.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="h-12 w-auto flex-shrink-0 sm:h-24 md:h-28 lg:h-32 xl:h-36"
+                    onClick={() => {
+                      logEvent(analytics, 'click_sponsor', { sponsor: sponsor.name });
+                    }}
+                  >
+                    <img
+                      src={sponsor.image}
+                      alt={sponsor.name}
+                      className="aspect-video h-full w-auto object-contain hover:scale-105 transition-transform duration-300 ease-in-out"
+                    />
+                  </a>
+                ))}
               </div>
             </div>
-            <div className="mt-20" id="partners-section">
-              <div
+
+            {/* fourth tier */}
+            <div className="max-w-[100rem] overflow-hidden ">
+              <div className="mb-[2rem] flex flex-wrap items-center justify-center gap-8">
+                {sponsors.bronzeSponsors.map((sponsor) => (
+                  <a
+                    href={sponsor.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-32"
+                    onClick={() => {
+                      logEvent(analytics, 'click_sponsor', { sponsor: sponsor.name });
+                    }}
+                  >
+                    <img
+                      src={sponsor.image}
+                      alt={sponsor.name}
+                      className="aspect-video h-full w-auto object-contain hover:scale-105 transition-transform duration-300 ease-in-out"
+                    />
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <div id="partners-section">
+              <h2
                 id="partners-anchor"
-                className="font-raleway vs:text-[60px] mt-6 text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg sm:text-[80px]"
+                className="font-raleway vs:text-[60px] mb-4 mt-6 text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg md:mb-8 md:text-[80px] lg:mb-16"
               >
                 PARTNERS
-              </div>
-              <div className="flex flex-wrap items-center justify-center gap-3">
-                <a
-                  href="https://www.yourstudentsunion.ca/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
-                  onClick={() => {
-                    logEvent(analytics, 'click_partner', { partner: 'StudentsUnion' });
-                  }}
-                >
-                  <img
-                    src={StudentsUnion}
-                    alt="Student Union"
-                    className="h-full"
-                  />
-                </a>
-                <a
-                  href="https://www.ccubed.dev/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
-                  onClick={() => {
-                    logEvent(analytics, 'click_partner', { partner: 'CCubed' });
-                  }}
-                >
-                  <img src={CCubed} alt="Ccubed" className="h-full" />
-                </a>
-                <a
-                  href="https://mlh.io/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
-                  onClick={() => {
-                    logEvent(analytics, 'click_partner', { partner: 'Mlh' });
-                  }}
-                >
-                  <img src={Mlh} alt="MLH" className="h-full" />
-                </a>
-                <a
-                  href="https://fossa.ca/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
-                  onClick={() => {
-                    logEvent(analytics, 'click_partner', { partner: 'Fossa' });
-                  }}
-                >
-                  <img src={Fossa} alt="Fossa" className="h-full" />
-                </a>
-                <a
-                  href="https://lauriercs.ca/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="sm:h-18 md:h-21 col-span-2 h-16 justify-self-center md:col-span-1 lg:h-24 xl:h-24"
-                  onClick={() => {
-                    logEvent(analytics, 'click_partner', { partner: 'Lcs' });
-                  }}
-                >
-                  <img src={Lcs} alt="LCS" className="h-full" />
-                </a>
+              </h2>
+              <div className="flex flex-wrap items-center justify-center gap-4">
+                {sponsors.partners.map((partner) => (
+                  <a
+                    href={partner.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
+                    onClick={() => {
+                      logEvent(analytics, 'click_partner', { partner: partner.name });
+                    }}
+                  >
+                    <img
+                      src={partner.image}
+                      alt={partner.name}
+                      className="aspect-video h-full w-auto object-contain hover:scale-105 transition-transform duration-300 ease-in-out"
+                    />
+                  </a>
+                ))}
               </div>
             </div>
           </div>
@@ -414,8 +185,6 @@ const SponsorFAQSection = () => {
       </section>
     </div>
   );
-
-
 };
 
-export { SponsorFAQSection };
+export { SponsorSection };

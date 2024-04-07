@@ -50,7 +50,7 @@ const Department: React.FC<DepartmentProps> = ({ title, members }) => {
     );
 };
 
-const TeamSection = () => {
+const TeamFAQSection = () => {
     return (
         // currently this div is the container of both faq and team section
         <div className="bg-gradient-to-b from-[#CBAAF4] to-[#85C1C5] to-[120%]">
@@ -114,4 +114,4 @@ const TeamSection = () => {
     );
 };
 
-export { TeamSection };
+export { TeamFAQSection };

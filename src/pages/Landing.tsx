@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import {
   Navbar,
   HeroStatSection,
-  TeamSection,
+  TeamFAQSection,
   ContactSection,
-  SponsorFAQSection,
+  SponsorSection,
   FooterSection,
   ScrollButton,
   LoadingAnimation,
@@ -16,6 +16,7 @@ const Landing: React.FC = () => {
   const [desktopImageLoaded, setDesktopImageLoaded] = useState(false);
   const [mobileImageLoaded, setMobileImageLoaded] = useState(false);
   const [timerFinished, setTimerFinished] = useState(false);
+  const isLoading = !(desktopImageLoaded && mobileImageLoaded && timerFinished);
 
   useEffect(() => {
     // Load Desktop SVG
@@ -32,14 +33,28 @@ const Landing: React.FC = () => {
     setTimeout(() => setTimerFinished(true), 2000);
   }, []);
 
-  const isLoading = !(
-    desktopImageLoaded &&
-    mobileImageLoaded &&
-    timerFinished
-  );
-
   useEffect(() => {
     logEvent(analytics, 'page_view');
+  }, []);
+
+  useEffect(() => {
+    const milestones = Array.from({ length: 20 }, () => false); // Create an array for each 5% milestone
+
+    const trackScrollPercentage = () => {
+      const scrolledPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+
+      milestones.forEach((reached, index) => {
+        const milestone = (index + 1) * 5;
+        if (scrolledPercentage >= milestone && !reached) {
+          logEvent(analytics, 'scroll', { percentage: `${milestone}%` });
+          milestones[index] = true; // Mark this milestone as reached
+        }
+      });
+    };
+
+    window.addEventListener('scroll', trackScrollPercentage);
+
+    return () => window.removeEventListener('scroll', trackScrollPercentage);
   }, []);
 
   useEffect(() => {
@@ -58,7 +73,6 @@ const Landing: React.FC = () => {
           if (element) {
             const rect = element.getBoundingClientRect();
             const isVisible = rect.top <= window.innerHeight && rect.bottom >= 0;
-
             if (isVisible) {
               logEvent(analytics, `seen_${anchor.id}`);
               anchor.seen = true;
@@ -80,10 +94,12 @@ const Landing: React.FC = () => {
   return (
     <div className="pt-[5rem] transition ease-in">
       <Navbar />
-      <HeroStatSection />
-      <SponsorFAQSection />
-      <TeamSection />
-      <ContactSection />
+      <main>
+        <HeroStatSection />
+        <SponsorSection />
+        <TeamFAQSection />
+        <ContactSection />
+      </main>
       <FooterSection />
       <ScrollButton />
     </div>

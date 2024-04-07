@@ -3,30 +3,35 @@ import { Link } from 'react-router-dom';
 import { logEvent, analytics } from '../../utils/Analytics';
 
 interface MenuProp {
-    showMenu: boolean;
-    hideMenu: () => void;
+  showMenu: boolean;
+  hideMenu: () => void;
 }
 
 const Menu: React.FC<MenuProp> = ({ showMenu, hideMenu }) => {
-    if (!showMenu) return;
+  const openInNewTab = (url: string) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+    if (newWindow) newWindow.opener = null;
+  };
 
-    return (
-        <div className="oveflow-hidden fixed right-0 top-0 z-50 h-screen w-full max-w-[65%] border border-white bg-white/20 px-10 py-24 backdrop-blur-lg">
-          <NavItems isHorizontal={false} handleClick={hideMenu} />
-      
-          <Button
-            className="mt-20 block px-0 py-0 lg:hidden"
-            onClick={() => {
-              logEvent(analytics, "click_application_portal_button");
-            }}
-          >
-            <Link to="/coming-soon" className="block px-5 py-2">
-              Application Portal
-            </Link>
-          </Button>
-        </div>
-      );
-      
+  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    openInNewTab('https://portal.hawkhacks.ca');
+    logEvent(analytics, "click_application_portal_button");
+  };
+
+  if (!showMenu) return null;
+
+  return (
+    <div className="overflow-hidden fixed right-0 top-0 z-50 h-screen w-full max-w-[65%] border border-white bg-white/20 px-10 py-24 backdrop-blur-lg">
+      <NavItems isHorizontal={false} handleClick={hideMenu} />
+      <Button
+        className="mt-20 block px-0 py-0 lg:hidden"
+        onClick={handleSubmit}
+      >
+        <span className="text-lg block px-5 py-2">Application Portal</span>
+      </Button>
+    </div>
+  );
 };
 
 export { Menu };
