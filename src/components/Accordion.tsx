@@ -142,6 +142,9 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                     className="block w-fit bg-gradient-to-b from-tbrand to-tbrand-hover p-0 before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10"
                     tabIndex={-1}
                     type="button"
+                    onClick={() => {
+                        window.location.href = 'mailto:hello@hawkhacks.ca';
+                    }}
                 >
                     <p className="px-12 py-3 text-base font-medium md:text-lg">
                         Get in Touch
