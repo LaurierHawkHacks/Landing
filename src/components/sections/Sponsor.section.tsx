@@ -1,9 +1,10 @@
-import { useEffect, useRef } from 'react';
+// import { useEffect, useRef } from 'react';
+
 import { TopBorder, BottomBorder, Hawk, BirdParts, StreamYard } from '@assets';
+
 import {
     OnePassword,
     Balsamiq,
-    CCubed,
     Echo3D,
     Fossa,
     Lcs,
@@ -34,113 +35,116 @@ import {
     Rosenfeld,
 } from '@assets';
 
+import { Button } from '@components';
+import { Link } from 'react-router-dom';
+
 const SponsorSection = () => {
-    const carouselRefs = useRef<HTMLDivElement[]>([]);
+    // const carouselRefs = useRef<HTMLDivElement[]>([]);
 
-    useEffect(() => {
-        const animationFrameIds = new Map<HTMLDivElement, number>();
+    // useEffect(() => {
+    //     const animationFrameIds = new Map<HTMLDivElement, number>();
 
-        const initializeScrollAnimation = (carousel: HTMLDivElement) => {
-            const totalAnimationTime = 8000; // Total cycle time for moving, excluding pauses
-            const pauseDuration = 2000; // Duration of pause at each end
-            let pauseScheduled = false;
-            const animationStartTime = Date.now() - pauseDuration; // Start with a pause
-            let lastAnimationPhase = 'pause';
+    //     const initializeScrollAnimation = (carousel: HTMLDivElement) => {
+    //         const totalAnimationTime = 8000; // Total cycle time for moving, excluding pauses
+    //         const pauseDuration = 2000; // Duration of pause at each end
+    //         let pauseScheduled = false;
+    //         const animationStartTime = Date.now() - pauseDuration; // Start with a pause
+    //         let lastAnimationPhase = 'pause';
 
-            const handleScroll = () => {
-                const totalWidth = carousel.scrollWidth;
-                const visibleWidth = carousel.clientWidth;
-                const buffer = visibleWidth * 0.03; // Slightly less buffer for tighter right side
-                const scrollDistance = totalWidth - visibleWidth + buffer;
+    //         const handleScroll = () => {
+    //             const totalWidth = carousel.scrollWidth;
+    //             const visibleWidth = carousel.clientWidth;
+    //             const buffer = visibleWidth * 0.03; // Slightly less buffer for tighter right side
+    //             const scrollDistance = totalWidth - visibleWidth + buffer;
 
-                const easeInOutCubic = (t: number) =>
-                    t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    //             const easeInOutCubic = (t: number) =>
+    //                 t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
 
-                const updatePosition = () => {
-                    const currentTime = Date.now();
-                    const timeElapsedSinceStart =
-                        currentTime - animationStartTime;
-                    const cycleDuration =
-                        totalAnimationTime + pauseDuration * 2; // Total duration including pauses
-                    const cyclePosition = timeElapsedSinceStart % cycleDuration;
+    //             const updatePosition = () => {
+    //                 const currentTime = Date.now();
+    //                 const timeElapsedSinceStart =
+    //                     currentTime - animationStartTime;
+    //                 const cycleDuration =
+    //                     totalAnimationTime + pauseDuration * 2; // Total duration including pauses
+    //                 const cyclePosition = timeElapsedSinceStart % cycleDuration;
 
-                    let currentPosition;
+    //                 let currentPosition;
 
-                    if (cyclePosition < pauseDuration) {
-                        currentPosition = 0;
-                        if (lastAnimationPhase !== 'pause') {
-                            pauseScheduled = false;
-                        }
-                    } else if (
-                        cyclePosition <
-                        totalAnimationTime / 2 + pauseDuration
-                    ) {
-                        const progress =
-                            (cyclePosition - pauseDuration) /
-                            (totalAnimationTime / 2);
-                        currentPosition =
-                            easeInOutCubic(progress) * scrollDistance;
-                        lastAnimationPhase = 'forward';
-                    } else if (
-                        cyclePosition <
-                        totalAnimationTime / 2 + pauseDuration * 2
-                    ) {
-                        currentPosition = scrollDistance;
-                        if (!pauseScheduled) {
-                            lastAnimationPhase = 'pause';
-                            pauseScheduled = true;
-                        }
-                    } else {
-                        const progress =
-                            (cyclePosition -
-                                totalAnimationTime / 2 -
-                                pauseDuration * 2) /
-                            (totalAnimationTime / 2);
-                        currentPosition =
-                            scrollDistance -
-                            easeInOutCubic(progress) * scrollDistance;
-                        lastAnimationPhase = 'backward';
-                    }
+    //                 if (cyclePosition < pauseDuration) {
+    //                     currentPosition = 0;
+    //                     if (lastAnimationPhase !== 'pause') {
+    //                         pauseScheduled = false;
+    //                     }
+    //                 } else if (
+    //                     cyclePosition <
+    //                     totalAnimationTime / 2 + pauseDuration
+    //                 ) {
+    //                     const progress =
+    //                         (cyclePosition - pauseDuration) /
+    //                         (totalAnimationTime / 2);
+    //                     currentPosition =
+    //                         easeInOutCubic(progress) * scrollDistance;
+    //                     lastAnimationPhase = 'forward';
+    //                 } else if (
+    //                     cyclePosition <
+    //                     totalAnimationTime / 2 + pauseDuration * 2
+    //                 ) {
+    //                     currentPosition = scrollDistance;
+    //                     if (!pauseScheduled) {
+    //                         lastAnimationPhase = 'pause';
+    //                         pauseScheduled = true;
+    //                     }
+    //                 } else {
+    //                     const progress =
+    //                         (cyclePosition -
+    //                             totalAnimationTime / 2 -
+    //                             pauseDuration * 2) /
+    //                         (totalAnimationTime / 2);
+    //                     currentPosition =
+    //                         scrollDistance -
+    //                         easeInOutCubic(progress) * scrollDistance;
+    //                     lastAnimationPhase = 'backward';
+    //                 }
 
-                    carousel.style.transform = `translateX(-${currentPosition}px)`;
-                    animationFrameIds.set(
-                        carousel,
-                        requestAnimationFrame(updatePosition)
-                    );
-                };
+    //                 carousel.style.transform = `translateX(-${currentPosition}px)`;
+    //                 animationFrameIds.set(
+    //                     carousel,
+    //                     requestAnimationFrame(updatePosition)
+    //                 );
+    //             };
 
-                // Only start the animation if the carousel is actually wider than the viewport
-                if (scrollDistance > buffer) {
-                    animationFrameIds.set(
-                        carousel,
-                        requestAnimationFrame(updatePosition)
-                    );
-                }
-            };
+    //             // Only start the animation if the carousel is actually wider than the viewport
+    //             if (scrollDistance > buffer) {
+    //                 animationFrameIds.set(
+    //                     carousel,
+    //                     requestAnimationFrame(updatePosition)
+    //                 );
+    //             }
+    //         };
 
-            // Observe carousel for resize events
-            const resizeObserver = new ResizeObserver(() => {
-                if (animationFrameIds.has(carousel)) {
-                    cancelAnimationFrame(animationFrameIds.get(carousel)!);
-                }
+    //         // Observe carousel for resize events
+    //         const resizeObserver = new ResizeObserver(() => {
+    //             if (animationFrameIds.has(carousel)) {
+    //                 cancelAnimationFrame(animationFrameIds.get(carousel)!);
+    //             }
 
-                handleScroll(); // Re-evaluate whether to start or stop the animation based on new size
-            });
-            resizeObserver.observe(carousel);
-        };
+    //             handleScroll(); // Re-evaluate whether to start or stop the animation based on new size
+    //         });
+    //         resizeObserver.observe(carousel);
+    //     };
 
-        carouselRefs.current.forEach((carousel) => {
-            if (carousel) initializeScrollAnimation(carousel);
-        });
+    //     carouselRefs.current.forEach((carousel) => {
+    //         if (carousel) initializeScrollAnimation(carousel);
+    //     });
 
-        return () => {
-            carouselRefs.current.forEach((carousel) => {
-                if (carousel && animationFrameIds.has(carousel)) {
-                    cancelAnimationFrame(animationFrameIds.get(carousel)!);
-                }
-            });
-        };
-    }, []);
+    //     return () => {
+    //         carouselRefs.current.forEach((carousel) => {
+    //             if (carousel && animationFrameIds.has(carousel)) {
+    //                 cancelAnimationFrame(animationFrameIds.get(carousel)!);
+    //             }
+    //         });
+    //     };
+    // }, []);
 
     return (
         <div>
@@ -180,7 +184,25 @@ const SponsorSection = () => {
                                     Further sponsor updates coming soon!
                                 </p>
                             </div>
-                            <button>Become a sponsor!</button>
+                            <Button
+                                className="mx-auto block w-fit px-10 py-3 lg:px-[123px] lg:py-[24px]"
+                                tabIndex={-1}
+                            >
+                                {/* <Link
+                                    to="public/sponsorships.pdf"
+                                    className="block px-5 py-2"
+                                >
+                                    Application Portal
+                                </Link> */}
+                                <a
+                                    className="text-base md:text-lg lg:text-2xl xl:text-2.5xl"
+                                    href="./sponsorships.pdf"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    Become a sponsor!
+                                </a>
+                            </Button>
                         </div>
 
                         {/* each div is a section */}
@@ -316,7 +338,7 @@ const SponsorSection = () => {
                                 // className="bronze flex items-center justify-start space-x-6 px-4 transition-transform duration-[50ms] ease-linear"
                                 className="mb-[2rem] flex flex-wrap items-center justify-center gap-8"
                             >
-                                <div className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-3">
+                                <div className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-32">
                                     <img
                                         src={Echo3D}
                                         alt="Echo3D"
@@ -425,13 +447,13 @@ const SponsorSection = () => {
                         </div>
 
                         {/* PARTNERS SECTION BEGINS HERE */}
-                        <div className="mt-20" id="partners-section">
-                            <div
+                        <div id="partners-section">
+                            <h2
                                 id="partners-anchor"
-                                className="font-raleway vs:text-[60px] mt-6 text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg md:text-[80px]"
+                                className="font-raleway vs:text-[60px] mb-4 mt-6 text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg md:mb-8 md:text-[80px] lg:mb-16"
                             >
                                 PARTNERS
-                            </div>
+                            </h2>
                             <div className="flex flex-wrap items-center justify-center gap-4">
                                 <img
                                     src={StudentsUnion}
@@ -456,7 +478,7 @@ const SponsorSection = () => {
                                 <img
                                     src={Lcs}
                                     alt="LCS"
-                                    className="sm:h-18 md:h-21 col-span-2 h-16 justify-self-center md:col-span-1 lg:h-24 xl:h-24"
+                                    className="aspect-video h-16 object-contain sm:h-20 md:h-24 lg:h-28 xl:h-32"
                                 />
                             </div>
                         </div>
