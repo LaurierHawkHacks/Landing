@@ -76,7 +76,7 @@ const TeamFAQSection = () => {
                     className="relative mx-auto mb-10 w-fit sm:mb-24 lg:mb-32"
                 >
                     <img
-                        className="mx-auto hidden w-full max-w-fit sm:block"
+                        className="mx-auto hidden w-full max-w-fit sm:block md:mt-24"
                         src={MeetTheTeamBalloon}
                         alt=""
                     />

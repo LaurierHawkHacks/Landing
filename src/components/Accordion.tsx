@@ -1,3 +1,4 @@
+import { Button } from '@components';
 import React, { useState } from 'react';
 import { IoIosArrowDown } from 'react-icons/io';
 
@@ -41,26 +42,26 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
 
     const FAQCategories = () => {
         return (
-            <div className="border-gray/50 h-full w-1/3 rounded-md border-2 p-4 shadow-lg backdrop-blur-lg">
-                <h4 className="mb-4 text-2xl font-bold text-white">
+            <div className="border-gray/50 flex h-full flex-col items-stretch justify-center rounded-md p-4 md:w-1/3 md:border-2 md:shadow-lg md:backdrop-blur-lg">
+                <h3 className="mb-6 text-center text-3xl font-bold capitalize text-white drop-shadow-md ">
                     Categories
-                </h4>
-                <ul className="space-y-2">
+                </h3>
+
+                <div className="flex flex-wrap items-stretch justify-center gap-2 md:flex-col">
                     {sections.map((section, index) => (
-                        <li key={index} className=" cursor-pointer">
-                            <button
-                                className={`text-lg shadow-md  ${
-                                    index === selectedCategoryIndex
-                                        ? 'bg-deepMarine text-white hover:bg-deepMarine hover:text-white'
-                                        : 'bg-white text-black hover:bg-gray-200'
-                                }`}
-                                onClick={() => selectCategory(index)}
-                            >
-                                {section.section}
-                            </button>
-                        </li>
-                    ))}
-                </ul>
+                        <button
+                            key={index}
+                            className={`w-1/3 p-2 text-lg shadow-md transition-all duration-300 md:w-full  ${
+                                index === selectedCategoryIndex
+                                    ? '!hover:bg-deepMarine bg-deepMarine text-white hover:text-white'
+                                    : 'bg-white text-black hover:bg-gray-200'
+                            }`}
+                            onClick={() => selectCategory(index)}
+                        >
+                            {section.section}
+                        </button>
+                    ))}{' '}
+                </div>
             </div>
         );
     };
@@ -68,10 +69,10 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
     const activeSection = sections[selectedCategoryIndex];
 
     return (
-        <div className="flex flex-col gap-8 pt-12">
-            <div className="flex gap-8 ">
+        <div className="mb-12 flex flex-col gap-8 pt-12">
+            <div className="flex flex-col gap-8 md:flex-row">
                 <FAQCategories />
-                <div className="h-full w-2/3 rounded-md bg-white p-4 shadow-lg">
+                <div className="h-full rounded-md bg-white p-4 shadow-lg md:w-2/3">
                     <h3 className="mb-4 text-2xl font-bold">
                         {activeSection.section}
                     </h3>
@@ -79,7 +80,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                         {activeSection.content.map((item, questionIndex) => (
                             <div key={questionIndex}>
                                 <button
-                                    className={`flex w-full items-center justify-between rounded-none border-b-2 border-black bg-deepMarine p-2 py-6 text-lg text-black shadow-none  ${
+                                    className={`flex w-full items-center justify-between rounded-none border-b-2 border-black bg-deepMarine p-2 py-6 text-lg text-black shadow-none transition-all duration-300  ${
                                         activeIndex &&
                                         activeIndex.question === questionIndex
                                             ? 'bg-deepMarine text-white hover:text-white'
@@ -104,7 +105,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                     />
                                 </button>
                                 <div
-                                    className={`overflow-hidden transition-all ${
+                                    className={`overflow-hidden transition-all duration-300 ${
                                         activeIndex &&
                                         activeIndex.question === questionIndex
                                             ? 'max-h-96'
@@ -127,8 +128,8 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                     </div>
                 </div>
             </div>
-            <div className="flex w-full items-center justify-between rounded-md bg-white p-4">
-                <span className="w-2/4 flex-col">
+            <div className="flex w-full flex-col items-center justify-between gap-4 rounded-md bg-white p-4 shadow-lg md:flex-row md:gap-0">
+                <span className="flex-col md:w-2/4">
                     <h4>📧 Still have a question?</h4>
                     <p className="text-sm">
                         No worries! Reach out to us via email at
@@ -137,7 +138,15 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                         up!
                     </p>
                 </span>
-                <button className="h-12 w-1/5">Get in Touch</button>
+                <Button
+                    className="block w-fit bg-gradient-to-b from-tbrand to-tbrand-hover p-0 before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10"
+                    tabIndex={-1}
+                    type="button"
+                >
+                    <p className="px-12 py-3 text-base font-medium md:text-lg">
+                        Get in Touch
+                    </p>
+                </Button>
             </div>
         </div>
     );
