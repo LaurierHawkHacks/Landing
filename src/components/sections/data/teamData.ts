@@ -100,7 +100,7 @@ const departments = [
             {
                 name: 'Dhar Patel',
                 title: 'VP of Logistics & Operations',
-                profile: 'https://file.notion.so/f/f/ce09554c-fc32-4d0a-88ed-8e7673cb8b39/ecb359a5-64dd-4e5b-9e1e-576369ea1cee/31abbf50-87c5-40d1-9850-d039e94fa7b2.jpeg?id=e718d4cf-26b8-49b3-b2f3-68f0469917e3&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&expirationTimestamp=1712390400000&signature=dTHao9AUGRM37QQDpa3Z01GlLd5RSqdMy3kc2bhvjS8&downloadName=31abbf50-87c5-40d1-9850-d039e94fa7b2.jpeg',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Fdd9017f4-7c7f-43f9-8d74-a3318e5d76fa%2FIMG_1444.jpg?id=e718d4cf-26b8-49b3-b2f3-68f0469917e3&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
             },
             {
                 name: 'Shakib Ahmed',
