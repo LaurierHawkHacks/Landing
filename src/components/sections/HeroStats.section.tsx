@@ -7,7 +7,6 @@ import {
 } from '@assets';
 
 import { Button } from '@components';
-import { Link } from 'react-scroll';
 
 const HeroStatSection: React.FC = () => {
     const [translateY, setTranslateY] = useState(0);
@@ -42,6 +41,16 @@ const HeroStatSection: React.FC = () => {
         }
     }, []);
 
+    const openInNewTab = (url: string) => {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+        if (newWindow) newWindow.opener = null;
+    };
+
+    const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault(); 
+        openInNewTab('https://hawkhacks.ca/sponsorships.pdf');
+    };
+
     return (
         <div className="relative">
             <section
@@ -61,43 +70,46 @@ const HeroStatSection: React.FC = () => {
                 />
                 <div className="mt-16 px-4 sm:ml-16 sm:mt-16 sm:px-0 lg:ml-20 lg:mt-24 xl:ml-24 xl:mt-32 2xl:mt-10">
                     <img
-                        className="hidden aspect-square sm:mb-4 sm:block sm:w-28 lg:mb-10 xl:w-36 2xl:w-60"
+                        className="hidden aspect-square sm:mb-4 sm:block sm:w-28 lg:mb-10 xl:w-36 2xl:w-60 hover:animate-spin"
                         src={HawkHacksLogo}
                         alt="Hawkhacks logo"
+                        style={{ animationDuration: '2s', animationIterationCount: 'infinite' }}
                     />
+                    
                     <div className="sm:space-y-2 mt-12">
-                        <h1 className="bg-gradient-to-b pb-8 from-[#2B6469] to-[#00CEDB] bg-clip-text  text-4xl font-extrabold text-transparent sm:text-5.5xl lg:text-7xl xl:text-8.5xl">
+                        <h1 className="bg-gradient-to-b pb-6 from-[#2B6469] to-[#00CEDB] bg-clip-text text-4xl font-extrabold text-transparent sm:text-5.5xl lg:text-7xl xl:text-8.5xl">
                             HawkHacks 2024
                         </h1>
 
-                        <p className="text-base text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
+                        <p className="text-lg font-bold text-[#2B6469] lg:text-2.5xl 2xl:text-3.5xl">
                             Hosted at Wilfrid Laurier University
                         </p>
 
                         <div className="hidden lg:block">
                             <p className="text-base pt-8 text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
-                                Hacker applications are now <strong> OPEN! </strong> Applications close <u> May 3rd at 11:59PM EDT.</u>
+                                Hacker applications are now <strong className="font-bold"> OPEN! </strong> Applications close <u className="font-bold"> May 3rd at 11:59PM EDT.</u>
                             </p>
 
-                            <p className="text-base pt-8 pb-3 text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
-                                Interested in sponsoring us?
-                            </p>
+                            <div className="w-fit">
+                                <p className="text-base pt-8 pb-3 text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
+                                    Interested in sponsoring us?
+                                </p>
 
-                            <Button className="relative font-normal mx-auto block w-fit rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0">
-                                <Link
-                                    to="/sponsorships.pdf"
-                                    className="px-5 py-1.5"
+                                <Button 
+                                    className="relative font-medium block w-full h-16 rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0"
+                                    type="button" 
+                                    onClick={handleSubmit}
                                 >
-                                    Sponsor the weekend!
-                                </Link>
-                            </Button>
+                                    <span className="whitespace-nowrap text-2xl font-medium">Sponsor the weekend!</span>
+                                </Button>
+                            </div>
                         </div>
                     </div>
                     <div>
-                        <p className="text-xl font-bold text-[#2B6469] sm:hidden sm:text-2xl">
+                        <p className="text-lg font-bold text-[#2B6469] sm:hidden sm:text-2xl">
                             May 17th - 19th
                         </p>
-                        <p className="text-xl font-bold text-[#2B6469] sm:hidden sm:text-2xl">
+                        <p className="text-lg font-bold text-[#2B6469] sm:hidden sm:text-2xl">
                             In Person
                         </p>
                     </div>

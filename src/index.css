@@ -7,7 +7,7 @@
 body {
     font-variant-numeric: lining-nums;
     font-feature-settings: 'lnum' 1;
-    font-weight: 400;
+    font-weight: 500;
     background-color: #fdddb7;
 }
 
@@ -83,4 +83,13 @@ header::before {
     left: 0;
     backdrop-filter: blur(5px);
     z-index: -1;
+}
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
 }

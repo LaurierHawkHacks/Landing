@@ -29,7 +29,7 @@ const NavItems: React.FC<NavItemsProps> = ({ isHorizontal, handleClick }) => {
   return (
     <ul className={`flex gap-7 text-deepMarine ${isHorizontal ? rowStyle : colStyle}`}>
       {links.map((link) => (
-        <li key={link.title} className="font-medium hover:text-[#0FA3B1] transition-colors duration-200">
+        <li key={link.title} className="font-semibold hover:text-[#0FA3B1] transition-colors duration-200">
           <Link
             to={link.href}
             smooth
