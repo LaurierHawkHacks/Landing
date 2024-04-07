@@ -35,7 +35,7 @@ const SponsorSection = () => {
                             </h2>
                             <div className="grid gap-4">
                                 <p className="text-base md:text-lg lg:text-2xl xl:text-2.5xl">
-                                    Thanks to our dedicated sponsors, we’re able
+                                    Thanks to our dedicated sponsors, we're able
                                     to give hackers an invaluable space to
                                     connect and grow! Their contributions fuel
                                     the creative energy and unforgettable
@@ -46,7 +46,7 @@ const SponsorSection = () => {
                                 </p>
                             </div>
                             <Button
-                                className="mx-auto block w-fit p-0"
+                                className="mx-auto block w-fit p-0 bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10"
                                 tabIndex={-1}
                             >
                                 <a
@@ -61,19 +61,19 @@ const SponsorSection = () => {
                         </div>
 
                         {/* first tier */}
-                        <div className="max-w-[100rem] overflow-hidden ">
-                            <div className="mb-[2rem] flex items-center justify-center gap-4 md:gap-6">
+                        <div className="max-w-[100rem]">
+                            <div className="mb-[2rem] flex items-center justify-center gap-6 px-3 md:gap-16 md:px-4 xl:px-6">
                                 {sponsors.platinumSponsors.map((sponsor) => (
                                     <a
                                         href={sponsor.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="h-28 cursor-pointer md:h-40 lg:h-60 xl:h-80"
+                                        className="h-40 cursor-pointer md:h-60 lg:h-80 xl:h-90"
                                     >
                                         <img
                                             src={sponsor.image}
                                             alt={sponsor.name}
-                                            className="aspect-video h-full w-auto object-contain"
+                                            className="aspect-video h-full w-auto object-contain hover:scale-105 transition-transform duration-300 ease-in-out"
                                         />
                                     </a>
                                 ))}
@@ -93,7 +93,7 @@ const SponsorSection = () => {
                                         <img
                                             src={sponsor.image}
                                             alt={sponsor.name}
-                                            className="aspect-video h-full w-auto object-contain"
+                                            className="aspect-video h-full w-auto object-contain hover:scale-105 transition-transform duration-300 ease-in-out"
                                         />
                                     </a>
                                 ))}
@@ -113,7 +113,7 @@ const SponsorSection = () => {
                                         <img
                                             src={sponsor.image}
                                             alt={sponsor.name}
-                                            className="aspect-video h-full w-auto object-contain"
+                                            className="aspect-video h-full w-auto object-contain hover:scale-105 transition-transform duration-300 ease-in-out"
                                         />
                                     </a>
                                 ))}
@@ -132,7 +132,7 @@ const SponsorSection = () => {
                                         <img
                                             src={sponsor.image}
                                             alt={sponsor.name}
-                                            className="aspect-video h-full w-auto object-contain"
+                                            className="aspect-video h-full w-auto object-contain hover:scale-105 transition-transform duration-300 ease-in-out"
                                         />
                                     </a>
                                 ))}
@@ -157,7 +157,7 @@ const SponsorSection = () => {
                                         <img
                                             src={partner.image}
                                             alt={partner.name}
-                                            className="aspect-video h-full w-auto object-contain"
+                                            className="aspect-video h-full w-auto object-contain hover:scale-105 transition-transform duration-300 ease-in-out"
                                         />
                                     </a>
                                 ))}
