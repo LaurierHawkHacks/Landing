@@ -10,7 +10,7 @@ const departments = [
             {
                 name: 'Maximus Ghosh',
                 title: 'VP of Admin & Finance',
-                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Fac9a2c1b-c5d7-4afc-9684-8190553f5140%2FIMG_3510.jpg?id=8bc985d7-6ef0-4064-a150-c5ecda0ce30b&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F4fb2f044-a145-463b-9bfb-25833d78e5a8%2Fimage.jpeg?id=8bc985d7-6ef0-4064-a150-c5ecda0ce30b&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=c89a0d2e-b46c-4133-800b-47494e5db7ea&cache=v2',
             },
             {
                 name: 'Torin Borton-McCallum',
@@ -100,7 +100,7 @@ const departments = [
             {
                 name: 'Dhar Patel',
                 title: 'VP of Logistics & Operations',
-                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F228e884b-359e-42f7-aa4c-2a1bc3c49176%2F31abbf50-87c5-40d1-9850-d039e94fa7b2.jpeg?id=e718d4cf-26b8-49b3-b2f3-68f0469917e3&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=1500&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+                profile: 'https://file.notion.so/f/f/ce09554c-fc32-4d0a-88ed-8e7673cb8b39/ecb359a5-64dd-4e5b-9e1e-576369ea1cee/31abbf50-87c5-40d1-9850-d039e94fa7b2.jpeg?id=e718d4cf-26b8-49b3-b2f3-68f0469917e3&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&expirationTimestamp=1712390400000&signature=dTHao9AUGRM37QQDpa3Z01GlLd5RSqdMy3kc2bhvjS8&downloadName=31abbf50-87c5-40d1-9850-d039e94fa7b2.jpeg',
             },
             {
                 name: 'Shakib Ahmed',
@@ -110,7 +110,7 @@ const departments = [
             {
                 name: 'Connor Lilbourne',
                 title: 'Logistics Coordinator',
-                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F4a564aa7-fd27-48f0-b60c-edd5d758fae2%2Fme.jpg?id=2c3d03cb-bdfc-4074-876c-d23fa47ef361&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=1500&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Fa5ba74f2-bb53-4770-91e0-970a156aa51a%2Fme.jpg?id=2c3d03cb-bdfc-4074-876c-d23fa47ef361&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=c89a0d2e-b46c-4133-800b-47494e5db7ea&cache=v2',
             },
             {
                 name: 'Itohan Odigie',
@@ -120,7 +120,7 @@ const departments = [
             {
                 name: 'Jonathan Pilarski',
                 title: 'Logistics Coordinator',
-                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F50bb5fd7-d3ed-46c7-b8e7-648330ac34b9%2Fjp.jpg?id=8e8cd933-8f25-4357-b881-430aa5c896de&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=1500&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Fd4f568a5-afe0-4f71-ae0d-8cce74de8f0a%2Fjp.jpg?id=8e8cd933-8f25-4357-b881-430aa5c896de&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=c89a0d2e-b46c-4133-800b-47494e5db7ea&cache=v2',
             },
             {
                 name: 'Maanay Shaikh',
@@ -130,12 +130,12 @@ const departments = [
             {
                 name: 'Melissa Pinto',
                 title: 'Logistics Coordinator',
-                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F64e92ca5-ae23-46e8-ba7b-9e921a220a9a%2FD367DA45-98BF-40D3-992D-A9C1CEC8F91B.jpeg?id=2788eb96-f25e-42c2-b08d-12c6fd3bdfee&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=1500&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F815608c2-38be-416d-949e-6a559da087f3%2FD367DA45-98BF-40D3-992D-A9C1CEC8F91B.jpeg?id=2788eb96-f25e-42c2-b08d-12c6fd3bdfee&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=c89a0d2e-b46c-4133-800b-47494e5db7ea&cache=v2',
             },
             {
                 name: 'Mila Cvetanovska',
                 title: 'Logistics Coordinator',
-                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F3cf20a7f-9765-42e9-b1e2-02f23e1574b5%2FMila.jpg?id=f75c7e0e-0902-4327-ab5c-decca6f7731e&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=1500&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F3bea1de6-acea-4f15-ac76-54589e1a7250%2FMila.jpg?id=f75c7e0e-0902-4327-ab5c-decca6f7731e&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=c89a0d2e-b46c-4133-800b-47494e5db7ea&cache=v2',
             },
             {
                 name: 'Vincenzo Milano',
@@ -155,7 +155,7 @@ const departments = [
             {
                 name: 'Roshni Mahindru',
                 title: 'Logistics Coordinator',
-                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Fb4c98b04-86fd-4172-830a-bef4baa27d7f%2FIMG_4087.jpeg?id=59baad57-839d-4317-9682-bce5a68d2b3d&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=1500&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F8a823967-950d-48b0-9e62-6f96883a7ab1%2FIMG_4087.jpeg?id=59baad57-839d-4317-9682-bce5a68d2b3d&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=c89a0d2e-b46c-4133-800b-47494e5db7ea&cache=v2',
             },
         ],
     },
@@ -180,12 +180,12 @@ const departments = [
             {
                 name: 'James Chun',
                 title: 'Sponsorship Coordinator',
-                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F89d607e9-6fe1-4537-876f-22f040346f4e%2Fjames.jpg?id=b6487891-056c-4e3c-9b43-45ee5de60d36&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=1500&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Fb488a484-bad3-4abb-a37a-5a8766e66b82%2Fjames.jpg?id=b6487891-056c-4e3c-9b43-45ee5de60d36&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=c89a0d2e-b46c-4133-800b-47494e5db7ea&cache=v2',
             },
             {
                 name: 'Sami Naqvi',
                 title: 'Sponsorship Coordinator',
-                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Fa0a56a9e-e112-418d-b72b-2ee597ecaa6b%2FIMG_5954.jpg?id=2d450d62-a06c-41e5-94d5-3cc17342775d&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=1500&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Fc121e88f-bceb-4909-9299-694915b8248c%2FIMG_5954.jpg?id=2d450d62-a06c-41e5-94d5-3cc17342775d&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=c89a0d2e-b46c-4133-800b-47494e5db7ea&cache=v2',
             },
         ],
     },
@@ -195,12 +195,12 @@ const departments = [
             {
                 name: 'Jenali Shenela',
                 title: 'VP of Marketing & Media',
-                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F06cf21b9-1f07-4fa7-9f7c-758bda5ecb90%2FPhoto_02-09-2023-23-18-30.heic?id=554e3b85-5893-4b2d-a410-cf205bdd2693&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=1500&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Ffaca6770-be5f-472e-901c-956a69d2b892%2FPhoto_02-09-2023-23-18-30.heic?id=554e3b85-5893-4b2d-a410-cf205bdd2693&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=c89a0d2e-b46c-4133-800b-47494e5db7ea&cache=v2',
             },
             {
                 name: 'Geeran Balaranjan',
                 title: 'Social Media Coordinator',
-                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F04095774-1664-4d13-8d98-c4caa346753a%2FIMG_6261.jpeg?id=4ab20fe0-e0d1-42b5-b48b-37476be66bdf&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=1500&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Ff41eced7-76e1-4475-9111-52a97e735c7b%2FIMG_6261.jpeg?id=4ab20fe0-e0d1-42b5-b48b-37476be66bdf&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=c89a0d2e-b46c-4133-800b-47494e5db7ea&cache=v2',
             },
             {
                 name: 'Mina Mansour',
@@ -215,7 +215,7 @@ const departments = [
             {
                 name: 'Yousef Hozayen',
                 title: 'Content Creator',
-                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Fa92ac67e-0fd6-4526-a72e-ee88917ed0fd%2FIMG_3828.jpg?id=f6dd2d89-e90f-4413-8eaf-016d4f9c1d7c&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=1500&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F36549363-74d9-4dda-b347-321e651f630d%2FIMG_3828.jpg?id=f6dd2d89-e90f-4413-8eaf-016d4f9c1d7c&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=c89a0d2e-b46c-4133-800b-47494e5db7ea&cache=v2',
             },
             {
                 name: 'Aren Melkon',
