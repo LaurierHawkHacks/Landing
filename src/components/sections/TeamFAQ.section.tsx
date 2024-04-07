@@ -65,7 +65,7 @@ const TeamFAQSection = () => {
                     </h2>
 
                     <div className="mx-auto max-w-6xl pb-12">
-                        <Accordion items={faqData} />
+                        <Accordion sections={faqData} />
                     </div>
                 </div>
             </section>
