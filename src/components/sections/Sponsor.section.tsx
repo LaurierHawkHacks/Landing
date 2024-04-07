@@ -1,12 +1,19 @@
-// import { useEffect, useRef } from 'react';
-
-// import { platinumSponsors } from '';
 import { TopBorder, BottomBorder, Hawk, BirdParts } from '@assets';
 import { sponsors } from './data';
 
 import { Button } from '@components';
 
 const SponsorSection = () => {
+    const openInNewTab = (url: string) => {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+        if (newWindow) newWindow.opener = null;
+    };
+
+    const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault(); 
+        openInNewTab('https://hawkhacks.ca/sponsorships.pdf');
+    };
+
     return (
         <div>
             <section
@@ -48,15 +55,10 @@ const SponsorSection = () => {
                             <Button
                                 className="mx-auto block w-fit p-0 bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10"
                                 tabIndex={-1}
+                                type="button" 
+                                onClick={handleSubmit}
                             >
-                                <a
-                                    className="px-10 py-3 text-base font-medium md:text-lg lg:px-[123px] lg:py-[24px] lg:text-2xl xl:text-2.5xl"
-                                    href="./sponsorships.pdf"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Become a sponsor!
-                                </a>
+                                <p className="px-10 py-3 text-base font-medium md:text-lg lg:px-[123px] lg:py-[24px] lg:text-2xl xl:text-2.5xl">Become a sponsor!</p>
                             </Button>
                         </div>
 
