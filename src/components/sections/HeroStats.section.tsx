@@ -88,7 +88,7 @@ const HeroStatSection: React.FC = () => {
                             Hosted at Wilfrid Laurier University
                         </p>
 
-                        <div className="special-block hidden w-4/5 rounded-xl bg-[#F2F1F0] px-7 py-5 lg:mt-6 lg:block xl:mt-12">
+                        <div className="hidden w-4/5 rounded-xl border-2 border-black bg-[#F2F1F0] px-7 py-5 shadow-lg lg:mt-6 lg:block xl:mt-12">
                             <p className="text-base text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
                                 Hacker applications are now{' '}
                                 <strong className="font-bold"> OPEN! </strong>{' '}
