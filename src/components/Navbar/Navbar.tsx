@@ -16,6 +16,16 @@ const Navbar = () => {
         else document.body.classList.remove('overflow-y-hidden');
     }, [showMenu]);
 
+    const openInNewTab = (url: string) => {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+        if (newWindow) newWindow.opener = null;
+    };
+
+    const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault(); 
+        openInNewTab('https://portal.hawkhacks.ca');
+    };
+
     return (
         <header className="fixed top-0 z-50 flex h-fit w-full items-center justify-between p-3 px-10 lg:justify-normal">
             <div className="logo lg:mr-8">
