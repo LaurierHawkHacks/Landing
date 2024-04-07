@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { NavItems, Menu, Button } from '@components';
 import { HawkHacksLogo } from '@assets';
 import Hamburger from 'hamburger-react';
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -26,11 +27,19 @@ const Navbar = () => {
     return (
         <header className="fixed top-0 z-50 flex h-fit w-full items-center justify-between p-3 px-10 lg:justify-normal">
             <div className="logo lg:mr-8">
+                <Link 
+                    to="top"
+                    smooth={true}
+                    duration={500}
+                    offset={-100}
+                    className="cursor-pointer"
+                >
                 <img
                     className="h-14 w-14"
                     src={HawkHacksLogo}
                     alt="HawkHacks Logo"
                 />
+                </Link>
             </div>
 
             <nav className="nav-items hidden text-tbrand lg:mr-auto lg:block">
