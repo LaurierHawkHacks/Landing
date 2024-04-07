@@ -42,44 +42,70 @@ export { ArrowRightIcon, BirdParts, BottomBorder, Hawk, MiddleBody, TopBorder };
  * Sponsor & Partner logos PNGs
  *
  */
-import OnePassword from './logos/1password.png';
-import Assembly from './logos/assembly.png';
 import Balsamiq from './logos/balsamiq.png';
-import CCubed from './logos/ccubed.png';
-import Dcl from './logos/dcl.png';
-import DigitalOcean from './logos/digitalocean.png';
+import Certopus from './logos/certopus.png';
+import Cisco from './logos/cisco.png';
+import DeFiBlocks from './logos/defiblocks.png';
+import Distributive from './logos/distributive.png';
+import Dominos from './logos/dominos.png';
 import Echo3D from './logos/echo3d.png';
-import Fdm from './logos/fdm.png';
+import Ennios from './logos/ennios.png';
+import Fantuan from './logos/fantuan.png';
+import Fintech from './logos/fintech.png';
 import Fossa from './logos/fossa.png';
+import IndoFood from './logos/indofood.png';
+import InterviewBuddy from './logos/interviewbuddy.png';
+import InterviewCake from './logos/interviewcake.png';
+import JDoodle from './logos/jdoodle.png';
 import Lcs from './logos/lcs.png';
-import LeadingLeaders from './logos/leadingleaders.png';
 import Mlh from './logos/mlh.png';
-import Ollon from './logos/ollon.png';
-import Roomiez from './logos/roomiez.png';
-import Soc from './logos/soc.png';
+import Near from './logos/near.png';
+import Nibiru from './logos/nibiru.png';
+import OnePassword from './logos/1password.png';
+import Roku from './logos/roku.png';
+import Rosenfeld from './logos/rosenfeld.png';
+import SmokesPoutinerie from './logos/smokes.png';
+import Solana from './logos/solana.png';
+import StreamYard from './logos/streamyard.png';
 import StudentsUnion from './logos/studentsunion.png';
+import SweetLous from './logos/sweetlous.png';
 import Taskade from './logos/taskade.png';
-import Veritas from './logos/veritas.png';
+import Vectara from './logos/vectara.png';
+import Verbwire from './logos/verbwire.png';
+import Wolfram from './logos/wolfram.png';
 
 export {
-    OnePassword,
-    Assembly,
     Balsamiq,
-    CCubed,
-    Dcl,
-    DigitalOcean,
+    Certopus,
+    Cisco,
+    DeFiBlocks,
+    Distributive,
+    Dominos,
     Echo3D,
-    Fdm,
+    Ennios,
+    Fantuan,
+    Fintech,
     Fossa,
+    IndoFood,
+    InterviewBuddy,
+    InterviewCake,
+    JDoodle,
     Lcs,
-    LeadingLeaders,
     Mlh,
-    Ollon,
-    Roomiez,
-    Soc,
+    Near,
+    Nibiru,
+    OnePassword,
+    Roku,
+    Rosenfeld,
+    SmokesPoutinerie,
+    Solana,
+    StreamYard,
     StudentsUnion,
+    SweetLous,
     Taskade,
-    Veritas,
+    Vectara,
+    Verbwire,
+    Wolfram,
 };
 
 /*
@@ -89,9 +115,7 @@ export {
  */
 import FaqBackground from './faq/bg-desktop.svg';
 
-export {
-  FaqBackground
-}
+export { FaqBackground };
 
 /*
  *
@@ -100,7 +124,7 @@ export {
  */
 import Clouds from './team/clouds.svg';
 import MeetTheTeamBalloon from './team/meet-the-team-balloon-banner.webp';
-import MeetTheTeamBanner from "./team/meet-the-team-banner.webp"
+import MeetTheTeamBanner from './team/meet-the-team-banner.webp';
 import MeetTheTeamBuildingLeft from './team/meet-the-team-building-left.svg';
 import MeetTheTeamBuildingRight from './team/meet-the-team-building-right.svg';
 
