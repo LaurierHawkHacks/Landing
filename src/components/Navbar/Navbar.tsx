@@ -24,6 +24,7 @@ const Navbar = () => {
     const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault(); 
         openInNewTab('https://portal.hawkhacks.ca');
+        logEvent(analytics, 'click_application_portal_button');
     };
 
     return (
