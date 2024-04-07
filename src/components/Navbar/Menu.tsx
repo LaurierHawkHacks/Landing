@@ -1,5 +1,4 @@
 import { NavItems, Button } from '@components';
-import { Link } from 'react-router-dom';
 import { logEvent, analytics } from '../../utils/Analytics';
 
 interface MenuProp {

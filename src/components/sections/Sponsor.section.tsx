@@ -1,5 +1,4 @@
-import { useEffect, useRef } from "react";
-import { TopBorder, BottomBorder, MiddleBody, Hawk, BirdParts } from "@assets";
+import { TopBorder, BottomBorder, Hawk, BirdParts } from "@assets";
 import { logEvent, analytics } from '../../utils/Analytics';
 import { sponsors } from './data';
 import { Button } from '@components';
