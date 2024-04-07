@@ -42,6 +42,16 @@ const HeroStatSection: React.FC = () => {
         }
     }, []);
 
+    const openInNewTab = (url: string) => {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+        if (newWindow) newWindow.opener = null;
+    };
+
+    const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault(); 
+        openInNewTab('https://hawkhacks.ca/sponsorships.pdf');
+    };
+
     return (
         <div className="relative">
             <section
@@ -79,18 +89,19 @@ const HeroStatSection: React.FC = () => {
                                 Hacker applications are now <strong className="font-bold"> OPEN! </strong> Applications close <u className="font-bold"> May 3rd at 11:59PM EDT.</u>
                             </p>
 
-                            <p className="text-base pt-8 pb-3 text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
-                                Interested in sponsoring us?
-                            </p>
+                            <div className="w-fit">
+                                <p className="text-base pt-8 pb-3 text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
+                                    Interested in sponsoring us?
+                                </p>
 
-                            <Button className="relative font-medium mx-auto block w-fit rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0">
-                                <Link
-                                    to="/sponsorships.pdf"
-                                    className="px-5 py-1.5"
+                                <Button 
+                                    className="relative font-medium block w-full h-16 rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0"
+                                    type="button" 
+                                    onClick={handleSubmit}
                                 >
-                                    Sponsor the weekend!
-                                </Link>
-                            </Button>
+                                    <span className="whitespace-nowrap text-2xl font-medium">Sponsor the weekend!</span>
+                                </Button>
+                            </div>
                         </div>
                     </div>
                     <div>
