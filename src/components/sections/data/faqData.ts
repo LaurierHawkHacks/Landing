@@ -15,12 +15,9 @@ const faqData = [
                 answer: '$0.00! Due to our amazing sponsors and support systems, attending and participating at HawkHacks is completely free!',
             },
             {
-                question: '💻 Who can attend? Do I need to be a crazy W-skilled programmer?',
+                question:
+                    '💻 Who can attend? Do I need to be a crazy W-skilled programmer?',
                 answer: 'Anybody from someone who doesn’t know what a computer is, to someone who makes computers, can attend the hackathon!\\nYou can either create a piece of software in 36 hours, attend the workshops and seminars, or do a bit of both - all up to you!',
-            },
-            {
-                question: '📧 This is a cool FAQ section, but I still have a question!',
-                answer: 'No worries! Reach out to us via email at hello@hawkhacks.ca or on any of our socials, and we’ll get back to you as soon as our social media person wakes up!',
             },
         ],
     },
@@ -28,7 +25,8 @@ const faqData = [
         section: 'Eligibility',
         content: [
             {
-                question: '🔑 Do I need to know how to code like some sort of crazy hacker?',
+                question:
+                    '🔑 Do I need to know how to code like some sort of crazy hacker?',
                 answer: 'Anybody from someone who doesn’t know what a computer is, to someone who makes computers can attend the hackathon! You can either create a piece of software in 36 hours, attend the workshops and seminars, or do a bit of both - all up to you!',
             },
             {
