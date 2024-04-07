@@ -13,72 +13,97 @@ import { HeroAboutDesktop, HeroAboutMobile } from '@assets';
 import { logEvent, analytics } from '../utils/Analytics';
 
 const Landing: React.FC = () => {
-    const [desktopImageLoaded, setDesktopImageLoaded] = useState(false);
-    const [mobileImageLoaded, setMobileImageLoaded] = useState(false);
-    const [timerFinished, setTimerFinished] = useState(false);
-    
-    const isLoading = !(
-        desktopImageLoaded &&
-        mobileImageLoaded &&
-        timerFinished
-    );
-        
-    useEffect(() => {
-        // Load Desktop SVG
-        const desktopImage = new Image();
-        desktopImage.src = HeroAboutDesktop;
-        desktopImage.onload = () => setDesktopImageLoaded(true);
+  const [desktopImageLoaded, setDesktopImageLoaded] = useState(false);
+  const [mobileImageLoaded, setMobileImageLoaded] = useState(false);
+  const [timerFinished, setTimerFinished] = useState(false);
+  const isLoading = !(desktopImageLoaded && mobileImageLoaded && timerFinished);
 
-        // Load Mobile SVG
-        const mobileImage = new Image();
-        mobileImage.src = HeroAboutMobile;
-        mobileImage.onload = () => setMobileImageLoaded(true);
+  useEffect(() => {
+    // Load Desktop SVG
+    const desktopImage = new Image();
+    desktopImage.src = HeroAboutDesktop;
+    desktopImage.onload = () => setDesktopImageLoaded(true);
 
-        // Timer
-        setTimeout(() => setTimerFinished(true), 2000);
-    }, []);
-    
-    useEffect(() => {
-      logEvent(analytics, 'page_view');
-    }, []);
+    // Load Mobile SVG
+    const mobileImage = new Image();
+    mobileImage.src = HeroAboutMobile;
+    mobileImage.onload = () => setMobileImageLoaded(true);
 
-    useEffect(() => {
-      const milestones = Array.from({ length: 20 }, () => false); // Create an array for each 5% milestone
+    // Timer
+    setTimeout(() => setTimerFinished(true), 2000);
+  }, []);
 
-      const trackScrollPercentage = () => {
-        const scrolledPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+  useEffect(() => {
+    logEvent(analytics, 'page_view');
+  }, []);
 
-        milestones.forEach((reached, index) => {
-          const milestone = (index + 1) * 5;
-          if (scrolledPercentage >= milestone && !reached) {
-            logEvent(analytics, 'scroll', { percentage: `${milestone}%` });
-            milestones[index] = true; // Mark this milestone as reached
+  useEffect(() => {
+    const milestones = Array.from({ length: 20 }, () => false); // Create an array for each 5% milestone
+
+    const trackScrollPercentage = () => {
+      const scrolledPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+
+      milestones.forEach((reached, index) => {
+        const milestone = (index + 1) * 5;
+        if (scrolledPercentage >= milestone && !reached) {
+          logEvent(analytics, 'scroll', { percentage: `${milestone}%` });
+          milestones[index] = true; // Mark this milestone as reached
+        }
+      });
+    };
+
+    window.addEventListener('scroll', trackScrollPercentage);
+
+    return () => window.removeEventListener('scroll', trackScrollPercentage);
+  }, []);
+
+  useEffect(() => {
+    const anchorPoints = [
+      { id: 'faq', seen: false },
+      { id: 'top', seen: false },
+      { id: 'team', seen: false },
+      { id: 'sponsors-section', seen: false },
+      { id: 'contact', seen: false },
+    ];
+
+    const trackAnchorVisibility = () => {
+      anchorPoints.forEach((anchor) => {
+        if (!anchor.seen) {
+          const element = document.getElementById(anchor.id);
+          if (element) {
+            const rect = element.getBoundingClientRect();
+            const isVisible = rect.top <= window.innerHeight && rect.bottom >= 0;
+            if (isVisible) {
+              logEvent(analytics, `seen_${anchor.id}`);
+              anchor.seen = true;
+              console.log(`Anchor point "${anchor.id}" is visible`);
+            }
           }
-        });
-      };
+        }
+      });
+    };
 
-      window.addEventListener('scroll', trackScrollPercentage);
+    window.addEventListener('scroll', trackAnchorVisibility);
+    return () => window.removeEventListener('scroll', trackAnchorVisibility);
+  }, []);
 
-      return () => window.removeEventListener('scroll', trackScrollPercentage);
-    }, []);
+  if (isLoading) {
+    return <LoadingAnimation />;
+  }
 
-    if (isLoading) {
-        return <LoadingAnimation />;
-    }
-
-    return (
-        <div className="pt-[5rem] transition ease-in">
-            <Navbar />
-            <main>
-                <HeroStatSection />
-                <SponsorSection />
-                <TeamFAQSection />
-                <ContactSection />
-            </main>
-            <FooterSection />
-            <ScrollButton />
-        </div>
-    );
+  return (
+    <div className="pt-[5rem] transition ease-in">
+      <Navbar />
+      <main>
+        <HeroStatSection />
+        <SponsorSection />
+        <TeamFAQSection />
+        <ContactSection />
+      </main>
+      <FooterSection />
+      <ScrollButton />
+    </div>
+  );
 };
 
 export { Landing };

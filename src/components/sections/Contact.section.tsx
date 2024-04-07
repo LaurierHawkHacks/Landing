@@ -14,7 +14,7 @@ const ContactSection: React.FC = () => {
     };
 
     return (
-        <section className="relative z-10">
+        <section id="contact" className="relative z-10">
             <img src={TopBorder} className="z-0 w-full" />
             <img
                 src={Hawk}
@@ -22,9 +22,9 @@ const ContactSection: React.FC = () => {
             />
             <img
                 src={BirdParts}
-                className="absolute right-0 top-0 z-50 flex w-full max-w-5xl -translate-y-[42.5%] xl:right-10 2xl:right-52"
+                className="absolute right-0 top-0 z-50 w-full max-w-5xl -translate-y-[42.5%] xl:right-10 2xl:right-52"
             />
-            <div className="absolute inset-x-0 z-10 ml-0 px-4 pt-10 sm:px-8 sm:pt-16 md:mx-10 md:pt-20 lg:mx-20 lg:px-12 lg:pt-32 xl:mx-32 xl:pt-32">
+            <div className="absolute inset-x-0 z-10 mx-auto max-w-4xl px-4 pt-10 sm:pt-16 md:px-8 md:pt-20 lg:px-12 lg:pt-32 xl:pt-32">
                 <div className="contact-info mb-2 text-center sm:mb-4 sm:text-left md:mb-6 lg:mb-12">
                     <h2
                         id="contact-anchor"
@@ -32,7 +32,7 @@ const ContactSection: React.FC = () => {
                     >
                         CONTACT US
                     </h2>
-                    <p className="my-6 text-base md:text-2xl">
+                    <p className="my-6">
                         Reach out at <b>hello@hawkhacks.ca</b> for any help or
                         support, and please be sure to join the{' '}
                         <b>HawkHacks Discord</b> community!
@@ -45,9 +45,9 @@ const ContactSection: React.FC = () => {
                                 type="button" // Changed to type="button" to prevent form submission
                                 onClick={handleSubmit}
                                 analyticsEvent="subscribe_button_click"
-                                className="relative block h-16 w-fit rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover font-medium before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0"
+                                className="relative font-medium block w-fit h-16 rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0"
                             >
-                                <span className="whitespace-nowrap text-base font-medium md:text-2xl">
+                                <span className="whitespace-nowrap text-2xl font-medium">
                                     Sign up for our newsletter!
                                 </span>
                             </Button>

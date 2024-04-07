@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import { NavItems, Menu, Button } from '@components';
 import { HawkHacksLogo } from '@assets';
 import Hamburger from 'hamburger-react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { logEvent, analytics } from '../../utils/Analytics';
 import { Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
@@ -48,26 +49,20 @@ const Navbar = () => {
             </nav>
 
             <div className="portal-btn hidden transition-all duration-500 ease-in-out lg:mr-32 lg:block">
-                <Button
-                    className="relative font-medium mx-auto block w-64 max-[1080px]:w-48 h-16 rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0"
-                    tabIndex={-1}
-                    type="button"
-                    onClick={handleSubmit}
-                >
-                    <span className="whitespace-nowrap text-lg font-bold">Application Portal</span>
-                </Button>
-                {/* <Link to="/coming-soon" className="block">
+                <Link to="/coming-soon" className="block">
                     <Button 
                         className="relative font-medium mx-auto block w-64 max-[1080px]:w-48 h-16 rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0"
                         tabIndex={-1}
                         type="button"
+                        onClick={() => {
+                            logEvent(analytics, 'click_application_portal_button');
+                        }}
                     >
                         <span className="whitespace-nowrap text-lg font-bold">Application Portal</span>
                     </Button>
-                </Link> */}
+                </Link>
             </div>
-
-            {/* banner-holder: banner is out of flow, to prevent banner affect the desired flow, adding a placeholder banner holder when the screen is smaller  */}
+            
             <div className="banner-holder order-first w-12 lg:hidden"></div>
             <div className="banner absolute left-10 top-0 lg:left-auto lg:right-10">
                 <a
@@ -75,6 +70,9 @@ const Navbar = () => {
                     href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => {
+                        logEvent(analytics, 'click_mlh_trust_badge');
+                    }}
                 >
                     <img
                         src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
