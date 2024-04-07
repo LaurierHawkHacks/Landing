@@ -35,7 +35,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
         <div className="py-20">
             {sections.map((section, sectionIndex) => (
                 <div key={sectionIndex} className="mb-8">
-                    <h3 className="mb-4 text-2xl font-bold">
+                    <h3 className="mb-6 text-3xl font-bold capitalize text-white drop-shadow-md md:mb-8">
                         {section.section}
                     </h3>
                     <div className="grid gap-5 md:grid-cols-2">
@@ -47,7 +47,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                         activeIndex.section === sectionIndex &&
                                         activeIndex.question === questionIndex
                                             ? 'rounded-b-none '
-                                            : 'transition-all duration-1000'
+                                            : 'transition-all duration-300'
                                     }`}
                                     onClick={() =>
                                         toggleAccordion(
@@ -74,7 +74,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                 </div>
 
                                 <div
-                                    className={`overflow-hidden transition-all duration-500 ${
+                                    className={`overflow-hidden transition-all duration-300 ${
                                         activeIndex &&
                                         activeIndex.section === sectionIndex &&
                                         activeIndex.question === questionIndex
@@ -86,7 +86,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                         .split('\\n')
                                         .map((line, idx, arr) => (
                                             <React.Fragment key={idx}>
-                                                <p className="p-2 text-sm text-white">
+                                                <p className="p-4 text-sm text-white">
                                                     {line}
                                                 </p>
                                                 {idx < arr.length - 1 && <br />}

@@ -16,7 +16,7 @@ const faqData = [
             },
             {
                 question: '💻 Who can attend? Do I need to be a crazy W-skilled programmer?',
-                answer: 'Anybody from someone who doesn’t know what a computer is, to someone who makes computers, can attend the hackathon!\\n\\nYou can either create a piece of software in 36 hours, attend the workshops and seminars, or do a bit of both - all up to you!',
+                answer: 'Anybody from someone who doesn’t know what a computer is, to someone who makes computers, can attend the hackathon!\\nYou can either create a piece of software in 36 hours, attend the workshops and seminars, or do a bit of both - all up to you!',
             },
             {
                 question: '📧 This is a cool FAQ section, but I still have a question!',
@@ -33,7 +33,7 @@ const faqData = [
             },
             {
                 question: '📅 When do applications open?',
-                answer: 'Hacker, mentor, and volunteer applications open on April 5th, 2024.\\nHawkHacks 2024 applications have now closed! If you’ve applied, make sure to keep an eye on your dashboard or email for updates!',
+                answer: 'Hacker, mentor, and volunteer applications open on April 5th, 2024. HawkHacks 2024 applications have now closed! If you’ve applied, make sure to keep an eye on your dashboard or email for updates!',
             },
             {
                 question: '🎓 Am I eligible to participate?',
@@ -50,7 +50,7 @@ const faqData = [
         content: [
             {
                 question: '😷 What are your COVID-19 regulations?',
-                answer: 'At this time, HawkHacks does not have a COVID-19 policy in effect and won’t be enforcing any COVID-related rules or restrictions. We recommend you do your due diligence when it comes to your health, and take precautions as necessary. We will have a small amount of hygiene products, such as hand sanitizers, available at the event.\\n\\nWe ask that if you are feeling sick or unwell, to not attend the event for the respect and safety of everyone else at the event.',
+                answer: 'At this time, HawkHacks does not have a COVID-19 policy in effect and won’t be enforcing any COVID-related rules or restrictions. We recommend you do your due diligence when it comes to your health, and take precautions as necessary. We will have a small amount of hygiene products, such as hand sanitizers, available at the event.\\nWe ask that if you are feeling sick or unwell, to not attend the event for the respect and safety of everyone else at the event.',
             },
         ],
     },
