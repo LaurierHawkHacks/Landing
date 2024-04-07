@@ -56,7 +56,6 @@ const Landing: React.FC = () => {
             if (isVisible) {
               logEvent(analytics, `seen_${anchor.id}`);
               anchor.seen = true;
-              console.log(`Anchor point "${anchor.id}" is visible`);
             }
           }
         }
