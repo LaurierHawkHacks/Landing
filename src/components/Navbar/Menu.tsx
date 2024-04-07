@@ -1,5 +1,4 @@
 import { NavItems, Button } from '@components';
-import { Link } from 'react-router-dom';
 
 interface MenuProp {
     showMenu: boolean;
