@@ -224,7 +224,7 @@ const bronzeSponsors: Sponsor[] = [
     },
     {
         name: "Maven Sourcing",
-        link: "https://mavensourcing.com/",
+        link: "https://mavensourcing.ca/",
         image: MavenSourcing,
     }
 ];
