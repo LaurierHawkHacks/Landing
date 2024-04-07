@@ -50,7 +50,7 @@ const SponsorSection = () => {
                                 tabIndex={-1}
                             >
                                 <a
-                                    className="px-10 py-3 text-base md:text-lg lg:px-[123px] lg:py-[24px] lg:text-2xl xl:text-2.5xl"
+                                    className="px-10 py-3 text-base font-medium md:text-lg lg:px-[123px] lg:py-[24px] lg:text-2xl xl:text-2.5xl"
                                     href="./sponsorships.pdf"
                                     target="_blank"
                                     rel="noopener noreferrer"
