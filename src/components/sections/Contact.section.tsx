@@ -45,14 +45,14 @@ const ContactSection: React.FC = () => {
                 type="button" // Changed to type="button" to prevent form submission
                 onClick={handleSubmit}
                 analyticsEvent="subscribe_button_click"
-                className="relative font-medium block w-full h-16 rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0"
+                className="relative font-medium block w-fit h-16 rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0"
               >
                 <span className="whitespace-nowrap text-2xl font-medium">
                   Sign up for our newsletter!
                 </span>
               </Button>
             </div>
-            <div className="pt-2 sm:pt-4">
+            <div className="pt-2 sm:pt-4 max-[1020px]:hidden">
               <SocialIcons color="#32848C" />
             </div>
           </div>
