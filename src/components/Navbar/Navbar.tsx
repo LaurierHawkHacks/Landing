@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { NavItems, Menu, Button } from '@components';
 import { HawkHacksLogo } from '@assets';
 import Hamburger from 'hamburger-react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { logEvent, analytics } from '../../utils/Analytics';
 import { Link as ScrollLink } from 'react-scroll';
 
@@ -49,18 +49,14 @@ const Navbar = () => {
             </nav>
 
             <div className="portal-btn hidden transition-all duration-500 ease-in-out lg:mr-32 lg:block">
-                <Link to="/coming-soon" className="block">
-                    <Button 
-                        className="relative font-medium mx-auto block w-64 max-[1080px]:w-48 h-16 rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0"
-                        tabIndex={-1}
-                        type="button"
-                        onClick={() => {
-                            logEvent(analytics, 'click_application_portal_button');
-                        }}
-                    >
-                        <span className="whitespace-nowrap text-lg font-bold">Application Portal</span>
-                    </Button>
-                </Link>
+                <Button
+                    className="relative font-medium mx-auto block w-64 max-[1080px]:w-48 h-16 rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0"
+                    tabIndex={-1}
+                    type="button"
+                    onClick={handleSubmit}
+                >
+                    <span className="whitespace-nowrap text-lg font-bold">Application Portal</span>
+                </Button>
             </div>
             
             <div className="banner-holder order-first w-12 lg:hidden"></div>
