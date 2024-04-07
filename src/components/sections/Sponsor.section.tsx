@@ -185,223 +185,240 @@ const SponsorSection = () => {
 
                         {/* each div is a section */}
                         {/* the height define the size of the image */}
+                        {/* the different row define different tiers */}
+                        {/* first: h-20, mb-150px
+                            second: h-14, mb-150px
+                            third: h-12
+                            fourth: h-8
+                        */}
 
-                        {/* first tier */}
-                        <div className="overflow-hidden">
-                            <div className="flex items-center justify-start px-2 transition-transform duration-[50ms] ease-linear md:px-8">
-                                <div className="h-20 w-auto flex-shrink-0 md:h-28">
+                        {/* first tier: h-20 */}
+                        <div className="max-w-[100rem] overflow-hidden ">
+                            <div className="mb-[2rem] flex items-center justify-center gap-4 transition-transform duration-[50ms] ease-linear md:gap-6">
+                                <div className="h-28 md:h-40 lg:h-60 xl:h-80">
                                     <img
                                         src={Solana}
                                         alt="Solana"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-20 w-auto flex-shrink-0 md:h-28">
+                                <div className="h-28 md:h-40 lg:h-60 xl:h-80">
                                     <img
                                         src={Near}
                                         alt="Near"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-28 w-auto object-contain md:h-40 lg:h-60 xl:h-80"
                                     />
                                 </div>
+
+                                {/* <img
+                                    src={Near}
+                                    alt="Near"
+                                    className="aspect-video h-28 w-auto object-contain md:h-40 lg:h-60 xl:h-80"
+                                /> */}
                             </div>
                         </div>
 
                         {/* second tier */}
-                        <div className="overflow-hidden">
+                        <div className="max-w-[100rem] overflow-hidden">
                             <div
-                                ref={(el) =>
-                                    el && (carouselRefs.current[2] = el)
-                                }
-                                className="golden flex items-center justify-start space-x-6 px-4 transition-transform duration-[50ms] ease-linear"
+                                // ref={(el) =>
+                                //     el && (carouselRefs.current[2] = el)
+                                // }
+                                // className="golden flex items-center justify-start space-x-6 px-4 transition-transform duration-[50ms] ease-linear"
+                                className="mb-[2rem] flex flex-wrap items-center justify-center gap-4 lg:gap-12"
                             >
-                                <div className="h-12 w-auto flex-shrink-0">
+                                {/* h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-32 */}
+                                <div className="h-16 w-auto flex-shrink-0 sm:h-24 md:h-32 lg:h-36 xl:h-44">
                                     <img
                                         src={Fantuan}
                                         alt="Fantuan"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-16 w-auto flex-shrink-0 sm:h-24 md:h-32 lg:h-36 xl:h-44">
                                     <img
                                         src={SmokesPoutinerie}
                                         alt="SmokesPoutinerie"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-16 w-auto flex-shrink-0 sm:h-24 md:h-32 lg:h-36 xl:h-44">
                                     <img
                                         src={Dominos}
                                         alt="Dominos"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-16 w-auto flex-shrink-0 sm:h-24 md:h-32 lg:h-36 xl:h-44">
                                     <img
                                         src={Nibiru}
                                         alt="Nibiru"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-16 w-auto flex-shrink-0 sm:h-24 md:h-32 lg:h-36 xl:h-44">
                                     <img
                                         src={Distributive}
                                         alt="Distributive"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
                             </div>
                         </div>
 
                         {/* third tier */}
-                        <div className="overflow-hidden">
+                        <div className="max-w-[100rem] overflow-hidden">
                             <div
-                                ref={(el) =>
-                                    el && (carouselRefs.current[0] = el)
-                                }
-                                className="silver flex items-center justify-start space-x-4 px-4 transition-transform duration-[50ms] ease-linear sm:space-x-16"
+                                // ref={(el) =>
+                                //     el && (carouselRefs.current[0] = el)
+                                // }
+                                // className="silver flex items-center justify-start space-x-4 px-4 transition-transform duration-[50ms] ease-linear sm:space-x-16"
+                                className="mb-[2rem] flex flex-wrap items-center justify-center gap-8 lg:gap-12"
                             >
-                                <div className="h-14 w-auto flex-shrink-0">
+                                {/* h-16 w-auto flex-shrink-0 sm:h-24 md:h-32 lg:h-36 xl:h-44 */}
+                                <div className="h-12 w-auto flex-shrink-0 sm:h-24 md:h-28 lg:h-32 xl:h-36">
                                     <img
                                         src={IndoFood}
                                         alt="VeriIndoFoodtas"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-12 w-auto flex-shrink-0 sm:h-24 md:h-28 lg:h-32 xl:h-36">
                                     <img
                                         src={Roku}
                                         alt="Roku"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-12 w-auto flex-shrink-0 sm:h-24 md:h-28 lg:h-32 xl:h-36">
                                     <img
                                         src={SweetLouLogo}
                                         alt="SweetLouLogo"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-12 w-auto flex-shrink-0 sm:h-24 md:h-28 lg:h-32 xl:h-36">
                                     <img
                                         src={Cisco}
                                         alt="Cisco"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
                             </div>
                         </div>
 
-                        {/* last tiers */}
-                        <div className="overflow-hidden">
+                        {/* last tiers: make each row contain mostly 4 things */}
+                        <div className="max-w-[100rem] overflow-hidden ">
                             <div
-                                ref={(el) =>
-                                    el && (carouselRefs.current[1] = el)
-                                }
-                                className="bronze flex items-center justify-start space-x-6 px-4 transition-transform duration-[50ms] ease-linear"
+                                // ref={(el) =>
+                                //     el && (carouselRefs.current[1] = el)
+                                // }
+                                // className="bronze flex items-center justify-start space-x-6 px-4 transition-transform duration-[50ms] ease-linear"
+                                className="mb-[2rem] flex flex-wrap items-center justify-center gap-8"
                             >
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-3">
                                     <img
                                         src={Echo3D}
                                         alt="Echo3D"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-32">
                                     <img
                                         src={OnePassword}
                                         alt="1Password"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-32">
                                     <img
                                         src={Wolfram}
                                         alt="Wolfram"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-32">
                                     <img
                                         src={Balsamiq}
                                         alt="Balsamiq"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-32">
                                     <img
                                         src={Rosenfeld}
                                         alt="Rosenfeld"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-32">
                                     <img
                                         src={Taskade}
                                         alt="Taskade"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-32">
                                     <img
                                         src={StreamYard}
                                         alt="StreamYard"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-32">
                                     <img
                                         src={DeFiBlocks}
                                         alt="DeFiBlocks"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-32">
                                     <img
                                         src={InterviewCake}
                                         alt="InterviewCake"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-32">
                                     <img
                                         src={Ennios}
                                         alt="Ennios"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-32">
                                     <img
                                         src={Certopus}
                                         alt="Certopus"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-32">
                                     <img
                                         src={InterviewBuddy}
                                         alt="InterviewBuddy"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-32">
                                     <img
                                         src={Verbwire}
                                         alt="Verbwire"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-32">
                                     <img
                                         src={JDoodle}
                                         alt="JDoodle"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
-                                <div className="h-12 w-auto flex-shrink-0">
+                                <div className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-32">
                                     <img
                                         src={Vectara}
                                         alt="Vectara"
-                                        className="h-full w-auto"
+                                        className="aspect-video h-full w-auto object-contain"
                                     />
                                 </div>
                             </div>
@@ -415,26 +432,26 @@ const SponsorSection = () => {
                             >
                                 PARTNERS
                             </div>
-                            <div className="flex flex-wrap items-center justify-center gap-3">
+                            <div className="flex flex-wrap items-center justify-center gap-4">
                                 <img
                                     src={StudentsUnion}
                                     alt="Student Union"
-                                    className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
+                                    className=" aspect-video h-16 object-contain sm:h-20 md:h-24 lg:h-28 xl:h-32"
                                 />
                                 <img
                                     src={Mlh}
                                     alt="MLH"
-                                    className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
+                                    className="aspect-video h-16 object-contain sm:h-20 md:h-24 lg:h-28 xl:h-32"
                                 />
                                 <img
                                     src={Fossa}
                                     alt="Fossa"
-                                    className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
+                                    className="aspect-video h-16 object-contain sm:h-20 md:h-24 lg:h-28 xl:h-32"
                                 />
                                 <img
                                     src={Fintech}
                                     alt="Fintech"
-                                    className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
+                                    className="aspect-video h-16 object-contain sm:h-20 md:h-24 lg:h-28 xl:h-32"
                                 />
                                 <img
                                     src={Lcs}
