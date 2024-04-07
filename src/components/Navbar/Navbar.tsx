@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import { NavItems, Menu, Button } from '@components';
 import { HawkHacksLogo } from '@assets';
 import Hamburger from 'hamburger-react';
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -14,20 +15,20 @@ const Navbar = () => {
         else document.body.classList.remove('overflow-y-hidden');
     }, [showMenu]);
 
-    const openInNewTab = (url: string) => {
-        const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
-        if (newWindow) newWindow.opener = null;
-    };
+    // const openInNewTab = (url: string) => {
+    //     const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+    //     if (newWindow) newWindow.opener = null;
+    // };
 
-    const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
-        e.preventDefault(); 
-        openInNewTab('https://portal.hawkhacks.ca');
-    };
+    // const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+    //     e.preventDefault(); 
+    //     openInNewTab('https://portal.hawkhacks.ca');
+    // };
 
     return (
         <header className="fixed top-0 z-50 flex h-fit w-full items-center justify-between p-3 px-10 lg:justify-normal">
             <div className="logo lg:mr-8">
-                <Link 
+                <ScrollLink 
                     to="top"
                     smooth={true}
                     duration={500}
@@ -39,7 +40,7 @@ const Navbar = () => {
                     src={HawkHacksLogo}
                     alt="HawkHacks Logo"
                 />
-                </Link>
+                </ScrollLink>
             </div>
 
             <nav className="nav-items hidden text-tbrand lg:mr-auto lg:block">
@@ -47,14 +48,23 @@ const Navbar = () => {
             </nav>
 
             <div className="portal-btn hidden transition-all duration-500 ease-in-out lg:mr-32 lg:block">
-                <Button
+                {/* <Button
                     className="relative font-medium mx-auto block w-64 max-[1080px]:w-48 h-16 rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0"
                     tabIndex={-1}
                     type="button"
                     onClick={handleSubmit}
                 >
                     <span className="whitespace-nowrap text-lg font-bold">Application Portal</span>
-                </Button>
+                </Button> */}
+                <Link to="/coming-soon" className="block">
+                    <Button 
+                        className="relative font-medium mx-auto block w-64 max-[1080px]:w-48 h-16 rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0"
+                        tabIndex={-1}
+                        type="button"
+                    >
+                        <span className="whitespace-nowrap text-lg font-bold">Application Portal</span>
+                    </Button>
+                </Link>
             </div>
 
             {/* banner-holder: banner is out of flow, to prevent banner affect the desired flow, adding a placeholder banner holder when the screen is smaller  */}
