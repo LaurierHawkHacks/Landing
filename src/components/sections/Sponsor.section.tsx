@@ -62,8 +62,9 @@ const SponsorSection = () => {
             {/* first tier */}
             <div className="max-w-[100rem]">
               <div className="mb-[2rem] flex items-center justify-center gap-6 px-3 md:gap-16 md:px-4 xl:px-6">
-                {sponsors.platinumSponsors.map((sponsor) => (
+                {sponsors.platinumSponsors.map((sponsor, i) => (
                   <a
+                    key={i}
                     href={sponsor.link}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -85,8 +86,9 @@ const SponsorSection = () => {
             {/* second tier */}
             <div className="max-w-[100rem] overflow-hidden">
               <div className="mb-[2rem] flex flex-wrap items-center justify-center gap-4 lg:gap-12">
-                {sponsors.goldSponsors.map((sponsor) => (
+                {sponsors.goldSponsors.map((sponsor, i) => (
                   <a
+                    key={i}
                     href={sponsor.link}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -108,8 +110,9 @@ const SponsorSection = () => {
             {/* third tier */}
             <div className="max-w-[100rem] overflow-hidden">
               <div className="mb-[2rem] flex flex-wrap items-center justify-center gap-8 lg:gap-12">
-                {sponsors.silverSponsors.map((sponsor) => (
+                {sponsors.silverSponsors.map((sponsor, i) => (
                   <a
+                    key={i}
                     href={sponsor.link}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -129,10 +132,11 @@ const SponsorSection = () => {
             </div>
 
             {/* fourth tier */}
-            <div className="max-w-[100rem] overflow-hidden ">
+            <div className="max-w-[100rem] overflow-hidden">
               <div className="mb-[2rem] flex flex-wrap items-center justify-center gap-8">
-                {sponsors.bronzeSponsors.map((sponsor) => (
+                {sponsors.bronzeSponsors.map((sponsor, i) => (
                   <a
+                    key={i}
                     href={sponsor.link}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -159,8 +163,9 @@ const SponsorSection = () => {
                 PARTNERS
               </h2>
               <div className="flex flex-wrap items-center justify-center gap-4">
-                {sponsors.partners.map((partner) => (
+                {sponsors.partners.map((partner, i) => (
                   <a
+                    key={i}
                     href={partner.link}
                     target="_blank"
                     rel="noopener noreferrer"
