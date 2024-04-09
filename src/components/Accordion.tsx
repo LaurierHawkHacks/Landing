@@ -57,9 +57,9 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                     }
                                     role="button"
                                 >
-                                    <h6 className="text-black">
+                                    <h4 className="text-black">
                                         {item.question}
-                                    </h6>
+                                    </h4>
                                     <IoIosArrowDown
                                         className={`transition-transform duration-300 ${
                                             activeIndex &&

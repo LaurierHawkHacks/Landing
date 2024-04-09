@@ -36,6 +36,7 @@ const SocialIcons: React.FC<SocialIconsProps> = ({ color = "currentColor" }) => 
         href={href}
         target="_blank"
         rel="noopener noreferrer"
+        aria-label={`Visit our ${platform} page to learn more about HawkHacks!`}
         onMouseEnter={() => setIconColor(hoverColor)}
         onMouseLeave={() => setIconColor(color)}
         onClick={() => handleClick(platform)}
