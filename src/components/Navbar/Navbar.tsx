@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { NavItems, Menu, Button } from '@components';
-import { HawkHacksLogo } from '@assets';
+import { HawkHacksLogo, MlhBanner } from '@assets';
 import Hamburger from 'hamburger-react';
 // import { Link } from 'react-router-dom';
 import { logEvent, analytics } from '../../utils/Analytics';
@@ -36,7 +36,6 @@ const Navbar = () => {
                     duration={500}
                     offset={-100}
                     className="cursor-pointer"
-                    
                 >
                     <img
                         className="h-14 w-14"
@@ -75,7 +74,7 @@ const Navbar = () => {
                     }}
                 >
                     <img
-                        src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
+                        src={MlhBanner}
                         alt="Major League Hacking 2024 Hackathon Season"
                         className="onhover:dark:filter-none w-20 transition-transform duration-300 ease-in-out hover:scale-105 lg:w-24"
                     />

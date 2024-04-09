@@ -136,5 +136,6 @@ export {
  *
  */
 import ExternalBalloon from './external/balloon.svg';
+import MlhBanner from './external/mlh-banner.svg';
 
-export { ExternalBalloon };
+export { ExternalBalloon, MlhBanner };

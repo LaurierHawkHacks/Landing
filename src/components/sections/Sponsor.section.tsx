@@ -142,6 +142,7 @@ const SponsorSection = () => {
                                             src={sponsor.image}
                                             alt={sponsor.name}
                                             className="aspect-video h-full w-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
+                                            loading="lazy"
                                         />
                                     </a>
                                 ))}
@@ -210,11 +211,7 @@ const SponsorSection = () => {
                         </div>
                     </div>
                 </div>
-                <img
-                    src={BottomBorder}
-                    alt=""
-                    className="z-10 w-full"
-                />
+                <img src={BottomBorder} alt="" className="z-10 w-full" />
             </section>
         </div>
     );

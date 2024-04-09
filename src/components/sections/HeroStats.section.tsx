@@ -58,15 +58,18 @@ const HeroStatSection: React.FC = () => {
                 className="hero-section stacked bg-gradient-to-b from-peachPuff to-brightUbe sm:place-items-start"
                 id="top"
             >
+                {/* preload these two images */}
                 <img
                     src={HeroAboutDesktop}
                     alt="Hawkhacks stats"
                     className="hidden w-full sm:block"
+                    fetchpriority="high"
                 />
                 <img
                     src={HeroAboutMobile}
                     alt="Hawkhacks stats"
                     className="block w-full sm:hidden"
+                    fetchpriority="high"
                 />
                 <div className="mt-16 px-4 sm:ml-16 sm:mt-16 sm:px-0 lg:ml-20 lg:mt-24 xl:ml-24 xl:mt-32 2xl:mt-10">
                     <img
