@@ -132,19 +132,20 @@ const HeroStatSection: React.FC = () => {
                     <h1 className="mb-6 text-center text-4.5xl uppercase text-white drop-shadow-md lg:mb-12 lg:text-6.5xl xl:mb-16 xl:text-7.5xl 2xl:mb-24">
                         About Hawkhacks
                     </h1>
-                    <div className="space-y-3 text-left text-[#1D4549] lg:space-y-10">
-                        <p className="text-medium text-base md:text-lg lg:text-2xl xl:text-2.5xl">
+
+                    <div className="space-y-3 text-center text-[#1D4549] lg:space-y-10">
+                        <p className="text-base md:text-lg lg:text-2xl xl:text-2.5xl 2xl:text-3xl">
                             HawkHacks came out of a desire to give everyone an
                             equal opportunity to get into tech, whether that be
                             programming, networking, researching, learning, or
                             teaching.
                         </p>
-                        <p className="text-base md:text-lg lg:text-2xl xl:text-2.5xl">
+                        <p className="text-base md:text-lg lg:text-2xl xl:text-2.5xl 2xl:text-3xl">
                             Join hundreds of students across Canada (and across
                             the world) in a 36 hour period of exploration,
                             creativity, and learning!
                         </p>
-                        <p className="text-base md:text-lg lg:text-2xl xl:text-2.5xl">
+                        <p className="text-base md:text-lg lg:text-2xl xl:text-2.5xl 2xl:text-3xl">
                             Remember, you don't have to be a pro to participate
                             - show up with ten years or ten minutes of
                             experience (oh yeah, and a great attitude too!)
