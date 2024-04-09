@@ -3,14 +3,6 @@
  * Hero Section SVGs
  *
  */
-export { HeroBackgroundMobile } from './hero/bg-mobile-svg';
-export { HeroBackgroundDesktop } from './hero/bg-desktop-svg';
-
-/*
- *
- * Hero Section SVGs
- *
- */
 import HeroAboutDesktop from './hero-about/hero-about-desktop.svg';
 import HeroAboutMobile from './hero-about/hero-about-mobile.svg';
 import HeroAboutAirBalloon from './hero-about/about-air-balloon.svg';
