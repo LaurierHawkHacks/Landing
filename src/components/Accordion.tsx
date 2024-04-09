@@ -42,16 +42,16 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
 
     const FAQCategories = () => {
         return (
-            <div className="border-gray/50 flex h-full flex-col items-stretch justify-center gap-4 rounded-md p-4 md:w-1/3 border-2 shadow-lg backdrop-blur-lg">
-                <h3 className="text-center text-3xl font-bold capitalize text-white drop-shadow-md ">
+            <div className="border-gray/50 flex h-full w-full flex-col justify-start gap-4 rounded-md md:w-1/3 md:items-stretch md:justify-center md:border-2 md:p-4 md:shadow-lg md:backdrop-blur-lg">
+                <h3 className="hidden text-center text-3xl font-bold capitalize text-white drop-shadow-md md:block ">
                     Categories
                 </h3>
 
-                <div className="flex flex-wrap items-stretch justify-center gap-2 md:flex-col ">
+                <div className="flex flex-wrap items-start gap-2 md:flex-col ">
                     {sections.map((section, index) => (
                         <button
                             key={index}
-                            className={` items-center justify-center flex p-1 md:p-2 text-lg shadow-md transition-all duration-100 md:w-full  ${
+                            className={`text-md flex w-[145px] items-center justify-center p-1 shadow-md transition-all duration-100 md:w-full md:p-2  ${
                                 index === selectedCategoryIndex
                                     ? '!hover:bg-deepMarine bg-deepMarine text-white hover:text-white'
                                     : 'bg-white text-black hover:bg-gray-200'
@@ -70,17 +70,17 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
 
     return (
         <div className="mb-12 flex flex-col gap-8 pt-12">
-            <div className="flex flex-col gap-8 md:flex-row">
+            <div className="flex flex-col items-center gap-4 md:flex-row md:gap-8">
                 <FAQCategories />
                 <div className="h-full rounded-md bg-white p-4 shadow-lg md:w-2/3">
-                    <h3 className="mb-4 text-2xl font-bold">
+                    <h3 className="mb-4 hidden text-2xl font-bold md:block">
                         {activeSection.section}
                     </h3>
                     <div className="space-y-4">
                         {activeSection.content.map((item, questionIndex) => (
                             <div key={questionIndex}>
                                 <button
-                                    className={`flex w-full items-center text-left justify-between rounded-none border-b-2 border-black bg-deepMarine p-2 md:py-6 text-lg text-black shadow-none transition-all duration-100  ${
+                                    className={`flex w-full items-center justify-between rounded-none border-b-2 border-black bg-deepMarine p-2 text-left text-lg text-black shadow-none transition-all duration-100 md:py-6  ${
                                         activeIndex &&
                                         activeIndex.question === questionIndex
                                             ? 'bg-deepMarine text-white hover:text-white'
@@ -95,7 +95,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                 >
                                     <p className="text-sm">{item.question}</p>
                                     <IoIosArrowDown
-                                        className={`transition-transform min-w-[20px] min-h-[20px] ${
+                                        className={`min-h-[20px] min-w-[20px] transition-transform ${
                                             activeIndex &&
                                             activeIndex.question ===
                                                 questionIndex
@@ -117,7 +117,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                         .map((line, idx) => (
                                             <p
                                                 key={idx}
-                                                className="p-4 text-sm text-left"
+                                                className="p-4 text-left text-sm"
                                             >
                                                 {line}
                                             </p>
@@ -129,8 +129,8 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                 </div>
             </div>
             <div className="flex w-full flex-col items-center justify-between gap-4 rounded-md bg-white p-4 shadow-lg md:flex-row md:gap-0">
-                <span className="flex flex-col md:w-2/4 md:text-left text-center gap-2">
-                    <h4 className='font-bold'>Still have a question?</h4>
+                <span className="flex flex-col gap-2 text-center md:w-2/4 md:text-left">
+                    <h4 className="font-bold">Still have a question?</h4>
                     <p className="text-sm">
                         No worries! Reach out to us via email at
                         hello@hawkhacks.ca or on any of our socials, and we'll
