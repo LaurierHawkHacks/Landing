@@ -42,16 +42,16 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
 
     const FAQCategories = () => {
         return (
-            <div className="border-gray/50 flex h-full flex-col items-stretch justify-center rounded-md p-4 md:w-1/3 md:border-2 md:shadow-lg md:backdrop-blur-lg">
-                <h3 className="mb-6 text-center text-3xl font-bold capitalize text-white drop-shadow-md ">
+            <div className="border-gray/50 flex h-full flex-col items-stretch justify-center gap-4 rounded-md p-4 md:w-1/3 border-2 shadow-lg backdrop-blur-lg">
+                <h3 className="text-center text-3xl font-bold capitalize text-white drop-shadow-md ">
                     Categories
                 </h3>
 
-                <div className="flex flex-wrap items-stretch justify-center gap-2 md:flex-col">
+                <div className="flex flex-wrap items-stretch justify-center gap-2 md:flex-col ">
                     {sections.map((section, index) => (
                         <button
                             key={index}
-                            className={`w-1/3 p-2 text-lg shadow-md transition-all duration-300 md:w-full  ${
+                            className={` items-center justify-center flex p-1 md:p-2 text-lg shadow-md transition-all duration-100 md:w-full  ${
                                 index === selectedCategoryIndex
                                     ? '!hover:bg-deepMarine bg-deepMarine text-white hover:text-white'
                                     : 'bg-white text-black hover:bg-gray-200'
@@ -80,7 +80,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                         {activeSection.content.map((item, questionIndex) => (
                             <div key={questionIndex}>
                                 <button
-                                    className={`flex w-full items-center justify-between rounded-none border-b-2 border-black bg-deepMarine p-2 py-6 text-lg text-black shadow-none transition-all duration-300  ${
+                                    className={`flex w-full items-center text-left justify-between rounded-none border-b-2 border-black bg-deepMarine p-2 md:py-6 text-lg text-black shadow-none transition-all duration-100  ${
                                         activeIndex &&
                                         activeIndex.question === questionIndex
                                             ? 'bg-deepMarine text-white hover:text-white'
@@ -95,7 +95,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                 >
                                     <p className="text-sm">{item.question}</p>
                                     <IoIosArrowDown
-                                        className={`transition-transform ${
+                                        className={`transition-transform min-w-[20px] min-h-[20px] ${
                                             activeIndex &&
                                             activeIndex.question ===
                                                 questionIndex
@@ -105,7 +105,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                     />
                                 </button>
                                 <div
-                                    className={`overflow-hidden transition-all duration-300 ${
+                                    className={`overflow-hidden transition-all duration-100 ${
                                         activeIndex &&
                                         activeIndex.question === questionIndex
                                             ? 'max-h-96'
@@ -117,7 +117,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                         .map((line, idx) => (
                                             <p
                                                 key={idx}
-                                                className="p-4 text-sm"
+                                                className="p-4 text-sm text-left"
                                             >
                                                 {line}
                                             </p>
@@ -129,8 +129,8 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                 </div>
             </div>
             <div className="flex w-full flex-col items-center justify-between gap-4 rounded-md bg-white p-4 shadow-lg md:flex-row md:gap-0">
-                <span className="flex-col md:w-2/4">
-                    <h4>📧 Still have a question?</h4>
+                <span className="flex flex-col md:w-2/4 md:text-left text-center gap-2">
+                    <h4 className='font-bold'>Still have a question?</h4>
                     <p className="text-sm">
                         No worries! Reach out to us via email at
                         hello@hawkhacks.ca or on any of our socials, and we'll
@@ -139,7 +139,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                     </p>
                 </span>
                 <Button
-                    className="block w-fit bg-gradient-to-b from-tbrand to-tbrand-hover p-0 before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10"
+                    className="block w-fit bg-gradient-to-b from-tbrand to-tbrand-hover p-0 before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-100 before:hover:opacity-10"
                     tabIndex={-1}
                     type="button"
                     onClick={() => {
