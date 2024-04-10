@@ -7,8 +7,8 @@ const faqData = [
                 answer: 'A hackathon consists of two “parts” - a social coding event where programmers, designers, and developers collaborate in teams to solve a problem. You can either create a software-based project that falls under a category hack or make whatever your heart desires as a general hack.\\n The second section is networking events, seminars, and presentations that happen throughout the hackathon conducted by industry and academic professionals - if you’ve been putting off learning that one programming language for a while, now might be the time to learn!',
             },
             {
-                question: '🏆 Why should I come to HawkHacks specifically??',
-                answer: 'Firstly, we’re giving away over $30,000 of value in prizes! Last year, some of the prizes included iPads and Nintendo Switches!',
+                question: '🏆 Why should I come to HawkHacks? What types of things can I expect?',
+                answer: 'Picture this: over $35,000 worth of prizes, including cool stuff like iPads and Nintendo Switches just waiting to be won!\\nBut hey, it\'s not all about the prizes (although they\'re pretty awesome). We\'ve lined up a bunch of events throughout the weekend that are all about boosting your career, soft skills, and tech skills. You\'ll get to hang out with industry professionals from academia, business, entrepreneurship - you name it. They\'re here to share their wisdom and insights, and maybe even teach you a thing or two.\\nAnd let\'s not forget the fun stuff! We\'ve got tons of mini-games and tournaments lined up, each with its own crazy prizes. Think of a spicy ramen challenge, a fast-typing tournament, and even a pizza-eating competition! It\'s all about having a blast while learning and connecting with awesome people.',
             },
             {
                 question: '💰 How much does it cost?',
