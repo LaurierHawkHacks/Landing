@@ -42,6 +42,23 @@ const faqData = [
         ],
     },
     {
+        section: 'Preparation',
+        content: [
+            {
+                question: '📜 What should I bring to HawkHacks?',
+                answer: 'At a minimum, you should have a device to code on (ideally a laptop), a charger (for your phone and laptop), and a piece of student or government ID. We also recommend bringing stuff to stay comfy, such as a blanket, pillow, and an oversized hoodie.\\nKeep in mind that this is an overnight event - you may want to consider hygiene products as well!',
+            },
+            {
+                question: '🔎 I’m lost! How do I find the HawkHacks building?',
+                answer: 'HawkHacks is being hosted at the Lazaridis School of Business and Economics, which is located in Waterloo, Ontario, at Wilfrid Laurier University’s main campus. Google Map directions can be found here. ADD EMBEDED LINK: https://www.google.com/maps/dir//Lazaridis+School+of+Business+and+Economics,+64+University+Ave+W,+Waterloo,+ON+N2L+3C7',
+            },
+            {
+                question: '🚗 I’ll be commuting - do you guys cover transportation costs? How can I get to Waterloo?',
+                answer: 'Unfortunately, we’re unable to cover transportation costs. There are many ways to commute - GO Bus, GO Train, VIA Rail, and Flixbus!\\nIf those options aren’t feasible, we also have a #rideshare channel on our Discord server where people can coordinate carpools!',
+            },
+        ],
+    },
+    {
         section: 'Health & Safety',
         content: [
             {
