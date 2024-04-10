@@ -29,7 +29,7 @@ const faqData = [
             },
             {
                 question: '📅 When do applications open?',
-                answer: 'Hacker, mentor, and volunteer applications open on April 5th, 2024. HawkHacks 2024 applications have now closed! If you’ve applied, make sure to keep an eye on your dashboard or email for updates!',
+                answer: 'Hacker, mentor, and volunteer applications open on April 7th, 2024 and are closing on May 3rd, 2024 at 11:59 PM!S',
             },
             {
                 question: '🎓 Am I eligible to participate?',
