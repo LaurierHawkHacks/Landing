@@ -62,11 +62,15 @@ const HeroStatSection: React.FC = () => {
                     src={HeroAboutDesktop}
                     alt="Hawkhacks stats"
                     className="hidden w-full sm:block"
+                    width="1920"
+                    height="7149"
                 />
                 <img
                     src={HeroAboutMobile}
                     alt="Hawkhacks stats"
                     className="block w-full sm:hidden"
+                    width="1920"
+                    height="8127"
                 />
                 <div className="mt-16 px-4 sm:ml-16 sm:mt-16 sm:px-0 lg:ml-20 lg:mt-24 xl:ml-24 xl:mt-32 2xl:mt-10">
                     <img
