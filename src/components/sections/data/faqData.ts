@@ -4,7 +4,7 @@ const faqData = [
         content: [
             {
                 question: '🤔 What is a Hackathon?',
-                answer: 'A hackathon consists of two “parts” - a social coding event where programmers, designers, and developers collaborate in teams to solve a problem. You can either create a software-based project that falls under a category hack or make whatever your heart desires as a general hack.\\n The second section is networking events, seminars, and presentations that happen throughout the hackathon conducted by industry and academic professionals - if you’ve been putting off learning that one programming language for a while, now might be the time to learn!',
+                answer: 'A hackathon consists of two “parts” - a social coding event where teams of programmers, designers, and developers collaborate to solve a problem. You can either create a software-based project that falls under a category hack or make whatever your heart desires as a general hack.\\nThe second section involves networking events, seminars, and presentations conducted by industry and academic professionals. These mini-events are scheduled throughout the hackathon - they’re completely optional, but are great ways to take a break from your hacking, and to even learn a new skill!',
             },
             {
                 question:
@@ -28,11 +28,11 @@ const faqData = [
             {
                 question:
                     '🔑 Do I need to know how to code like some sort of crazy hacker?',
-                answer: 'Anybody from someone who doesn’t know what a computer is, to someone who makes computers can attend the hackathon! You can either create a piece of software in 36 hours, attend the workshops and seminars, or do a bit of both - all up to you!',
+                answer: 'Anybody can attend HawkHacks! From someone who doesn’t know what a computer is, to someone who makes computers - everyone’s welcome!\\nYou can either create a piece of software in 36 hours, attend the workshops and seminars, or do a bit of both - all up to you!',
             },
             {
-                question: '📅 When do applications open?',
-                answer: 'Hacker, mentor, and volunteer applications open on April 7th, 2024 and are closing on May 3rd, 2024 at 11:59 PM!S',
+                question: '📅 When can I apply',
+                answer: 'Hacker, mentor, and volunteer applications open on April 7th, 2024 and are closing on May 3rd, 2024 at 11:59 PM!',
             },
             {
                 question: '🎓 Am I eligible to participate?',
@@ -40,7 +40,7 @@ const faqData = [
             },
             {
                 question: '👫 Do I need a team?',
-                answer: 'You can work alone, or up to a team of 4 people - we strongly encourage working in a team! If you don’t have friends who are attending, you can find a team in our Discord OR in person.',
+                answer: 'You can work alone, or up to a team of 4 people, but we strongly encourage working with a team! If you’re looking for a team, check out our #looking-for-team Discord channel OR during our in-person team-building event.',
             },
         ],
     },
@@ -53,7 +53,7 @@ const faqData = [
             },
             {
                 question: '🔎 I’m lost! How do I find the HawkHacks building?',
-                answer: 'HawkHacks is being hosted at the Lazaridis School of Business and Economics, which is located in Waterloo, Ontario, at Wilfrid Laurier University’s main campus. Google Map directions can be found here. ADD EMBEDED LINK: https://www.google.com/maps/dir//Lazaridis+School+of+Business+and+Economics,+64+University+Ave+W,+Waterloo,+ON+N2L+3C7',
+                answer: 'HawkHacks is being hosted at the Lazaridis School of Business and Economics, which is located in Waterloo, Ontario, at Wilfrid Laurier University’s main campus.',
             },
             {
                 question:
