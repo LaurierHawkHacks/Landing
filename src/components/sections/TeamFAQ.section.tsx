@@ -70,7 +70,10 @@ const TeamFAQSection = () => {
                 </div>
             </section>
 
-            <section id="team" className="relative isolate p-4 md:-translate-y-[10%] md:p-8 lg:p-12 xl:-translate-y-[15%]">
+            <section
+                id="team"
+                className="relative isolate p-4 md:-translate-y-[10%] md:p-8 lg:p-12 xl:-translate-y-[15%]"
+            >
                 <div
                     id="team-anchor"
                     className="relative mx-auto mb-10 w-fit sm:mb-24 lg:mb-32"
