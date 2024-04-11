@@ -91,7 +91,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                                         <span
                                                             dangerouslySetInnerHTML={{
                                                                 __html: line.replace(
-                                                                    '<a ',
+                                                                    /<a /g,
                                                                     `<a style="font-size: 0.875rem; text-decoration: underline;" target="_blank" rel="noopener noreferrer" `
                                                                 ),
                                                             }}
