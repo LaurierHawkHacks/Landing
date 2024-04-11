@@ -18,7 +18,7 @@ const faqData = [
             {
                 question:
                     '📧 This is a cool FAQ section, but I still have a question!',
-                answer: 'No worries! Reach out to us via email at hello@hawkhacks.ca or on any of our socials, and we’ll get back to you as soon as our social media person wakes up!',
+                answer: 'No worries! Reach out to us via email at <a href="mailto:hello@hawkhacks.ca">hello@hawkhacks.ca</a> or on any of <a href="https://linktr.ee/hawkhacks">our socials</a>, and we’ll get back to you as soon as our social media person wakes up!',
             },
         ],
     },
@@ -40,10 +40,11 @@ const faqData = [
             },
             {
                 question: '👫 Do I need a team?',
-                answer: 'You can work alone, or up to a team of 4 people, but we strongly encourage working with a team! If you’re looking for a team, check out our #looking-for-team Discord channel OR during our in-person team-building event.',
+                answer: 'You can work alone, or up to a team of 4 people, but we strongly encourage working with a team! If you’re looking for a team, check out our #looking-for-team <a href="https://discord.com/invite/GxwvFEn9TB">Discord channel</a> OR during our in-person team-building event.',
             },
         ],
     },
+    
     {
         section: 'Preparation',
         content: [
@@ -58,7 +59,7 @@ const faqData = [
             {
                 question:
                     '🚗 I’ll be commuting - do you guys cover transportation costs? How can I get to Waterloo?',
-                answer: 'Unfortunately, we’re unable to cover transportation costs. There are many ways to commute - GO Bus, GO Train, VIA Rail, and Flixbus!\\nIf those options aren’t feasible, we also have a #rideshare channel on our Discord server where people can coordinate carpools!',
+                answer: 'Unfortunately, we’re unable to cover transportation costs. There are many ways to commute - GO Bus, GO Train, VIA Rail, and Flixbus!\\nIf those options aren’t feasible, we also have a #rideshare channel on our <a href="https://discord.com/invite/GxwvFEn9TB">Discord server</a> where people can coordinate carpools!',
             },
         ],
     },
