@@ -53,7 +53,7 @@ const faqData = [
             },
             {
                 question: '🔎 I’m lost! How do I find the HawkHacks building?',
-                answer: 'HawkHacks is being hosted at the Lazaridis School of Business and Economics, which is located in Waterloo, Ontario, at Wilfrid Laurier University’s main campus.',
+                answer: 'HawkHacks is being hosted at the Lazaridis School of Business and Economics, which is located in Waterloo, Ontario, at Wilfrid Laurier University’s main campus. Google Map directions can be <a href="https://google.com/maps/dir//Lazaridis+School+of+Business+and+Economics,+64+University+Ave+W,+Waterloo,+ON+N2L+3C7/@43.4750664,-80.6118487,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x882bf3f62c12347f:0x100f39a182234b30!2m2!1d-80.529448!2d43.475096?entry=ttu">found here</a>.',
             },
             {
                 question:
