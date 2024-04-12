@@ -54,7 +54,7 @@ const TeamFAQSection = () => {
     return (
         // currently this div is the container of both faq and team section
         <div className="bg-gradient-to-b from-[#CBAAF4] to-[#85C1C5] to-[120%]">
-            <section className="stacked -mb-24 bg-cover">
+            <section id="faq" className="stacked -mb-24 bg-cover">
                 <img src={FaqBackground} alt="" className="w-full" />
                 <div className="container mx-auto px-4">
                     <h2
@@ -70,7 +70,10 @@ const TeamFAQSection = () => {
                 </div>
             </section>
 
-            <section className="relative isolate p-4 md:-translate-y-[10%] md:p-8 lg:p-12 xl:-translate-y-[15%]">
+            <section
+                id="team"
+                className="relative isolate p-4 md:-translate-y-[10%] md:p-8 lg:p-12 xl:-translate-y-[15%]"
+            >
                 <div
                     id="team-anchor"
                     className="relative mx-auto mb-10 w-fit sm:mb-24 lg:mb-32"

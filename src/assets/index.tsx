@@ -58,6 +58,7 @@ import InterviewBuddy from './logos/interviewbuddy.png';
 import InterviewCake from './logos/interviewcake.png';
 import JDoodle from './logos/jdoodle.png';
 import Lcs from './logos/lcs.png';
+import MavenSourcing from './logos/maven.png';
 import Mlh from './logos/mlh.png';
 import Near from './logos/near.png';
 import Nibiru from './logos/nibiru.png';
@@ -91,6 +92,7 @@ export {
     InterviewCake,
     JDoodle,
     Lcs,
+    MavenSourcing,
     Mlh,
     Near,
     Nibiru,

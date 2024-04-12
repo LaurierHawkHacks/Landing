@@ -15,6 +15,7 @@ import {
     InterviewCake,
     JDoodle,
     Lcs,
+    MavenSourcing,
     Mlh,
     Near,
     Nibiru,
@@ -221,6 +222,11 @@ const bronzeSponsors: Sponsor[] = [
         link: sponsorLinks.vectara,
         image: Vectara,
     },
+    {
+        name: "Maven Sourcing",
+        link: "https://mavensourcing.ca/",
+        image: MavenSourcing,
+    }
 ];
 
 const partners: Sponsor[] = [

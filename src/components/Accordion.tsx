@@ -108,19 +108,33 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                     className={`overflow-hidden transition-all duration-100 ${
                                         activeIndex &&
                                         activeIndex.question === questionIndex
-                                            ? 'max-h-96'
-                                            : 'max-h-0'
-                                    }`}
+                                            ? 'max-h-full'
+                                            : 'max-h-0 border-none'
+                                    } rounded-xl rounded-t-none border border-black bg-deepMarine`}
                                 >
                                     {item.answer
                                         .split('\\n')
-                                        .map((line, idx) => (
-                                            <p
-                                                key={idx}
-                                                className="p-4 text-left text-sm"
-                                            >
-                                                {line}
-                                            </p>
+                                        .map((line, idx, arr) => (
+                                            <React.Fragment key={idx}>
+                                                {line.includes('<a ') ? (
+                                                    <p className="px-4 py-2 text-sm text-white">
+                                                        <span
+                                                            dangerouslySetInnerHTML={{
+                                                                __html: line.replace(
+                                                                    /<a /g,
+                                                                    `<a style="font-size: 0.875rem; text-decoration: underline;" target="_blank" rel="noopener noreferrer" `
+                                                                ),
+                                                            }}
+                                                            className="text-sm"
+                                                        />
+                                                    </p>
+                                                ) : (
+                                                    <p className="px-4 py-2 text-sm text-white">
+                                                        {line}
+                                                    </p>
+                                                )}
+                                                {idx < arr.length - 1}{' '}
+                                            </React.Fragment>
                                         ))}
                                 </div>
                             </div>
