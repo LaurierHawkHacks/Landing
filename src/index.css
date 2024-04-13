@@ -11,6 +11,10 @@ body {
     background-color: #fdddb7;
 }
 
+img {
+    aspect-ratio: attr(width) / attr(height);
+}
+
 @layer base {
     h1 {
         @apply text-8xl font-extrabold 2xl:text-8.5xl;

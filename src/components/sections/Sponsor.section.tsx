@@ -1,6 +1,7 @@
+
+import { sponsors } from './data';
 import { TopBorder, BottomBorder, Hawk, BirdParts } from '@assets';
 import { logEvent, analytics } from '../../utils/Analytics';
-import { sponsors } from './data';
 import { Button } from '@components';
 
 const SponsorSection = () => {
@@ -64,116 +65,128 @@ const SponsorSection = () => {
                             </Button>
                         </div>
 
-                        {/* first tier */}
-                        <div className="max-w-[100rem]">
-                            <div className="mb-[2rem] flex items-center justify-center gap-6 px-3 md:gap-16 md:px-4 xl:px-6">
-                                {sponsors.platinumSponsors.map((sponsor, i) => (
-                                    <a
-                                        key={i}
-                                        href={sponsor.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="xl:h-90 h-40 cursor-pointer md:h-60 lg:h-80"
-                                        onClick={() => {
-                                            logEvent(
-                                                analytics,
-                                                'click_sponsor',
-                                                { sponsor: sponsor.name }
-                                            );
-                                        }}
-                                    >
-                                        <img
-                                            src={sponsor.image}
-                                            alt={sponsor.name}
-                                            className="aspect-video h-full w-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
-                                        />
-                                    </a>
-                                ))}
+                        <div className="tiers xl:space-y max-w-[100rem] space-y-12 py-6 md:space-y-16 lg:space-y-24 lg:py-12 xl:space-y-36">
+                            <div className="first-tier">
+                                <div className="flex items-center justify-center gap-6 px-4 md:gap-16">
+                                    {sponsors.platinumSponsors.map(
+                                        (sponsor, i) => (
+                                            <a
+                                                key={i}
+                                                href={sponsor.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="xl:h-90 h-40 cursor-pointer md:h-60 lg:h-80"
+                                                onClick={() => {
+                                                    logEvent(
+                                                        analytics,
+                                                        'click_sponsor',
+                                                        {
+                                                            sponsor:
+                                                                sponsor.name,
+                                                        }
+                                                    );
+                                                }}
+                                            >
+                                                <img
+                                                    src={sponsor.image}
+                                                    alt={sponsor.name}
+                                                    className="aspect-video h-full w-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
+                                                />
+                                            </a>
+                                        )
+                                    )}
+                                </div>
                             </div>
-                        </div>
 
-                        {/* second tier */}
-                        <div className="max-w-[100rem] overflow-hidden">
-                            <div className="mb-[2rem] flex flex-wrap items-center justify-center gap-4 lg:gap-12">
-                                {sponsors.goldSponsors.map((sponsor, i) => (
-                                    <a
-                                        key={i}
-                                        href={sponsor.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="h-16 w-auto flex-shrink-0 sm:h-24 md:h-32 lg:h-36 xl:h-44"
-                                        onClick={() => {
-                                            logEvent(
-                                                analytics,
-                                                'click_sponsor',
-                                                { sponsor: sponsor.name }
-                                            );
-                                        }}
-                                    >
-                                        <img
-                                            src={sponsor.image}
-                                            alt={sponsor.name}
-                                            className="aspect-video h-full w-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
-                                        />
-                                    </a>
-                                ))}
+                            <div className="second-tier">
+                                <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-12">
+                                    {sponsors.goldSponsors.map((sponsor, i) => (
+                                        <a
+                                            key={i}
+                                            href={sponsor.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="h-16 w-auto flex-shrink-0 sm:h-24 md:h-32 lg:h-36 xl:h-44"
+                                            onClick={() => {
+                                                logEvent(
+                                                    analytics,
+                                                    'click_sponsor',
+                                                    { sponsor: sponsor.name }
+                                                );
+                                            }}
+                                        >
+                                            <img
+                                                src={sponsor.image}
+                                                alt={sponsor.name}
+                                                className="aspect-video h-full w-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
+                                            />
+                                        </a>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
 
-                        {/* third tier */}
-                        <div className="max-w-[100rem] overflow-hidden">
-                            <div className="mb-[2rem] flex flex-wrap items-center justify-center gap-8 lg:gap-12">
-                                {sponsors.silverSponsors.map((sponsor, i) => (
-                                    <a
-                                        key={i}
-                                        href={sponsor.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="h-12 w-auto flex-shrink-0 sm:h-24 md:h-28 lg:h-32 xl:h-36"
-                                        onClick={() => {
-                                            logEvent(
-                                                analytics,
-                                                'click_sponsor',
-                                                { sponsor: sponsor.name }
-                                            );
-                                        }}
-                                    >
-                                        <img
-                                            src={sponsor.image}
-                                            alt={sponsor.name}
-                                            className="aspect-video h-full w-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
-                                            loading="lazy"
-                                        />
-                                    </a>
-                                ))}
+                            <div className="third-tier">
+                                <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12">
+                                    {sponsors.silverSponsors.map(
+                                        (sponsor, i) => (
+                                            <a
+                                                key={i}
+                                                href={sponsor.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="h-12 w-auto flex-shrink-0 sm:h-24 md:h-28 lg:h-32 xl:h-36"
+                                                onClick={() => {
+                                                    logEvent(
+                                                        analytics,
+                                                        'click_sponsor',
+                                                        {
+                                                            sponsor:
+                                                                sponsor.name,
+                                                        }
+                                                    );
+                                                }}
+                                            >
+                                                <img
+                                                    src={sponsor.image}
+                                                    alt={sponsor.name}
+                                                    className="aspect-video h-full w-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
+                                                />
+                                            </a>
+                                        )
+                                    )}
+                                </div>
                             </div>
-                        </div>
 
-                        {/* fourth tier */}
-                        <div className="max-w-[100rem] overflow-hidden">
-                            <div className="mb-[2rem] flex flex-wrap items-center justify-center gap-8">
-                                {sponsors.bronzeSponsors.map((sponsor, i) => (
-                                    <a
-                                        key={i}
-                                        href={sponsor.link}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-32"
-                                        onClick={() => {
-                                            logEvent(
-                                                analytics,
-                                                'click_sponsor',
-                                                { sponsor: sponsor.name }
-                                            );
-                                        }}
-                                    >
-                                        <img
-                                            src={sponsor.image}
-                                            alt={sponsor.name}
-                                            className="aspect-video h-full w-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
-                                        />
-                                    </a>
-                                ))}
+                            <div className="fourth-tier">
+                                <div className="flex flex-wrap items-center justify-center gap-8">
+                                    {sponsors.bronzeSponsors.map(
+                                        (sponsor, i) => (
+                                            <a
+                                                key={i}
+                                                href={sponsor.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-32"
+                                                onClick={() => {
+                                                    logEvent(
+                                                        analytics,
+                                                        'click_sponsor',
+                                                        {
+                                                            sponsor:
+                                                                sponsor.name,
+                                                        }
+                                                    );
+                                                }}
+                                            >
+                                                <img
+                                                    src={sponsor.image}
+                                                    alt={sponsor.name}
+                                                    className="aspect-video h-full w-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
+                                                />
+                                            </a>
+                                        )
+                                    )}
+                                </div>
                             </div>
                         </div>
 
