@@ -1,4 +1,3 @@
-
 import { sponsors } from './data';
 import { TopBorder, BottomBorder, Hawk, BirdParts } from '@assets';
 import { logEvent, analytics } from '../../utils/Analytics';
@@ -91,6 +90,7 @@ const SponsorSection = () => {
                                                     src={sponsor.image}
                                                     alt={sponsor.name}
                                                     className="aspect-video h-full w-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
+                                                    loading="lazy"
                                                 />
                                             </a>
                                         )
@@ -119,6 +119,7 @@ const SponsorSection = () => {
                                                 src={sponsor.image}
                                                 alt={sponsor.name}
                                                 className="aspect-video h-full w-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
+                                                loading="lazy"
                                             />
                                         </a>
                                     ))}
@@ -150,6 +151,7 @@ const SponsorSection = () => {
                                                     src={sponsor.image}
                                                     alt={sponsor.name}
                                                     className="aspect-video h-full w-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
+                                                    loading="lazy"
                                                 />
                                             </a>
                                         )
@@ -182,6 +184,7 @@ const SponsorSection = () => {
                                                     src={sponsor.image}
                                                     alt={sponsor.name}
                                                     className="aspect-video h-full w-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
+                                                    loading="lazy"
                                                 />
                                             </a>
                                         )
@@ -217,6 +220,7 @@ const SponsorSection = () => {
                                             src={partner.image}
                                             alt={partner.name}
                                             className="aspect-video h-full w-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
+                                            loading="lazy"
                                         />
                                     </a>
                                 ))}
