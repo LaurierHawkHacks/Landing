@@ -1,6 +1,7 @@
-import { Button } from '@components';
 import React, { useState } from 'react';
 import { IoIosArrowDown } from 'react-icons/io';
+import { Button } from '@/components';
+import { LuPlus, LuMinus } from 'react-icons/lu';
 
 interface Item {
     question: string;
@@ -22,9 +23,6 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
         question: number;
     } | null>(null);
 
-    const [selectedCategoryIndex, setSelectedCategoryIndex] =
-        useState<number>(0);
-
     const toggleAccordion = (sectionIndex: number, questionIndex: number) => {
         setActiveIndex((prevIndex) =>
             prevIndex &&
@@ -35,116 +33,91 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
         );
     };
 
-    const selectCategory = (index: number) => {
-        setSelectedCategoryIndex(index);
-        setActiveIndex(null);
-    };
-
-    const FAQCategories = () => {
-        return (
-            <div className="border-gray/50 flex h-full w-full flex-col justify-start gap-4 rounded-md md:w-1/3 md:items-stretch md:justify-center md:border-2 md:p-4 md:shadow-lg md:backdrop-blur-lg">
-                <h3 className="hidden text-center text-3xl font-bold capitalize text-white drop-shadow-md md:block ">
-                    Categories
-                </h3>
-
-                <div className="flex flex-wrap items-start gap-2 md:flex-col ">
-                    {sections.map((section, index) => (
-                        <button
-                            key={index}
-                            className={`text-md flex w-[145px] items-center justify-center p-1 shadow-md transition-all duration-100 md:w-full md:p-2  ${
-                                index === selectedCategoryIndex
-                                    ? '!hover:bg-deepMarine bg-deepMarine text-white hover:text-white'
-                                    : 'bg-white text-black hover:bg-gray-200'
-                            }`}
-                            onClick={() => selectCategory(index)}
-                        >
-                            {section.section}
-                        </button>
-                    ))}{' '}
-                </div>
-            </div>
-        );
-    };
-
-    const activeSection = sections[selectedCategoryIndex];
-
     return (
-        <div className="mb-12 flex flex-col gap-8 pt-12">
-            <div className="flex flex-col items-center gap-4 md:flex-row md:gap-8">
-                <FAQCategories />
-                <div className="h-full rounded-md bg-white p-4 shadow-lg md:w-2/3">
-                    <h3 className="mb-4 hidden text-2xl font-bold md:block">
-                        {activeSection.section}
-                    </h3>
-                    <div className="space-y-4">
-                        {activeSection.content.map((item, questionIndex) => (
-                            <div key={questionIndex}>
-                                <button
-                                    className={`flex w-full items-center justify-between rounded-none border-b-2 border-black bg-deepMarine p-2 text-left text-lg text-black shadow-none transition-all duration-100 md:py-6  ${
-                                        activeIndex &&
-                                        activeIndex.question === questionIndex
-                                            ? 'bg-deepMarine text-white hover:text-white'
-                                            : 'bg-white text-black hover:bg-gray-200'
-                                    }`}
-                                    onClick={() =>
-                                        toggleAccordion(
-                                            selectedCategoryIndex,
-                                            questionIndex
-                                        )
-                                    }
-                                >
-                                    <h4 className="text-black">
-                                        {item.question}
-                                    </h4>
-                                    <IoIosArrowDown
-                                        className={`min-h-[20px] min-w-[20px] transition-transform ${
+        <div className="py-20">
+            <div className="grid grid-cols-2 grid-row-gap-2 gap-[20px] mb-12">
+                {sections.map((section, sectionIndex) => (
+                    <div key={sectionIndex}>
+                        <div className="flex flex-col gap-2 rounded-xl bg-white p-4">
+                            <h3 className="mb-2 text-3xl font-bold capitalize text-black">
+                                {section.section}
+                            </h3>
+                            {section.content.map((item, questionIndex) => (
+                                <div key={questionIndex} className="w-full">
+                                    <div
+                                        className={`flex cursor-pointer select-none items-center justify-between rounded-lg border border-black/20 bg-white p-4 hover:bg-accordionHover ${
                                             activeIndex &&
+                                            activeIndex.section ===
+                                                sectionIndex &&
                                             activeIndex.question ===
                                                 questionIndex
-                                                ? 'rotate-180'
-                                                : ''
+                                                ? 'rounded-b-none '
+                                                : 'transition-all duration-300'
                                         }`}
-                                    />
-                                </button>
-                                <div
-                                    className={`overflow-hidden transition-all duration-100 ${
-                                        activeIndex &&
-                                        activeIndex.question === questionIndex
-                                            ? 'max-h-full'
-                                            : 'max-h-0 border-none'
-                                    } rounded-xl rounded-t-none border border-black bg-deepMarine`}
-                                >
-                                    {item.answer
-                                        .split('\\n')
-                                        .map((line, idx, arr) => (
-                                            <React.Fragment key={idx}>
-                                                {line.includes('<a ') ? (
-                                                    <p className="px-4 py-2 text-sm text-white">
-                                                        <span
-                                                            dangerouslySetInnerHTML={{
-                                                                __html: line.replace(
-                                                                    /<a /g,
-                                                                    `<a style="font-size: 0.875rem; text-decoration: underline;" target="_blank" rel="noopener noreferrer" `
-                                                                ),
-                                                            }}
-                                                            className="text-sm"
-                                                        />
-                                                    </p>
-                                                ) : (
-                                                    <p className="px-4 py-2 text-sm text-white">
-                                                        {line}
-                                                    </p>
-                                                )}
-                                                {idx < arr.length - 1}{' '}
-                                            </React.Fragment>
-                                        ))}
+                                        onClick={() =>
+                                            toggleAccordion(
+                                                sectionIndex,
+                                                questionIndex
+                                            )
+                                        }
+                                        role="button"
+                                    >
+                                        <h4 className="text-black">
+                                            {item.question}
+                                        </h4>
+                                        {activeIndex &&
+                                        activeIndex.section === sectionIndex &&
+                                        activeIndex.question ===
+                                            questionIndex ? (
+                                            <LuMinus />
+                                        ) : (
+                                            <LuPlus />
+                                        )}
+                                    </div>
+
+                                    <div
+                                        className={`overflow-hidden ${
+                                            activeIndex &&
+                                            activeIndex.section ===
+                                                sectionIndex &&
+                                            activeIndex.question ===
+                                                questionIndex
+                                                ? 'max-h-full'
+                                                : 'max-h-0 border-none'
+                                        }  bg-accordionHover/50`}
+                                    >
+                                        {item.answer
+                                            .split('\\n')
+                                            .map((line, idx, arr) => (
+                                                <React.Fragment key={idx}>
+                                                    {line.includes('<a ') ? (
+                                                        <p className="px-4 py-2 text-sm text-black">
+                                                            <span
+                                                                dangerouslySetInnerHTML={{
+                                                                    __html: line.replace(
+                                                                        /<a /g,
+                                                                        `<a style="font-size: 0.875rem; text-decoration: underline;" target="_blank" rel="noopener noreferrer" `
+                                                                    ),
+                                                                }}
+                                                                className="text-sm"
+                                                            />
+                                                        </p>
+                                                    ) : (
+                                                        <p className="px-4 py-2 text-sm text-black">
+                                                            {line}
+                                                        </p>
+                                                    )}
+                                                    {idx < arr.length - 1}{' '}
+                                                </React.Fragment>
+                                            ))}
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
+                        </div>
                     </div>
-                </div>
+                ))}
             </div>
-            <div className="flex w-full flex-col items-center justify-between gap-4 rounded-md bg-white p-4 shadow-lg md:flex-row md:gap-0">
+            <div className="flex w-full flex-col items-center justify-between gap-4 rounded-xl bg-white p-4 shadow-lg md:flex-row md:gap-0">
                 <span className="flex flex-col gap-2 text-center md:w-2/4 md:text-left">
                     <h4 className="font-bold">Still have a question?</h4>
                     <p className="text-sm">
