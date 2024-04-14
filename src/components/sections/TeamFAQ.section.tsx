@@ -33,6 +33,7 @@ const Department: React.FC<DepartmentProps> = ({ title, members }) => {
                             className="aspect-square w-20 rounded-full object-cover lg:w-32"
                             src={member.profile}
                             alt={title}
+                            loading="lazy"
                         />
 
                         <div>

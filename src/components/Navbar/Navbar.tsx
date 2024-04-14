@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { NavItems, Menu, Button } from '@components';
-import { HawkHacksLogo } from '@assets';
+import { HawkHacksLogo, MlhBanner } from '@assets';
 import Hamburger from 'hamburger-react';
 // import { Link } from 'react-router-dom';
 import { logEvent, analytics } from '../../utils/Analytics';
@@ -22,7 +22,7 @@ const Navbar = () => {
     };
 
     const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
-        e.preventDefault(); 
+        e.preventDefault();
         openInNewTab('https://portal.hawkhacks.ca');
         logEvent(analytics, 'click_application_portal_button');
     };
@@ -30,18 +30,18 @@ const Navbar = () => {
     return (
         <header className="fixed top-0 z-50 flex h-fit w-full items-center justify-between p-3 px-10 lg:justify-normal">
             <div className="logo lg:mr-8">
-                <ScrollLink 
+                <ScrollLink
                     to="top"
                     smooth={true}
                     duration={500}
                     offset={-100}
                     className="cursor-pointer"
                 >
-                <img
-                    className="h-14 w-14"
-                    src={HawkHacksLogo}
-                    alt="HawkHacks Logo"
-                />
+                    <img
+                        className="h-14 w-14"
+                        src={HawkHacksLogo}
+                        alt="HawkHacks Logo"
+                    />
                 </ScrollLink>
             </div>
 
@@ -51,15 +51,17 @@ const Navbar = () => {
 
             <div className="portal-btn hidden transition-all duration-500 ease-in-out lg:mr-32 lg:block">
                 <Button
-                    className="relative font-medium mx-auto block w-64 max-[1080px]:w-48 h-16 rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0"
+                    className="relative mx-auto block h-16 w-64 rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover font-medium before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 max-[1080px]:w-48 sm:mx-0"
                     tabIndex={-1}
                     type="button"
                     onClick={handleSubmit}
                 >
-                    <span className="whitespace-nowrap text-lg font-bold">Application Portal</span>
+                    <span className="whitespace-nowrap text-lg font-bold">
+                        Application Portal
+                    </span>
                 </Button>
             </div>
-            
+
             <div className="banner-holder order-first w-12 lg:hidden"></div>
             <div className="banner absolute left-10 top-0 lg:left-auto lg:right-10">
                 <a
@@ -72,9 +74,9 @@ const Navbar = () => {
                     }}
                 >
                     <img
-                        src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
+                        src={MlhBanner}
                         alt="Major League Hacking 2024 Hackathon Season"
-                        className="w-20 lg:w-24 onhover:dark:filter-none hover:scale-105 transition-transform duration-300 ease-in-out"
+                        className="onhover:dark:filter-none w-20 transition-transform duration-300 ease-in-out hover:scale-105 lg:w-24"
                     />
                 </a>
             </div>

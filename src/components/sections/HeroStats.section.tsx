@@ -58,10 +58,12 @@ const HeroStatSection: React.FC = () => {
                 className="hero-section stacked bg-gradient-to-b from-peachPuff to-brightUbe sm:place-items-start"
                 id="top"
             >
+                {/* preload these two images */}
                 <img
                     src={HeroAboutDesktop}
                     alt="Hawkhacks stats"
                     className="hidden w-full sm:block"
+                    fetchpriority="high"
                     width="1920"
                     height="7149"
                 />
@@ -69,6 +71,7 @@ const HeroStatSection: React.FC = () => {
                     src={HeroAboutMobile}
                     alt="Hawkhacks stats"
                     className="block w-full sm:hidden"
+                    fetchpriority="high"
                     width="1920"
                     height="8127"
                 />
@@ -133,9 +136,9 @@ const HeroStatSection: React.FC = () => {
                     id="about-anchor"
                     className="absolute left-1/2 top-2/3 w-2/3 -translate-x-1/2 -translate-y-1/2 transform pt-24 text-[#1D4549] sm:top-[70%] sm:pt-36 md:top-3/4 md:pt-36 "
                 >
-                    <h1 className="mb-6 text-center text-4.5xl uppercase text-white drop-shadow-md lg:mb-12 lg:text-6.5xl xl:mb-16 xl:text-7.5xl 2xl:mb-24">
+                    <h2 className="mb-6 text-center text-4.5xl uppercase text-white drop-shadow-md lg:mb-12 lg:text-6.5xl xl:mb-16 xl:text-7.5xl 2xl:mb-24">
                         About Hawkhacks
-                    </h1>
+                    </h2>
 
                     <div className="space-y-3 text-center text-[#1D4549] lg:space-y-10">
                         <p className="text-base md:text-lg lg:text-2xl xl:text-2.5xl 2xl:text-3xl">

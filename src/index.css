@@ -28,10 +28,6 @@ img {
         @apply text-3.5xl;
     }
 
-    h4 {
-        @apply text-2xl;
-    }
-
     p,
     span {
         @apply text-base lg:text-lg 2xl:text-3.5xl;

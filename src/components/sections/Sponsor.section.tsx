@@ -1,6 +1,6 @@
+import { sponsors } from './data';
 import { TopBorder, BottomBorder, Hawk, BirdParts } from '@assets';
 import { logEvent, analytics } from '../../utils/Analytics';
-import { sponsors } from './data';
 import { Button } from '@components';
 
 const SponsorSection = () => {
@@ -20,20 +20,20 @@ const SponsorSection = () => {
                 id="sponsors-section"
                 className="sponsor-section relative z-20"
             >
-                <img src={TopBorder} alt="Top Border" className="z-10 w-full" />
+                <img src={TopBorder} alt="" className="z-10 w-full" />
                 <img
                     src={Hawk}
-                    alt="Bird"
+                    alt=""
                     className="absolute left-0 top-0 z-[-1] w-full max-w-5xl -translate-y-1/2 scale-x-[-1] xl:left-10 2xl:left-52"
                 />
                 <img
                     src={BirdParts}
-                    alt="Bird Parts"
+                    alt=""
                     className="absolute left-0 top-0 z-50 w-full max-w-5xl -translate-x-2 -translate-y-[42.5%] scale-x-[-1] md:-translate-x-3 xl:left-10 2xl:left-52"
                 />
                 <div className="relative">
-                    <div className="main-container flex flex-col items-center bg-[#f2f2f0] p-4 md:p-8 lg:p-16 xl:p-32">
-                        <div className="sponsor-content mx-auto max-w-6xl space-y-4 text-center md:space-y-8 lg:space-y-16">
+                    <div className="main-container flex flex-col items-center space-y-6 bg-[#f2f2f0] py-8 sm:space-y-12 md:py-16 xl:py-32">
+                        <div className="sponsor-content mx-auto max-w-6xl space-y-4 px-4 pb-10 text-center md:space-y-8 lg:space-y-16">
                             <h2
                                 id="sponsors-anchor"
                                 className="font-raleway vs:text-[60px] text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg md:text-[80px]"
@@ -90,6 +90,7 @@ const SponsorSection = () => {
                                                     src={sponsor.image}
                                                     alt={sponsor.name}
                                                     className="aspect-video h-full w-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
+                                                    loading="lazy"
                                                 />
                                             </a>
                                         )
@@ -118,6 +119,7 @@ const SponsorSection = () => {
                                                 src={sponsor.image}
                                                 alt={sponsor.name}
                                                 className="aspect-video h-full w-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
+                                                loading="lazy"
                                             />
                                         </a>
                                     ))}
@@ -149,6 +151,7 @@ const SponsorSection = () => {
                                                     src={sponsor.image}
                                                     alt={sponsor.name}
                                                     className="aspect-video h-full w-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
+                                                    loading="lazy"
                                                 />
                                             </a>
                                         )
@@ -181,6 +184,7 @@ const SponsorSection = () => {
                                                     src={sponsor.image}
                                                     alt={sponsor.name}
                                                     className="aspect-video h-full w-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
+                                                    loading="lazy"
                                                 />
                                             </a>
                                         )
@@ -216,6 +220,7 @@ const SponsorSection = () => {
                                             src={partner.image}
                                             alt={partner.name}
                                             className="aspect-video h-full w-auto object-contain transition-transform duration-300 ease-in-out hover:scale-105"
+                                            loading="lazy"
                                         />
                                     </a>
                                 ))}
@@ -223,11 +228,7 @@ const SponsorSection = () => {
                         </div>
                     </div>
                 </div>
-                <img
-                    src={BottomBorder}
-                    alt="Bottom Border"
-                    className="z-10 w-full"
-                />
+                <img src={BottomBorder} alt="" className="z-10 w-full" />
             </section>
         </div>
     );
