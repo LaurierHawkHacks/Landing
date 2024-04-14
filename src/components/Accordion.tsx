@@ -93,7 +93,9 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                         )
                                     }
                                 >
-                                    <p className="text-sm">{item.question}</p>
+                                    <h4 className="text-black">
+                                        {item.question}
+                                    </h4>
                                     <IoIosArrowDown
                                         className={`min-h-[20px] min-w-[20px] transition-transform ${
                                             activeIndex &&
