@@ -35,7 +35,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
 
     return (
         <div className="py-20">
-            <div className="grid grid-cols-2 grid-row-gap-2 gap-[20px] mb-12">
+            <div className="mb-12 grid gap-[20px] md:grid-cols-2">
                 {sections.map((section, sectionIndex) => (
                     <div key={sectionIndex}>
                         <div className="flex flex-col gap-2 rounded-xl bg-white p-4">
@@ -82,8 +82,8 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                                 sectionIndex &&
                                             activeIndex.question ===
                                                 questionIndex
-                                                ? 'max-h-full'
-                                                : 'max-h-0 border-none'
+                                                ? 'max-h-full rounded-b-lg'
+                                                : 'max-h-0'
                                         }  bg-accordionHover/50`}
                                     >
                                         {item.answer
@@ -121,10 +121,26 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                 <span className="flex flex-col gap-2 text-center md:w-2/4 md:text-left">
                     <h4 className="font-bold">Still have a question?</h4>
                     <p className="text-sm">
-                        No worries! Reach out to us via email at
-                        hello@hawkhacks.ca or on any of our socials, and we'll
-                        get back to you as soon as our social media person wakes
-                        up!
+                        No worries! Reach out to us via email at{' '}
+                        <a
+                            href="mailto:hello@hawkhacks.ca"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm underline"
+                        >
+                            hello@hawkhacks.ca
+                        </a>{' '}
+                        or on any of our{' '}
+                        <a
+                            href="https://linktr.ee/hawkhacks"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm underline"
+                        >
+                            socials
+                        </a>
+                        , and we'll get back to you as soon as our social media
+                        person wakes up!
                     </p>
                 </span>
                 <Button
