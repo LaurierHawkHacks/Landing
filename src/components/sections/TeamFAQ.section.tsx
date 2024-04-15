@@ -33,7 +33,7 @@ const Department: React.FC<DepartmentProps> = ({ title, members }) => {
                             className="aspect-square w-20 rounded-full object-cover lg:w-32"
                             src={member.profile}
                             alt={title}
-                            loading="lazy"
+                            loading='lazy'
                         />
 
                         <div>
@@ -73,7 +73,7 @@ const TeamFAQSection = () => {
 
             <section
                 id="team"
-                className="relative isolate p-4 md:-translate-y-[10%] md:p-8 lg:p-12 xl:-translate-y-[15%]"
+                className="relative isolate p-4 md:-translate-y-[2%] md:p-8 lg:p-12 xl:-translate-y-[15%]"
             >
                 <div
                     id="team-anchor"
