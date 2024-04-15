@@ -73,12 +73,9 @@ const TeamFAQSection = () => {
 
             <section
                 id="team"
-                className="relative isolate p-4 md:-translate-y-[10%] md:p-8 lg:p-12 xl:-translate-y-[15%]"
+                className="relative isolate max-w-screen-2xl p-4 md:p-8 lg:p-12"
             >
-                <div
-                    id="team-anchor"
-                    className="relative mx-auto mb-10 w-fit sm:mb-24 lg:mb-32"
-                >
+                <div className="relative mx-auto mb-10 w-fit sm:mb-24 lg:mb-32">
                     <img
                         className="mx-auto hidden w-full max-w-fit sm:block"
                         src={MeetTheTeamBalloon}
@@ -90,10 +87,14 @@ const TeamFAQSection = () => {
                         alt=""
                     />
                     <img
-                        className="absolute bottom-0 z-10  hidden translate-y-1/2 sm:block"
+                        className="absolute bottom-0 z-10 hidden translate-y-1/2 sm:block"
                         src={Clouds}
                         alt=""
                     />
+                    <span
+                        className="anchor sr-only bottom-1/4 left-0 -translate-y-1/2"
+                        id="team-anchor"
+                    ></span>
                 </div>
 
                 <img
