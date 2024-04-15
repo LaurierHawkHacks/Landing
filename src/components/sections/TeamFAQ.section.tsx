@@ -73,7 +73,7 @@ const TeamFAQSection = () => {
 
             <section
                 id="team"
-                className="relative isolate max-w-screen-2xl p-4 md:p-8 lg:p-12"
+                className="relative isolate mx-auto p-4 md:p-8 lg:p-12"
             >
                 <div className="relative mx-auto mb-10 w-fit sm:mb-24 lg:mb-32">
                     <img
