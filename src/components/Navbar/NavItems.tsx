@@ -11,14 +11,13 @@ const links = [
   { title: 'Sponsors', href: 'sponsors-anchor', offset: 200 },
   { title: 'Partners', href: 'partners-anchor', offset: 20 },
   { title: 'FAQ', href: 'faq-anchor', offset: 120 },
-  { title: 'The Team', href: 'team-anchor' },
+  { title: 'The Team', href: 'team-anchor', offset: 180 },
   { title: 'Contact', href: 'contact-anchor', offset: 100 },
 ];
 
 const rowStyle = 'flex-row items-center';
 const colStyle = 'flex-col lg:p-0';
-const navbarHeightPx = 80;
-const scrollPaddingPx = -navbarHeightPx; // navbarHeight + extra padding
+const navbarHeightPx = -88;
 
 const NavItems: React.FC<NavItemsProps> = ({ isHorizontal, handleClick }) => {
   const handleLinkClick = (title: string) => {
@@ -34,7 +33,7 @@ const NavItems: React.FC<NavItemsProps> = ({ isHorizontal, handleClick }) => {
             to={link.href}
             smooth
             duration={500}
-            offset={link.offset ? -link.offset + scrollPaddingPx : scrollPaddingPx}
+            offset={link.offset ? -link.offset + navbarHeightPx : navbarHeightPx}
             className="text-md w-full"
             onClick={() => handleLinkClick(link.title)}
           >
