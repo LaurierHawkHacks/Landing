@@ -32,6 +32,44 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
         );
     };
 
+    const parseAnswer = (answer: string) => {
+        const lines = answer.split('\\n');
+
+        return lines.map((line, index) => {
+            if (line.includes('<a ')) {
+                const parts = line.split(/<a |<\/a>/g);
+                return (
+                    <p key={index} className="px-4 py-2 text-sm text-black">
+                        {parts.map((part, partIndex) => {
+                            const match = part.match(/href="([^"]+)"/);
+                            if (match) {
+                                const href = match[1];
+                                return (
+                                    <a
+                                        key={partIndex}
+                                        href={href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        style={{ fontSize: '0.875rem', textDecoration: 'underline' }}
+                                    >
+                                        {part.split('>')[1]}
+                                    </a>
+                                );
+                            }
+                            return part;
+                        })}
+                    </p>
+                );
+            }
+
+            return (
+                <p key={index} className="px-4 py-2 text-sm text-black">
+                    {line}
+                </p>
+            );
+        });
+    };
+
     return (
         <div className="py-20">
             <div className="mb-12 grid gap-[20px] md:grid-cols-2">
@@ -43,6 +81,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                         <h3 className="font-raleway text-[#404040] drop-shadow-lg mb-2 text-3xl font-bold capitalize">
                             {section.section}
                         </h3>
+
                         {section.content.map((item, questionIndex) => (
                             <div key={questionIndex} className="w-full">
                                 <div
@@ -85,30 +124,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                             : 'max-h-0'
                                     }  bg-accordionHover/50`}
                                 >
-                                    {item.answer
-                                        .split('\\n')
-                                        .map((line, idx, arr) => (
-                                            <React.Fragment key={idx}>
-                                                {line.includes('<a ') ? (
-                                                    <p className="px-4 py-2 text-sm text-black">
-                                                        <span
-                                                            dangerouslySetInnerHTML={{
-                                                                __html: line.replace(
-                                                                    /<a /g,
-                                                                    `<a style="font-size: 0.875rem; text-decoration: underline;" target="_blank" rel="noopener noreferrer" `
-                                                                ),
-                                                            }}
-                                                            className="text-sm"
-                                                        />
-                                                    </p>
-                                                ) : (
-                                                    <p className="px-4 py-2 text-sm text-black">
-                                                        {line}
-                                                    </p>
-                                                )}
-                                                {idx < arr.length - 1}{' '}
-                                            </React.Fragment>
-                                        ))}
+                                    {parseAnswer(item.answer)}
                                 </div>
                             </div>
                         ))}
