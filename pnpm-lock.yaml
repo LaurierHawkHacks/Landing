@@ -59,8 +59,8 @@ devDependencies:
     specifier: ^29.5.12
     version: 29.5.12
   '@types/react':
-    specifier: ^18.2.15
-    version: 18.2.36
+    specifier: ^18.2.79
+    version: 18.2.79
   '@types/react-dom':
     specifier: ^18.2.25
     version: 18.2.25
@@ -1527,25 +1527,20 @@ packages:
   /@types/react-dom@18.2.25:
     resolution: {integrity: sha512-o/V48vf4MQh7juIKZU2QGDfli6p1+OOi5oXx36Hffpc9adsHeXjVp8rHuPkjd8VT8sOJ2Zp05HR7CdpGTIUFUA==}
     dependencies:
-      '@types/react': 18.2.36
+      '@types/react': 18.2.79
     dev: true
 
   /@types/react-scroll@1.8.10:
     resolution: {integrity: sha512-RD4Z7grbdNGOKwKnUBKar6zNxqaW3n8m9QSrfvljW+gmkj1GArb8AFBomVr6xMOgHPD3v1uV3BrIf01py57daQ==}
     dependencies:
-      '@types/react': 18.2.36
+      '@types/react': 18.2.79
     dev: true
 
-  /@types/react@18.2.36:
-    resolution: {integrity: sha512-o9XFsHYLLZ4+sb9CWUYwHqFVoG61SesydF353vFMMsQziiyRu8np4n2OYMUSDZ8XuImxDr9c5tR7gidlH29Vnw==}
+  /@types/react@18.2.79:
+    resolution: {integrity: sha512-RwGAGXPl9kSXwdNTafkOEuFrTBD5SA2B3iEB96xi8+xu5ddUa/cpvyVCSNn+asgLCTHkb5ZxN8gbuibYJi4s1w==}
     dependencies:
       '@types/prop-types': 15.7.9
-      '@types/scheduler': 0.16.5
       csstype: 3.1.2
-    dev: true
-
-  /@types/scheduler@0.16.5:
-    resolution: {integrity: sha512-s/FPdYRmZR8SjLWGMCuax7r3qCWQw9QKHzXVukAuuIJkXkDRwp+Pu5LMIVFi0Fxbav35WURicYr8u1QsoybnQw==}
     dev: true
 
   /@types/semver@7.5.4:
