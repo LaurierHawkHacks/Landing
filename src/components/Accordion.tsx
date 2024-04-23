@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { IoIosArrowDown } from 'react-icons/io';
-import { Button } from '@/components';
+import { Button } from '@components';
 import { LuPlus, LuMinus } from 'react-icons/lu';
 
 interface Item {
@@ -41,13 +40,13 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                         key={sectionIndex}
                         className="flex flex-col gap-2 rounded-xl border border-black bg-white p-4 shadow-lg"
                     >
-                        <h3 className="mb-2 text-3xl font-bold capitalize text-black">
+                        <h3 className="font-raleway text-[#404040] drop-shadow-lg mb-2 text-3xl font-bold capitalize">
                             {section.section}
                         </h3>
                         {section.content.map((item, questionIndex) => (
                             <div key={questionIndex} className="w-full">
                                 <div
-                                    className={`flex cursor-pointer select-none items-center justify-between rounded-lg border border-black/20 bg-white p-4 hover:bg-accordionHover ${
+                                    className={`flex justify-between items-center cursor-pointer select-none rounded-lg border border-black/20 bg-white p-4 hover:bg-gray-100 ${
                                         activeIndex &&
                                         activeIndex.section === sectionIndex &&
                                         activeIndex.question === questionIndex
@@ -62,16 +61,19 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                     }
                                     role="button"
                                 >
-                                    <h4 className="text-black">
+                                    <h4 className="flex-1 text-black">
                                         {item.question}
                                     </h4>
-                                    {activeIndex &&
-                                    activeIndex.section === sectionIndex &&
-                                    activeIndex.question === questionIndex ? (
-                                        <LuMinus />
-                                    ) : (
-                                        <LuPlus />
-                                    )}
+                                    
+                                    <div className="flex-shrink-0">
+                                        {activeIndex &&
+                                        activeIndex.section === sectionIndex &&
+                                        activeIndex.question === questionIndex ? (
+                                            <LuMinus />
+                                        ) : (
+                                            <LuPlus />
+                                        )}
+                                    </div>
                                 </div>
 
                                 <div
@@ -113,16 +115,17 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                     </div>
                 ))}
             </div>
+
             <div className="flex w-full flex-col items-center justify-between gap-4 rounded-xl bg-white p-4 border border-black shadow-lg md:flex-row md:gap-0">
                 <span className="flex flex-col gap-2 text-center md:w-2/4 md:text-left">
-                    <h4 className="font-bold">Still have a question?</h4>
-                    <p className="text-sm">
+                    <h3 className="font-bold font-raleway text-[#404040]"> Still have a question? </h3>
+                    <p className="text-md">
                         No worries! Reach out to us via email at{' '}
                         <a
                             href="mailto:hello@hawkhacks.ca"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-sm underline"
+                            className="text-md underline"
                         >
                             hello@hawkhacks.ca
                         </a>{' '}
@@ -131,7 +134,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                             href="https://linktr.ee/hawkhacks"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-sm underline"
+                            className="text-md underline"
                         >
                             socials
                         </a>
