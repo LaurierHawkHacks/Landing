@@ -32,7 +32,7 @@ const faqData = [
                 answer: 'Anybody can attend HawkHacks! From someone who doesn\'t know what a computer is, to someone who makes computers - everyone\'s welcome!\\nYou can either create a piece of software in 36 hours, attend the workshops and seminars, or do a bit of both - all up to you!',
             },
             {
-                question: '📅 When can I apply',
+                question: '📅 When can I apply?',
                 answer: 'Hacker, mentor, and volunteer applications open on April 7th, 2024 and are closing on May 3rd, 2024 at 11:59 PM!',
             },
             {

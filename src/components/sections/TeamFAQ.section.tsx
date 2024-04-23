@@ -33,7 +33,7 @@ const Department: React.FC<DepartmentProps> = ({ title, members }) => {
                             className="aspect-square w-20 rounded-full object-cover lg:w-32"
                             src={member.profile}
                             alt={title}
-                            loading="lazy"
+                            loading='lazy'
                         />
 
                         <div>
@@ -73,11 +73,11 @@ const TeamFAQSection = () => {
 
             <section
                 id="team"
-                className="relative isolate mx-auto p-4 md:p-8 lg:p-12"
+                className="relative isolate p-4 md:-translate-y-[2%] md:p-8 lg:p-12 xl:-translate-y-[15%]"
             >
                 <div className="relative mx-auto mb-10 w-fit sm:mb-24 lg:mb-32">
                     <img
-                        className="mx-auto hidden w-full max-w-fit sm:block"
+                        className="mx-auto hidden w-full max-w-fit sm:block md:mt-24"
                         src={MeetTheTeamBalloon}
                         alt=""
                     />
