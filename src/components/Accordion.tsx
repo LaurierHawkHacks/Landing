@@ -50,7 +50,10 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                         href={href}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        style={{ fontSize: '0.875rem', textDecoration: 'underline' }}
+                                        style={{
+                                            fontSize: '0.875rem',
+                                            textDecoration: 'underline',
+                                        }}
                                     >
                                         {part.split('>')[1]}
                                     </a>
@@ -72,25 +75,33 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
 
     return (
         <div className="py-20">
+            {/* !remember to add back the md:grid-cols-2 here */}
             <div className="mb-12 grid gap-[20px] md:grid-cols-2">
+                {/* for each section */}
+                {/* render the title and the content */}
                 {sections.map((section, sectionIndex) => (
                     <div
                         key={sectionIndex}
                         className="flex flex-col gap-2 rounded-xl border border-black bg-white p-4 shadow-lg"
                     >
-                        <h3 className="font-raleway text-[#404040] drop-shadow-lg mb-2 text-3xl font-bold capitalize">
+                        <h3 className="font-raleway mb-2 text-3xl font-bold capitalize text-[#404040] drop-shadow-lg">
                             {section.section}
                         </h3>
 
+                        {/* contents of accordion item */}
                         {section.content.map((item, questionIndex) => (
-                            <div key={questionIndex} className="w-full">
+                            <div
+                                key={questionIndex}
+                                className="accordion-panel w-full"
+                            >
+                                {/* the accordion question */}
                                 <div
-                                    className={`flex justify-between items-center cursor-pointer select-none rounded-lg border border-black/20 bg-white p-4 hover:bg-gray-100 ${
+                                    className={`accordion-panel__question flex cursor-pointer select-none items-center justify-between gap-2 rounded-lg border border-black/20 bg-white p-4 transition-all hover:bg-gray-100 motion-reduce:transition-none ${
                                         activeIndex &&
                                         activeIndex.section === sectionIndex &&
                                         activeIndex.question === questionIndex
-                                            ? 'rounded-b-none '
-                                            : 'transition-all duration-300'
+                                            ? 'rounded-b-none'
+                                            : ''
                                     }`}
                                     onClick={() =>
                                         toggleAccordion(
@@ -103,11 +114,12 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                     <h4 className="flex-1 text-black">
                                         {item.question}
                                     </h4>
-                                    
+
                                     <div className="flex-shrink-0">
                                         {activeIndex &&
                                         activeIndex.section === sectionIndex &&
-                                        activeIndex.question === questionIndex ? (
+                                        activeIndex.question ===
+                                            questionIndex ? (
                                             <LuMinus />
                                         ) : (
                                             <LuPlus />
@@ -115,16 +127,19 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                     </div>
                                 </div>
 
+                                {/* the accordion answer */}
                                 <div
-                                    className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                                    className={`accordion-panel__content grid grid-rows-[0fr] rounded-b-lg bg-accordionHover/50 transition-[grid-template-rows]  will-change-[grid-template-rows] motion-reduce:transition-none ${
                                         activeIndex &&
                                         activeIndex.section === sectionIndex &&
                                         activeIndex.question === questionIndex
-                                            ? 'max-h-full rounded-b-lg translate-y-0'
-                                            : 'max-h-0'
-                                    }  bg-accordionHover/50`}
+                                            ? 'grid-rows-[1fr]'
+                                            : ''
+                                    }`}
                                 >
-                                    {parseAnswer(item.answer)}
+                                    <div className="overflow-hidden">
+                                        {parseAnswer(item.answer)}
+                                    </div>
                                 </div>
                             </div>
                         ))}
@@ -132,9 +147,12 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                 ))}
             </div>
 
-            <div className="flex w-full flex-col items-center justify-between gap-4 rounded-xl bg-white p-4 border border-black shadow-lg md:flex-row md:gap-0">
+            <div className="flex w-full flex-col items-center justify-between gap-4 rounded-xl border border-black bg-white p-4 shadow-lg md:flex-row md:gap-0">
                 <span className="flex flex-col gap-2 text-center md:w-2/4 md:text-left">
-                    <h3 className="font-bold font-raleway text-[#404040]"> Still have a question? </h3>
+                    <h3 className="font-raleway font-bold text-[#404040]">
+                        {' '}
+                        Still have a question?{' '}
+                    </h3>
                     <p className="text-md">
                         No worries! Reach out to us via email at{' '}
                         <a
