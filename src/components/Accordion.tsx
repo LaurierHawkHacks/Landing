@@ -153,13 +153,13 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                         {' '}
                         Still have a question?{' '}
                     </h3>
-                    <p className="text-md">
+                    <p className="text-base">
                         No worries! Reach out to us via email at{' '}
                         <a
                             href="mailto:hello@hawkhacks.ca"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-md underline"
+                            className="text-base underline"
                         >
                             hello@hawkhacks.ca
                         </a>{' '}
@@ -168,7 +168,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                             href="https://linktr.ee/hawkhacks"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-md underline"
+                            className="text-base underline"
                         >
                             socials
                         </a>
