@@ -64,9 +64,9 @@ const SponsorSection = () => {
                             </Button>
                         </div>
 
-                        <div className="tiers xl:space-y max-w-[100rem] space-y-12 py-6 md:space-y-16 lg:space-y-24 lg:py-12 xl:space-y-36">
+                        <div className="tiers xl:space-y max-w-[102rem] space-y-12 px-4 py-6 md:space-y-16 lg:space-y-24 lg:px-8 lg:py-12 xl:space-y-36 xl:px-12">
                             <div className="first-tier">
-                                <div className="flex items-center justify-center gap-6 px-4 md:gap-16">
+                                <div className="flex items-center justify-center gap-6 md:gap-16">
                                     {sponsors.platinumSponsors.map(
                                         (sponsor, i) => (
                                             <a
@@ -106,7 +106,7 @@ const SponsorSection = () => {
                                             href={sponsor.link}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="h-16 w-auto flex-shrink-0 sm:h-24 md:h-32 lg:h-36 xl:h-44"
+                                            className="h-16 w-auto flex-shrink-0 sm:h-24 md:h-32 lg:h-36 xl:h-56"
                                             onClick={() => {
                                                 logEvent(
                                                     analytics,
@@ -168,7 +168,8 @@ const SponsorSection = () => {
                                                 href={sponsor.link}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                className="h-12 w-auto flex-shrink-0 sm:h-20 md:h-24 lg:h-28 xl:h-32"
+                                                // -4
+                                                className="sm:h-18 lg:h-22 h-12 w-auto flex-shrink-0 md:h-20 xl:h-24"
                                                 onClick={() => {
                                                     logEvent(
                                                         analytics,
@@ -193,7 +194,7 @@ const SponsorSection = () => {
                             </div>
                         </div>
 
-                        <div id="partners-section">
+                        <div id="partners-section" className=' px-4 lg:px-8 xl:px-12 2xl:px-20'>
                             <h2
                                 id="partners-anchor"
                                 className="font-raleway vs:text-[60px] mb-4 mt-6 text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg md:mb-8 md:text-[80px] lg:mb-16"
@@ -207,7 +208,7 @@ const SponsorSection = () => {
                                         href={partner.link}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32"
+                                        className="h-16 sm:h-20 md:h-24 lg:h-28 xl:h-40"
                                         onClick={() => {
                                             logEvent(
                                                 analytics,
