@@ -32,7 +32,7 @@ const SponsorSection = () => {
                     className="absolute left-0 top-0 z-50 w-full max-w-5xl -translate-x-2 -translate-y-[42.5%] scale-x-[-1] md:-translate-x-3 xl:left-10 2xl:left-52"
                 />
                 <div className="relative">
-                    <div className="main-container flex flex-col items-center space-y-6 bg-[#f2f2f0] py-8 sm:space-y-12 md:py-16 xl:py-32">
+                    <div className="main-container flex flex-col items-center space-y-6 bg-[#f2f2f0] pb-28 pt-8 sm:space-y-12 md:pb-52 md:pt-16 xl:pb-72 xl:pt-32 2xl:pb-96">
                         <div className="sponsor-content mx-auto max-w-6xl space-y-4 px-4 pb-10 text-center md:space-y-8 lg:space-y-16">
                             <h2
                                 id="sponsors-anchor"
@@ -194,7 +194,10 @@ const SponsorSection = () => {
                             </div>
                         </div>
 
-                        <div id="partners-section" className=' px-4 lg:px-8 xl:px-12 2xl:px-20'>
+                        <div
+                            id="partners-section"
+                            className=" px-4 lg:px-8 xl:px-12 2xl:px-20"
+                        >
                             <h2
                                 id="partners-anchor"
                                 className="font-raleway vs:text-[60px] mb-4 mt-6 text-center text-[50px] font-black leading-[117px] tracking-widest text-[#404040] drop-shadow-lg md:mb-8 md:text-[80px] lg:mb-16"
