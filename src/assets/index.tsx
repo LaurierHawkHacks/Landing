@@ -75,6 +75,7 @@ import Neurelo from './logos/Neurelo.png';
 import NordPass from './logos/nordpass.png';
 import NordVPN from './logos/NordVPN.png';
 import UWBlockchain from './logos/uwBlockchain.png';
+import Metis from './logos/metis.png';
 
 export {
     Balsamiq,
@@ -118,6 +119,7 @@ export {
     NordPass,
     NordVPN,
     UWBlockchain,
+    Metis,
 };
 
 /*

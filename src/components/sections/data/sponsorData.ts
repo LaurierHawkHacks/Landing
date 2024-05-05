@@ -35,6 +35,7 @@ import {
     NordPass,
     NordVPN,
     UWBlockchain,
+    Metis,
 } from '@assets';
 
 interface Sponsor {
@@ -65,6 +66,7 @@ const sponsorLinks = {
     domino: 'https://www.dominos.ca/en/',
     neurelo: 'https://www.neurelo.com/',
     distributive: 'https://distributive.network/',
+    metis: 'https://www.metis.io/',
 
     // silver
     indofood: 'https://www.indofood.com/',
@@ -113,19 +115,24 @@ const goldSponsors: Sponsor[] = [
         image: Distributive,
     },
     {
+        name: 'Smoke Poutinerie',
+        link: sponsorLinks.sp,
+        image: SmokesPoutinerie,
+    },
+    {
         name: 'Neurelo',
         link: sponsorLinks.neurelo,
         image: Neurelo,
     },
     {
+        name: 'Metis',
+        link: sponsorLinks.metis,
+        image: Metis,
+    },
+    {
         name: 'Fantuan Delivery',
         link: sponsorLinks.fantuan,
         image: Fantuan,
-    },
-    {
-        name: 'Smoke Poutinerie',
-        link: sponsorLinks.sp,
-        image: SmokesPoutinerie,
     },
     {
         name: 'Dominos',
