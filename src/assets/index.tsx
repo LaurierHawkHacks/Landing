@@ -70,7 +70,7 @@ import Avalanche from './logos/Avalanche.png';
 import EthToronto from './logos/ETHToronto.png';
 import EthWomen from './logos/ETHWomen.png';
 import Futurist from './logos/Futurist.png';
-import Incogni from './logos/Incogni.png';
+import Incogni from './logos/incogni.png';
 import Neurelo from './logos/Neurelo.png';
 import NordPass from './logos/nordpass.png';
 import NordVPN from './logos/NordVPN.png';
