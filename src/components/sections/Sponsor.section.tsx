@@ -64,9 +64,9 @@ const SponsorSection = () => {
                             </Button>
                         </div>
 
-                        <div className="tiers xl:space-y max-w-[102rem] space-y-12 px-4 py-6 md:space-y-16 lg:space-y-24 lg:px-8 lg:py-12 xl:space-y-36 xl:px-12">
+                        <div className="tiers xl:space-y max-w-[102rem] space-y-12 px-4 py-6 md:space-y-16 lg:space-y-24 lg:px-8 lg:py-12 xl:space-y-36 xl:px-12 2xl:px-4">
                             <div className="first-tier">
-                                <div className="flex items-center justify-center gap-6 md:gap-16">
+                                <div className="flex items-center justify-center gap-6 md:gap-16 2xl:gap-x-36">
                                     {sponsors.platinumSponsors.map(
                                         (sponsor, i) => (
                                             <a
@@ -99,7 +99,7 @@ const SponsorSection = () => {
                             </div>
 
                             <div className="second-tier">
-                                <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-12">
+                                <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-12 xl:gap-x-28">
                                     {sponsors.goldSponsors.map((sponsor, i) => (
                                         <a
                                             key={i}
@@ -127,7 +127,7 @@ const SponsorSection = () => {
                             </div>
 
                             <div className="third-tier">
-                                <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12">
+                                <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12 xl:gap-x-24">
                                     {sponsors.silverSponsors.map(
                                         (sponsor, i) => (
                                             <a
@@ -204,7 +204,7 @@ const SponsorSection = () => {
                             >
                                 PARTNERS
                             </h2>
-                            <div className="flex flex-wrap items-center justify-center gap-4">
+                            <div className="flex flex-wrap items-center justify-center gap-4 xl:gap-x-20">
                                 {sponsors.partners.map((partner, i) => (
                                     <a
                                         key={i}
