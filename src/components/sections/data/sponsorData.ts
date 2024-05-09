@@ -11,26 +11,31 @@ import {
     Fintech,
     Fossa,
     IndoFood,
-    InterviewBuddy,
     InterviewCake,
     JDoodle,
     Lcs,
     MavenSourcing,
     Mlh,
     Near,
-    Nibiru,
     OnePassword,
     Roku,
     Rosenfeld,
     SmokesPoutinerie,
-    Solana,
-    StreamYard,
     StudentsUnion,
     SweetLous,
     Taskade,
     Vectara,
-    Verbwire,
     Wolfram,
+    Avalanche,
+    EthToronto,
+    EthWomen,
+    Futurist,
+    Incogni,
+    Neurelo,
+    NordPass,
+    NordVPN,
+    UWBlockchain,
+    Metis,
 } from '@assets';
 
 interface Sponsor {
@@ -46,17 +51,22 @@ const sponsorLinks = {
     fintech: 'https://wlufintech.com/',
     fossa: 'https://fossa.ca',
     su: 'https://yourstudentsunion.ca/',
+    ethToronto: 'https://www.ethtoronto.ca/',
+    wluBlockchain: 'https://www.waterlooblockchain.com/',
+    futurist: 'https://www.futuristconference.com/',
+    ethWomen: 'https://www.ethwomen.com/',
 
     // platinum
-    solana: 'https://solana.com/',
+    avalanche: 'https://www.avax.network/',
     near: 'https://near.org/',
 
     // gold
     fantuan: 'https://fantuan.ca/delivery/en/',
     sp: 'https://smokespoutinerie.com/',
     domino: 'https://www.dominos.ca/en/',
-    nibiru: 'https://nibiru.fi/',
+    neurelo: 'https://www.neurelo.com/',
     distributive: 'https://distributive.network/',
+    metis: 'https://www.metis.io/',
 
     // silver
     indofood: 'https://www.indofood.com/',
@@ -80,13 +90,16 @@ const sponsorLinks = {
     verbwire: 'https://www.verbwire.com/',
     jDoodle: 'https://www.jdoodle.com/',
     vectara: 'https://vectara.com/',
+    nordPass: 'https://nordpass.com/',
+    nordVpn: 'https://nordvpn.com/',
+    incogni: 'https://incogni.com/',
 };
 
 const platinumSponsors: Sponsor[] = [
     {
-        name: 'Solana',
-        link: sponsorLinks.solana,
-        image: Solana,
+        name: 'Avalanche',
+        link: sponsorLinks.avalanche,
+        image: Avalanche,
     },
     {
         name: 'Near',
@@ -97,9 +110,9 @@ const platinumSponsors: Sponsor[] = [
 
 const goldSponsors: Sponsor[] = [
     {
-        name: 'Fantuan Delivery',
-        link: sponsorLinks.fantuan,
-        image: Fantuan,
+        name: 'Distributive',
+        link: sponsorLinks.distributive,
+        image: Distributive,
     },
     {
         name: 'Smoke Poutinerie',
@@ -107,19 +120,24 @@ const goldSponsors: Sponsor[] = [
         image: SmokesPoutinerie,
     },
     {
+        name: 'Neurelo',
+        link: sponsorLinks.neurelo,
+        image: Neurelo,
+    },
+    {
+        name: 'Metis',
+        link: sponsorLinks.metis,
+        image: Metis,
+    },
+    {
+        name: 'Fantuan Delivery',
+        link: sponsorLinks.fantuan,
+        image: Fantuan,
+    },
+    {
         name: 'Dominos',
         link: sponsorLinks.domino,
         image: Dominos,
-    },
-    {
-        name: 'Nibiru',
-        link: sponsorLinks.nibiru,
-        image: Nibiru,
-    },
-    {
-        name: 'Distributive',
-        link: sponsorLinks.distributive,
-        image: Distributive,
     },
 ];
 
@@ -135,7 +153,7 @@ const silverSponsors: Sponsor[] = [
         image: Roku,
     },
     {
-        name: 'Sweet Lou\'s Cookies',
+        name: "Sweet Lou's Cookies",
         link: sponsorLinks.slCookies,
         image: SweetLous,
     },
@@ -147,11 +165,6 @@ const silverSponsors: Sponsor[] = [
 ];
 
 const bronzeSponsors: Sponsor[] = [
-    {
-        name: 'Echo3D',
-        link: sponsorLinks.echo3D,
-        image: Echo3D,
-    },
     {
         name: '1Password',
         link: sponsorLinks.onePassword,
@@ -173,49 +186,9 @@ const bronzeSponsors: Sponsor[] = [
         image: Rosenfeld,
     },
     {
-        name: 'Taskade',
-        link: sponsorLinks.taskade,
-        image: Taskade,
-    },
-    {
-        name: 'StreamYard',
-        link: sponsorLinks.streamyard,
-        image: StreamYard,
-    },
-    {
-        name: 'Defiblocks.io',
-        link: sponsorLinks.defiblocks,
-        image: DeFiBlocks,
-    },
-    {
-        name: 'Interview Cake',
-        link: sponsorLinks.interviewCake,
-        image: InterviewCake,
-    },
-    {
-        name: 'Ennios',
-        link: sponsorLinks.ennios,
-        image: Ennios,
-    },
-    {
         name: 'Certopus',
         link: sponsorLinks.certopus,
         image: Certopus,
-    },
-    {
-        name: 'Interview Buddy',
-        link: sponsorLinks.interviewBuddy,
-        image: InterviewBuddy,
-    },
-    {
-        name: 'Verbwire',
-        link: sponsorLinks.verbwire,
-        image: Verbwire,
-    },
-    {
-        name: 'JDoodle',
-        link: sponsorLinks.jDoodle,
-        image: JDoodle,
     },
     {
         name: 'Vectara',
@@ -223,10 +196,55 @@ const bronzeSponsors: Sponsor[] = [
         image: Vectara,
     },
     {
-        name: "Maven Sourcing",
-        link: "https://mavensourcing.ca/",
+        name: 'Ennios',
+        link: sponsorLinks.ennios,
+        image: Ennios,
+    },
+    {
+        name: 'Echo3D',
+        link: sponsorLinks.echo3D,
+        image: Echo3D,
+    },
+    {
+        name: 'Taskade',
+        link: sponsorLinks.taskade,
+        image: Taskade,
+    },
+    {
+        name: 'JDoodle',
+        link: sponsorLinks.jDoodle,
+        image: JDoodle,
+    },
+    {
+        name: 'Interview Cake',
+        link: sponsorLinks.interviewCake,
+        image: InterviewCake,
+    },
+    {
+        name: 'Maven Sourcing',
+        link: 'https://mavensourcing.ca/',
         image: MavenSourcing,
-    }
+    },
+    {
+        name: 'Defiblocks.io',
+        link: sponsorLinks.defiblocks,
+        image: DeFiBlocks,
+    },
+    {
+        name: 'NordPass',
+        link: sponsorLinks.nordPass,
+        image: NordPass,
+    },
+    {
+        name: 'NordVPN',
+        link: sponsorLinks.nordPass,
+        image: NordVPN,
+    },
+    {
+        name: 'Incogni',
+        link: sponsorLinks.incogni,
+        image: Incogni,
+    },
 ];
 
 const partners: Sponsor[] = [
@@ -254,6 +272,26 @@ const partners: Sponsor[] = [
         name: 'Laurier Computer Society',
         link: sponsorLinks.lcs,
         image: Lcs,
+    },
+    {
+        name: 'EthToronto',
+        link: sponsorLinks.ethToronto,
+        image: EthToronto,
+    },
+    {
+        name: 'Waterloo Blockchain',
+        link: sponsorLinks.wluBlockchain,
+        image: UWBlockchain,
+    },
+    {
+        name: 'Blockchain Futurist Conference',
+        link: sponsorLinks.futurist,
+        image: Futurist,
+    },
+    {
+        name: 'EthWomen',
+        link: sponsorLinks.ethWomen,
+        image: EthWomen,
     },
 ];
 

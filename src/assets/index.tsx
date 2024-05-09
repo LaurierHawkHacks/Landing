@@ -66,6 +66,16 @@ import Taskade from './logos/taskade.png';
 import Vectara from './logos/vectara.png';
 import Verbwire from './logos/verbwire.png';
 import Wolfram from './logos/wolfram.png';
+import Avalanche from './logos/Avalanche.png';
+import EthToronto from './logos/ETHToronto.png';
+import EthWomen from './logos/ETHWomen.png';
+import Futurist from './logos/Futurist.png';
+import Incogni from './logos/incogni.png';
+import Neurelo from './logos/Neurelo.png';
+import NordPass from './logos/nordpass.png';
+import NordVPN from './logos/NordVPN.png';
+import UWBlockchain from './logos/uwBlockchain.png';
+import Metis from './logos/metis.png';
 
 export {
     Balsamiq,
@@ -100,6 +110,16 @@ export {
     Vectara,
     Verbwire,
     Wolfram,
+    Avalanche,
+    EthToronto,
+    EthWomen,
+    Futurist,
+    Incogni,
+    Neurelo,
+    NordPass,
+    NordVPN,
+    UWBlockchain,
+    Metis,
 };
 
 /*
