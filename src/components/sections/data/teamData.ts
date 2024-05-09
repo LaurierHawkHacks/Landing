@@ -147,16 +147,6 @@ const departments = [
                 title: 'Logistics Coordinator',
                 profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F15edd4d1-4544-4b8f-a621-ac1273eaf3a4%2FIMG_3363.jpg?id=a3d4458e-339d-40a3-b261-b2a5da48b50a&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=1500&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
             },
-            {
-                name: 'Sohan Hossain',
-                title: 'Logistics Coordinator',
-                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F2156895a-028d-49f4-954b-47172776259d%2F1699036441551.png?id=4df9663c-934c-410f-804a-e3c8dc9bdcfe&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=1500&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
-            },
-            {
-                name: 'Roshni Mahindru',
-                title: 'Logistics Coordinator',
-                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F8a823967-950d-48b0-9e62-6f96883a7ab1%2FIMG_4087.jpeg?id=59baad57-839d-4317-9682-bce5a68d2b3d&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=c89a0d2e-b46c-4133-800b-47494e5db7ea&cache=v2',
-            },
         ],
     },
     {
@@ -171,11 +161,6 @@ const departments = [
                 name: 'Rafid Karim',
                 title: 'Sponsorship Coordinator',
                 profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Fdd201399-0a8c-4ba7-9956-abde9f19a653%2F3K5A1776_(1).jpg?id=9b497b37-ac6c-42c9-ba98-5376851cfef9&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=1500&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
-            },
-            {
-                name: 'Kiyomi Cheng',
-                title: 'Sponsorship Coordinator',
-                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Fa292ffc8-c8a7-41c1-a525-dd564d5d05bd%2FIMG_2881.jpg?id=7a8e52f7-a7ef-478f-9a9d-f5ac74701d73&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=1500&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
             },
             {
                 name: 'James Chun',
@@ -196,11 +181,6 @@ const departments = [
                 name: 'Jenali Shenela',
                 title: 'VP of Marketing & Media',
                 profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Ffaca6770-be5f-472e-901c-956a69d2b892%2FPhoto_02-09-2023-23-18-30.heic?id=554e3b85-5893-4b2d-a410-cf205bdd2693&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=c89a0d2e-b46c-4133-800b-47494e5db7ea&cache=v2',
-            },
-            {
-                name: 'Geeran Balaranjan',
-                title: 'Social Media Coordinator',
-                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Ff41eced7-76e1-4475-9111-52a97e735c7b%2FIMG_6261.jpeg?id=4ab20fe0-e0d1-42b5-b48b-37476be66bdf&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=c89a0d2e-b46c-4133-800b-47494e5db7ea&cache=v2',
             },
             {
                 name: 'Mina Mansour',
