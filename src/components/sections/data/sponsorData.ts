@@ -10,7 +10,7 @@ import {
     Fantuan,
     Fintech,
     Fossa,
-    IndoFood,
+    Indomie,
     InterviewCake,
     JDoodle,
     Lcs,
@@ -32,10 +32,17 @@ import {
     Futurist,
     Incogni,
     Neurelo,
-    NordPass,
     NordVPN,
     UWBlockchain,
     Metis,
+    GoDaddy,
+    Adobe,
+    Propelauth,
+    SauceLabs,
+    MongoDB,
+    Fidelity,
+    Hackbox,
+    NordPass,
 } from '@assets';
 
 interface Sponsor {
@@ -46,53 +53,88 @@ interface Sponsor {
 
 const sponsorLinks = {
     // partners
-    mlh: 'https://mlh.io',
-    lcs: 'https://lauriercs.ca',
-    fintech: 'https://wlufintech.com/',
-    fossa: 'https://fossa.ca',
-    su: 'https://yourstudentsunion.ca/',
-    ethToronto: 'https://www.ethtoronto.ca/',
-    wluBlockchain: 'https://www.waterlooblockchain.com/',
-    futurist: 'https://www.futuristconference.com/',
-    ethWomen: 'https://www.ethwomen.com/',
+    mlh: 'https://mlh.io?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    lcs: 'https://lauriercs.ca?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    fintech:
+        'https://wlufintech.com?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    fossa: 'https://fossa.ca?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    su: 'https://www.yourstudentsunion.ca?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    ethToronto:
+        'https://www.ethtoronto.ca?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    hackbox:
+        'https://near.org/hackbox.near/widget/home?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    wluBlockchain:
+        'https://waterlooblockchain.com?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    futurist:
+        'https://futuristconference.com?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    ethWomen:
+        'https://www.ethwomen.com?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
 
     // platinum
-    avalanche: 'https://www.avax.network/',
-    near: 'https://near.org/',
+    avalanche:
+        'https://www.avax.network/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    near: 'https://near.org/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
 
     // gold
-    fantuan: 'https://fantuan.ca/delivery/en/',
-    sp: 'https://smokespoutinerie.com/',
-    domino: 'https://www.dominos.ca/en/',
-    neurelo: 'https://www.neurelo.com/',
-    distributive: 'https://distributive.network/',
+    fantuan:
+        'https://fantuan.ca/delivery/en/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    sp: 'https://sweetlouscookies.com/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    domino: 'https://www.dominos.ca/en/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    neurelo:
+        'https://www.neurelo.com/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    distributive:
+        'https://distributive.network/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
     metis: 'https://www.metis.io/',
 
     // silver
-    indofood: 'https://www.indofood.com/',
-    roku: 'https://www.roku.com/en-ca/',
-    slCookies: 'https://sweetlouscookies.com/',
-    cisco: 'https://www.cisco.com/site/ca/en/index.html',
+    indomie:
+        'https://indomieonline.ca/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    roku: 'https://www.roku.com/en-ca/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    slCookies:
+        'https://sweetlouscookies.com/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    cisco: 'https://www.cisco.com/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
 
     // bronze
-    echo3D: 'https://www.echo3d.com/',
-    onePassword: 'https://1password.com/',
-    wolfram: 'https://www.wolframalpha.com/',
-    balsamiq: 'https://balsamiq.com/',
-    rosenfeld: 'https://rosenfeldmedia.com/',
-    taskade: 'https://www.taskade.com/',
-    streamyard: 'https://streamyard.com/',
-    defiblocks: 'https://defiblocks.io/',
-    interviewCake: 'https://www.interviewcake.com/',
-    ennios: 'https://www.enniospasta.ca/',
-    certopus: 'https://certopus.com/',
-    interviewBuddy: 'https://interviewbuddy.net/',
-    verbwire: 'https://www.verbwire.com/',
-    jDoodle: 'https://www.jdoodle.com/',
-    vectara: 'https://vectara.com/',
-    nordPass: 'https://nordpass.com/',
-    nordVpn: 'https://nordvpn.com/',
-    incogni: 'https://incogni.com/',
+    echo3D: 'https://www.echo3d.com/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    onePassword:
+        'https://1password.com/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    wolfram:
+        'https://www.wolframalpha.com/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    balsamiq:
+        'https://balsamiq.com/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    rosenfeld:
+        'https://rosenfeldmedia.com/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    taskade:
+        'https://www.taskade.com/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    mavenSourcing: 'https://mavensourcing.ca/',
+    defiblocks:
+        'http://defiblocks.io/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    interviewCake:
+        'https://www.interviewcake.com/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    ennios: 'https://www.enniospasta.ca/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    certopus:
+        'https://certopus.com/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    jDoodle:
+        'https://www.jdoodle.com/?utm_source=Event+Website&utm_medium=Event+Sponsorship&utm_campaign=HawkHacks+Sponsorship+2024',
+    vectara:
+        'https://vectara.com/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    goDaddy:
+        'https://registry.godaddy/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    adobe: 'https://www.adobe.com/ca/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    propelauth:
+        'https://www.propelauth.com/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    sauceLabs:
+        'https://saucelabs.com/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    mongoDB:
+        'https://www.mongodb.com/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    fidelity:
+        'https://www.fidelity.ca/en/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    nordPass:
+        'https://nordpass.com',
+    nordVpn:
+        'https://nordvpn.com/hackathons/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    incogni:
+        'https://incogni.com/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
 };
 
 const platinumSponsors: Sponsor[] = [
@@ -143,9 +185,9 @@ const goldSponsors: Sponsor[] = [
 
 const silverSponsors: Sponsor[] = [
     {
-        name: 'Indofood',
-        link: sponsorLinks.indofood,
-        image: IndoFood,
+        name: 'Indomie',
+        link: sponsorLinks.indomie,
+        image: Indomie,
     },
     {
         name: 'Roku',
@@ -222,7 +264,7 @@ const bronzeSponsors: Sponsor[] = [
     },
     {
         name: 'Maven Sourcing',
-        link: 'https://mavensourcing.ca/',
+        link: sponsorLinks.mavenSourcing,
         image: MavenSourcing,
     },
     {
@@ -231,13 +273,43 @@ const bronzeSponsors: Sponsor[] = [
         image: DeFiBlocks,
     },
     {
+        name: 'GoDaddy',
+        link: sponsorLinks.goDaddy,
+        image: GoDaddy,
+    },
+    {
+        name: 'Adobe',
+        link: sponsorLinks.adobe,
+        image: Adobe,
+    },
+    {
+        name: 'Propelauth',
+        link: sponsorLinks.propelauth,
+        image: Propelauth,
+    },
+    {
+        name: 'SauceLabs',
+        link: sponsorLinks.sauceLabs,
+        image: SauceLabs,
+    },
+    {
+        name: 'MongoDB',
+        link: sponsorLinks.mongoDB,
+        image: MongoDB,
+    },
+    {
+        name: 'Fidelity Investments',
+        link: sponsorLinks.fidelity,
+        image: Fidelity,
+    },
+    {
         name: 'NordPass',
         link: sponsorLinks.nordPass,
         image: NordPass,
     },
     {
         name: 'NordVPN',
-        link: sponsorLinks.nordPass,
+        link: sponsorLinks.nordVpn,
         image: NordVPN,
     },
     {
@@ -277,6 +349,11 @@ const partners: Sponsor[] = [
         name: 'EthToronto',
         link: sponsorLinks.ethToronto,
         image: EthToronto,
+    },
+    {
+        name: 'Hackbox Canada',
+        link: sponsorLinks.hackbox,
+        image: Hackbox,
     },
     {
         name: 'Waterloo Blockchain',

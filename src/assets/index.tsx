@@ -45,7 +45,7 @@ import Ennios from './logos/ennios.png';
 import Fantuan from './logos/fantuan.png';
 import Fintech from './logos/fintech.png';
 import Fossa from './logos/fossa.png';
-import IndoFood from './logos/indofood.png';
+import Indomie from './logos/Indomie.png';
 import InterviewBuddy from './logos/interviewbuddy.png';
 import InterviewCake from './logos/interviewcake.png';
 import JDoodle from './logos/jdoodle.png';
@@ -76,6 +76,13 @@ import NordPass from './logos/nordpass.png';
 import NordVPN from './logos/NordVPN.png';
 import UWBlockchain from './logos/uwBlockchain.png';
 import Metis from './logos/metis.png';
+import Adobe from './logos/adobe.png';
+import Fidelity from './logos/fidelity.png';
+import GoDaddy from './logos/goDaddy.png';
+import MongoDB from './logos/mongoDB.png';
+import Propelauth from './logos/propelauth.png';
+import SauceLabs from './logos/sauceLabs.png';
+import Hackbox from './logos/HackboxCanada.png';
 
 export {
     Balsamiq,
@@ -89,7 +96,7 @@ export {
     Fantuan,
     Fintech,
     Fossa,
-    IndoFood,
+    Indomie,
     InterviewBuddy,
     InterviewCake,
     JDoodle,
@@ -120,6 +127,13 @@ export {
     NordVPN,
     UWBlockchain,
     Metis,
+    Adobe,
+    Fidelity,
+    GoDaddy,
+    MongoDB,
+    Propelauth,
+    SauceLabs,
+    Hackbox,
 };
 
 /*
