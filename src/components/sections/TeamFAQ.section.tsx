@@ -13,6 +13,7 @@ interface Member {
     name: string;
     title: string;
     profile: string;
+    company?: string;
 }
 
 interface DepartmentProps {
@@ -43,6 +44,11 @@ const Department: React.FC<DepartmentProps> = ({ title, members }) => {
                             <p className="text-base font-normal text-white drop-shadow-md lg:text-lg">
                                 {member.title}
                             </p>
+                            {member.company && (
+                                <p className="text-base font-normal text-white drop-shadow-md lg:text-lg">
+                                    {member.company}
+                                </p>
+                            )}
                         </div>
                     </li>
                 ))}
