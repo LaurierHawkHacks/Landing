@@ -10,7 +10,7 @@ import {
     Fantuan,
     Fintech,
     Fossa,
-    IndoFood,
+    Indomie,
     InterviewCake,
     JDoodle,
     Lcs,
@@ -87,7 +87,7 @@ const sponsorLinks = {
     metis: 'https://www.metis.io/',
 
     // silver
-    indofood:
+    indomie:
         'https://indomieonline.ca/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
     roku: 'https://www.roku.com/en-ca/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
     slCookies:
@@ -130,7 +130,7 @@ const sponsorLinks = {
     fidelity:
         'https://www.fidelity.ca/en/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
     nordPass:
-        'https://nordvpn.com/hackathons/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+        'https://nordpass.com',
     nordVpn:
         'https://nordvpn.com/hackathons/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
     incogni:
@@ -185,9 +185,9 @@ const goldSponsors: Sponsor[] = [
 
 const silverSponsors: Sponsor[] = [
     {
-        name: 'Indofood',
-        link: sponsorLinks.indofood,
-        image: IndoFood,
+        name: 'Indomie',
+        link: sponsorLinks.indomie,
+        image: Indomie,
     },
     {
         name: 'Roku',
