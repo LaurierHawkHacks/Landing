@@ -45,7 +45,7 @@ import Ennios from './logos/ennios.png';
 import Fantuan from './logos/fantuan.png';
 import Fintech from './logos/fintech.png';
 import Fossa from './logos/fossa.png';
-import IndoFood from './logos/indofood.png';
+import Indomie from './logos/Indomie.png';
 import InterviewBuddy from './logos/interviewbuddy.png';
 import InterviewCake from './logos/interviewcake.png';
 import JDoodle from './logos/jdoodle.png';
@@ -96,7 +96,7 @@ export {
     Fantuan,
     Fintech,
     Fossa,
-    IndoFood,
+    Indomie,
     InterviewBuddy,
     InterviewCake,
     JDoodle,
