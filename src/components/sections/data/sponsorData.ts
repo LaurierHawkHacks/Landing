@@ -43,6 +43,7 @@ import {
     Fidelity,
     Hackbox,
     NordPass,
+    ChefSignature,
 } from '@assets';
 
 interface Sponsor {
@@ -135,6 +136,8 @@ const sponsorLinks = {
         'https://nordvpn.com/hackathons/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
     incogni:
         'https://incogni.com/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+    chefsignature:
+        'https://thechefsignature.ca/',
 };
 
 const platinumSponsors: Sponsor[] = [
@@ -317,6 +320,11 @@ const bronzeSponsors: Sponsor[] = [
         link: sponsorLinks.incogni,
         image: Incogni,
     },
+    {
+        name: 'Chef Signature',
+        link: sponsorLinks.chefsignature,
+        image: ChefSignature,
+    }
 ];
 
 const partners: Sponsor[] = [
