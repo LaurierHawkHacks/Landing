@@ -83,6 +83,7 @@ import MongoDB from './logos/mongoDB.png';
 import Propelauth from './logos/propelauth.png';
 import SauceLabs from './logos/sauceLabs.png';
 import Hackbox from './logos/HackboxCanada.png';
+import ChefSignature from './logos/ChefSignature.png';
 
 export {
     Balsamiq,
@@ -134,6 +135,7 @@ export {
     Propelauth,
     SauceLabs,
     Hackbox,
+    ChefSignature,
 };
 
 /*
