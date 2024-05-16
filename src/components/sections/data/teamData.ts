@@ -204,6 +204,95 @@ const departments = [
             },
         ],
     },
+    {
+        title: 'judges',
+        members: [
+            {
+                name: 'Dhaval Shirvi',
+                title: 'QA Specialist',
+                company: 'SOTI',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F006c5d6a-0712-4f63-bf19-05878a057a95%2FFullSizeRender.jpeg?id=c3bf2241-dabd-47e4-a3eb-d6d02e5c5496&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+            },
+            {
+                name: 'Sarvesh Patil',
+                title: 'Software Analyst',
+                company: 'Enova Power Corp.',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Fa0025872-ebb7-48fb-b9b9-e2bcc0701b64%2F1695256209554.jpeg?id=f2f7a11a-1fad-4ba5-a595-3bd0446ccf59&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+            },
+            {
+                name: 'Javal Lotia',
+                title: 'Software Analyst',
+                company: 'Enova Power Corp.',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F9a604a84-0431-4818-816a-81edbfa2d070%2FIMG_2295.jpeg?id=81587978-c860-459c-8242-ffcf219b57ee&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+            },
+            {
+                name: 'Aman Garg',
+                title: 'Software Developer',
+                company: 'Nokia',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Fd885bf81-40d4-4e5b-a7ca-14c85f441815%2F1551984474355.jpeg?id=5ed0e1f6-d3c6-4b6d-a6e3-b89c7d2f0c34&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+            },
+            {
+                name: 'Harry Vijayaretnam',
+                title: 'Software Developer',
+                company: 'CoreLogic',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Fb5b3689d-a6b7-4cb9-9ad3-387f4b6e0512%2FIMG_8944.jpeg?id=1227baa3-fc4f-4296-82d0-c67381e9b9bf&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+            },
+            {
+                name: 'Faham Khan',
+                title: 'Software Engineer II',
+                company: 'Twitter / X',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F22b0bf0d-3c81-485b-9fb5-671c364dd251%2F5674EA98-6B79-4612-B669-78AEF2CBE501.jpeg?id=b54bfde1-3ca3-459d-bce0-64f3499b462c&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+            },
+            {
+                name: 'Ather Qureshi',
+                title: 'Software Engineer',
+                company: 'Carta',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F835b5e03-62c8-43ca-9be8-7b9cc49d35d2%2Fimage.png?id=ec194f6d-dbb3-4e5e-af1e-36103a62588b&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+            },
+            {
+                name: 'Stephanie Pitman',
+                title: 'Software Developer',
+                company: 'D2L',
+                profile: 'https://media.licdn.com/dms/image/C4D03AQF0iN9moTqYlg/profile-displayphoto-shrink_400_400/0/1559067466047?e=1721260800&v=beta&t=nr7_ie--ojgSUDV6HPU_Unn96e9yJW0hTJpOdPdXfBI',
+            },
+            {
+                name: 'Brandon Daliri',
+                title: 'Developer',
+                company: 'Artic Wolf',
+                profile: 'https://media.licdn.com/dms/image/C4E03AQFUwfXSFr0ByQ/profile-displayphoto-shrink_800_800/0/1641073761152?e=1721260800&v=beta&t=oowqceF83exQl1EvKNJoE0TQv1RQ83PcwFyaGMEnnwc',
+            },
+            {
+                name: 'Mark Ross',
+                title: 'CEO',
+                company: 'SEH Computer Systems Inc.',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F7439a324-e4a8-498c-b314-35bc6f4a8948%2Fmark.jpeg?id=0abea828-1daa-47f7-9e89-5d2954609408&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+            },
+            {
+                name: 'Rajat Malhotra',
+                title: 'Software Engineer',
+                company: 'Sun Life Financial',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Fa5dfef82-27f6-49a3-8625-0bcbc5e8d11f%2F160837BA-5CB8-417D-A514-BE2628409909.jpg?id=d1ad2f36-3f3f-47e2-9a25-255d34c8ba43&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+            },
+            {
+                name: 'Sooraj Modi',
+                title: 'Software Engineer',
+                company: 'Unity',
+                profile: 'https://media.licdn.com/dms/image/C5603AQH7n11ZGSQ6Kw/profile-displayphoto-shrink_400_400/0/1516946375483?e=1721260800&v=beta&t=4poQF9pSUERjtKmRXD2Nfp06wwYCvRwOucmBP_gYVNA',
+            },
+            {
+                name: 'Kirti Dhir',
+                title: 'Data Scientist',
+                company: 'Rakuten Kobo Inc.',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Ffeef2667-eb1e-48ae-8e09-0f6d1dd7fbed%2Fkirti_photo.png?id=ccb57191-3118-4684-8dc3-46635327bf29&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+            },
+            {
+                name: 'Wil McReynolds',
+                title: 'CVO',
+                company: 'KP9 Interactive',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F55d4e3ea-838a-4174-a4e3-7f8f0c1cbc42%2FWil.jpeg?id=e4161eb4-da01-4435-9622-788d22926c38&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+            },
+        ]
+    }
 ];
 
 export { departments };
