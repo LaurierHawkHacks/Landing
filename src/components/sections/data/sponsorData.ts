@@ -130,7 +130,7 @@ const sponsorLinks = {
     fidelity:
         'https://www.fidelity.ca/en/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
     nordPass:
-        'https://nordpass.com',
+        'https://nordvpn.com/hackathons/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
     nordVpn:
         'https://nordvpn.com/hackathons/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
     incogni:
