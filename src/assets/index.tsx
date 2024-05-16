@@ -76,6 +76,13 @@ import NordPass from './logos/nordpass.png';
 import NordVPN from './logos/NordVPN.png';
 import UWBlockchain from './logos/uwBlockchain.png';
 import Metis from './logos/metis.png';
+import Adobe from './logos/adobe.png';
+import Fidelity from './logos/fidelity.png';
+import GoDaddy from './logos/goDaddy.png';
+import MongoDB from './logos/mongoDB.png';
+import Propelauth from './logos/propelauth.png';
+import SauceLabs from './logos/sauceLabs.png';
+import Hackbox from './logos/HackboxCanada.png';
 
 export {
     Balsamiq,
@@ -120,6 +127,13 @@ export {
     NordVPN,
     UWBlockchain,
     Metis,
+    Adobe,
+    Fidelity,
+    GoDaddy,
+    MongoDB,
+    Propelauth,
+    SauceLabs,
+    Hackbox,
 };
 
 /*
