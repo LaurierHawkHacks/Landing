@@ -289,7 +289,7 @@ const departments = [
                 name: 'Wil McReynolds',
                 title: 'CVO',
                 company: 'KP9 Interactive',
-                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2F55d4e3ea-838a-4174-a4e3-7f8f0c1cbc42%2FWil.jpeg?id=e4161eb4-da01-4435-9622-788d22926c38&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
+                profile: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fce09554c-fc32-4d0a-88ed-8e7673cb8b39%2Fee667d8b-4cff-408a-a004-5921b2ea9109%2FUntitled.png?id=e4161eb4-da01-4435-9622-788d22926c38&table=block&spaceId=ce09554c-fc32-4d0a-88ed-8e7673cb8b39&width=2000&userId=555786bd-2f68-4ca7-aaef-0f95362c1708&cache=v2',
             },
         ]
     }
