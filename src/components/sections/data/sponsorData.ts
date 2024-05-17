@@ -131,13 +131,12 @@ const sponsorLinks = {
     fidelity:
         'https://www.fidelity.ca/en/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
     nordPass:
-        'https://nordvpn.com/hackathons/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
+        'https://nordpass.com?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
     nordVpn:
         'https://nordvpn.com/hackathons/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
     incogni:
         'https://incogni.com/?utm_medium=affiliate&utm_term=&utm_content&utm_campaign=hawkhacks24',
-    chefsignature:
-        'https://thechefsignature.ca/',
+    chefsignature: 'https://thechefsignature.ca/',
 };
 
 const platinumSponsors: Sponsor[] = [
@@ -324,7 +323,7 @@ const bronzeSponsors: Sponsor[] = [
         name: 'Chef Signature',
         link: sponsorLinks.chefsignature,
         image: ChefSignature,
-    }
+    },
 ];
 
 const partners: Sponsor[] = [
