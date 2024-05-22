@@ -7,7 +7,6 @@ import {
 } from '@assets';
 
 import { Button } from '@components';
-import { Link } from 'react-router-dom';
 
 const HeroStatSection: React.FC = () => {
     const [translateY, setTranslateY] = useState(0);
