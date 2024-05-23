@@ -90,23 +90,38 @@ const HeroStatSection: React.FC = () => {
                         <h1 className="mb-2 bg-gradient-to-b from-[#2B6469] to-[#00CEDB] bg-clip-text pb-6 text-4xl font-extrabold text-transparent sm:pb-0 sm:text-5.5xl lg:text-7xl xl:text-8.5xl">
                             HawkHacks 2024
                         </h1>
-
                         <p className="text-lg font-bold text-[#2B6469] lg:text-2.5xl 2xl:text-3.5xl">
                             Hosted at Wilfrid Laurier University
                         </p>
 
-                        <div className="hidden w-4/5 rounded-xl border-2 border-black bg-[#F2F1F0] px-7 py-5 shadow-lg lg:mt-6 lg:block xl:mt-12">
+                        <div className="hidden w-3/5 rounded-xl border-2 border-black bg-[#F2F1F0] px-7 py-5 shadow-lg lg:mt-6 lg:block xl:mt-12">
                             <p className="text-base text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
-                                Hacker applications are now{' '}
-                                <strong className="font-bold"> OPEN! </strong>{' '}
-                                Applications close{' '}
-                                <u className="font-bold">
-                                    {' '}
-                                    May 3rd at 11:59PM EDT.
-                                </u>
+                                HawkHacks 2024 is{' '}
+                                <strong>officially over</strong>. Check out our{' '}
+                                <a
+                                    className="text-base font-bold text-[#2B6469] underline lg:text-xl 2xl:text-3.5xl"
+                                    href="https://www.instagram.com/wluhawkhacks/"
+                                >
+                                    Instagram
+                                </a>{' '}
+                                for highlights, and{' '}
+                                <a
+                                    className="text-base font-bold text-[#2B6469] underline lg:text-xl 2xl:text-3.5xl"
+                                    href="https://taikai.network/hackbox/hackathons/hawkhacks/projects/"
+                                >
+                                    TaiKai
+                                </a>{' '}
+                                for all project submissions. 
+                                
+                                <br />
+                                <br />
+                                
+                                Thank you to
+                                everyone who made HawkHacks possible, until next
+                                time! 💖
                             </p>
 
-                            <div className="mt-4 flex items-center gap-4 2xl:mt-8">
+                            {/* <div className="mt-4 flex items-center gap-4 2xl:mt-8">
                                 <p className="text-base text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
                                     Interested in sponsoring us?
                                 </p>
@@ -120,7 +135,7 @@ const HeroStatSection: React.FC = () => {
                                         Sponsor the weekend!
                                     </span>
                                 </Button>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div>
