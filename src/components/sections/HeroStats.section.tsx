@@ -94,7 +94,7 @@ const HeroStatSection: React.FC = () => {
                             Hosted at Wilfrid Laurier University
                         </p>
 
-                        <div className="hidden w-4/5 rounded-xl border-2 border-black bg-[#F2F1F0] px-7 py-5 shadow-lg lg:mt-6 lg:block xl:mt-12">
+                        <div className="hidden w-3/5 rounded-xl border-2 border-black bg-[#F2F1F0] px-7 py-5 shadow-lg lg:mt-6 lg:block xl:mt-12">
                             <p className="text-base text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
                                 HawkHacks 2024 is{' '}
                                 <strong>officially over</strong>. Check out our{' '}
@@ -111,12 +111,17 @@ const HeroStatSection: React.FC = () => {
                                 >
                                     TaiKai
                                 </a>{' '}
-                                for all project submissions. Thank you to
+                                for all project submissions. 
+                                
+                                <br />
+                                <br />
+                                
+                                Thank you to
                                 everyone who made HawkHacks possible, until next
                                 time! 💖
                             </p>
 
-                            <div className="mt-4 flex items-center gap-4 2xl:mt-8">
+                            {/* <div className="mt-4 flex items-center gap-4 2xl:mt-8">
                                 <p className="text-base text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
                                     Interested in sponsoring us?
                                 </p>
@@ -130,7 +135,7 @@ const HeroStatSection: React.FC = () => {
                                         Sponsor the weekend!
                                     </span>
                                 </Button>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div>
