@@ -6,7 +6,7 @@ import {
     HawkHacksLogo,
 } from '@assets';
 
-import { Button } from '@components';
+// import { Button } from '@components';
 
 const HeroStatSection: React.FC = () => {
     const [translateY, setTranslateY] = useState(0);
@@ -41,15 +41,15 @@ const HeroStatSection: React.FC = () => {
         }
     }, []);
 
-    const openInNewTab = (url: string) => {
-        const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
-        if (newWindow) newWindow.opener = null;
-    };
+    // const openInNewTab = (url: string) => {
+    //     const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+    //     if (newWindow) newWindow.opener = null;
+    // };
 
-    const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
-        e.preventDefault();
-        openInNewTab('https://hawkhacks.ca/sponsorships.pdf');
-    };
+    // const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+    //     e.preventDefault();
+    //     openInNewTab('https://hawkhacks.ca/sponsorships.pdf');
+    // };
 
     return (
         <div className="relative">
