@@ -1,17 +1,24 @@
 import defaultTheme from 'tailwindcss/defaultTheme';
+
+/*
+ * 
+ * @description Tailwind config
+ * 
+*/
 export default {
     content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
+
     theme: {
         extend: {
             keyframes: {
                 rotateUp: {
-                  '0%': { transform: 'rotate(0deg)' },
-                  '100%': { transform: 'rotate(-180deg)' },
+                    '0%': { transform: 'rotate(0deg)' },
+                    '100%': { transform: 'rotate(-180deg)' },
                 },
 
                 rotateDown: {
-                  '0%': { transform: 'rotate(-180deg)' },
-                  '100%': { transform: 'rotate(0deg)' },
+                    '0%': { transform: 'rotate(-180deg)' },
+                    '100%': { transform: 'rotate(0deg)' },
                 },
             },
 
@@ -56,13 +63,16 @@ export default {
                 'tbrand-mouse-down': '#1D7882',
                 'tbrand-highlight': '#00CEDB',
             },
+
             translate: {
-                0.75: '0.1875rem', // value in between of 0.5 and 1 (0.125rem + 0.25) / 2
+                0.75: '0.1875rem', // (0.125rem + 0.25) / 2
             },
+
             backgroundImage: {
                 'faq-image': "url('/src/assets/background/faqBackground.png')",
             }
         },
     },
+
     plugins: [],
 };

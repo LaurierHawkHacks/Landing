@@ -2,6 +2,11 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import * as path from 'path';
 
+/*
+ *
+ * @description Vite configuration
+ * 
+ */
 export default defineConfig({
     plugins: [react()],
     resolve: {
