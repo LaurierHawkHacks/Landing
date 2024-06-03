@@ -1,8 +1,17 @@
 import { sponsors } from './data';
+
 import { TopBorder, BottomBorder, Hawk, BirdParts } from '@assets';
-import { logEvent, analytics } from '../../utils/Analytics';
+
+import { logEvent, analytics } from '@utils';
+
 import { Button } from '@components';
 
+/*
+ *
+ * @description Sponsor section
+ * @props {void}
+ * 
+*/
 const SponsorSection = () => {
     const openInNewTab = (url: string) => {
         const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
@@ -31,6 +40,7 @@ const SponsorSection = () => {
                     alt=""
                     className="absolute left-0 top-0 z-50 w-full max-w-5xl -translate-x-2 -translate-y-[42.5%] scale-x-[-1] md:-translate-x-3 xl:left-10 2xl:left-52"
                 />
+
                 <div className="relative">
                     <div className="main-container flex flex-col items-center space-y-6 bg-[#f2f2f0] pb-28 pt-8 sm:space-y-12 md:pb-52 md:pt-16 xl:pb-72 xl:pt-32 2xl:pb-96">
                         <div className="sponsor-content mx-auto max-w-6xl space-y-4 px-4 pb-10 text-center md:space-y-8 lg:space-y-16">
@@ -40,6 +50,7 @@ const SponsorSection = () => {
                             >
                                 SPONSORS
                             </h2>
+
                             <div className="grid gap-4">
                                 <p className="text-base md:text-lg lg:text-2xl xl:text-2.5xl">
                                     Thanks to our dedicated sponsors, we're able
@@ -52,6 +63,7 @@ const SponsorSection = () => {
                                     Further sponsor updates coming soon!
                                 </p>
                             </div>
+
                             <Button
                                 className="mx-auto block w-fit bg-gradient-to-b from-tbrand to-tbrand-hover p-0 before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10"
                                 tabIndex={-1}
@@ -168,7 +180,6 @@ const SponsorSection = () => {
                                                 href={sponsor.link}
                                                 target="_blank"
                                                 rel="noopener noreferrer"
-                                                // -4
                                                 className="sm:h-18 lg:h-22 h-12 w-auto flex-shrink-0 md:h-20 xl:h-24"
                                                 onClick={() => {
                                                     logEvent(
@@ -204,6 +215,7 @@ const SponsorSection = () => {
                             >
                                 PARTNERS
                             </h2>
+
                             <div className="flex flex-wrap items-center justify-center gap-4 xl:gap-x-20">
                                 {sponsors.partners.map((partner, i) => (
                                     <a
@@ -232,6 +244,7 @@ const SponsorSection = () => {
                         </div>
                     </div>
                 </div>
+
                 <img src={BottomBorder} alt="" className="z-10 w-full" />
             </section>
         </div>

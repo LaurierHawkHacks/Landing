@@ -1,5 +1,11 @@
 import { ExternalBalloon, MeetTheTeamBuildingLeft } from "@assets";
 
+/*
+ *
+ * @description Error page
+ * @props {void}
+ * 
+ */
 const ErrorPage: React.FC = () => {
     return (
         <section
@@ -13,11 +19,13 @@ const ErrorPage: React.FC = () => {
                 alt="Balloon"
                 className="absolute top-0 right-0 w-1/4 max-w-md"
             />
+
             <img
                 src={MeetTheTeamBuildingLeft}
                 alt="Building"
                 className="absolute bottom-0 left-0 w-1/4 max-w-md"
             />
+
             <div className="container mx-auto px-4 flex justify-center items-center min-h-screen">
                 <div className="text-center">
                     <h2 className="font-bold text-tbrand drop-shadow-md mb-4">

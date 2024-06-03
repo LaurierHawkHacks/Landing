@@ -2,6 +2,12 @@ import { Link } from 'react-router-dom';
 import { ExternalBalloon, MeetTheTeamBuildingLeft } from '@assets';
 import { Button } from '@components';
 
+/*
+ *
+ * @description Coming Soon page
+ * @props {void}
+ * 
+ */
 const ComingSoon: React.FC = () => {
     const openInNewTab = (url: string) => {
         const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
@@ -73,4 +79,3 @@ const ComingSoon: React.FC = () => {
 };
 
 export { ComingSoon };
-

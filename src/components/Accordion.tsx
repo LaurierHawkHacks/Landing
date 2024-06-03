@@ -1,21 +1,47 @@
 import React, { useState } from 'react';
+
 import { Button } from '@components';
+
 import { LuPlus, LuMinus } from 'react-icons/lu';
 
+/*
+ *
+ * @description Item interface
+ * @props {string} question, {string} answer
+ * 
+ */
 interface Item {
     question: string;
     answer: string;
 }
 
+/*
+ *
+ * @description Section interface
+ * @props {string} section, {Item[]} content
+ * 
+ */
 interface Section {
     section: string;
     content: Item[];
 }
 
+/*
+ *
+ * @description Accordion interface
+ * @props {Section[]} sections
+ * 
+ */
 interface AccordionProps {
     sections: Section[];
 }
 
+/*
+ *
+ * @description Accordion component
+ * @props {Section[]} sections
+ * 
+ */
 const Accordion: React.FC<AccordionProps> = ({ sections }) => {
     const [activeIndex, setActiveIndex] = useState<{
         section: number;
@@ -75,10 +101,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
 
     return (
         <div className="py-20">
-            {/* !remember to add back the md:grid-cols-2 here */}
             <div className="mb-12 grid gap-[20px] md:grid-cols-2">
-                {/* for each section */}
-                {/* render the title and the content */}
                 {sections.map((section, sectionIndex) => (
                     <div
                         key={sectionIndex}
@@ -88,13 +111,11 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                             {section.section}
                         </h3>
 
-                        {/* contents of accordion item */}
                         {section.content.map((item, questionIndex) => (
                             <div
                                 key={questionIndex}
                                 className="accordion-panel w-full"
                             >
-                                {/* the accordion question */}
                                 <div
                                     className={`accordion-panel__question flex cursor-pointer select-none items-center justify-between gap-2 rounded-lg border border-black/20 bg-white p-4 transition-all hover:bg-gray-100 motion-reduce:transition-none ${
                                         activeIndex &&
@@ -103,12 +124,14 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                             ? 'rounded-b-none'
                                             : ''
                                     }`}
+
                                     onClick={() =>
                                         toggleAccordion(
                                             sectionIndex,
                                             questionIndex
                                         )
                                     }
+
                                     role="button"
                                 >
                                     <h4 className="flex-1 text-black">
@@ -127,7 +150,6 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                                     </div>
                                 </div>
 
-                                {/* the accordion answer */}
                                 <div
                                     className={`accordion-panel__content grid grid-rows-[0fr] rounded-b-lg bg-accordionHover/50 transition-[grid-template-rows]  will-change-[grid-template-rows] motion-reduce:transition-none ${
                                         activeIndex &&
@@ -176,6 +198,7 @@ const Accordion: React.FC<AccordionProps> = ({ sections }) => {
                         person wakes up!
                     </p>
                 </span>
+                
                 <Button
                     className="block w-fit bg-gradient-to-b from-tbrand to-tbrand-hover p-0 before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-100 before:hover:opacity-10"
                     tabIndex={-1}

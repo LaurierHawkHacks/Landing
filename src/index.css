@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* 
+ *
+ * @description Tailwind CSS v^3.3.5
+ * @see https://tailwindcss.com/docs
+ *
+ */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* 
+ *
+ * @description Global styles for the entire application
+ *
+ */
 body {
     font-variant-numeric: lining-nums;
     font-feature-settings: 'lnum' 1;
@@ -15,6 +26,11 @@ img {
     aspect-ratio: attr(width) / attr(height);
 }
 
+/* 
+ *
+ * @description Default styles for the entire application
+ *
+ */
 @layer base {
     h1 {
         @apply text-8xl font-extrabold 2xl:text-8.5xl;
@@ -42,6 +58,11 @@ img {
     }
 }
 
+/* 
+ *
+ * @description Component styles for the entire application
+ *
+ */
 @layer components {
     .gradient {
         background: linear-gradient(
@@ -53,6 +74,12 @@ img {
     }
 }
 
+
+/* 
+ *
+ * @description Utility styles for the entire application
+ *
+ */
 @layer utilities {
     .stacked {
         display: grid;
@@ -89,6 +116,7 @@ header::before {
     from {
         transform: rotate(0deg);
     }
+    
     to {
         transform: rotate(360deg);
     }

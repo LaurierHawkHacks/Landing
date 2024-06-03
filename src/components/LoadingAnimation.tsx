@@ -1,5 +1,11 @@
 import { HawkHacksLogo } from '@assets';
 
+/*
+ *
+ * @description Loading animation component
+ * @props {void}
+ * 
+ */
 const LoadingAnimation: React.FC = () => {
     return (
         <div className="loading-container flex h-screen items-center justify-center">

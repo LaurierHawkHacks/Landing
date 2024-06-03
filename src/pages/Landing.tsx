@@ -10,8 +10,14 @@ import {
     LoadingAnimation,
 } from '@components';
 import { HeroAboutDesktop, HeroAboutMobile } from '@assets';
-import { logEvent, analytics } from '../utils/Analytics';
+import { logEvent, analytics } from '@utils';
 
+/*
+ *
+ * @description Landing page
+ * @props {void}
+ * 
+ */
 const Landing: React.FC = () => {
     const [desktopImageLoaded, setDesktopImageLoaded] = useState(false);
     const [mobileImageLoaded, setMobileImageLoaded] = useState(false);
@@ -23,17 +29,14 @@ const Landing: React.FC = () => {
     );
 
     useEffect(() => {
-        // Load Desktop SVG
         const desktopImage = new Image();
         desktopImage.src = HeroAboutDesktop;
         desktopImage.onload = () => setDesktopImageLoaded(true);
 
-        // Load Mobile SVG
         const mobileImage = new Image();
         mobileImage.src = HeroAboutMobile;
         mobileImage.onload = () => setMobileImageLoaded(true);
 
-        // Timer
         setTimeout(() => setTimerFinished(true), 2000);
     }, []);
 

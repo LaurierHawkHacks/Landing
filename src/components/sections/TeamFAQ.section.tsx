@@ -1,7 +1,9 @@
-import { FaqBackground } from '@assets';
 import { departments, faqData } from './data';
+
 import { Accordion } from '@components';
+
 import {
+    FaqBackground,
     Clouds,
     MeetTheTeamBalloon,
     MeetTheTeamBanner,
@@ -9,6 +11,12 @@ import {
     MeetTheTeamBuildingRight,
 } from '@assets';
 
+/*
+ *
+ * @description Member interface
+ * @props {string} name, {string} title, {string} profile, {string} company (optional)
+ * 
+ */
 interface Member {
     name: string;
     title: string;
@@ -16,17 +24,30 @@ interface Member {
     company?: string;
 }
 
+/*
+ *
+ * @description DepartmentProps interface
+ * @props {string} title, {Member[]} members
+ * 
+ */
 interface DepartmentProps {
     title: string;
     members: Member[];
 }
 
+/*
+ *
+ * @description Department component
+ * @props {string} title, {Member[]} members
+ * 
+ */
 const Department: React.FC<DepartmentProps> = ({ title, members }) => {
     return (
         <div className="department">
             <h3 className="mb-6 text-3xl font-bold capitalize text-white drop-shadow-md md:mb-8">
                 {title}
             </h3>
+
             <ul className="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8">
                 {members.map((member, index) => (
                     <li key={index} className="flex items-center gap-x-4">
@@ -57,9 +78,14 @@ const Department: React.FC<DepartmentProps> = ({ title, members }) => {
     );
 };
 
-const TeamFAQSection = () => {
+/*
+ *
+ * @description TeamFAQSection component
+ * @props {void}
+ * 
+ */
+const TeamFAQSection: React.FC = () => {
     return (
-        // currently this div is the container of both faq and team section
         <div className="bg-gradient-to-b from-[#CBAAF4] to-[#85C1C5] to-[120%]">
             <section id="faq" className="stacked -mb-24 bg-cover">
                 <img src={FaqBackground} alt="" className="w-full" />

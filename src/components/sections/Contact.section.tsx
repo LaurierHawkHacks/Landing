@@ -1,7 +1,14 @@
 import React from 'react';
+
 import { TopBorder, BottomBorder, MiddleBody, Hawk, BirdParts } from '@assets';
 import { Button, SocialIcons } from '@components';
 
+/*
+ *
+ * @description Contact section
+ * @props {void}
+ * 
+ */
 const ContactSection: React.FC = () => {
     const openInNewTab = (url: string) => {
         const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
@@ -9,7 +16,7 @@ const ContactSection: React.FC = () => {
     };
 
     const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
-        e.preventDefault(); // Prevent default form submission behavior
+        e.preventDefault(); 
         openInNewTab('http://eepurl.com/hDHf8b');
     };
 
@@ -26,6 +33,7 @@ const ContactSection: React.FC = () => {
                 className="absolute right-0 top-0 z-50 w-full max-w-5xl -translate-y-[42.5%] xl:right-10 2xl:right-52"
                 alt=""
             />
+
             <div className="absolute inset-x-0 z-10 mx-auto max-w-4xl px-4 pt-10 sm:pt-16 md:px-8 md:pt-20 lg:px-12 lg:pt-32 xl:pt-32">
                 <div className="contact-info mb-2 text-center sm:mb-4 sm:text-left md:mb-6 lg:mb-12">
                     <h2
@@ -40,6 +48,7 @@ const ContactSection: React.FC = () => {
                         <b>HawkHacks Discord</b> community!
                     </p>
                 </div>
+
                 <div className="newsletter text-center sm:text-left lg:mt-6">
                     <div className="mt-2 flex flex-col items-center sm:items-start md:mt-4">
                         <div className="relative mb-4 flex w-full justify-center sm:mb-6 sm:w-1/2 sm:justify-start lg:max-w-lg">
@@ -54,12 +63,14 @@ const ContactSection: React.FC = () => {
                                 </span>
                             </Button>
                         </div>
+
                         <div className="pt-2 max-[1020px]:hidden sm:pt-4">
                             <SocialIcons color="#32848C" />
                         </div>
                     </div>
                 </div>
             </div>
+            
             <img
                 src={MiddleBody}
                 className="z-0 h-[300px] w-full object-cover sm:h-[350px] md:h-[400px] lg:h-[700px]"

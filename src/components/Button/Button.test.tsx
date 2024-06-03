@@ -2,6 +2,11 @@ import { render, screen } from "@testing-library/react";
 import { Button } from "@components";
 import userEvent from "@testing-library/user-event";
 
+/*
+ *
+ * @description Button Component test
+ * 
+ */
 describe("Button Component", () => {
     it("should render a button", () => {
         render(<Button />);

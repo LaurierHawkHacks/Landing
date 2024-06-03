@@ -11,3 +11,17 @@ export { Router } from './Router';
  *
  */
 export { Links as SocialLinks } from './SocialLinks';
+
+/*
+ *
+ * @utility Analytics
+ *
+ */
+export { analytics } from './Analytics';
+
+/*
+ *
+ * @utility logEvent
+ *
+ */
+export { logEvent } from './Analytics';

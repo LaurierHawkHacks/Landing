@@ -1,12 +1,21 @@
-import { useEffect, useState } from 'react';
-import { NavItems, Menu, Button } from '@components';
-import { HawkHacksLogo, MlhBanner } from '@assets';
-import Hamburger from 'hamburger-react';
-// import { Link } from 'react-router-dom';
-import { logEvent, analytics } from '../../utils/Analytics';
-import { Link as ScrollLink } from 'react-scroll';
+import React, { useEffect, useState } from 'react';
 
-const Navbar = () => {
+import { NavItems, Menu, Button } from '@components';
+
+import { HawkHacksLogo, MlhBanner } from '@assets';
+
+import { logEvent, analytics } from '@utils';
+
+import { Link as ScrollLink } from 'react-scroll';
+import Hamburger from 'hamburger-react';
+
+/*
+ *
+ * @description Navbar component
+ * @props {void}
+ * 
+ */
+const Navbar: React.FC = () => {
     const [showMenu, setShowMenu] = useState(false);
 
     const hideMenu = () => setShowMenu(false);

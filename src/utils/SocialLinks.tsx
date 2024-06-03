@@ -1,3 +1,8 @@
+/*
+ *
+ * @description Social media links for HawkHacks
+ * 
+ */
 const Links = {
     email: "mailto:hello@hawkhacks.ca",
     linkedin: "https://linkedin.com/company/hawkhacks/",
