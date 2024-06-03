@@ -42,9 +42,9 @@ const HeroStatSection: React.FC = () => {
     }, []);
 
     // const openInNewTab = (url: string) => {
-    //     const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
-    //     if (newWindow) newWindow.opener = null;
-    // };
+    // //     const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+    // //     if (newWindow) newWindow.opener = null;
+    // // };
 
     // const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
     //     e.preventDefault();
@@ -101,6 +101,8 @@ const HeroStatSection: React.FC = () => {
                                 <a
                                     className="text-base font-bold text-[#2B6469] underline lg:text-xl 2xl:text-3.5xl"
                                     href="https://www.instagram.com/wluhawkhacks/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     Instagram
                                 </a>{' '}
@@ -108,6 +110,8 @@ const HeroStatSection: React.FC = () => {
                                 <a
                                     className="text-base font-bold text-[#2B6469] underline lg:text-xl 2xl:text-3.5xl"
                                     href="https://taikai.network/hackbox/hackathons/hawkhacks/projects/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                 >
                                     TaiKai
                                 </a>{' '}
