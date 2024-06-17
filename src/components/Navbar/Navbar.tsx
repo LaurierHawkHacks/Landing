@@ -30,10 +30,15 @@ const Navbar: React.FC = () => {
         if (newWindow) newWindow.opener = null;
     };
 
-    const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const handleSubmitPortal = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         openInNewTab('https://portal.hawkhacks.ca');
         logEvent(analytics, 'click_application_portal_button');
+    };
+
+    const handleSubmitFunding = (e: React.MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault();
+        openInNewTab('https://hawkhacks.ca/sponsorships.pdf');
     };
 
     return (
@@ -58,17 +63,32 @@ const Navbar: React.FC = () => {
                 <NavItems isHorizontal={true} handleClick={hideMenu} />
             </nav>
 
-            <div className="portal-btn hidden transition-all duration-500 ease-in-out lg:mr-32 lg:block">
-                <Button
-                    className="relative mx-auto block h-16 w-64 rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover font-medium before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 max-[1080px]:w-48 sm:mx-0"
-                    tabIndex={-1}
-                    type="button"
-                    onClick={handleSubmit}
-                >
-                    <span className="whitespace-nowrap text-lg font-bold">
-                        Application Portal
-                    </span>
-                </Button>
+            <div className="flex items-center justify-center lg:justify-end">
+                <div className="portal-btn hidden transition-all duration-500 ease-in-out lg:ml-8 lg:mr-8 lg:block responsive-hide">
+                    <Button
+                        className="relative mx-auto block h-16 w-34 rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover font-medium before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 max-[1080px]:w-12 sm:mx-0"
+                        tabIndex={-1}
+                        type="button"
+                        onClick={handleSubmitFunding}
+                    >
+                        <span className="text-lg font-bold">
+                            Explore opportunities
+                        </span>
+                    </Button>
+                </div>
+
+                <div className="portal-btn hidden transition-all duration-500 ease-in-out lg:mr-32 lg:block">
+                    <Button
+                        className="relative mx-auto block h-16 w-34 rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover font-medium before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 max-[1080px]:w-12 sm:mx-0"
+                        tabIndex={-1}
+                        type="button"
+                        onClick={handleSubmitPortal}
+                    >
+                        <span className="whitespace-nowrap text-lg font-bold">
+                            Dashboard
+                        </span>
+                    </Button>
+                </div>
             </div>
 
             <div className="banner-holder order-first w-12 lg:hidden"></div>
