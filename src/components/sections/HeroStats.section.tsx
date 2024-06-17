@@ -6,7 +6,7 @@ import {
     HawkHacksLogo,
 } from '@assets';
 
-// import { Button } from '@components';
+import { Button } from '@components';
 
 /*
  *
@@ -46,20 +46,15 @@ const HeroStatSection: React.FC = () => {
         }
     }, []);
 
-    {
-        // Utility functions for the sponsorship button - hidden after the hackathon was over
-        /*
-            const openInNewTab = (url: string) => {
-                const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
-                if (newWindow) newWindow.opener = null;
-            };
+    const openInNewTab = (url: string) => {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+        if (newWindow) newWindow.opener = null;
+    };
 
-            const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
-                e.preventDefault();
-                openInNewTab('https://hawkhacks.ca/sponsorships.pdf');
-            };
-        */
-    }
+    const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault();
+        openInNewTab('https://hawkhacks.ca/sponsorships.pdf');
+    };
 
     return (
         <div className="relative">
@@ -85,7 +80,7 @@ const HeroStatSection: React.FC = () => {
                     height="8127"
                 />
 
-                <div className="mt-16 px-4 sm:ml-16 sm:mt-16 sm:px-0 lg:ml-20 lg:mt-24 xl:ml-24 xl:mt-32 2xl:mt-10">
+                <div className="mt-16 px-4 sm:ml-16 sm:mt-16 sm:px-0 lg:ml-20 lg:mt-24 xl:ml-24 xl:mt-12 2xl:mt-10">
                     <img
                         className="hidden aspect-square hover:animate-spin sm:mb-4 sm:block sm:w-28 lg:mb-10 xl:w-36 2xl:w-60"
                         src={HawkHacksLogo}
@@ -100,10 +95,28 @@ const HeroStatSection: React.FC = () => {
                         <h1 className="mb-2 bg-gradient-to-b from-[#2B6469] to-[#00CEDB] bg-clip-text pb-6 text-4xl font-extrabold text-transparent sm:pb-0 sm:text-5.5xl lg:text-7xl xl:text-8.5xl">
                             HawkHacks 2024
                         </h1>
-                        
-                        <p className="text-lg font-bold text-[#2B6469] lg:text-2.5xl 2xl:text-3.5xl">
-                            Hosted at Wilfrid Laurier University
-                        </p>
+
+                        <div className="hidden w-3/5 rounded-xl border-2 border-black bg-[#F2F1F0] px-7 py-5 shadow-lg lg:mt-6 lg:block xl:mt-12">
+                            <p className="text-base text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
+                                <strong> We got big things coming soon! 😉 </strong>
+                            </p>
+
+                            <div className="mt-4 items-center 2xl:mt-8">
+                                <p className="text-base text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
+                                    Discover how our proven Hackathons and strategic partnerships can <u>elevate your brand and connect you with top tech talent</u>.
+                                </p>
+
+                                <Button
+                                    className="relative block mt-6 h-16 w-1/2 basis-0 rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover font-medium before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0"
+                                    type="button"
+                                    onClick={handleSubmit}
+                                >
+                                    <span className="text-xl font-medium">
+                                        Upgrade your business today!
+                                    </span>
+                                </Button>
+                            </div> 
+                        </div>
 
                         <div className="hidden w-3/5 rounded-xl border-2 border-black bg-[#F2F1F0] px-7 py-5 shadow-lg lg:mt-6 lg:block xl:mt-12">
                             <p className="text-base text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
@@ -130,36 +143,30 @@ const HeroStatSection: React.FC = () => {
                                 
                                 Thank you to everyone who made HawkHacks possible, until next time! 💖
                             </p>
-
-                            {
-                                // Button for sponsorship - hidden after the hackathon was over
-                                /* 
-                                    <div className="mt-4 flex items-center gap-4 2xl:mt-8">
-                                        <p className="text-base text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
-                                            Interested in sponsoring us?
-                                        </p>
-
-                                        <Button
-                                            className="relative block h-16 w-full basis-0 rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover font-medium before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0"
-                                            type="button"
-                                            onClick={handleSubmit}
-                                        >
-                                            <span className="whitespace-nowrap text-2xl font-medium">
-                                                Sponsor the weekend!
-                                            </span>
-                                        </Button>
-                                    </div> 
-                                */
-                            }
                         </div>
                     </div>
                     <div>
-                        <p className="text-lg font-bold text-[#2B6469] sm:hidden sm:text-2xl">
-                            May 17th - 19th
-                        </p>
-                        <p className="text-lg font-bold text-[#2B6469] sm:hidden sm:text-2xl">
-                            In Person
-                        </p>
+                        <div className="w-full rounded-xl border-2 border-black bg-[#F2F1F0] px-7 py-5 shadow-lg lg:hidden xl:hidden 2xl:hidden sm:w-3/4">
+                            <p className="text-base text-center text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
+                                <strong> We got big things coming soon! 😉 </strong>
+                            </p>
+
+                            <div className="mt-4 items-center 2xl:mt-8">
+                                <p className="text-base text-center text-[#2B6469] lg:text-xl 2xl:text-3.5xl">
+                                    Discover how our proven Hackathons and strategic partnerships can <u>elevate your brand and connect you with top tech talent</u>.
+                                </p>
+
+                                <Button
+                                    className="relative block mt-6 h-16 w-full basis-0 rounded-r-lg bg-gradient-to-b from-tbrand to-tbrand-hover font-medium before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10 sm:mx-0"
+                                    type="button"
+                                    onClick={handleSubmit}
+                                >
+                                    <span className="text-md font-medium">
+                                        Upgrade your business today!
+                                    </span>
+                                </Button>
+                            </div> 
+                        </div>
                     </div>
                 </div>
 
