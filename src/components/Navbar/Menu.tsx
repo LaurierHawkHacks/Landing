@@ -24,10 +24,15 @@ const Menu: React.FC<MenuProp> = ({ showMenu, hideMenu }) => {
         if (newWindow) newWindow.opener = null;
     };
 
-    const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+    const handleSubmitPortal = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
         openInNewTab('https://portal.hawkhacks.ca');
-        logEvent(analytics, "click_application_portal_button");
+        logEvent(analytics, 'click_application_portal_button');
+    };
+
+    const handleSubmitFunding = (e: React.MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault();
+        openInNewTab('https://hawkhacks.ca/sponsorships.pdf');
     };
 
     if (!showMenu) return null;
@@ -37,10 +42,19 @@ const Menu: React.FC<MenuProp> = ({ showMenu, hideMenu }) => {
             <NavItems isHorizontal={false} handleClick={hideMenu} />
             <Button
                 className="mt-20 block px-0 py-0 lg:hidden"
-                onClick={handleSubmit}
+                onClick={handleSubmitPortal}
             >
                 <span className="text-lg block px-5 py-2">
-                    Application Portal
+                    Dashboard
+                </span>
+            </Button>
+
+            <Button
+                className="mt-5 block px-0 py-0 lg:hidden"
+                onClick={handleSubmitFunding}
+            >
+                <span className="text-lg block px-5 py-2">
+                    Explore opportunities
                 </span>
             </Button>
         </div>
