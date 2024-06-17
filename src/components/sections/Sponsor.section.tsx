@@ -4,7 +4,7 @@ import { TopBorder, BottomBorder, Hawk, BirdParts } from '@assets';
 
 import { logEvent, analytics } from '@utils';
 
-import { Button } from '@components';
+// import { Button } from '@components';
 
 /*
  *
@@ -13,15 +13,15 @@ import { Button } from '@components';
  * 
 */
 const SponsorSection = () => {
-    const openInNewTab = (url: string) => {
-        const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
-        if (newWindow) newWindow.opener = null;
-    };
+    // const openInNewTab = (url: string) => {
+    //     const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+    //     if (newWindow) newWindow.opener = null;
+    // };
 
-    const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
-        e.preventDefault();
-        openInNewTab('https://hawkhacks.ca/sponsorships.pdf');
-    };
+    // const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+    //     e.preventDefault();
+    //     openInNewTab('https://hawkhacks.ca/sponsorships.pdf');
+    // };
 
     return (
         <div>
@@ -64,7 +64,7 @@ const SponsorSection = () => {
                                 </p>
                             </div>
 
-                            <Button
+                            {/* <Button
                                 className="mx-auto block w-fit bg-gradient-to-b from-tbrand to-tbrand-hover p-0 before:absolute before:inset-0 before:bg-white before:opacity-0 before:transition before:duration-300 before:hover:opacity-10"
                                 tabIndex={-1}
                                 type="button"
@@ -73,7 +73,7 @@ const SponsorSection = () => {
                                 <p className="px-10 py-3 text-base font-medium md:text-lg lg:px-[123px] lg:py-[24px] lg:text-2xl xl:text-2.5xl">
                                     Become a sponsor!
                                 </p>
-                            </Button>
+                            </Button> */}
                         </div>
 
                         <div className="tiers xl:space-y max-w-[102rem] space-y-12 px-4 py-6 md:space-y-16 lg:space-y-24 lg:px-8 lg:py-12 xl:space-y-36 xl:px-12 2xl:px-4">
