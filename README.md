@@ -51,3 +51,7 @@ $ pnpm i
 ```sh
 $ pnpm dev
 ```
+
+## Contributing :heart:
+
+**If you want to help improve the project, please check our [contribution guide](https://github.com/KonferCA/HawkHacks-Landing/blob/main/docs/CONTRIBUTING.md) for guidelines on how to contribute.**
