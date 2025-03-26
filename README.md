@@ -31,7 +31,7 @@ $ npm install -g pnpm
 > Clone the repo
 
 ```sh
-$ git clone https://github.com/KonferCA/SPUR-Innovation.git
+$ git clone https://github.com/KonferCA/HawkHacks-Landing.git
 ```
 
 > From your terminal, navigate to the root path of clone
