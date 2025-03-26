@@ -2,8 +2,8 @@
   <h1 align="center">
     <a href="https://onboard.spuric.com/">
         <picture>
-            <source height="175" media="(prefers-color-scheme: dark)" srcset="https://github.com/KonferCA/HawkHacks-Landing/blob/main/src/assets/logo.svg">
-            <img height="175" alt="SPUR" src="https://github.com/KonferCA/HawkHacks-Landing/blob/main/src/assets/logo.svg">
+            <source height="175" media="(prefers-color-scheme: dark)" srcset="https://github.com/KonferCA/HawkHacks-Landing/blob/main/src/assets/logo-text.svg">
+            <img height="175" alt="SPUR" src="https://github.com/KonferCA/HawkHacks-Landing/blob/main/src/assets/logo-text.svg">
         </picture>
     </a>
     <br>
