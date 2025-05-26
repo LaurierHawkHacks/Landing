@@ -12,7 +12,7 @@
         "test:dev": "vitest"
     },
     "dependencies": {
-        "@types/node": "^20.11.24",
+        "@types/node": "^22.15.21",
         "@uidotdev/usehooks": "^2.4.1",
         "axios": "^1.8.2",
         "class-variance-authority": "^0.7.0",
